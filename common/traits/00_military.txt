@@ -23,6 +23,8 @@ confident = { #
 	martial = 1
 	unit = {
 		heavy_cavalry_discipline = 0.05
+		dol_amroth_knights_discipline = 0.05
+		dwarven_goat_riders_discipline = 0.05
 		chariots_discipline = 0.05
 	}
 }
@@ -32,8 +34,16 @@ tactician = { #
 	martial = 1
 	unit = {
 		archers_discipline = 0.05
+		dunedain_archers_discipline = 0.05
+		rangers_discipline = 0.05
+		dwarven_archers_discipline = 0.05
+		elvish_archers_discipline = 0.05
+		uruk_crossbows_discipline = 0.05
 		light_infantry_discipline = 0.05
+		orc_infantry = 0.05
+		uruk_infantry = 0.05
 		horse_archers_discipline = 0.05
+		elvish_cavalry_archers_discipline = 0.05
 	}
 }
 disciplined = { #
@@ -52,6 +62,10 @@ steadfast = { #
 	
 	unit = {
 		heavy_infantry_discipline = 0.05
+		dunedain_infantry_discipline = 0.05
+		dwarven_infantry_discipline = 0.05
+		elvish_infantry_discipline = 0.05
+		uruk_heavy_infantry_discipline = 0.05
 		warelephant_discipline = 0.05
 	}
 }
@@ -62,6 +76,8 @@ aggressive = { #
 	unit = {
 		light_cavalry_discipline = 0.05
 		camels_discipline = 0.05
+		dunedain_cavalry_discipline = 0.05
+		warg_riders_discipline = 0.05
 	}
 }
 brave = {

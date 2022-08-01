@@ -18,7 +18,7 @@ pipeweed = {
 
 #Herbs
 woad = { 
-	category = 2
+	category = 5
 
 	gold = 0.2 
 	
@@ -48,6 +48,10 @@ mithril = {
 
 	country = {
 		heavy_infantry_discipline = 0.2
+		dunedain_infantry_discipline = 0.2
+		dwarven_infantry_discipline = 0.2
+		elvish_infantry_discipline = 0.2
+		uruk_heavy_infantry_discipline = 0.2
 	}
 
 
@@ -71,7 +75,7 @@ mumakil = {
 }
 
 whale = {
-	category = 1
+	category = 4
 
 	gold = 0.4
 	

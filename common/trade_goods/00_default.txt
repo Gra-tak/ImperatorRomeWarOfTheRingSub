@@ -42,6 +42,10 @@ iron = { #119 territories
 	}
 	country = {
 		heavy_infantry_discipline = 0.1
+		dunedain_infantry_discipline = 0.1
+		dwarven_infantry_discipline = 0.1
+		elvish_infantry_discipline = 0.1
+		uruk_heavy_infantry_discipline = 0.1
 	}
 
 	color = hsv { 0.0 0.0 0.11 }	
@@ -60,6 +64,8 @@ horses = { #276 territories
 	}
 	country = {
 		heavy_cavalry_discipline = 0.1
+		dol_amroth_knights_discipline = 0.1
+		dwarven_goat_riders_discipline = 0.1
 	}
 
 	color = hsv { 0.05 0.9 0.5 }	
@@ -225,6 +231,11 @@ wild_game = { #190 territories
 	}
 	country = {
 		archers_discipline = 0.1
+		dunedain_archers_discipline = 0.1
+		rangers_discipline = 0.1
+		dwarven_archers_discipline = 0.1
+		elvish_archers_discipline = 0.1
+		uruk_crossbows_discipline = 0.1
 	}
 
 	color = hsv { 0.1 0.4 0.25  }
@@ -257,6 +268,7 @@ steppe_horses = { #90 territories
 	}
 	country = {
 		horse_archers_discipline = 0.1
+		elvish_cavalry_archers_discipline = 0.1
 	}
 	
 	color = hsv { 0.1 0.5 0.8 }	
@@ -351,6 +363,8 @@ leather = { #338 territories
 	}
 	country = {
 		light_infantry_defensive = 0.1
+		orc_infantry_defensive = 0.1
+		uruk_infantry_defensive = 0.1
 	}
 	
 	color = hsv { 0.05 0.35 0.15  }
@@ -366,6 +380,8 @@ base_metals = { #199 territories
 	}
 	country = {
 		light_infantry_offensive = 0.1
+		orc_infantry_offensive = 0.1
+		uruk_infantry_offensive = 0.1
 	} 
 	
 	color = hsv { 0.0 0.0 0.3 }

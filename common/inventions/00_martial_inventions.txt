@@ -39,7 +39,13 @@
 
 	# Level 2
 	heavy_infantry_discipline_inv = {
-		modifier = { heavy_infantry_discipline = 0.05 }
+		modifier = { 
+			heavy_infantry_discipline = 0.05 
+			dunedain_infantry_discipline = 0.05 
+			dwarven_infantry_discipline = 0.05 
+			elvish_infantry_discipline = 0.05 
+			uruk_heavy_infantry_discipline = 0.05 
+		}
 		requires = { global_start_experience_inv_3 }
 	}
 
@@ -209,6 +215,10 @@
 		modifier = { 
 			global_start_experience = 5
 			heavy_infantry_discipline = 0.05
+			dunedain_infantry_discipline = 0.05
+			dwarven_infantry_discipline = 0.05
+			elvish_infantry_discipline = 0.05
+			uruk_heavy_infantry_discipline = 0.05
 		}
 		on_activate = {
 			custom_tooltip = "create_high_martial_rising_star"
@@ -364,7 +374,11 @@ military_inventions = {
 
 	# Level 2
 	heavy_cavalry_discipline_inv = {
-		modifier = { heavy_cavalry_discipline = 0.1 }
+		modifier = { 
+			heavy_cavalry_discipline = 0.1 			
+			dol_amroth_knights_discipline = 0.1
+			dwarven_goat_riders_discipline = 0.1
+		}
 		requires = { discipline_inv_1 }
 	}
 
