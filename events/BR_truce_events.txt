@@ -64,15 +64,16 @@ br_truce.1 = { #prevents the goodie humans from going to war with each other unl
         every_in_list = {
             list = event_list_1
             save_scope_as = event_list_1_target
-            #remove_from_list = event_list_2
             every_in_list = {
                 list = event_list_2
+                limit = {
+                  NOT = { THIS = PREV }
+                }
                 add_truce = {
                     target = scope:event_list_1_target
                     duration = 1825
                 }
             }
-            #add_to_list = event_list_2
         }
     }
 
@@ -133,15 +134,16 @@ br_truce.2 = { #prevents the elves from going to war with each other unless this
         every_in_list = {
             list = event_list_1
             save_scope_as = event_list_1_target
-            #remove_from_list = event_list_2
             every_in_list = {
                 list = event_list_2
+                limit = {
+                  NOT = { THIS = PREV }
+                }
                 add_truce = {
                     target = scope:event_list_1_target
                     duration = 1825
                 }
             }
-            #add_to_list = event_list_2
         }
     }
 
@@ -189,15 +191,16 @@ br_truce.3 = { #prevents the easterling/southron humans from attacking Sauron un
         every_in_list = {
             list = event_list_1
             save_scope_as = event_list_1_target
-            #remove_from_list = event_list_2
             every_in_list = {
                 list = event_list_2
+                limit = {
+                  NOT = { THIS = PREV }
+                }
                 add_truce = {
                     target = scope:event_list_1_target
                     duration = 1825
                 }
             }
-            #add_to_list = event_list_2
         }
     }
 

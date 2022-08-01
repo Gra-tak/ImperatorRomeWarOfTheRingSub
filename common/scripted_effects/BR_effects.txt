@@ -57,8 +57,7 @@ pass_down_lotr_traits_effect = {
 				}
 				add_trait = prince_of_numenor
 			}
-	
-			if = {
+			else_if = {
 				limit = {
 					mother = {
 						has_trait = blood_of_isildur
