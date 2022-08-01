@@ -20,6 +20,7 @@
 		add_trait="founder"
 		add_trait="house_of_elrond"
 		add_trait="expert_magic_user"
+		add_trait="asexual"
 		add_gold=200
 		add_popularity=60
 		c:IML={

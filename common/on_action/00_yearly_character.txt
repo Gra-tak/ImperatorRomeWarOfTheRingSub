@@ -10,6 +10,7 @@ yearly_character_pulse =
 	
 	events = {
 		scheme.3
+		br_childbirth.1
 		br_dunedain.1
 		br_dunedain.2
 		br_dunedain.3

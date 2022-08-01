@@ -1,0 +1,164 @@
+﻿namespace = br_childbirth
+
+###Human women loosing their ability for childbirth
+br_childbirth.1 = {
+	
+	type = character_event
+	title = "br_childbirth.1.t"
+	desc = "br_childbirth.1.desc"
+	picture = dunedain_patrol
+	hidden = yes
+	
+
+	trigger = {
+		is_female = yes
+		NOT = { has_trait = barren }
+		OR = {
+			AND = {
+				age >= 45
+				is_long_lived = no
+			}
+			AND = {
+				age >= 80
+				has_trait = blood_of_numenor
+			}
+			AND = {
+				age >= 150
+				has_trait = strong_blood_of_numenor
+			}
+		}
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_childbirth.1.a"
+		add_trait = barren
+	}
+}
+
+
+# scope:newborn = {
+# 		father = {
+# 			random_events = {
+# 				90 = 0
+# 				10 = br_childbirth.2
+# 			}
+# 		}
+# 		mother = {
+# 			random_events = {
+# 				90 = 0
+# 				10 = br_childbirth.2
+# 			}
+# 		}
+# 	}
+
+###Elves and dwarfs stopping to have children
+br_childbirth.2 = {
+	
+	type = character_event
+	title = "br_childbirth.1.t"
+	desc = "br_childbirth.1.desc"
+	picture = dunedain_patrol
+	hidden = yes
+	
+
+	trigger = {
+		scope:newborn = {
+			OR = {
+				father = {
+					NOT = { has_trait = asexual }
+					OR = {
+						has_trait = elf
+						has_trait = dwarf
+					}
+				}
+				mother = {
+					NOT = { has_trait = asexual }
+					OR = {
+						has_trait = elf
+						has_trait = dwarf
+					}
+				}
+			}
+	}
+}
+
+	weight_multiplier = {
+		modifier = {
+			factor = 0.25
+			has_trait = dwarf
+		}
+		modifier = {
+			factor = 2
+			scope:newborn = {
+				father = { num_of_children >= 2 }
+				mother = { num_of_children >= 2 }
+			}
+		}
+		modifier = {
+			factor = 2
+			scope:newborn = {
+				father = { num_of_children >= 3 }
+				mother = { num_of_children >= 3 }
+			}
+		}
+		modifier = {
+			factor = 3
+			scope:newborn = {
+				father = { num_of_children >= 4 }
+				mother = { num_of_children >= 4 }
+			}
+		}
+		modifier = {
+			factor = 3
+			scope:newborn = {
+				father = { num_of_children >= 5 }
+				mother = { num_of_children >= 5 }
+			}
+		}
+		modifier = {
+			factor = 4
+			scope:newborn = {
+				father = { num_of_children >= 6 }
+				mother = { num_of_children >= 6 }
+			}
+		}
+		modifier = {
+			factor = 5
+			scope:newborn = {
+				father = { num_of_children >= 7 }
+				mother = { num_of_children >= 7 }
+			}
+		}
+		modifier = {
+			factor = 6
+			scope:newborn = {
+				father = { num_of_children >= 8 }
+				mother = { num_of_children >= 8 }
+			}
+		}
+		modifier = {
+			factor = 7
+			scope:newborn = {
+				father = { num_of_children >= 9 }
+				mother = { num_of_children >= 9 }
+			}
+		}
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_childbirth.1.a"
+		add_trait = asexual
+		scope:newborn = {
+			father = { 
+				add_trait = asexual
+			}
+		}
+	}
+}
+		

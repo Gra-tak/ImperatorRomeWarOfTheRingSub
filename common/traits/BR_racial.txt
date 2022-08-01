@@ -3,14 +3,14 @@
 	charisma = 2
 	finesse = 1
 	martial = 1
-	fertility = -0.3
+	fertility = -0.1
 	health = 5.0
 }
 
 dwarf = {
 	type = health
 	martial = 1
-	#fertility = -0.3
+	fertility = -0.1
 	health = 1.0
 }
 
@@ -18,7 +18,7 @@ strong_blood_of_numenor = {
 	type = health
 	martial = 1
 	charisma = 1
-	#fertility = -0.2
+	fertility = -0.06
 	health = 1.0
 }
 
@@ -26,7 +26,7 @@ blood_of_numenor = {
 	type = health
 	martial = 1
 	charisma = 1
-	#fertility = -0.2
+	fertility = -0.04
 	health = 0.5
 }
 
@@ -41,10 +41,15 @@ halfling = {
 	finesse = 1
 }
 
+asexual = { 
+	type = health
+	fertility = -10
+}
+
 10_sauron = {
 	type = health
 	health = 10.0
-	fertility = -1.0
+	fertility = -10
 	charisma = 5
 	finesse = 5
 	martial = 5
@@ -59,7 +64,7 @@ halfling = {
 20_sauron = {
 	type = health
 	health = 10.0
-	fertility = -1.0
+	fertility = -10
 	charisma = 6
 	finesse = 6
 	martial = 6
@@ -74,7 +79,7 @@ halfling = {
 30_sauron = {
 	type = health
 	health = 10.0
-	fertility = -1.0
+	fertility = -10
 	charisma = 7
 	finesse = 7
 	martial = 7
@@ -89,7 +94,7 @@ halfling = {
 40_sauron = {
 	type = health
 	health = 10.0
-	fertility = -1.0
+	fertility = -10
 	charisma = 8
 	finesse = 8
 	martial = 8
@@ -104,7 +109,7 @@ halfling = {
 50_sauron = {
 	type = health
 	health = 10.0
-	fertility = -1.0
+	fertility = -10
 	charisma = 9
 	finesse = 9
 	martial = 9
@@ -119,7 +124,7 @@ halfling = {
 60_sauron = {
 	type = health
 	health = 10.0
-	fertility = -1.0
+	fertility = -10
 	charisma = 10
 	finesse = 10
 	martial = 10
@@ -134,7 +139,7 @@ halfling = {
 70_sauron = {
 	type = health
 	health = 10.0
-	fertility = -1.0
+	fertility = -10
 	charisma = 11
 	finesse = 11
 	martial = 11
@@ -149,7 +154,7 @@ halfling = {
 80_sauron = {
 	type = health
 	health = 10.0
-	fertility = -1.0
+	fertility = -10
 	charisma = 12
 	finesse = 12
 	martial = 12
@@ -164,7 +169,7 @@ halfling = {
 90_sauron = {
 	type = health
 	health = 10.0
-	fertility = -1.0
+	fertility = -10
 	charisma = 13
 	finesse = 13
 	martial = 13
@@ -179,7 +184,7 @@ halfling = {
 100_sauron = {
 	type = health
 	health = 10.0
-	fertility = -1.0
+	fertility = -10
 	charisma = 15
 	finesse = 15
 	martial = 15
