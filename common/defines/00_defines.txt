@@ -15,12 +15,12 @@
 	SCORE_START_BASE = 50
 	SCORE_START_POP_WEIGHT = 0.45
 	
-	MIN_MERCENARIES_PER_REGION = 3
+	MIN_MERCENARIES_PER_REGION = 2
 	MERCENARIES_CITY_THRESHOLD = 50
-	MERCENARIES_PER_CITY = 0.1
+	MERCENARIES_PER_CITY = 0.05
 	
 	MERCENARY_BASE_AMOUNT = 1
-	MERCENARY_PER_POP_SCALE = 0.02
+	MERCENARY_PER_POP_SCALE = 0.03
 	MERCENARY_AMOUNT_DEVIATION = 0.15 
 	PIRATE_BASE_AMOUNT = 8
 	PIRATE_PER_POP_SCALE = 0.05
@@ -986,7 +986,7 @@ NAI = {
 }
 
 NLevy = {
-	MIN_SIZE = 5 # minimum number of cohorts raised as levy
+	MIN_SIZE = 2 # minimum number of cohorts raised as levy
 	SUPPORT_REQUIREMENT = 9 # every n-th number of cohorts in a levy should be support units
 	DISBAND_MILITARY_EXP_MULT = 0.015 # when disbanding a levy military experience will be added to the country
 	EXPERIENCE_GAIN_THRESHOLD = 8 # months that the levy has to be raised before disbanding it will give any military experience
