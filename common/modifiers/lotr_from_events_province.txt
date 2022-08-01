@@ -2,7 +2,7 @@
 minas_anor_modifier = {
 	fort_level = 5
 	local_defensive = 0.5
-	local_population_capacity_modifier = 1.0
+	local_population_capacity = 30
 	local_research_points_modifier = -0.1
 }
 minas_anor_state_modifier = {
@@ -19,7 +19,7 @@ minas_ithil_modifier = {
 	fort_level = 5
 	local_defensive = 0.5
 	local_hostile_attrition = 2.0
-	local_population_capacity_modifier = 1.0
+	local_population_capacity = 50
 	local_monthly_food_modifier = 1.0
 }
 minas_ithil_state_modifier = {
@@ -30,7 +30,7 @@ black_gate_modifier = {
 	fort_level = 5
 	local_defensive = 2.0
 	local_research_points_modifier = -0.1
-	local_population_capacity_modifier = 1.0
+	local_population_capacity = 50
 	local_hostile_attrition = 2.0
 }
 black_gate_state_modifier = {
@@ -39,7 +39,7 @@ black_gate_state_modifier = {
 	local_hostile_attrition = 0.5
 }
 osgiliath_palace_modifier = {
-	local_population_capacity_modifier = 0.1
+	local_population_capacity = 30
 	local_defensive = 0.05
 }
 orthanc_modifier = {
@@ -61,7 +61,7 @@ amon_sul_modifier = {
 	fort_level = 1
 }
 annuminas_palace_modifier = {
-	local_population_capacity_modifier = 0.1
+	local_population_capacity = 30
 	local_defensive = 0.05
 	local_population_growth = -0.1
 }
@@ -208,7 +208,7 @@ moria_east_gate_modifier = {
 barad_dur_modifier = {
 	fort_level = 5
 	local_defensive = 0.20
-	local_population_capacity_modifier = 3.0
+	local_population_capacity = 150
 	local_monthly_food_modifier = 2.0
 }
 barad_dur_state_modifier = {
@@ -222,7 +222,7 @@ dol_guldur_modifier = {
 	fort_level = 4
 	local_defensive = 0.05
 	monthly_tyranny = -0.05
-	local_population_capacity_modifier = 1.0
+	local_population_capacity = 50
 }
 carn_dum_modifier = {
 	fort_level = 1
@@ -234,7 +234,7 @@ black_gate_modifier = {
 	fort_level = 5
 	local_defensive = 0.05
 	monthly_tyranny = -0.05
-	local_population_capacity_modifier = 1.0
+	local_population_capacity = 30
 }
 ### Other Wonders ###
 
