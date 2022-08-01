@@ -1,0 +1,106 @@
+﻿#Adapt this vanilla file for our custom inherited traits
+
+pass_down_lotr_traits_effect = {
+	scope:newborn = {
+			if = {
+				limit = {
+					father = {
+						has_trait = blood_of_isildur
+					}
+					NOT = {
+						has_trait = blood_of_isildur
+					}
+				}
+				add_trait = blood_of_isildur
+			}
+			else_if = {
+				limit = {
+					father = {
+						has_trait = blood_of_anarion
+					}
+					NOT = {
+						has_trait = blood_of_anarion
+					}
+				}
+				add_trait = blood_of_anarion
+			}
+			else_if = {
+				limit = {
+					father = {
+						has_trait = line_of_durin
+					}
+					NOT = {
+						has_trait = line_of_durin
+					}
+				}
+				add_trait = line_of_durin
+			}
+			else_if = {
+				limit = {
+					father = {
+						has_trait = house_of_hurin
+					}
+					NOT = {
+						has_trait = house_of_hurin
+					}
+				}
+				add_trait = house_of_hurin
+			}
+			else_if = {
+				limit = {
+					father = {
+						has_trait = prince_of_numenor
+					}
+					NOT = {
+						has_trait = prince_of_numenor
+					}
+				}
+				add_trait = prince_of_numenor
+			}
+	
+			if = {
+				limit = {
+					mother = {
+						has_trait = blood_of_isildur
+					}
+					NOT = {
+						has_trait = blood_of_isildur
+					}
+				}
+				add_trait = blood_of_isildur
+			}
+			else_if = {
+				limit = {
+					mother = {
+						has_trait = blood_of_anarion
+					}
+					NOT = {
+						has_trait = blood_of_anarion
+					}
+				}
+				add_trait = blood_of_anarion
+			}
+			else_if = {
+				limit = {
+					mother = {
+						has_trait = line_of_durin
+					}
+					NOT = {
+						has_trait = line_of_durin
+					}
+				}
+				add_trait = line_of_durin
+			}
+			else_if = {
+				limit = {
+					mother = {
+						has_trait = house_of_hurin
+					}
+					NOT = {
+						has_trait = house_of_hurin
+					}
+				}
+				add_trait = house_of_hurin
+			}
+		}
+}

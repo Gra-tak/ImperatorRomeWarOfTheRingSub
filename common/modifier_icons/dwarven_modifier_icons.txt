@@ -1,0 +1,317 @@
+﻿#### dwarven_goat_riders ####
+
+dwarven_goat_riders_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+dwarven_goat_riders_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+dwarven_goat_riders_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+dwarven_goat_riders_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+dwarven_goat_riders_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+dwarven_goat_riders_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+dwarven_goat_riders_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+dwarven_goat_riders_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+dwarven_goat_riders_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+dwarven_goat_riders_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+dwarven_goat_riders_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+dwarven_goat_riders_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+dwarven_goat_riders_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+dwarven_goat_riders_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+dwarven_goat_riders_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+dwarven_goat_riders_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+dwarven_goat_riders_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+dwarven_goat_riders_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+dwarven_goat_riders_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+dwarven_goat_riders_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+dwarven_goat_riders_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+dwarven_goat_riders_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+dwarven_goat_riders_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+dwarven_goat_riders_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+dwarven_goat_riders_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+dwarven_goat_riders_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}
+
+#### dwarven_infantry ####
+
+dwarven_infantry_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+dwarven_infantry_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+dwarven_infantry_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+dwarven_infantry_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+dwarven_infantry_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+dwarven_infantry_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+dwarven_infantry_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+dwarven_infantry_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+dwarven_infantry_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+dwarven_infantry_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+dwarven_infantry_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+dwarven_infantry_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+dwarven_infantry_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+dwarven_infantry_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+dwarven_infantry_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+dwarven_infantry_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+dwarven_infantry_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+dwarven_infantry_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+dwarven_infantry_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+dwarven_infantry_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+dwarven_infantry_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+dwarven_infantry_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+dwarven_infantry_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+dwarven_infantry_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+dwarven_infantry_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+dwarven_infantry_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}
+
+#### dwarven_archers ####
+
+dwarven_archers_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+dwarven_archers_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+dwarven_archers_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+dwarven_archers_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+dwarven_archers_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+dwarven_archers_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+dwarven_archers_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+dwarven_archers_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+dwarven_archers_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+dwarven_archers_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+dwarven_archers_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+dwarven_archers_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+dwarven_archers_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+dwarven_archers_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+dwarven_archers_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+dwarven_archers_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+dwarven_archers_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+dwarven_archers_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+dwarven_archers_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+dwarven_archers_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+dwarven_archers_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+dwarven_archers_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+dwarven_archers_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+dwarven_archers_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+dwarven_archers_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+dwarven_archers_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}

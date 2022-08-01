@@ -1,0 +1,245 @@
+﻿### Numenorean Wonders ###
+minas_anor_modifier = {
+	fort_level = 5
+	local_defensive = 0.5
+	local_population_capacity_modifier = 1.0
+	local_research_points_modifier = -0.1
+}
+minas_anor_state_modifier = {
+	local_fort_limit = 3
+	local_defensive = 1.0
+}
+supplied_from_the_rear = {
+	local_defensive = 2.0
+}
+rammas = {
+	fort_level = 2
+}
+minas_ithil_modifier = {
+	fort_level = 5
+	local_defensive = 0.5
+	local_hostile_attrition = 2.0
+	local_population_capacity_modifier = 1.0
+	local_monthly_food_modifier = 1.0
+}
+minas_ithil_state_modifier = {
+	local_fort_limit = 3
+	local_defensive = 0.5
+}
+black_gate_modifier = {
+	fort_level = 5
+	local_defensive = 2.0
+	local_research_points_modifier = -0.1
+	local_population_capacity_modifier = 1.0
+	local_hostile_attrition = 2.0
+}
+black_gate_state_modifier = {
+	local_defensive = 0.5
+	local_fort_limit = 3
+	local_hostile_attrition = 0.5
+}
+osgiliath_palace_modifier = {
+	local_population_capacity_modifier = 0.1
+	local_defensive = 0.05
+}
+orthanc_modifier = {
+	supply_limit_modifier = 0.2
+	fort_level = 5
+	local_defensive = 0.05
+	monthly_local_governor_wage = 0.1
+}
+orthanc_state_modifier = {
+	local_fort_limit = 3
+}
+helms_deep_modifier = {
+	local_hostile_attrition = 0.3
+	fort_level = 1
+	local_defensive = 0.30
+}
+amon_sul_modifier = {
+	army_movement_speed = 0.2
+	fort_level = 1
+}
+annuminas_palace_modifier = {
+	local_population_capacity_modifier = 0.1
+	local_defensive = 0.05
+	local_population_growth = -0.1
+}
+fornost_modifier = {
+	fort_level = 2
+	local_defensive = 0.1
+}
+tharbad_citadel_modifier = {
+	base_resources = 1
+	local_goods_from_slaves = -2
+}
+tharbad_bridge_modifier = {
+	local_commerce_value_modifier = 0.1
+	fort_level = 1
+	local_slaves_happyness = -0.5
+}
+cameth_brin_modifier = {
+	local_tax_modifier = 0.15
+	fort_level = 1
+	barbarian_growth = 0.1
+}
+amon_hen_modifier = {
+	army_movement_speed = 0.1
+	fort_level = 1
+}
+argonath_modifier = {
+	global_monthly_civilization = 0.05
+	monthly_tyranny = -0.05
+}
+umbar_harbour_modifier = {
+#	pirate_spawn_chance = 0.1
+	local_ship_recruit_speed = 0.1
+	local_ship_start_experience = 10
+	local_commerce_value_modifier = 0.1
+	local_tax_modifier = 0.15
+	fort_level = 5
+}
+great_tower_modifier = {
+	fort_level = 1
+	local_defensive = 0.05
+}
+great_seat_modifier = {
+	army_movement_speed = 0.1
+	fort_level = 1
+}
+great_harbour_modifier = {
+	local_ship_recruit_speed = 0.1
+	local_ship_start_experience = 10
+	fort_level = 1
+}
+seaward_modifier = {
+	local_ship_recruit_speed = 0.1
+	local_ship_start_experience = 10
+	fort_level = 1
+	local_cohort_recruit_speed = -0.2
+}
+island_fortress_modifier = {
+	fort_level = 2
+	local_defensive = 0.05
+}
+wall_fortress_modifier = {
+	fort_level = 1
+	local_defensive = 0.05
+	local_manpower_modifier = -0.1
+}
+
+osgiliath_modifier = {
+	fort_level = 2
+	local_defensive = 0.05
+}
+
+
+### Elvish Wonders ###
+mithlond_harbour_modifier = {
+#	pirate_spawn_chance = -0.5
+	local_ship_recruit_speed = 0.05
+	local_ship_start_experience = 20
+	local_commerce_value_modifier = 0.5
+	local_cohort_recruit_speed = -0.1
+}
+imladris_modifier = {
+	happiness_for_wrong_culture_modifier = 0.3
+	happiness_for_same_culture_modifier = 0.5
+	fort_level = 3
+}
+elostirion_modifier = {
+	army_movement_speed = 0.05
+	fort_level = 1
+	local_research_points_modifier = -0.05
+}
+arestirion_modifier = {
+	army_movement_speed = 0.05
+	fort_level = 1
+	local_research_points_modifier = -0.05
+}
+ivrostirion_modifier = {
+	army_movement_speed = 0.05
+	fort_level = 1
+	local_research_points_modifier = -0.05
+}
+### Northmen Wonders ###
+dale_modifier = {
+	local_commerce_value_modifier = 0.15
+	fort_level = 3
+}
+esgaroth_modifier = {
+	global_commerce_modifier = 0.2
+	local_defensive = 0.10
+	monthly_local_governor_wage = 0.1
+}
+### Rohan Wonders ###
+### Dwarvish Wonders ###
+erebor_modifier = {
+	fort_level = 5
+	local_defensive = 0.15
+	local_commerce_value_modifier = 0.5
+}
+iron_hills_modifier = {
+	fort_level = 1
+	local_defensive = 0.05
+}
+moria_west_gate_modifier = {
+	local_commerce_value_modifier = 0.1
+	local_defensive = 0.05
+	fort_level = 5
+}
+celebdil_modifier = {
+	base_resources = 1
+}
+caradhras_modifier = {
+	city_monthly_state_loyalty = 0.1
+}
+fanuidhol_modifier = {
+	happiness_for_same_culture_modifier = 0.1
+}
+durins_tower_modifier = {
+	local_research_points_modifier = 0.05
+}
+moria_east_gate_modifier = {
+	fort_level = 5
+	local_defensive = 0.15
+}
+### Sauron Wonders ###
+barad_dur_modifier = {
+	fort_level = 5
+	local_defensive = 0.20
+	local_population_capacity_modifier = 3.0
+	local_monthly_food_modifier = 2.0
+}
+barad_dur_state_modifier = {
+	local_fort_limit = 3
+}
+barad_dur_foundations_modifier = {
+	fort_level = 1
+	local_defensive = 0.05
+}
+dol_guldur_modifier = {
+	fort_level = 4
+	local_defensive = 0.05
+	monthly_tyranny = -0.05
+	local_population_capacity_modifier = 1.0
+}
+carn_dum_modifier = {
+	fort_level = 1
+	local_defensive = 0.05
+	monthly_tyranny = -0.05
+}
+
+black_gate_modifier = {
+	fort_level = 5
+	local_defensive = 0.05
+	monthly_tyranny = -0.05
+	local_population_capacity_modifier = 1.0
+}
+### Other Wonders ###
+
+
+
+
+
+

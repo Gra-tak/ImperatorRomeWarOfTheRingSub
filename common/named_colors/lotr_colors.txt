@@ -1,0 +1,31 @@
+colors = {
+	gondor_blue				= rgb { 1 40 106 }
+	arthedain_grey			= rgb { 80 75 70 }
+	arthedain_dark_grey		= rgb { 35 30 25 }
+	cardolan_green			= rgb { 49 72 33 }
+	cardolan_light_green	= rgb { 160 160 100 }
+	rhudaur_red				= rgb { 140 0 30 }
+	rhudaur_rust			= rgb { 96 0 0 } # { 130 30 30 }
+	rhudaur_yellow			= rgb { 198 177 89 }
+	
+	lamedon_colour			= rgb {88 103 136}
+	minas_ithil_colour		= rgb {150 40 50}
+	
+	necromancer_green		= rgb {200 230 210}
+	flame_orange			= rgb {195 75 0}
+	flame_red				= rgb {190 0 0}
+
+	erebor_green			= rgb {110 204 10}
+	erebor_red				= rgb {115 41 19}
+	erebor_gold				= rgb {162 161 121}
+	moria_blue				= rgb {15 41 73}
+	moria_grey_blue			= rgb {60 64 77}
+	moria_mithril			= rgb {239 243 239}
+	iron_hills_color		= rgb {153 25 177} #{145 7 107}
+	iron_hills_red			= rgb {138 39 13}
+	iron_hills_rust			= rgb {158 118 66}
+	blue_mountains_blue		= rgb {39 94 216}
+	blue_mountains_silver	= rgb {200 219 228}
+	blue_mountains_brass	= rgb {234 200 100}
+	khazad_dum				= rgb {18 44 89}
+}

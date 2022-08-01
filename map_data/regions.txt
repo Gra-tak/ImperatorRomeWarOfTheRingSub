@@ -1,0 +1,880 @@
+
+angmar_region = {
+	areas = {
+		carn_dum_area
+		gundabad_area
+		nan_angmar_area
+		ram_duath_area
+		
+	}
+}
+
+forodwaith_region = {
+	areas = {
+		talath_oiohelka_area
+		forovirkain_area
+		goldladwen_area
+		talath_uichel_area
+		durganla_area
+	}
+}
+
+forochel_region = {
+	areas = {
+		everdalf_area
+		rast_losnaeth_area
+		lindalf_area
+		lodalf_area
+		linladwen_area
+		rammas_forod_area
+		nimbrith_forochel_area
+		jarvimaa_area
+	}
+}
+
+dyr_erib_region = {
+	areas = {
+		dyr_uvadan_area
+		en_eredoriath_area
+		uilad_rhunen_area
+		annui_uilad_area
+	}
+}
+
+harondor_region = {
+	areas = {
+		aegardh_area
+		forethir_area
+		laergaladrim_area
+		eredtir_area
+		carnentir_area
+		harfalas_area
+	}
+}
+
+gorgoroth_region = {
+	areas = {
+		udun_area
+		ephel_duath_area
+		lithlad_area
+		baugatsor_i_sauron_area
+		perth_ulmyn_area
+		gaer_durlith_area
+		barad_dur_area
+	}
+}
+
+nurn_region = {
+	areas = {
+		maegond_area
+		nurn_area
+		caradhram_nurn_area
+		glamhoth_area
+		ghurzun_area
+		rhunen_nurn_area
+	}
+}
+
+anorien_region = {
+	areas = {
+		entyn_i_onodlo_area
+		lossarnach_area
+		doranorien_area
+		anorien_area
+		
+	}
+}
+
+ithilien_region = {
+	areas = {
+		ithilien_area
+		forithilien_area
+		harithilien_area
+		poros_area
+	}
+}
+
+lebennin_region = {
+	areas = {
+		tolfalas_area
+		pelargir_area
+		gilrain_area
+		imlad_tathren_area
+		lebennivet_area
+		celosien_area
+		arnach_area
+	}
+}
+
+uvanwaith_region = {
+	areas = {
+		berennyn_area
+		nindalf_area
+		dagorlad_area
+		nan_lothanduin_area
+	}
+}
+
+umbar_region = {
+	areas = {
+		umbar_area
+		calenfalas_area
+		glinfalas_area
+		asni_dat_area
+		sakal_an_khar_area
+		umbast_area
+	}
+}
+
+mintyrnath_region = {
+	areas = {
+		tyrn_hyarinen_area
+		faerdor_area
+		hashgmur_area
+		rohwaen_area
+	}
+}
+
+cardolan_region = {
+	areas = {
+		tharbad_area
+		dol_tinereb_area
+		pinnath_nimren_area
+		dol_caladir_area
+	}
+}
+
+mithlond_region = {
+	areas = {
+		dor_lelvin_area
+		rhonlindon_area
+		galfalas_area
+	}
+}
+
+forlindon_region = {
+	areas = {
+		tol_fuin_area
+		lothlann_area
+		geleidhien_area
+		ivrien_area
+		gweinlas_area
+		falas_i_myl_area
+		thargelion_area
+		ascariand_area
+		forgelion_area
+	}
+}
+
+harlindon_region = {
+	areas = {
+		ardalinderion_area
+		dor_tinuviel_area
+		gwaelad_area
+		halfalas_area
+	}
+}
+
+dunendor_region = {
+	areas = {		
+		calenhardin_area
+		carreglyn_area
+		emyn_dunendor_area
+		adorn_area
+		iren_area
+	}
+}
+
+calenardhon_region = {
+	areas = {		
+		glaedorath_area
+		garth_rhuven_area
+		garth_annui_area
+	}
+}
+
+rhuvenlhad_region = {
+	areas = {
+		hartalf_area
+		fortalf_area
+		emyth_perain_area
+		i_laden_area
+	}
+}
+
+anduin_region = {
+	areas = {
+		ronen_in_anduin_area
+		ninglor_area
+		glennen_area
+		emyn_methel_area
+		drownholt_area
+		riwdor_area
+		duirrograw_area
+		lothduin_area
+	}
+}
+
+eryn_galen_region = {
+	areas = {
+		emyn_guldur_area
+		angaladh_area
+		emyn_nu_fuin_area
+		taur_guldur_area
+		angaladh_rhunen_area
+		eryn_arador_area
+		annuryn_area
+	}
+}
+
+dor_rhunen_region = {
+	areas = {
+		talath_harroch_area
+		aramuth_ayal_area
+		duil_rewinion_area
+		taj_ures_area
+		aglonedrain_area
+		talath_rhain_area
+		sagathavuld_area
+	}
+}
+
+dorwinion_region = {
+	areas = {
+		folyavuld_area
+		dobok_bron_area
+		pinnon_rhun_area
+		dobok_rhin_area
+		deneral_area
+	}
+}
+
+duirrogwin_region = {
+	areas = {
+		szrelavuld_area
+		durannon_area
+		gazar_ibar_area
+		nagadar_area
+	}
+}
+
+rhovanion_region = {
+	areas = {
+		arkran_area
+		aur_esgalabar_area
+		medvos_verar_area
+		nan_carnen_area
+		annendor_area
+	}
+}
+
+ered_mithrin_region = {
+	areas = {
+		gonnland_area
+		agorbad_area
+		emyn_engrin_area
+		ered_mithrin_area
+		sarch_nia_linquelie_area
+	}
+}
+
+dacranamel_region = {
+	areas = {
+		gathod_area
+		dacranamel_area
+		telaith_lyst_area
+		morad_area
+		surubeki_morad_area
+	}
+}
+
+haerhun_region = {
+	areas = {
+		ciranthir_area
+		muldin_area
+		kolomok_area
+		nildorien_area
+	}
+}
+
+menelothriand_region = {
+	areas = {
+		tauremindon_area
+		huadis_area
+		nanetha_area
+		velirinda_area
+		boli_area
+	}
+}
+
+taur_romen_region = {
+	areas = {
+		fola_gach_area
+		agasha_dag_area
+		vol_kug_area
+		forkug_area
+	}
+}
+
+forrhun_region = {
+	areas = {
+		forod_engrin_area
+		aiatar_area
+	}
+}
+
+dyr_region = {
+	areas = {
+		latan_uzg_area
+		dyr_area
+		lotan_area
+		hardyr_area
+	}
+}
+
+logathavuld_region = {
+	areas = {
+		logathavuld_area
+		gazar_utal_area
+		gazar_barak_area
+		gazar_narkad_area
+		gazar_gord_area
+	}
+}
+
+pend_hithaeglir_region = {
+	areas = {
+		pend_eregion_area
+		imladris_area
+		tal_bruinen_area
+	}
+}
+
+
+rhudaur_region = {
+	areas = {
+		pinnath_tereg_area
+		pinnath_neryth_area
+		pinnath_aegring_area
+		rhudaur_area
+		en_engladil_area
+		caranduin_area
+	}
+}
+
+arthedain_region = {
+	areas = {
+		breriondor_area
+		oiomiril_area
+		nan_turnath_area
+		nan_arnen_area
+		tyrn_formen_area
+	}
+}
+
+fortund_region = {
+	areas = {
+		talath_muil_area
+		rammas_formen_area
+		emyn_gelin_area
+		emyn_uial_area
+		formenyar_area
+		emyn_foruial_area
+	}
+}
+
+siragale_region = {
+	areas = {
+		baranduin_area
+		formensiril_area
+		sarnladen_area
+		tinduladen_area
+		tyrn_haen_area
+	}
+}
+
+tawar_norndor_region = {
+	areas = {
+		emyn_beraid_area
+		perilussi_area
+		harvaneth_area
+		siremyn_iaur_area
+		tumnogoth_iaur_area
+	}
+}
+
+numeriador_region = {
+	areas = {
+		gondpinnath_area
+		ramluin_area
+		nan_i_naugrim_area
+		helchambenn_area
+		imladorn_area
+		caras_celairnen_area
+	}
+}
+
+minhiriath_region = {
+	areas = {
+		eryn_vorn_area
+		speriang_area
+		girithlin_area
+		ethir_gwathlo_area
+		oyer_area
+		saralainn_area
+	}
+}
+
+dor_wathui_region = {
+	areas = {
+		trum_dreng_area
+		fordirith_area
+		pren_gwzdh_area
+		nan_dunstrem_area
+		chail_caerdh_area
+	}
+}
+
+eregion_region = {
+	areas = {
+		glad_ereg_area
+		tofn_ereg_area
+		ost_in_edhil_area
+		emyn_sirannon_area
+	}
+}
+
+belfalas_region = {
+	areas = {
+		lond_ernil_area
+		rosuldrie_area
+		edhelion_area
+		methrast_area
+		anghabar_area
+	}
+}
+
+anfalas_region = {
+	areas = {
+		anfalas_area
+		nangelin_area
+		harlefnui_area
+		annuthir_area
+	}
+}
+
+hairaverkien_region = {
+	areas = {
+		forlefnui_area
+		nan_i_feryn_area
+		imlad_arheledh_area
+		udul_area
+	}
+}
+
+lamedon_region = {
+	areas = {
+		nan_ringlo_area
+		ciril_area
+		mornan_area
+		morthond_area
+		tarlang_area
+	}
+}
+
+andrast_region = {
+	areas = {
+		ras_morthil_area
+		nan_enqui_area
+		iaurast_area
+		rast_nimrais_area
+	}
+}
+
+druwaith_region = {
+	areas = {
+		druwaith_area
+		harethir_angren_area
+		emyn_iaur_area
+	}
+}
+
+enedhwaith_region = {
+	areas = {
+		angrast_area
+		enedhir_area
+		agathurush_area
+		emyn_daer_area
+		enedfalas_area
+	}
+}
+
+saerwaith_region = {
+	areas = {
+		ardhallad_area
+		talath_narchsul_area
+		pustrava_area
+	}
+}
+
+nurad_region = {
+	areas = {
+		kol_nurad_area
+		nurad_area
+		subi_area
+		relmether_area
+	}
+}
+
+khand_region = {
+	areas = {
+		khand_khurvesra_area
+		khand_amu_area
+		khelkar_area
+		perzarsan_area
+		sar_khand_area
+		khur_khand_area
+	}
+}
+
+nafarat_region = {
+	areas = {
+		lurmsakun_area
+		basira_area
+		arysis_area
+		siakan_area
+	}
+}
+
+mardruak_region = {
+	areas = {
+		mardruak_area
+		dusador_area
+	}
+}
+
+felaya_region = {
+	areas = {
+		arazain_area
+		felaya_area
+		kalz_yagup_area
+	}
+}
+
+bellakar_region = {
+	areas = {
+		bellazen_area
+		nithilfalas_area
+		nilulondor_area
+		lokhurush_area
+		sirezain_area
+		kes_udil_area
+	}
+}
+
+tulwang_region = {
+	areas = {
+		nisur_area
+		bishra_area
+		kanjar_area
+	}
+}
+
+an_balkumagan_region = {
+	areas = {
+		kalz_raishoul_area
+		zajantak_area
+		seznebab_area
+	}
+}
+
+harnendor_region = {
+	areas = {
+		harnendor_area
+		haruzan_area
+		amrun_area
+		harnun_dat_area
+		doriant_area
+	}
+}
+
+bozisha_miraz_region = {
+	areas = {
+		suza_sumar_area
+		briy_miyesec_area
+		bozisha_dar_area
+		suza_ray_area
+		gai_area
+		isfahan_area
+		kes_zum_area
+		ray_area
+	}
+}
+
+sirayn_region = {
+	areas = {
+		siresha_area
+		erim_poa_area
+		kirm_lesra_area
+		dalad_kirn_area
+		isra_area
+	}
+}
+
+cennacatt_region = {
+	areas = {
+		bru_isra_area
+		cennacatt_area
+		bosiri_area
+	}
+}
+
+sara_bask_region = {
+	areas = {
+		sara_bask_area
+		ahava_area
+	}
+}
+
+harshandatt_region = {
+	areas = {
+		nuar_area
+		naishan_area
+		coajanir_area
+		mejhanir_area
+		muran_area
+		
+	}
+}
+
+khailuza_region = {
+	areas = {
+		khy_area
+		lodenuly_area
+		bulkhyades_area
+		ammu_baj_area
+		vag_area
+		klyan_area
+	}
+}
+
+anarike_region = {
+	areas = {
+		ishto_area
+		ushnad_area
+		kris_area
+		kythor_area
+	}
+}
+
+lorien_region = {
+	areas = {
+		lorien_area
+		parth_celebrant_area
+		fangorn_area
+	}
+}
+
+khey_sart_region = {
+	areas = {
+		khey_area
+		ulk_khey_sart_area
+		sart_area
+		heb_aran_area
+		murgarm_area
+		othokav_area
+		rhadandaz_area
+		vugisen_area
+	}
+}
+
+dalpygis_region = {
+	areas = {
+		dalpygis_area
+		nunahar_area
+		folkothyka_area
+		rykholiz_area
+	}
+}
+
+lugnimbar_region = {
+	areas = {
+		daldunair_area
+		xaatl_area
+		uster_kryl_area
+	}
+}
+
+lygar_kraw_region = {
+	areas = {
+		sheria_area
+		y_idora_area
+		ez_duzia_area
+	}
+}
+
+ubain_region = {
+	areas = {
+		ubain_area
+		shen_area
+		aeda_area
+	}
+}
+
+kargagis_ahar_region = {
+	areas = {
+		tar_fendu_area
+		jayir_ahar_area
+		shor_area
+		odifariz_ur_area
+		thult_area
+	}
+}
+
+lu_tyr_su_region = {
+	areas = {
+		y_lusturanysur_area
+		desdursyton_area
+		lu_tyr_su_area
+	}
+}
+
+orgothrath_region = {
+	areas = {
+		orgothrath_area
+		cashiloma_area
+		dominthi_area
+		foga_area
+	}
+}
+
+kykurian_kyn_region = {
+	areas = {
+		langurian_kyn_area
+		khirar_area
+		gadilah_area
+		otuala_area
+		rethu_area
+	}
+}
+
+khurgunin_region = {
+	areas = {
+		rykaril_area
+		atha_area
+		tauretath_area
+	}
+}
+
+yopi_region = {
+	areas = {
+		yoyoyopo_area
+		kodya_area
+		sunum_area
+		lomeanor_area
+	}
+}
+
+nikkea_region = {
+	areas = {
+		kilwa_area
+		balizar_area
+		lynir_area
+	}
+}
+
+shay_region = {
+	areas = {
+		hemashay_area
+		shayakau_area
+		unwirnay_area
+	}
+}
+
+lokhas_drus_region = {
+	areas = {
+		lokhas_area
+		tarsa_area
+		wol_area
+		brod_area
+		waw_area
+		monars_area
+	}
+}
+
+wer_falin_region = {
+	areas = {
+		kaish_area
+		arg_simorig_area
+		faelan_area
+	}
+}
+
+
+ralian_region = {
+	areas = {
+		horl_area
+		ruartar_area
+		kendarka_area
+		kankanian_area
+		kuiwian_area
+		bursian_area
+		kabian_area
+		lenian_area
+		klokabian_area
+	}
+}
+
+burskadekar_region = {
+	areas = {
+		burskadekdar_area
+		kuiburskad_area
+		ilia_area
+		iendiar_area
+		bursgenan_area
+	}
+}
+
+alduryaknar_region = {
+	areas = {
+		alduryaknar_area
+		ryakna_area
+		genan_area
+		thirganay_area
+	}
+}
+
+gathgykarkan_region = {
+	areas = {
+		akhana_area
+		dhath_area
+		gathgykarkan_area
+		gath_area
+	}
+}
+
+ibav_region = {
+	areas = {
+		ibav_area
+		orara_resu_area
+		fenfenen_area
+		thurl_ralian_fen_area
+		thiwara_area
+		imaldawath_area
+	}
+}
+
+hadhondrond_region = {
+	areas = {
+		khazad_dum_area
+		kapul_doraz_area
+		melek_zudun_area
+		gunud_farak_area
+		shathur_dum_area
+	}
+}
+
+
+
+
+

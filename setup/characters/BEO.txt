@@ -1,0 +1,24 @@
+﻿"BEO"={
+	country="BEO"
+	23={
+		first_name="Beorn"
+		family = c:BEO.fam:Oddrsson
+		birth_date=2950.8.25
+		culture="woodsmen"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=12
+		add_charisma=7
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+		add_trait="jealous"
+		add_trait="tough"
+		add_trait="chaste"
+		add_gold=200
+		add_popularity=70
+		c:BEO={
+			set_as_ruler=char:23
+		}
+	}
+}

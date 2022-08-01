@@ -1,0 +1,225 @@
+﻿namespace = corsair_raid_events
+
+#Generic corsair raid
+corsair_raid_events.1 = {
+	type = country_event
+	title = "corsair_raid_events.1.t"
+	desc = "corsair_raid_events.1.desc"
+	picture = corsair_ships
+	
+	left_portrait = root.current_ruler
+	
+	goto_location = scope:corsair_raid_event1_scope
+	
+	trigger = {
+		exists = c:UMB
+		c:UMB = {
+			has_land = yes
+		}
+		num_of_ships < 20
+		is_ai = no
+		religion = iluvatarism
+		any_owned_province = {
+			OR = {
+				can_build_building = port_building
+				num_of_port_building >= 1
+			}
+		}
+		NOT = {
+			has_variable = corsair_raid_event1_variable
+		}
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					can_build_building = port_building
+					num_of_port_building >= 1
+					is_coastal = yes
+				}
+				owner = root
+			}
+			save_scope_as = corsair_raid_event1_scope
+		}
+		set_variable = {
+			name = corsair_raid_event1_variable
+			days = 1825
+		}
+	}
+	
+	option = {
+		name = corsair_raid_events.1.a
+		scope:corsair_raid_event1_scope = {
+			add_province_modifier = {
+				name = raided_by_corsairs
+				duration = 180
+			}
+		}
+	}
+}
+
+#Corsair bribe
+corsair_raid_events.2 = {
+	type = country_event
+	title = "corsair_raid_events.2.t"
+	desc = "corsair_raid_events.2.desc"
+	picture = event_angry_corsairs
+	
+	left_portrait = root.current_ruler
+	
+	goto_location = scope:corsair_raid_event2_scope
+	
+	trigger = {
+		exists = c:UMB
+		c:UMB = {
+			has_land = yes
+		}
+		num_of_ships < 25
+		is_ai = no
+		religion = iluvatarism
+		any_owned_province = {
+			OR = {
+				can_build_building = port_building
+				num_of_port_building >= 1
+			}
+		}
+		NOT = {
+			has_variable = corsair_raid_event2_variable
+		}
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					can_build_building = port_building
+					num_of_port_building >= 1
+					is_coastal = yes
+				}
+				owner = root
+			}
+			save_scope_as = corsair_raid_event2_scope
+		}
+		set_variable = {
+			name = corsair_raid_event2_variable
+			days = 1825
+		}
+	}
+	
+	option = {
+		name = corsair_raid_events.2.a
+		scope:corsair_raid_event2_scope.state = {
+			add_state_modifier = {
+				name = corsair_bribe_not_paid
+				duration = 365 # 1 year
+			}
+		}
+		scope:corsair_raid_event2_scope = {
+			add_state_loyalty = -10.0
+		}
+	}
+	
+	option = {
+		name = corsair_raid_events.2.b
+		current_ruler = {
+			add_popularity = popularity_small
+		}
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 6
+		}
+	}
+}
+
+#Corsair neighbour attack
+corsair_raid_events.3 = {
+	type = country_event
+	title = "corsair_raid_events.3.t"
+	desc = "corsair_raid_events.3.desc"
+	picture = event_corsairs_attack
+	
+	left_portrait = root.current_ruler
+	right_portrait = scope:corsair_raid_event3_scope.current_ruler
+	
+	goto_location = scope:corsair_raid_event3_scope
+	
+	trigger = {
+		exists = c:UMB
+		c:UMB = {
+			has_land = yes
+		}
+		num_of_ships < 30
+		is_ai = no
+		religion = iluvatarism
+		any_neighbour_country = {
+			NOT = { war_with = root }
+			religion = iluvatarism
+			opinion = {
+				target = root
+				value > 5
+			}
+			any_owned_province = {
+				OR = {
+					can_build_building = port_building
+					num_of_port_building >= 1
+				}
+			}
+		}
+		NOT = {
+			has_variable = corsair_raid_event3_variable
+		}
+	}
+	
+	immediate = {
+		random_neighbour_country = {
+			limit = {
+				NOT = { war_with = root }
+				religion = iluvatarism
+				opinion = {
+					target = root
+					value > 5
+				}
+				any_owned_province = {
+					OR = {
+						can_build_building = port_building
+						num_of_port_building >= 1
+					}
+				}
+			}
+			save_scope_as = corsair_raid_event3_scope
+		}
+		set_variable = {
+			name = corsair_raid_event3_variable
+			days = 1825
+		}
+	}
+	
+	option = { #Give neighbour money
+		name = corsair_raid_events.3.a
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 6
+		}
+		add_tyranny = -2
+		scope:corsair_raid_event3_scope = {
+			add_opinion = {
+				modifier = helped_after_corsairs
+				target = root
+			}
+		}
+	}
+	
+	option = { #Don't help neighbour
+		name = corsair_raid_events.3.b
+		current_ruler = {
+			add_popularity = subtract_popularity_small
+		}
+		scope:corsair_raid_event3_scope = {
+			add_opinion = {
+				modifier = ignored_after_corsairs
+				target = root
+			}
+		}
+	}
+}

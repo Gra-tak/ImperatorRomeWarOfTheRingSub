@@ -1,0 +1,14 @@
+﻿gondor_army_setup = {
+	capital_scope_governorship = {
+		raise_legion = {
+			create_unit = {
+				name = "Army of Gondor"
+				location = p:1300 #Minas Tirith
+				sub_unit = dunedain_infantry
+				save_scope_as = legion_scope
+				add_subunit = dunedain_infantry
+				}
+			}
+		}
+		}
+			

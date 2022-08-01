@@ -1,0 +1,243 @@
+﻿#magic
+mana_sv = { #used for localization only
+	value = var:mana
+}
+
+max_mana_sv = { #max mana of character, add all new modifiers here
+	value = 25
+	if = {
+		limit = {
+			has_trait = 10_sauron
+		}
+		add = 50
+	}
+	if = {
+		limit = {
+			has_trait = 20_sauron
+		}
+		add = 70
+	}
+	if = {
+		limit = {
+			has_trait = 30_sauron
+		}
+		add = 90
+	}
+	if = {
+		limit = {
+			has_trait = 40_sauron
+		}
+		add = 110
+	}
+	if = {
+		limit = {
+			has_trait = 50_sauron
+		}
+		add = 130
+	}
+	if = {
+		limit = {
+			has_trait = 60_sauron
+		}
+		add = 150
+	}
+	if = {
+		limit = {
+			has_trait = 70_sauron
+		}
+		add =180
+	}
+	if = {
+		limit = {
+			has_trait = 80_sauron
+		}
+		add = 200
+	}
+	if = {
+		limit = {
+			has_trait = 90_sauron
+		}
+		add = 210
+	}
+	if = {
+		limit = {
+			has_trait = 100_sauron
+		}
+		add = 240
+	}
+	if = {
+		limit = {
+			has_trait = vilya
+		}
+		add = 125
+	}
+	if = {
+		limit = {
+			has_trait = nenya
+		}
+		add = 100
+	}
+	if = {
+		limit = {
+			has_trait = narya
+		}
+		add = 100
+	}
+	if = {
+		limit = {
+			has_trait = novice_magic_user
+		}
+		add = 10
+	}
+	if = {
+		limit = {
+			has_trait = trained_magic_user
+		}
+		add = 20
+	}
+	if = {
+		limit = {
+			has_trait = expert_magic_user
+		}
+		add = 30
+	}
+	if = {
+		limit = {
+			has_trait = master_magic_user
+		}
+		add = 40
+	}
+	if = {
+		limit = {
+			has_trait = legendary_magic_user
+		}
+		add = 50
+	}
+}
+
+mana_regen_sv = { #mana regen, add all new modifiers here
+	value = 1
+	if = {
+		limit = {
+			has_trait = 10_sauron
+		}
+		add = 2
+	}
+	if = {
+		limit = {
+			has_trait = 20_sauron
+		}
+		add = 2.2
+	}
+	if = {
+		limit = {
+			has_trait = 30_sauron
+		}
+		add = 2.4
+	}
+	if = {
+		limit = {
+			has_trait = 40_sauron
+		}
+		add = 2.6
+	}
+	if = {
+		limit = {
+			has_trait = 50_sauron
+		}
+		add = 2.8
+	}
+	if = {
+		limit = {
+			has_trait = 60_sauron
+		}
+		add = 3.0
+	}
+	if = {
+		limit = {
+			has_trait = 70_sauron
+		}
+		add = 3.2
+	}
+	if = {
+		limit = {
+			has_trait = 80_sauron
+		}
+		add = 3.4
+	}
+	if = {
+		limit = {
+			has_trait = 90_sauron
+		}
+		add = 3.6
+	}
+	if = {
+		limit = {
+			has_trait = 100_sauron
+		}
+		add = 3.8
+	}
+}
+
+mana_channeled_sv = { #can be used for long-term spells that drain mana while active, resulting value subtracted from mana regen
+	value = 0
+	if = {
+		limit = {
+			has_variable = maintaining_dark_wards
+		}
+		add = 0.1
+		multiply = var:maintaining_dark_wards
+	}
+}
+
+mana_percent_sv = { #used for mana bar
+	value = var:mana
+	multiply = 100
+	divide = this.max_mana_sv
+	floor = yes
+}
+
+#can be used for scaling spell effects by setting something like this.magic_power_sv or scope:target.magic_power_sv as a value
+#for scaling modifiers use:
+#add_TYPE_modifier_stack = { MOD = modifier_name NUM = scope:saved_caster.magic_power_sv DUR = -1 }
+#TYPE is character/country/province/state/unit
+#if target already has this modifier it is deleted before applying new stack
+magic_power_sv = { 
+	value = 1
+	if = {
+		limit = {
+			has_trait = novice_magic_user
+		}
+		add = 1
+	}
+	if = {
+		limit = {
+			has_trait = trained_magic_user
+		}
+		add = 2
+	}
+	if = {
+		limit = {
+			has_trait = expert_magic_user
+		}
+		add = 3
+	}
+	if = {
+		limit = {
+			has_trait = master_magic_user
+		}
+		add = 4
+	}
+	if = {
+		limit = {
+			has_trait = legendary_magic_user
+		}
+		add = 5
+	}
+	if = {
+		limit = {
+			has_trait = 100_sauron
+		}
+		add = 1
+	}
+}

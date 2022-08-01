@@ -1,0 +1,92 @@
+﻿frontal_assault = {
+	use_as_default = yes
+	navy = yes
+
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	harassment = 0.2
+	close_ranks = -0.1
+
+	effective_composition = {
+		cog = 0.5
+		galley = 1.0
+		warship = 0.0
+		swanship = 1.0
+		corsair = 2.0
+	}
+}
+
+naval_envelopment = {
+	enable = yes
+	navy = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	close_ranks = 0.2
+	probing_attack = -0.1
+	
+	effective_composition = {
+		cog = 0.0
+		galley = 1.0
+		warship = 1.0
+		swanship = 0.0
+		corsair = 1.0
+	}
+}
+
+close_ranks = {
+	enable = yes
+	navy = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	frontal_assault = 0.2
+	naval_envelopment = -0.1
+	
+	effective_composition = {
+		cog = 0.0
+		galley = 0.5
+		warship = 1.0
+		swanship = 1.0
+		corsair = 1.0
+	}
+}
+
+harassment = {
+	enable = yes
+	navy = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	probing_attack = 0.2
+	frontal_assault = -0.1
+	
+	effective_composition = {
+		cog = 1.0
+		galley = 1.0
+		warship = 0.0
+		swanship = 1.0
+		corsair = 0.0
+	}
+}
+
+
+probing_attack = {
+	enable = yes
+	navy = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	naval_envelopment = 0.2
+	harassment = -0.1
+	
+	effective_composition = {
+		cog = 1.0
+		galley = 0.0
+		warship = 1.0
+		swanship = 0.0
+		corsair = 0.0
+	}
+}

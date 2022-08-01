@@ -1,0 +1,242 @@
+﻿#ELVES
+
+house_of_gil_galad = { #
+	type = status
+	
+	prominence = 20
+	
+	monthly_character_popularity = 0.1
+	country = {
+		subject_opinions = 25
+		subject_loyalty = 25
+		monthly_legitimacy = 2.0
+		global_defensive = 0.1
+	}
+	unit = {
+		assault_ability = 0.1
+	}
+}
+
+house_of_elrond = { #
+	type = status
+	
+	prominence = 10
+	
+	monthly_character_popularity = 0.1
+
+	
+	country = {
+		subject_opinions = 15
+		subject_loyalty = 15
+		monthly_legitimacy = 2.0
+		global_defensive = 0.2
+	happiness_for_wrong_culture_group_modifier = 0.25
+	}
+	unit = {
+		discipline = 0.3
+	}
+}
+
+house_of_galadriel = { #
+	type = status
+	
+	prominence = 15
+	
+	monthly_character_popularity = 0.1
+	country = {
+		subject_opinions = 15
+		subject_loyalty = 15
+		monthly_legitimacy = 2.0
+		global_defensive = 0.2
+	}
+}
+
+house_of_cirdan = { #
+	type = status
+	
+	prominence = 10
+	
+	monthly_character_popularity = 0.1
+	country = {
+		subject_opinions = 15
+		subject_loyalty = 15
+		monthly_legitimacy = 2.0
+		happiness_for_wrong_culture_group_modifier = 0.25
+	}
+}
+
+elf_lord = { #
+	type = status
+	
+	prominence = 5
+	
+	monthly_character_popularity = 0.3
+	monthly_corruption = -1.0
+	character_loyalty = 50
+	
+	unit = {
+		discipline = 0.25
+	}
+	
+	country = {
+		subject_opinions = 10
+		subject_loyalty = 10
+		monthly_legitimacy = 1.0
+		global_defensive = 0.1
+		happiness_for_wrong_culture_group_modifier = 0.15
+	}
+}
+
+#DUNEDAIN
+
+blood_of_isildur = { #
+	type = status
+	
+	prominence = 20
+	
+	monthly_character_popularity = 0.1
+	
+	country = {
+		subject_opinions = 15
+		subject_loyalty = 75
+		monthly_legitimacy = 2.0
+		global_defensive = 0.1
+		happiness_for_wrong_culture_group_modifier = 0.25
+	}
+	unit = {
+		global_defensive = 0.3
+	}
+}
+
+blood_of_anarion = { #
+	type = status
+	
+	prominence = 20
+	
+	monthly_character_popularity = 0.1
+	
+	country = {
+		subject_opinions = 15
+		subject_loyalty = 25
+		monthly_legitimacy = 2.0
+		global_defensive = 0.1
+		happiness_for_wrong_culture_group_modifier = 0.25
+	}
+	unit = {
+		assault_ability = 0.1
+	}
+}
+
+blood_of_aldarion = { #Heirs of the third son of Earendur who inherited Rhudaur
+	type = status
+	
+	prominence = 20
+	
+	monthly_character_popularity = 0.1
+	
+	country = {
+		subject_opinions = 15
+		subject_loyalty = 15
+		monthly_legitimacy = 1.0
+		global_defensive = 0.1
+		happiness_for_wrong_culture_group_modifier = 0.25
+	}
+	unit = {
+		assault_ability = 0.1
+	}
+}
+
+blood_of_thorondur = { #Heirs of the second son of Earendur who inherited Cardolan
+	type = status
+	
+	prominence = 20
+	
+	monthly_character_popularity = 0.1
+	
+	country = {
+		subject_opinions = 15
+		subject_loyalty = 15
+		monthly_legitimacy = 1.0
+		global_defensive = 0.1
+		happiness_for_wrong_culture_group_modifier = 0.25
+	}
+	unit = {
+		assault_ability = 0.1
+	}
+}
+
+house_of_hurin = { #Stewards of Gondor
+	type = status
+	
+	prominence = 15
+	
+	monthly_character_popularity = 0.1
+	
+	country = {
+		subject_opinions = 25
+		subject_loyalty = 25
+		monthly_legitimacy = 0.5
+		global_defensive = 0.1
+		happiness_for_wrong_culture_group_modifier = 0.10
+	}
+	}
+	
+prince_of_numenor = { #Rulers of Umbar
+	type = status
+	
+	prominence = 10
+	
+	monthly_character_popularity = 0.1
+	
+	unit = {
+		#discipline = 0.25
+		#land_morale = 0.25
+		loyalty_gain_chance = 0.02
+	}
+	
+	country = {
+		subject_opinions = 10
+		subject_loyalty = 10
+		monthly_legitimacy = 0.5
+		stability_monthly_change = 0.1
+		happiness_for_wrong_culture_group_modifier = 0.10
+	}
+}
+
+saruman = { #
+	type = status
+	
+	prominence = 10
+	
+	monthly_character_popularity = 0.5
+	
+	unit = {
+		#discipline = 0.75
+		land_morale = 0.3
+		loyalty_gain_chance = 0.02
+	}
+	
+	country = {
+		subject_opinions = 10
+		subject_loyalty = 10
+		monthly_legitimacy = 0.5
+		stability_monthly_change = 0.5
+		happiness_for_wrong_culture_group_modifier = 0.10
+	}
+}
+#DWARVES
+
+line_of_durin = { #
+	type = status
+	
+	prominence = 20
+	
+	monthly_character_popularity = 0.1
+	country = {
+		subject_opinions = 25
+		monthly_legitimacy = 2.0
+		global_defensive = 0.3
+	}
+}
+
+#EVIL

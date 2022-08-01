@@ -1,0 +1,83 @@
+﻿haldadian_group = {
+	#haldadian
+	
+	levy_template = levy_haldadian
+	
+	primary = light_infantry
+	second = heavy_infantry
+	flank = archers
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+	
+	color = hsv { 0.04 0.9 0.4 }
+
+	male_names = { 
+			Adda Adwyn Aeddan Ailill Ainmere Alan Alisander Alwyn Amalgaid Amlaib Anarawd Andras Aneurin Annun Ardgar Argel Arod Art Artgal Arthfael Arthwr Arthws Artur Arwyl Asa Asaph Astulph Astulphis Augaire Awst Bangar Barri Bedwyr Belyn Blathmac Bleddyn Bledhun Boduan Bowen Bran Brandub Branwaladr Brian Britou Brochfael Brochmael Brwt Brwyn Bryan Brychan Br_a_n Broen Buldar Baetan Bain Cada Cadell Cadfan Cadoc Cadugan Cadwal Cadwaladr Cadwallon Cadwgan Cai Caid Cain Caradoc Carlus Caron Casnar Caswallawn Cathal Cathalan Cawdaf Cedig Cedwyn Cedyfawr Celi Cellach Celun Ceneu Cenn_Faelad Cennetig Cerball Ceredig Ceri Cinaed Coel Coirpre Colman Conall Conchobar Congalach Conn Constantin Cormac Crimthann Crundmael Custennin Cyllin Cynan Cynddelw Cynddylan Cynfarch Cynfawr Cynfeddw Cynfelyn Cynfyn Cyngyn Cynwallon Cynyr Dabid Dafrig Dafydd Dai Ddraigiog Deheuwant Deiniol Demman Dewi Diarmait Dogfael Domnall Donnchad Donncuan Drystan Dylan Dylwyn Dein Dunchad Dungal Dunlaing Echmarcach Edern Ednyfed Ednywain Edwyn Einion Elis Elisedd Elud Elystan Emrys Erp Ewyas Eogan Fawlant Fedelmid Fedlimid Feidlimid Fergal Fergus Ffilip Ffriog Ffwdwr Fiachnae Fingen Fionn Fionnsnechtae Flaithbertach Flann Fogartach Fragan Fraid Fychan Fyrsil Faelbe Faelan Gabran Gamon Geraint Gerallt Gethen Gethin Gilla_Brigte Gilla_Coluim Gilla_Comgain Gilla_na_Naem Gilla_Patraic Gilla_Ruad Gilla_iosa Glundur Glynn Gofannon Goibniu Gorbadoc Goronu Goronwy Gronw Gruffydd Gwerthefyr Gwerthern Gwidyr Gwilym Gwrgant Gwydr Gwyn Gwynwynwyn Haldad Hamon Hasad Haul Hedhwyn Hopcun Hywel Iacob Iago Ianto Idwal Iestyn Ieuan Ifor Ilar Indrechtach Inyr Io Iolo Iorwerth Ithel Iwan Liam Lleu Lleudd Llyr Llywarch Llywelyn Lochlann Loingsech Lorcan Luarch Lugaid Lugdagnir Lugedur Lugh Lun Lyfylla Leolyn Loeguire Mabon Macdoc Macsen Madoc Mael Maelgwn Magnus Maredudd Math Mathgamain Matudan Mawrig Meilyr Meirion Melfyn Merfyn Meriadoc Meurig Morgan Morien Morydd Mostun Muirchertach Muiredach Murchad Mael_Brigte Mael_Ciarain Mael_Duin Mael_Martain Mael_Maedoc Mael_Morda Mael_Patraic Mael_Ruanaid Mael_Sechlainn Mael_Sechnaill Mael_iosa Nai Niall Nye Ogma Owain Padern Padrig Pandoff Parru Pasgen Pawl Pedr Penlyn Penrod Peredyr Pilib Pryderi Publig Pwydion Pwyll Pyr Patraic Pol Rhainallt Rhicert Rhirid Rhobert Rhodri Rhun Rhydderch Rhydog Rhys Ricard Rioc Ruaidri Ruarc Roen Sadoc Sawyl Seferus Segamain Seisyll Selbach Seoan Sean Siam Sion Siorus Siwauna Sonnagh Sors Steffen Sufulch Sulien Searl Tadg Taf Taran Tegonwy Tegwyd Teilo Tewdwr Tigernan Toirrdelbach Tomos Tomas Trahaearn Tref Trehearn Tudwal Tudwallon Tydy Tyfodedd Tysilio Tuathal Ualgarg Ualtar Uilliam Urien Wynfawr Wynfyrdd 
+
+	}
+	
+	female_names = {
+			Addiena Aelwyd Aeronwen Aeronwy Affraic Aibilin Aignes Ailbhe Alis Almedha Alys Aneria Angharad Annes Annest Annwyl Annabla Anowed Anwen Arddyn Arianrhod Ariene Aibinn Aife Ben_Muman Ben_Mide Ben_Ulad Bethan Betrus Blair Blodwen Brigid Bronwen Buddug Bebinn Cacht Caissene Caitilin Cathan Catrin Catriona Ceridwen Cerie Cerys Cicely Clarisant Cobflaith Condal Cristin Cristina Deirdre Delwen Delyth Denis Der_Lugdach Derborgaill Derbail Dervorgilla Dub_Dil Dubchoclaigh Dwynwen Dwywai Dyddgu Echrad Efa Eifiona Eilionora Eiluned Elaine Elen Elinion Elinor Ellyn Elmar Enid Enwys Eres Essyllt Euronwy Fefynn Ffelis Ffion Fflur Ffraid Fine Finnguala Gaenora Gemma Glynys Gormflaith Gormlaith Grainne Guladus Gwen Gwenaewen Gwenasedd Gwenfrewwi Gwenhwyfar Gwenllian Gwenwyn Gwerfyl Gwladys Gwynna Haer Hawis Hefyna Heledd Hellawes Heulwen Hunydd Hywela Idele Ilud Imag Isabel Iseult Lann Lasairfiona Lerthan Llecci Lleigy Lleuca Lleucu Louri Lowry Lucia Luned Lunwen Mabyn Maches Madrun Maelrys Mair Mali Mallt Mandua Marared Marchell Margred Marwenna Mauda Mawd Medb Melisant Modron Morganna Morien Morn Morwen Munfaeril Myfanwy Myfe Mael_Muire Maelona Maire Mairead Mairgred Mor Nest Nesta Nia Nona Nuala Olwen Owena Prawst Ragnell Rhiain Rhiainfelt Rhiannon Rhianu Rhonwen Rois Sadb Sannant Sara Scathach Senena Seonaid Seren Sibyl Sioban Sioned Siora Sisuile Siwan Sian Slaine Susanna Sebdann Tafyn Taileflaith Tangwystl Usbail Wenda Wunne Ysbail Aine Eua Orlaith Una			
+	}
+	
+	family = {
+			map_Wynfawr
+			map_Inyr
+			map_Bain
+			map_Rioc
+			map_Boduan
+			map_Fraid
+			map_Cada
+			map_Bangar
+			map_Cadfan
+			map_Cynfawr
+			map_Pyr
+			map_Merfyn
+			map_Fragan
+			map_Cormac
+			map_Bran
+			map_Sean
+			map_Cennetig
+			map_Tadg
+			map_Tigernan
+			map_Asa
+			map_Adwyn
+			map_Matudan
+			map_Macsen
+			map_Gamon
+			map_Fyrsil
+			map_Urien
+			map_Gethen
+			map_Dein
+			map_Tref
+			map_Luarch
+			map_Lun
+			map_Dafrig
+			map_Lorcan
+			map_Morda
+	}
+	
+	culture = {
+		dunlending = {}
+		calending = {}
+		druwaithing = {} #fisher folk
+		daoine = {} #Saralainn Inhabitants
+		andrasting = {}
+		eredrim = {}  # Mountains Clans of Gondor before Numenorean conquest
+		ethirfolk = {} # Inhabitants of Coastl Belfalas/lebennin/Harondor before Numenorean conquests
+		ishmalogim = {} #people of the Southern Anduin in Western Gondor before the arrival of Numenoreans, I.e. the oathbreakers
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	graphical_culture = celtic_gfx
+	ethnicities = {
+		10 = celtic
+	}
+	
+}
+

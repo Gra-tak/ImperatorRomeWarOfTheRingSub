@@ -1,0 +1,55 @@
+﻿"UMB"={
+	country="UMB"
+
+	13={
+		first_name="Sakalthor"
+		family = c:UMB.fam:Arkhoradun
+		birth_date=2900.9.1
+		culture="black_numenorean"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=9
+		add_charisma=9
+		add_finesse=8
+		add_zeal=9
+		no_traits=yes
+		add_trait="jealous"
+		add_trait="tough"
+		add_trait="prince_of_numenor"
+		add_trait="crafty"
+		add_trait="cruel"
+		add_gold=200
+		add_popularity=60
+		c:UMB={
+			set_as_ruler=char:13
+		}
+		dna="CvYK9gAAu1oOgA6AAqYCpgKIAogCggKCAm4CbgKYApgCdgJ2Ak0CTQJ9An0CiwKLApcClwKMAowCjgKOAoQChAKIAogCHAIcAngCeAKRApECcAJwAmUCZQJeAl4CmAKYAmoCagKQApACdwJ3AnsCewJxAnECfQJ9AnoCegKcApwCfwJ/Ao0CjQKdAp0CjwKPAscCxwJ5AnkCcQJxAlMCUwKEAoQCegJ6AnoCegKcApwCbAJsAm4CbgKFAoUCgAKAAqECoQKDAoMClAKUAlMCUwJcAlwCWwJbAn8CfwJ3AncCnAKcAqQCpALgAuABdwF3AWMBYwElASUAgACAAScBJwBQAFAArQCtAUMBQwFkAWQDdAN0AVEBUQE2ATYACAAIAWABYALMAswAtAC0AS4BLgDGAMYCGwIbAVkBWQFeAV4A4wDjAIsAiwA0ADQBcwFzAq8CrwFLAUsAGAAYAAMAAwBgAGADAAMAACEAIQEEAQQEOwQ7AH8AfwIDAgMWABYAAFQAVAwVDHAUphCmEf8ROAAAAAAAAAAAAAAAAAAAAAA="
+	}
+	
+14={
+		first_name="Aglaran"
+		family = c:UMB.fam:Arkhoradun
+		birth_date=2965.9.1
+		culture="black_numenorean"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=22
+		add_charisma=9
+		add_finesse=8
+		add_zeal=9
+		no_traits=yes
+		add_trait="energetic"
+		add_trait="tough"
+		add_trait="prince_of_numenor"
+		add_trait="polymath"
+		add_trait="cruel"
+		add_gold=200
+		add_popularity=60
+		father = char:13
+		dna="/wDVjwICv3YAAAAAAqYCpgJ0AnQCcwJzAnUCdQKJAokCgQKBAmwCbAJ6AnoCiQKJApACkAKMAowCkQKRApgCmAKOAo4CVAJUAnMCcwKrAqsCZgJmAlACUAJhAmEClQKVAowCjAKNAo0CeQJ5AnoCegKIAogCZwJnAmYCZgKhAqECfgJ+ApACkAKlAqUCdAJ0Ar8CvwKAAoACbQJtAlECUQJyAnICeAJ4AmcCZwKjAqMCdAJ0AnECcQKHAocCggKCAqECoQKBAoECfQJ9Ak4CTgJxAnECYwJjAmwCbAJ9An0ClAKUAr8CvwJ0AnQBWgFaASIBIgE6AToBcwFzARkBGQCgAKAAGAAYABcAFwFHAUcDPQM9ASgBKAFkAWQA9wD3AS0BLQC9AL0ATwBPAGwAbADhAOEBdwF3As4CzgI5AjkAhwCHACoAKgLpAukBVgFWADUANQDlAOUA7wDvAMwAzAAxADEDMgMyAF8AXwFlAWUBAAG8AH8AfwNBA0EWABaVAD8APwyKDP8UihCKEf8RIgAAAAAAAAAAAAAAAAAAAAA="
+	}
+	
+	
+}
+	
+}

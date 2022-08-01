@@ -1,0 +1,181 @@
+﻿namespace = br_birth
+
+#Assigning the bloodline and racial traits
+br_birth.1 = { #
+	type = character_event
+	title = "br_birth.1.t"
+	desc = "br_birth.1.desc"
+	picture = greek_court
+	hidden = yes
+	
+	left_portrait = root
+	
+	trigger = {
+		always = yes
+	}
+	
+	
+	immediate = {
+		scope:newborn = {
+			save_scope_as = newborn
+		}
+		
+	}
+	
+	option = {
+		name = "br_birth.1.a"
+		scope:newborn = {
+		if = {
+			limit = {
+				exists = father
+					father = {
+					OR = {
+						has_trait = blood_of_isildur
+						has_trait = blood_of_anarion
+						has_trait = line_of_durin
+						has_trait = blood_of_aldarion
+						has_trait = blood_of_thorondur
+					}
+				}
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = blood_of_isildur
+					}
+					NOT = { has_trait = blood_of_thorondur }
+					NOT = { has_trait = blood_of_aldarion }
+					NOT = { has_trait = blood_of_isildur }
+					NOT = { has_trait = blood_of_anarion }
+				}
+				add_trait = blood_of_isildur
+			}
+			else_if = {
+				limit = {
+					father = {
+						has_trait = blood_of_anarion
+					}
+					NOT = { has_trait = blood_of_thorondur }
+					NOT = { has_trait = blood_of_aldarion }
+					NOT = { has_trait = blood_of_isildur }
+					NOT = { has_trait = blood_of_anarion }
+				}
+				add_trait = blood_of_anarion
+			}
+			else_if = {
+				limit = {
+					father = {
+						has_trait = line_of_durin
+					}
+					NOT = { has_trait = blood_of_thorondur }
+					NOT = { has_trait = blood_of_aldarion }
+					NOT = { has_trait = blood_of_isildur }
+					NOT = { has_trait = blood_of_anarion }
+				}
+				add_trait = line_of_durin
+			}
+			else_if = {
+				limit = {
+					father = {
+						has_trait = blood_of_aldarion
+					}
+					NOT = { has_trait = blood_of_thorondur }
+					NOT = { has_trait = blood_of_aldarion }
+					NOT = { has_trait = blood_of_isildur }
+					NOT = { has_trait = blood_of_anarion }
+				}
+				add_trait = blood_of_aldarion
+			}
+			else_if = {
+				limit = {
+					father = {
+						has_trait = blood_of_thorondur
+					}
+					NOT = { has_trait = blood_of_thorondur }
+					NOT = { has_trait = blood_of_aldarion }
+					NOT = { has_trait = blood_of_isildur }
+					NOT = { has_trait = blood_of_anarion }
+				}
+				add_trait = blood_of_thorondur
+			}
+			}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+				OR = {
+						has_trait = blood_of_isildur
+						has_trait = blood_of_anarion
+						has_trait = line_of_durin
+					}
+				}
+			}
+			if = {
+				limit = {
+					mother = {
+						has_trait = blood_of_isildur
+					}
+					NOT = { has_trait = blood_of_thorondur }
+					NOT = { has_trait = blood_of_aldarion }
+					NOT = { has_trait = blood_of_isildur }
+					NOT = { has_trait = blood_of_anarion }
+				}
+				add_trait = blood_of_isildur
+			}
+			else_if = {
+				limit = {
+					mother = {
+						has_trait = blood_of_anarion
+					}
+					NOT = { has_trait = blood_of_thorondur }
+					NOT = { has_trait = blood_of_aldarion }
+					NOT = { has_trait = blood_of_isildur }
+					NOT = { has_trait = blood_of_anarion }
+				}
+				add_trait = blood_of_anarion
+			}
+			else_if = {
+				limit = {
+					mother = {
+						has_trait = line_of_durin
+					}
+					NOT = { has_trait = blood_of_thorondur }
+					NOT = { has_trait = blood_of_aldarion }
+					NOT = { has_trait = blood_of_isildur }
+					NOT = { has_trait = blood_of_anarion }
+				}
+				add_trait = line_of_durin
+			}
+			else_if = {
+				limit = {
+					mother = {
+						has_trait = blood_of_aldarion
+					}
+					NOT = { has_trait = blood_of_thorondur }
+					NOT = { has_trait = blood_of_aldarion }
+					NOT = { has_trait = blood_of_isildur }
+					NOT = { has_trait = blood_of_anarion }
+				}
+				add_trait = blood_of_aldarion
+			}
+			else_if = {
+				limit = {
+					mother = {
+						has_trait = blood_of_thorondur
+					}
+					NOT = { has_trait = blood_of_thorondur }
+					NOT = { has_trait = blood_of_aldarion }
+					NOT = { has_trait = blood_of_isildur }
+					NOT = { has_trait = blood_of_anarion }
+				}
+				add_trait = blood_of_thorondur
+			}
+		}
+}
+	}
+	
+}
+
+
+
+	

@@ -1,0 +1,44 @@
+﻿maia_group = {
+	
+	levy_template = levy_maia
+	
+	primary = light_infantry
+	second = heavy_cavalry
+	flank = horse_archers
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+	
+	color = hsv { 0.13 0.35 0.95 }
+
+	male_names = {
+		X
+	}
+	female_names = {
+		Y
+	}
+
+	nickname = {
+	}
+	
+	family = {
+		X
+	}
+	
+	
+	culture = {
+		maia = {}
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	
+	
+	graphical_culture = german_gfx
+	ethnicities = {
+		10 = germanic
+	}
+}

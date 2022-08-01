@@ -1,0 +1,226 @@
+﻿orc_philosophy = {
+	color = hsv { 1.1 1 0.5 }
+	image = orc_philosophy
+
+	allow = {
+		trigger_if = {
+			limit = { country_culture_group = orcs_group }
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			country_culture_group = orcs_group
+		}
+		trigger_else = {
+			custom_tooltip = {
+				text = integrated_any_orc_culture
+				any_country_culture = {
+					is_integrated = yes
+					this.culture.culture_group = culture_group:orcs_group
+				}
+			}
+		}
+	}
+
+####################
+
+	orc_civic_path_1 = { ###
+		modifier = {
+			global_slaves_output = 0.1
+			enslavement_efficiency = 0.1
+		}
+		icon = orc_civic_path_1
+		requires = {}
+		on_activate = {
+			ordered_owned_province = {
+				limit = {
+					dominant_province_culture_group = root.culture_group
+				}
+				alternative_limit = {
+					always = yes
+				}
+				order_by = {
+					value = 0
+					add = population_cap
+					subtract = total_population
+				}
+				max = 1
+				create_2_slaves_effect = yes
+			}	
+		}
+	}
+	
+	orc_civic_path_2 = { ###
+		modifier = {
+			happiness_for_same_religion_modifier = 0.1
+			enslavement_efficiency = 0.1
+		}
+		icon = orc_civic_path_2
+		requires = {orc_civic_path_1}
+		on_activate = {
+			add_legitimacy = 10
+			current_ruler = {
+				add_charisma = 1
+			}
+		}
+	}
+	
+	orc_civic_path_3 = { ###
+		modifier = {
+			omen_power = 0.2
+			enslavement_efficiency = 0.1
+		}
+		icon = orc_civic_path_3
+		requires = {orc_civic_path_2}
+	}
+
+	orc_civic_path_4 = { ###
+		modifier = {
+			hostile_attrition = 0.2
+		}
+		icon = orc_civic_path_4
+		requires = {orc_civic_path_3}
+	}
+
+	orc_civic_path_5 = { ###
+		modifier = {
+			global_defensive = 0.15
+		}
+		icon = orc_civic_path_5
+		requires = {orc_civic_path_4}
+	}
+	
+
+####################
+
+	orc_infantry_path_1 = { ###
+		modifier = {
+			orc_infantry_offensive = 0.15
+			war_exhaustion = -0.01
+		}
+		icon = orc_infantry_path_1
+		requires = {}
+	}
+	
+	orc_infantry_path_2 = { ###
+		modifier = {
+			uruk_infantry_offensive = 0.1
+			uruk_crossbows_offensive = 0.1
+		}
+		icon = orc_infantry_path_2
+		requires = {orc_infantry_path_1}
+		on_activate = {
+			ordered_owned_province = {
+				limit = {
+					dominant_province_culture_group = root.culture_group
+				}
+				alternative_limit = {
+					always = yes
+				}
+				order_by = {
+					value = 0
+					add = population_cap
+					subtract = total_population
+				}
+				max = 1
+				create_2_slaves_effect = yes
+			}	
+		}
+	}
+	
+	orc_infantry_path_3 = { ###
+		modifier = {
+			uruk_heavy_infantry_defensive = 0.1
+			orc_infantry_defensive = 0.1
+		}
+		enable_tactic = hit_and_run_tactics
+		icon = orc_infantry_path_3
+		requires = {orc_infantry_path_2}
+	}
+	
+	orc_infantry_path_4 = { ###
+		modifier = {
+			land_unit_attrition = -0.15
+		}
+		icon = orc_infantry_path_4
+		requires = {orc_infantry_path_3}
+	}
+	
+	orc_infantry_path_5 = { ###
+		modifier = {
+			enslavement_efficiency = 0.2
+			global_slaves_output = 0.1
+		}
+		icon = orc_infantry_path_5
+		requires = {orc_infantry_path_2}
+		on_activate = {
+			ordered_owned_province = {
+				limit = {
+					dominant_province_culture_group = root.culture_group
+				}
+				alternative_limit = {
+					always = yes
+				}
+				order_by = {
+					value = 0
+					add = population_cap
+					subtract = total_population
+				}
+				max = 1
+				create_2_slaves_effect = yes
+			}	
+		}
+	}
+
+	orc_infantry_path_6 = { ###
+		modifier = {
+			uruk_heavy_infantry_defensive = 0.1
+			orc_infantry_defensive = 0.1
+		}
+		icon = orc_infantry_path_6
+		requires = {orc_infantry_path_5}
+	}
+	
+	orc_infantry_path_7 = { ###
+		modifier = {
+			global_slaves_output = 0.1
+		}
+		icon = orc_infantry_path_7
+		requires = {orc_infantry_path_6}
+		on_activate = {
+			custom_tooltip = "create_high_martial_rising_star"
+			hidden_effect = {
+				create_character = {
+					add_martial = 8
+					add_trait = steadfast
+				}
+			}
+		}
+	}
+
+####################
+
+	orc_cavalry_path_1 = { ###
+		modifier = {
+			warg_riders_offensive = 0.2
+		}
+		icon = orc_cavalry_path_1
+		requires = {orc_infantry_path_1}
+	}
+	
+	orc_cavalry_path_2 = { ###
+		modifier = {
+			warg_riders_morale = 0.15
+		}
+		icon = orc_cavalry_path_2
+		requires = {orc_cavalry_path_1}
+	}
+	
+	orc_cavalry_path_3 = { ###
+		modifier = {
+			warg_riders_discipline = 0.15
+		}
+		icon = orc_cavalry_path_3
+		requires = {orc_cavalry_path_2}
+	}
+	
+}

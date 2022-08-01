@@ -1,0 +1,20 @@
+﻿is_caster = {
+	c:MOR = {
+		is_target_in_variable_list = {
+			name = casters
+			target = prev
+		}
+	}
+}
+
+has_mana = {
+	trigger_if = {
+		limit = {
+			has_variable = mana
+		}
+		var:mana >= $COST$
+	}
+	trigger_else = {
+		always = no
+	}
+}

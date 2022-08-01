@@ -1,0 +1,98 @@
+﻿halfling_group = {
+
+	levy_template = levy_halfling
+	
+	primary = halfling_infantry
+	second = halfling_infantry
+	flank = halfling_infantry
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+	
+	color = hsv { 0.31 0.14 0.75 }
+	
+	male_names = {
+		Adalbert Adalgar Adalgrim Adelard Andwise Andy Anson Balbo Basso Bert Bilbo Bill Bingo Blancho Blanco Bob Bodo Bosco Bowman Briffo Bruno Bucca Buffo Bungo Carl Cotman Cottar Daddy Drogo Dudo Deagol Ed Edmund Elfstan Erling Everard Falco Fastolph Fastred Fatty Ferdibrand Ferdinand Filibert Flambard Folco Fosco Fredegar Frodo Gaffer Griffo Gruffo Gundabald Gundahad Gundahar Gundolpho Halfast Halfred Hamfast Hamson Harding Hending Heribald Herugar Hildibrand Hildifons Hildigard Hildigrim Hob Holfast Holman Hugo Isembard Isembold Isengar Isengrim Jago Jolly Largo Longo Lotho Marcho Merry Milo Minto Moro Mosco Mungo Nibs Nick Nob Odo Odovacar Olo Otho Otto Peregrin Pippin Polo Ponto Porto Posco Reginard Robin Rollo Rudibert Rudigar Rudolph Rufus Sam Samwise Sancho Sigismund Smeagol Ted Theobald Tobold Togo Tolman Tom Tosto Trotter Uffo Vigo Wilcome Wilibald Wilimar Will Willie Wiseman 
+
+	}
+	female_names = {
+		Adaldrida Adamanta Alfrida Amaranth Amethyst Angelica Asphodel Belba Bell Belladonna Berylla Camellia Celandine Chica Cora Daisy Diamond Dina Donnamira Dora Druda Eglantine Esmeralda Estella Gerda Gilly Goldilocks Hanna Hilda Hildigrim Ivy Jessamine Lalia Laterose Laura Lavender Lily Linda Lobelia Malva Marigold May Melilot Menegilda Mentha Mimosa Mirabella Myrtle Nina Nora Pansy Pearl Peony Pervinca Pimpernel Poppy Primrose Primula Prisca Rosa Rosamunda Rose Rosie Rowan Ruby Salvia Sapphira Tanta Widow 
+
+	}
+
+	nickname = {
+	}
+	
+	family = {
+		Took
+		Brandybuck
+		Baggins
+		Sackville
+		Proudfoot
+		Bolger
+		Chubb
+		Boffin
+		Gamwich
+		Cotton
+		Greenhand
+		Gamgee
+		Fairbairn
+		Whitfoot
+		Maggot
+		Bracegirdle
+		Holefarmer
+		Oldbuck
+		Underhill
+		Banks
+		Clayhanger
+		Diggle
+		Brockhouse
+		Brown
+		Brownlock
+		Bunce
+		Burrowers
+		Burrows
+		Butcher
+		Gammidge
+		Goldworthy
+		Goodbody
+		Goodchild
+		Grubb
+		Hayward
+		Headstrong
+		Hornblower
+		Lightfoot
+		Longholes
+		Mugwort
+		Noakes
+		Puddifoot
+		Rumble
+		Sandheaver
+		Sandyman
+		Smallburrow
+		Tunnelly
+		Twofoot
+		Headstrong
+		Goldworthy
+		Underhill
+		Merryflower
+	}
+	
+	culture = {
+		harfoot = {}
+		fallohide = {}
+		stoor = {}
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	
+	
+	graphical_culture = celtic_gfx	
+	ethnicities = {
+		10 = halfling
+	}
+}

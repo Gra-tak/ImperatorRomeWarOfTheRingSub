@@ -1,0 +1,3 @@
+﻿l_english:
+  gratak_message_on_adult:0 "Message when adult" 
+  gratak_message_on_adult_act:0 "Triggers event when this character becomes an adult." 

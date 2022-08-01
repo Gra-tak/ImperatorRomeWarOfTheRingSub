@@ -1,0 +1,1855 @@
+﻿namespace = lotr_character_events
+
+#High ranking character converts to Melkor
+
+lotr_character_events.1 = {
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		is_ai = no
+		war = no
+		religion = iluvatarism
+		NOT = { has_variable = lotr_character_convert_melkor_variable }
+		any_character = {
+			has_any_office = yes
+			is_adult = yes
+			is_female = no
+			is_primary_heir = no
+			employer = root
+			has_religion = iluvatarism
+			is_mercenary = no
+			is_head_of_family = no
+			loyalty < 60
+		}
+	}
+	
+	immediate = { 
+		set_variable = {
+			name = lotr_character_convert_melkor_variable
+			days = 9125 # 25 years 
+		}
+		random_character = {
+			limit = {
+				has_any_office = yes
+				is_adult = yes
+				is_female = no
+				is_primary_heir = no
+				employer = root
+				has_religion = iluvatarism
+				is_mercenary = no
+				is_head_of_family = no
+				loyalty < 60
+			}
+			save_scope_as = lotr_character_convert_melkor_scope
+			set_character_religion = melkorism
+		}
+		trigger_event = {
+			id = lotr_character_events.2
+			days = 90
+		}
+	}
+}
+
+lotr_character_events.2 = {
+	type = country_event
+	title = "lotr_character_events.2.t"
+	desc = "lotr_character_events.2.desc"
+	picture = event_barad_dur_eye
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_character_convert_melkor_scope
+	
+	trigger = {
+		exists = scope:lotr_character_convert_melkor_scope
+		scope:lotr_character_convert_melkor_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "lotr_character_events.2.a"
+		custom_tooltip = "lotr_character_events.2.a.tt"
+		imprison = {
+			target = scope:lotr_character_convert_melkor_scope
+		}
+		add_stability = -10
+		add_tyranny = tyranny_small
+	}
+	
+	option = {
+		name = "lotr_character_events.2.b"
+		custom_tooltip = "lotr_character_events.2.b.tt"
+		trigger_event = {
+			id = lotr_character_events.3
+			days = 90
+		}
+		add_treasury = 100
+	}
+}
+
+lotr_character_events.3 = {
+	type = country_event
+	title = "lotr_character_events.3.t"
+	desc = "lotr_character_events.3.desc"
+	picture = event_barad_dur_eye
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_character_convert_melkor_scope
+	
+	trigger = {
+		exists = scope:lotr_character_convert_melkor_scope
+		scope:lotr_character_convert_melkor_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				while = {
+					count = 4
+					random_pops_in_province = {
+						limit = {
+							NOT = {
+								pop_religion = melkorism
+							}
+						}
+						set_pop_religion = melkorism
+					}
+				}
+			}
+		}
+		random_character = {
+			limit = {
+				OR = {
+					has_office = office_high_priest_monarchy
+					has_office = office_augur
+					has_office = office_pontifex
+					has_office = office_high_priest
+				}
+				has_religion = iluvatarism
+			}
+			save_scope_as = lotr_character_convert_melkor_priest_scope
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.3.a"
+		custom_tooltip = "lotr_character_events.3.a.tt"
+		imprison = {
+			target = scope:lotr_character_convert_melkor_scope
+		}
+		add_stability = -15
+	}
+	
+	option = {
+		name = "lotr_character_events.3.b"
+		custom_tooltip = "lotr_character_events.3.b.tt"
+		trigger = {
+			exists = c:MOR
+			c:MOR = {
+				has_land = yes
+			}
+		}
+		add_stability = -5
+		scope:lotr_character_convert_melkor_scope = {
+			remove_all_positions = yes
+			move_country = c:MOR
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.3.c"
+		custom_tooltip = "lotr_character_events.3.c.tt"
+		trigger = {
+			exists = scope:lotr_character_convert_melkor_priest_scope
+			scope:lotr_character_convert_melkor_priest_scope = {
+				is_alive = yes
+				zeal >= 7
+			}
+		}
+		add_treasury = -50
+	}
+}
+
+#Human sacrifices happening
+
+lotr_character_events.6 = {
+	type = country_event
+	title = "lotr_character_events.6.t"
+	desc = "lotr_character_events.6.desc"
+	picture = event_barad_dur
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_character_human_sacrifice_scope
+	
+	trigger = {
+		is_ai = no
+		war = no
+		religion = iluvatarism
+		NOT = { has_variable = lotr_character_human_sacrifices_variable }
+		any_character = {
+			has_any_office = no
+			is_adult = yes
+			is_female = yes
+			is_primary_heir = no
+			employer = root
+			has_religion = iluvatarism
+			is_mercenary = no
+			is_head_of_family = no
+		}
+	}
+	
+	immediate = { 
+		set_variable = {
+			name = lotr_character_human_sacrifices_variable
+			days = 9125 # 25 years 
+		}
+		random_character = {
+			limit = {
+				has_any_office = no
+				is_adult = yes
+				is_female = yes
+				is_primary_heir = no
+				employer = root
+				has_religion = iluvatarism
+				is_mercenary = no
+				is_head_of_family = no
+			}
+			save_scope_as = lotr_character_human_sacrifice_scope
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.6.a"
+		custom_tooltip = "lotr_character_events.6.a.tt"
+		add_stability = -10
+		add_tyranny = tyranny_small
+        current_ruler = {
+			add_popularity = 10
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.6.b"
+		custom_tooltip = "lotr_character_events.6.b.tt"
+		add_stability = -5
+		current_ruler = {
+			add_popularity = subtract_popularity_small
+		}
+	}
+}
+
+#Assassination Attempt
+
+lotr_character_events.7 = {
+	type = country_event
+	title = "lotr_character_events.7.t"
+	desc = "lotr_character_events.7.desc"
+	picture = event_sauron_flames
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_character_assassin_scope
+	right_portrait = C:MOR.current_ruler
+	
+	trigger = {
+		is_ai = no
+		war = no
+		religion = iluvatarism
+		NOT = { has_variable = lotr_character_assassination_variable }
+		current_ruler = {
+			popularity >= 50
+			num_loyal_cohorts < 6
+		}
+	}
+	
+	immediate = { 
+		set_variable = {
+			name = lotr_character_assassination_variable
+			days = 11315 # 31 years 
+		}
+		hidden_effect = {
+			create_character = {
+				age = 22
+				female = no
+				religion = melkorism
+				culture = black_numenorean
+				first_name = "Sakalthôr"
+				save_scope_as = lotr_character_assassin_scope
+			}
+			scope:lotr_character_assassin_scope = {
+				add_gold = 75
+				add_prominence = 50
+				random_list = {
+					50 = {
+						add_trait = energetic
+					}
+					50 = {
+						add_trait = disciplined
+					}
+				}
+				add_martial = 8
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.7.a"
+		custom_tooltip = "lotr_character_events.7.a.tt"
+		imprison = {
+			target = scope:lotr_character_assassin_scope
+		}
+		scope:lotr_character_assassin_scope = {
+			add_trait = wounded
+		}
+		add_tyranny = tyranny_small
+		add_stability = -5
+		c:MOR = {
+			add_opinion = {
+				modifier = killed_lotr_assassin
+				target = root
+			}
+		}
+		trigger_event = {
+			id = lotr_character_events.8
+			days = 21
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.7.b"
+		custom_tooltip = "lotr_character_events.7.b.tt"
+		trigger = {
+			exists = c:MOR
+			c:MOR = {
+				has_land = yes
+			}
+		}
+		scope:lotr_character_assassin_scope = {
+			add_trait = wounded
+			move_country = c:MOR
+		}
+		current_ruler = {
+			add_popularity = subtract_popularity_medium
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.7.c"
+		custom_tooltip = "lotr_character_events.7.c.tt"
+		trigger = {
+			exists = c:MOR
+			c:MOR = {
+				has_land = yes
+			}
+		}
+		scope:lotr_character_assassin_scope = {
+            death = {}
+        }
+		add_tyranny = tyranny_small
+		c:MOR = {
+			add_opinion = {
+				modifier = killed_lotr_assassin
+				target = root
+			}
+		}
+	}
+}
+
+lotr_character_events.8 = {
+	type = country_event
+	title = "lotr_character_events.8.t"
+	desc = "lotr_character_events.8.desc"
+	picture = event_sauron_flames
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_character_assassin_scope
+	
+	trigger = {
+		exists = scope:lotr_character_assassin_scope
+		scope:lotr_character_assassin_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+		scope:lotr_character_assassin_scope = {
+            death = {}
+        }
+	}
+	
+	option = {
+		name = "lotr_character_events.8.a"
+		add_treasury = 150
+	}
+}
+
+
+#Cult of Melkor Priest
+
+lotr_character_events.10 = {
+	type = country_event
+	title = "lotr_character_events.10.t"
+	desc = "lotr_character_events.10.desc"
+	picture = event_sauron_flames
+	
+	left_portrait = current_ruler
+	left_portrait = scope:lotr_current_priest_event_scope
+	right_portrait = scope:lotr_melkor_priest_event_scope
+	
+	trigger = {
+		is_ai = no
+		war = no
+		religion = iluvatarism
+		NOT = { has_variable = lotr_melkor_priest_event_variable }
+		any_character = {
+			OR = {
+				has_office = office_high_priest_monarchy
+				has_office = office_augur
+				has_office = office_pontifex
+				has_office = office_high_priest
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = { 
+		set_variable = {
+			name = lotr_melkor_priest_event_variable
+			days = 11315 # 31 years 
+		}
+		hidden_effect = {
+			create_character = {
+				age = 60
+				female = no
+				religion = melkorism
+				culture = root.culture
+				first_name = "Gimilzôr"
+				save_scope_as = lotr_melkor_priest_event_scope
+			}
+			scope:lotr_melkor_priest_event_scope = {
+				add_gold = 210
+				add_prominence = 50
+				random_list = {
+					50 = {
+						add_trait = pious
+					}
+					50 = {
+						add_trait = scholar
+					}
+				}
+				add_zeal = 10
+			}
+		}
+		random_character = {
+			limit = {
+				has_priest_office_trigger = yes
+			}
+			save_scope_as = lotr_current_priest_event_scope
+		}
+		add_treasury = {
+			value = root.has_monthly_income
+			multiply = 12
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.10.a"
+		custom_tooltip = "lotr_character_events.10.a.tt"
+		trigger_event = {
+			id = lotr_character_events.11
+			days = 60
+		}
+		scope:lotr_current_priest_event_scope = {
+			remove_all_positions = yes
+		}
+		current_ruler = {
+			add_gold = 200
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.10.b"
+		custom_tooltip = "lotr_character_events.10.b.tt"
+		scope:lotr_current_priest_event_scope = {
+			add_loyalty = loyalty_priest_autonomy
+		}
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 12
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.10.c"
+		custom_tooltip = "lotr_character_events.10.c.tt"
+		imprison = {
+			target = scope:lotr_melkor_priest_event_scope
+		}
+		scope:lotr_current_priest_event_scope = {
+			add_loyalty = loyalty_priest_autonomy
+		}
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 12
+		}
+	}
+}
+
+lotr_character_events.11 = {
+	type = country_event
+	title = "lotr_character_events.11.t"
+	desc = "lotr_character_events.11.desc"
+	picture = event_sauron_flames
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_melkor_priest_event_scope
+	
+	trigger = {
+		exists = scope:lotr_melkor_priest_event_scope
+		scope:lotr_melkor_priest_event_scope = {
+			is_alive = yes
+			OR = {
+				has_office = office_high_priest_monarchy
+				has_office = office_augur
+				has_office = office_pontifex
+				has_office = office_high_priest
+			}
+		}
+	}
+	
+	immediate = {
+		capital_scope = {
+			ordered_pops_in_province = {
+				limit = {
+					NOT = {
+						pop_religion = melkorism
+					}
+				}
+				order_by = pop_hapiness
+				max = 2
+				set_pop_religion = melkorism
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.11.a"
+		current_ruler = {
+			add_gold = 150
+		}
+		create_country_treasure = {
+			key = "lotr_treasure_melkor_mithril_jewel"
+			icon = "lotr_treasure_melkor_mithril_jewel"
+			modifier = { happiness_for_wrong_culture_group_modifier = wrong_culture_group_small }
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = melkor_priest_modifier
+				duration = 360
+			}
+		}
+		trigger_event = {
+			id = lotr_character_events.12
+			days = 50
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.11.b"
+		scope:lotr_melkor_priest_event_scope = {
+			add_prominence = -30
+			remove_all_offices = yes
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.11.c"
+		custom_tooltip = "lotr_character_events.11.c.tt"
+		scope:lotr_melkor_priest_event_scope = {
+			add_prominence = -30
+			remove_all_offices = yes
+		}
+		imprison = {
+			target = scope:lotr_melkor_priest_event_scope
+		}
+	}
+}
+
+lotr_character_events.12 = {
+	type = country_event
+	title = "lotr_character_events.12.t"
+	desc = "lotr_character_events.12.desc"
+	picture = event_sauron_flames
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_melkor_priest_event_scope
+	
+	trigger = {
+		exists = scope:lotr_melkor_priest_event_scope
+		scope:lotr_melkor_priest_event_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+		capital_scope = {
+			while = {
+				count = 2
+				random_pops_in_province = {
+					limit = {
+						NOT = {
+							pop_religion = melkorism
+						}
+					}
+					set_pop_religion = melkorism
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.12.a"
+		custom_tooltip = "lotr_character_events.12.a.tt"
+		imprison = {
+			target = scope:lotr_melkor_priest_event_scope
+		}
+		scope:lotr_melkor_priest_event_scope = {
+			add_prominence = -30
+			remove_all_offices = yes
+			add_loyalty = loyalty_imprisoned_ambition
+		}
+		if = {
+			limit = {
+				is_monarchy = yes
+			}
+			add_legitimacy = subtract_legitimacy_medium
+		}
+		current_ruler = {
+			add_popularity = subtract_popularity_large
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.12.b"
+		custom_tooltip = "lotr_character_events.12.b.tt"
+		hidden_effect = {
+			scope:lotr_melkor_priest_event_scope = {
+				death = {
+					death_reason = death_execution
+					killer = root.current_ruler
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_monarchy = yes
+			}
+			add_legitimacy = subtract_legitimacy_medium
+		}
+		current_ruler = {
+			add_popularity = subtract_popularity_large
+		}
+	}
+}
+
+#A Travelling Hobbit
+
+lotr_character_events.15 = {
+	type = country_event
+	title = "lotr_character_events.15.t"
+	desc = "lotr_character_events.15.desc"
+	picture = event_bree_pipeweed
+	
+	left_portrait = root.current_ruler
+	right_portrait = scope:lotr_travelling_hobbit_event_scope
+		
+	trigger = {
+		is_ai = no
+		religion = iluvatarism
+		war = no
+		NOT = {
+			OR = {
+				tag = BRE
+				tag = SHI
+			}
+		}
+		exists = c:BRE
+		c:BRE = {
+			has_land = yes
+		}
+		capital_scope = {
+			OR = {
+				is_in_region = forochel_region
+				is_in_region = forlindon_region
+				is_in_region = numeriador_region
+				is_in_region = mithlond_region
+				is_in_region = harlindon_region
+				is_in_region = tawar_norndor_region
+				is_in_region = fortund_region
+				is_in_region = siragale_region
+				is_in_region = arthedain_region
+				is_in_region = angmar_region
+				is_in_region = dyr_erib_region
+				is_in_region = mintyrnath_region
+				is_in_region = cardolan_region
+				is_in_region = minhiriath_region
+				is_in_region = enedhwaith_region
+				is_in_region = druwaith_region
+				is_in_region = andrast_region
+				is_in_region = anfalas_region
+				is_in_region = hairaverkien_region
+				is_in_region = dunendor_region
+				is_in_region = dor_wathui_region
+				is_in_region = eregion_region
+				is_in_region = rhudaur_region
+				is_in_region = pend_hithaeglir_region
+				is_in_region = anduin_region
+				is_in_region = lorien_region
+				is_in_region = rhuvenlhad_region
+				is_in_region = calenardhon_region
+				is_in_region = eryn_galen_region
+				is_in_region = ered_mithrin_region
+				is_in_region = uvanwaith_region
+				is_in_region = lamedon_region
+				is_in_region = belfalas_region
+				is_in_region = anorien_region
+				is_in_region = lebennin_region
+				is_in_region = ithilien_region
+			}
+		}
+		NOT = {
+			has_variable = lotr_character_events_15_variable
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		set_variable = {
+			name = lotr_character_events_15_variable
+			days = 18250
+		}
+		hidden_effect = {
+			create_character = {
+				age = 21
+				female = no
+				religion = iluvatarism
+				culture = fallohide
+				add_trait = energetic
+				add_trait = brave
+				save_scope_as = lotr_travelling_hobbit_event_scope
+			}
+		}
+	}
+	
+	option = {
+		name = lotr_character_events.15.a
+		custom_tooltip = "lotr_character_events.15.a.tt"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 8
+		}
+		capital_scope.state = {
+			add_state_food = -40.0
+		}
+		create_country_treasure = {
+			key = "lotr_treasure_hobbit_candlestick"
+			icon = "lotr_treasure_hobbit_candlestick"
+			
+			modifier = {
+				local_unrest = -1
+			}
+		}
+		hidden_effect = {
+			scope:lotr_travelling_hobbit_event_scope = {
+				remove_all_positions = yes
+				move_country = c:BRE
+			}
+		}
+		trigger_event = {
+			id = lotr_character_events.16
+			days = 380
+		}
+	}
+	option = {
+		name = lotr_character_events.15.b
+		custom_tooltip = "lotr_character_events.15.b.tt"
+		current_ruler = {
+			add_popularity = subtract_popularity_small
+		}
+		hidden_effect = {
+			scope:lotr_travelling_hobbit_event_scope = {
+				remove_all_positions = yes
+				move_country = c:BRE
+			}
+		}
+	}
+}
+
+lotr_character_events.16 = {
+	type = country_event
+	title = "lotr_character_events.16.t"
+	desc = "lotr_character_events.16.desc"
+	picture = event_bree_pipeweed
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_travelling_hobbit_event_scope
+	
+	trigger = {
+		exists = scope:lotr_travelling_hobbit_event_scope
+		scope:lotr_travelling_hobbit_event_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			scope:lotr_travelling_hobbit_event_scope = {
+				remove_all_positions = yes
+				set_as_minor_character = this
+				move_country = root
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.16.a"
+		custom_tooltip = "lotr_character_events.16.a.tt"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 6
+		}
+		capital_scope.state = {
+			add_state_food = -40.0
+		}
+		hidden_effect = {
+			scope:lotr_travelling_hobbit_event_scope = {
+				remove_all_positions = yes
+				move_country = c:BRE
+			}
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = purchased_pipeweed_modifier
+				duration = 365
+			}
+		}
+		trigger_event = {
+			id = lotr_character_events.17
+			days = 370
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.16.b"
+		custom_tooltip = "lotr_character_events.16.b.tt"
+		current_ruler = {
+			add_popularity = subtract_popularity_small
+		}
+		hidden_effect = {
+			scope:lotr_travelling_hobbit_event_scope = {
+				remove_all_positions = yes
+				move_country = c:BRE
+			}
+		}
+	}
+}
+
+lotr_character_events.17 = {
+	type = country_event
+	title = "lotr_character_events.17.t"
+	desc = "lotr_character_events.17.desc"
+	picture = event_bree_pipeweed
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_travelling_hobbit_event_scope
+	
+	trigger = {
+		exists = scope:lotr_travelling_hobbit_event_scope
+		scope:lotr_travelling_hobbit_event_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			scope:lotr_travelling_hobbit_event_scope = {
+				remove_all_positions = yes
+				set_as_minor_character = this
+				move_country = root
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.17.a"
+		custom_tooltip = "lotr_character_events.17.a.tt"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 9
+		}
+		capital_scope.state = {
+			add_state_food = -40.0
+		}
+		hidden_effect = {
+			scope:lotr_travelling_hobbit_event_scope = {
+				remove_all_positions = yes
+				move_country = c:BRE
+			}
+		}
+		if = {
+			limit = { stability < 50 }
+			trigger_event = {
+				id = lotr_character_events.18
+				days = 340
+			}
+		}
+		else = {
+			trigger_event = {
+				id = lotr_character_events.19
+				days = 370
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.17.b"
+		custom_tooltip = "lotr_character_events.17.b.tt"
+		current_ruler = {
+			add_popularity = subtract_popularity_small
+		}
+		hidden_effect = {
+			scope:lotr_travelling_hobbit_event_scope = {
+				remove_all_positions = yes
+				move_country = c:BRE
+			}
+		}
+	}
+}
+
+lotr_character_events.18 = {
+	type = country_event
+	title = "lotr_character_events.18.t"
+	desc = "lotr_character_events.18.desc"
+	picture = event_bree_pipeweed
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_travelling_hobbit_event_scope
+	
+	trigger = {
+		exists = scope:lotr_travelling_hobbit_event_scope
+	}
+	
+	immediate = {
+		hidden_effect = {
+			scope:lotr_travelling_hobbit_event_scope = {
+				death = {
+					death_reason = death_from_wounds
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.18.a"
+	}
+}
+
+lotr_character_events.19 = {
+	type = country_event
+	title = "lotr_character_events.19.t"
+	desc = "lotr_character_events.19.desc"
+	picture = event_bree_pipeweed
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_travelling_hobbit_event_scope
+	
+	trigger = {
+		exists = scope:lotr_travelling_hobbit_event_scope
+		scope:lotr_travelling_hobbit_event_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			scope:lotr_travelling_hobbit_event_scope = {
+				remove_all_positions = yes
+				set_as_minor_character = this
+				move_country = root
+			}
+		}
+		scope:lotr_travelling_hobbit_event_scope = {
+			add_trait = wounded
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.19.a"
+		scope:lotr_travelling_hobbit_event_scope = {
+			hidden_effect = {
+				remove_character_modifier = foreign_citizen
+				set_as_minor_character = THIS
+			}
+			custom_tooltip = "lotr_character_events.19.a.tt"
+		}
+		create_country_treasure = {
+			key = "lotr_treasure_mithril_chainmail_armor"
+			icon = "treasure_armor"
+			
+			modifier = {
+				local_defensive = 0.1
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.19.b"
+		custom_tooltip = "lotr_character_events.19.b.tt"
+	}
+}
+
+#Tentacled Beast
+
+lotr_character_events.22 = {
+	type = country_event
+	title = "lotr_character_events.22.t"
+	desc = "lotr_character_events.22.desc"
+	picture = event_watcher_water
+	
+	goto_location = scope:lotr_farm_monster_location_scope
+	
+	left_portrait = root.current_ruler
+	left_portrait = scope:lotr_guard_monster_event_scope
+	right_portrait = scope:lotr_farmer_monster_event_scope
+		
+	trigger = {
+		is_ai = no
+		war = no
+		NOT = {
+			has_variable = lotr_character_events_22_variable
+		}
+		any_owned_province = {
+			OR = {
+				terrain = plains
+				terrain = farmland
+			}	
+		}
+		any_character = {
+			has_office = office_master_of_the_guard
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					terrain = plains
+					terrain = farmland
+				}
+			}
+			save_scope_as = lotr_farm_monster_location_scope
+		}
+		set_variable = {
+			name = lotr_character_events_22_variable
+			days = 18250
+		}
+		hidden_effect = {
+			create_character = {
+				age = 56
+				religion = root.religion
+				culture = root.culture
+				save_scope_as = lotr_farmer_monster_event_scope
+			}
+		}
+		random_character = {
+			limit = {
+				has_office = office_master_of_the_guard
+			}
+			save_scope_as = lotr_guard_monster_event_scope
+		}
+	}
+	
+	option = {
+		name = lotr_character_events.22.a
+		custom_tooltip = "lotr_character_events.22.a.tt"
+		current_ruler = {
+			add_popularity = subtract_popularity_small
+		}
+		hidden_effect = {
+			scope:lotr_farmer_monster_event_scope = {
+				remove_all_positions = yes
+				set_as_minor_character = this
+			}
+			random = {
+				chance = 100
+				trigger_event = {
+					id = lotr_character_events.23
+					days = 35
+				}
+			}
+		}
+	}
+	option = {
+		name = lotr_character_events.22.b
+		custom_tooltip = "lotr_character_events.22.b.tt"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 2
+		}
+		hidden_effect = {
+			scope:lotr_farmer_monster_event_scope = {
+				remove_all_positions = yes
+				set_as_minor_character = this
+			}
+			random = {
+				chance = 100
+				trigger_event = {
+					id = lotr_character_events.24
+					days = 35
+				}
+			}
+		}
+	}
+}
+
+lotr_character_events.23 = {
+	type = country_event
+	title = "lotr_character_events.23.t"
+	desc = "lotr_character_events.23.desc"
+	picture = event_watcher_water
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_farmer_monster_event_scope
+	
+	trigger = {
+		exists = scope:lotr_farmer_monster_event_scope
+		scope:lotr_farmer_monster_event_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+		scope:lotr_farmer_monster_event_scope = {
+            death = {}
+        }
+	}
+	
+	option = {
+		name = "lotr_character_events.23.a"
+		scope:lotr_farm_monster_location_scope = {
+			add_province_modifier = {
+				name = monster_in_the_lake_modifier
+				duration = 730
+			}
+		}
+		current_ruler = {
+			add_popularity = subtract_popularity_small
+		}
+	}
+}
+
+lotr_character_events.24 = {
+	type = country_event
+	title = "lotr_character_events.24.t"
+	desc = "lotr_character_events.24.desc"
+	picture = event_watcher_water
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_guard_monster_event_scope
+	
+	trigger = {
+		exists = scope:lotr_guard_monster_event_scope
+		scope:lotr_guard_monster_event_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+		scope:lotr_guard_monster_event_scope = {
+            death = {}
+        }
+	}
+	
+	option = {
+		name = "lotr_character_events.24.a"
+		scope:lotr_farm_monster_location_scope = {
+			add_province_modifier = {
+				name = monster_in_the_lake_modifier
+				duration = 730
+			}
+		}
+		current_ruler = {
+			add_popularity = subtract_popularity_small
+		}
+	}
+}
+
+lotr_character_events.26 = {
+	type = country_event
+	title = "lotr_character_events.26.t"
+	desc = "lotr_character_events.26.desc"
+	picture = event_demon_whale
+	
+	left_portrait = root.current_ruler
+	
+	goto_location = scope:lotr_character_events26_scope
+	
+	trigger = {
+		is_ai = no
+		war = no
+		any_owned_province = {
+			OR = {
+				is_in_region = forochel_region
+				is_in_region = forlindon_region
+				is_in_region = mithlond_region
+				is_in_region = harlindon_region
+				is_in_region = minhiriath_region
+				is_in_region = enedhwaith_region
+				is_in_region = druwaith_region
+				is_in_region = andrast_region
+				is_in_region = anfalas_region
+				is_in_region = belfalas_region
+				is_in_region = lebennin_region
+				is_in_region = anorien_region
+				is_in_region = harondor_region
+			}
+			is_coastal = yes
+		}
+		NOT = {
+			has_variable = lotr_character_events26_variable
+		}
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					is_in_region = forochel_region
+					is_in_region = forlindon_region
+					is_in_region = mithlond_region
+					is_in_region = harlindon_region
+					is_in_region = minhiriath_region
+					is_in_region = enedhwaith_region
+					is_in_region = druwaith_region
+					is_in_region = andrast_region
+					is_in_region = anfalas_region
+					is_in_region = belfalas_region
+					is_in_region = lebennin_region
+					is_in_region = anorien_region
+					is_in_region = harondor_region
+				}
+				is_coastal = yes
+			}
+			weight = {
+				modifier = {
+					factor = 10
+					has_city_status = no
+				}
+				modifier = {
+					factor = 100
+					has_city_status = no
+					num_of_fortress_building = 0
+				}
+			}
+			save_scope_as = lotr_character_events26_scope
+		}
+		set_variable = {
+			name = lotr_character_events26_variable
+			days = 11825
+		}
+	}
+	
+	option = {
+		name = lotr_character_events.26.a
+		custom_tooltip = "lotr_character_events.26.a.tt"
+		trigger = { 
+			num_of_ships >= 15
+		}
+		highlight = yes
+		current_ruler = {
+			add_popularity = popularity_small
+		}
+	}
+	option = {
+		name = lotr_character_events.26.b
+		custom_tooltip = "lotr_character_events.26.b.tt"
+		scope:lotr_character_events26_scope = {
+			add_province_modifier = {
+				name = demon_whale_attacks_modifier
+				duration = 360
+			}
+		}
+	}
+}
+
+#Weather Master arrives
+
+lotr_character_events.27 = {
+	type = country_event
+	title = "lotr_character_events.27.t"
+	desc = "lotr_character_events.27.desc"
+	picture = event_boat_storm
+	
+	left_portrait = root.current_ruler
+	right_portrait = scope:lotr_weather_master_event_scope
+	
+	goto_location = scope:lotr_character_events27_scope
+	
+	trigger = {
+		is_ai = no
+		war = no
+		religion = iluvatarism
+		any_owned_province = {
+			is_coastal = yes
+		}
+		exists = c:LIN
+		c:LIN = {
+			has_land = yes
+		}
+		NOR = {
+			has_variable = lotr_character_events27_variable
+			tag = LIN
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				exists = scope:lotr_weather_master_event_scope
+				scope:lotr_weather_master_event_scope = {
+					is_alive = yes
+				}
+			}
+			hidden_effect = {
+				scope:lotr_weather_master_event_scope = {
+					remove_all_positions = yes
+					set_as_minor_character = this
+					move_country = root
+				}
+			}
+		}
+		else = {
+			hidden_effect = {
+				create_character = {
+					age = 31
+					religion = iluvatarism
+					culture = sindar
+					save_scope_as = lotr_weather_master_event_scope
+				}
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_coastal = yes
+			}
+			save_scope_as = lotr_character_events27_scope
+		}
+		set_variable = {
+			name = lotr_character_events27_variable
+			days = 14600 #40 years
+		}
+	}
+	
+	option = {
+		name = lotr_character_events.27.a
+		custom_tooltip = "lotr_character_events.27.a.tt"
+		random_list = {
+			50 = {
+				add_country_modifier = {
+					name = lotr_trade_winds_modifier
+					duration = 365
+				}
+			}
+			50 = {
+				# Do nothing
+			}
+		}
+		hidden_effect = {
+			scope:lotr_weather_master_event_scope = {
+				remove_all_positions = yes
+				move_country = c:LIN
+			}
+		}
+	}
+	option = {
+		name = lotr_character_events.27.b
+		custom_tooltip = "lotr_character_events.27.b.tt"
+		random_list = {
+			50 = {
+				add_country_modifier = {
+					name = lotr_guaranteed_rainfall_modifier
+					duration = 365
+				}
+			}
+			50 = {
+				# Do nothing
+			}
+		}
+		hidden_effect = {
+			scope:lotr_weather_master_event_scope = {
+				remove_all_positions = yes
+				move_country = c:LIN
+			}
+		}
+	}
+	option = {
+		name = lotr_character_events.27.c
+		custom_tooltip = "lotr_character_events.27.c.tt"
+		hidden_effect = {
+			scope:lotr_weather_master_event_scope = {
+				remove_all_positions = yes
+				move_country = c:LIN
+			}
+		}
+	}
+}
+
+#Barrow Whites awaken
+
+lotr_character_events.28 = {
+	type = country_event
+	title = "lotr_character_events.28.t"
+	desc = "lotr_character_events.28.desc"
+	picture = event_barrow_white
+	
+	left_portrait = root.current_ruler
+	
+	goto_location = p:1642
+	
+	trigger = {
+		is_ai = no
+		any_owned_province = {
+			OR = {
+				is_in_region = forochel_region
+				is_in_region = numeriador_region
+				is_in_region = mithlond_region
+				is_in_region = tawar_norndor_region
+				is_in_region = fortund_region
+				is_in_region = siragale_region
+				is_in_region = cardolan_region
+				is_in_region = arthedain_region
+				is_in_region = mintyrnath_region
+				is_in_region = dyr_erib_region
+				is_in_region = angmar_region
+				is_in_region = rhudaur_region
+				is_in_region = pend_hithaeglir_region
+				is_in_region = eregion_region
+				is_in_region = dor_wathui_region
+				is_in_region = dunendor_region
+				is_in_region = calenardhon_region
+				is_in_region = lorien_region
+				is_in_region = anduin_region
+			}
+		}
+		NOT = {
+			has_variable = lotr_character_events28_variable
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		set_variable = {
+			name = lotr_character_events28_variable
+			days = 365
+		}
+	}
+	
+	option = {
+		name = lotr_character_events.28.a
+		custom_tooltip = "lotr_character_events.28.a.tt"
+	}
+}
+
+#Melkor spies caught
+
+lotr_character_events.29 = {
+	type = country_event
+	title = "lotr_character_events.29.t"
+	desc = "lotr_character_events.29.desc"
+	picture = event_sauron_flames
+	
+	goto_location = scope:lotr_character_spie_melkor_location_scope
+	
+	left_portrait = current_ruler
+	left_portrait = scope:lotr_character_spie_melkor_guard_scope
+	right_portrait = scope:lotr_character_spie_melkor_scope
+	
+	trigger = {
+		is_ai = no
+		war = no
+		religion = iluvatarism
+		NOT = { has_variable = lotr_character_spie_melkor_variable }
+		any_owned_province = {
+			NOT = {
+				has_building = fortress_building
+			}
+			any_neighbor_province = {
+				NOT = { owner = root }
+				OR = {
+					terrain = hills
+					terrain = mountains
+					terrain = forest
+					terrain = farmland
+				}
+			}
+		}
+		any_character = {
+			trigger_if = {
+				limit = {
+					root = {
+						is_monarchy = yes
+					}
+				}
+				has_office = office_master_of_the_guard
+			}
+			trigger_if = {
+				limit = {
+					root = {
+						is_republic = yes
+					}
+				}
+				has_office = office_tribune_of_the_soldiers
+			}
+			trigger_if = {
+				limit = {
+					root = {
+						is_tribal = yes
+					}
+				}
+				has_office = office_warchief
+			}
+		}
+	}
+	
+	immediate = { 
+		set_variable = {
+			name = lotr_character_spie_melkor_variable
+			days = 11315 # 31 years 
+		}
+		random_character = {
+			limit = {
+				trigger_if = {
+					limit = {
+						root = {
+							is_monarchy = yes
+						}
+					}
+					has_office = office_master_of_the_guard
+				}
+				trigger_if = {
+					limit = {
+						root = {
+							is_republic = yes
+						}
+					}
+					has_office = office_tribune_of_the_soldiers
+				}
+				trigger_if = {
+					limit = {
+						root = {
+							is_tribal = yes
+						}
+					}
+					has_office = office_warchief
+				}
+			}
+			save_scope_as = lotr_character_spie_melkor_guard_scope
+		}
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_building = fortress_building
+				}
+				any_neighbor_province = {
+					NOT = { owner = root }
+					OR = {
+						terrain = hills
+						terrain = mountains
+						terrain = forest
+						terrain = farmland
+					}
+				}
+			}
+			weight = {
+				modifier = {
+					factor = 10
+					has_city_status = no
+				}
+				modifier = {
+					factor = 300
+					total_population < 6
+				}
+			}
+			save_scope_as = lotr_character_spie_melkor_location_scope
+		}
+		hidden_effect = {
+			create_character = {
+				age = 22
+				female = no
+				religion = melkorism
+				culture = orcish
+				save_scope_as = lotr_character_spie_melkor_scope
+			}
+			scope:lotr_character_spie_melkor_scope = {
+				add_gold = 75
+				add_prominence = 50
+				random_list = {
+					50 = {
+						add_trait = energetic
+					}
+					50 = {
+						add_trait = disciplined
+					}
+				}
+				add_martial = 3
+			}
+		}
+	}
+	
+	option = {  #imprison
+		name = "lotr_character_events.29.a"
+		imprison = {
+			target = scope:lotr_character_spie_melkor_scope
+		}
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 4
+		}
+	}
+	
+	option = {  #release
+		name = "lotr_character_events.29.b"
+		custom_tooltip = "lotr_character_events.29.b.tt"
+		trigger = {
+			exists = c:MOR
+			c:MOR = {
+				has_land = yes
+			}
+		}
+		scope:lotr_character_spie_melkor_scope = {
+			move_country = c:MOR
+		}
+	}
+	
+	option = {  #interogate
+		name = "lotr_character_events.29.c"
+		custom_tooltip = "lotr_character_events.29.c.tt"
+		add_tyranny = tyranny_medium
+		hidden_effect = {
+			imprison = {
+				target = scope:lotr_character_spie_melkor_scope
+			}
+			random_list = {
+				50 = { # death
+					trigger_event = {
+						id = lotr_character_events.30
+						days = 20
+					}
+				}
+				50 = { # info
+					trigger_event = {
+						id = lotr_character_events.31
+						days = 22
+					}
+				}
+			}
+		}
+	}
+}
+
+lotr_character_events.30 = {
+	type = country_event
+	title = "lotr_character_events.30.t"
+	desc = "lotr_character_events.30.desc"
+	picture = event_sauron_flames
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_character_spie_melkor_scope
+	
+	trigger = {
+		exists = scope:lotr_character_spie_melkor_scope
+		scope:lotr_character_spie_melkor_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+		scope:lotr_character_spie_melkor_scope = {
+            death = {}
+        }
+	}
+	
+	option = {
+		name = "lotr_character_events.30.a"
+		add_tyranny = tyranny_small
+	}
+}
+
+lotr_character_events.31 = {
+	type = country_event
+	title = "lotr_character_events.31.t"
+	desc = "lotr_character_events.31.desc"
+	picture = event_sauron_flames
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_character_spie_melkor_scope
+	
+	trigger = {
+		exists = scope:lotr_character_spie_melkor_scope
+		scope:lotr_character_spie_melkor_scope = {
+			is_alive = yes
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			scope:lotr_character_spie_melkor_scope = {
+				death = {
+					death_reason = death_succumbed_to_injuries
+					silent = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.31.a"
+		add_military_experience = 30
+	}
+}
+
+#Toy trader from Dale
+
+lotr_character_events.32 = {
+	type = country_event
+	title = "lotr_character_events.32.t"
+	desc = "lotr_character_events.32.desc"
+	picture = event_dale
+	
+	left_portrait = root.current_ruler
+	right_portrait = scope:lotr_toy_trader_scope
+	
+	goto_location = p:2720
+	
+	trigger = {
+		is_ai = no
+		war = no
+		exists = c:DLE
+		p:2720 = {
+			owner = c:DLE
+			controller = c:DLE
+		}
+		religion = iluvatarism
+		opinion = { target = DLE value >= 10 }
+		capital_scope = {
+			OR = {
+				is_in_region = fortund_region
+				is_in_region = siragale_region
+				is_in_region = arthedain_region
+				is_in_region = angmar_region
+				is_in_region = dyr_erib_region
+				is_in_region = mintyrnath_region
+				is_in_region = cardolan_region
+				is_in_region = minhiriath_region
+				is_in_region = enedhwaith_region
+				is_in_region = druwaith_region
+				is_in_region = dunendor_region
+				is_in_region = dor_wathui_region
+				is_in_region = eregion_region
+				is_in_region = rhudaur_region
+				is_in_region = pend_hithaeglir_region
+				is_in_region = anduin_region
+				is_in_region = lorien_region
+				is_in_region = rhuvenlhad_region
+				is_in_region = calenardhon_region
+				is_in_region = eryn_galen_region
+				is_in_region = ered_mithrin_region
+				is_in_region = uvanwaith_region
+				is_in_region = lamedon_region
+				is_in_region = belfalas_region
+				is_in_region = anorien_region
+				is_in_region = lebennin_region
+				is_in_region = ithilien_region
+				is_in_region = rhovanion_region
+				is_in_region = dor_rhunen_region
+				is_in_region = dorwinion_region
+			}
+		}
+		NOR = {
+			has_variable = lotr_toy_trader_variable
+			tag = DLE
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				exists = scope:lotr_toy_trader_scope
+				scope:lotr_toy_trader_scope = {
+					is_alive = yes
+				}
+			}
+			hidden_effect = {
+				scope:lotr_toy_trader_scope = {
+					remove_all_positions = yes
+					set_as_minor_character = this
+					move_country = root
+				}
+			}
+		}
+		else = {
+			hidden_effect = {
+				create_character = {
+					age = 32
+					female = yes
+					religion = iluvatarism
+					culture = lakemen
+					save_scope_as = lotr_toy_trader_scope
+				}
+			}
+		}
+		set_variable = {
+			name = lotr_toy_trader_variable
+			days = 14600 #40 years
+		}
+	}
+	
+	option = {
+		name = lotr_character_events.32.a
+		custom_tooltip = "lotr_character_events.32.a.tt"
+		add_country_modifier = {
+			name = lotr_toys_fun_modifier
+			duration = 365
+		}
+		hidden_effect = {
+			scope:lotr_toy_trader_scope = {
+				remove_all_positions = yes
+				move_country = c:DLE
+			}
+		}
+	}
+	option = {
+		name = lotr_character_events.32.b
+		custom_tooltip = "lotr_character_events.32.b.tt"
+		add_treasury = 68
+        current_ruler = {
+			add_popularity = -2
+		}
+		hidden_effect = {
+			scope:lotr_toy_trader_scope = {
+				remove_all_positions = yes
+				move_country = c:DLE
+			}
+		}
+	}
+}

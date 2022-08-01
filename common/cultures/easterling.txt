@@ -1,0 +1,64 @@
+﻿easterling_group  = {
+
+	levy_template = levy_easterling
+	
+	primary = light_cavalry
+	second = light_infantry
+	flank = horse_archers
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+
+	color = hsv { 0.2 0.5 0.8 }
+
+
+	male_names = {
+			Abagha Achigh Aguchu Ajai Ajinai Akhutai Alagh Alchi Alchidai Altan Ambaghai Arkhai Arasen Babur Badai Bagaridai Bala Barghujin Bartan Batu Bedugun Begter Belgutei
+			Belgunutei Bilge Berke Bodonchar Bogen Bogorchu Bolkhadar Borjigidai Boroghul Bughu Bugidai Bugunutei Bujeg Bukha Bulughan Buri Burkhan Burundai Chagatai Chaghagan Chanai Chigu
+			Chidukhul Chilagun Chiledu Chormakhan Chulgetei Dagun Daritai Dayir Dodai Duua Eljigedei Ghazan Ghunan Guchu Gughlug Guyug Harghasun Horkhudagh Hulegu Husun Inalchi Inancha Iturgen 
+			Jajiradai Jamugha Jebe Jochi Jurchedei Khabichi Khachi Khachigun Khadagh Khagatai Khaidu Khal Khorchi Khorilartai Khubilai Khudu Khutula Khuyildar Kogsegu Kokochu Megetu Megujin
+			Menggei Mongke Morokha Munglig Nakhu Narin Nayaga Nogai Odchigin Ogodei Okhotur Oljaitu Oronartai Shiraghul Shirgugetu Subetei Suyiketu Taghai Tamachi Targhutai Temuge Temujin Temur
+			Todogen Toghoril Toghtoga Tokhtamis Tolui Torolchi Tumen Uighurtai Ukhuna Usun Yedi Yegu Yeke Yesugei Yesunge Yokhunan Kadan Godan
+			}
+	
+	female_names = {
+			Al_Alta Alan Altani Borte Botokhui Bulughan Chabi Chagur Chakha Checheyigen Chotan Doregene Doquz Ebegei Gurbesu Hogelun Holuikhan Ibakha Khadagan Khogaghchin Khojin Khorijin Khugurchin
+			Khulan Mandukhai Mongoljin Nomolun Oghul Orbei Sokhatai Sorkhaghatani Tekine Temulun Toregene Yesugun Yesui Hoelun
+	}
+	
+	
+	family = { 
+		Ausirion
+		Mungligssin
+		Alchidaines
+		Babures
+		Berkedanes
+		Todogenas
+		Kadenas
+		Daritainas
+		Gasparfi
+		Balamberglu
+		Moricfi		
+	}
+	
+	
+	culture = {
+		balchoth = {}
+		rachoth = {}
+		nurnim = { levy_template = levy_nurnim }
+		variag = {}
+		nuriag = {}
+		khundolar = {}
+		jangovar = {}
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	graphical_culture = scythian_gfx
+	ethnicities = {
+		10 = scythian
+	}
+}

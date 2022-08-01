@@ -1,0 +1,61 @@
+﻿camels = {
+	army = yes
+
+	levy_tier = basic
+	allow = {
+		trade_good_surplus = { target = camel value > 0 }
+	}
+
+	is_flank = yes
+	
+	maneuver = 4
+	movement_speed = 3.5
+
+	build_time = 40
+	legions = no
+	
+	light_infantry = 1.1
+	heavy_infantry = 0.9
+	heavy_cavalry = 0.8
+	light_cavalry = 1.0
+	chariots = 1.1
+	warelephant = 0.5
+	horse_archers = 1.1
+	archers = 1.1
+	camels = 1.0
+	#light_infantry
+	halfling_infantry = 1.1
+	orc_infantry = 1.1
+	rangers = 1.1
+	#heavy_infantry
+	troll_infantry = 0.9
+	dwarven_infantry = 0.9
+	dunedain_infantry = 0.9
+	elvish_infantry = 0.9
+	uruk_heavy_infantry = 0.9
+	uruk_infantry = 0.9
+	#heavy cavalry
+	dol_amroth_knights = 0.8
+	dunedain_cavalry = 0.8
+	dwarven_goat_riders = 0.8
+	#horse archers
+	elvish_cavalry_archer = 1.1
+	#archers
+	elvish_archers = 1.1
+	dwarven_archers = 1.1
+	uruk_crossbows = 1.1
+	dunedain_archers = 1.1
+	
+	attrition_weight = 0.2
+	build_cost = {
+		gold = 13
+		manpower = 1
+	}
+	supply_train = 2.0
+	
+	
+	food_consumption = 0.02
+	food_storage = 0.36
+	
+	attrition_loss = 0.025
+}

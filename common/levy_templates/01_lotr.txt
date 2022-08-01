@@ -1,0 +1,150 @@
+﻿# Scriptable Levy template, used to determine levy composition for different cultures.
+#
+#	NOTE: All numbers are relative percentages, ex. 0.2 means that 20% of this template should be a certain tier or unit
+#	2nd NOTE: Support units will be added automatically in code when a certain size of Levy is raised, replacing another unit
+#	3rd NOTE: If a specific subunit cannot be constructed for some reason another one that can from that tier will replace it ( if possible )
+#
+
+
+
+levy_rangers = {
+	default = no
+	rangers = 1.0
+}
+
+levy_banadunaim = {
+	default = no
+	heavy_infantry = 0.5
+	archers = 0.3
+	light_cavalry = 0.2
+}
+
+levy_barangil = {
+	default = no
+	light_infantry = 0.5
+	archers = 0.3
+	warelephant = 0.2
+}
+
+levy_breelander = {
+	default = no
+	heavy_infantry = 0.3
+	archers = 0.5
+	light_cavalry = 0.2
+}
+
+levy_easterling = {
+	default = no
+	light_cavalry = 0.25
+	heavy_infantry = 0.5
+	chariots = 0.25
+}
+
+levy_edain_mixed = {
+	default = no
+	archers = 0.4
+	heavy_infantry = 0.4
+	heavy_cavalry = 0.2
+}
+
+levy_forodwaith = {
+	default = no
+	archers = 0.4
+	light_infantry = 0.6
+}
+
+levy_haldadian = {
+	default = no
+	heavy_infantry = 0.2
+	light_infantry = 0.6
+	archers = 0.2
+}
+
+levy_halfling = {
+	default = no
+	halfling_infantry = 1.0
+}
+
+levy_haradrim = {
+	default = no
+	light_infantry = 0.3
+	heavy_infantry = 0.5
+	warelephant = 0.2
+}
+
+levy_dwarf = {
+	default = no
+	dwarven_infantry = 0.5
+	dwarven_archers = 0.25
+	dwarven_goat_riders = 0.2
+}
+
+levy_harondorian = {
+	default = no
+	light_infantry = 0.5
+	heavy_infantry = 0.25
+	archers = 0.25
+}
+
+levy_nurnim = {
+	default = no
+	light_infantry = 0.5
+	heavy_infantry = 0.25
+	archers = 0.25
+}
+
+levy_mirkwoodmen = {
+	default = no
+	light_cavalry = 0.20
+	heavy_infantry = 0.20
+	archers = 0.6
+}
+
+levy_noldor = {
+	default = no
+	elvish_archers = 0.25
+	elvish_infantry = 0.50
+	elvish_cavalry_archers = 0.25
+}
+
+levy_imladris = {
+	default = no
+	elvish_archers = 0.25
+	elvish_infantry = 0.25
+	elvish_cavalry_archers = 0.50
+}
+
+levy_lindon = {
+	default = no
+	elvish_archers = 0.25
+	elvish_infantry = 0.50
+	elvish_cavalry_archers = 0.25
+}
+
+levy_teleri = {
+	default = no
+	elvish_archers = 0.60
+	elvish_infantry = 0.30
+	elvish_cavalry_archers = 0.1
+}
+
+levy_vanyar = {
+	default = no
+	elvish_archers = 0.1
+	elvish_infantry = 0.65
+	elvish_cavalry_archers = 0.25
+}
+
+levy_maia = {
+	default = no
+	elvish_archers = 0.1
+	elvish_infantry = 0.65
+	elvish_cavalry_archers = 0.25
+}
+
+levy_yopi = {
+	default = no
+	light_infantry = 0.50
+	heavy_infantry = 0.30
+	light_cavalry = 0.20
+}

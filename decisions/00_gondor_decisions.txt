@@ -1,0 +1,145 @@
+﻿country_decisions = {
+	gondor_light_the_beacons = {
+		potential = {
+			tag = GON
+			war = yes
+			NOT = { has_variable = light_the_beacons_decision }
+			OR = {
+				owns = 1300
+				owns = 1201
+				owns = 1302
+			}
+			OR = { #no point in decision without an ally to call
+				any_subject = {
+					is_subject_type = satrapy
+				}
+				exists = c:ROH
+			}
+			OR = { #check Rohan and subjects, true if any of them is not at war or not already in war together with Gondor
+				trigger_if = {
+					limit = {
+						exists = c:ROH
+					}
+					c:ROH = {
+						OR = { #Rohan check
+							war = no
+							NOT = {
+								any_current_war = {
+									any_war_participant = {
+										this = root
+									}
+								}
+							}
+						}
+					}
+				}
+				any_subject = {
+					is_subject_type = satrapy
+					OR = { #subjects check
+						war = no
+						NOT = {
+							any_current_war = {
+								any_war_participant = {
+									this = root
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			OR = { #Province 1302 (W Osgiliath) OR province 1201 (Cair Andros) being occupied or 1300 (Minas Tirith) under siege
+				trigger_if = {
+					limit = {
+						owns = 1201
+					}
+					p:1201 = { NOT = { controller = ROOT } }
+				}
+				trigger_if = {
+					limit = {
+						owns = 1302
+					}
+					p:1302 = { NOT = { controller = ROOT } }
+				}
+				trigger_if = {
+					limit = {
+						owns = 1300
+					}
+					p:1300 = { has_siege = yes }
+				}
+			}
+			any_current_war = {
+				any_war_defender = {
+					this = root
+				}
+			}
+			
+		}
+		highlight = { #highlight called allies because why not
+			scope:province = {
+				has_owner = yes
+				owner = {
+					OR = {
+						tag = ROH
+						AND = {
+							is_subject = yes
+							is_subject_of = root
+							is_subject_type = satrapy
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_variable = { #so that decision can't be taken again before allies have answered
+				name = light_the_beacons_decision
+				days = 30
+			}
+			every_current_war = {
+				limit = {
+#					any_war_participant = { #calls into all wars where the provinces in question are occupied/sieged
+#						save_temporary_scope_as = enemy_country
+#						OR = {
+#							p:1201 = { owner = root controller = scope:enemy_country }
+#							p:1302 = { owner = root controller = scope:enemy_country }
+#							p:1300 = {
+#								owner = root
+#								trigger_if = {
+#									limit = { has_siege = yes }
+#									siege = { siege_controller = scope:enemy_country }
+#								}
+#							}
+#						}
+#					}
+					any_war_defender = { #This will call into all defensive wars
+						this = root
+					}
+				}
+				#save_scope_as = war_to_join
+				add_to_local_variable_list = {
+					name = wars_to_call_into
+					target = this
+				}
+			}
+			every_subject = {
+				limit = {
+					is_subject_type = satrapy
+				}
+				trigger_event = { id = gondor_events.1 }
+			}
+			if = {
+				limit = {
+					exists = c:ROH
+				}
+				c:ROH = {
+					trigger_event = { id = gondor_events.1 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+	}
+}
+

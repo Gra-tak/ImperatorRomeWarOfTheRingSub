@@ -1,0 +1,444 @@
+﻿
+province_has_orcs = {
+	any_pops_in_province = {
+		pop_culture_group = orcs_group
+	}
+}
+
+country_is_elf_trigger = {
+	OR = {
+		country_culture_group = noldor_group
+		country_culture_group = teleri_group
+		country_culture_group = vanyar_group
+	}
+}
+
+country_is_human_trigger = {
+	NOR = {
+		country_culture_group = noldor_group
+		country_culture_group = teleri_group
+		country_culture_group = vanyar_group
+		country_culture_group = dwarf_group
+		country_culture_group = orcs_group
+		country_culture_group = halfling_group
+	}
+}
+
+is_sterile_trigger = {
+	OR = {
+		has_trait = 10_sauron
+		has_trait = 20_sauron
+		has_trait = 30_sauron
+		has_trait = 40_sauron
+		has_trait = 50_sauron
+		has_trait = 60_sauron
+		has_trait = 70_sauron
+		has_trait = 80_sauron
+		has_trait = 90_sauron
+		has_trait = 100_sauron
+		has_trait = maia
+		has_trait = nazgul
+	}
+}
+
+lotr_story_character_trigger = {
+	OR = {
+		has_trait = 10_sauron
+		has_trait = 20_sauron
+		has_trait = 30_sauron
+		has_trait = 40_sauron
+		has_trait = 50_sauron
+		has_trait = 60_sauron
+		has_trait = 70_sauron
+		has_trait = 80_sauron
+		has_trait = 90_sauron
+		has_trait = 100_sauron
+		has_trait = maia
+		has_trait = nazgul
+	}
+}
+
+is_human_trigger = {
+	custom_tooltip = {
+		text = is_human_tt
+		NOR = {
+			has_trait = dwarf
+			has_trait = elf
+			has_trait = orc
+			has_culture_group = halfling_group
+			is_sterile_trigger = yes
+		}
+	}
+}
+
+is_elf_trigger = {
+	custom_tooltip = {
+		text = is_elf_tt
+		has_trait = elf
+	}
+}
+
+is_dwarf_trigger = {
+	custom_tooltip = {
+		text = is_dwarf_tt
+		has_trait = dwarf
+	}
+}
+
+is_orc_trigger = {
+	custom_tooltip = {
+		text = is_orc_tt
+		has_trait = orc
+	}
+}
+
+is_halfling_trigger = {
+	custom_tooltip = {
+		text = is_halfling_tt
+		has_trait = halfling
+	}
+}
+
+is_good_race_trigger = {
+	custom_tooltip = {
+		text = is_good_race_tt
+		OR = {
+			is_elf_trigger = yes
+			is_dwarf_trigger = yes
+			is_halfling_trigger = yes
+			is_human_trigger = yes
+		}
+	}
+}
+
+numenor_trigger = {
+	custom_tooltip = {
+		text = has_numenor_blood_tt
+		OR = {
+			has_trait = strong_blood_of_numenor
+			has_trait = blood_of_numenor
+		}
+	}
+}
+
+is_immortal_trigger = {
+	OR = {
+		has_trait = 10_sauron
+		has_trait = 20_sauron
+		has_trait = 30_sauron
+		has_trait = 40_sauron
+		has_trait = 50_sauron
+		has_trait = 60_sauron
+		has_trait = 70_sauron
+		has_trait = 80_sauron
+		has_trait = 90_sauron
+		has_trait = 100_sauron
+		has_trait = maia
+		has_trait = nazgul
+		is_elf_trigger = yes
+	}
+}
+
+is_longlived_trigger = {
+	OR = {
+		is_dwarf_trigger = yes
+		numenor_trigger = yes
+	}
+}
+
+is_primary_race_trigger = {
+	$TARGET$ = {
+		NOT = {
+			is_sterile_trigger = yes
+		}
+	}
+	trigger_if = {
+		limit = {
+			country_is_elf_trigger = yes
+		}
+		$TARGET$ = {
+			is_elf_trigger = yes
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			country_culture_group = dwarf_group
+		}
+		$TARGET$ = {
+			is_dwarf_trigger = yes
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			country_culture_group = orcs_group
+		}
+		$TARGET$ = {
+			is_orc_trigger = yes
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			country_culture_group = halfling_group
+		}
+		$TARGET$ = {
+			is_halfling_trigger = yes
+		}
+	}
+	trigger_else = {
+		$TARGET$ = {
+			is_human_trigger = yes
+		}
+	}
+}
+
+country_same_race_trigger = {
+	trigger_if = {
+		limit = {
+			OR = {
+				country_is_elf_trigger = yes
+				$TARGET$ = { country_is_elf_trigger = yes }
+			}
+		}
+		AND = {
+			country_is_elf_trigger = yes
+			$TARGET$ = { country_is_elf_trigger = yes }
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			OR = {
+				country_culture_group = dwarf_group
+				$TARGET$ = { country_culture_group = dwarf_group }
+			}
+		}
+		AND = {
+			country_culture_group = dwarf_group
+			$TARGET$ = { country_culture_group = dwarf_group }
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			OR = {
+				country_culture_group = orcs_group
+				$TARGET$ = { country_culture_group = orcs_group }
+			}
+		}
+		AND = {
+			country_culture_group = orcs_group
+			$TARGET$ = { country_culture_group = orcs_group }
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			OR = {
+				country_culture_group = halfling_group
+				$TARGET$ = { country_culture_group = halfling_group }
+			}
+		}
+		AND = {
+			country_culture_group = halfling_group
+			$TARGET$ = { country_culture_group = halfling_group }
+		}
+	}
+	trigger_else = {
+		AND = {
+			country_is_human_trigger = yes
+			$TARGET$ = { country_is_human_trigger = yes }
+		}
+	}
+}
+
+same_race_trigger = {
+	NOR = {
+		is_sterile_trigger = yes
+		$TARGET$ = { is_sterile_trigger = yes }
+	}
+	trigger_if = {
+		limit = {
+			is_elf_trigger = yes
+		}
+		$TARGET$ = {
+			is_elf_trigger = yes
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			is_dwarf_trigger = yes
+		}
+		$TARGET$ = {
+			is_dwarf_trigger = yes
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			is_orc_trigger = yes
+		}
+		$TARGET$ = {
+			is_orc_trigger = yes
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			is_halfling_trigger = yes
+		}
+		$TARGET$ = {
+			is_halfling_trigger = yes
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			is_human_trigger = yes
+		}
+		$TARGET$ = {
+			is_human_trigger = yes
+		}
+	}
+}
+
+can_breed_trigger = {
+	NOR = {
+		is_sterile_trigger = yes
+		$TARGET$ = {
+			is_sterile_trigger = yes
+		}
+	}
+	trigger_if = {
+		limit = {
+			is_elf_trigger = yes
+		}
+		$TARGET$ = {
+			OR = {
+				is_elf_trigger = yes
+				is_human_trigger = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			is_dwarf_trigger = yes
+		}
+		$TARGET$ = {
+			is_dwarf_trigger = yes
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			is_orc_trigger = yes
+		}
+		$TARGET$ = {
+			OR = {
+				is_orc_trigger = yes
+				is_human_trigger = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			is_halfling_trigger = yes
+		}
+		$TARGET$ = {
+			is_halfling_trigger = yes
+		}
+	}
+	trigger_else = {
+#		limit = {
+#			is_human_trigger = yes
+#		}
+		$TARGET$ = {
+			OR = {
+				is_elf_trigger = yes
+				is_orc_trigger = yes
+				is_human_trigger = yes
+			}
+		}
+	}
+}
+
+lotr_can_marry_trigger = {
+#	NOR = { #uncomment when game stops spawning wifes for nazguls
+#		is_sterile_trigger = yes
+#		$TARGET$ = {
+#			is_sterile_trigger = yes
+#		}
+#	}
+	trigger_if = {
+		limit = {
+			OR = {
+				numenor_trigger = yes
+				$TARGET$ = {
+					numenor_trigger = yes
+				}
+			}
+		}
+		AND = {
+			numenor_trigger = yes
+			$TARGET$ = {
+				numenor_trigger = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			OR = {
+				is_elf_trigger = yes
+				$TARGET$ = {
+					is_elf_trigger = yes
+				}
+			}
+		}
+		AND = {
+			is_elf_trigger = yes
+			$TARGET$ = {
+				is_elf_trigger = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			OR = {
+				is_dwarf_trigger = yes
+				$TARGET$ = {
+					is_dwarf_trigger = yes
+				}
+			}
+		}
+		AND = {
+			is_dwarf_trigger = yes
+			$TARGET$ = {
+				is_dwarf_trigger = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			OR = {
+				is_orc_trigger = yes
+				$TARGET$ = {
+					is_orc_trigger = yes
+				}
+			}
+		}
+		AND = {
+			is_orc_trigger = yes
+			$TARGET$ = {
+				is_orc_trigger = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			OR = {
+				is_halfling_trigger = yes
+				$TARGET$ = {
+					is_halfling_trigger = yes
+				}
+			}
+		}
+		AND = {
+			is_halfling_trigger = yes
+			$TARGET$ = {
+				is_halfling_trigger = yes
+			}
+		}
+	}
+}

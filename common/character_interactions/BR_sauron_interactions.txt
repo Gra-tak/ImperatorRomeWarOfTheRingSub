@@ -1,0 +1,53 @@
+﻿corrupt_target_ruler = { 
+
+	on_other_nation = yes
+	on_own_nation = no
+	
+	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_arrange_marriage"
+	
+	potential_trigger = {
+		scope:actor = {
+			tag = MOR
+			#NOT = { ai = yes }
+			char:3 = { # Is Sauron alive?
+				is_alive = yes
+				is_ruler = yes
+				prisoner = no
+				employer = C:MOR
+					}
+		}
+		
+		hidden:scope:target = {
+			is_alive = yes
+			is_ruler = yes
+			NOT = { employer = { tag = REB } }
+			NOT = { employer = { tag = BAR } }
+			is_adult = yes
+		}
+	}
+	
+	
+	allowed_trigger = {
+		scope:target = {
+			NOT = { has_religion = melkorism }
+		}
+	}
+	
+	
+	#for any character in the scope:target country
+	
+	#character_actor_trigger = {
+	#	is_adult = yes
+	#	is_ruler = yes
+	#	prisoner = no
+	#}
+	
+	
+	effect = {
+			C:MOR = { add_treasury = { value = -200 } }
+			scope:target = {
+				trigger_event = { id = br_sauron.1 } 
+			}
+		}
+	
+}	

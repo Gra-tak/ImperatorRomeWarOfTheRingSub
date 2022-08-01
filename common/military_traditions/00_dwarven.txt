@@ -1,0 +1,183 @@
+﻿dwarven_philosophy = {
+	color = hsv { 1.1 1 0.5 }
+	image = dwarven_philosophy
+
+	
+	allow = {
+		trigger_if = {
+			limit = { country_culture_group = dwarf_group }
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			country_culture_group = dwarf_group
+		}
+		trigger_else = {
+			custom_tooltip = {
+				text = integrated_any_dwarf_culture
+				any_country_culture = {
+					is_integrated = yes
+					this.culture.culture_group = culture_group:dwarf_group
+				}
+			}
+		}
+	}
+	
+####################
+
+	dwarven_civic_path_1 = { ###Expanded Miner Education
+		modifier = {
+			global_freemen_output = 0.15
+		}
+		icon = celtic_gallic_path_5
+		requires = {}
+	}
+	
+	dwarven_civic_path_2 = { ###Construction Templates
+		modifier = {
+			build_cost = -0.2
+		}
+		icon = greek_states_path_4
+		requires = {dwarven_civic_path_1}
+	}
+	
+	dwarven_civic_path_3 = { ###Laying the Foundation
+		modifier = {
+		}
+		enable_ability = road_building
+		icon = levantine_egyptian_path_end_bonus
+		requires = {dwarven_civic_path_2}
+		on_activate = {
+			add_4_free_province_investments = yes
+		}
+	}
+	
+	dwarven_civic_path_4 = { ###Hidden Treasures
+		modifier = {
+			global_tax_modifier = 0.1
+		}
+		icon = levantine_greco_path_7
+		requires = {dwarven_civic_path_3}
+	}
+	
+	dwarven_civic_path_5 = { ###Establishing Trade Routes
+		modifier = {
+			global_state_trade_routes = 0.15
+		}
+		icon = latin_support_path_5
+		requires = {dwarven_civic_path_4}
+	}
+	
+	dwarven_civic_path_6 = { ###Dwarven Engineering
+		modifier = {
+			global_building_slot = 1
+		}
+		icon = latin_roman_path_4
+		requires = {dwarven_civic_path_5}
+		on_activate = {
+			add_innovation = 2
+		}
+	}
+
+	
+####################
+
+	dwarven_infantry_path_1 = { ###Mastery of the Mountains
+		modifier = {
+			mountain_combat_bonus = 0.2
+		}
+		enable_tactic = greek_phalanx
+		icon = greek_antigonid_path_7
+		requires = {}
+	}
+	
+	dwarven_infantry_path_2 = { ###Segmented Plate
+		modifier = {
+			dwarven_infantry_defensive = 0.1
+			dwarven_archers_defensive = 0.1
+			dwarven_goat_riders_defensive = 0.1
+		}
+		icon = mauryan_mauryas_path_3
+		requires = {dwarven_infantry_path_1}
+	}
+	
+	dwarven_infantry_path_3 = { ###Fighting For Our Families
+		modifier = {
+			dwarven_infantry_morale = 0.1
+			dwarven_archers_morale = 0.1
+			dwarven_goat_riders_morale = 0.1
+		}
+		icon = greek_antigonid_path_end_bonus
+		requires = {dwarven_infantry_path_2}
+	}
+	
+	dwarven_infantry_path_4 = { ###A New Metal
+		modifier = {
+			dwarven_infantry_offensive = 0.1
+			dwarven_archers_offensive = 0.1
+			dwarven_goat_riders_offensive = 0.1
+		}
+		icon = latin_tribal_path_5
+		requires = {dwarven_infantry_path_3}
+	}
+	
+	dwarven_infantry_path_5 = { ###Mastery of the Hills
+		modifier = {
+			hills_combat_bonus = 0.2
+		}
+		icon = celtic_gallic_path_3
+		requires = {dwarven_infantry_path_1}
+	}
+	
+	dwarven_infantry_path_6 = { ###Mountain Folk
+		modifier = {
+			land_unit_attrition = -0.15
+		}
+		icon = persian_bactrian_path_7
+		requires = {dwarven_infantry_path_5}
+	}
+	
+	
+####################
+
+	dwarven_defensive_path_1 = { ###
+		modifier = {
+			fortress_building_cost = -0.1
+		}
+		icon = north_african_army_path_4
+		requires = {dwarven_infantry_path_1}
+	}
+	
+	dwarven_defensive_path_2 = { ###
+		modifier = {
+			hostile_attrition = 0.2
+		}
+		icon = celtic_gallic_path_2
+		requires = {dwarven_defensive_path_1}
+	}
+	
+	dwarven_defensive_path_3 = { ###
+		modifier = {
+			fort_maintenance_cost = -0.2
+		}
+		icon = greek_states_path_6
+		requires = {dwarven_defensive_path_2}
+	}
+	
+	dwarven_defensive_path_4 = { ###
+		modifier = {
+			fortress_building_cost = -0.1
+			fort_limit = 1
+		}
+		icon = celtic_gallic_path_7
+		requires = {dwarven_defensive_path_3}
+	}
+	
+	dwarven_defensive_path_5 = { ###
+		modifier = {
+			global_defensive = 0.15
+		}
+		icon = greek_states_path_6
+		requires = {dwarven_defensive_path_4}
+	}
+	
+}

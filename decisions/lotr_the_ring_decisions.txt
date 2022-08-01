@@ -1,0 +1,36 @@
+﻿country_decisions = {
+	lotr_treasure_one_ring_decision = {
+		potential = {
+			is_ai = no
+			exists = treasure:lotr_treasure_one_ring
+			NOT = { has_variable = lotr_one_ring_events3_variable }
+			ROOT = {
+				any_country_treasure = {
+					this = treasure:lotr_treasure_one_ring
+				}
+			}
+		}
+		allow = {
+			ROOT = {
+				any_country_treasure = {
+					this = treasure:lotr_treasure_one_ring
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = "lotr_treasure_one_ring_decision_tooltip"	
+			hidden_effect = {
+				current_ruler = {
+					add_health = -15
+				}
+			}
+			add_stability = -10
+			trigger_event = lotr_one_ring_events.3
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

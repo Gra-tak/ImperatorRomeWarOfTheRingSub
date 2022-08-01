@@ -1,0 +1,128 @@
+﻿l_english:
+############################
+# Middle-earth Buildings
+############################
+inn_building:0 "All-Welcome Inn"
+ inn_building_desc:1 "The All-Welcome Inn was an inn in the Shire, just west of Frogmorton, where the Northway met the East Road. It was to be one of the stops of Thorin and Company."
+ inn_building_cost:0 "Inn Building Cost"
+inn2_building:0 "The Forsaken Inn"
+ inn2_building_desc:1 "The Forsaken Inn was the easternmost outpost of the Bree-land, situated along the East Road. As the desolation of Eriador sets in, one may find such an inn deserted."
+ inn2_building_cost:0 "Inn Building Cost"
+############################
+# Military Buildings
+############################
+garrison_building:0 "Garrison Tower"
+ garrison_building_desc:1 "The Dúnedain honoured those men and women trained in the defence of their city. The garrison tower houses a company of soldiers, healers in the infirmary and staff for the kitchen, armoury and storehouse."
+ garrison_building_cost:0 "Garrison Tower Building Cost"
+garrison2_building:0 "Garrison Tower"
+ garrison2_building_desc:1 "The Dúnedain honoured those men and women trained in the defence of their city. The garrison tower houses a company of soldiers, healers in the infirmary and staff for the kitchen, armoury and storehouse."
+ garrison_building_cost:0 "Garrison Tower Building Cost"
+range_building:0 "Archery Range"
+ range_building_desc:1 "When on duty, the Guards of the Citadel are not permitted to leave their post for any cause, save at the command of their lord."
+ range_building_cost:0 "Archery Range Building Cost"
+stables_building:0 "Stables"
+ stables_building_desc:1 "Fair stables where swift horses are kept, hard by the lodgings of the errand-riders of the Lord: messengers always ready to go at the urgent command of the King or his steward."
+ stables_building_cost:0 "Stables Building Cost"
+siege_building:0 "Siege Workshop"
+ siege_building_desc:1 "Siege description"
+ siege_building_cost:0 "Siege Building Cost"
+dormitory_building:0 "Dormitory"
+ dormitory_building_desc:1 "Dormitory description"
+ dormitory_building_cost:0 "Dormitory Building Cost"
+caravanserai_building:0 "Caravanserai"
+ caravanserai_building_desc:1 "A roadside palace of caravans where merchants and travellers could rest and recover from the day’s journeys through desert and jungle."
+ caravanserai_building_cost:0 "Caravanserai Building Cost"
+mercenary_building:0 "Mercenary Centre"
+ mercenary_building_desc:1 "Foreign mercenary companies repurpose existing or abandoned infrastructure for their base of operations. These companies hail from war-torn lands to the east."
+ mercenary_building_cost:0 "Mercenary Centre Building Cost"
+mumak_building:0 "Mumak Pen"
+ mumak_building_desc:1 "Great beasts of the battlefield are bred and handled at the Mumakil pen."
+ mumak_building_cost:0 "Mumak Pen Building Cost"
+############################
+# Dunedain Civic Buildings
+############################
+stoneworker_building:0 "Stoneworker"
+ stoneworker_building_desc:1 "Connected by road to a long narrow straight valley in the mountains where men quarry stone for the city, the stoneworker shapes that material with the skill of the Dúnedain."
+ stoneworker_building_cost:0 "Stoneworker Building Cost"
+healing_building:0 "Houses of Healing"
+ healing_building_desc:1 "All life is doomed to fade, yet here, in the Houses of Healing surrounded by gardens, hurts are tended, and life is restored."
+ healing_building_cost:0 "Houses of Healing Building Cost"
+############################
+# Dunedain Fort Upgrades
+############################
+trebuchet_building:0 "Trebuchet Tower"
+ trebuchet_building_desc:1 "trebuchet description"
+ trebuchet_building_cost:0 "Trebuchet Building Cost"
+citadel_building:0 "Citadel"
+ citadel_building_desc:1 "temp text"
+ citadel_building_cost:0 "Citadel Building Cost"
+############################
+# Elvish Civic Buildings
+############################
+orchard_building:0 "Orchard"
+ orchard_building_desc:1 "temp text"
+ orchard_building_cost:0 "Orchard Building Cost"
+fire_building:0 "Hall of Fire"
+ fire_building_desc:1 "temp text"
+ fire_building_cost:0 "Hall of Fire Building Cost"
+hunting_building:0 "Hunting Lodge"
+ hunting_building_desc:1 "temp text"
+ hunting_building_cost:0 "Hunting Lodge Building Cost"
+faery_building:0 "Faery Ring"
+ faery_building_desc:1 "temp text"
+ faery_building_cost:0 "Faery Ring Building Cost"
+############################
+# Elvish Fort Upgrades
+############################
+observatory_building:0 "Observatory"
+ observatory_building_desc:1 "temp text"
+ observatory_building_cost:0 "Observatory Building Cost"
+ancient_building:0 "Ancient Library"
+ ancient_building_desc:1 "temp text"
+ ancient_building_cost:0 "Ancient Library Building Cost"
+treasury_building:0 "Treasury"
+ treasury_building_desc:1 "temp text"
+ treasury_building_cost:0 "Treasury Building Cost"
+cellar_building:0 "Royal Cellar"
+ cellar_building_desc:1 "temp text"
+ cellar_building_cost:0 "Royal Cellar Building Cost"
+conservatorium_building:0 "Conservatorium"
+ conservatorium_building_desc:1 "temp text"
+ conservatorium_building_cost:0 "Conservatorium Building Cost"
+############################
+# Haradrim Civic Buildings
+############################
+bazaar_building:0 "Bazaar of Middle-earth"
+ bazaar_building_desc:1 "temp text"
+ bazaar_building_cost:0 "Bazaar of Middle-earth Building Cost"
+############################
+# Haradrim Fort Upgrades
+############################
+pavilion_building:0 "Royal Pavilion"
+ pavilion_building_desc:1 "temp text"
+ pavilion_building_cost:0 "Royal Pavilion Building Cost"
+############################
+# Orc Civic Buildings
+############################
+factory_building:0 "Factory"
+ factory_building_desc:1 "temp text"
+ factory_building_cost:0 "Factory Building Cost"
+############################
+# Orc Fort Upgrades
+############################
+dungeons_building:0 "Dungeons"
+ dungeons_building_desc:1 "temp text"
+ dungeons_building_cost:0 "Dungeons Building Cost"
+############################
+# Lossoth Civic Buildings
+############################
+whaling_building:0 "Whaling Station"
+ whaling_building_desc:1 "temp text"
+ whaling_building_cost:0 "Whaling Station Building Cost"
+############################
+# Northmen Fort Upgrades
+############################
+mead_building:0 "Mead Hall"
+ mead_building_desc:1 "temp text"
+ mead_building_cost:0 "Mead Hall Building Cost"
+#

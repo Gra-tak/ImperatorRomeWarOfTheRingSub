@@ -1,0 +1,28 @@
+﻿namespace = gratak_grow_up_event
+
+gratak_grow_up_event.1 = { 
+	type = country_event
+	
+	title = "Grown up"
+	desc = "This character is now an adult"
+	
+	#left_portrait = current_ruler
+	right_portrait = scope:gratak_grow_up_character
+	
+	picture = greek_court
+	
+	trigger = {
+		scope:gratak_grow_up_character =
+		{
+			has_variable = gratak_grow_up_flag
+		}
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "Good to know"
+	}
+
+}

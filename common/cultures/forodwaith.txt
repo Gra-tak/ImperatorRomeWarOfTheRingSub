@@ -1,0 +1,85 @@
+﻿forodwaith_group = {
+	#forodwaith - BR note: the northern wastes area
+	levy_template = levy_forodwaith
+	
+	primary = archers
+	second = light_infantry
+	flank = archers
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+
+
+	color = hsv { 0 0 1 }
+
+	male_names = {
+			Aggi Aigesarri Ailu Ammot Ara Arrajuoksa Asllat Èoavva Ahkemiella Algebaeivi Baeivi Baeivvet Biejan Bijas Bilzi Davgon Dutta Gaivvas
+			Gaktu Henes Jarre Jeansa Juvven_John Lagon Lavrrohas Leamma Mellet Mihka Mohkku Mokci Nahkol Nainnas Njulgu Oavan Orddot Rastos Riibma Ruigi
+			Sarra Speaidna Viggu Alik Hasaba Kako Kharuchi Kolik Mandak Nabtiko Nenyts Nga Ngenoh Noumea Num Nyalku Panay Pudak Salinder Samatu Sarak Sirtya
+			Somatu Syudbya Tatva Tolik Vesei Wayngachi Xeryuchi Yadne Yapti Yar Yavlad YurakAndyamo Chichayka Chumbulat Dergun Deryab Dobrinya Erziya Inzhay
+			Kezhapa Kezhay Kezhedey Kezhevat Kichay Kubrat Malyaka Malyy Meltsayka Mordvinko Moksha
+			Nalka Nuyaksha Nuyanza Nuyat Pakstyan Paksyay Paksyut Parush Pivtsay Pokshayka Putyayka Shindyay Shoksha Syrka Tikshayka
+			Tyueykezhut Uchva Viryay Atyamas Azyren Chipaz Kardaz Kinyak Koshel Murunza Naruchad Nishkepaz Orunza Puresh Purysho 
+			Saksa Shkay Surt Tul Tunya Tutyra Tylmache Tylze Tyushten Tyushtya Uzhara Varmanpaz
+            Aatos Ahma Aimo Armas Arvo Asikko Ensio Haapa Hannu Havu Hintsa Ihanti Into Jalo Jurva Kalevi Kettu Kolli Lalli Lauri_Laurence Lemetti
+			Mielitty Miemo Mikko_Michael Oiva Onni Otso Pyry Paivio Reko Satajalka Satatieto Seppo Susi Tapani Toivo Ukko Uoti
+			Valta Valto Veli Vesa Voitto Erkki Kaarle Risto Olavi_Olaf Yrjo Valteri Riku_Richard MattiJaakoppi Taisto Paavo Aatso Ahvo Aarto Asko Tuokko
+			Kauro Kuuti_Knut Pekko Soini_Sven Tuure Turo Tommo Tohmas
+			Altti Aluenda Arre Âtos Bengit Bruka Culnum Dogrib Ekka Emeli Esko Etu Frannard Grimk Gromk Hasikka Heikki Hyva Ruoka Ilmo Iri
+			Jalmari Jani Jari Jaska Juhani Juoma Jussi Jyri Kaj Kalervo Kaleva Karhupuhka Kauppi Kerkko Kimmo Jaasilma Lailli Laulumistaja Launo Lassi Lauri Lennar
+			Lufsen Mainio Manu Matti Menikko Mika Niko Okko Olavi Oskari Panu Parrakas Pasi Pentti Pitkat Sarmet Raimo Rauno Riimukasi Rillit Sampo Santtu Tahtivalo
+			Tahvo Tapio Terho Tero Topi Turkka Ulko Uni Pyydystaja Urho Urmas Vainamo Vaino Valio Valtteri Vamma Vanha Isa Ville Ylermi Yrjana
+	}
+	
+	female_names = {
+			Amu Ansa Anava Ashava Asrava Azra_Va
+			Chechama Chenksa Cherava Chichayka Chindyapa Chindyayka Chinzhay Chitska Elyuva Eija Eine Elin Ella
+			Inyava Ida Ilma Ilta Jana Kirsikka Mimu Mirja Kanyava KanyuvaKirdyava Kunava Kunyavka
+			Litava Litova Liyava Mastorava Mazava Megurka Mel_shay Nea N_o_ra Ora Oskari Nezayka Noroava Nulzyava Nuyanza Nyal_ka Nyayka Olota Ordava Oshama
+			Parava PekshaykaPemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Ruzava
+			Sanal_ka Sangasa Sernyava Serzhay Setyamka Seyamka Shonzhava Shukshtoroyka Sinyava Siyamka Slyugan_ka Sochava Styaka Syryava
+			Tatka Tekay Tetyava Tikshayka Toyaksha Tundava Tundya Unzhutka Upurga Utyayka Valdava Vergava Vezhav Vidyava Virtyava Yalgava
+			Pinja Pirita Raija Rikitsa Rusu Saija Sana Sanelma Sini Trimani Ulla Untamo Voteli Waethryth
+			Aamu Aino Hella Helmi Kaarina_Catherine Kapy Kielo Kukka Lauha Lempi Mahla Maija Marja Mesi Metta Paiva Paivi Pihla Pilvi Rauha Sisko Suoma
+			Taimi Terhi Titti Tuija Tuovi Tuuli Tuulikki Tyyne Tyyni Vanamo Venla Mielikki Hertta Loviisa Inkeri Ilmatar Irene_Irene Ilona_Helen Kristiina_Christina
+			Elisabet_Elisabeth Sohvi_Sofia Auni_Agnes Liekko_Helen Kivutar Lemmikki Lyylikki Salme Talvikki Tuulitar
+	}
+	
+	family = {
+			Salvakhas
+			Karnak
+			Vytautas
+			Litto
+			Pukiik
+			Gedere
+			Irmantas
+			Svitrigaila
+			Bukantas
+			Oitto-kohta
+			Dangeruthas
+			Lubartas
+			Uvathasen
+			Akharn
+			Aras
+			Ringaudas
+			Vingoldas
+	}
+	
+	culture = {
+		lossoth = {}
+		rhudaurim = {}
+		angmarim = {}
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	graphical_culture = north_indian_gfx
+	ethnicities = {
+		10 = tibetan
+	}
+	
+}
+

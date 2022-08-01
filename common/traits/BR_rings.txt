@@ -1,0 +1,174 @@
+﻿
+
+vilya = { 
+	type = status
+	zeal = 5
+	health = 1
+	finesse = 4
+	country = { 
+		omen_power = 1.2
+		omen_duration = 1
+	}
+}
+
+nenya = { 
+	type = status
+	zeal = 4
+	health = 1
+	charisma = 3
+	country = { 
+		omen_power = 1.2
+		omen_duration = 1
+	}
+}
+
+narya = { 
+	type = status
+	zeal = 4 
+	health = 1
+	martial = 3
+	unit = { 
+		land_morale = 1
+	}
+	country = { 
+		omen_power = 1.2
+		omen_duration = 1
+	}
+}
+
+
+#The Seven 
+
+
+Angya = { 
+	type = status
+	country = { 
+		omen_power = 1
+		omen_duration = 1
+	}
+}
+
+Sindya = { 
+	type = status
+	country = { 
+		omen_power = 1
+		omen_duration = 1
+	}
+
+}
+
+Taurya = { 
+	type = status
+	country = { 
+		omen_power = 1
+		omen_duration = 1
+	}
+}
+
+Vanya = { 
+	type = status
+	country = { 
+		omen_power = 1
+		omen_duration = 1
+	}
+}
+
+Urya = {
+	type = status
+	country = { 
+		omen_power = 1
+		omen_duration = 1
+	}
+}
+Tuclya = { 
+	type = status
+	country = { 
+		omen_power = 1
+		omen_duration = 1
+	}
+}
+
+Tinya = { 
+	type = status
+	country = { 
+		omen_power = 1
+		omen_duration = 1
+	}
+}
+
+
+# the Nine 
+
+orom = { 
+	type = status
+	country = { 
+		omen_power = 0.5
+		omen_duration = 1
+	}
+}
+
+sakhla = { 
+	type = status
+	country = { 
+		omen_power = 0.5
+		omen_duration = 1
+	}
+}
+adash = { 
+	type = status
+	country = { 
+		omen_power = 0.5
+		omen_duration = 1
+	}
+}
+
+juru = { 
+	type = status
+	country = { 
+		omen_power = 0.5
+		omen_duration = 1
+	}
+}
+
+mebat = { 
+	type = status
+	country = { 
+		omen_power = 0.5
+		omen_duration = 1
+	}
+}
+
+khanto = { 
+	type = status
+	country = { 
+		omen_power = 0.5
+		omen_duration = 1
+	}
+}
+
+sapthan = {
+	type = status
+	country = { 
+		omen_power = 0.5
+		omen_duration = 1
+	}
+}
+
+nitir = { 
+	type = status
+	country = { 
+		omen_power = 0.5
+		omen_duration = 1
+	}
+}
+
+uri = {
+	type = status
+	country = { 
+		omen_power = 0.5
+		omen_duration = 1
+	}
+}
+
+
+

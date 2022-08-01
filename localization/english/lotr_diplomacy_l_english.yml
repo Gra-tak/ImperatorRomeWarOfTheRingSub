@@ -1,0 +1,68 @@
+﻿l_english:
+ # Thrall Tribe
+ 
+ AM_thrall_tribe:2 "Thrall of Mordor"
+ LEAD_thrall_tribe:2 "Thrall of Mordor"
+ thrall_tribe:2 "Thrall of Mordor"
+ 
+ thrall_tribe:0 "Thrall Tribe"
+ 
+ OFFER_thrall_tribeTITLE:0 "Demand Thrall Tribe Status"
+ CANCEL_thrall_tribeTITLE:0 "Cancel Thrall Tribe Status"
+ BREAK_thrall_tribeTITLE:0 "Cancel Thrall Tribe Status"
+ 
+ OFFER_thrall_tribe_DESC:0 "Suggest that they become our Thrall Tribe, and we will protect them."
+ CANCEL_thrall_tribe_DESC:0 "End Thrall Tribe status."
+ BREAK_thrall_tribe_DESC:0 "Cease being a Thrall Tribe."
+ 
+ OFFER_thrall_tribe_CATEGORY:0 "Influence Actions"
+ OFFER_thrall_tribe_TOOLTIP_HEADER:0 "Demand Thrall Tribe Status from $NAME$"
+ OFFER_thrall_tribe_FLAVOR:0 "A Thrall Tribe is a thrall subject of a nation."
+ CANCEL_thrall_tribe_CATEGORY:0 "Influence Actions"
+ CANCEL_thrall_tribe_TOOLTIP_HEADER:0 "Cancel Thrall Tribe Status of $NAME$"
+ CANCEL_thrall_tribe_FLAVOR:0 "Canceling our relationship with our Thrall Tribe will make them independent."
+ BREAK_thrall_tribe_CATEGORY:0 "Influence Actions"
+ BREAK_thrall_tribe_TOOLTIP_HEADER:0 "Break Thrall Tribe Status with $NAME$"
+ BREAK_thrall_tribe_FLAVOR:0 "Breaking our relationship with our overlord will make us independent."
+ 
+ # Ranger Protectorate
+ 
+ LEAD_ranger_protectorate:2 "Ranger Protectorate"
+ AM_ranger_protectorate:2 "Ranger Protectorate"
+ ranger_protectorate:2 "Ranger Protectorate"
+ 
+ OFFER_ranger_protectorateTITLE:0 "Demand Protectorate"
+ CANCEL_ranger_protectorateTITLE:0 "Cancel Protectorate"
+ BREAK_ranger_protectorateTITLE:0 "Cancel Protectorate"
+
+ OFFER_ranger_protectorate_DESC:0 "Suggest that we will protect them."
+ CANCEL_ranger_protectorate_DESC:0 "Stop protecting them."
+ BREAK_ranger_protectorate_DESC:0 "Stop being protected."
+ 
+ OFFER_ranger_protectorate_TOOLTIP_HEADER:0 "Demand Ranger Protectorate status"
+ OFFER_ranger_protectorate_FLAVOR:0 ""
+ CANCEL_ranger_protectorate_TOOLTIP_HEADER:0 "Cancel Ranger Protectorate status"
+ CANCEL_ranger_protectorate_FLAVOR:0 ""
+ BREAK_ranger_protectorate_TOOLTIP_HEADER:0 "Break Ranger Protectorate status"
+ BREAK_ranger_protectorate_FLAVOR:0 ""
+
+ # Ranger Fief
+
+ LEAD_ranger_fief:2 "Ranger Fief"
+ AM_ranger_fief:2 "Ranger Fief"
+ ranger_fief:2 "Ranger Fief"
+ 
+ OFFER_ranger_fiefTITLE:0 "Demand Fief"
+ CANCEL_ranger_fiefTITLE:0 "Cancel Fief"
+ BREAK_ranger_fiefTITLE:0 "Cancel Fief"
+
+ OFFER_ranger_fief_DESC:0 "Suggest that we will protect them."
+ CANCEL_ranger_fief_DESC:0 "Stop protecting them."
+ BREAK_ranger_fief_DESC:0 "Stop being protected."
+ 
+ OFFER_ranger_fief_TOOLTIP_HEADER:0 "Demand Ranger Fief status"
+ OFFER_ranger_fief_FLAVOR:0 ""
+ CANCEL_ranger_fief_TOOLTIP_HEADER:0 "Cancel Ranger Fief status"
+ CANCEL_ranger_fief_FLAVOR:0 ""
+ BREAK_ranger_fief_TOOLTIP_HEADER:0 "Break Ranger Fief status"
+ BREAK_ranger_fief_FLAVOR:0 ""

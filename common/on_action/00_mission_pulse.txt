@@ -1,0 +1,8 @@
+﻿# LOTR - Removed all non lotr missions
+
+tribal_reform_monarchy_pulse = {
+	random_events = {
+		10 = 0
+		5 = tribal_reform.2
+	}
+}

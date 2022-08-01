@@ -1,0 +1,41 @@
+﻿on_game_initialized = {
+	events = {
+		lotr_startup.1
+	}
+}
+
+corsair_raid_events_pulse = {
+	random_events = {
+		120 = 0
+		10 = corsair_raid_events.1
+		9 = corsair_raid_events.2
+		8 = corsair_raid_events.3
+	}
+}
+
+orc_raid_events_pulse = {
+	random_events = {
+		120 = 0
+		10 = orc_raid_events.1
+		9 = orc_raid_events.2
+		8 = orc_raid_events.3
+		7 = orc_raid_events.4
+	}
+}
+
+lotr_character_events_pulse = {
+	random_events = {
+		120 = 0
+		10 = lotr_character_events.1
+		8 = lotr_character_events.6
+		6 = lotr_character_events.7
+		3 = lotr_character_events.10
+		9 = lotr_character_events.15
+		5 = lotr_character_events.22
+		7 = lotr_character_events.26
+		11 = lotr_character_events.27
+		12 = lotr_character_events.28
+		15 = lotr_character_events.29
+		8 = lotr_character_events.32
+	}
+}

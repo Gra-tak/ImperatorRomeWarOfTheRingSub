@@ -1,0 +1,526 @@
+﻿lotr_generic_army_mission = {
+	header = "lotr_generic_mission_mountain_headers"
+	icon = "lotr_generic_army_mission_icon"
+
+	repeatable = no
+
+	chance = {}
+
+	ai_chance = {
+		factor = 0
+	}
+
+	potential = {
+    	NOT = { has_variable = lotr_generic_army_mission_activated_variable }
+		has_civil_war = no
+		is_subject = no
+		any_owned_province = {
+			any_neighbor_province = {
+				is_sea = no
+				has_owner = yes
+				NOR = { 
+					owner = root
+					owner = { is_subject_of = ROOT }
+				} 
+			}
+		}
+	}
+
+	on_potential = {
+		random_owned_province = {
+			limit = {
+				any_neighbor_province = {
+					is_sea = no
+					has_owner = yes
+					NOR = { 
+						owner = root
+						owner = { is_subject_of = ROOT }
+					}
+				}
+			} 
+			ordered_neighbor_province = {
+				limit = {
+					is_sea = no
+					has_owner = yes
+					NOR = { 
+						owner = root
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				order_by = total_population
+				save_scope_as = lotr_generic_neighbor_province_scope
+				region = {
+					save_scope_as = lotr_generic_neighbor_region_scope
+				}
+			} 
+		}
+		scope:lotr_generic_neighbor_province_scope = {
+			ordered_neighbor_province = {
+				limit = {
+					is_sea = no
+					has_owner = yes
+					owner = root
+				}
+				order_by = total_population
+				save_scope_as = lotr_generic_border_province_scope
+			} 
+		}
+	}
+
+	abort = {
+		ai_mission_back_out_trigger = yes
+	}
+
+	on_start = {
+		add_stability = 5
+		start_mission_ai_effect = yes
+	}
+
+	on_abort = {
+		add_stability = -5
+        set_variable = {
+            name = lotr_generic_army_mission_activated_variable
+        }
+	}
+
+	on_completion = {
+		complete_mission_effect = yes
+	}
+	
+############################# Neighbor missions #####################################
+
+	lotr_generic_neighbor_expand_mission_1 = {		# Attack or Friend
+		icon = "task_expansion"
+
+    	duration = 220
+
+		potential = {
+			exists = scope:lotr_generic_neighbor_province_scope
+		}
+
+		allow = {
+			treasury >= 80
+			political_influence >= 20
+		}
+		
+		highlight = {
+			scope:province = {
+				exists = scope:lotr_generic_neighbor_province_scope
+				THIS = scope:lotr_generic_neighbor_province_scope
+			}
+		}
+
+		on_start = {
+            add_treasury = -80
+			add_political_influence = -20
+		}
+		
+		bypass = {
+			scope:lotr_generic_neighbor_province_scope = {
+				owner = root
+			}
+		}
+
+		on_completion = {
+			current_ruler = {
+				add_popularity = popularity_medium
+			}
+		} 
+	}
+	
+	lotr_generic_neighbor_expand_mission_2 = {		# Decide to attack
+		icon = "task_economical"
+		
+		duration = 220
+
+		requires = { lotr_generic_neighbor_expand_mission_1 } 
+
+		potential = {
+			exists = scope:lotr_generic_neighbor_province_scope
+		}
+
+		allow = {
+			scope:lotr_generic_border_province_scope = {
+                trigger_if = {
+                    limit = {
+                        has_city_status = yes
+                    }
+                    has_building = military_building
+                }
+                trigger_if = {
+                    limit = {
+                        has_building = fortress_building
+                    }
+                    has_building = fortress_building
+                }
+                trigger_else = {
+                    limit = {
+                        has_city_status = no
+                    }
+					has_building = barracks_building
+				}
+            }
+		}
+		
+		bypass = {
+			OR = {
+				has_variable = lotr_generic_neighbor_friend_loyal_variable
+				scope:lotr_generic_neighbor_province_scope = {
+					owner = root
+				}
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				exists = scope:lotr_generic_border_province_scope
+				THIS = scope:lotr_generic_border_province_scope
+			}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+        	scope:lotr_generic_neighbor_province_scope = {
+        		add_claim = root
+        	}
+        	scope:lotr_generic_neighbor_province_scope.owner = {
+        		add_opinion = {
+        			target = root
+        			modifier = opinion_hostile_neighbor
+        		}
+        	}
+			add_manpower = {
+				value = 0
+				add = root.max_manpower
+				divide = 10
+				min = 1
+			}
+			set_variable = {
+				name = lotr_generic_neighbor_expand_variable
+			}
+		}
+	}
+	
+	lotr_generic_neighbor_expand_mission_3 = {		# 3 Own province
+		icon = "task_conquest"
+
+		requires = { lotr_generic_neighbor_expand_mission_2 } 
+		
+    	duration = 220
+
+		allow = {
+        	scope:lotr_generic_neighbor_province_scope = {
+				OR = { 
+					owner = root
+					owner = { is_subject_of = ROOT }
+				} 
+        	}
+		}
+		
+		bypass = {
+			has_variable = lotr_generic_neighbor_friend_loyal_variable
+		}
+		
+		highlight = {
+			scope:province = {
+				exists = scope:lotr_generic_neighbor_province_scope
+				THIS = scope:lotr_generic_neighbor_province_scope
+			}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			current_ruler = { add_popularity = popularity_medium }
+			add_country_modifier = {
+				name = neighbor_expand_mission_glory_modifier
+				duration = 7300 # 20 years
+			}
+			add_aggressive_expansion = -5.0
+		}
+	}
+	
+	lotr_generic_neighbor_expand_mission_4 = {		# Improving attack ability
+		icon = "task_diplomatic"
+
+		requires = { lotr_generic_neighbor_expand_mission_3 } 
+		
+    	duration = 220
+
+		allow = {
+			invention = siege_engineers_inv_1
+		}
+		
+		bypass = {
+			has_variable = lotr_generic_neighbor_friend_loyal_variable
+		}
+		
+		highlight = {
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			add_country_modifier = {
+				name = neighbor_expand_mission_secure_modifier
+				duration = 3650 # 10 years
+			}
+		}
+	}
+	
+	lotr_generic_neighbor_expand_mission_5 = {		# Final
+		icon = "task_political"
+		
+		duration = 220
+
+		final = yes
+
+		requires = { lotr_generic_neighbor_expand_mission_4 } 
+
+		allow = {
+			military_experience >= 120
+		}
+		
+		bypass = {
+			has_variable = lotr_generic_neighbor_friend_loyal_variable
+		}
+		
+		highlight = {
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			add_country_modifier = {
+				name = neighbor_expand_mission_expansion_modifier
+				duration = 3650 # 10 years
+			}
+            add_aggressive_expansion = -10
+            add_legitimacy = 15
+		}
+	}
+	
+############################# Neighbor Friend missions #####################################
+	
+	lotr_generic_neighbor_friend_mission_1 = {		# Decide to be friends
+		icon = "task_conquest"
+		
+		duration = 220
+
+		requires = { lotr_generic_neighbor_expand_mission_1 } 
+
+		potential = {
+			exists = scope:lotr_generic_neighbor_province_scope
+		}
+
+		allow = {
+			treasury >= 50
+			scope:lotr_generic_neighbor_province_scope.owner = {
+		    	opinion = {
+		    		target = root
+		    		value >= 25
+		    	}
+		    	NOT = { war_with = root }
+		    }
+		}
+		
+		bypass = {
+			OR = {
+				has_variable = lotr_generic_neighbor_expand_variable
+				scope:lotr_generic_neighbor_province_scope = {
+					owner = root
+				}
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				exists = scope:lotr_generic_neighbor_province_scope
+				THIS = scope:lotr_generic_neighbor_province_scope
+			}
+		}
+
+		on_start = {
+			add_treasury = -50
+		}
+
+		on_completion = {
+			current_ruler = { add_popularity = popularity_medium }
+        	scope:lotr_generic_neighbor_province_scope.owner = {
+        		add_opinion = {
+        			target = root
+        			modifier = opinion_friendly_neighbor
+        		}
+        	}
+			set_variable = {
+				name = lotr_generic_neighbor_friend_loyal_variable
+			}
+		}
+	}
+	
+	lotr_generic_neighbor_friend_mission_2 = {		# Better friends
+		icon = "task_economical"
+		
+		final = yes
+
+		requires = { lotr_generic_neighbor_friend_mission_1 } 
+		
+    	duration = 220
+
+		allow = {
+            political_influence >= 10
+			scope:lotr_generic_neighbor_province_scope.owner = {
+		    	opinion = {
+		    		target = root
+		    		value >= 125
+		    	}
+		    	NOT = { war_with = root }
+		    }
+		}
+		
+		bypass = {
+			OR = {
+				has_variable = lotr_generic_neighbor_expand_variable
+				scope:lotr_generic_neighbor_province_scope = {
+					owner = root
+				}
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				exists = scope:lotr_generic_border_province_scope
+				THIS = scope:lotr_generic_border_province_scope
+			}
+		}
+
+		on_start = {
+			add_political_influence = -10
+		}
+
+		on_completion = {
+			scope:lotr_generic_border_province_scope = {
+				add_province_modifier = {
+					name = fortified_stronghold
+					duration = -1
+				}
+			}
+			add_aggressive_expansion = -10.0
+		}
+	}
+	
+############################# Army missions #####################################
+
+	
+	lotr_generic_build_army_mission_1 = {		# Military Training Standards
+		icon = "task_diplomatic"
+
+    	duration = 220
+
+		allow = {
+			manpower_percentage > 0.85
+			capital_scope = {
+				has_city_status = yes
+				num_of_military_building >= 1
+			}
+		}
+		
+        highlight = {
+        	scope:province = {
+        		this = root.capital_scope
+        	}
+        }
+
+		on_start = {
+		}
+
+		on_completion = {
+			add_country_modifier = {
+				name = generic_build_army_mission_1_modifier
+				duration = 3650 # 10 years
+			}
+			add_military_experience = 4
+		}
+	}
+	
+	lotr_generic_build_army_mission_2 = {		# Hardened Commanders
+		icon = "task_political"
+
+		requires = { lotr_generic_build_army_mission_1 } 
+
+    	duration = 220
+
+		allow = {
+			invention = buy_military_tradition_inv
+		}
+		
+		highlight = {
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			add_stability = 10
+        	create_character = {
+        		age = 32
+        		no_traits = yes
+        		no_stats = yes
+        		hidden_effect = {
+        			amazing_martial_effect = yes
+        			great_charisma_effect = yes
+        			good_finesse_effect = yes
+        			average_zeal_effect = yes
+        			positive_martial_trait_effect = yes
+        			positive_martial_trait_effect = yes
+        			random_trait_effect = yes
+        		}
+        	}
+			current_ruler = {
+				add_martial = 1
+			}
+		}
+	}
+	
+	lotr_generic_build_army_mission_3 = {		# Enhanced Training Grounds
+		icon = "task_expansion"
+
+		final = yes
+
+    	duration = 220
+
+		requires = { lotr_generic_build_army_mission_2 } 
+
+		allow = {
+			invention = experience_decay_inv_1
+		}
+		
+		highlight = {
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			add_manpower = {
+				value = 0
+				add = root.max_manpower
+				divide = 10
+				min = 1
+			}
+			current_ruler = {
+				add_popularity = popularity_medium
+				add_finesse = 1
+				add_prominence = prominence_large
+			}
+		}
+	}
+	
+############################# Different Religion Neighbor #####################################
+	
+}

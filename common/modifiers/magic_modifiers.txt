@@ -1,0 +1,8 @@
+﻿
+dark_wards = {
+	garrison_size = 1
+	garrison_growth = 0.2
+	local_defensive = 5
+	local_hostile_attrition = 5
+	max_attrition = 5
+}

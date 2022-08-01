@@ -1,0 +1,210 @@
+﻿
+orc_purge_spawn = {
+	while = {
+		count = $NUM$
+		random_list = {
+			120 = {
+				add_subunit = orc_infantry
+			}
+			50 = {
+				modifier = {
+					factor = 2
+					unit_location = {
+						has_building = barracks_building
+					}
+				}
+				add_subunit = orc_infantry
+			}
+			50 = {
+				modifier = {
+					factor = 0.5
+					unit_location = {
+						OR = {
+							terrain = mountain
+							terrain = marsh
+							terrain = jungle
+						}	
+					}
+				}
+				modifier = {
+					factor = 2
+					unit_location = {
+						has_building = barracks_building
+					}
+				}
+				add_subunit = orc_infantry
+			}
+			30 = {
+				modifier = {
+					factor = 0.1
+					unit_location = {
+						OR = {
+							terrain = mountain
+							terrain = marsh
+							terrain = jungle
+							terrain = forest
+						}	
+					}
+				}
+				modifier = {
+					factor = 2
+					unit_location = {
+						has_building = barracks_building
+					}
+				}
+				add_subunit = orc_infantry
+			}
+			20 = {
+				modifier = {
+					factor = 2
+					unit_location = {
+						terrain = farmland
+					}
+				}
+				add_subunit = orc_infantry
+			}
+			5 = {
+				modifier = {
+					factor = 2
+					unit_location = {
+						terrain = farmland
+					}
+				}
+				add_subunit = orc_infantry
+			}
+			5 = {
+				modifier = {
+					factor = 2
+					unit_location = {
+						has_building = barracks_building
+					}
+				}
+				add_subunit = orc_infantry
+			}
+		}
+	}
+}
+
+orc_purge_effect = {
+	if = {
+		limit = {
+			$LOC$ = { has_owner = no }
+		}
+		c:REB = {
+			create_unit = {
+				location = $LOC$
+				save_scope_as = orcs
+			}
+		}
+	}
+	else = {
+		owner = {
+			create_unit = {
+				location = $LOC$
+				save_scope_as = orcs
+			}
+		}
+	}
+	scope:orcs = {
+#		set_variable = {
+#			name = purged_orcs
+#		}
+		random_sub_unit = {
+			limit = { subunit_morale_percentage < 100 }
+			add_subunit_morale = 1
+		}
+		while = {
+			limit = {
+				unit_location = {
+					province_has_orcs = yes
+				}
+			}
+			unit_location = {
+				random_pops_in_province = {
+					limit = {
+						pop_culture_group = orcs_group 
+					}
+					switch = {
+						trigger = pop_type
+						citizen = { scope:orcs = { orc_purge_spawn = { NUM = 6 } } }
+						freemen = { scope:orcs = { orc_purge_spawn = { NUM = 5 } } }
+						slaves = { scope:orcs = { orc_purge_spawn = { NUM = 3 } } }
+						fallback = { scope:orcs = { orc_purge_spawn = { NUM = 4 } } }
+					}
+					kill_pop = yes
+				}
+			}
+		}
+	}
+}
+
+lotr_marry_family_heads = {
+	every_family = {
+		head_of_family = {
+			if = {
+				limit = {
+					is_married = no
+					NOT = { has_variable = being_married }
+				}
+				trigger_event = {
+					id = marriage_system.1
+				}
+			}
+		}
+	}
+}
+
+lotr_culling = {
+	if = {
+		limit = {
+			exists = mother
+			exists = father
+			father = {
+				NOT = { can_breed_trigger = { TARGET = scope:newborn.mother } }
+			}
+		}
+		death = {
+			death_reason = death_congenital_defects
+		}
+	}
+}
+
+lotr_on_create_character_effect = {
+	if = {
+		limit = {
+			OR = {
+				has_culture = dunedain
+				has_culture = black_numenorean
+			}
+		}
+		add_trait = strong_blood_of_numenor
+	}
+	else_if = {
+		limit = {
+			has_culture = lesser_dunedain
+		}
+		add_trait = blood_of_numenor
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_culture_group = noldor_group
+				has_culture_group = teleri_group
+				has_culture_group = vanyar_group
+			}
+		}
+		add_trait = elf
+	}
+	else_if = {
+		limit = {
+			has_culture_group = dwarf_group
+		}
+		add_trait = dwarf
+	}
+	else_if = {
+		limit = {
+			has_culture_group = orcs_group
+		}
+		add_trait = orc
+	}
+}

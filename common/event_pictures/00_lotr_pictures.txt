@@ -1,0 +1,174 @@
+﻿dol_guldur = {
+	theme = War
+	picture = "gfx/interface/event_window/dolguldur.dds"
+}
+
+event_imladris = {
+	theme = Death
+	picture = "gfx/interface/event_window/event_imladris.dds"
+}
+
+gondor = {
+	theme = Wonder
+	picture = "gfx/interface/event_window/gondor.dds"
+}
+
+dunedain_patrol = {
+	theme = War
+	picture = "gfx/interface/event_window/dunedainpatrol.dds"
+}
+
+dunedain_battle = {
+	theme = War
+	picture = "gfx/interface/event_window/rangerbattle.dds"
+}
+
+dark_priestess = {
+	theme = Death
+	picture = "gfx/interface/event_window/dark_priestess.dds"
+}
+
+event_elven_city = {
+	theme = Death
+	picture = "gfx/interface/event_window/event_elven_city.dds"
+}
+
+corsair_ships = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_corsair_ships.dds"
+}
+
+event_angry_corsairs = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_angry_corsairs.dds"
+}
+
+event_corsairs_attack = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_corsairs_attack.dds"
+}
+
+event_orc_wargriders = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_orc_wargriders.dds"
+}
+
+event_orcs_orcs = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_orcs_orcs.dds"
+}
+
+event_orcs_burning = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_orcs_burning.dds"
+}
+
+event_edoras = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_edoras.dds"
+}
+
+event_barad_dur = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_barad_dur.dds"
+}
+
+event_barad_dur_eye = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_barad_dur_eye.dds"
+}
+
+event_sauron_flames = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_sauron_flames.dds"
+}
+
+event_bree_pipeweed = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_bree_pipeweed.dds"
+}
+
+event_watcher_water = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_watcher_water.dds"
+}
+
+event_demon_whale = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_demon_whale.dds"
+}
+
+event_hills_mountains = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_hills_mountains.dds"
+}
+
+event_boat_storm = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_boat_storm.dds"
+}
+
+event_barrow_white = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_barrow_white.dds"
+}
+
+event_gondor = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_gondor.dds"
+}
+
+event_eryn_galen = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_eryn_galen.dds"
+}
+
+event_deep_forest = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_deep_forest.dds"
+}
+
+event_minas_tirith_attacked = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_minas_tirith_attacked.dds"
+}
+
+event_one_ring_held = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_one_ring_held.dds"
+}
+
+event_one_ring_lava = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_one_ring_lava.dds"
+}
+
+event_rohan_riders = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_rohan_riders.dds"
+}
+
+event_saruman = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_saruman.dds"
+}
+
+event_bilbo_party = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_bilbo_party.dds"
+}
+
+event_gandalf_shire = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_gandalf_shire.dds"
+}
+
+event_shelob = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_shelob.dds"
+}
+
+event_dale = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_dale.dds"
+}

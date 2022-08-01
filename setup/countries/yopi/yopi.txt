@@ -1,0 +1,7 @@
+﻿color = rgb { 76 0 152 }
+
+gender_equality = yes
+
+ship_names = {
+	#
+}

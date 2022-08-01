@@ -1,0 +1,60 @@
+﻿mirkwoodmen_group = {
+	#
+	
+	levy_template = levy_mirkwoodmen
+	
+	primary = archers
+	second = heavy_infantry
+	flank = light_infantry
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+	
+	color = hsv { 0.12 1.00 0.98 }
+
+	male_names = {
+		Adalbert Adam Adolf Albrecht Almerich Amadeus Andreas Anselm Arnold Arnulf Augustin Baldemar Baldewin Berengar Bernhard Berthold Bruno Burchard Caspar Christopher Diether Dietmar Dietpold Dietrich Dietwin Eberhard Eckhard Eginolf Ehrenfried Ekbert Emelrich Emich Engelbrecht Erich Ernst Ezzo Folkhard Folkmar Franz Friedrich Gebhard Georg Gerhard Gerlach Giselbert Gottfried Gotthard Gottschalk Gotzelo Guntram Günzel Hartmann Hartwig Heinrich Herbert Hermann Hesso Hugo Humbert Jakob Johann Karl Karloman Konrad Kuno Lambert Leopold Lothar Ludolf Ludwig Luitpold Lutbert Magnus Manfred Markward Martin Mathias Meinhard Michael Nikolaus Norbert Ordulf Otto Peter Philipp Poppo Reinhard Rudger Rudolf Ruprecht Siegfried Sieghard Siegmund Simon Stefan Theodorich Thietmar Thomas Udo Ulrich Viktor Waldemar Walram Walther Welf Wenzel Werner Widukind Wigerich Wilhelm Wolfgang Wolfram 
+	}
+	
+	female_names = {
+		Adela Adelheid Adelinde Agathe Agnes Alberade Amalberga Amalie Barbara Beatrix Benedicta Berchte Berta Binhilde Brunhilde Cecilie Christine Cothilda Dorothea Elisabeth Emma Engeltraud Ermengard Eufemia Frida Friedrica Gerberga Gerhild Gertrude Gisela Gudrun Gunhilda Gysiel Hedwig Heike Heilwiva Helene Helga Henrike Hildeburg Hildegard Ida Ilsa Inge Irmele Irmeltrud Irmgard Isentrude Judith Jutte Karlotte Katharina Klara Klementia Konstanze Kriemhild Kunigunde Luitgard Margarete Maria Mathilde Mechtild Oda Osterhild Richara Richenza Richwara Romilda Serhilda Sofie Sybille Trude Ulrike Ursula Ute Walpurga Wilhelmina Winfrida Wulfhilde 
+	}
+	
+	family = {
+		Corwinsson
+		Percysson
+		Audawulfsson
+		Balderichsson
+		Kustantusson
+		Ambrusson
+		Andicasson
+		Leudastsson
+		Autbertsson
+		Samundsson
+		Oddrsson
+		Birgersson
+		Hakonsson
+		Kolbjornsson
+		Ebermundsson
+		Volhardsson
+	}
+	
+	culture = {
+		woodsmen = {}
+		lakemen = {} #later became bardings, they settle the area around Dale/Esgaroth
+		dorwinrim = {}
+		beorning = {}
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	graphical_culture = greek_gfx
+	ethnicities = {
+		10 = britannic
+	}
+	
+}
+

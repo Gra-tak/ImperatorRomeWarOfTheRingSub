@@ -1,0 +1,767 @@
+﻿namespace = lotr_storyline_events
+
+#Saruman & Isengard convert to Melkor
+lotr_storyline_events.1 = {
+	type = country_event
+	title = "lotr_storyline_events.1.t"
+	desc = "lotr_storyline_events.1.desc"
+	picture = event_sauron_flames
+
+	trigger = {
+	}
+
+	
+	immediate = {
+		c:XVX = {
+			set_country_religion = melkorism
+			char:16 = { set_character_religion = melkorism }
+			if = {
+				limit = {
+					exists = c:MOR
+					num_of_cities >= 1
+				}
+				add_opinion = {
+					modifier = isengard_mordor_alliance_modifier
+					target = c:MOR
+				}
+			}
+			add_opinion = {
+				target = c:GON
+				modifier = mortal_enemies
+			}
+			add_opinion = {
+				target = c:ROH
+				modifier = mortal_enemies
+			}
+		}
+		c:MOR = {
+			if = {
+				limit = {
+					exists = c:MOR
+					num_of_cities >= 1
+				}
+				add_opinion = {
+					modifier = isengard_mordor_alliance_modifier
+					target = c:XVX
+				}
+			}
+		}
+		allow_uruk_crossbows = yes
+		allow_uruk_heavy_infantry  = yes
+		allow_uruk_infantry = yes
+	}
+	
+	option = {
+		name = lotr_storyline_events.1.a
+		c:MOR = { trigger_event = { id = lotr_storyline_events.12 days = 1 } }
+            create_unit = {
+                navy = no
+                location = capital_scope
+                #commander = scope:target
+                #save_scope_as = bureaucratic_delegation
+                add_subunit = uruk_heavy_infantry
+				add_subunit = uruk_heavy_infantry
+				add_subunit = uruk_heavy_infantry
+				add_subunit = uruk_heavy_infantry
+				add_subunit = uruk_heavy_infantry
+				add_subunit = uruk_heavy_infantry
+				add_subunit = uruk_heavy_infantry
+				add_subunit = uruk_heavy_infantry
+				add_subunit = uruk_heavy_infantry
+				add_subunit = uruk_heavy_infantry
+				add_subunit = uruk_crossbows
+				add_subunit = uruk_crossbows
+				add_subunit = uruk_crossbows
+				add_subunit = uruk_crossbows
+				add_subunit = uruk_crossbows
+				add_subunit = uruk_crossbows
+				add_subunit = uruk_crossbows
+				add_subunit = uruk_crossbows
+				add_subunit = uruk_crossbows
+				add_subunit = uruk_crossbows
+            }
+	}
+}
+
+#Theoden King of Rohan
+lotr_storyline_events.2 = {
+	type = country_event
+	title = "lotr_storyline_events.2.t"
+	desc = "lotr_storyline_events.2.desc"
+	picture = event_rohan_riders
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = c:ROH.current_ruler
+
+	goto_location = c:ROH.capital_scope
+
+	trigger = {
+		is_ai = no
+		char:52 = { # Theoden Eorling
+			is_alive = yes
+			is_ruler = yes
+		}
+		religion = iluvatarism
+		exists = c:ROH
+		c:ROH = {
+			is_ai = yes
+			has_land = yes
+		}
+		current_date > 2986.6.2
+		NOT = {
+			war_with = c:ROH
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+	}
+	
+	option = {
+		name = lotr_storyline_events.2.a
+	}
+}
+
+#Saruman Isengard
+lotr_storyline_events.3 = {
+	type = country_event
+	title = "lotr_storyline_events.3.t"
+	desc = "lotr_storyline_events.3.desc"
+	picture = event_saruman
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = c:XVX.current_ruler
+
+	goto_location = c:XVX.capital_scope
+
+	trigger = {
+		is_ai = no
+		religion = iluvatarism
+		exists = c:XVX
+		char:16 = { # Saruman
+			is_alive = yes
+			is_ruler = yes
+		}
+		c:XVX = {
+			is_ai = yes
+			has_land = yes
+		}
+		current_date > 2987.4.2
+		NOT = {
+			war_with = c:XVX
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+	}
+	
+	option = {
+		name = lotr_storyline_events.3.a
+	}
+}
+
+#Bilbos 111st Farewell Birthday Party
+lotr_storyline_events.4 = {
+	type = country_event
+	title = "lotr_storyline_events.4.t"
+	desc = "lotr_storyline_events.4.desc"
+	picture = event_bilbo_party
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = scope:lotr_bilbo_event_character_scope
+
+	goto_location = c:SHI.capital_scope
+
+	trigger = {
+		is_ai = no
+		religion = iluvatarism
+		exists = c:SHI
+		c:SHI = {
+			is_ai = yes
+			has_land = yes
+			war = no
+		}
+		current_date > 3001.9.22 #3001.9.22
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			c:SHI = {
+				create_character = {
+					culture = fallohide
+					religion = iluvatarism
+					age = 111
+					first_name = "Bilbo"
+					family_name = "Baggins"
+					force_add_trait = brave
+					force_add_trait = original_thinker
+					add_charisma = 3
+					save_scope_as = lotr_bilbo_event_character_scope
+				}
+			}
+		}
+		c:SHI = {
+			add_country_modifier = {
+				name = lotr_bilbo_party_modifier
+				duration = 32
+			}
+		}
+	}
+	
+	option = {
+		name = lotr_storyline_events.4.a
+		if = {
+			limit = {
+				c:IML = {
+					is_ai = yes
+					has_land = yes
+				}
+			}
+			scope:lotr_bilbo_event_character_scope = {
+				remove_all_positions = yes
+				move_country = c:IML
+			}
+		}
+	}
+}
+
+#Balin enters Mountains of Moria
+lotr_storyline_events.5 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		is_ai = no
+		exists = c:XJX  # Orcs of Moria
+		c:XJX = {
+			is_ai = yes
+			has_land = yes
+			owns = 2999
+		}
+		c:LOR = {
+			is_ai = yes
+		}
+		current_date > 2989.1.3 # 2989.1.3
+		current_date <= 2992.1.1
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			p:2999 = {
+				if = {
+					limit = {
+						has_province_rank = settlement
+					}
+					set_city_status = city
+				}
+				define_pop = {
+					type = freemen
+					culture = longbeard
+					religion = iluvatarism
+				}
+				while = {
+					count = 12
+					random_pops_in_province = {
+						limit = {
+							pop_religion = melkorism
+						}
+						kill_pop = yes
+					}
+				}
+			}
+		}
+		trigger_event = {
+			id = lotr_storyline_events.6
+			days = 1
+		}
+	}
+}
+
+#Balin wins battle
+lotr_storyline_events.6 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		exists = c:XJX  # Orcs of Moria
+		c:XJX = {
+			is_ai = yes
+			has_land = yes
+			owns = 2999
+		}
+		c:LOR = {
+			is_ai = yes
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			p:2999 = {
+				create_country = {
+					save_scope_as = lotr_balins_colony_scope
+					name = {
+						name = balins_colony
+						adjective = balin_colonys
+					}
+#					change_country_tag = BLC
+					change_country_flag = BALIN_FLAG
+					change_country_color = light_gold
+					set_primary_culture = longbeard
+					set_country_religion = iluvatarism
+					set_country_heritage = dwarven_heritage
+					change_government = plutocratic_monarchy
+					add_treasury = 500
+					create_character = {
+						first_name = "Balin"
+						family_name = "Durin"
+						force_add_trait = brave
+						force_add_trait = original_thinker
+						no_stats=yes
+						add_martial=11
+						add_charisma=8
+						add_finesse=5
+						add_zeal=9
+						culture = longbeard
+						religion = iluvatarism
+						age = 226
+						female = no
+						save_scope_as = balin_leader_scope
+					}
+					set_as_ruler = scope:balin_leader_scope
+				}
+			}
+			while = { # Populate with some longbeard characters
+				count = 15
+				scope:lotr_balins_colony_scope = {
+					create_character = {
+						culture = longbeard
+						religion = iluvatarism
+						female = no
+					}
+					create_character = {
+						culture = longbeard
+						religion = iluvatarism
+						female = yes
+					}
+				}
+			}
+			scope:lotr_balins_colony_scope = {
+				every_character = {
+					limit = {
+						has_religion = melkorism
+					}
+					move_country = c:XJX
+					set_as_minor_character = THIS
+				}
+				add_truce = {
+					target = c:XJX
+					duration = 40
+				}
+				add_truce = {
+					target = c:LOR
+					duration = 40
+				}
+			}
+			c:XJX = {
+				add_truce = {
+					target = scope:lotr_balins_colony_scope
+					duration = 40
+				}
+			}
+			c:LOR = {
+				add_truce = {
+					target = scope:lotr_balins_colony_scope
+					duration = 40
+				}
+			}
+			scope:lotr_balins_colony_scope.capital_scope = {
+				create_state_pop = citizen
+				create_state_pop = citizen
+				create_state_pop = citizen
+				create_state_pop = freemen
+				create_state_pop = freemen
+				create_state_pop = freemen
+			}
+		}
+		trigger_event = {
+			id = lotr_storyline_events.7
+			days = 10
+		}
+	}
+}
+
+#Balin creates Colony
+lotr_storyline_events.7 = {
+	type = country_event
+	title = "lotr_storyline_events.7.t"
+	desc = "lotr_storyline_events.7.desc"
+	picture = event_hills_mountains
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = scope:balin_leader_scope
+
+	goto_location = p:2999
+
+	trigger = {
+		is_ai = no
+		exists = scope:balin_leader_scope
+		scope:balin_leader_scope = {
+			is_alive = yes
+			is_ruler = yes
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			scope:lotr_balins_colony_scope = {
+				set_primary_culture = longbeard
+				set_country_religion = iluvatarism
+				capital_scope = {
+					ordered_pops_in_province = {
+						limit = {
+							NOT = { pop_culture = longbeard }
+						}
+						order_by = pop_hapiness
+						max = 8
+						check_range_bounds = no
+						set_pop_culture = longbeard
+					}
+					add_civilization_value = 35
+				}
+				current_ruler = {
+					add_popularity = popularity_large
+				}
+				add_stability = 30
+			}
+		}
+	}
+	
+	option = { #Generic response
+		name = lotr_storyline_events.7.a
+		if = {
+			limit = {
+				exists = treasure:lotr_treasure_durins_axe
+				exists = scope:lotr_balins_colony_scope
+			}
+			treasure:lotr_treasure_durins_axe = {
+				transfer_treasure_to_country = scope:lotr_balins_colony_scope
+			}
+		}
+	}
+	option = { #
+		name = lotr_storyline_events.7.b
+		custom_tooltip = "lotr_storyline_events.7.b.tt"
+		trigger = {
+			primary_culture = longbeard
+		}
+		add_political_influence = -25
+		add_treasury = {
+			value = has_monthly_income
+			multiply = -12
+		}
+		make_subject = { 
+			target = scope:lotr_balins_colony_scope
+			type = client_state 
+		}
+		if = {
+			limit = {
+				exists = treasure:lotr_treasure_durins_axe
+				exists = scope:lotr_balins_colony_scope
+			}
+			treasure:lotr_treasure_durins_axe = {
+				transfer_treasure_to_country = scope:lotr_balins_colony_scope
+			}
+		}
+	}
+}
+
+#Gandalf visits Shire
+lotr_storyline_events.8 = {
+	type = country_event
+	title = "lotr_storyline_events.8.t"
+	desc = "lotr_storyline_events.8.desc"
+	picture = event_gandalf_shire
+	
+	left_portrait = root.current_ruler
+
+	goto_location = c:SHI.capital_scope
+
+	trigger = {
+		is_ai = no
+		c:SHI = {
+			is_ai = yes
+			has_land = yes
+			war = no
+		}
+		current_date > 3004.2.5
+		current_date <= 3006.1.1
+		capital_scope = {
+			OR = {
+				is_in_region = forochel_region
+				is_in_region = forlindon_region
+				is_in_region = numeriador_region
+				is_in_region = mithlond_region
+				is_in_region = harlindon_region
+				is_in_region = tawar_norndor_region
+				is_in_region = fortund_region
+				is_in_region = siragale_region
+				is_in_region = arthedain_region
+				is_in_region = angmar_region
+				is_in_region = dyr_erib_region
+				is_in_region = mintyrnath_region
+				is_in_region = cardolan_region
+				is_in_region = minhiriath_region
+				is_in_region = enedhwaith_region
+				is_in_region = druwaith_region
+				is_in_region = andrast_region
+				is_in_region = anfalas_region
+				is_in_region = hairaverkien_region
+				is_in_region = dunendor_region
+				is_in_region = dor_wathui_region
+				is_in_region = eregion_region
+				is_in_region = rhudaur_region
+				is_in_region = pend_hithaeglir_region
+				is_in_region = anduin_region
+				is_in_region = lorien_region
+				is_in_region = rhuvenlhad_region
+				is_in_region = calenardhon_region
+				is_in_region = eryn_galen_region
+				is_in_region = ered_mithrin_region
+				is_in_region = uvanwaith_region
+				is_in_region = lamedon_region
+				is_in_region = belfalas_region
+				is_in_region = anorien_region
+				is_in_region = lebennin_region
+				is_in_region = ithilien_region
+				is_in_region = rhovanion_region
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		trigger_event = {
+			id = lotr_storyline_events.9
+			days = 600
+		}
+	}
+	
+	option = {
+		name = lotr_storyline_events.8.a
+	}
+}
+
+#Gandalf visits Shire again
+lotr_storyline_events.9 = {
+	type = country_event
+	title = "lotr_storyline_events.9.t"
+	desc = "lotr_storyline_events.9.desc"
+	picture = event_gandalf_shire
+	
+	left_portrait = root.current_ruler
+
+	goto_location = c:SHI.capital_scope
+
+	trigger = {
+		is_ai = no
+		c:SHI = {
+			is_ai = yes
+			has_land = yes
+			war = no
+		}
+		capital_scope = {
+			OR = {
+				is_in_region = forochel_region
+				is_in_region = forlindon_region
+				is_in_region = numeriador_region
+				is_in_region = mithlond_region
+				is_in_region = harlindon_region
+				is_in_region = tawar_norndor_region
+				is_in_region = fortund_region
+				is_in_region = siragale_region
+				is_in_region = arthedain_region
+				is_in_region = angmar_region
+				is_in_region = dyr_erib_region
+				is_in_region = mintyrnath_region
+				is_in_region = cardolan_region
+				is_in_region = minhiriath_region
+				is_in_region = enedhwaith_region
+				is_in_region = druwaith_region
+				is_in_region = andrast_region
+				is_in_region = anfalas_region
+				is_in_region = hairaverkien_region
+				is_in_region = dunendor_region
+				is_in_region = dor_wathui_region
+				is_in_region = eregion_region
+				is_in_region = rhudaur_region
+				is_in_region = pend_hithaeglir_region
+				is_in_region = anduin_region
+				is_in_region = lorien_region
+				is_in_region = rhuvenlhad_region
+				is_in_region = calenardhon_region
+				is_in_region = eryn_galen_region
+				is_in_region = ered_mithrin_region
+				is_in_region = uvanwaith_region
+				is_in_region = lamedon_region
+				is_in_region = belfalas_region
+				is_in_region = anorien_region
+				is_in_region = lebennin_region
+				is_in_region = ithilien_region
+				is_in_region = rhovanion_region
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+	}
+	
+	option = {
+		name = lotr_storyline_events.9.a
+	}
+}
+
+#Shelob info
+lotr_storyline_events.10 = {
+	type = country_event
+	title = "lotr_storyline_events.10.t"
+	desc = "lotr_storyline_events.10.desc"
+	picture = event_shelob
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = scope:lotr_shelob_advisor_scope
+
+	goto_location = p:1031
+
+	trigger = {
+		is_ai = no
+		p:1031 = {
+			owner = c:MOR
+			controller = C:MOR
+		}
+		current_date > 2985.7.5
+		current_date <= 2986.1.1
+		capital_scope = {
+			OR = {
+				is_in_region = calenardhon_region
+				is_in_region = lamedon_region
+				is_in_region = belfalas_region
+				is_in_region = anorien_region
+				is_in_region = lebennin_region
+				is_in_region = ithilien_region
+				is_in_region = rhuvenlhad_region
+				is_in_region = harondor_region
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		random_character = {
+			limit = {
+				has_any_office = yes
+				is_ruler = no
+			}
+			save_scope_as = lotr_shelob_advisor_scope
+		}
+	}
+	
+	option = {
+		name = lotr_storyline_events.10.a
+		custom_tooltip = "lotr_storyline_events.10.a.tt"
+	}
+}
+
+#Death of Finduilas wife of Denethor Gondor
+lotr_storyline_events.11 = {
+	type = country_event
+	title = "lotr_storyline_events.11.t"
+	desc = "lotr_storyline_events.11.desc"
+	picture = event_gondor
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = char:28 #Finduilas
+	right_portrait = char:27 #Denethor
+
+	goto_location = c:GON.capital_scope
+
+	trigger = {
+		is_ai = no
+		c:GON = {
+			is_ai = yes
+			has_land = yes
+		}
+		current_date > 2988.2.5
+		current_date <= 2989.1.1
+		char:28 = { #Finduilas
+			is_alive = yes
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			char:28 = { #Finduilas
+				death = {
+					death_reason = death_childbirth_complications
+				}
+			}
+		}
+		c:GON = {
+			add_country_modifier = {
+				name = lotr_public_character_death_modifier
+				duration = 365
+			}
+		}
+	}
+	
+	option = {
+		name = lotr_storyline_events.11.a
+	}
+	
+	option = {
+		name = lotr_storyline_events.11.b
+	}
+}
+
+lotr_storyline_events.12 = {
+	type = country_event
+	title = "lotr_storyline_events.12.t"
+	desc = "lotr_storyline_events.12.desc"
+	picture = event_saruman
+
+	goto_location = c:XVX.capital_scope
+
+	trigger = {
+	}
+	
+
+	immediate = {
+	}
+	
+	option = {
+		name = lotr_storyline_events.12.a
+	}
+	
+}

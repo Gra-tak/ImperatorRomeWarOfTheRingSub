@@ -1,0 +1,275 @@
+﻿orcish_heritage = {
+	modifier = {
+		#good
+		light_infantry_offensive = 0.1
+		enslavement_efficiency = 0.2
+		
+		#bad
+		land_morale_modifier = -0.05
+	}
+	
+	trigger = {
+		country_culture_group = orcs_group
+	}
+}
+
+dwarven_heritage = {
+	modifier = {
+		#good
+		global_defensive = 0.1
+		build_time = -0.15
+		
+		#bad
+		global_tribesmen_happyness = -0.15
+	}
+	
+	trigger = {
+		country_culture_group = dwarf_group
+	}
+}
+
+noldor_heritage = {
+	modifier = {
+		#good
+		land_morale_modifier = 0.15
+		omen_power = 0.2
+		
+		#bad
+		happiness_for_wrong_culture_group_modifier = -0.1
+	}
+	
+	trigger = {
+		country_culture_group = noldor_group
+	}
+}
+
+the_horse_lords = {
+	modifier = {
+		#good
+		light_cavalry_defensive = 0.3
+		light_cavalry_offensive = 0.3
+		heavy_cavalry_defensive = 0.3
+		heavy_cavalry_offensive = 0.3
+		horse_archers_defensive = 0.3
+		horse_archers_offensive = 0.3
+		light_cavalry_morale = 0.3
+		heavy_cavalry_morale = 0.3
+		horse_archers_morale = 0.3
+		
+		#bad
+		army_maintenance_cost 0.1
+	}
+	
+	trigger = {
+		country_culture_group = eotheod_group
+	}
+}
+
+teleri_heritage = {
+	modifier = {
+		#good
+		omen_power = 0.2
+		global_population_capacity_modifier = 0.1
+		
+		#bad
+		build_time = 0.1
+	}
+	
+	trigger = {
+		country_culture_group = teleri_group
+	}
+}
+
+pirate_heritage = {
+	modifier = {
+		mercenary_naval_maintenance_cost = -0.1
+		naval_range = 0.1
+		army_maintenance_cost = 0.05
+	}
+	
+	trigger = {
+		capital_scope = {
+			has_province_modifier = pirate_haven_modifier
+		}
+	}
+}
+
+seafaring_heritage = {
+	modifier = {
+		#good
+		navy_maintenance_cost = -0.1
+		naval_range = 0.25
+		
+		#bad
+		army_movement_speed = -0.10
+		
+	}
+	
+	trigger = {
+		capital_scope = {
+			is_port = yes
+		}
+	}
+}
+
+steppe_heritage = {
+
+	modifier = {
+		army_weight_modifier = -0.15
+		horse_archers_cost = -0.2
+		
+		global_defensive = -0.1
+	}
+	
+	trigger = {
+		capital_scope = {
+		    terrain = steppe
+		}
+	}		
+}
+
+coastal_heritage = {
+	
+	modifier = {
+		global_export_commerce_modifier = 0.1
+		price_state_investment_oratory_cost_modifier = -0.05
+		
+		fortress_building_cost = 0.1
+	}
+	
+	trigger = {
+		capital_scope = {
+			is_coastal = yes
+		}
+	}
+}
+
+river_plain_heritage = {
+	
+	modifier = {
+		global_population_capacity_modifier = 0.1
+		manpower_recovery_speed = 0.05
+		
+		global_defensive = -0.1
+	}
+	
+	trigger = {
+		capital_scope = {
+			OR = {
+				terrain = farmland
+				terrain = plains
+			}
+			is_adjacent_to_major_river = yes
+		}
+	}
+}
+
+rural_heritage = { #Pseudo Rome
+	
+	modifier = {
+		build_roads_cost_modifier = -0.1
+		build_expensive_roads_cost_modifier = -0.1
+		price_state_investment_military_cost_modifier = -0.1
+		global_tribesmen_happyness = -0.05
+	}
+	
+	trigger = {
+		capital_scope = {
+			OR = {
+				terrain = plains
+				terrain = farmland
+			}
+		}
+	}
+}
+
+montane_heritage = {
+	modifier = {
+		fort_maintenance_cost = -0.05
+		global_defensive = 0.05
+		improve_relation_impact = -0.1
+	}
+
+	trigger = {
+		capital_scope = {
+			terrain = mountain
+		}
+	}
+}
+
+desert_heritage = {
+	
+	modifier = {
+		enslavement_efficiency = 0.05
+		army_weight_modifier = -0.1
+		naval_morale_modifier = -0.05
+	}
+
+	trigger = {
+		capital_scope = {
+		OR = {
+			terrain = desert
+			terrain = red_desert
+		}
+		}
+	}
+}
+
+jungle_heritage = {
+	modifier = {
+		hostile_attrition = 0.1
+		warelephant_maintenance_cost = -0.1
+		navy_maintenance_cost = 0.1
+	}
+
+	trigger = {
+		capital_scope = {
+			terrain = jungle
+		}
+	}
+}
+
+forest_heritage = {
+	modifier = {
+		archers_offensive = 0.1
+		global_tribesmen_happyness = 0.05
+		build_cost = 0.1
+	}
+
+	trigger = {
+		capital_scope = {
+		OR = {
+			terrain = forest
+			terrain = deep_forest
+		}
+		}
+	}
+}
+
+marshland_heritage = {
+	modifier = {
+		light_infantry_defensive = 0.1
+		global_tax_modifier = 0.05
+		manpower_recovery_speed = -0.05
+	}
+	
+	trigger = {
+		capital_scope = {
+			terrain = marsh
+		}
+	}
+}
+
+highland_heritage = {
+	modifier = {
+		fortress_building_cost = -0.1
+		price_state_investment_civic_cost_modifier = -0.05
+		naval_damage_taken = 0.05
+	}
+	
+	trigger = {
+		capital_scope = {
+			terrain = hills
+		}
+	}
+}

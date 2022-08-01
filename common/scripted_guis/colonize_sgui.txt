@@ -1,0 +1,39 @@
+﻿colonization_sgui = {
+	scope = province
+	saved_scopes = {
+		second
+	}
+
+	is_valid = {
+		is_inhabitable = yes
+		has_owner = no
+		any_neighbor_province = {
+			owner = scope:second
+			total_population >= 5
+			custom_tooltip = {
+				text = SENT_COLONISTS_RECENTLY
+				NOT = { has_variable = colonization_cooldown }
+			}
+		}
+		scope:second = {
+			treasury >= 10
+		}
+	}
+
+	effect = {
+		set_owned_by = scope:second
+		random_neighbor_province = {
+			limit = {
+				owner = scope:second
+				total_population >= 5
+			}
+			random_pops_in_province = {
+				move_pop = root
+			}
+			set_variable = { name = colonization_cooldown days = 365 }
+		}
+		scope:second = {
+			add_treasury = -10
+		}
+	}
+}

@@ -1,0 +1,284 @@
+colored_emblem_texture_lists = {
+
+	checkers = {
+		6 = "ce_checker_8x8.dds"
+		6 = "ce_checker_8x8_diagonal_02.dds"
+		6 = "ce_checker_16x16.dds"
+		1 = "ce_stripes_horizontal_16.dds"
+		1 = "ce_stripes_vertical_16.dds"
+	}
+
+	checkers_diagonals = {
+		6 = "ce_checker_8x8.dds"
+		6 = "ce_checker_8x8_diagonal.dds"
+		6 = "ce_checker_16x16.dds"
+		1 = "ce_stripes_horizontal_16.dds"
+		1 = "ce_stripes_vertical_16.dds"
+	}
+	
+	borders = {
+		2 = "ce_border_simple_01.tga"
+		4 = "ce_border_simple_02.tga"
+		1 = "ce_border_checker_01.tga"
+		1 = "ce_border_rug_01.tga"
+		1 = "ce_border_stars_01.dds"
+		1 = "ce_border_triangles_01.dds"
+		1 = "ce_border_triangles_02.dds"
+		1 = "ce_border_zigzag_01.dds"
+		1 = "ce_border_zigzag_02.dds"
+
+		special_selection = {
+			trigger = {
+				country_culture_group = "edain_group"
+			}
+			20 = "ce_edain_border_02.dds"
+			20 = "ce_edain_border_04.dds"
+			20 = "ce_edain_border_06.dds"
+			20 = "ce_edain_border_07.dds"
+		}
+	}
+	
+	symbols = {
+		1 = "ce_circle_concentric_01.dds"
+		1 = "ce_spiral_01.dds"
+		1 = "ce_circle_01.dds"
+		1 = "ce_square_01.dds"
+		1 = "ce_square_02.dds"
+		1 = "ce_square_04.dds"
+		1 = "ce_diamond_01.dds"
+		1 = "ce_diamond_02.dds"
+		1 = "ce_diamond_03.dds"
+		1 = "ce_star_4.dds"
+		1 = "ce_star_8.dds"
+		1 = "ce_crescent_01.dds"
+		1 = "ce_circle_wheel_01.dds"
+		1 = "ce_crescent_02.dds"
+
+#REALMS IN EXILE
+		special_selection = {
+			trigger = {
+				primary_culture = "lesser_dunedain"
+			}
+			2 = "ce_dor-lomin.dds"
+		}
+		special_selection = {
+			trigger = {
+				or = {
+					primary_culture = "arnorian"
+					primary_culture = "gondorian"
+					primary_culture = "numenorean"
+					primary_culture = "dunedain"
+					primary_culture = "lesser_dunedain"
+				}
+			}
+			#10 = "ce_edain_mountain_01.dds"
+			#10 = "ce_edain_palantir_01.dds"
+			2 = "ce_edain_stars_01.dds"
+			2 = "ce_edain_stars_02.dds"
+			2 = "ce_edain_sun_01.dds"
+			2 = "ce_edain_waves_01.dds"
+
+			10 = "ce_arnor_01.dds"
+			10 = "ce_arthedain_02.dds"
+			10 = "ce_cardolan_02.dds"
+			10 = "ce_cardolan_03.dds"
+			10 = "ce_elendil_02.dds"
+			10 = "ce_gondor_02.dds"
+			10 = "ce_gondor_03.dds"
+			10 = "ce_gondor_04.dds"
+			10 = "ce_gondor_05.dds"
+			10 = "ce_linhir_03.dds"
+			10 = "ce_pinnath_gelin_02.dds"
+			10 = "ce_pinnath_gelin_03.dds"
+			2  = "ce_rhudaur_02.dds"
+			2  = "ce_rhudaur_03.dds"
+
+			10 = "ce_star.dds"
+			10 = "ce_star_2.dds"
+		}
+		special_selection = {
+			trigger = {
+				or = {
+					primary_culture = "banadunaim"
+					primary_culture = "black_numenorean"
+					primary_culture = "harondorian"
+				}
+			}
+			10 = "ce_edain_sun_01.dds"
+			10 = "ce_linhir_03.dds"
+			10 = "ce_umbar_02.dds"
+			2  = "ce_edain_waves_01.dds"
+
+			10 = "ce_moon_crescent.dds"
+			10 = "ce_star.dds"
+			10 = "ce_star_2.dds"
+		}
+
+#THE HORSE LORDS, MEN OF RHOVANION & HOUSE OF HALETH
+		special_selection = {
+			trigger = {
+				or = {
+					primary_culture = "eotheod"
+					primary_culture = "rohirrim"
+				}
+			}
+			20 = "ce_rohan_01.dds"
+			20 = "ce_rohan_02.dds"
+			20 = "ce_rohan_03.dds"
+			20 = "ce_rohan_04.dds"
+		}
+		special_selection = {
+			trigger = {
+				or = {
+					country_culture_group = "mirkwoodmen_group"
+					country_culture_group = "eotheod_group"
+				}
+			}
+			20 = "ce_horse_01.dds"
+			10 = "ce_horse_02.dds"
+			2 = "ce_horse_03.dds"
+			2 = "ce_horse_04.dds"
+			2 = "ce_horse_05.dds"
+			10 = "ce_horse_07.dds"
+			
+			2 = "ce_pict_05.dds"
+			2 = "ce_pict_06.dds"
+			
+			#20 = "ce_eotheod.dds"
+			#20 = "ce_northmen.dds"
+			
+			10 = "ce_15.dds"
+			10 = "ce_antlers_01.dds"
+			10 = "ce_boar_01.dds"
+			10 = "ce_dacian_02.dds"
+			10 = "ce_triskelion_01.dds"
+			10 = "ce_triskelion_02.dds"
+		}
+		special_selection = {
+			trigger = {
+				country_culture_group = "haldadian_group"
+			}
+			20 = "ce_haleth_01.dds"
+			20 = "ce_haleth_02.dds"
+			20 = "ce_haleth_03.dds"
+			20 = "ce_haleth_04.dds"
+			2  = "ce_quadskelion_01.dds"
+			2  = "ce_stone_01.dds"
+			2  = "ce_triskelion_01.dds"
+			2  = "ce_triskelion_02.dds"
+			2  = "ce_wheel_02.dds"
+			2  = "ce_wheel_03.dds"
+		}
+		special_selection = {
+			trigger = {
+				primary_culture = "dunlending"
+			}
+			20 = "ce_dunland_raven.dds"
+			20 = "ce_dunland_wolf.dds"
+			20 = "ce_celtic_01.dds"
+			20 = "ce_celtic_02.dds"
+			20 = "ce_celtic_03.dds"
+			20 = "ce_celtic_04.dds"
+			20 = "ce_celtic_05.dds"
+#			20 = "ce_celtic_06.dds"
+#			20 = "ce_celtic_07.dds"
+#			20 = "ce_celtic_08.dds"
+#			20 = "ce_celtic_09.dds"
+		}
+#				country_culture = "druwaithing" #pukel-men - "ce_pukel.dds"
+#				country_culture = "eredrim""ishmalogim" #oathbreakers - "ce_dead.dds"
+#				country_culture = "dorwinrim" #"ce_lakemen.dds" "ce_lebennin_02.dds"
+#				country_culture = "dorwinrim" #"ce_dorwinion.dds"
+#				country_culture = "beorning" #"ce_beorning.dds" #"ce_pict_05.dds"
+
+#RHUN & HARADWAITH
+		special_selection = {
+			trigger = {
+				country_culture_group = "easterling_group"
+			}
+			20 = "ce_easterling_sun_01.dds"
+			10 = "ce_harad_01.dds"
+			2 = "ce_viking_dragon_01.dds"
+			2 = "ce_sun_01.dds"
+			2 = "ce_sun_02.dds"
+			10 = "ce_sun_03.dds"
+			10 = "ce_sun_04.dds"
+			2 = "ce_sun_05.dds"
+			2 = "ce_sun_06.dds"
+			2 = "ce_sun_07.dds"
+			10 = "ce_sun_08.dds"
+			2 = "ce_sun_09.dds"
+			10 = "ce_sun_10.dds"
+			10 = "ce_sun_blades.dds"
+		}
+		special_selection = {
+			trigger = {
+				or = {
+					country_culture_group = "haradrim_group"
+					country_culture_group = "harondorian_group"
+				}
+			}
+			20 = "ce_harad_01.dds"
+			20 = "ce_harad_snake_01.dds"
+			20 = "ce_harad_snake_02.dds"
+			2 = "ce_pict_07.dds" #snake
+			2 = "ce_sun_01.dds"
+			10 = "ce_sun_02.dds"
+			2 = "ce_sun_03.dds"
+			2 = "ce_sun_04.dds"
+			10 = "ce_sun_05.dds"
+			10 = "ce_sun_06.dds"
+			10 = "ce_sun_07.dds"
+			2 = "ce_sun_08.dds"
+			2 = "ce_sun_09.dds"
+			10 = "ce_sun_10.dds"
+			10 = "ce_sun_blades.dds"
+			10 = "ce_sun_harad.dds"
+		}
+		special_selection = {
+			trigger = {
+				or = {
+					country_culture_group = "easterling_group"
+					country_culture_group = "haradrim_group"
+					country_culture_group = "harondorian_group"
+				}
+			}
+			2 = "ce_28.dds"
+			2 = "ce_29.dds"
+			2 = "ce_33.dds"
+			2 = "ce_flower_01.dds"
+			2 = "ce_flower_02.dds"
+			2 = "ce_flower_03.dds"
+			2 = "ce_flower_05.dds"
+			2 = "ce_flower_07.dds"
+			2 = "ce_flower_08.dds"
+			2 = "ce_wheel_02.dds"
+			2 = "ce_wheel_03.dds"
+		}
+#				country_culture = "lossoth" #"ce_variag.dds"
+#				country_culture = "rhudaurim" #"ce_rhudaurim.dds"
+#				country_culture = "angmarim" #"ce_angmarim.dds"
+#				country_culture = "variag" #"ce_variag.dds"
+
+#THE SHIRE & BREELAND
+		special_selection = {
+			trigger = {
+				or = {
+					country_culture_group = "breelander_group"
+					country_culture_group = "halfling_group"
+				}
+			}
+			2 = "ce_22.dds"
+			2 = "ce_25.dds"
+			2 = "ce_26.dds"
+			10 = "ce_flower_01.dds"
+			10 = "ce_flower_02.dds"
+			10 = "ce_flower_03.dds"
+			10 = "ce_flower_04.dds"
+			10 = "ce_flower_05.dds"
+			10 = "ce_flower_06.dds"
+			10 = "ce_flower_07.dds"
+			10 = "ce_flower_08.dds"
+		}
+	}
+}

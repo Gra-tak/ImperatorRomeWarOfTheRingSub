@@ -1,0 +1,179 @@
+﻿REB = "setup/countries/rebels.txt"
+PIR = "setup/countries/pirates.txt"
+BAR = "setup/countries/barbarians.txt"
+MER = "setup/countries/mercenaries.txt"
+
+
+#Numenorean:
+ANF = "setup/countries/numenorean/anfalas.txt"
+#ARN = "setup/countries/numenorean/arnor.txt"
+ATE = "setup/countries/numenorean/arthedain.txt"
+CAR = "setup/countries/numenorean/cardolan.txt"
+GON = "setup/countries/numenorean/gondor.txt"
+PEL = "setup/countries/numenorean/pelargir.txt"
+RHU = "setup/countries/numenorean/rhudaur.txt"
+THA = "setup/countries/numenorean/tharbad.txt"
+UMB = "setup/countries/numenorean/umbar.txt"
+ITH = "setup/countries/numenorean/ithilien.txt"
+LBN = "setup/countries/numenorean/lebennin.txt"
+CLM = "setup/countries/numenorean/calembel.txt"
+TLF = "setup/countries/numenorean/tolfalas.txt"
+BEL = "setup/countries/numenorean/bellakar.txt"
+DOR = "setup/countries/numenorean/dolamroth.txt"
+LAM = "setup/countries/numenorean/lamedon.txt"
+ANA = "setup/countries/numenorean/anarike.txt"
+MIT = "setup/countries/numenorean/minasithil.txt"
+RON = "setup/countries/numenorean/rangers.txt"
+ROI = "setup/countries/numenorean/rangersofithilien.txt"
+
+
+#Elven
+LIN = "setup/countries/elven/lindon.txt"
+IML = "setup/countries/elven/imladris.txt"
+LOR = "setup/countries/elven/lorien.txt"
+EDH = "setup/countries/elven/edhellond.txt"
+ERY = "setup/countries/elven/eryngalen.txt"
+PIN = "setup/countries/elven/pinnathtereg.txt"
+EMY = "setup/countries/elven/emynberaid.txt"
+MIL = "setup/countries/elven/mithlond.txt"
+HAL = "setup/countries/elven/halfalas.txt"
+DTN = "setup/countries/elven/dortinuviel.txt"
+FLN = "setup/countries/elven/forlindon.txt"
+
+#Haldadian
+CAE = "setup/countries/haldadian/carreglyn.txt"
+DRU = "setup/countries/haldadian/druwaithing.txt"
+ANR = "setup/countries/haldadian/andrast.txt"
+FOR = "setup/countries/haldadian/forlefnui.txt"
+EHI = "setup/countries/haldadian/ethir.txt"
+ISH = "setup/countries/haldadian/ishmalogim.txt"
+SAR = "setup/countries/haldadian/saralainn.txt"
+DUN = "setup/countries/haldadian/dunland.txt"
+FAE = "setup/countries/haldadian/faerdor.txt"
+IAC = "setup/countries/haldadian/iachbann.txt"
+GWA = "setup/countries/haldadian/gwathlo.txt"
+ERV = "setup/countries/haldadian/erynvorn.txt"
+ATH = "setup/countries/haldadian/arth.txt"
+AVA = "setup/countries/haldadian/avanc.txt"
+BLE = "setup/countries/haldadian/bleid.txt"
+BRA = "setup/countries/haldadian/bran.txt"
+CRU = "setup/countries/haldadian/caru.txt"
+DRA = "setup/countries/haldadian/draig.txt"
+HEB = "setup/countries/haldadian/hebog.txt"
+TUR = "setup/countries/haldadian/turch.txt"
+UCH = "setup/countries/haldadian/uch.txt"
+
+#Harondorian
+XXA = "setup/countries/harondorian/XXA.txt"
+XXB = "setup/countries/harondorian/XXB.txt"
+XXC = "setup/countries/harondorian/XXC.txt"
+XXD = "setup/countries/harondorian/XXD.txt"
+XXE = "setup/countries/harondorian/XXE.txt"
+XXF = "setup/countries/harondorian/XXF.txt"
+XXG = "setup/countries/harondorian/XXG.txt"
+
+#Breelander
+BRE = "setup/countries/breelander/bree.txt"
+
+#Halflings
+SHI = "setup/countries/halfling/shire.txt"
+BUC = "setup/countries/halfling/buckland.txt"
+TOO = "setup/countries/halfling/tookland.txt"
+
+#Lossoth
+UIL = "setup/countries/lossoth/uilad.txt"
+DUA = "setup/countries/lossoth/duath.txt"
+
+#Mirkwoodmen
+BEO = "setup/countries/mirkwoodmen/beornings.txt"
+DWN = "setup/countries/mirkwoodmen/dorwinion.txt"
+RVN = "setup/countries/mirkwoodmen/rhovanion.txt"
+DLE = "setup/countries/mirkwoodmen/dale.txt"
+
+#Orcish
+MOR = "setup/countries/orcish/mordor.txt"
+ANG = "setup/countries/orcish/angmar.txt"
+DGD = "setup/countries/orcish/dolguldur.txt"
+ASH = "setup/countries/orcish/ashkai.txt"
+SKU = "setup/countries/orcish/skuthrugai.txt"
+TRK = "setup/countries/orcish/thrakburzum.txt"
+MMO = "setup/countries/orcish/minasmorgul.txt"
+
+#Easterling
+NUR = setup/countries/easterling/nurn.txt
+VAR = setup/countries/easterling/variag.txt
+BAL = setup/countries/easterling/balchoth.txt
+KHU = setup/countries/easterling/khundolar.txt
+WAI = setup/countries/easterling/wainriders.txt
+
+#Northmen
+ETD = setup/countries/northmen/eotheod.txt
+ROH = setup/countries/northmen/rohan.txt
+
+#Haradrim
+BLZ = setup/countries/haradrim/bellazen.txt
+FEL = setup/countries/haradrim/felaya.txt
+HAR = setup/countries/haradrim/haradrim.txt
+QAR = setup/countries/haradrim/qarzag.txt
+SIR = setup/countries/haradrim/sirayn.txt
+HRW = setup/countries/haradrim/haradwaith.txt
+
+#Dwarves
+TUM = setup/countries/dwarves/tumnogost.txt
+NAN = setup/countries/dwarves/nan.txt
+NOR = setup/countries/dwarves/nordinbad.txt
+DBK = setup/countries/dwarves/dobrok.txt
+ERB = setup/countries/dwarves/erebor.txt
+KZK = setup/countries/dwarves/khazikal.txt
+IRO = setup/countries/dwarves/ironhills.txt
+KHZ = setup/countries/dwarves/khazaddum.txt
+
+#Yopi
+YOP = setup/countries/yopi/yopi.txt
+
+#Barangil
+MUM = setup/countries/barangil/mumakanim.txt
+
+#MINORS/QUICK ADDS
+XXH = setup/countries/X/xxh.txt
+XXI = setup/countries/X/xxi.txt
+XXJ = setup/countries/X/xxj.txt
+XXK = setup/countries/X/xxk.txt
+XXL = setup/countries/X/xxl.txt
+XXM = setup/countries/X/xxm.txt
+XXN = setup/countries/X/xxn.txt
+XXO = setup/countries/X/xxo.txt
+XXP = setup/countries/X/xxp.txt
+XXQ = setup/countries/X/xxq.txt
+XXR = setup/countries/X/xxr.txt
+XXS = setup/countries/X/xxs.txt
+XXT = setup/countries/X/xxt.txt
+XXU = setup/countries/X/xxu.txt
+XXV = setup/countries/X/xxv.txt
+XXX = setup/countries/X/xxx.txt
+XXY = setup/countries/X/xxy.txt
+XXZ = setup/countries/X/xxz.txt
+XAX = setup/countries/X/xax.txt
+XBX = setup/countries/X/xbx.txt
+XCX = setup/countries/X/xcx.txt
+XDX = setup/countries/X/xdx.txt
+XEX = setup/countries/X/xex.txt
+XFX = setup/countries/X/xfx.txt
+XGX = setup/countries/X/xgx.txt
+XHX = setup/countries/X/xhx.txt
+XIX = setup/countries/X/xix.txt
+XJX = setup/countries/X/xjx.txt
+XKX = setup/countries/X/xkx.txt
+XLX = setup/countries/X/xlx.txt
+XMX = setup/countries/X/xmx.txt
+XNX = setup/countries/X/xnx.txt
+XOX = setup/countries/X/xox.txt
+XPX = setup/countries/X/xpx.txt
+XQX = setup/countries/X/xqx.txt
+XRX = setup/countries/X/xrx.txt
+XSX = setup/countries/X/xsx.txt
+XTX = setup/countries/X/xtx.txt
+XUX = setup/countries/X/xux.txt
+XVX = setup/countries/X/xvx.txt
+XYX = setup/countries/X/xyx.txt
+XZX = setup/countries/X/xzx.txt

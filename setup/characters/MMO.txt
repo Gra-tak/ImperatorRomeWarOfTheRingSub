@@ -1,0 +1,32 @@
+﻿"MMO"={
+	country="MMO"
+	
+	4={
+		first_name="ErMurazor"
+		family = c:MOR.fam:Melkorionath
+		birth_date=1.1.5
+		culture="black_numenorean"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=20
+		add_charisma=11
+		add_finesse=5
+		add_zeal=8
+		no_traits=yes
+		add_trait="orom"
+		add_trait="nazgul"
+		add_trait="legendary_magic_user"
+		add_trait="intelligent"
+		add_trait="proud"
+		add_trait="prince_of_numenor"
+		add_gold=200
+		add_popularity=100
+		father = char:3
+		c:MMO={
+			set_as_ruler=char:4
+		}
+		dna="E/sT+xUNFQ260brRAowCjAKXApcCvwK/AjUCNQKPAo8CkQKRAnQCdAKNAo0CjAKMAlsCWwLsAuwCUwJTAoECgQKWApYCcwJzAm4CbgLWAtYCcQJxApYClgKKAooCkwKTArACsAKSApICZgJmAoICggKFAoUCmgKaApUClQJMAkwChAKEAokCiQJ3AncCcQJxAkoCSgFgAWADqAOoAnkCeQJwAnACegJ6AnkCeQKEAoQCfgJ+AoICggJ3AncCbQJtAncCdwS7BLsCbQJtAmACYAKUApQCZgJmAmkCaQJuAm4CdQJ1ApgCmAIAAgAADwAPAJcAlwCAAIAA9QD1AMgAyABNAE0A7wDvAR4BHgBNAE0A7gDuAKwArAB/AH8AEwATAMAAwAC4ALgAbQBtAFMAUwD8APwAgQCBAIYAhgB/AH8AhgCGADcANwD3APcBOQE5AGUAZQABAAEBVwFXACEAIQCcAJwBSgFKAAEAAQBCAEIMAQWsAH8AfwtzC3P/jf+N/yr/Kv8J/wkU9RT1/8X/xf8h/yH/1P/UAAAAAAAAAAA="
+	}
+	
+}
+	

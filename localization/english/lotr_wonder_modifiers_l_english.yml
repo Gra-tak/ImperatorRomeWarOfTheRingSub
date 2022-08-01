@@ -1,0 +1,213 @@
+﻿l_english:
+### Dunedain Wonders ###
+ minas_anor_modifier:0 "Minas Anor"
+  desc_minas_anor_modifier:0 "Minas Anor, Tower of the Sun, was a city-fortress of Gondor. It was the western counterpart to Minas Ithil: guarding the western flank of the capital city of Osgiliath."
+ minas_anor_state_modifier:0 "Anorien Defenses"
+  desc_minas_anor_state_modifier:0 "Anorien state defenses."
+ minas_anor_tower_modifier:0 "Minas Anor: Palantír"
+  desc_minas_anor_tower_modifier:0 "Minas Anor was home to Anárion's House, therefore when the seven palantíri were divided amongst the Realms in Exile one was placed in Minas Anor."
+  #minas_anor_healing_modifier: 0 "Minas Anor: Houses of Healing"
+  #minas_anor_rammas_echor_modifier: 0 "Minas Anor: Rammas Echor"
+  #minas_anor_desolate_modifier: 0 "Ruins of Minas Anor"
+  #minas_anor_reunited_modifier: 0 "Minas Anor: Gates of Mithril"
+ minas_ithil_modifier:0 "Minas Ithil"
+  desc_minas_ithil_modifier:0 "Minas Ithil, Tower of the Moon, was a city-fortress of Gondor. It was the eastern counterpart to Minas Anor: guarding the eastern flank of the capital city of Osgiliath."
+ minas_ithil_state_modifier:0 "Mountain Defenses"
+  desc_minas_ithil_state_modifier:0 "Minas Ithil state defenses."
+ minas_ithil_tower_modifier:0 "Minas Ithil: Palantír"
+  desc_minas_ithil_tower_modifier:0 "Minas Ithil was home to Isildur's House, therefore when the seven palantíri were divided amongst the Realms in Exile one was placed in Minas Anor."
+  #minas_ithil_archive_modifier: 0 "Minas Ithil: Archives of Islildur"
+  #minas_ithil_desolate_modifier: 0 "Ruins of Minas Ithil"
+  #minas_morgul_modifier:0 "Minas Morgul"
+  #minas_ithil_reunited_modifier: 0 "Minas Ithil: Gardens of the Moon"
+ osgiliath_palace_modifier:0 "Osgiliath Palace"
+  desc_osgiliath_palace_modifier:0 "Osgiliath was the capital city of Gondor, situated on both sides of the Anduin River between Minas Anor and Minas Ithil."
+ osgiliath_gardens_modifier:0 "Osgiliath: Twisted Gardens"
+  desc_osgiliath_gardens_modifier:0 "The gardens and courtyard are decorated with strange and disturbing sculptures."
+  #osgiliath_dome_of_stars_modifier: 0 "Osgiliath: Dome of the Stars"
+  #osgiliath_palace_desolate_modifier: 0 "Ruins of Osgiliath"
+  #osgiliath_palace_reunited_modifier: 0 "Osgiliath: Reunited Kingdom"
+ orthanc_modifier:0 "Tower of Orthanc"
+  desc_orthanc_modifier:0 "Orthanc was the impregnable tower of Isengard built by the Dúnedain during the Second Age. It is made of a material black, yet gleaming as if it were wet."
+ orthanc_state_modifier:0 "Orthanc Defenses"
+  desc_orthanc_state_modifier:0 "Orthanc state defenses."
+ orthanc_storehouses_modifier:0 "Deep Storehouses of Orthanc"
+  desc_orthanc_storehouses_modifier:0 ""
+  #orthanc_desolate_modifier
+  #orthanc_reunited_modifier
+ aglarond_modifier:0 "Fortress of Aglarond"
+  desc_aglarond_modifier:0 "A fortress of refuge, which no enemy have yet taken. The Glittering Caves were located behind the fortress of Aglarond."
+ aglarond_dwarven_modifier:0 "Fortress Kingdom of Aglarond"
+  desc_aglarond_dwarven_modifier:0 ""
+  #aglarond_desolate_modifier
+  #aglarond_reunited_modifier
+ amon_sul_modifier:0 "Amon Sûl"
+  desc_amon_sul_modifier:0 "Amon Sûl was the southernmost top of the Weather Hills. A tower has stood on the hill since the days of Elendil, and he has stored a palantír in its chambers."
+  #amon_sul_desolate_modifier
+  #amon_sul_reunited_modifier
+ annuminas_palace_modifier:0 "Annúminas Palace"
+  desc_annuminas_palace_modifier:0 "Annúminas was the city of the Kings of Arnor. The city lay on the south-east shore of Lake Nenuial, near the source of the Baranduin river. To the south and west of Annúminas rose the Hills of Evendim."
+  #annuminas_kings_hall_modifier
+  #annuminas_desolate_modifier
+  #annuminas_reunited_modifier
+ fornost_modifier:0 "Fornost Erain"
+  desc_fornost_modifier:0 "Fornost Erain was located at the south end of the North Downs. The fortress-city was founded after the establishment of the realm of Arnor."
+  #fornost_deadmans_dike_modifier
+  #fornost_reunited_modifier
+ tharbad_citadel_modifier:0 "Tharbad Citadel"
+  desc_tharbad_citadel_modifier:0 "Tharbad was a city on the southern edge of Eriador, high up along the once densely forested banks of the Gwathló."
+ tharbad_bridge_modifier:0 "Bridge of Tharbad"
+  desc_tharbad_bridge_modifier:0 "Tharbad's river-port was spanned by a bridge, the immense labour of which was shared by the North and South Kingdoms, and included a fortified town and haven about the great bridge over the Greyflood."
+  #tharbad_dangerous_ford_modifier
+  #tharbad_reunited_modifier
+#lond_daer_modifier
+ cameth_brin_modifier:0 "Tower of Cameth Brin"
+  desc_cameth_brin_modifier:0 "An unnatural crag, and a tower above it."
+  #cameth_brin_twisted_Hill_modifier
+  #cameth_brin_reunited_modifier
+ amon_hen_modifier:0 "Seat of Seeing on Amon Hen"
+  desc_amon_hen_modifier:0 "Amon Hen was the westernmost of the three peaks at the southern end of Nen Hitheol. The Seat of Seeing was an ancient throne built upon the summit of Amon Hen within a great circular stone-paved court surrounded by a battlement."
+  #amon_hen_desolate_upgrade
+  #amon_hen_reunited_upgrade
+#amon_lhaw_modifier
+ argonath_modifier:0 "The Argonath"
+  desc_argonath_modifier:0 "The Gate of Kings was a landmark on the northern edge of Gondor. It consisted of two enormous rock pillars, carved in the likeness of Isildur and Anárion facing to the north. Their weapons held in their right hand and their left hand rose in a gesture of defiance to the enemies of Gondor. The two statues stood upon either side of the River Anduin."
+ umbar_harbour_modifier:0 "Harbour of Umbar"
+  desc_umbar_harbour_modifier:0 "Umbar was a great haven to the far south of Gondor, a great cape and land-locked firth formed the port."
+#stone_of_erech_modifier
+#warning_beacons_modifier
+#henneth_annun_modifier
+ great_tower_modifier:0 "Great Tower"
+  desc_great_tower_modifier:0 "A tall, great watchtower, guarding a high place or holding a secret artefact."
+ great_seat_modifier:0 "Great Seat"
+  desc_great_seat_modifier:0 "A high seat for the wise, rested upon four carven pillars and reached by a thousand steps. At first, one sees little but mist and shadows, but soon they perceive many visions, soundless but filled with bright living images."
+ great_harbour_modifier:0 "Great Harbour"
+  desc_great_harbour_modifier:0 "This ancient harbour is filled with lamplit quays and the cries of seagulls."
+ seaward_modifier:0 "Seaward Tower"
+  desc_seaward_modifier:0 "'Only the knell of one slow bell, high in the Seaward Tower, announced the news of his moonsick cruise, at that unseemly hour.' - The Man in the Moon Came Down Too Soon"
+ island_fortress_modifier:0 "Island Fortress"
+  desc_island_fortress_modifier:0 "This strategically important island houses fortifications and is manned at all times."
+ wall_fortress_modifier:0 "Wall Fortress"
+  desc_wall_fortress_modifier:0 "Designed to shield the outside from it - and it from the outside."
+#causeway_forts_modifier
+#royal_tombs
+### Elvish Wonders ###
+mithlond_harbour_modifier:0 "Havens of Mithlond"
+  desc_mithlond_harbour_modifier:0 "The Grey Havens, also known as Mithlond, was a seaport on the Gulf of Lune at the mouth of the River Lhûn in western Eriador. Founded by the Elves of Lindon in the first year of the Second Age, the Grey Havens were afterwards used by any of the Elves to leave Middle-earth for Valinor."
+imladris_modifier:0 "Rivendell"
+  desc_imladris_modifier:0 "The House of Elrond was a refuge for the weary and the oppressed, and a treasury of good counsel and wise lore. Rivendell was an Elven town in the Misty Mountains on the eastern edge of Eriador. It was established by Elrond in S.A. 1697 as refugees fled the destruction of Eregion and the wars against Sauron in southern Eriador."
+elostirion_modifier:0 "Elostirion"
+  desc_elostirion_modifier:0 "Elostirion was the tallest and westernmost of the three White Towers that stood on the Tower Hills and that had been built by Gil-galad for Elendil. It held one of the palantír of Arnor which did not communicate with the rest but looked only westward across the Sundering Seas to Tol Eressëa."
+arestirion_modifier:0 "Arestirion"
+  desc_arestirion_modifier:0 "Arestirion was one of three tall towers located in the Emyn Beraid west of the Shire."
+ivrostirion_modifier:0 "Ivrostirion"
+  desc_ivrostirion_modifier:0 "Ivrostirion was one of three tall towers located in the Emyn Beraid west of the Shire."
+ost_in_edil_modifier:0 "Ost-in-Edhil"
+  desc_ost_in_edil_modifier:0 "Ost-in-Edhil rebuilt description"
+  #Trade can once again go forth between Elves and Dwarves. A new elvish power in Eriador is sure to upset the Kingdom of Arnor.
+  #gwaith_i_mirdain_modifier
+  #ost_in_edil_desolate_modifier
+ost_in_edil_ruins_modifier:0 "Ruins of Ost-in-Edhil"
+  desc_ost_in_edil_ruins_modifier:0 "'Deep they delved us, high they builded us, fair they wrought us, but they are gone.'"
+### Northmen Wonders ###
+dale_modifier:0 "The City of Dale"
+  desc_dale_modifier:0 "Dale was situated in the valley between the south-western and south-eastern arms of the Lonely Mountain, nestled in as sharp U-shaped bend of the River Running. It was known as a merry town that traded, mainly in food-supplies for the skills and craft-pieces of the Dwarves. Dale's toy market was the wonder of the North and the town was renowned for its bells."
+  #dale_toys_modifier
+  #dale_craftsmen_modifier
+  #dale_waterways_modifier - built by Erebor
+esgaroth_modifier:0 "Esgaroth upon the Long Lake"
+  desc_esgaroth_modifier:0 "Lake-town was constructed entirely of wood and stood upon wooden pillars sunk into the bed of the Long Lake. It was situated on the west side of the lake, north of the mouth of the Forest River in a calm bay that was formed by the shelter of a rock promontory."
+#framsburg_modifier
+#carrock_modifier
+### Dwarven Wonders ###
+erebor_modifier:0 "Erebor"
+  desc_erebor_modifier:0 ""
+dale_waterways_modifier:0 ""
+  desc_dale_waterways_modifier:0 ""
+iron_hills_modifier:0 "Iron Hills"
+  desc_iron_hills_modifier:0 ""
+moria_west_gate_modifier:0 "The Doors of Durin"
+  desc_moria_west_gate_modifier:0 "'The Doors of Durin, Lord of Moria. Speak, friend, and enter.'"
+celebdil_modifier:0 "Celebdil the White"
+  desc_celebdil_modifier:0 "Zirakzigil also known as Celebdil and Silvertine, was one of the three peaks that stood above the Dwarven city of Khazad-dûm. Its peak is a large, near-symmetrical pyramid. Each steep face, rising above the surrounding glaciers, face the four compass points and are split by four ridges. Celebdil overlooks the Dimril Dale and is reflected in sacred Mirrormere."
+caradhras_modifier:0 "Cruel Caradhras"
+  desc_caradhras_modifier:0 "Barazinbar, also known as Caradhras and the Redhorn, was one of the mightiest peaks in the Misty Mountains. It was tallest and northernmost of the Mountains of Moria. In the light of the rising or setting sun it appeared dull red as if stained with blood."
+fanuidhol_modifier:0 "Fanuidhol the Grey"
+  desc_fanuidhol_modifier:0 "Bundushathûr, also known as Fanuidhol and Cloudyhead, was one of the three peaks in the Misty Mountains (with Caradhras and Celebdil) that lay above the ancient dwarf-city of Khazad-dûm."
+durins_tower_modifier:0 "Durin's Tower and the Endless Stair"
+  desc_durins_tower_modifier:0 ""
+moria_east_gate_modifier:0 "Moria East Gate and the Bridge of Khazad-dûm"
+  desc_moria_east_gate_modifier:0 ""
+gundabad_modifier:0 "Gundabad"
+  gundabad_modifier:0 ""
+  #fort 4
+  
+gundabad_corrupted_modifier:0 "Gundabad"
+  gundabad_corrupted_modifier:0 ""
+#nogrod_modifier
+#belegost_modifier
+### Sauron Wonders ###
+barad_dur_modifier:0 "Barad-dûr"
+  desc_barad_dur_modifier:0 ""
+barad_dur_state_modifier:0 "Barad-dûr Defenses"
+  desc_barad_dur_state_modifier:0 "Barad-dûr state defenses"
+barad_dur_foundations_modifier:0 "Foundations of Barad-dûr"
+  desc_barad_dur_foundations_modifier:0 ""
+dol_guldur_modifier:0 "Dol Guldur"
+  desc_dol_guldur_modifier:0 ""
+carn_dum_modifier:0 "Carn Dûm"
+  desc_carn_dum_modifier:0 ""
+black_gate_modifier:0 "Black Gate"
+  desc_barad_dur_modifier:0 "Set in an impregnable black stone, the Black Gate was built by Sauron in the Second Age."
+black_gate_state_modifier:0 "Black Gate Defenses"
+  desc_barad_dur_state_modifier:0 "Black Gate state defenses"
+### Rohan Wonders ###
+#aldburg_modifier
+#edoras_modifier
+#dunharrow_modifier
+### Other Wonders ###
+eagle_eyries_modifier:0 "Eyries of the Eagles"
+  desc_eagle_eyries_modifier:0 ""
+barrows_modifier:0 "Barrow-downs"
+  desc_barrows_modifier:0 ""
+morwen_modifier:0 "Stone of the hapless"
+  desc_morwen_modifier:0 "The Stone of the Hapless was the hallowed stone on the banks of the River Taeglin that commemorated Túrin and Nienor, and Morwen their mother."
+dragon_lair_modifier:0 "Great Dragon Lair"
+  desc_dragon_lair_modifier:0 ""
+meneltarma_modifier:0 "Meneltarma"
+  desc_meneltarma_modifier:0 "Meneltarma was a sacred mountain in the center of Númenor. Its summit was flattened and broad, silence imposed on any who climbed the mountain. After the destruction of Númenor, some amongst the Exiles believed that the summit of the mountain remained as an island in Belegaer."
+#hobbiton_modifier
+#dead_city_modifier
+_osgiliath_modifier:0 "Osgiliath"
+  desc__modifier:0 ""
+helms_deep_modifier:0 "Helm's Deep"
+  desc__modifier:0 ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

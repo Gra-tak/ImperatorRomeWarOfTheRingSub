@@ -1,0 +1,85 @@
+﻿
+add_character_modifier_stack = {
+	if = {
+		limit = {
+			has_character_modifier = $MOD$
+		}
+		remove_character_modifier = $MOD$
+	}
+	while = {
+		count = $NUM$
+		add_character_modifier = {
+			name = $MOD$
+			mode = add
+			duration = $DUR$
+		}
+	}
+}
+
+add_country_modifier_stack = {
+	if = {
+		limit = {
+			has_country_modifier = $MOD$
+		}
+		remove_country_modifier = $MOD$
+	}
+	while = {
+		count = $NUM$
+		add_country_modifier = {
+			name = $MOD$
+			mode = add
+			duration = $DUR$
+		}
+	}
+}
+
+add_province_modifier_stack = {
+	if = {
+		limit = {
+			has_province_modifier = $MOD$
+		}
+		remove_province_modifier = $MOD$
+	}
+	while = {
+		count = $NUM$
+		add_province_modifier = {
+			name = $MOD$
+			mode = add
+			duration = $DUR$
+		}
+	}
+}
+
+add_state_modifier_stack = {
+	if = {
+		limit = {
+			has_state_modifier = $MOD$
+		}
+		remove_state_modifier = $MOD$
+	}
+	while = {
+		count = $NUM$
+		add_state_modifier = {
+			name = $MOD$
+			mode = add
+			duration = $DUR$
+		}
+	}
+}
+
+add_unit_modifier_stack = {
+	if = {
+		limit = {
+			has_unit_modifier = $MOD$
+		}
+		remove_unit_modifier = $MOD$
+	}
+	while = {
+		count = $NUM$
+		add_unit_modifier = {
+			name = $MOD$
+			mode = add
+			duration = $DUR$
+		}
+	}
+}

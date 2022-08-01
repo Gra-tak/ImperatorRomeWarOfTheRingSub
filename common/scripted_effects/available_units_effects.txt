@@ -1,0 +1,324 @@
+#after adding new unit types aalong with this file you need to also edit military_view.gui and edit_legion_window.gui
+au_basic_setup = { #runs at the game start to prevent errors, but you could also use it to reset all available units of a country before giving it a new set
+	set_variable = { #archers
+		name = au0
+		value = flag:na
+	}
+	set_variable = { #camels
+		name = au1
+		value = flag:na
+	}
+	set_variable = { #chariots
+		name = au2
+		value = flag:na
+	}
+	set_variable = { #dol_amroth_knights
+		name = au3
+		value = flag:na
+	}
+	set_variable = { #dunedain_archers
+		name = au4
+		value = flag:na
+	}
+	set_variable = { #dunedain_cavalry
+		name = au5
+		value = flag:na
+	}
+	set_variable = { #dunedain_infantry
+		name = au6
+		value = flag:na
+	}
+	set_variable = { #dwarven_archers
+		name = au7
+		value = flag:na
+	}
+	set_variable = { #dwarven_goat_riders
+		name = au8
+		value = flag:na
+	}
+	set_variable = { #dwarven_infantry
+		name = au9
+		value = flag:na
+	}
+	set_variable = { #elvish_archers
+		name = au10
+		value = flag:na
+	}
+	set_variable = { #elvish_cavalry_archers
+		name = au11
+		value = flag:na
+	}
+	set_variable = { #elvish_infantry
+		name = au12
+		value = flag:na
+	}
+	set_variable = { #halfling_infantry
+		name = au13
+		value = flag:na
+	}
+	set_variable = { #heavy_cavalry
+		name = au14
+		value = flag:na
+	}
+	set_variable = { #heavy_infantry
+		name = au15
+		value = flag:na
+	}
+	set_variable = { #horse_archers
+		name = au16
+		value = flag:na
+	}
+	set_variable = { #light_cavalry
+		name = au17
+		value = flag:na
+	}
+	set_variable = { #light_infantry
+		name = au18
+		value = flag:na
+	}
+	set_variable = { #orc_infantry
+		name = au19
+		value = flag:na
+	}
+	set_variable = { #rangers
+		name = au20
+		value = flag:na
+	}
+	set_variable = { #supply_train
+		name = au21
+		value = flag:na
+	}
+	set_variable = { #troll_infantry
+		name = au22
+		value = flag:na
+	}
+	set_variable = { #uruk_crossbows
+		name = au23
+		value = flag:na
+	}
+	set_variable = { #uruk_heavy_infantry
+		name = au24
+		value = flag:na
+	}
+	set_variable = { #uruk_infantry
+		name = au25
+		value = flag:na
+	}
+	set_variable = { #warelephant
+		name = au26
+		value = flag:na
+	}
+	set_variable = { #warg_riders
+		name = au27
+		value = flag:na
+	}
+}
+###effects to allow a type of a unit###
+allow_archers = {
+	set_variable = { #archers
+		name = au0
+		value = flag:archers
+	}
+}
+
+allow_camels = {
+	set_variable = { #camels
+		name = au1
+		value = flag:camels
+	}
+}
+
+allow_chariots = {
+	set_variable = { #chariots
+		name = au2
+		value = flag:chariots
+	}
+}
+
+allow_dol_amroth_knights = {
+	set_variable = { #dol_amroth_knights
+		name = au3
+		value = flag:dol_amroth_knights
+	}
+}
+
+allow_dunedain_archers = {
+	set_variable = { #dunedain_archers
+		name = au4
+		value = flag:dunedain_archers
+	}
+}
+
+allow_dunedain_cavalry = {
+	set_variable = { #dunedain_cavalry
+		name = au5
+		value = flag:dunedain_cavalry
+	}
+}
+
+allow_dunedain_infantry = {
+	set_variable = { #dunedain_infantry
+		name = au6
+		value = flag:dunedain_infantry
+	}
+}
+
+allow_dwarven_archers = {
+	set_variable = { #dwarven_archers
+		name = au7
+		value = flag:dwarven_archers
+	}
+}
+
+allow_dwarven_goat_riders = {
+	set_variable = { #dwarven_goat_riders
+		name = au8
+		value = flag:dwarven_goat_riders
+	}
+}
+
+allow_dwarven_infantry = {
+	set_variable = { #dwarven_infantry
+		name = au9
+		value = flag:dwarven_infantry
+	}
+}
+
+allow_elvish_archers = {
+	set_variable = { #elvish_archers
+		name = au10
+		value = flag:elvish_archers
+	}
+}
+
+allow_elvish_cavalry_archers = {
+	set_variable = { #elvish_cavalry_archers
+		name = au11
+		value = flag:elvish_cavalry_archers
+	}
+}
+
+allow_elvish_infantry = {
+	set_variable = { #elvish_infantry
+		name = au12
+		value = flag:elvish_infantry
+	}
+}
+
+allow_halfling_infantry = {
+	set_variable = { #halfling_infantry
+		name = au13
+		value = flag:halfling_infantry
+	}
+}
+
+allow_heavy_cavalry = {
+	set_variable = { #heavy_cavalry
+		name = au14
+		value = flag:heavy_cavalry
+	}
+}
+
+allow_heavy_infantry = {
+	set_variable = { #heavy_infantry
+		name = au15
+		value = flag:heavy_infantry
+	}
+}
+
+allow_horse_archers = {
+	set_variable = { #horse_archers
+		name = au16
+		value = flag:horse_archers
+	}
+}
+
+allow_light_cavalry = {
+	set_variable = { #light_cavalry
+		name = au17
+		value = flag:light_cavalry
+	}
+}
+
+allow_light_infantry = {
+	set_variable = { #light_infantry
+		name = au18
+		value = flag:light_infantry
+	}
+}
+
+allow_orc_infantry = {
+	set_variable = { #orc_infantry
+		name = au19
+		value = flag:orc_infantry
+	}
+}
+
+allow_rangers = {
+	set_variable = { #rangers
+		name = au20
+		value = flag:rangers
+	}
+}
+
+allow_supply_train = {
+	set_variable = { #supply_train
+		name = au21
+		value = flag:supply_train
+	}
+}
+
+allow_troll_infantry = {
+	set_variable = { #troll_infantry
+		name = au22
+		value = flag:troll_infantry
+	}
+}
+
+allow_uruk_crossbows = {
+	set_variable = { #uruk_crossbows
+		name = au23
+		value = flag:uruk_crossbows
+	}
+}
+
+allow_uruk_heavy_infantry = {
+	set_variable = { #uruk_heavy_infantry
+		name = au24
+		value = flag:uruk_heavy_infantry
+	}
+}
+
+allow_uruk_infantry = {
+	set_variable = { #uruk_infantry
+		name = au25
+		value = flag:uruk_infantry
+	}
+}
+
+allow_warelephant = {
+	set_variable = { #warelephant
+		name = au26
+		value = flag:warelephant
+	}
+}
+
+allow_warg_riders = {
+	set_variable = { #warg_riders
+		name = au27
+		value = flag:warg_riders
+	}
+}
+###combined effects to allow multiple types at once###
+allow_vanilla_units = {
+	allow_archers = yes
+	#etc
+}
+
+allow_dunedain_units = {
+	allow_dunedain_archers = yes
+	allow_dunedain_cavalry = yes
+	allow_dunedain_infantry = yes
+}
+
+

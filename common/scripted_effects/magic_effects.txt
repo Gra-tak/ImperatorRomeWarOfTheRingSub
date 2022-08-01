@@ -1,0 +1,75 @@
+﻿roll_d100_effect = { # for random rolls
+	if = {
+		limit = {
+			has_variable = d100_result
+		}
+		remove_variable = d100_result
+	}
+	set_variable = {
+		name = d100_result
+		value = {
+			integer_range = { min = 0 max = 100 }
+		}
+	}
+}
+
+mana_maintenance_effect = { #should be applied after any mana change
+	if = {
+		limit = {
+			var:mana > this.max_mana_sv
+		}
+		set_variable = {
+			name = mana
+			value = this.max_mana_sv
+		}
+	}
+	set_variable = {
+		name = mana_bar
+		value = this.mana_percent_sv
+	}
+}
+
+mana_regen_effect = { #effect for mana regen
+	change_variable = {
+		name = mana
+		add = this.mana_regen_sv
+	}
+	change_variable = {
+		name = mana
+		subtract = this.mana_channeled_sv
+	}
+	mana_maintenance_effect = yes
+}
+
+mana_refill_effect = { #fully restores mana to max
+	set_variable = {
+		name = mana
+		value = this.max_mana_sv
+	}
+	mana_maintenance_effect = yes
+}
+
+mana_cost_effect = { #subtracts COST mana
+	change_variable = {
+		name = mana
+		subtract = $COST$
+	}
+	mana_maintenance_effect = yes
+}
+
+mana_change_effect = { #for testing, probably not needed now
+	if = {
+		limit = {
+			NOT = { has_variable = mana }
+		}
+		set_variable = {
+			name = mana
+			value = 0
+		}
+	}
+	change_variable = {
+		name = mana
+		$MANA$
+	}
+	mana_maintenance_effect = yes
+}

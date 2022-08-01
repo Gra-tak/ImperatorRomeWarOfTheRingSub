@@ -1,0 +1,63 @@
+﻿"LAM"={
+	country="LAM"
+	0={
+		first_name="Angbor the Fearless"
+		family = c:LAM.fam:Halionath
+		birth_date=2950.8.25
+		culture="gondorian"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=12
+		add_charisma=7
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+		add_trait="jealous"
+		add_trait="tough"
+		add_trait="chaste"
+		add_gold=200
+		add_popularity=70
+		c:LAM={
+			set_as_ruler=char:0
+		}
+	}
+	1={
+		first_name="Hirwen"
+		family_name="Turionath"
+		female=yes
+		birth_date=2953.3.25
+		culture="gondorian"
+		religion="iluvatarism"
+		marry_character="char:0"
+		no_stats=yes
+		add_martial=7
+		add_charisma=12
+		add_finesse=8
+		add_zeal=11
+		no_traits=yes
+		add_trait="just"
+		add_trait="lustful"
+		add_gold=200
+		add_popularity=60
+	}
+	2={
+		first_name="Drambor"
+		family = c:LAM.fam:Halionath
+		birth_date=2974.3.3
+		culture="gondorian"
+		religion="iluvatarism"
+		father="char:0"
+		mother="char:1"
+		no_stats=yes
+		add_martial=7
+		add_charisma=11
+		add_finesse=5
+		add_zeal=8
+		no_traits=yes
+		add_trait="brave"
+		add_trait="tough"
+		add_trait="confident"
+		add_gold=200
+		add_popularity=60
+	}
+}

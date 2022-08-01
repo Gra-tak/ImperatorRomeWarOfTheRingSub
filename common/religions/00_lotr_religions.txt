@@ -1,0 +1,117 @@
+﻿iluvatarism = {
+	color = hsv { 0.13 0.2 0.96 }
+	modifier = { global_monthly_civilization = 0.01 }
+	religion_category = pantheon
+	can_deify_ruler = no
+	sacrifice_icon = sacrifice_incense
+	sacrifice_sound = "event:/SFX/UI/Religion/sfx_ui_religion_generic_sacrifice"
+}
+melkorism = {
+	color = hsv { 0 0.76 0.27 }
+	modifier = { global_pop_conversion_speed_modifier = 0.8 }
+	religion_category = pantheon
+}
+
+easterling = {
+	color = hsv { 0.65  0.7  0.8 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+breelander = {
+	color = rgb { 253 226 105 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+edain = {
+	color = hsv { 0.75 0.9 0.73 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+black_numenorean = {
+	color = hsv { 0.75 0.9 0.73 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+eotheod_religion = {
+	color = hsv { 0.3 0.9 0.28 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+forodwaith = {
+	color = hsv { 0.3 0.1 0.4  }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+beasts = {
+	color = hsv { 0.5 0.1 0.4  }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+dwarves = {
+	color = hsv { 0.05 1.0 0.5 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+haldadian = {
+	color = hsv { 0.3 0.1 0.2  }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+halflings = {
+	color = hsv { 0.3 0.4 0.2  }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+haradrim = {
+	color = hsv { 0.3 0.7 0.4 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+harondorian = {
+	color = hsv { 0.07 1.0 1.0 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+mirkwoodmen = {
+	color = hsv { 0.65 1.0 1.0 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+melkor = {
+	color = hsv { 0 0 0.16 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+noldor = {
+	color = hsv { 0.05  0.5  0.4 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+teleri = {
+	color = hsv { 0.05 0.7 0.3 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+vanyar = {
+	color = hsv { 0.2 0.5 0.8 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+
+yopi = {
+	color = hsv { 0.8 0.6 0.6 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+	
+mumakanim = {
+	color = hsv { 0.2 0.2  0.3 }
+	modifier = { global_citizen_happyness = happiness_large_svalue }
+	religion_category = pantheon
+}
+
+eastern_animism = { # Ritualist
+	color = rgb { 204 200 200 }
+	modifier = { diplomatic_relations = 1 }
+	religion_category = pantheon
+}

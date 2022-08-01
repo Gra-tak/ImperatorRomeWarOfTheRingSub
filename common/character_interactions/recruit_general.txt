@@ -1,0 +1,66 @@
+﻿recruit_general = {
+
+	on_other_nation = yes
+	on_own_nation = no
+	
+	sound = "event:/SFX/UI/Character/Generic/sfx_ui_character_diplomacy"
+	
+	potential_trigger = {
+		hidden:scope:target = {
+			is_alive = yes
+			NOT = { employer = { tag = REB } }
+			NOT = { employer = { tag = BAR } }
+			is_mercenary = no
+			is_general = yes
+			NOT = {
+				has_character_modifier = disloyal_successor_cmod
+			}
+			lotr_story_character_trigger = no
+		}
+		hidden:scope:actor = {
+			OR = {
+				is_ai = no
+				is_primary_race_trigger = { TARGET = scope:target }
+			}
+		}
+	}
+	
+	
+	allowed_trigger = {
+		hidden:scope:actor = {
+			OR = {
+				is_ai = no
+				is_primary_race_trigger = { TARGET = scope:target }
+			}
+			can_pay_price = recruit_general
+		}
+		hidden:scope:target = {
+			is_general = yes
+			is_ruler = no
+			is_banished = no
+			is_pretender = no
+			is_primary_heir = no
+			NOT = {
+				any_character_unit = {
+					unit_location = scope:target.location
+					in_combat = yes
+				}
+			}
+			NOT = { loyalty > 25 }
+		}
+	}
+	
+	
+
+	
+	effect = {
+		scope:actor = {
+			pay_price = recruit_general
+		}
+	
+		scope:target = {
+			move_country = scope:actor
+		}
+	}
+	
+}	

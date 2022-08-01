@@ -1,0 +1,235 @@
+﻿elf = {
+	type = health
+	charisma = 2
+	finesse = 1
+	martial = 1
+	fertility = -0.3
+	health = 5.0
+}
+
+dwarf = {
+	type = health
+	martial = 1
+	#fertility = -0.3
+	health = 1.0
+}
+
+strong_blood_of_numenor = {
+	type = health
+	martial = 1
+	charisma = 1
+	#fertility = -0.2
+	health = 1.0
+}
+
+blood_of_numenor = {
+	type = health
+	martial = 1
+	charisma = 1
+	#fertility = -0.2
+	health = 0.5
+}
+
+orc = {
+	type = health
+	charisma = -3
+}
+
+halfling = {
+	type = health
+	charisma = 1
+	finesse = 1
+}
+
+10_sauron = {
+	type = health
+	health = 10.0
+	fertility = -1.0
+	charisma = 5
+	finesse = 5
+	martial = 5
+	zeal = 5
+	monthly_character_popularity = 0.1
+	country = {
+		#subject_opinions = 2
+		monthly_legitimacy = 2.0
+	}
+}
+
+20_sauron = {
+	type = health
+	health = 10.0
+	fertility = -1.0
+	charisma = 6
+	finesse = 6
+	martial = 6
+	zeal = 6
+	monthly_character_popularity = 0.1
+	country = {
+		#subject_opinions = 4
+		monthly_legitimacy = 2.0
+	}
+}
+
+30_sauron = {
+	type = health
+	health = 10.0
+	fertility = -1.0
+	charisma = 7
+	finesse = 7
+	martial = 7
+	zeal = 7
+	monthly_character_popularity = 0.1
+	country = {
+		#subject_opinions = 6
+		monthly_legitimacy = 2.0
+	}
+}
+
+40_sauron = {
+	type = health
+	health = 10.0
+	fertility = -1.0
+	charisma = 8
+	finesse = 8
+	martial = 8
+	zeal = 8
+	monthly_character_popularity = 0.1
+	country = {
+		#subject_opinions = 8
+		monthly_legitimacy = 2.0
+	}
+}
+
+50_sauron = {
+	type = health
+	health = 10.0
+	fertility = -1.0
+	charisma = 9
+	finesse = 9
+	martial = 9
+	zeal = 9
+	monthly_character_popularity = 0.1
+	country = {
+		#subject_opinions = 10
+		monthly_legitimacy = 2.0
+	}
+}
+
+60_sauron = {
+	type = health
+	health = 10.0
+	fertility = -1.0
+	charisma = 10
+	finesse = 10
+	martial = 10
+	zeal = 10
+	monthly_character_popularity = 0.1
+	country = {
+		#subject_opinions = 12
+		monthly_legitimacy = 2.0
+	}
+}
+
+70_sauron = {
+	type = health
+	health = 10.0
+	fertility = -1.0
+	charisma = 11
+	finesse = 11
+	martial = 11
+	zeal = 11
+	monthly_character_popularity = 0.1
+	country = {
+		#subject_opinions = 14
+		monthly_legitimacy = 2.0
+	}
+}
+
+80_sauron = {
+	type = health
+	health = 10.0
+	fertility = -1.0
+	charisma = 12
+	finesse = 12
+	martial = 12
+	zeal = 12
+	monthly_character_popularity = 0.1
+	country = {
+		#subject_opinions = 16
+		monthly_legitimacy = 2.0
+	}
+}
+
+90_sauron = {
+	type = health
+	health = 10.0
+	fertility = -1.0
+	charisma = 13
+	finesse = 13
+	martial = 13
+	zeal = 13
+	monthly_character_popularity = 0.1
+	country = {
+		#subject_opinions = 18
+		monthly_legitimacy = 2.0
+	}
+}
+
+100_sauron = {
+	type = health
+	health = 10.0
+	fertility = -1.0
+	charisma = 15
+	finesse = 15
+	martial = 15
+	zeal = 15
+	monthly_character_popularity = 0.1
+	country = {
+		#subject_opinions = 20
+		monthly_legitimacy = 2.0
+	}
+}
+
+maia = {
+	type = health
+	health = 5.0
+	fertility = -1.0
+}
+
+old = { #for the long-lived but not immortal races
+	type = health
+	health = -0.9
+}
+
+nazgul = {
+	type = health
+	martial = 3
+	fertility = -1.0
+	health = 10.0
+	monthly_corruption = -1.0
+	character_loyalty = 100
+	unit = {
+		discipline  = 0.3
+	}
+}
+
+novice_magic_user = {
+type = status
+}
+
+trained_magic_user = {
+type = status
+}
+
+expert_magic_user = {
+type = status
+}
+
+master_magic_user = {
+type = status
+}
+
+legendary_magic_user = {
+type = status
+}

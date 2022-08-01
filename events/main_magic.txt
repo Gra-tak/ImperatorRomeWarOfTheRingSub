@@ -1,0 +1,46 @@
+﻿namespace = main_magic
+main_magic.1 = { #this event should be fired for every caster
+	type = character_event
+	hidden = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+		mana_refill_effect = yes
+		C:ANG = {
+			add_to_variable_list = {
+				name = casters
+				target = ROOT
+			}
+		}
+	}
+}
+
+main_magic.2 = { #mana regen
+	type = country_event
+	hidden = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+		every_in_list = {
+			variable = casters
+			mana_regen_effect = yes
+		}
+		trigger_event = { id = main_magic.3 }
+	}
+}
+
+main_magic.3 = { #maintaining regen
+	type = country_event
+	hidden = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+		trigger_event = { id = main_magic.2 days = 365 }
+	}
+}

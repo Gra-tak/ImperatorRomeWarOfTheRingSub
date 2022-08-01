@@ -1,0 +1,709 @@
+﻿lotr_generic_capital_mission = {
+	header = "lotr_generic_mission_landscape_headers"
+	icon = "lotr_generic_capital_mission_icon"
+
+	repeatable = no
+
+	chance = {}
+
+	ai_chance = {
+		factor = 0
+	}
+
+	potential = {
+    	NOT = { has_variable = lotr_generic_mission_activated_variable }
+		has_civil_war = no
+	}
+
+	on_potential = {
+		random_owned_province = {
+			limit = {
+                owner = root
+                is_capital = yes
+			} 
+			save_scope_as = lotr_actual_capital
+		}
+	}
+
+	abort = {
+		ai_mission_back_out_trigger = yes
+	}
+
+	on_start = {
+		if = {
+			limit = {
+				root = { is_tribal = yes }
+			}
+			capital_scope = {
+				create_state_pop = tribesmen
+				create_state_pop = tribesmen
+			}
+			add_stability = 5
+		}
+		else = {
+			add_stability = 5
+		}
+		start_mission_ai_effect = yes
+	}
+
+	on_abort = {
+		add_stability = -15
+        set_variable = {
+            name = lotr_generic_mission_activated_variable
+        }
+	}
+
+	on_completion = {
+		complete_mission_effect = yes
+	}
+	
+############################# Province missions #####################################
+
+	lotr_generic_capital_mission_1 = {		# Start
+		icon = "task_economical"
+
+    	duration = 220
+
+		allow = {
+			treasury >= 80
+			political_influence >= 20
+			war = no
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+            add_treasury = -80
+			add_political_influence = -20
+		}
+
+		on_completion = {
+			current_ruler = {
+				add_popularity = popularity_medium
+			}
+			add_1_free_province_investments = yes
+			if = {
+				limit = {
+					root = { is_tribal = yes }
+				}
+				add_centralization = 5
+				add_stability = 10
+			}
+			else = {
+				add_stability = 5
+			}
+		} 
+	}
+	
+	lotr_generic_capital_mission_2 = {		# Commerce
+		icon = "task_political"
+
+		requires = { lotr_generic_capital_mission_1 } 
+
+		allow = {
+			invention = capital_trade_inv_2
+			capital_scope = {
+				has_city_status = yes
+				has_building = commerce_building
+			}
+			capital_scope.state = {
+				incoming_trade_routes >= 3
+			}
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+				capital_scope = {
+					add_province_modifier = {
+						name = me_mac_2_11_pmod
+						duration = 3650 # 10 years
+					}
+				}
+		}
+	}
+	
+	lotr_generic_capital_mission_3 = {		# Other
+		icon = "task_economical"
+
+		requires = { lotr_generic_capital_mission_2 } 
+
+		allow = {
+			capital_scope = {
+				has_city_status = yes
+				has_building = commerce_building
+			}
+			capital_scope.state = {
+				incoming_trade_routes >= 3 #TODO change to 10
+			}
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+				capital_scope = {
+					add_province_modifier = {
+						name = emporion_modifier
+						duration = -1
+					}
+				}
+		}
+	}
+	
+	lotr_generic_capital_mission_4 = {		# Statue
+		icon = "task_diplomatic"
+
+		requires = { lotr_generic_capital_mission_3 } 
+
+		allow = {
+			treasury >= 200
+		}
+		
+    	duration = 520
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+            add_treasury = -200
+		}
+
+		on_completion = {
+            create_country_treasure = {
+                key = "lotr_generic_capital_mission_4_statue"
+                icon = "treasure_architecture"
+                modifier = {
+                    local_population_happiness = 0.05
+                }
+            }
+			current_ruler = {
+				add_popularity = popularity_medium
+			}
+		}
+	}
+	
+	lotr_generic_capital_mission_5 = {		# Final
+		icon = "task_political"
+
+		final = yes
+
+		requires = { lotr_generic_capital_mission_4 } 
+
+		allow = {
+			capital_scope = {
+				total_population >= 20  #TODO change to 80
+				has_province_rank = city_metropolis
+				has_great_work = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+				capital_scope = {
+					add_province_modifier = {
+						name = carthage_mission_trade_metropolis_west_modifier
+						duration = -1
+					}
+				}
+		}
+	}
+	
+############################# Pops missions #####################################
+
+	
+	lotr_generic_capital_pops_mission_1 = {		# Freemen Forum
+		icon = "task_diplomatic"
+
+		requires = { lotr_generic_capital_mission_2 } 
+
+    	duration = 220
+
+		allow = {
+			invention = global_freemen_output_inv_2
+			capital_scope = {
+				has_city_status = yes
+				has_building = forum_building
+			}
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			capital_scope = {
+				if = {
+					limit = {
+						root = { is_tribal = yes }
+					}
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+				}
+				else = {
+					create_state_pop = freemen
+					create_state_pop = freemen
+				}
+			}
+			current_ruler = {
+				add_popularity = popularity_medium
+			}
+		}
+	}
+	
+	lotr_generic_capital_pops_mission_2 = {		# Citizens Court
+		icon = "task_economical"
+
+		requires = { lotr_generic_capital_pops_mission_1 } 
+
+    	duration = 220
+
+		allow = {
+			capital_scope = {
+				has_city_status = yes
+				has_building = court_building
+			}
+			tyranny <= 1
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			capital_scope = {
+				if = {
+					limit = {
+						root = { is_tribal = yes }
+					}
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+				}
+				else = {
+					create_state_pop = citizen
+					create_state_pop = citizen
+				}
+			}
+			current_ruler = { add_corruption = subtract_corruption_small }
+			add_stability = 10
+		}
+	}
+	
+	lotr_generic_capital_pops_mission_3 = {		# Nobles Academy
+		icon = "task_diplomatic"
+
+		final = yes
+
+    	duration = 220
+
+		requires = { lotr_generic_capital_pops_mission_2 } 
+
+		allow = {
+			capital_scope = {
+				has_city_status = yes
+				has_building = academy_building
+				has_building = theathre_building
+			}
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			capital_scope = {
+				if = {
+					limit = {
+						root = { is_tribal = yes }
+					}
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					add_province_modifier = {
+						name = "center_of_art_and_culture_modifier"
+						duration = -1
+					}
+				}
+				else = {
+					create_2_nobles_effect = yes
+					add_province_modifier = {
+						name = "center_of_art_and_culture_modifier"
+						duration = -1
+					}
+				}
+			}
+			current_ruler = { add_corruption = subtract_corruption_small }
+		}
+	}
+	
+	
+############################# Fortify missions #####################################
+	
+	lotr_fortify_capital_mission_1 = {		# Fortify1
+		icon = "task_expansion"
+
+		requires = { lotr_generic_capital_mission_1 } 
+
+		allow = {
+			capital_scope = {
+				has_city_status = yes
+				is_importing_trade_good = stone
+			}
+			military_experience >= 60
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		duration = 220
+
+		on_start = {
+            add_treasury = {
+                value = root.has_monthly_income
+                multiply = -12
+                max = 50
+            }
+		}
+
+		on_completion = { #TODO Make this a fort defense related modifier
+			capital_scope = {
+				add_province_modifier = {
+					name = "fortified_stronghold"
+					duration = -1
+				}
+			}
+			add_1_free_province_investments = yes
+		}
+	}
+	
+	lotr_fortify_capital_mission_2 = {		# Build Walls
+		icon = "task_conquest"
+
+		requires = { lotr_fortify_capital_mission_1 } 
+
+		allow = {
+			invention = civic_tech_investment_inv_1
+			capital_scope = {
+				has_building = military_building
+			}
+			treasury >= 110
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+		
+		duration = 220
+
+		on_start = {
+			add_treasury = -110
+		}
+
+		on_completion = {
+			capital_scope = {
+                if = {
+                    limit = { free_building_slots < 1 }
+                    destroy_building_effect = yes
+                }
+                add_building_level = fortress_building
+			}
+		}
+	}
+	
+	lotr_fortify_capital_mission_3 = {		# Fortify2
+		icon = "task_expansion"
+
+		requires = { lotr_fortify_capital_mission_2 } 
+
+		allow = {
+			capital_scope = {
+				fort_level >= 2
+				has_building = military_building
+			}
+			military_experience >= 80
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+		
+		duration = 220
+
+		on_start = {
+		}
+
+		on_completion = {
+        	add_1_free_province_investments = yes
+			add_country_modifier = {
+				name = syr_foreign_levy_cmod
+				duration = 365
+			}	
+			add_military_experience = 15
+		}
+	}
+	
+############################# Food missions #####################################
+	
+	lotr_generic_capital_food_mission_1 = {		# Import Food
+		icon = "task_conquest"
+
+    	duration = 220
+
+		allow = {
+			capital_scope = {
+				OR = {
+					is_importing_trade_good = grain
+					is_importing_trade_good = vegetables
+					is_importing_trade_good = fish
+					is_importing_trade_good = cattle
+				}
+			}
+			capital_scope.state = {
+				has_state_food >= 400
+			}
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			capital_scope = {
+				add_province_modifier = {
+					name = "ant_01_8_pmod"
+					duration = 3650
+				}
+			}
+		} 
+	}
+	
+	lotr_generic_capital_food_mission_2 = {		# Granery
+		icon = "task_economical"
+		
+		requires = { lotr_generic_capital_food_mission_1 } 
+
+    	duration = 220
+
+		allow = {
+			capital_scope = {
+				has_city_status = yes
+				has_building = population_building
+			}
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			current_ruler = {
+				add_popularity = popularity_small
+			}
+		} 
+	}
+	
+	lotr_generic_capital_food_mission_3 = {		# Food modifier
+		icon = "task_political"
+
+		requires = { lotr_generic_capital_food_mission_2 } 
+		
+    	duration = 220
+
+		allow = {
+			capital_scope.state = {
+				has_state_food >= 900
+			}
+		}
+		
+		highlight = {
+			scope:province = { this = root.capital_scope }
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			capital_scope.state = {
+				add_state_modifier = {
+					name = "fruits_of_the_land"
+					duration = 3650
+				}
+			}
+		}
+	}
+	
+	lotr_generic_capital_food_mission_4 = {		# Food farms
+		icon = "task_conquest"
+
+		requires = { lotr_generic_capital_food_mission_3 } 
+
+		potential = {
+			capital_scope.state = {
+				potential_farms_in_province_svalue >= 1
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				exists = scope:lotr_actual_capital
+				exists = state
+				state = scope:lotr_actual_capital.state
+			}
+		}
+
+		allow = {
+			invention = global_population_growth_inv_2
+			hidden:capital_scope.state = {
+				custom_tooltip = {
+					text = lotr_generic_capital_food_mission_4_tt
+					farms_in_province_svalue >= 1
+				}
+			}
+		}
+		
+		bypass = {
+			capital_scope.state = {
+				potential_farms_in_province_svalue < 1
+			}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			capital_scope = {
+				add_province_modifier = {
+					name = "food_depot"
+					duration = -1
+				}
+			}
+		}
+	}
+	
+############################# Mine missions #####################################
+	
+	lotr_generic_capital_mine_mission_1 = {		# Mines
+		icon = "task_political"
+
+		potential = {
+			capital_scope.state = {
+				potential_mines_in_province_svalue >= 1
+			}
+		}
+		
+    	duration = 220
+		
+		highlight = {
+			scope:province = {
+				exists = scope:lotr_actual_capital
+				exists = state
+				state = scope:lotr_actual_capital.state
+			}
+		}
+
+		allow = {
+			invention = global_goods_from_slaves_inv
+			treasury >= 80
+		}
+		
+		bypass = {
+			capital_scope.state = {
+				potential_mines_in_province_svalue < 1
+			}
+		}
+
+		on_start = {
+			add_treasury = -80
+		}
+
+		on_completion = {
+			capital_scope = {
+				add_province_modifier = {
+					name = "thriving_mining_sector"
+					duration = 3650 # 10 years
+				}
+			}
+		}
+	}
+	
+	lotr_generic_capital_mine_mission_2 = {		# Mines
+		icon = "task_economical"
+
+		potential = {
+			capital_scope.state = {
+				potential_mines_in_province_svalue >= 1
+			}
+		}
+		
+		requires = { lotr_generic_capital_mine_mission_1 } 
+		
+		highlight = {
+			scope:province = {
+				exists = scope:lotr_actual_capital
+				exists = state
+				state = scope:lotr_actual_capital.state
+			}
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = lotr_generic_capital_mine_mission_2_tt
+				capital_scope.state = {
+					mines_in_province_svalue >= 1
+				}
+			}
+		}
+		
+		bypass = {
+			capital_scope.state = {
+				potential_mines_in_province_svalue < 1
+			}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			capital_scope = {
+				add_province_modifier = {
+					name = "slave_city_modifier"
+					duration = 3650 # 10 years
+				}
+				create_3_slaves_effect = yes
+			}
+		}
+	}
+}

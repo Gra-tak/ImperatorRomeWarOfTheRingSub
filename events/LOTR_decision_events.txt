@@ -1,0 +1,243 @@
+﻿namespace = lotr_ruler_decisions
+
+lotr_ruler_decisions.1 = {
+    type = country_event
+    title = "lotr_ruler_decisions.1.t"
+    desc = "lotr_ruler_decisions.1.desc"
+    picture = event_gondor
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = c:GON.current_ruler
+	
+	immediate = {
+		set_variable = {
+			name = gondor_ruler_locked_variable
+			days = 50
+		}
+		overlord = { save_scope_as = gondor_overlord_country }
+	}
+	
+	option = { #Cancel decision
+		name = "lotr_ruler_decisions.1.a"
+		custom_tooltip = "lotr_ruler_decisions.1.a.tt"
+		ai_chance = {
+			base = 100
+		}
+	}
+	
+	option = { #Become allies
+		name = "lotr_ruler_decisions.1.b"
+		custom_tooltip = "lotr_ruler_decisions.1.b.tt"
+		trigger_event = {
+			id = lotr_ruler_decisions.2
+			days = 10
+		}
+	}
+	
+	option = { #Break free
+		name = "lotr_ruler_decisions.1.c"
+		custom_tooltip = "lotr_ruler_decisions.1.c.tt"
+		trigger_event = {
+			id = lotr_ruler_decisions.3
+			days = 3
+		}
+		add_tyranny = 5
+		add_stability = -5
+	}
+}
+
+lotr_ruler_decisions.2 = {
+    type = country_event
+    title = "lotr_ruler_decisions.2.t"
+    desc = "lotr_ruler_decisions.2.desc"
+    picture = event_gondor
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = c:GON.current_ruler
+	
+	option = {
+		name = "lotr_ruler_decisions.2.a"
+		custom_tooltip = "lotr_ruler_decisions.2.a.tt"
+		ai_chance = {
+			base = 100
+		}
+	}
+	
+	option = {
+		name = "lotr_ruler_decisions.2.b"
+		custom_tooltip = "lotr_ruler_decisions.2.b.tt"
+		overlord = { release_subject = ROOT }
+		add_alliance = scope:gondor_overlord_country
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 6
+		}
+		add_political_influence = -10
+	}
+}
+
+lotr_ruler_decisions.3 = {
+    type = country_event
+    title = "lotr_ruler_decisions.3.t"
+    desc = "lotr_ruler_decisions.3.desc"
+    picture = gondor
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = c:GON.current_ruler
+	
+	option = {
+		name = "lotr_ruler_decisions.3.a"
+		custom_tooltip = "lotr_ruler_decisions.3.a.tt"
+		ai_chance = {
+			base = 100
+		}
+	}
+	
+	option = {
+		name = "lotr_ruler_decisions.3.b"
+		custom_tooltip = "lotr_ruler_decisions.3.b.tt"
+		overlord = { release_subject = ROOT }
+		add_stability = -15
+		if = {
+			limit = {
+				is_monarchy = yes
+			}
+			add_legitimacy = subtract_legitimacy_medium
+		}
+		scope:gondor_overlord_country = {
+			add_opinion = {
+				modifier = lotr_overlord_enemies_modifier
+				target = root
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				add_claim = c:GON
+			}
+		}
+	}
+}
+
+lotr_ruler_decisions.4 = {
+    type = country_event
+    title = "lotr_ruler_decisions.4.t"
+    desc = "lotr_ruler_decisions.4.desc"
+    picture = event_gondor
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = c:GON.current_ruler
+	
+	immediate = {
+		set_variable = {
+			name = gondor_ruler_locked_variable
+			days = 50
+		}
+		overlord = { save_scope_as = gondor_overlord_country }
+	}
+	
+	option = { #Cancel decision
+		name = "lotr_ruler_decisions.4.a"
+		custom_tooltip = "lotr_ruler_decisions.4.a.tt"
+		ai_chance = {
+			base = 100
+		}
+	}
+	
+	option = { #Become allies
+		name = "lotr_ruler_decisions.4.b"
+		custom_tooltip = "lotr_ruler_decisions.4.b.tt"
+		trigger_event = {
+			id = lotr_ruler_decisions.5
+			days = 10
+		}
+	}
+	
+	option = { #Break free
+		name = "lotr_ruler_decisions.4.c"
+		custom_tooltip = "lotr_ruler_decisions.4.c.tt"
+		trigger_event = {
+			id = lotr_ruler_decisions.6
+			days = 3
+		}
+		add_tyranny = 5
+		add_stability = -5
+	}
+}
+
+lotr_ruler_decisions.5 = {
+    type = country_event
+    title = "lotr_ruler_decisions.5.t"
+    desc = "lotr_ruler_decisions.5.desc"
+    picture = event_gondor
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = c:GON.current_ruler
+	
+	option = {
+		name = "lotr_ruler_decisions.5.a"
+		custom_tooltip = "lotr_ruler_decisions.5.a.tt"
+		ai_chance = {
+			base = 100
+		}
+	}
+	
+	option = {
+		name = "lotr_ruler_decisions.5.b"
+		custom_tooltip = "lotr_ruler_decisions.5.b.tt"
+		overlord = { release_subject = ROOT }
+		add_alliance = scope:gondor_overlord_country
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 6
+		}
+		add_political_influence = -10
+	}
+}
+
+lotr_ruler_decisions.6 = {
+    type = country_event
+    title = "lotr_ruler_decisions.6.t"
+    desc = "lotr_ruler_decisions.6.desc"
+    picture = gondor
+	
+	left_portrait = root.current_ruler
+	
+	right_portrait = c:GON.current_ruler
+	
+	option = {
+		name = "lotr_ruler_decisions.6.a"
+		custom_tooltip = "lotr_ruler_decisions.6.a.tt"
+		ai_chance = {
+			base = 100
+		}
+	}
+	
+	option = {
+		name = "lotr_ruler_decisions.6.b"
+		custom_tooltip = "lotr_ruler_decisions.6.b.tt"
+		overlord = { release_subject = ROOT }
+		add_stability = -15
+		if = {
+			limit = {
+				is_monarchy = yes
+			}
+			add_legitimacy = subtract_legitimacy_medium
+		}
+		scope:gondor_overlord_country = {
+			add_opinion = {
+				modifier = lotr_overlord_enemies_modifier
+				target = root
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				add_claim = c:GON
+			}
+		}
+	}
+}

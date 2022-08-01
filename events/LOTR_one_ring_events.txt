@@ -1,0 +1,310 @@
+﻿namespace = lotr_one_ring_events
+
+#The Ring is found by country that has occupied the shire
+lotr_one_ring_events.1 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		is_ai = no
+		p:1621 = {
+			NOT = {
+				owner = c:SHI
+			}
+		}
+		current_date > 2986.3.3  #Pureon - this needs rethinking
+		NOT = {
+			has_variable = lotr_one_ring_event1_variable
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		set_variable = {
+			name = lotr_one_ring_event1_variable
+		}
+		p:1621.owner = {
+			save_scope_as = shire_new_owner_scope
+		}
+		if = {
+			limit = {
+				exists = scope:shire_new_owner_scope
+			}
+			treasure:lotr_treasure_one_ring = {
+				transfer_treasure_to_country = scope:shire_new_owner_scope
+			}
+		}
+	}
+}
+
+#Rings power given to ruler of nation with ring treasure
+lotr_one_ring_events.2 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		current_date > 2986.4.3  #Pureon - move back
+		exists = treasure:lotr_treasure_one_ring
+		ROOT = {
+			any_country_treasure = {
+				this = treasure:lotr_treasure_one_ring
+			}
+			current_ruler = {
+				NOT = {
+					has_character_modifier = owns_one_ring_modifier
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		current_ruler = {
+			add_martial = 20
+			add_finesse = 14
+			add_charisma = 18
+			add_zeal = 16
+			add_character_modifier = {
+				name = owns_one_ring_modifier
+				duration = -1
+			}
+		}
+		random_character = {
+			limit = {
+				is_ruler = no
+				has_character_modifier = owns_one_ring_modifier
+			}
+			remove_character_modifier = owns_one_ring_modifier
+			add_martial = -18
+			add_finesse = -12
+			add_charisma = -16
+			add_zeal = -14
+		}
+	}
+}
+
+#One Ring Decisions
+lotr_one_ring_events.3 = {
+    type = country_event
+    title = "lotr_one_ring_events.3.t"
+    desc = "lotr_one_ring_events.3.desc"
+    picture = event_one_ring_held
+	
+	immediate = {
+		set_variable = {
+			name = lotr_one_ring_events3_variable
+			days = 365
+		}
+	}
+	
+	option = { # Exit
+		name = "lotr_one_ring_events.3.a"
+		custom_tooltip = "lotr_one_ring_events.3.a.tt"
+		ai_chance = {
+			base = 100
+		}
+	}
+	
+	option = { # Give ring back to Sauron
+		name = "lotr_one_ring_events.3.b"
+		custom_tooltip = "lotr_one_ring_events.3.b.tt"
+		trigger = {
+			exists = treasure:lotr_treasure_one_ring
+			NOT = {
+				tag = MOR
+			}
+			exists = c:MOR
+			c:MOR = {
+				has_land = yes
+			}
+			char:3 = { # Sauron
+				is_alive = yes
+				is_ruler = yes
+				prisoner = no
+				employer = C:MOR
+			}
+		}
+		treasure:lotr_treasure_one_ring = {
+			transfer_treasure_to_country = c:MOR
+		}
+		current_ruler = {
+			add_health = -50
+		}
+	}
+	
+	option = { # Own Mount Doom destroy Ring
+		name = "lotr_one_ring_events.3.c"
+		custom_tooltip = "lotr_one_ring_events.3.c.tt"
+		trigger = {
+			exists = treasure:lotr_treasure_one_ring
+			owns_or_subject_owns = 1140
+		}
+		hidden_effect = {
+			treasure:lotr_treasure_one_ring = { destroy_treasure = yes }
+			p:1141 = {
+				add_city_fire_effect = yes
+			}
+#			hide_model = "wonder_barad_dur" # Pureon does not work
+		}
+		current_ruler = {
+			add_health = -30
+		}
+	}
+	
+	option = { # Carry ring to Mount Doom
+		name = "lotr_one_ring_events.3.d"
+		custom_tooltip = "lotr_one_ring_events.3.d.tt"
+		trigger = {
+			exists = treasure:lotr_treasure_one_ring
+			current_ruler = {
+				is_at_location = 1140
+			}
+		}
+		hidden_effect = {
+			treasure:lotr_treasure_one_ring = { destroy_treasure = yes }
+			p:1141 = {
+				add_city_fire_effect = yes
+			}
+#			hide_model = "wonder_barad_dur" # Pureon does not work
+		}
+		current_ruler = {
+			add_health = -30
+		}
+		char:3 = {
+			death = {
+						death_reason = death_freak_accident
+			}
+			}
+		char:4 = {
+			death = {
+						death_reason = death_freak_accident
+			}
+			}
+		char:5 = {
+			death = {
+						death_reason = death_freak_accident
+			}
+			}
+		char:6 = {
+			death = {
+						death_reason = death_freak_accident
+			}
+			}
+		char:7 = {
+			death = {
+						death_reason = death_freak_accident
+			}
+			}
+		char:8 = {
+			death = {
+						death_reason = death_freak_accident
+			}
+			}
+		char:9 = {
+			death = {
+						death_reason = death_freak_accident
+			}
+			}
+		char:10 = {
+			death = {
+						death_reason = death_freak_accident
+			}
+			}
+		char:11 = {
+			death = {
+						death_reason = death_freak_accident
+			}
+			}
+		char:12 = {
+			death = {
+						death_reason = death_freak_accident
+			}
+			}
+		C:MOR = {
+				add_country_modifier = {
+				name = death_of_sauron
+				duration = 7300
+				}
+				}
+		every_country = {
+			limit = {
+				NOT = { religion = melkorism }
+			}
+			trigger_event = { id = lotr_one_ring_events.4 days = 7 } #goodies are told Sauron is dead
+		}
+		every_country = {
+			limit = {
+				religion = melkorism
+			}
+			trigger_event = { id = lotr_one_ring_events.5 days = 7 } #baddies are told Sauron is dead
+		}
+		trigger_event = { id = lotr_one_ring_events.4 days = 7 } #goodies are told Sauron is dead
+	}
+	
+	option = { # Become a servant of Darkness
+		name = "lotr_one_ring_events.3.e"
+		custom_tooltip = "lotr_one_ring_events.3.e.tt"
+		trigger = {
+			exists = treasure:lotr_treasure_one_ring
+			current_ruler = {
+				corruption >= 40
+			}
+		}
+		current_ruler = {
+			set_character_religion = melkorism
+		}
+	}
+	
+}
+
+lotr_one_ring_events.4 = {
+	
+	type = country_event
+	title = "lotr_one_ring_events.4.t"
+	desc = "lotr_one_ring_events.4.desc"
+	picture = event_dale
+	goto_location = root
+	
+	trigger = {
+		always = yes
+	}
+	
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "lotr_one_ring_events.4.a"
+	}
+
+	option = {
+		name = "lotr_one_ring_events.4.b"
+	}
+			
+}
+
+lotr_one_ring_events.5 = {
+	
+	type = country_event
+	title = "lotr_one_ring_events.5.t"
+	desc = "lotr_one_ring_events.5.desc"
+	picture = event_barad_dur
+	goto_location = root
+	
+	trigger = {
+		always = yes
+	}
+	
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "lotr_one_ring_events.5.a"
+	}
+
+	option = {
+		name = "lotr_one_ring_events.5.b"
+	}
+			
+}

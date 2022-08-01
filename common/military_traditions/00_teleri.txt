@@ -1,0 +1,231 @@
+﻿teleri_philosophy = {
+	color = hsv { 1.1 1 0.5 }
+	image = teleri_philosophy
+
+	allow = {
+		trigger_if = {
+			limit = { country_culture_group = teleri_group }
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			country_culture_group = teleri_group
+		}
+		trigger_else = {
+			custom_tooltip = {
+				text = integrated_any_teleri_culture
+				any_country_culture = {
+					is_integrated = yes
+					this.culture.culture_group = culture_group:teleri_group
+				}
+			}
+		}
+	}
+
+####################
+
+	teleri_archer_path_1 = { ###
+		modifier = {
+			elvish_archers_offensive = 0.15
+			forest_combat_bonus = 0.1
+		}
+		icon = persian_achaemenid_path_6
+		requires = {}
+	}
+	
+	teleri_archer_path_2 = { ###
+		modifier = {
+			elvish_archers_defensive = 0.15
+		}
+		icon = celtic_britannic_path_2
+		requires = {teleri_archer_path_1}
+	}
+	
+	teleri_archer_path_3 = { ###
+		modifier = {
+			elvish_archers_movement_speed = 0.2
+		}
+		icon = celtic_britannic_path_7
+		requires = {teleri_archer_path_2}
+	}
+	
+	teleri_archer_path_4 = { ###
+		modifier = {
+			forest_combat_bonus = 0.2
+			deep_forest_combat_bonus = 0.2
+		}
+		icon = persian_bactrian_path_7
+		requires = {teleri_archer_path_3}
+	}
+	
+	teleri_archer_path_5 = { ###
+		modifier = {
+			elvish_archers_cost = -0.2
+			levy_size_multiplier = 0.025
+		}
+		icon = greek_antigonid_path_6
+		requires = {teleri_archer_path_4}
+		on_activate = {
+			ordered_owned_province = {
+				order_by = {
+					value = 0
+					add = population_cap
+					subtract = total_population
+				}
+				max = 1
+				check_range_bounds = no
+				create_2_freemen_effect = yes
+			}
+		}
+	}
+	
+	teleri_archer_path_6 = { ###
+		modifier = {
+			elvish_archers_offensive = 0.1
+		}
+		enable_tactic = padma_vyuha
+		icon = mauryan_noble_path_4
+		requires = {teleri_archer_path_5}
+	}
+	
+	teleri_archer_path_7 = { ###
+		modifier = {
+			elvish_archers_discipline = 0.15
+			general_loyalty = 5
+		}
+		icon = mauryan_mauryas_path_3
+		requires = {teleri_archer_path_6}
+	}
+	
+	
+####################
+
+	teleri_defensive_path_1 = { ###
+		modifier = {
+			movement_speed_if_no_road = 0.1
+		}
+		icon = celtic_gallic_path_5
+		requires = {teleri_archer_path_1}
+		on_activate = {
+			add_1_free_province_investments = yes
+		}
+	}
+	
+	teleri_defensive_path_2 = { ###
+		modifier = {
+			fort_maintenance_cost = -0.15
+			fortress_building_cost = -0.2
+			hostile_attrition = 0.1
+		}
+		icon = north_african_army_path_4
+		requires = {teleri_defensive_path_1}
+	}
+	
+	teleri_defensive_path_3 = { ###
+		modifier = {
+			global_defensive = 0.1
+			hostile_attrition = 0.1
+		}
+		icon = greek_states_path_6
+		requires = {teleri_defensive_path_2}
+	}
+	
+	teleri_defensive_path_4 = { ###
+		modifier = {
+			hostile_attrition = 0.3
+		}
+		icon = latin_support_path_7
+		requires = {teleri_defensive_path_3}
+		on_activate = {
+			custom_tooltip = "create_high_martial_rising_star"
+			hidden_effect = {
+				create_character = {
+					add_martial = 8
+					add_trait = steadfast
+				}
+			}
+		}
+	}
+	
+	
+####################
+
+	teleri_naval_path_1 = { ###
+		modifier = {
+			swanship_discipline = 0.15
+		}
+		allow_unit_type = swanship
+		icon = levantine_philosophy_start_bonus
+		requires = {}
+	}
+	
+	teleri_naval_path_2 = { ###
+		modifier = {
+			global_ship_start_experience = 10
+			swanship_offensive = 0.15
+		}
+		icon = north_african_naval_path_3
+		requires = {teleri_naval_path_1}
+	}
+	
+	teleri_naval_path_3 = { ###
+		modifier = {
+			global_ship_recruit_speed = 0.25
+			swanship_movement_speed = 0.1
+		}
+		icon = greek_antigonid_path_2
+		requires = {teleri_naval_path_2}
+		on_activate = {
+			ordered_owned_province = { #If you have none we make a new one, if you do have one we try to upgrade that.
+				limit = {
+					owner = { num_of_ports < 1 }
+					is_coastal = yes
+					NOT = { has_building = port_building }
+					can_build_building = port_building
+				}
+				alternative_limit = {
+					is_coastal = yes
+					has_building = port_building
+					can_build_building = port_building
+				}
+				alternative_limit = {
+					is_coastal = yes
+					can_build_building = port_building
+				}
+				add_building_level = port_building
+			}
+		}
+	}
+	
+	teleri_naval_path_4 = { ###
+		modifier = {
+			global_ship_start_experience = 10
+		}
+		icon = north_african_naval_path_7
+		requires = {teleri_naval_path_3}
+	}
+	
+	teleri_naval_path_5 = { ###
+		modifier = {
+			ship_repair_at_sea = 0.5
+		}
+		icon = latin_philosophy_start_bonus
+		requires = {teleri_naval_path_1}
+	}
+	
+	teleri_naval_path_6 = { ###
+		modifier = {
+			ship_cost = -0.3
+		}
+		icon = north_african_naval_path_end_bonus
+		requires = {teleri_naval_path_5}
+	}
+	
+	teleri_naval_path_7 = { ###
+		modifier = {
+			naval_morale_modifier = 0.15
+		}
+		icon = persian_achaemenid_path_3
+		requires = {teleri_naval_path_6}
+	}
+
+}

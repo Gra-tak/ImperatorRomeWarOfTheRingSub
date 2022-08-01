@@ -1,0 +1,83 @@
+﻿### New LOTR modifiers only ###
+owns_one_ring_modifier = {
+	monthly_corruption = 1.0 
+	health = 5.0
+	monthly_character_prominence = 0.1
+	monthly_character_popularity = 0.3
+	monthly_wage_for_character = 0.05
+}
+
+raided_by_corsairs = {
+	local_tax_modifier = -0.25
+	local_unrest = 5
+	minimum_unrest = 5
+}
+
+corsair_bribe_not_paid = {
+	state_commerce_modifier = -0.25
+	local_unrest = 10
+	minimum_unrest = 10
+}
+
+merchants_killed_orcs = {
+	local_base_trade_routes_modifier = -0.25
+	local_output_modifier = -0.3
+	local_unrest = 5
+	minimum_unrest = 5
+}
+
+melkor_priest_modifier = {
+	local_unrest = 5
+	minimum_unrest = 5
+}
+
+purchased_pipeweed_modifier = {
+	local_population_happiness = 0.1
+	#local_pop_assimilation_speed = 2
+}
+
+lotr_toys_fun_modifier = {
+	local_population_happiness = 0.1
+    global_population_growth = 0.05
+}
+
+monster_in_the_lake_modifier = {
+	local_monthly_food_modifier = -0.2
+	local_unrest = 5
+	minimum_unrest = 5
+}
+
+demon_whale_attacks_modifier = {
+	local_base_trade_routes_modifier = -0.4
+	local_output_modifier = -0.3
+}
+
+lotr_trade_winds_modifier = {
+    global_commerce_modifier = 0.05
+    global_tax_modifier = 0.02
+}
+
+lotr_guaranteed_rainfall_modifier = {
+    global_monthly_food_modifier = 0.2
+    global_population_growth = 0.1
+}
+
+lotr_balins_colony_modifier = {
+	local_defensive = 0.25
+	local_hostile_attrition = 2.0
+}
+
+lotr_public_character_death_modifier = {
+    global_nobles_happyness = -0.07
+	global_citizen_happyness = -0.06
+    global_freemen_happyness = -0.05
+    global_slaves_happyness = -0.02
+    global_tribesmen_happyness = -0.02
+}
+
+lotr_bilbo_party_modifier = {
+    global_freemen_output = -0.2
+    global_citizen_output = -0.2
+	global_nobles_output = -0.2
+	happiness_for_same_culture_modifier = 0.1
+}

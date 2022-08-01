@@ -1,0 +1,56 @@
+﻿uruk_infantry = {
+		default = yes
+	army = yes
+	assault = yes
+	
+	levy_tier = basic	
+	
+	maneuver = 1
+	movement_speed = 2.5
+	build_time = 30
+
+	light_infantry = 1.2
+	heavy_infantry = 0.95
+	heavy_cavalry = 0.95
+	warelephant = 0.95
+	horse_archers = 0.7
+	archers = 1.1
+	chariots = 1.1
+	camels = 1.1
+	light_cavalry = 1.1
+	supply_train = 2.0
+#light_infantry
+	halfling_infantry = 1.2
+	orc_infantry = 1.2
+	rangers = 1.2
+	#heavy_infantry
+	troll_infantry = 0.95
+	dwarven_infantry = 0.95
+	dunedain_infantry = 0.95
+	elvish_infantry = 0.95
+	uruk_heavy_infantry = 0.95
+	uruk_infantry = 0.95
+	#heavy cavalry
+	dol_amroth_knights = 0.95
+	dunedain_cavalry = 0.95
+	dwarven_goat_riders = 0.95
+	#horse archers
+	elvish_cavalry_archer = 0.7
+	#archers
+	elvish_archers = 1.1
+	dwarven_archers = 1.1
+	uruk_crossbows = 1.1
+	dunedain_archers = 1.1
+	
+	attrition_weight = 0.05
+	attrition_loss = 0.025
+	
+	food_consumption = 0.01
+	food_storage = 0.24
+	
+	#morale_damage_taken = 0.75
+	build_cost = {
+		gold = 6
+		manpower = 1
+	}
+}

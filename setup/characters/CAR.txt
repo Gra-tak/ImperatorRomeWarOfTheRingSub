@@ -1,0 +1,30 @@
+﻿"CAR"={
+	country="CAR"
+
+	15={
+		first_name="Aragorn"
+		family = c:CAR.fam:Isildurionath
+		birth_date=2931.8.25
+		culture="rangers"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=25
+		add_charisma=12
+		add_finesse=12
+		add_zeal=15
+		no_traits=yes
+		add_trait="wise"
+		add_trait="tough"
+		add_trait="blood_of_isildur"
+		add_trait="strong_blood_of_numenor"
+		add_trait="just"
+		add_trait="scholar"
+		add_gold=200
+		add_popularity=60
+		c:CAR={
+			set_as_ruler=char:15
+		}
+		dna="//8A/KxwrHAAAQAAAqICogKDAoMCigKKAn4CfgKEAoQChAKEAmUCZQJ2AnYChwKHApsCmwKXApcCgQKBApMCkwJzAnMCUAJQAnICcgKmAqYCYgJiAlwCXAJVAlUCgwKDAosCiwKSApICeQJ5AmsCawKOAo4ChwKHAnwCfAKCAoICcwJzAocChwJ6AnoCiQKJApkCmQKYApgClgKWAn8CfwKIAogChAKEAmUCZQKPAo8CagJqAn8CfwKYApgCiwKLAoECgQJ6AnoCiAKIAnACcAJmAmYCagJqAnECcQJqAmoCgQKBAqQCpAIkAiQBXwFfATYBNgGYAZgAsACwAVwBXAAmACYApQClAH0AfQF9AX0BFAEUAA8ADwA3ADcCiwKLAR8BHwK4ArgAwwDDAU0BTQCXAJcDJgMmAIYAhgDgAOAAnQCdATgBOAD7APsBXgFeAQMBAwFLAUsAoQChAPIA8gCDAIMAjgCOAx4DHgA8ADwMAAzkAH8AfwNzA3MWHBZjAP0A/QxDDFQQ2hA6EbER8wAAAAAAAAAAAAAAAAAAAAA="
+	}
+	
+}

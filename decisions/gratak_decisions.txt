@@ -1,0 +1,111 @@
+﻿country_decisions = {
+	removeVassalClaims = {
+		potential = {
+			is_ai = no
+		}
+		allow = {}
+		effect = {
+			every_subject = {
+				limit = {
+					NOR = { 
+						is_subject_type = vassal_tribe
+						is_subject_type = tributary
+					 }
+				 }
+			  every_owned_province = {
+			 		remove_claim = root
+				}
+			}
+		}
+	}
+	moveMinorities = {
+		potential = {
+			is_ai = no
+		}
+		allow = {
+			any_owned_province = {
+				dominant_province_culture_group = root.culture_group
+				any_pops_in_province = {
+					NOT = { this.culture.culture_group =  root.culture_group }
+				}
+			}
+		}
+		effect = {
+		# 	any_state_province = {
+		# 		NOR = {
+		# 			dominant_province_culture = governor_or_ruler.culture
+		# 			owner = {
+		# 				any_country_culture = {
+		# 					is_integrated = yes
+		# 					this.culture = prev.prev.culture
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+
+			every_owned_province = {
+				limit = {
+					dominant_province_culture_group = root.culture_group
+					# any_pops_in_province = {
+					# 	NOT = { this.culture.culture_group =  root.culture_group }
+					# 	}
+				}
+				every_pops_in_province = {
+					limit = {
+						NOT = { this.culture.culture_group =  root.culture_group }
+					}
+					save_scope_as = gratak_pop_to_move
+					ROOT = 
+					{
+						ordered_owned_province = {
+							limit = {
+								dominant_province_culture = scope:gratak_pop_to_move.culture
+							}
+							order_by = {
+								value = 0
+								add = population_cap
+								subtract = total_population
+							}
+							max = 1
+							save_scope_as = gratak_move_to
+							scope:gratak_pop_to_move = {
+								move_pop = scope:gratak_move_to
+							}
+							ROOT = {
+								add_treasury = -10
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	end_all_wars_debug = {
+		potential = {
+			is_ai = no
+		}
+		allow = {}
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = yes
+					is_subject = no
+					war = yes
+				 }
+				 save_scope_as = gratak_country_at_war
+				 every_country = {
+				 	limit = {
+						is_ai = yes
+						is_subject = no
+						war = yes
+						war_with = scope:gratak_country_at_war
+						num_of_cities < scope:gratak_country_at_war.num_of_cities
+					 }
+				  every_owned_province = {
+							set_conquered_by = scope:gratak_country_at_war
+					}
+				 }
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+﻿#See 00_default.txt in same folder for description.
+
+
+is_mordor_aimod = {
+	trigger = {
+		this = c:MOR
+	}
+	
+	aggressive = 100
+}
+
+is_isengard_aimod = {
+	trigger = {
+		this = c:XVX
+	}
+	
+	aggressive = 100
+}

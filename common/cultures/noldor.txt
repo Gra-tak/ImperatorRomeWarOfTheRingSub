@@ -1,0 +1,63 @@
+﻿noldor_group = {
+	
+	levy_template = levy_noldor
+	
+	primary = elvish_archers
+	second = elvish_infantry
+	flank = elvish_cavalry_archers
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+	
+	color = hsv { 0.3 0.9 0.38 }
+
+	male_names = {
+		Aegnor Aelu Aeol Aeredhil Aeredhur Aerennel Alphalir Amdir Amrod Amroth Angau Angmaetha Angrod Aragorn Aranel Ardamir Argon Arothir Atheadir Boromir Borou Calu Celeborn Celebu Curu Cirdan Daeron Danu Deneroth Denethor Denu Dior Drueu Edendhil Eldhil Eldhur Eleu Elladan Elmagil Elmeu Elmir Elrohir Elrond Elros Elross Elu Eluchil Elured Elurin Faeu Falau Faramir Fau Finarfin Fingolfin Fingon Finrod Finu Galadhon Galadhu Galathil Gil_galad Gildhil Gildhur Glorfindel Hallas Ilu Ingolodh Ingu Ithau Ithilbor Ithilu Laegolas Lalu Loeu Mablung Maeglin Maewu Magdan Maglor Malau Malgalad Moru Mirdan Miru Nou Nuru Orodreth Orofer Palantir Rodnor Rumil Saeros Tharanduil Thingol Tuor Turgon Uialion Urudhil Urudhur Urunu 
+
+	}
+	female_names = {
+		Aduialiel Aerien Aerwen Amaure Ambrian Amwen Anauire Aredhel Arthadis Arwen Celebrindal Celebrian Diranel Dirwen Edhellos Eirien Eliel Elloth Elmloth Elmor Elwen Elwing Elya Faewen Fania Finduilas Finduiloth Galadhlim Galadriel Gilien Gliniel Glorian Glorie Idril Indiel Indis Ithilien Ithilwen Ithronie Lalfie Luthien Melian Mellas Melwen Mithrellas Moriel Morien Morwen Miriel Nauriel Nellas Neniel Nimloth Nimrodel Nithie Rian Saerwen Silwen Therinu Tinuviel
+
+	}
+
+	nickname = {
+	}
+	
+	family = {
+		Morwe
+		Lowe
+		Elemwe
+		Mirwe
+		Lenwe
+		Celepwe
+		Malawe
+		Angawe
+		Aldawe
+		Falawe
+		Istawe
+		Ruwe
+		Ilwe
+		Ailinwe
+	}
+	
+	
+	culture = {
+		gondolin = {}
+		lindon = { levy_template = levy_lindon }
+		eregion = {}
+		imladris = {}
+		feanorian = {} #BR Note: tiny group of noldor still living on the island of Himring and the other island-remnant west of Lindon who belive that #FeanorDidNothingWrong
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	
+	
+	graphical_culture = noldor_gfx
+	ethnicities = {
+		10 = noldor
+	}
+}

@@ -1,0 +1,1465 @@
+On Action Documentation:
+
+--------------------
+
+yearly_country_pulse:
+From Code: Yes
+Expected Scope: country
+
+--------------------
+
+ambition_become_governor_specific_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_culture_religion_switch_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+ambition_become_marshal_monarchy_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+assassinate_result:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+character_traits_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+prospecting_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+religious_conversion_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ambition_become_great_warrior_monthly:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_office_lost:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_being_imprisoned:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+roman_6_colonize_syrtis_monthly_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+on_diplomatic_annex:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ambition_become_politician_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+decentralize_pops_pulse:
+From Code: No
+Expected Scope: state
+
+--------------------
+
+consul_conspiracy_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ambition_conquer_province_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+tribal_reform_monarchy_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+generic_infra_temple_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+yearly_italian_flavor:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+befriend_fail:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+dictator_power_return:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+generic_1_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+on_military_annex:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+roman_2_provincia_settling_corsica_monthly_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+yearly_debt_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_move_country:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+mercenary_adventurer_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+scheme_ruler_legitimacy_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+carthage_iberian_expansion_mission_task_7_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+yearly_bad_advisor_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+ambition_gender_equality_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_invest_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_steal_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+plot_outcome_mon_27:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+yearly_holdings_bonanza:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+plot_outcome_mon_18:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+yearly_province_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_battle_lost:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_deficit_pulse:
+From Code: Yes
+Expected Scope: country
+
+--------------------
+
+brothers_events_fallback:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_buy_troop_loyalty_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+in_land_battle:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+social_mobility_pulse:
+From Code: No
+Expected Scope: state
+
+--------------------
+
+roman_2_provincia_case_for_expansion_fallback:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_make_friends_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+monthly_syracuse_war_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_escape_prison_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+civilization_effort_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ambition_become_governor_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_becoming_adult:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+yearly_gambling_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+on_province_colonized:
+From Code: Yes
+Expected Scope: province
+
+--------------------
+
+ambition_imprison_action_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_hold_games_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ip_mon_42_plot_fallback:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+yearly_debt_recovery_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+main_event_pulse_country:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ip_mon_54_plot_fallback:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+culture_conversion_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ip_mon_64_events:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_steal_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+dictator_rise_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+biyearly_country_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+plot_events_final:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+commander_loyalty_demand_picker:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+on_policy_change:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+generic_infra_monument_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_pitfighting_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_escape_prison_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+pytheas_return_on_action:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+pytheas_return_on_action_fallback:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_seek_treatment_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_buy_holding_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yuezhi_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+on_ruler_change:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+olympic_country_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_seek_treatment_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_disloyalty_self_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_become_steward_monarchy_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_game_initialized:
+From Code: Yes
+Expected Scope: country
+
+--------------------
+
+yearly_good_advisor_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+dictatorship_power_held_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_great_battle_won_country:
+From Code: Yes
+Expected Scope: country
+
+--------------------
+
+scheme_assassinate_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_battle_won_country:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ambition_become_governor_specific_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+brothers_events:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+assassinate_setup:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_buy_holding_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ip_mon_54_plot_late:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+custom_on_great_battle_commander:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+disease_possibilities:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_republic_ruler_change:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+monthly_job_pulse:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ambition_have_a_son_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_conquer_province_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_abort:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_general_unit_purchase_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+custom_on_action_sacrifice:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_become_demagogue_monthly:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+befriend_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+monthly_tarentum_war_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+prominent_actors_setup:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_civil_war_annex:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ambition_imprison_action_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_office_gained:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+ambition_become_politician_monthly:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_release_prisoner_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_become_rich_monthly:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_release_prisoner_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_crisis_start_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+befriend_end:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+scheme_purchase_power_base_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+pretenders_battling:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+on_siege_won:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+ambition_become_rich_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+monthly_head_of_family_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_province_occupied:
+From Code: Yes
+Expected Scope: province
+
+--------------------
+
+ambition_become_demagogue_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_being_captured:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+carthaginian_iberia_expansion_mission_task_9:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ambition_become_dictator_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_execute_rival_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_governor_extort_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+roman_1_italia_latin_congress_monthly_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+trial_step:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+ambition_become_physician_monarchy_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ip_mon_42_plot_late:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+on_being_born:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ambition_become_bureaucrat_monthly:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_great_battle_lost_country:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+scheme_governor_extort_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+roman_1_italia_persuade_greeks_monthly_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+ambition_execute_rival_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+assassinate_step_two:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+on_character_death:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+ambition_become_holy_monthly:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_seek_patron_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_holding_lost:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+assassinate_preparations_being_made:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+plot_outcome_rep_37:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+monthly_ruler_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+plot_events_early:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+befriend_resolution:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+yearly_character_murder_pulse:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ip_rep_66_development_on_action:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+plot_outcome_mon_15:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+trial_end:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+ambition_become_holy_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_demand_office_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+monthly_country_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+centralize_pops_pulse:
+From Code: No
+Expected Scope: state
+
+--------------------
+
+yearly_financial_support_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_invention:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ambition_become_high_priest_monarchy_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_assassinate_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+custom_on_action_imprison:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+scheme_seek_patron_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_be_released_from_prison_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_become_philosopher_monarchy_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+rival_request:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_civil_war_lost:
+From Code: Yes
+Expected Scope: country
+
+--------------------
+
+carthaginian_africa_expansion_unruly_subject_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_civil_war_won:
+From Code: Yes
+Expected Scope: country
+
+--------------------
+
+ambition_become_researcher_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+assassinate_fallback:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+ambition_become_royal_tutor_monarchy_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+roman_2_provincia_unruly_populace_monthly_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_steal_holding_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ip_rep_66_close_on_action:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+custom_on_action_execute:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+yearly_medical_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+roman_8_greece_greek_allies_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+ambition_become_despot_monthly:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_disaster_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+scheme_invest_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+monthly_province_pulse:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+scheme_disloyalty_self_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_become_married_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_ownership_change:
+From Code: Yes
+Expected Scope: province
+
+--------------------
+
+roman_2_provincia_case_for_expansion_monthly_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+ip_mon_54_plot_early:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_influence_monthly:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+generic_infra_colonia_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+treatment_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_battle_lost_country:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+ambition_become_despot_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ip_mon_42_plot_early:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+on_subject_defect:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+scheme_ruler_legitimacy_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_become_bureaucrat_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_gamble_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_become_master_of_the_guard_monarchy_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_character_created:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+scheme_gamble_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_battle_won:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+acquisition_of_wealth_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+disloyal_powerful_characters_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+scheme_influence_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_influence_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_disloyalty_other_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_hold_games_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+friend_request:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_giving_birth:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+claims_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_pitfighting_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_subject_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+scheme_disloyalty_other_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_rm_4_carthage_tribute_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_steal_holding_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_provoke_rival_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_character_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+yearly_comet_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_bastard_birth:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+in_naval_battle:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_tenth_birthday:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+roman_1_italia_encourage_expansion_monthly_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_provoke_rival_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ambition_become_great_warrior_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+carthaginian_magna_graecia_expansion_mission_task_7_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ambition_become_foreign_minister_monarchy_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_disloyal_generals_delay_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_enacting_omen:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_ending_war:
+From Code: Yes
+Expected Scope: country
+
+--------------------
+
+ambition_become_general_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_make_friends_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+plot_events_intermediary:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+roman_mission_09_eastern_glory_task_1_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+generic_infra_governor_residence_pulse:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+scheme_purchase_power_base_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+scheme_buy_troop_loyalty_finish:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_losing_war:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+scheme_demand_office_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+roman_mission_06_befriend_numidia_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+decade_country_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+ambition_grow_up:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_winning_war:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+plot_events_fallback:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+on_zero_health:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+roman_mission_09_eastern_glory_task_2_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+character_story_events:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+nickname_from_battle:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ambition_become_governor_followon_finish:
+From Code: No
+Expected Scope: none

@@ -1,0 +1,36 @@
+﻿mortal_enemies = {
+	value = -200
+}
+
+isengard_mordor_alliance_modifier = {
+	value = 100
+}
+
+helped_after_corsairs = {
+	value = 25
+	yearly_decay = 1
+}
+
+ignored_after_corsairs = {
+	value = -25
+	yearly_decay = 1
+}
+
+killed_lotr_assassin = {
+	value = -100
+	yearly_decay = 1
+}
+
+lotr_opinion_supported = {
+	value = 30
+	yearly_decay = 1
+}
+
+lotr_opinion_reinforced = {
+	value = 40
+	yearly_decay = 1
+}
+
+lotr_overlord_enemies_modifier = {
+	value = -120
+}

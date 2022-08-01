@@ -1,0 +1,719 @@
+DOR = {
+	pattern = "pattern_solid.tga"
+	color1 = "ocean_blue"
+	color2 = "bone_white"
+
+	colored_emblem = {
+		texture = "ce_dol_amroth.dds"
+		color1 = "bone_white"
+		color2 = rgb { 148 204 244}
+	}
+}
+
+KHAZADDUM = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 18 44 89} #background colour
+	color2 = rgb { 229 174 76} #main colour
+
+	colored_emblem = {
+		texture = "ce_khazad_dum.dds"
+		color1 = rgb { 229 174 76} #main colour
+		color2 = rgb { 239 209 160} #top colour
+	}
+}
+
+MIL = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 24 160 178}
+	color2 = "bone_white"
+
+	colored_emblem = {
+		texture = "ce_mithlond.dds"
+		color1 = "bone_white"
+		color2 = rgb { 239 201 38}
+	}
+}
+
+HAL = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 0 82 150}
+	color2 = rgb { 131 165 7}
+
+	colored_emblem = {
+		texture = "ce_halfalas.dds"
+		color1 = rgb { 131 165 7}
+		color2 = "bone_white"
+	}
+}
+
+EMY = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 74 137 7}
+	color2 = "bone_white"
+
+	colored_emblem = {
+		texture = "ce_emyn_beraid.dds"
+		color1 = "bone_white"
+		color2 = rgb { 13 29 127}
+	}
+}
+
+DTN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 144 221 195}
+	color2 = "bone_white"
+
+	colored_emblem = {
+		texture = "ce_dor_tinuviel.dds"
+		color1 = "bone_white"
+		color2 = rgb { 23 99 75}
+	}
+}
+
+XMX = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 143 217 239}
+	color2 = rgb { 0 56 127}
+
+	colored_emblem = {
+		texture = "ce_dol_tinereb.dds"
+		color1 = rgb { 34 193 255}
+		color2 = rgb { 0 56 127}
+	}
+}
+
+LIN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 81 27 53}
+	color2 = rgb { 255 226 197}
+
+	colored_emblem = {
+		texture = "ce_lindon.dds"
+		color1 = rgb { 255 193 125}
+		color2 = rgb { 255 226 197}
+	}
+}
+
+XXN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 51 98 127}
+	color2 = rgb { 109 143 164}
+
+	colored_emblem = {
+		texture = "ce_lossoth.dds"
+		color1 = rgb { 109 143 164}
+		color2 = "bone_white"
+	}
+}
+
+XXR = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 80 23 117}
+	color2 = "bone_white"
+
+	colored_emblem = {
+		texture = "ce_lhun_riverfolk.dds"
+		color1 = "bone_white"
+		color2 = rgb { 229 181 74}
+	}
+}
+
+#Longbeard
+NAN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 153 38 16}
+	color2 = "bone_white"
+
+	colored_emblem = {
+		texture = "ce_blue_mountain_dwarves.dds"
+		color1 = "bone_white"
+		color2 = rgb { 204 136 47}
+	}
+}
+
+#Broadbeam
+DBK = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 32 27 115}
+	color2 = "bone_white"
+
+	colored_emblem = {
+		texture = "ce_blue_mountain_dwarves.dds"
+		color1 = "bone_white"
+		color2 = rgb { 204 136 47}
+	}
+}
+
+#Balin Colony BLC
+BALIN_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 42 79 41}
+	color2 = "bone_white"
+
+	colored_emblem = {
+		texture = "ce_blue_mountain_dwarves.dds"
+		color1 = "bone_white"
+		color2 = rgb { 212 196 121}
+	}
+}
+
+HAR = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 168 15 15}
+	color2 = rgb { 68 11 11}
+
+	colored_emblem = {
+		texture = "ce_harad.dds"
+		color2 = rgb { 68 11 11}
+		color1 = rgb { 242 117 32}
+	}
+}
+
+XBX = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 150 24 34}
+	color2 = rgb { 0 0 0}
+
+	colored_emblem = {
+		texture = "ce_rhun.dds"
+		color1 = rgb { 0 0 0}
+		color2 = rgb { 107 14 34}
+	}
+}
+
+##################### New End ####################
+
+GON = {
+	pattern = "pattern_solid.tga"
+	color1 = "gondor_blue"
+	color2 = "ck2_white"
+
+	colored_emblem = {
+		texture = "ce_gondor_01.dds"
+		color1 = "ck2_white"
+	}
+}
+GON_REVOLT = {
+	pattern = "pattern_solid.tga"
+	color1 = "pitch_black"
+	color2 = "gondor_blue"
+
+	colored_emblem = {
+		texture = "ce_gondor_02.dds"
+		color1 = "ck2_white"
+	}
+}
+
+ATE = {
+	pattern = "pattern_solid.tga"
+	color1 = "ck2_white"
+	color2 = "pitch_black"
+	
+	colored_emblem = {
+		texture = "ce_arthedain_01.dds"
+		color1 = "pitch_black"
+	}
+}
+ATE_REVOLT = {
+	pattern = "pattern_solid.tga"
+	color1 = "arthedain_dark_grey"
+	color2 = "ck2_white"
+
+	colored_emblem = {
+		texture = "ce_arthedain_02.dds"
+		color1 = "offwhite"
+	}
+}
+
+RON = {
+	pattern = "pattern_solid.tga"
+	color1 = "ck2_white"
+	color2 = "pitch_black"
+	
+	colored_emblem = {
+		texture = "ce_arthedain_01.dds"
+		color1 = "pitch_black"
+	}
+}
+RON_REVOLT = {
+	pattern = "pattern_solid.tga"
+	color1 = "arthedain_dark_grey"
+	color2 = "ck2_white"
+
+	colored_emblem = {
+		texture = "ce_arthedain_02.dds"
+		color1 = "offwhite"
+	}
+}
+
+CAR = {
+	pattern = "pattern_solid.tga"
+	color1 = "cardolan_green"
+	color2 = "ck2_white"
+	
+	colored_emblem = {
+		texture = "ce_cardolan_01.dds"
+		color1 = "ck2_white"
+	}
+}
+CAR_REVOLT = {
+	pattern = "pattern_solid.tga"
+	color1 = "cardolan_light_green"
+	color2 = "pitch_black"
+
+	colored_emblem = {
+		texture = "ce_circle_01.dds"
+		color1 = "cardolan_green"
+		instance = { rotation = 0 scale = { 1.4 1.4 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_cardolan_02.dds"
+		color1 = "light_gold"
+		instance = { rotation = 0 scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+
+ENL = {
+	pattern = "pattern_solid.tga"
+	color1 = "rhudaur_yellow"
+	color2 = "rhudaur_rust"
+
+	colored_emblem = {
+		texture = "ce_rhudaur_04.dds"
+		color1 = "rhudaur_rust"
+		color2 = "ck2_white"
+	}
+	colored_emblem = {
+		texture = "ce_border_simple_square.dds"
+		color1 = "ck2_white"
+	}
+}
+
+ANF = {
+	pattern = "pattern_solid.tga"
+	color1 = "ck2_green"
+	color2 = "ck2_white"
+
+	colored_emblem = {
+		texture = "ce_anfalas_01.dds"
+		color1 = "ck2_white"
+		color2 = "syracuse_yellow"
+	}
+}
+PEL = {
+	pattern = "pattern_solid.tga"
+	color1 = "navy_blue"
+	color2 = "ck2_white"
+
+	colored_emblem = {
+		texture = "ce_pelargir_01.dds"
+		color1 = "ck2_white"
+	}
+}
+UMB = {
+	pattern = "pattern_solid.tga"
+	color1 = "ck2_black"
+	color2 = "ck2_black"
+
+	colored_emblem = {
+		texture = "ce_umbar_01.dds"
+		color1 = "ck2_yellow"
+	}
+}
+MIT = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb {150 40 50}
+
+	colored_emblem = {
+		texture = "ce_minas_ithil_01.dds"
+		color1 = "ck2_white"
+		color2 = rgb {220 180 80}
+	}
+}
+LAM = {
+	pattern = "tartan_lamedon_01.dds"
+	color1 = rgb {64 73 96}
+	color2 = rgb {52 59 78}
+	color3 = rgb {88 103 136}
+
+	colored_emblem = {
+		texture = "tartan_lamedon_02.dds"
+		color1 = rgb {67 45 38}
+		color2 = rgb {42 48 63}
+	}
+	colored_emblem = {
+		texture = "ce_lamedon_01.dds"
+		color1 = "ck2_white"
+		color2 = rgb {187 189 191}
+	}
+}
+#ITH = {
+#	pattern = "pattern_solid.tga"
+#	color1 = rgb {0 0 0}
+#	color2 = rgb {0 0 0}
+#
+#	colored_emblem = {
+#		texture = "ce_ithilien_01.dds"
+#		color1 = rgb {0 0 0}
+#	}
+#}
+LBN = {
+	pattern = "pattern_solid.tga"
+	color1 = "navy_blue"
+	color2 = "ck2_white"
+
+	colored_emblem = {
+		texture = "ce_lebennin_01.dds"
+		color1 = "ck2_white"
+	}
+}
+#CLM = {
+#	pattern = "pattern_solid.tga"
+#	color1 = rgb {0 0 0}
+#	color2 = rgb {0 0 0}
+#
+#	colored_emblem = {
+#		texture = "ce_calembel_01.dds"
+#		color1 = rgb {0 0 0}
+#	}
+#}
+#TLF = {
+#	pattern = "pattern_solid.tga"
+#	color1 = rgb {52 75 86} #turquoise
+#	color2 = "ck2_yellow"
+#
+#	colored_emblem = {
+#		texture = "ce_tolfalas_01.dds"
+#		color1 = rgb {224 183 66} #gold
+#		color1 = rgb {204 186 131} #gold
+#	}
+#}
+	
+ARNOR_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "pitch_black"
+	color2 = "ck2_white"
+	
+	colored_emblem = {
+		texture = "ce_arnor_02.dds"
+		color1 = "ck2_white"
+	}
+}
+
+ROH = {
+	pattern = "pattern_rohan_01.dds"
+	color1 = rgb { 24 71 53} #rohan_green01
+	color2 = rgb { 74 108 49} #rohan_green02
+	color3 = rgb { 213 182 98} #rohan_gold
+	
+	colored_emblem = {
+		texture = "ce_rohan_01.dds"
+		color1 = rgb { 254 253 250} #rohan_white
+		color2 = rgb { 213 182 98} #rohan_gold
+#		instance = { rotation = 0 scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_rohan_border_01.dds"
+		color1 = rgb { 213 182 98} #rohan_gold
+		color2 = rgb { 134 29 36} #rohan_red
+	}
+	colored_emblem = {
+		texture = "ce_rohan_border_02.dds"
+		color1 = rgb { 134 29 36} #rohan_red
+	}
+}
+
+ERY = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 29 82 5}
+	color2 = "ck2_white"
+	
+	textured_emblem = {
+		texture = "mea_eryn.dds"
+	}
+}
+
+MOR = {
+	pattern = "pattern_solid.tga"
+	color1 = "pitch_black"
+	color2 = "flame_red"
+
+	colored_emblem = {
+		texture = "ce_mordor_eye_4.dds"
+		color1 = "flame_red"
+		instance = { rotation = 0 scale = { 0.5 0.5 } position = { 0.5 0.15 } }
+	}
+	colored_emblem = {
+		texture = "ce_mordor_01.dds"
+		color1 = "offwhite"
+		instance = { rotation = 0 scale = { 0.65 0.65 } position = { 0.5 0.6 } }
+	}
+}
+MOR_REVOLT = {
+	pattern = "pattern_solid.tga"
+	color1 = "pitch_black"
+	color1 = "pitch_black"
+
+	colored_emblem = {
+		texture = "ce_mordor_eye.dds"
+		color1 = "flame_red"
+	}
+}
+
+IML = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 1 165 251}
+	color2 = "ck2_white"
+	
+	textured_emblem = {
+		texture = "mea_imladris.dds"
+	}
+}
+
+LOR = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 151 168 64}
+	color2 = "ck2_white"
+	
+	textured_emblem = {
+		texture = "mea_lorien.dds"
+	}
+}
+
+ANG = {
+	pattern = "pattern_solid.tga"
+	color1 = "pitch_black"
+	color2 = rgb { 60 45 60}
+	
+	colored_emblem = {
+		texture = "ce_angmar_eye_crown.dds"
+		color1 = rgb { 176 179 210}
+	}
+}
+
+BEO = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 18 48 35}
+	color2 = "bone_white"
+
+	colored_emblem = {
+		texture = "ce_beornings_01.dds"
+		color1 = "bone_white"
+	}
+}
+
+ETD = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 24 71 54}
+	color2 = rgb { 24 71 54}
+	
+	textured_emblem = {
+		texture = "mea_eotheod.dds"
+	}
+}
+
+ERB = {
+	pattern = "pattern_erebor_02.dds"
+	color1 = "erebor_red"
+	color2 = "erebor_gold"
+	color3 = rgb { 209 201 192}
+	
+	colored_emblem = {
+		texture = "ce_erebor_01.dds"
+		color1 = rgb { 140 130 80}
+		color2 = rgb { 162 161 121}
+		instance = { rotation = 0 scale = { 0.5 0.5 }  position = { 0.45 0.25 } }
+	}
+}
+ERB_REVOLT = {
+	pattern = "pattern_erebor_03.dds"
+	color1 = rgb {140 38 57}
+	color2 = "erebor_gold"
+	color3 = rgb {115 104 95}
+
+	colored_emblem = {
+		texture = "ce_erebor_01.dds"
+		color1 = rgb {217 208 180}
+		color2 = rgb {162 166 134}
+		instance = { rotation = 0 scale = { -0.4 0.4 }  position = { 0.75 0.2 } }
+	}
+	colored_emblem = {
+		texture = "ce_erebor_01.dds"
+		color1 = rgb {217 208 180}
+		color2 = rgb {162 166 134}
+		instance = { rotation = 0 scale = { 0.4 0.4 }  position = { 0.25 0.2 } }
+	}
+}
+
+DGD = {
+	pattern = "pattern_solid.tga"
+	color1 = "pitch_black"
+	color2 = "necromancer_green"
+	
+	colored_emblem = {
+		texture = "ce_dol_guldur.dds"
+		color1 = rgb { 200 230 210}
+	}
+}
+
+KHZ = {
+	pattern = "pattern_moria_01.dds"
+	color1 = "moria_grey_blue"
+	color2 = rgb {78 82 94}
+	color3 = rgb {156 143 77} #Moria Gold
+	
+	colored_emblem = {
+		texture = "ce_moria_01.dds"
+		color1 = rgb {156 178 206} #Moria Ithildin
+		color2 = "moria_mithril"
+	}
+}
+
+WAI = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 156 29 51}
+	color2 = rgb { 156 29 51}
+	
+	textured_emblem = {
+		texture = "mea_rachoth.dds"
+	}
+}
+
+DUN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 142 0 0}
+	color2 = rgb { 142 0 0}
+	
+	colored_emblem = {
+		texture = "ce_dunland_raven.dds"
+		color1 = rgb { 200 200 200}
+	}
+}
+
+IRO = {
+	pattern = "pattern_iron_hills_01.dds"
+	color1 = "iron_hills_red"
+	color2 = "iron_hills_rust"
+	color3 = rgb {135 81 24}
+
+	colored_emblem = {
+		texture = "ce_iron_hills_01.dds"
+		color1 = rgb {138 39 13}
+		color2 = rgb {231 192 86}
+		instance = { rotation = 0 scale = { 1.0 1.0 }  position = { 0.5 0.325 } }
+	}
+	colored_emblem = {
+		texture = "ce_iron_hills_02.dds"
+		color1 = rgb {137 164 76}
+		color2 = rgb {39 11 0}
+	}
+}
+IRO_REVOLT = {
+	pattern = "pattern_solid.tga"
+	color2 = "iron_hills_rust"
+	color1 = "iron_hills_red"
+	
+	textured_emblem = {
+		texture = "mea_iron_hills.dds"
+	}
+}
+
+RVN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 2 58 16}
+	color2 = rgb { 2 58 16}
+	
+	textured_emblem = {
+		texture = "mea_rhovanion.dds"
+	}
+}
+
+DLE = {
+	pattern = "pattern_solid.tga"
+	color1 = "ck2_blue"
+	color2 = "roman_gold"
+
+	colored_emblem = {
+		texture = "ce_dale_03.dds"
+		color1 = "roman_gold"
+	}
+}
+
+SHI = {
+	pattern = "pattern_solid.tga"
+	color1 = "offwhite"
+	color2 = "desaturated_green"
+	
+	colored_emblem = {
+		texture = "ce_shire_01.dds"
+		color1 = "desaturated_green"
+	}
+}
+
+BAL = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 130 14 15}
+	color2 = rgb { 130 14 15}
+	
+	colored_emblem = {
+		texture = "ce_easterling_sun_01.dds"
+		color1 = rgb { 0 0 0}
+	}
+}
+
+DWN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 150 45 101}
+	color2 = rgb { 150 45 101}
+	
+	colored_emblem = {
+		texture = "ce_dorwinion.dds"
+		color1 = rgb { 222 195 43}
+		color2 = rgb { 33 130 41}
+	}
+}
+
+TUM = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_mountains_blue"
+	color2 = "blue_mountains_blue"
+
+	colored_emblem = {
+		texture = "ce_dwarf_mask.dds"
+		color1 = "blue_mountains_silver"
+		color2 = "blue_mountains_brass"
+	}
+}
+
+XXQ = {
+	pattern = "pattern_solid.tga"
+	color1 = "ck2_black"
+	color2 = "spartan_ocra"
+
+	colored_emblem = {
+		texture = "ce_warg.dds"
+		color1 = "spartan_ocra"
+	}
+}
+
+XXP = {
+	pattern = "pattern_solid.tga"
+	color1 = "theban_green"
+	color2 = "offwhite"
+
+	colored_emblem = {
+		texture = "ce_skull.dds"
+		color1 = "offwhite"
+	}
+}
+
+BRE = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 55 180 209}
+	color2 = rgb { 19 48 68}
+
+	colored_emblem = {
+		texture = "ce_bree.dds"
+		color1 = rgb { 19 48 68}
+	}
+}

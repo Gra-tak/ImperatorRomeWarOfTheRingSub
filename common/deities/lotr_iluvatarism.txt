@@ -1,0 +1,766 @@
+﻿### General Deity Checks ###
+
+# WAR
+
+#1 Rohan 1556
+deity_orome = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_orome = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_orome
+	passive_modifier = { cohort_reinforcement_speed = deity_cohort_reinforcement_speed_svalue }
+	omen = { land_morale_modifier = omen_land_morale_modifier_svalue } #Bonus from Omen
+	on_activate = {
+		military_apotheosis_military_experience_effect = yes
+	}
+	religion = iluvatarism
+	deity_category = war #This Deity uses a War slot.
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#2 Elves
+deity_mandos = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_mandos = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_mandos
+	passive_modifier = { happiness_for_wrong_culture_modifier = deity_happiness_for_wrong_culture_modifier_svalue }
+	omen = { discipline = omen_discipline_svalue } #Bonus from Omen
+	on_activate = {
+		military_apotheosis_military_experience_effect = yes
+	}
+	religion = iluvatarism
+	deity_category = war #This Deity uses a War slot.
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#3
+deity_tulkas = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_tulkas = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_tulkas
+	passive_modifier = { global_cohort_start_experience = deity_global_cohort_start_experience_svalue }
+	omen = { land_morale_modifier = omen_land_morale_modifier_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = war #This Deity uses a War slot.
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_manpower_effect = yes
+	}
+	
+}
+#4 614
+deity_alatar = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_alatar = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_alatar
+	passive_modifier = { ruler_popularity_gain = deity_ruler_popularity_gain_svalue }
+	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = war #This Deity uses a War slot.
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_manpower_effect = yes
+	}
+	
+}
+#10 Riwdor 1052
+deity_bema = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			country_culture_group = eotheod_group
+			country_culture_group = mirkwoodmen_group
+		}
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_bema = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_bema
+	passive_modifier = { army_maintenance_cost = deity_army_maintenance_cost_svalue }
+	omen = { discipline = omen_discipline_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = war #This Deity uses a War slot.
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_military_experience_effect = yes
+	}
+	
+}
+#11 Cillien 1646
+deity_forestspirit = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		any_integrated_culture = {
+			is_culture = dunlending
+		}
+		OR = {
+			very_rare_deity_trigger = {
+					RELIGION = iluvatarism
+			}
+			deity:omen_forestspirit = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_forestspirit
+	passive_modifier = { experience_decay = deity_experience_decay_svalue }
+	omen = { land_morale_modifier = omen_land_morale_modifier_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = war #This Deity uses a War slot.
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_military_experience_effect = yes
+	}
+	
+}
+
+# ECONOMY
+#20 Mithlond 2230
+deity_ulmo = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_ulmo = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_ulmo
+	passive_modifier = { global_ship_start_experience = deity_global_ship_start_experience_svalue }
+	omen = { naval_morale_modifier = omen_naval_morale_modifier_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	on_activate = {
+#		naval_apotheosis_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#21 3674 dwarves
+deity_aule = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_aule = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_aule
+	passive_modifier = { build_cost = deity_build_cost_svalue }
+	omen = { global_tax_modifier = omen_global_tax_modifier_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#22 Irmo 1449 Lorien
+deity_lorien = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_lorien = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_lorien
+	passive_modifier = { global_nobles_happyness = deity_global_nobles_happiness_svalue }
+	omen = { global_monthly_civilization = omen_global_monthly_civilization_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	on_activate = {
+		economy_apotheosis_capital_noble_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#23
+deity_melian = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_melian = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_melian
+	passive_modifier = { civic_tech_investment = deity_civic_tech_investment_svalue }
+	omen = { research_points_modifier = omen_research_points_modifier_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#24 Dor Tinuviel 1837
+deity_osse = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_osse = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_osse
+	passive_modifier = { navy_maintenance_cost = deity_navy_maintenance_cost_svalue }
+	omen = { naval_morale_modifier = omen_naval_morale_modifier_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	on_activate = {
+#		naval_apotheosis_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#25
+deity_uinen = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_uinen = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_uinen
+	passive_modifier = { global_pop_assimilation_speed_modifier = deity_global_pop_assimilation_speed_modifier_svalue }
+	omen = { global_commerce_modifier = omen_global_commerce_modifier_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#30 dolamroth
+deity_galador = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		any_integrated_culture = {
+			is_culture = dolamroth
+		}
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_galador = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_galador
+	passive_modifier = { military_tech_investment = deity_military_tech_investment_svalue }
+	omen = { fort_maintenance_cost = omen_fort_maintenance_cost_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+# CULTURE
+
+#40 Minas Tirith 1300
+deity_manwe = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_manwe = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_manwe
+	passive_modifier = { global_citizen_happyness = deity_global_citizen_happiness_svalue }
+	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
+	deity_category = culture #This Deity uses a Culture Slot
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+#41
+deity_nienna = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_nienna = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_nienna
+	passive_modifier = { stability_monthly_change = deity_stability_monthly_change }
+	omen = { global_population_happiness = omen_global_population_happiness } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = culture #This Deity uses a Culture Slot
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_civic_tech_effect = yes
+	}
+}
+#42 Lamedon 1353
+deity_vaire = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_vaire = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_vaire
+	passive_modifier = { monthly_corruption = deity_monthly_corruption_svalue }
+	omen = { research_points_modifier = omen_research_points_modifier_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = culture #This Deity uses a Culture Slot
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		#culture_apotheosis_assimilate_effect = yes
+	}
+}
+#43 lindon 2435
+deity_nessa = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_nessa = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_nessa
+	passive_modifier = { happiness_for_same_culture_modifier = deity_happiness_for_same_culture_modifier_svalue }
+	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = culture #This Deity uses a Culture Slot
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_characters_effect = yes
+	}
+}
+#50 Anfalas 2237
+deity_lefnui = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		tag = ANF
+		OR = {
+			very_rare_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_lefnui = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_lefnui
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { global_population_happiness = omen_global_population_happiness } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = culture #This Deity uses a Culture Slot
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+#51 Tumnogoth 3738
+deity_sevenfathers = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		country_culture_group = dwarf_group
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_sevenfathers = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_sevenfathers
+	passive_modifier = { stability_monthly_change = deity_stability_monthly_change }
+	omen = { global_population_happiness = omen_global_population_happiness } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = culture #This Deity uses a Culture Slot
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+# FERTILITY
+
+#60 2231 Mithlond
+deity_varda = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_varda = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_varda
+	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
+	omen = { global_population_growth = omen_global_population_growth } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = fertility #This Deity uses a Fertility Slot
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#61
+deity_yavanna = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_yavanna = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_yavanna
+	passive_modifier = { global_monthly_food_modifier = deity_global_monthly_food_modifier_svalue }
+	omen = { global_population_growth = omen_global_population_growth } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = fertility #This Deity uses a Fertility Slot
+	
+	on_activate = {
+		fertility_apotheosis_food_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#62
+deity_este = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_este = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_este
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { global_population_growth = omen_global_population_growth } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = fertility #This Deity uses a Fertility Slot
+	
+	on_activate = {
+		fertility_apotheosis_capital_slaves_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#63 Eryn 999
+deity_vana = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_vana = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_vana
+	passive_modifier = { global_freemen_happyness = deity_global_freemen_happyness_svalue }
+	omen = { global_defensive = omen_global_defensive_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = fertility #This Deity uses a Fertility Slot
+	
+	on_activate = {
+		military_apotheosis_manpower_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#70 Shire 1621
+deity_elbereth = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		country_culture_group = halfling_group
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_elbereth = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_elbereth
+	passive_modifier = { happiness_for_same_culture_modifier = deity_happiness_for_same_culture_modifier_svalue }
+	omen = { hostile_attrition = omen_hostile_attrition_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = fertility #This Deity uses a Fertility Slot
+	
+	on_activate = {
+		fertility_apotheosis_food_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#71 Beornings 1276
+deity_kementari = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		any_integrated_culture = {
+			is_culture = beorning
+		}
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_kementari = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_kementari
+	passive_modifier = { happiness_for_same_culture_modifier = deity_happiness_for_same_culture_modifier_svalue }
+	omen = { global_tribesmen_happyness = omen_global_tribesmen_happiness_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = fertility #This Deity uses a Fertility Slot
+	
+	on_activate = {
+		fertility_apotheosis_food_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#72 Lossoth 1060
+deity_heskil = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		any_integrated_culture = {
+			is_culture = lossoth
+		}
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_heskil = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_heskil
+    passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+    omen = { happiness_for_same_culture_modifier = omen_happiness_for_same_culture_modifier_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = fertility #This Deity uses a Fertility Slot
+	
+	on_activate = {
+		fertility_apotheosis_capital_slaves_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+#73 Imladris - 1936
+deity_flameanor = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		any_integrated_culture = {
+			is_culture = imladris
+		}
+		OR = {
+			common_deity_trigger = {
+				RELIGION = iluvatarism
+			}
+			deity:omen_flameanor = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_flameanor
+	passive_modifier = { happiness_for_same_religion_modifier = deity_happiness_for_same_religion_modifier }
+    omen = { happiness_for_same_culture_modifier = omen_happiness_for_same_culture_modifier_svalue } #Bonus from Omen
+	religion = iluvatarism
+	deity_category = fertility #This Deity uses a Fertility Slot
+	
+	on_activate = {
+		fertility_apotheosis_food_effect = yes
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+### Exclusive Deity Checks ###

@@ -1,0 +1,16 @@
+﻿l_english:
+ 
+ #Arnor
+ ARNOR_NAME:0 "Arnor"
+ ARNOR_ADJECTIVE:0 "Arnorian"
+ formable_not_arnor_exists:0 "#Y Arnor#! must NOT exist."
+ form_arnor:0 "Proclaim that Arnor has risen again"
+ form_arnor_desc:0 "The ancient Kingdom of Arnor is no more, and its capital of Annunimas and the province of Nan Arnen are now abandoned. If you were to resettle these lands and begin rebuilding the cities of Annunimas and Fornost, you could rightfuly claim that Arnor has risen once again."
+ form_arnor_claims_tooltip:0 "Arnor will gain claims upon the regions of #Y Arthedain#, #Y Fortund#, #Y Uilad#, #Y Rhudaur#, #Y Mintyrnath# and #Y Minhiriath#."
+ arnor_ruler_blood:0 "The King must carry the blood of Anarion, Isildur, Thorondur or Aldarion"
+ #Khazad-dûm 
+ KHAZAD_DUM_NAME:0 "Khazad-dûm"
+ KHAZAD_DUM_ADJECTIVE:0 "Khazad-dûmian"
+ formable_not_khazad_dum_exists:0 "#Y Khazad-dûm#! must NOT exist."
+ form_khazad_dum:0 "Form the Dwarven Kingdom of Khazad-dûm"
+ form_khazad_dum_desc:0 "The grandest and most famous of the mansions of the Dwarves. A Balrog demon, which had been corrupted by Melkor, drove the Dwarves out of the Misty Mountains in TA 1980 and slew King Durin VI. It is now time for Dwarves to reclaim the ancient underground kingdom of Khazad-dûm."

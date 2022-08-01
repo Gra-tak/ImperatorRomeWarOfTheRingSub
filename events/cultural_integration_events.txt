@@ -1,0 +1,3 @@
+﻿namespace = cultural_integration
+
+##removed from War of the Ring mod

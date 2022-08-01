@@ -1,0 +1,211 @@
+﻿rohan_philosophy = {
+	color = hsv { 1.1 1 0.5 }
+	image = rohan_philosophy
+
+	allow = {
+		trigger_if = {
+			limit = { country_culture_group = eotheod_group }
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			country_culture_group = eotheod_group
+		}
+		trigger_else = {
+			custom_tooltip = {
+				text = integrated_any_rohan_culture
+				any_country_culture = {
+					is_integrated = yes
+					this.culture.culture_group = culture_group:eotheod_group
+				}
+			}
+		}
+	}
+	
+	
+####################
+
+	rohan_cavalry_path_1 = { ###Abundance of Horses
+		modifier = {
+			light_cavalry_cost = -0.15
+		}
+		icon = celtic_gallic_path_5
+		requires = {}
+	}
+	
+	rohan_cavalry_path_2 = { ###A Strong Bond
+		modifier = {
+			light_cavalry_morale = 0.1
+			light_cavalry_plains_combat_bonus = 0.15
+		}
+		enable_tactic = cavalry_skirmish
+		icon = persian_bactrian_path_end_bonus
+		requires = {rohan_cavalry_path_1}
+		on_activate = {
+			custom_tooltip = "create_high_martial_rising_star"
+			hidden_effect = {
+				create_character = {
+					add_martial = 8
+					add_trait = confident
+				}
+			}
+		}
+	}
+	
+	rohan_cavalry_path_3 = { ###Special Horsemen
+		modifier = {
+			heavy_cavalry_morale = 0.1
+			heavy_cavalry_plains_combat_bonus = 0.10
+		}
+		icon = persian_scythian_path_2
+		requires = {rohan_cavalry_path_2}
+		on_activate = {
+			ordered_owned_province = {
+				limit = {
+					dominant_province_culture_group = root.culture_group
+				}
+				alternative_limit = {
+					always = yes
+				}
+				order_by = {
+					value = 0
+					add = population_cap
+					subtract = total_population
+				}
+				max = 1
+				create_2_citizens_effect = yes
+			}	
+		}
+	}
+	
+	rohan_cavalry_path_4 = { ###Improved Forging
+		modifier = {
+			light_cavalry_offensive = 0.15
+		}
+		icon = latin_support_path_7
+		requires = {rohan_cavalry_path_3}
+	}
+	
+	rohan_cavalry_path_5 = { ###The Difficulty of Horse Archery
+		modifier = {
+			horse_archers_discipline = 0.1
+			horse_archers_cost = -0.15
+		}
+		icon = persian_scythian_path_4
+		requires = {rohan_cavalry_path_4}
+	}
+	
+	rohan_cavalry_path_6 = { ###Scale Armour
+		modifier = {
+			heavy_cavalry_defensive = 0.15
+			horse_archers_defensive = 0.15
+		}
+		icon = persian_scythian_path_5
+		requires = {rohan_cavalry_path_3}
+	}
+	
+	rohan_cavalry_path_7 = { ###Mastery of the Plains
+		modifier = {
+			light_cavalry_plains_combat_bonus = 0.15
+			heavy_cavalry_plains_combat_bonus = 0.15
+			horse_archers_plains_combat_bonus = 0.15
+		}
+		icon = persian_scythian_path_end_bonus
+		requires = {rohan_cavalry_path_6}
+	}
+	
+	
+#########################
+	
+	rohan_infantry_path_1 = { ###
+		modifier = {
+			light_infantry_offensive = 0.1
+		}
+		icon = latin_roman_path_end_bonus
+		requires = {rohan_cavalry_path_1}
+	}
+	
+	rohan_infantry_path_2 = { ###
+		modifier = {
+			light_infantry_defensive = 0.1
+		}
+		icon = greek_antigonid_path_end_bonus
+		requires = {rohan_infantry_path_1}
+	}
+	
+	rohan_infantry_path_3 = { ###
+		modifier = {
+			global_manpower_modifier = 0.1
+		}
+		icon = celtic_gallic_path_2
+		requires = {rohan_infantry_path_2}
+		on_activate = {
+			ordered_owned_province = {
+				limit = {
+					dominant_province_culture_group = root.culture_group
+				}
+				alternative_limit = {
+					always = yes
+				}
+				order_by = {
+					value = 0
+					add = population_cap
+					subtract = total_population
+				}
+				max = 2
+				create_2_freemen_effect = yes
+			}	
+		}
+	}
+	
+	rohan_infantry_path_4 = { ###
+		modifier = {
+			land_morale_modifier = 0.05
+		}
+		icon = latin_tribal_path_5
+		requires = {rohan_infantry_path_3}
+	}
+	
+#########################
+	
+	rohan_legacy_path_1 = { ### Eorl
+		modifier = {
+			global_manpower_modifier = 0.1
+		}
+		icon = celtic_britannic_path_end_bonus
+		requires = {}
+		on_activate = {
+			add_legitimacy = 10
+			current_ruler = {
+				add_martial = 2
+			}
+		}
+	}
+	
+	rohan_legacy_path_2 = { ###
+		modifier = {
+			monthly_legitimacy = 0.01
+		}
+		icon = greek_seleucid_path_4
+		requires = {rohan_legacy_path_1}
+		on_activate = {
+			add_legitimacy = 15
+			custom_tooltip = "create_high_martial_rising_star"
+			hidden_effect = {
+				create_character = {
+					add_martial = 8
+					add_trait = conqueror
+				}
+			}
+		}
+	}
+	
+	rohan_legacy_path_3 = { ### Fangorn
+		modifier = {
+			forest_combat_bonus = 0.15
+			deep_forest_combat_bonus = 0.15
+		}
+		icon = greek_antigonid_path_7
+		requires = {rohan_legacy_path_2}
+	}
+
+}

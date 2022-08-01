@@ -1,0 +1,49 @@
+﻿### LOTR dieties ###
+
+deity_is_hunting_deity_trigger = {
+	OR = {
+		this = deity:omen_orome
+		this = deity:omen_alatar
+		this = deity:omen_bema
+		this = deity:omen_angmar
+		this = deity:omen_khamul
+		this = deity:omen_glaurung
+		this = deity:omen_carcharoth
+		this = deity:omen_eloeklo
+	}
+}
+
+deity_is_sea_deity_trigger = {
+	OR = {
+		this = deity:omen_ulmo
+		this = deity:omen_osse
+		this = deity:omen_lefnui
+		this = deity:omen_castamir
+	}
+}
+
+deity_is_spring_deity_trigger = {
+	OR = {
+		this = deity:omen_yavanna
+		this = deity:omen_lorien
+		this = deity:omen_vana
+		this = deity:omen_nessa
+		this = deity:omen_uinen
+		this = deity:omen_kementari
+		this = deity:omen_forestspirit
+		this = deity:omen_lassaraukar
+		this = deity:omen_karsh
+	}
+}
+
+deity_is_healing_deity_trigger = {
+	OR = {
+		this = deity:omen_varda
+		this = deity:omen_nienna
+		this = deity:omen_mandos
+		this = deity:omen_este
+		this = deity:omen_elbereth
+		this = deity:omen_ungoliant
+		this = deity:omen_gulavhar
+	}
+}

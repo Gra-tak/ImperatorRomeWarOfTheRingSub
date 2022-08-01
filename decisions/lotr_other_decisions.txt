@@ -1,0 +1,65 @@
+﻿country_decisions = {
+	lotr_rohan_break_gondor_decision = {
+		potential = {
+			is_ai = no
+			num_of_cities >= 1
+			tag = ROH
+			is_subject_type = satrapy
+			overlord = {
+				tag = GON
+			}
+			c:GON = {
+				is_ai = yes
+			}
+			NOT = { has_variable = gondor_ruler_locked_variable }
+		}
+		allow = {
+			political_influence >= 30
+			current_date > 2986.1.1
+		}
+		effect = {
+			custom_tooltip = "lotr_rohan_break_gondor_decision_tooltip"	
+			add_political_influence = -30
+			trigger_event = lotr_ruler_decisions.1
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	lotr_satrapy_break_gondor_decision = {
+		potential = {
+			is_ai = no
+			num_of_cities >= 1
+			OR = {
+				tag = LBN
+				tag = DOR
+				tag = LAM
+				tag = ANF
+				tag = ANR
+			}
+			is_subject_type = satrapy
+			overlord = {
+				tag = GON
+			}
+			c:GON = {
+				is_ai = yes
+			}
+			NOT = { has_variable = gondor_ruler_locked_variable }
+		}
+		allow = {
+			political_influence >= 30
+			current_date > 2986.1.1
+		}
+		effect = {
+			custom_tooltip = "lotr_satrapy_break_gondor_decision_tooltip"	
+			add_political_influence = -50
+			trigger_event = lotr_ruler_decisions.4
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

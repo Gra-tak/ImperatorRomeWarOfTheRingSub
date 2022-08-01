@@ -1,0 +1,347 @@
+﻿namespace = br_startup
+
+br_startup.1 = { #Middle Earth Light
+	
+	type = country_event
+	title = "br_startup.1.t"
+	desc = "br_startup.1.desc"
+	picture = event_edoras
+	goto_location = root
+	left_portrait = current_ruler
+	left_portrait = c:GON.current_ruler
+	right_portrait = c:MOR.current_ruler
+	right_portrait = c:XKX.current_ruler
+	
+	trigger = { # The following nations have unique startup events
+		is_ai = no
+		religion = iluvatarism
+		NOR = {
+			tag = CAR
+			tag = RHU
+			tag = GON
+			tag = ERY
+			tag = IML
+			tag = LOR
+			tag = LIN
+			tag = ATE
+		}
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = br_startup.1.a
+	}
+	
+}
+
+br_startup.2 = { #Middle Earth Dark
+	
+	type = country_event
+	title = "br_startup.2.t"
+	desc = "br_startup.2.desc"
+	picture = event_barad_dur
+	goto_location = root
+	left_portrait = current_ruler
+	right_portrait = c:GON.current_ruler
+	right_portrait = c:ROH.current_ruler
+	
+	trigger = {  # The following nations have unique startup events
+		is_ai = no
+		religion = melkorism
+		NOR = {
+			tag = CAR
+			tag = RHU
+			tag = GON
+			tag = ERY
+			tag = IML
+			tag = LOR
+			tag = LIN
+			tag = ATE
+		}
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = br_startup.2.a
+	}
+	
+}
+
+br_startup.3 = { #Rhudaur not in WotR
+	
+	type = country_event
+	title = "br_startup.3.t"
+	desc = "br_startup.3.desc"
+	picture = celtic_village
+	goto_location = root
+	left_portrait = current_ruler
+	
+	trigger = {
+		is_ai = no
+		tag = RHU
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "Begin"
+		hidden_effect = {
+			add_treasury = {
+				value = 200
+			}
+		}
+	}
+}
+
+br_startup.4 = { #Gondor
+	
+	type = country_event
+	title = "br_startup.4.t"
+	desc = "br_startup.4.desc"
+	picture = event_gondor
+	goto_location = root
+	left_portrait = current_ruler
+	right_portrait = c:MOR.current_ruler
+	right_portrait = c:XKX.current_ruler
+	
+	trigger = {
+		is_ai = no
+		tag = GON
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "Begin"
+		hidden_effect = {
+			add_treasury = {
+				value = 200
+			}
+		}
+	}
+	
+}
+
+br_startup.5 = { #Dol Guldur not in WotR
+	
+	type = country_event
+	title = "br_startup.5.t"
+	desc = "br_startup.5.desc"
+	picture = dol_guldur
+	goto_location = root
+	left_portrait = current_ruler
+	
+	trigger = {
+		is_ai = no
+		tag = DGD
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "OK"
+		add_treasury = {
+				value = 1000
+			}
+		every_province = {
+			limit = {
+				OR = {
+					is_in_area = udun_area
+					is_in_area = ephel_duath_area
+					is_in_area = lithlad_area
+					is_in_area = baugatsor_i_sauron_area
+					is_in_area = perth_ulmyn_area
+					is_in_area = gaer_durlith_area
+					is_in_area = barad_dur_area
+				}
+			}
+			add_claim = c:DGD
+		}
+	}
+	
+}
+
+br_startup.6 = { #Eryn Galen
+	
+	type = country_event
+	title = "br_startup.6.t"
+	desc = "br_startup.6.desc"
+	picture = event_eryn_galen
+	goto_location = root
+	left_portrait = current_ruler
+	right_portrait = c:MOR.current_ruler
+	right_portrait = c:XKX.current_ruler
+	
+	trigger = {
+		is_ai = no
+		tag = ERY
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "Begin"
+		hidden_effect = {
+			add_treasury = {
+				value = 250
+			}
+		}
+	}
+	
+}
+
+br_startup.7 = { #Imladris
+	
+	type = country_event
+	title = "br_startup.7.t"
+	desc = "br_startup.7.desc"
+	picture = event_imladris
+	goto_location = root
+	left_portrait = current_ruler
+	right_portrait = c:MOR.current_ruler
+	right_portrait = c:XKX.current_ruler
+	
+	trigger = {
+		is_ai = no
+		tag = IML
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "OK"
+		hidden_effect = {
+			add_treasury = {
+				value = 150
+			}
+		}
+	}
+	
+}
+
+br_startup.8 = { #Lorien
+	
+	type = country_event
+	title = "br_startup.8.t"
+	desc = "br_startup.8.desc"
+	picture = event_elven_city
+	goto_location = root
+	left_portrait = current_ruler
+	right_portrait = c:MOR.current_ruler
+	right_portrait = c:XKX.current_ruler
+	
+	trigger = {
+		is_ai = no
+		tag = LOR
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "OK"
+		hidden_effect = {
+			add_treasury = {
+					value = 175
+			}
+		}
+	}
+	
+}
+
+br_startup.9 = { #Lindon
+	
+	type = country_event
+	title = "br_startup.9.t"
+	desc = "br_startup.9.desc"
+	picture = event_elven_city
+	goto_location = root
+	left_portrait = current_ruler
+	right_portrait = c:MOR.current_ruler
+	right_portrait = c:XKX.current_ruler
+	
+	trigger = {
+		is_ai = no
+		tag = LIN
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "OK"
+		hidden_effect = {
+			add_treasury = {
+				value = 300
+			}
+		}
+	}
+	
+}
+
+br_startup.10 = { #Arthedain not in WotR
+	
+	type = country_event
+	title = "br_startup.10.t"
+	desc = "br_startup.10.desc"
+	picture = farming
+	goto_location = root
+	left_portrait = current_ruler
+	
+	trigger = {
+		is_ai = no
+		tag = ATE
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "OK"
+		hidden_effect = {
+			add_treasury = {
+					value = 500
+			}
+		}
+	}
+	
+}
+
+br_startup.11 = { #Rangers of the North
+	
+	type = country_event
+	title = "br_startup.11.t"
+	desc = "br_startup.11.desc"
+	picture = event_deep_forest
+	goto_location = root
+	left_portrait = current_ruler
+	right_portrait = c:MOR.current_ruler
+	right_portrait = c:XKX.current_ruler
+	
+	trigger = {
+		is_ai = no
+		tag = CAR
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "OK"
+		hidden_effect = {
+			add_treasury = {
+				value = 200
+			}
+		}
+	}
+	
+}

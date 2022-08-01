@@ -1,0 +1,65 @@
+﻿dwarf_group = {
+
+	levy_template = levy_dwarf
+	
+	primary = dwarven_goat_riders
+	second =  dwarven_infantry
+	flank = dwarven_archers
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+	
+	color = hsv { 0.65  0.7  0.8 }
+
+	male_names = {
+		Adwy_n Afwald Albryc Aldwulf Alf Almar Althor Alvari Alwar Ambi An Andri Andur Andvari Ansur Anar Ari Arn Arnfinn Arnfinnur Arnfrei Arngrim Arnod Arnar Arnulfur Asgil Asthor Asur Athils Aurvang Austri Authun Auti Avar Azaghal Bafur Balbor Balfor Bearni Belg Belgen Bennt Bertel Bifur Bilin Billing Bingir Binir Birgir Birungur Bodruith Bofur Bogi Bolli Bolt Bombur Borgar Bori Borin Bothwar Brand Breki Brestir Brodi Brogur Brosa Broin Bror Bruni Brymir Buri Burin Burkni Bain Bavor Besi Bild Bili Bolwerk Bosi Bukk Dagfinn Dagg Dagthor Dalwin Dannel Dari Dithrik Dolgthrasir Dori Drafli Draupnir Dror Durstan Dwalin Dain Domar Dor Duf Dufa Dui Duri Dusi Duthi Dyr Dyri Egil Eikinskealdi Eilag Eilaf Eirik Ekkill Eldur Elmar Endrith Erlar Evind Eywind Falgir Fangluin Fannar Farin Farman Fastar Fathi Fealar Feggi Fengur Fielo Finn Fith Flosi Flik Floi Folkath Fori Fostolf Fraeg Frerin Frithbert Frithgeir Frosti Frali Frall Frar Frirek Fror Frothi Fundin Fili Folki Funi Gabilshathur Gaddi Gagi Galdar Galfar Galmi Galti Gamall Gamil Gamli Gandalf Gansi Gapi Garthar Gaukur Gautar Geitir Gerwith Gestur Gimbul Gimli Ginnar Gisur Gladir Glasi Glombur Gloi Gloin Glumur Gorm Gowan Grani Greip Greithur Grithur Grar Grimkell Grimnir Griss Groin Gror Gufi Guthrik Gair Gili Gisli Guri Guthi Gyllir Gyrgir Hadhod Hadi Hafberg Hafgrim Haflithi Hagan Halgir Halli Hallur Halmur Hamall Hannis Hannar Hathski Hatt Haugspori Hazad Hefti Heggi Heidmar Heikki Heithur Hergils Hersir Hethin Hlevang Holmlag Hornbori Hroar Hrolfur Hrutur Hugald Hwati Hakan Halgur Halmar Har Havar Horth Hun Hysing Ibun Igul Imi Imir Indrith Ingiberg Ingifast Ingthor Ingol Invar Islifur Isolf Ithi Ivor Ion Jari Jarmar Jes Jolfur Jorfi Jatgir Jonar Jonsi Jorun Kabbi Kaldi Kalman Kalmar Kambi Karli Kaupi Ketill Kettil Khim Kieri Kimbur Klintur Knakk Kobbi Kol Kolfinn Kolmar Kori Kormak Kragg Krum Kili Kopur Kuli Kyma Kyn Lar Larus Laufar Leiknir Leithi Lifur Lini Listein Lit Litli Lofar Loftur Ludde Lurin Lafi Likmund Limar Lim Loni Lothinn Lythur Mag Maggi Makan Mathi Melkolf Melmar Meothvitnir Moggi Molda Moror Mundgeir Mak Mar Marus Mim Motsognir Myndil Nafni Nagli Narvi Naut Nefi Nir Niri Nisti Nokki Nokkvi Nori Nos Nain Nal Nali Nar Nili Nils Niping Nithi Nir Northri Numi Nyi Nyr Nyrath Odbeorn Oddthor Oddvar Odmar Oflar Olfun Olin Olmoth Olwir Ondott Ongli Onar Oni Onisi Ori Orm Orso Orvar Ossur Osvingarth Otto Ovi Oxi Palmar Raf Rafkell Rambi Ranald Ranfast Rangi Refkell Regin Reifnir Reng Reykur Rhodri Rink Rokkvi Rothgar Rathswith Rathulf Rathwald Rion Roar Rokur Rosar Runi Runulf Rutur Sandar Saxolf Selur Sibbi Sigar Sigbert Sigdan Siggir Sigir Signar Sigrun Sindri Skafti Skalli Skirfir Skolm Skorgrim Skafith Skavar Skogi Slagvi Slothi Smithur Snar Solsi Sori Spaki Spar Spiall Spor Stein Sturlu Stiling Stothkell Styr Styrlak Sveri Sweina Swerthir Swiur Swafa Simbi Solver Sot Sulki Suthri Sylfa Syvur Tandri Teitur Telchar Thalfar Thekk Thettmar Thithrand Thithrandi Thorgest Thorin Thorkell Thorlak Thormoth Thorod Thorth Thorvald Thrand Throst Throstur Throttolf Thrain Thror Thrymur Thalfi Thili Thorgnyr Thorhall Tind Torfi Tori Tralli Trausti Tryggwi Tulk Tweggi Tani Tar Toki Torth Tubi Tuki Tyki Uffi Uggi Ulfied Ulfkell Ultan Unnar Uxi Vagun Valgut Valthor Vestri Vigg Vighar Vindalf Virfir Vit Vithar Vurin Vifill Vili Voin Wafi Wafri Walgarth Wathi Wefroth Wegeir Wegil Wethur Wigfast Wali Wani War Weorn Wethorm Wightor Wili Ymar Yngvi Zirak 
+
+	}
+	female_names = {
+		Aleta Alvor Asa Aslaug Asta Astrid Authumbla Beata Beorg Bestla Beyla Bil Birgitta Blothughadda Bodil Bylgea Cecilia Drofn Dis Dufa Edla Eir Elin Embla Freya Frigg Fulla Gefeun Gersemi Gerth Gilis GlothGloth Gna Gullveig Gurli Gyla Gyrith Gytha Halla Hefring Hel Herea Himinglaeva Hlathgerth Hlin Hnoss Hronn Iliana Ilm Inga Ingfrid Ingibeorg Ingierth Ingrid Irpa Ithunn Jorth Karin Kraka Kra_o_ka Kolga Lofn Lin Maer Malmfrith Nanna Nais Niorun Nott Rikissa Rognfrith Rognhild Ran Rin Sara Seofn Sif Sigrid Sigyn Skathi Skuld Snotra Svanhild Saga Sol Syn Syr Thordis Thorgerth Thruth Thyra Thora Ulfhild Uth Vanadis Vigdis Var Vor Ylva Yrsa Zisa 
+	}
+
+	nickname = {
+	}
+	
+	family = {
+		Durin
+		Axebreaker
+		Copperpot
+		Mithrilborn
+		Silverbeard
+		Ironhelm
+		Alderfist
+		Ashenforge
+		Birchstone
+		Hazelaxe
+		Hollystrak
+		Rowangga
+		StoneBorn
+		Khazad_amon
+		Firebeard
+		Gnarlbeard
+	}
+	
+	culture = {
+		longbeard = {} #Durin's folk
+		firebeard = {}
+		ironfist = {}
+		stiffbeard = {}
+		blacklock = { }
+		broadbeam = {}
+		stonefoot = {}
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	
+	
+	graphical_culture = celtic_gfx	
+	ethnicities = {
+		10 = dwarves
+	}
+}

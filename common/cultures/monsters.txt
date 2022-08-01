@@ -1,0 +1,63 @@
+﻿monsters_group = {
+	
+	levy_template = levy_anatolian
+	
+	primary = light_infantry
+	second = heavy_cavalry
+	flank = horse_archers
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+	
+	color = hsv { 0 0 0.16 }
+
+	male_names = {
+		Azog Bolg Burz Fimbul Gazbag Gazbug Gazduf Gazdush Gazgash Gazhorn Gazhur Gazlag Gazlur Gazluk Gazlun Gazmog Gazmuz Gaznag Gazrad Gazrat Gazthak Gazuf Gazug Gazul Ghash Golfimbul Gorbag Gorbug Gorduf Gordush Gorgash Gorgaz Gorhur Gorluk Gorlun Gornag Gorshag Gorthak Gorzag Gorul Gothmog Grishnakh Grond Lagbug Lagduf Lagdush Laghur Laglug Laglun Lagrad Lagrat Lagthak Laguf Lug Lugbag Lugduf Lugdush Lughorn Lughur Lugluk Luglun Lugnag Lugthak Lugzag Lugul Lurtz Lunbag Lunbug Lunduf Lundush Lungash Lungaz Lungor Lunhur Lunlag Lunluk Lunmaz Lunrad Lunrat Lunshag Lunthak Lunuf Lunug Lunzag Lunul Maubag Maubug Mauduf Maudush Maugash Maugaz Maugor Mauhur Maulur Mauluk Maunag Mauthak Mauzag Muzbag Muzbug Muzduf Muzdush Muzgash Muzgaz Muzgor Muzhur Muzlag Muzlug Muzlur Muzluk Muzlun Muznag Muzrad Muzrat Muzthak Muzug Muzul Nagbug Nagduf Nagdush Naghur Naglug Naglur Nagluk Nagmuz Nagrad Nagrat Nagthak Nagug Nagzag Nuzu Radbag Radbug Radgash Radgaz Radhur Radlag Radluk Radmuz Radnag Radrat Radthak Radug Radzag Shagbug Shagduf Shagdush Shaglur Shagluk Shagrad Shagrat Shagthak Shaguf Shagug Shagul Snaga Ufgaz Uflug Ufluk Ufthak Ufzag Ugbag Ugduf Ugdush Ughur Uglag Uglur Ugluk Ugmuz Ugnag Ugrad Ugrat Ugslap Ugthak Ugzag Yagaz Yagbug Yagduf Yagdush Yaghur Yaglug Yagluk Yaglun Yagmuz Yagor Yagrad Yagrat Yagthak Yaguf Yagug Yagul Zagbug Zagduf Zagdush Zaghur Zaglag Zaglug Zagluk Zaglun Zagmuz Zagrad Zagrat Zagthak Zaguf Zagug 
+
+	}
+	female_names = {
+		Azbed Azbet Barbrutta Berùnzia Bolbed Bolbet Burzbed Burzbet Dabrill Fimbed Fimbeget Fimbet Garghira Gazbed Gazbet Gazlaggi Gazmuzbed Ghashbet Ghibittah Gorgazza Gornagga Gothmogga Kibdurilla Lagbed Lagbet Laghurra Laguffa Lugronka Lugthakki Lunbed Lunbet Maudbeg Maudbet Maugashha Maulukbet Muranogil Muzlurra Muzratta Nagbed Nagbet Obirta Ognorta Orkamurra Prug Radbaggi Radhurbet Radhurga Radzaggi Rogashka Rogrogga Rugrulia Saggta Shagbed Shagbet Shagmoghi Toltukka Tormogga Ubrutta Ufbed Ufbet Ufgamoghi Ugbagga Ugbet Ulthugga Umagauria Urzbet Uthca Warennia Yagbed Yagbet Yaghurra Zagbed Zagbet 
+
+	}
+
+	nickname = {
+	}
+	
+	family = {
+		Gorgun_Shakh
+		Radhur_Shakh
+		Shaglur_Shakh
+		Nuzu_Shakh
+		Muzdush_Shakh
+		Mazog_Shakh
+		Burz_Hai
+		Lugul_Hai
+		Muzluk_Hai
+		Shagluk_Hai
+		Gazmog_Hai
+		Gorbug_Hai
+		Lunluk_Hai
+		Nagdush_Hai
+		Nagrad_Hai
+	}
+	
+	
+	culture = {
+		warg = {}
+		spider = {}
+		beasts = {}
+		wights = {}
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	
+	
+	graphical_culture = orcish_gfx
+	ethnicities = {
+		10 = orcish_ethnicity
+	}
+}

@@ -1,0 +1,424 @@
+﻿# LOTR units have been added.
+# Offensive tactics
+
+shock_action = {
+	use_as_default = yes
+
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	envelopment = 0.2
+	padma_vyuha = 0.2
+	bottleneck = -0.1
+	greek_phalanx = -0.1
+	
+	casualties = 0.1
+
+	effective_composition = {
+		archers = 0
+		dunedain_archers = 0
+		elvish_archers = 0
+		dwarven_archers = 0
+		rangers = 0
+		uruk_crossbows = 0
+		camels = 0
+		chariots = 0
+		heavy_cavalry = 1.0
+		dunedain_cavalry = 1.0
+		dol_amroth_knights = 1.0
+		dwarven_goat_riders = 1.0
+		warg_riders = 1.0
+		heavy_infantry = 1.0
+		dunedain_infantry = 1.0
+		elvish_infantry = 1.0
+		dwarven_infantry = 1.0
+		uruk_heavy_infantry = 1.0
+		horse_archers = 0
+		elvish_cavalry_archers = 0
+		light_cavalry = 0.0
+		light_infantry = 0.75
+		halfling_infantry = 0.75
+		orc_infantry = 0.75
+		warelephant = 2.0
+		supply_train = 0
+	}
+}
+
+envelopment = {
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	deception = 0.2
+	greek_phalanx = 0.2
+	shock_action = -0.1
+	padma_vyuha = -0.1
+	
+	effective_composition = {
+		archers = 0
+		dunedain_archers = 0
+		elvish_archers = 0
+		dwarven_archers = 0
+		rangers = 0
+		uruk_crossbows = 0
+		camels = 1.0
+		chariots = 0.5
+		heavy_cavalry = 0.5
+		dunedain_cavalry = 0.5
+		dol_amroth_knights = 0.5
+		dwarven_goat_riders = 0.5
+		warg_riders = 0.5
+		heavy_infantry = 0
+		dunedain_infantry = 0
+		elvish_infantry = 0
+		dwarven_infantry = 0
+		uruk_heavy_infantry = 0
+		horse_archers = 0.5
+		elvish_cavalry_archers = 0.5
+		light_cavalry = 1.0
+		light_infantry = 1.0
+		halfling_infantry = 1.0
+		orc_infantry = 1.0
+		warelephant = 0
+		supply_train = 0
+	}
+}
+
+skirmishing = {
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+	
+	bottleneck = 0.2
+	cavalry_skirmish = 0.2
+	deception = -0.1
+	triplex_acies = -0.1
+		
+	casualties = -0.25
+
+	effective_composition = {
+		archers = 1.0
+		dunedain_archers = 1.0
+		elvish_archers = 1.0
+		dwarven_archers = 1.0
+		rangers = 1.0
+		uruk_crossbows = 1.0
+		camels = 0
+		chariots = 0
+		heavy_cavalry = 0
+		dunedain_cavalry = 0
+		dol_amroth_knights = 0
+		dwarven_goat_riders = 0
+		warg_riders = 0	
+		heavy_infantry = 0
+		dunedain_infantry = 0
+		elvish_infantry = 0
+		dwarven_infantry = 0
+		uruk_heavy_infantry = 0
+		horse_archers = 0.25
+		elvish_cavalry_archers = 0.25
+		light_cavalry = 0.25
+		light_infantry = 1.0
+		halfling_infantry = 1.0
+		orc_infantry = 1.0
+		warelephant = 0
+		supply_train = 0
+	}
+}
+
+deception = {
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	skirmishing = 0.2
+	triplex_acies = 0.2
+	envelopment = -0.1
+	hit_and_run_tactics = -0.1
+
+	effective_composition = {
+		archers = 1.0
+		dunedain_archers = 1.0
+		elvish_archers = 1.0
+		dwarven_archers = 1.0
+		rangers = 1.0
+		uruk_crossbows = 1.0
+		camels = 1.0
+		chariots = 1.0
+		heavy_cavalry = 0
+		dunedain_cavalry = 0
+		dol_amroth_knights = 0
+		dwarven_goat_riders = 0
+		warg_riders = 0	
+		heavy_infantry = 0
+		dunedain_infantry = 0
+		elvish_infantry = 0
+		dwarven_infantry = 0
+		uruk_heavy_infantry = 0
+		horse_archers = 1.5
+		elvish_cavalry_archers = 1.5
+		light_cavalry = 1.5
+		light_infantry = 0
+		halfling_infantry = 0
+		orc_infantry = 0
+		warelephant = 0
+		supply_train = 0
+	}
+}
+
+bottleneck = {
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	shock_action = 0.2
+	hit_and_run_tactics = 0.2
+	skirmishing = -0.1
+	cavalry_skirmish = -0.1
+
+	effective_composition = {
+		archers = 1.0
+		dunedain_archers = 1.0
+		elvish_archers = 1.0
+		dwarven_archers = 1.0
+		rangers = 1.0
+		uruk_crossbows = 1.0
+		camels = 0
+		chariots = 0
+		heavy_cavalry = 0.8
+		dunedain_cavalry = 0.8
+		dol_amroth_knights = 0.8
+		dwarven_goat_riders = 0.8
+		warg_riders = 0.8
+		heavy_infantry = 1.0
+		dunedain_infantry = 1.0
+		elvish_infantry = 1.0
+		dwarven_infantry = 1.0
+		uruk_heavy_infantry = 1.0
+		horse_archers = 0
+		elvish_cavalry_archers = 0
+		light_cavalry = 0
+		light_infantry = 0
+		halfling_infantry = 0
+		orc_infantry = 0
+		warelephant = 0.0
+		supply_train = 0
+	}
+}
+
+# Military Tradition
+
+greek_phalanx = { #Good vs Shock - Bad vs Envelopment - Dwarves
+	enable = no
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	shock_action = 0.25
+	cavalry_skirmish = 0.25
+	envelopment = -0.1
+	triplex_acies = -0.05
+	
+	casualties = -0.1
+
+	effective_composition = { #
+		archers = 0
+		dunedain_archers = 0
+		elvish_archers = 0
+		dwarven_archers = 0.5
+		rangers = 0
+		uruk_crossbows = 0
+		camels = 0
+		chariots = 0
+		heavy_cavalry = 0.15
+		dunedain_cavalry = 0.15
+		dol_amroth_knights = 0.15
+		dwarven_goat_riders = 0.15
+		warg_riders = 0.15
+		heavy_infantry = 1.0
+		dunedain_infantry = 1.0
+		elvish_infantry = 1.0
+		dwarven_infantry = 1.5
+		uruk_heavy_infantry = 1.0
+		horse_archers = 0
+		elvish_cavalry_archers = 0
+		light_cavalry = 0.75
+		light_infantry = 0.5
+		halfling_infantry = 0.5
+		orc_infantry = 0.5
+		warelephant = 1.0
+		supply_train = 0
+	}
+}
+
+triplex_acies = { #Good vs Envelopment - Bad vs Skirmishing - Edain
+
+	enable = no
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	skirmishing = 0.25
+	greek_phalanx = 0.25
+	deception = -0.1
+	hit_and_run_tactics = -0.1
+	
+	effective_composition = { #
+		archers = 0
+		dunedain_archers = 1.0
+		elvish_archers = 0
+		dwarven_archers = 0
+		rangers = 0
+		uruk_crossbows = 0
+		camels = 0
+		chariots = 0
+		heavy_cavalry = 0
+		dunedain_cavalry = 0
+		dol_amroth_knights = 0
+		dwarven_goat_riders = 0
+		warg_riders = 0
+		heavy_infantry = 1.0
+		dunedain_infantry = 1.5
+		elvish_infantry = 1.0
+		dwarven_infantry = 1.0
+		uruk_heavy_infantry = 1.0
+		horse_archers = 0
+		elvish_cavalry_archers = 0
+		light_cavalry = 0.6
+		light_infantry = 1
+		halfling_infantry = 1.0
+		orc_infantry = 1.0
+		warelephant = 0
+		supply_train = 0
+	}
+}
+
+cavalry_skirmish = { #Good vs Bottleneck - Rohan
+
+	enable = no
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	bottleneck = 0.25
+#	padma_vyuha = 0.25
+	skirmishing = -0.1
+	greek_phalanx = -0.1
+	hit_and_run_tactics = 0.2
+	
+	casualties = -0.1
+
+	effective_composition = {
+		archers = 0
+		dunedain_archers = 0
+		elvish_archers = 0
+		dwarven_archers = 0
+		rangers = 0
+		uruk_crossbows = 0
+		camels = 0.5
+		chariots = 0.0
+		heavy_cavalry = 0.5
+		dunedain_cavalry = 0.5
+		dol_amroth_knights = 0.5
+		dwarven_goat_riders = 0.5
+		warg_riders = 0.5
+		heavy_infantry = 0
+		dunedain_infantry = 0
+		elvish_infantry = 0
+		dwarven_infantry = 0
+		uruk_heavy_infantry = 0
+		horse_archers = 1.5
+		elvish_cavalry_archers = 1.5
+		light_cavalry = 2.0
+		light_infantry = 0
+		halfling_infantry = 0
+		orc_infantry = 0
+		warelephant = 0
+		supply_train = 0
+	}
+}
+
+padma_vyuha = { #Elven Defense
+
+	enable = no
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	envelopment = 0.25
+	hit_and_run_tactics = 0.25
+	shock_action = -0.1
+	cavalry_skirmish = -0.1
+	
+	casualties = -0.1
+
+	effective_composition = {
+		archers = 1.5
+		dunedain_archers = 1.5
+		elvish_archers = 2.0
+		dwarven_archers = 1.0
+		rangers = 1.0
+		uruk_crossbows = 1.0
+		camels = 0
+		chariots = 0.5
+		heavy_cavalry = 0
+		dunedain_cavalry = 0
+		dol_amroth_knights = 0
+		dwarven_goat_riders = 0
+		warg_riders = 0
+		heavy_infantry = 0.75
+		dunedain_infantry = 0.75
+		elvish_infantry = 1.0
+		dwarven_infantry = 0.75
+		uruk_heavy_infantry = 0.75
+		horse_archers = 0
+		elvish_cavalry_archers = 0
+		light_cavalry = 0.25
+		light_infantry = 0
+		halfling_infantry = 0
+		orc_infantry = 0
+		warelephant = 1.0
+		supply_train = 0
+	}
+}
+
+
+hit_and_run_tactics = {  #Orcs and Barbarians
+
+	enable = no
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	deception = 0.25
+	triplex_acies = 0.25
+	bottleneck = -0.1
+	padma_vyuha = -0.1
+	
+	casualties = -0.1
+
+	effective_composition = {
+		archers = 0.5
+		dunedain_archers = 0.5
+		elvish_archers = 0.5
+		dwarven_archers = 0.5
+		rangers = 0.5
+		uruk_crossbows = 0.5
+		camels = 0.0
+		chariots = 0.5
+		heavy_cavalry = 0
+		dunedain_cavalry = 0
+		dol_amroth_knights = 0
+		dwarven_goat_riders = 0
+		warg_riders = 0
+		heavy_infantry = 0
+		dunedain_infantry = 0
+		elvish_infantry = 0
+		dwarven_infantry = 0
+		uruk_heavy_infantry = 0
+		horse_archers = 0.5
+		elvish_cavalry_archers = 0.5
+		light_cavalry = 1.0
+		light_infantry = 0.5
+		halfling_infantry = 0.5
+		orc_infantry = 0.5
+		warelephant = 0
+		supply_train = 0
+	}
+}

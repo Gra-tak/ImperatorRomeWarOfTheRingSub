@@ -1,0 +1,319 @@
+﻿namespace = br_maintenance
+
+#Various maintenance events
+
+		
+br_maintenance.1 = { #racial traits are assigned via BR_dunedain.4 on_initiatilisation, this event handles the annual maintenance of traits for randomly generated chars during the game on annual character pulse
+	
+	type = character_event
+	title = "br_dunedain.1.t"
+	desc = "br_dunedain.1.desc"
+	picture = dunedain_patrol
+	hidden = yes
+
+	trigger = {
+		NOT = { has_trait = orc }
+		NOT = { has_trait = elf }
+		NOT = { has_trait = halfling }
+		NOT = { has_trait = dwarf }
+		OR = {
+			has_culture_group = noldor_group
+			has_culture_group = teleri_group
+			has_culture_group = vanyar_group
+			has_culture_group = dwarf_group
+			has_culture_group = orcs_group
+			has_culture_group = halfling_group
+		}
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_dunedain.1.a"	
+		if = {
+			limit = {
+				OR = {
+					has_culture_group = noldor_group
+					has_culture_group = teleri_group
+					has_culture_group = vanyar_group
+				}
+			}
+			add_trait = elf
+		}		
+		
+		if = {
+			limit = {
+				has_culture_group = dwarf_group
+			}
+			add_trait = dwarf
+		}	
+
+		if = {
+			limit = {
+				has_culture_group = orcs_group
+			}
+			add_trait = orc
+		}	
+		
+		if = {
+			limit = {
+				has_culture_group = halfling_group
+			}
+			add_trait = halfling
+		}		
+	}
+	
+}
+
+br_maintenance.2 = { #this on_initialisation event changes chars who should be Maia to Maia culture after the game starts to prevent randomly generated maia courtiers
+	
+	type = character_event
+	title = "br_dunedain.1.t"
+	desc = "br_dunedain.1.desc"
+	picture = dunedain_patrol
+	hidden = yes
+
+	trigger = {
+		has_trait = 10_sauron
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_dunedain.1.a"	
+		set_culture = maia
+	}	
+}
+	
+br_maintenance.3 = { #makes goodie realms hate Melkor realms, called from on_initalisation
+	
+	type = country_event
+	title = "br_maintenance.3.t"
+	desc = "br_maintenance.3.desc"
+	picture = ship_in_storm
+	goto_location = root
+	hidden = yes
+	
+	trigger = {
+		OR = { #the group of countries that hate Melkor realms
+			primary_culture = dunedain
+			primary_culture = lesser_dunedain
+			primary_culture = arnorian
+			primary_culture = gondorian
+			country_culture_group = mirkwoodmen_group
+			country_culture_group = halfling_group
+			country_culture_group = eotheod_group
+			country_culture_group = breelander_group
+			country_culture_group = noldor_group
+            country_culture_group = teleri_group
+            country_culture_group = vanyar_group
+			country_culture_group = dwarf_group
+		}
+	}
+			
+	immediate = {
+        every_country = {
+            limit = {
+				OR = { #the group of countries that hate Melkor realms
+				primary_culture = dunedain
+				primary_culture = lesser_dunedain
+				primary_culture = arnorian
+				primary_culture = gondorian
+				country_culture_group = mirkwoodmen_group
+				country_culture_group = halfling_group
+				country_culture_group = eotheod_group
+				country_culture_group = breelander_group
+				country_culture_group = noldor_group
+				country_culture_group = teleri_group
+				country_culture_group = vanyar_group
+				}
+            }					
+            add_to_list = event_list_1
+        }
+        every_country = {
+            limit = {
+				religion = melkorism
+			}
+            add_to_list = event_list_2
+        }
+    }
+	
+    option = {
+        name = "OK"
+        every_in_list = {
+            list = event_list_1
+            save_scope_as = event_list_1_target
+            #remove_from_list = event_list_2
+            every_in_list = {
+                list = event_list_2
+                add_opinion = {
+                    target = scope:event_list_1_target
+                    modifier = mortal_enemies
+                }
+            }
+            #add_to_list = event_list_2
+        }
+        every_in_list = {
+            list = event_list_2
+            save_scope_as = event_list_2_target
+            #remove_from_list = event_list_1
+            every_in_list = {
+                list = event_list_1
+                add_opinion = {
+                    target = scope:event_list_2_target
+                    modifier = mortal_enemies
+                }
+            }
+            #add_to_list = event_list_2
+        }
+    }
+
+}
+
+br_maintenance.4 = { #to prevent mass starvation at startup, this event fills the owned provinces with food
+	
+	type = country_event
+	title = "truce"
+	desc = "truce"
+	picture = ship_in_storm
+	goto_location = root
+	hidden = yes
+	
+	trigger = {
+		always = yes
+	}
+			
+	immediate = {
+	}
+	
+    option = {
+		name = "OK"
+		every_country_state = {
+			add_state_food = 750
+			}
+		}
+	}
+	
+br_maintenance.5 = { #for now, simple event that sends orc pops to carn dum when they immigrate to non-orc realms
+	
+	type = country_event
+	title = "truce"
+	desc = "truce"
+	picture = ship_in_storm
+	goto_location = root
+	hidden = yes
+	
+	trigger = {
+		NOT = { country_culture_group = orcs_group }
+		NOT = { religion = melkorism }
+	}
+			
+	immediate = {
+	}
+	
+    option = {
+		name = "OK"
+	p:1141 = {
+    add_to_list = targets
+	}
+	p:1030 = {
+    add_to_list = targets
+	}
+	p:1021 = {
+    add_to_list = targets
+	}
+	p:1148 = {
+    add_to_list = targets
+	}
+	p:860 = {
+    add_to_list = targets
+	}
+	p:3758 = {
+    add_to_list = targets
+	}
+	p:913 = {
+    add_to_list = targets
+	}
+	every_owned_province = {
+    limit = {
+        num_foreign_culture > 0
+    }
+    every_orc_pop = {
+        random_in_list = {
+            list = targets
+            save_scope_as = target
+            prev = {
+                move_pop = scope:target
+            }
+        }
+    }
+}
+	}
+}
+	
+br_maintenance.6 = { #makes the northern dunedain realms very suspicious of each other at game start so they don't ally right away
+	
+	type = country_event
+	title = "truce"
+	desc = "truce"
+	picture = ship_in_storm
+	goto_location = root
+	hidden = yes
+	
+	trigger = {}
+			
+	immediate = {
+        every_country = {
+            limit = {
+				OR = { #the 3 northern dunedain realms are rivals
+					tag = RHU
+					tag = CAR
+					tag = ATE
+				}	
+			}
+            add_to_list = event_list_1
+        }
+        every_country = {
+            limit = {
+				OR = { #the 3 northern dunedain realms are rivals
+					tag = RHU
+					tag = CAR
+					tag = ATE
+				}
+			}				
+            add_to_list = event_list_2
+        }
+    }
+	
+    option = {
+        name = "OK"
+        every_in_list = {
+            list = event_list_1
+            save_scope_as = event_list_1_target
+            #remove_from_list = event_list_2
+            every_in_list = {
+                list = event_list_2
+                add_opinion = {
+                    target = scope:event_list_1_target
+                    modifier = mortal_enemies
+                }
+            }
+            #add_to_list = event_list_2
+        }
+        every_in_list = {
+            list = event_list_2
+            save_scope_as = event_list_2_target
+            #remove_from_list = event_list_1
+            every_in_list = {
+                list = event_list_1
+                add_opinion = {
+                    target = scope:event_list_2_target
+                    modifier = mortal_enemies
+                }
+            }
+            #add_to_list = event_list_2
+        }
+    }
+}

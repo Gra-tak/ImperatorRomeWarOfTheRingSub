@@ -1,0 +1,91 @@
+﻿#LOTR War of the Ring Character IDs#
+
+#### LAM Lamedon ####
+#0 Angbor the Fearless
+#1 Hirwen wife of Angbor
+#2 Drambor son of Angbor
+
+#### MOR Mordor #### ID used in events
+#3 Sauron
+
+#### MMO #### ID used in events
+#4 ErMurazor
+
+#### MOR Mordor #### IDs used in events
+#5 Khamul
+#6 Dwar of Waw
+#7 Jilndur
+#8 Akhorahil
+#9 Hoarmura
+#10 Adunaphel
+#11 Ren
+#12 Uvathar
+
+#### UMB Umbar ####
+#13 Sakalthor
+#14 Aglaran
+
+#### CAR ####
+#15 Aragorn
+
+#### XVX #### IDs used in events
+#16 Saruman
+
+#### IML ####
+#17 Elrond
+#18 Elladan
+#19 Elrohir
+#20 Arwen
+#21 Glorfindel
+
+#### QAR Qarsag #### Filler. Can be deleted
+#22 Hiempsal
+
+#### BEO Beornings ####
+#23 Beorn
+
+#### LOR ####
+#24 Galadriel
+
+#### GON Gondor #### IDs used in events
+#25 Turgon
+#26 Miriel wife of Turgon
+#27 Denethor
+#28 Finduilas wife of Denethor
+#29 Boromir
+#30 Faramir
+
+#### ERB Erebor #### 
+#31 Náin Orcsfoe
+#32 Iliana wife of Náin Orcsfoe
+#33 Dain II Ironfoot
+#34 Ingith wife of Dain II Ironfoot
+#35 Thorin III Stonehelm
+#36 Broin Ironaxe son of Thorin III
+
+#### DOR Dol Amroth #### 
+#37 Angelimir
+#38 Elemmire
+#39 Adrahil II
+#40 Noliel
+#41 Ivriniel
+#42 Imrahil
+#43 Uinilme
+
+#### DLE Dale ####
+
+#44 Bard the Bowman
+#45 Wife Bard the Bowman
+#46 Bain
+#47 Wife Bain
+#48 Brand
+#49 Daughter of Bain
+
+#### ROH Rohan #### ID used in events
+#50 Thengel
+#51 Morwen Steelsheen
+#52 Theoden
+#53 Elfhild
+#54 Theoden's sister
+#55 Théodwyn king's sister
+#56 Théodred king's son

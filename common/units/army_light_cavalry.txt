@@ -1,0 +1,58 @@
+﻿light_cavalry = {
+	army = yes
+
+	is_flank = yes
+
+	levy_tier = basic
+	allow = {
+		trade_good_surplus = { target = horses value > 0 }
+	}
+
+	maneuver = 3
+	movement_speed = 4
+	build_time = 45
+	
+	light_infantry = 1.25
+	heavy_infantry = 0.5
+	heavy_cavalry = 0.5
+	warelephant = 0.5
+	chariots = 1.25
+	light_cavalry = 1.0
+	horse_archers = 1.25
+	archers = 1.25
+	camels = 1.0
+	supply_train = 2.0
+#light_infantry
+	halfling_infantry = 1.25
+	orc_infantry = 1.75
+	rangers = 1.25
+	#heavy_infantry
+	troll_infantry = 0.5
+	dwarven_infantry = 0.5
+	dunedain_infantry = 0.5
+	elvish_infantry = 0.5
+	uruk_heavy_infantry = 0.5
+	uruk_infantry = 0.5
+	#heavy cavalry
+	dol_amroth_knights = 0.5
+	dunedain_cavalry = 0.5
+	dwarven_goat_riders = 0.5
+	#horse archers
+	elvish_cavalry_archer = 1.25
+	#archers
+	elvish_archers = 1.25
+	dwarven_archers = 1.25
+	uruk_crossbows = 1.25
+	dunedain_archers = 1.25	
+	
+	attrition_weight = 0.15
+	attrition_loss = 0.05
+	
+	ai_max_percentage = 15
+	build_cost = {
+		gold = 7
+		manpower = 1
+	}
+	food_consumption = 0.025
+	food_storage = 0.24
+}

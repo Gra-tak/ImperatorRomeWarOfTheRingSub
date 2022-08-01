@@ -1,0 +1,248 @@
+﻿gratak_message_on_adult = {
+
+	on_other_nation = no
+	on_own_nation = yes
+	message = no
+
+	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_give_free_hands"
+
+	potential_trigger = {
+		scope:target = {
+			employer = {
+				is_ai = no
+			}
+			is_adult = no
+		}
+	}
+
+	allowed_trigger = {
+		scope:target = {
+			NOT = { has_variable = gratak_grow_up_flag }
+		}
+	}
+
+	effect = {
+		scope:target = {
+			set_variable = { name = gratak_grow_up_flag }
+		}
+	}
+
+	ai_will_do = {
+		factor = 0 #Should use event instead.
+	}
+
+}
+
+gratak_suicide = {
+
+	on_other_nation = no
+	on_own_nation = yes
+	message = no
+	
+	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_give_free_hands"
+	
+	potential_trigger = {
+		scope:target = {
+			employer = {
+				is_ai = no
+			}
+			is_ruler = yes
+			health < 10
+		}
+	}
+
+	allowed_trigger = {
+	}
+	
+	effect = {
+		scope:target = {
+			add_health = -10
+		}
+	}
+	
+	ai_will_do = {
+		factor = 0 #Should use event instead.
+	}
+	
+}
+
+#Adapt this vanilla file for our custom inherited traits
+
+# gratak_fix_pass_down_lotr_traits_effect = {
+
+# 	on_other_nation = no
+# 	on_own_nation = yes
+# 	message = no
+	
+# 	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_give_free_hands"
+	
+# 	potential_trigger = {
+# 		scope:target = {
+# 			employer = {
+# 				is_ai = no
+# 			}
+# 			NOT = {
+# 				has_trait = house_of_hurin
+# 			}
+# 			OR = {
+# 				father = {
+# 						has_trait = house_of_hurin
+# 					}
+# 				mother = {
+# 					has_trait = house_of_hurin
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	allowed_trigger = {
+# 	}
+	
+# 	effect = {
+# 		scope:target = {
+# 			if = {
+# 				limit = {
+# 					father = {
+# 						has_trait = blood_of_isildur
+# 					}
+# 					NOT = {
+# 						has_trait = blood_of_isildur
+# 					}
+# 				}
+# 				add_trait = blood_of_isildur
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					father = {
+# 						has_trait = blood_of_anarion
+# 					}
+# 					NOT = {
+# 						has_trait = blood_of_anarion
+# 					}
+# 				}
+# 				add_trait = blood_of_anarion
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					father = {
+# 						has_trait = line_of_durin
+# 					}
+# 					NOT = {
+# 						has_trait = line_of_durin
+# 					}
+# 				}
+# 				add_trait = line_of_durin
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					father = {
+# 						has_trait = house_of_hurin
+# 					}
+# 					NOT = {
+# 						has_trait = house_of_hurin
+# 					}
+# 				}
+# 				add_trait = house_of_hurin
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					father = {
+# 						has_trait = prince_of_numenor
+# 					}
+# 					NOT = {
+# 						has_trait = prince_of_numenor
+# 					}
+# 				}
+# 				add_trait = prince_of_numenor
+# 			}
+	
+# 			if = {
+# 				limit = {
+# 					mother = {
+# 						has_trait = blood_of_isildur
+# 					}
+# 					NOT = {
+# 						has_trait = blood_of_isildur
+# 					}
+# 				}
+# 				add_trait = blood_of_isildur
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					mother = {
+# 						has_trait = blood_of_anarion
+# 					}
+# 					NOT = {
+# 						has_trait = blood_of_anarion
+# 					}
+# 				}
+# 				add_trait = blood_of_anarion
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					mother = {
+# 						has_trait = line_of_durin
+# 					}
+# 					NOT = {
+# 						has_trait = line_of_durin
+# 					}
+# 				}
+# 				add_trait = line_of_durin
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					mother = {
+# 						has_trait = house_of_hurin
+# 					}
+# 					NOT = {
+# 						has_trait = house_of_hurin
+# 					}
+# 				}
+# 				add_trait = house_of_hurin
+# 			}
+# 		}
+# 	}
+	
+# 	ai_will_do = {
+# 		factor = 0 #Should use event instead.
+# 	}
+			
+# }
+
+
+
+# gratak_test = {
+
+# 	on_other_nation = yes
+# 	on_own_nation = no
+# 	message = no
+	
+# 	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_give_free_hands"
+	
+# 	potential_trigger = {
+# 		scope:target = {
+# 			is_ruler = yes
+# 		}
+# 	}
+
+# 	allowed_trigger = {
+# 	}
+	
+# 	effect = {
+# 		scope:target = {
+# 			employer = {
+# 				every_owned_province = {
+# 			 		limit = {
+# 							NOT = { owner = scope:actor }
+# 						}
+# 						set_conquered_by = scope:actor
+# 				}
+# 			}
+# 		}
+# 	}
+	
+# 	ai_will_do = {
+# 		factor = 0 #Should use event instead.
+# 	}
+	
+# }

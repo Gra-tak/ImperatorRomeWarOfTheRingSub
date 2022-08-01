@@ -1,0 +1,14 @@
+0.15
+
+GAMEPLAY
+-Reworked realm setup to add more realms and split up some of the large ones, including Gondor (more realms will be split up in the future)
+-Made northern Dunedain realms (Rhudaur, Arthedain, Cardolan) have low relations at game start to reflect their rivalry and disunion
+-Added lots of pops, very few 1-pop provinces left except in Lindon and Calenardhon
+- New wonder modifiers
+- New buildings: Inn (wrong-culture/species bonus), Garrison Tower, Archery Range, Stables, Dormitory, Citadel
+
+ART
+- Update to map visuals (only Harlindon is 100% complete)
+- New topbar UI
+- Flags: Minas Ithil, Lamedon, Umbar, Khazad-dum, Erebor, Tumnogost (Nogrod), Iron Hills, Rohan (formable), Dunland
+- Random flags: Dunedain, Black Numenoreans, Folk of Haleth, Northmen, Men of Rhun and Men of Harad

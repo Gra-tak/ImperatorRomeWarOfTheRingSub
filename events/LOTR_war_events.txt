@@ -1,0 +1,199 @@
+﻿namespace = lotr_war_events
+
+# Gondor at war with Mordor
+lotr_war_events.1 = {
+	type = country_event
+	title = "lotr_war_events.1.t"
+	desc = "lotr_war_events.1.desc"
+	picture = event_gondor
+	
+	left_portrait = current_ruler
+	right_portrait = c:GON.current_ruler
+	right_portrait = c:MOR.current_ruler
+	
+	fire_only_once = yes
+
+	goto_location = c:GON.capital_scope
+	
+	trigger = {
+		is_ai = no
+		NOR = {
+			tag = GON
+			tag = MOR
+		}
+		c:GON = {
+			has_land = yes
+		}
+		c:MOR = {
+			has_land = yes
+			war_with = c:GON
+		}
+	}
+	
+	option = {
+		name = lotr_war_events.1.a
+		custom_tooltip = "lotr_war_events.1.a.tt"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 12
+		}
+		c:GON = {
+			add_treasury = {
+				value = root.has_monthly_income
+				multiply = 12
+			}
+			add_opinion = {
+				modifier = lotr_opinion_supported
+				target = root
+			}
+		}
+		current_ruler = {
+			add_popularity = popularity_small
+		}
+		trigger_event = {
+			id = lotr_war_events.2
+			days = 250
+		}
+	}
+	
+	option = {
+		name = lotr_war_events.1.b
+		custom_tooltip = "lotr_war_events.1.b.tt"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 12
+		}
+		c:MOR = {
+			add_treasury = {
+				value = root.has_monthly_income
+				multiply = 12
+			}
+			add_opinion = {
+				modifier = lotr_opinion_supported
+				target = root
+			}
+		}
+		current_ruler = {
+			add_popularity = popularity_small
+		}
+		trigger_event = {
+			id = lotr_war_events.2
+			days = 250
+		}
+	}
+	
+	option = {
+		name = lotr_war_events.1.c
+		custom_tooltip = "lotr_war_events.1.c.tt"
+		trigger_event = {
+			id = lotr_war_events.2
+			days = 300
+		}
+	}
+	
+}
+
+# Gondor at war with Mordor 2
+lotr_war_events.2 = {
+	type = country_event
+	title = "lotr_war_events.2.t"
+	desc = "lotr_war_events.2.desc"
+	picture = event_minas_tirith_attacked
+	
+	left_portrait = current_ruler
+	right_portrait = c:GON.current_ruler
+	right_portrait = c:MOR.current_ruler
+	
+	fire_only_once = yes
+
+	goto_location = c:GON.capital_scope
+	
+	trigger = {
+		is_ai = no
+		NOR = {
+			tag = GON
+			tag = MOR
+		}
+		c:GON = {
+			has_land = yes
+		}
+		c:MOR = {
+			has_land = yes
+			war_with = c:GON
+		}
+	}
+	
+	option = {
+		name = lotr_war_events.2.a
+		custom_tooltip = "lotr_war_events.2.a.tt"
+		add_manpower = -10
+		c:GON = {
+			add_manpower = 10
+			add_opinion = {
+				modifier = lotr_opinion_reinforced
+				target = root
+			}
+		}
+		current_ruler = {
+			add_popularity = popularity_small
+		}
+	}
+	
+	option = {
+		name = lotr_war_events.2.b
+		custom_tooltip = "lotr_war_events.2.b.tt"
+		add_manpower = -10
+		c:MOR = {
+			add_manpower = 10
+			add_opinion = {
+				modifier = lotr_opinion_reinforced
+				target = root
+			}
+		}
+		current_ruler = {
+			add_popularity = popularity_small
+		}
+	}
+	
+	option = {
+		name = lotr_war_events.2.c
+		custom_tooltip = "lotr_war_events.2.c.tt"
+	}
+	
+}
+
+# Umbar Harad war
+lotr_war_events.3 = {
+	type = country_event
+	title = "lotr_war_events.3.t"
+	desc = "lotr_war_events.3.desc"
+	picture = event_corsairs_attack
+	
+	left_portrait = current_ruler
+	right_portrait = c:UMB.current_ruler
+	right_portrait = c:HAR.current_ruler
+	
+	fire_only_once = yes
+
+	goto_location = c:UMB.capital_scope
+	
+	trigger = {
+		is_ai = no
+		NOR = {
+			tag = UMB
+			tag = HAR
+		}
+		c:UMB = {
+			has_land = yes
+		}
+		c:HAR = {
+			has_land = yes
+			war_with = c:UMB
+		}
+	}
+	
+	option = {
+		name = lotr_war_events.3.a
+	}
+	
+}

@@ -1,0 +1,7105 @@
+Global Promotes = {
+	AREA
+	ATTACKER
+	Application
+	BATTLE_RESULT
+	BATTLE_SIDE
+	CHARACTER
+	COMBAT
+	COUNTRY
+	CULTURE
+	CULTUREGROUP
+	DATE
+	DATE_MAX
+	DATE_MIN
+	DEFENDER
+	EmptyScope
+	FAMILY
+	GOVERNORSHIP
+	GetCountry
+	GetOffice
+	GetPortraitEditorWindow
+	GetQuickAccessBar
+	GetScriptedGui
+	GuiEditor
+	GuiScope
+	JOB
+	JominiPlayer
+	MERCENARY
+	MODIFICATION_ITEM
+	PARTY
+	POP
+	PREV
+	PROVINCE
+	Player
+	REGION
+	RELIGION
+	ROOT
+	SCOPE
+	SCOPES
+	SIEGE
+	STATE
+	STATE_CAPITAL
+	SUBUNIT
+	TARGET_AREA
+	TARGET_CHARACTER
+	TARGET_CHARACTER_2
+	TARGET_COMBAT
+	TARGET_COUNTRY
+	TARGET_CULTURE
+	TARGET_CULTUREGROUP
+	TARGET_FAMILY
+	TARGET_GOVERNORSHIP
+	TARGET_JOB
+	TARGET_PARTY
+	TARGET_POP
+	TARGET_PROVINCE
+	TARGET_REGION
+	TARGET_RELIGION
+	TARGET_STATE
+	TARGET_SUBUNIT
+	TARGET_UNIT
+	THIS
+	TRADE_GOOD
+	TRAIT
+	UNIT
+	WAR
+}
+
+Global Functions = {
+	And
+	BindFoldOutContext
+	BoolTo1And2
+	BoolTo2And1
+	CanChangeGameSpeed
+	CanChangeMapMode
+	CanEmbraceBonus
+	ChangePolicy
+	ClearHighlightColors
+	ClearHostError
+	DataModelHasItems
+	DefaultOnCharacterClick
+	DefaultOnCharacterRightClick
+	DeselectUnit
+	EmbraceBonus
+	EqualTo_CFixedPoint
+	EqualTo_CFixedPoint64
+	EqualTo_float
+	EqualTo_int32
+	EqualTo_string
+	EqualTo_uint32
+	ErrorTooltip
+	ExecuteConsoleCommand
+	FixedPoint64ToFloat
+	FixedPoint64ToInt
+	FixedPointToFloat
+	FixedPointToInt
+	FixedPointToProgressbarValue
+	GameGetIronmanToolTip
+	GameHasMultiplePlayers
+	GameIsCloudStorageAvailable
+	GameIsCloudStorageOperationInProgress
+	GameIsIronmanAvailable
+	GameIsMultiplayer
+	GetBuildRevision
+	GetBuildRevisionDescription
+	GetBuildRevisionTime
+	GetBuildingIcon
+	GetCanDecreaseGameSpeedString
+	GetCanGoToFrontend
+	GetCanGoToFrontendDesc
+	GetCanIncreaseGameSpeedString
+	GetChangeGovernorPoliciesTooltip
+	GetChristianDateString
+	GetCombatTacticIcon
+	GetCompleteVersionInfoString
+	GetCountryListWithFlags
+	GetCurrentGameSpeed
+	GetCurrentGameSpeedFrame
+	GetCurrentLoadingScreen
+	GetDataModelSize
+	GetDateString
+	GetDefine
+	GetDiplomaticStanceIcon
+	GetEnumIndex
+	GetGameVersionDisplay
+	GetGovernorPolicyIcon
+	GetHighlightTint
+	GetHostError
+	GetInventionBackground
+	GetIsChecked
+	GetLaggingPlayerString
+	GetMPChecksum
+	GetManpowerDisplay
+	GetMigratingNations
+	GetMilitaryBonusIcon
+	GetMilitaryBonusIconMask
+	GetMilitaryBonusToolTip
+	GetMultiplayerAccessibleString
+	GetNamedValue
+	GetOmenIcon
+	GetOmenIconBig
+	GetPartyIcon
+	GetPlayerDatesString
+	GetPlayerIsLagging
+	GetPlayerName
+	GetPopIcon
+	GetPortraitTextureFromDna
+	GetProvinceRankIcon
+	GetRandomLogInfo
+	GetSelectedDiplomaticInformation
+	GetSmartBrushInterpolationNames
+	GetSmartBrushPatternNames
+	GetStringSettingText
+	GetSubDefinition
+	GetSubDefinitionByIndex
+	GetSubDefinitionIndex
+	GetSubUnitIcon
+	GetTerrainIcon
+	GetTerrainIconBig
+	GetTextureByPath
+	GetTradeGoodsIcon
+	GetTraitIcon
+	GetUnitAbilityIcon
+	GetVarTimeRemaining
+	GfxGetSkins
+	GfxSetActiveSkin
+	GfxSkinIsActive
+	GoToCapital
+	GoToFrontend
+	GreaterThanOrEqualTo_CFixedPoint
+	GreaterThanOrEqualTo_CFixedPoint64
+	GreaterThanOrEqualTo_float
+	GreaterThanOrEqualTo_int32
+	GreaterThanOrEqualTo_uint32
+	GreaterThan_CFixedPoint
+	GreaterThan_CFixedPoint64
+	GreaterThan_float
+	GreaterThan_int32
+	GreaterThan_uint32
+	HasErrors
+	HasHostError
+	HasLowFps
+	HasMigratingNations
+	HasMilitaryBonus
+	InDebugMode
+	InReleaseMode
+	IntToFloat
+	IntToFrameIndex
+	IsAutoSaving
+	IsBuildDebug
+	IsDataModelEmpty
+	IsGamePaused
+	IsGameViewOpen
+	IsLiveBuild
+	IsLocalPlayer
+	IsLocalPlayerReplayingCommands
+	IsMapMode
+	IsMultiplayerAvailable
+	IsNextMilitaryBonus
+	IsPreparationLobby
+	IsReplayShown
+	IsSaveGame
+	IsSaving
+	IsUsingSteamBrowser
+	JominiAccessPlayerJoinRequests
+	JominiGetMultiplayerAccessibleString
+	JominiHasPlayerJoinRequests
+	JominiIsHostOrLocal
+	JominiIsMultiplayerAccessible
+	JominiMultiplayerIsCrossplayEnabled
+	JominiMultiplayerIsCrossplayFilterAvailable
+	JominiPlayer
+	LessThanOrEqualTo_CFixedPoint
+	LessThanOrEqualTo_CFixedPoint64
+	LessThanOrEqualTo_float
+	LessThanOrEqualTo_int32
+	LessThanOrEqualTo_uint32
+	LessThan_CFixedPoint
+	LessThan_CFixedPoint64
+	LessThan_float
+	LessThan_int32
+	LessThan_uint32
+	Localize
+	Not
+	NotEqualTo_CFixedPoint
+	NotEqualTo_CFixedPoint64
+	NotEqualTo_float
+	NotEqualTo_int32
+	NotEqualTo_uint32
+	NumberOrErrors
+	ObjectsEqual
+	OnClickOnProvince
+	OnClickOnState
+	OnDecreaseGameSpeed
+	OnFindProvince
+	OnIncreaseGameSpeed
+	OnPause
+	OnPauseMenu
+	OnSelectMapModes
+	OnToggleOutliner
+	OnToggleReplay
+	OpenDiplomacy
+	OpenErrorLog
+	OpenFamiliesView
+	OpenGameView
+	OpenGovernmentOfficesView
+	OpenMessageDialog
+	OpenSiege
+	Or
+	PanToCountry
+	PdxClearEditBoxText
+	PdxDumpDataTypes
+	PdxGetProfilers
+	PdxGetWidgetScreenSize
+	PdxGuiDestroyWidget
+	PdxGuiEditorMessageBox
+	PdxGuiInterruptAllAnimations
+	PdxGuiInterruptThenTriggerAllAnimations
+	PdxGuiTriggerAllAnimations
+	PdxProfilerFilterNext
+	PdxProfilerFilterPrev
+	PdxProfilerFilterTimers
+	PdxProfilerGetCurrentFrame
+	PdxProfilerGetFrameTimeMs
+	PdxProfilerGetNsPerTick
+	PdxProfilerGuiGraphLinesEnabled
+	PdxProfilerGuiToggleGraphLines
+	PdxProfilerGuiToggleStats
+	PdxProfilerPause
+	PdxProfilerSelectNextFrame
+	PdxProfilerSelectPreviousFrame
+	PdxProfilerSelectThread
+	PlayerIsHost
+	SelectCapital
+	SelectEnumWithString
+	SelectImportDestination
+	SelectLocalization
+	SelectUnit
+	SelectUnitAndPan
+	Select_CFixedPoint
+	Select_CFixedPoint64
+	Select_CString
+	Select_float
+	Select_int32
+	Select_uint32
+	SetHighlightArea
+	SetHighlightCountry
+	SetHighlightProvince
+	SetLobbyCountry
+	SetLobbyCountryTag
+	SetMapMode
+	SetPreparationLobby
+	ShouldShowSegmentedControlForSetting
+	ShowMessageSettings
+	StringIsEmpty
+	TextureListFormatSize
+	ToggleMessageLog
+	TransparentIfFalse
+	TransparentIfTrue
+	TransparentIfZero
+	TransparentIfZero_int32
+	WatchWindowsEnabled
+	concatenate
+}
+
+Types = {
+	Achievement = {
+		AccessSelf
+		IsUnlocked
+		Self
+	}
+
+	AchievementPopup = {
+		AccessJustUnlockedAchievements
+		AccessSelf
+		Self
+		ShowWindow
+	}
+
+	AchievementWindow = {
+		AccessGroups
+		AccessSelf
+		HasGameStarted
+		Hide
+		Self
+		ShouldShowLocked
+		ShouldShowNotPossible
+		ShouldShowPossible
+		ShouldShowUnlocked
+		Show
+		ToggleFilterLocked
+		ToggleFilterNotPossible
+		ToggleFilterPossible
+		ToggleFilterUnlocked
+	}
+
+	ActiveTradeRoute = {
+		GetFrom
+		GetGoods
+		GetTo
+		AccessSelf
+		CanClick
+		GetFrom
+		GetGoods
+		GetIncome
+		GetIncomeTooltip
+		GetName
+		GetTo
+		GetTooltip
+		OnClick
+		Self
+	}
+
+	AddFriendWindow = {
+		AccessSelf
+		Hide
+		Self
+		ShouldBeShown
+		Show
+	}
+
+	AlertManager = {
+		GetPlayer
+		AccessSelf
+		CanBuyInventions
+		CanCallAlly
+		CanCallOmen
+		CanDoDecision
+		CanGetMilitaryTradition
+		GetAllianceBreakingInformation
+		GetArmyWithoutFood
+		GetArmyWithoutLeader
+		GetBadResearchInfo
+		GetBarbariansInformation
+		GetBlockadedPortsInformation
+		GetCallAllyInformation
+		GetCallForPeaceInfo
+		GetCompletedMissionTaskInformation
+		GetDeficitInformation
+		GetDiploIcons
+		GetDisloyalCharacterInformation
+		GetDisloyalProvinceInformation
+		GetElectionSoonInformation
+		GetEmptyOfficeInformation
+		GetEmptyResearchInformation
+		GetExiledUnitsInformation
+		GetFreeIdeaSlotInformation
+		GetHighWarExhaustionInformation
+		GetHostageInformation
+		GetLowArmyMaintenanceInformation
+		GetLowNavyMaintenanceInformation
+		GetNavyOutsideRange
+		GetNegativeEnforcedWarGoalInformation
+		GetNegativeWhitePeaceInformation
+		GetOverDiplomacyLimitInformation
+		GetPlayer
+		GetPositiveEnforcedWarGoalInformation
+		GetPositiveWhitePeaceInformation
+		GetPretenderSupportInformation
+		GetScornedFamilyInformation
+		GetStarvingPopsInformation
+		GetStarvingProvinceInformation
+		GetTrueWar
+		GetUnmarriedInformation
+		GetUnusedCapitalTradeSlotsInformation
+		GetWithoutGovernor
+		HasAllianceBreaking
+		HasArmyWithoutFood
+		HasArmyWithoutLeader
+		HasBarbarians
+		HasBlockadedPorts
+		HasCallForPeace
+		HasCompletedMissionTask
+		HasDangerousDeficit
+		HasDisloyalCharacter
+		HasDisloyalProvince
+		HasElectionSoon
+		HasEmptyOffice
+		HasEmptyResearch
+		HasExiledUnits
+		HasFreeIdeaSlots
+		HasHighWarExhaustion
+		HasHostage
+		HasLowArmyMaintenance
+		HasLowNavyMaintenance
+		HasNavyOutsideRange
+		HasNegativeEnforcedWarGoal
+		HasNegativeWhitePeace
+		HasOverDiplomacyLimit
+		HasPositiveEnforcedWarGoal
+		HasPositiveWhitePeace
+		HasPretenderSupport
+		HasScornedFamily
+		HasStarvingPops
+		HasStarvingProvince
+		HasTrueWar
+		HasUnmarried
+		HasUnusedCapitalTradeSlots
+		HasWithoutGovernor
+		NextAllianceBreaking
+		NextArmyWithoutFood
+		NextArmyWithoutLeader
+		NextAtWarWith
+		NextBarbarian
+		NextBlockadedPort
+		NextCallAlly
+		NextDisloyalCharacter
+		NextDisloyalProvince
+		NextExiledUnit
+		NextHostage
+		NextNavyOutsideRange
+		NextPretenderSupport
+		NextStarvingPop
+		NextStarvingProvince
+		NextWithoutGovernor
+		OpenEnforceWarGoal
+		OpenMissionWindow
+		OpenRuler
+		Self
+		ShowAlert
+		ToggleShowAlert
+	}
+
+	Ambition = {
+		AccessSelf
+		Self
+	}
+
+	Application = {
+		AccessSelf
+		Quit
+		Self
+	}
+
+	Area = {
+		GetRegion
+		MakeScope
+		AccessSelf
+		GetName
+		GetRegion
+		GetTag
+		MakeScope
+		Self
+	}
+
+	Attribute = {
+		AccessSelf
+		GetName
+		GetValue
+		OnValueChanged
+		Self
+	}
+
+	AttributeItem = {
+		AccessSelf
+		GetAttributeBreakdownTooltip
+		GetFrame
+		GetName
+		GetValue
+		Self
+	}
+
+	AttributeTuple = {
+		AccessSelf
+		GetFrame
+		GetName
+		GetValue
+		Self
+	}
+
+	AvailabilityEntry = {
+		AccessSelf
+		GetAvailabilityString
+		Self
+	}
+
+	BarbarianPayOffWindow = {
+		AccessSelf
+		GetAcceptanceFrame
+		GetAcceptanceTooltip
+		GetDesc
+		GetPrice
+		GetPricePercent
+		GetTitle
+		OnAccept
+		OnDecline
+		OnPriceChanged
+		Self
+	}
+
+	BarbarianProvinceView = {
+		GetProvince
+		AccessSelf
+		GetProvince
+		GetSupplyLimit
+		GetSupplyLimitDescription
+		HasProvince
+		OnClose
+		Self
+	}
+
+	BattleCountryStats = {
+		GetBattleSide
+		GetCountry
+		AccessSelf
+		GetBattleSide
+		GetCaptured
+		GetCountry
+		GetLosses
+		GetRemainingUnits
+		GetTotalUnits
+		GetUnitTypeStats
+		GetWarExhaustion
+		Self
+	}
+
+	BattleResult = {
+		GetAttacker
+		GetDefender
+		GetLoser
+		GetWinner
+		AccessSelf
+		GetAttacker
+		GetDefender
+		GetLoser
+		GetName
+		GetScore
+		GetWinner
+		Self
+	}
+
+	BattleResultMessage = {
+		GetAttacker
+		GetBattleResult
+		GetDefender
+		AccessSelf
+		GetAttacker
+		GetBattleResult
+		GetDefender
+		IsPlayerAttacker
+		IsPlayerDefender
+		IsPlayerLoser
+		IsPlayerWinner
+		Self
+	}
+
+	BattleResultMessageParticipant = {
+		GetCountryStats
+		GetSide
+		AccessSelf
+		GetCountryStats
+		GetSide
+		OnClick
+		Self
+	}
+
+	BattleResultMessageSide = {
+		GetActiveParticipant
+		GetBattleSide
+		GetMessagePopup
+		AccessSelf
+		GetActiveParticipant
+		GetBattleSide
+		GetMessagePopup
+		GetParticipants
+		Self
+	}
+
+	BattleSide = {
+		GetCommander
+		GetCommandingCountryStats
+		AccessSelf
+		GetBattleResult
+		GetCaptured
+		GetCombatModifiers
+		GetCommander
+		GetCommanderPopularityChange
+		GetCommandingCountryStats
+		GetCountryStats
+		GetDiceRolls
+		GetLossRatio
+		GetLosses
+		GetRemainingUnits
+		GetTotalUnits
+		Self
+	}
+
+	BattleUnitTypeStats = {
+		GetCountryStats
+		GetType
+		AccessSelf
+		GetCaptured
+		GetCountryStats
+		GetLosses
+		GetRemainingUnits
+		GetTotalUnits
+		GetType
+		GetTypeIndex
+		IsEmpty
+		Self
+	}
+
+	BrowserWindow = {
+		AccessSelf
+		CanGoBack
+		CanGoForward
+		Close
+		GetUrl
+		GoBack
+		GoForward
+		GoHome
+		ReloadPage
+		Self
+		SetUrl
+	}
+
+	BrushBool = {
+		AccessSelf
+		Get
+		Self
+		Set
+		Toggle
+	}
+
+	BrushFloat = {
+		AccessSelf
+		DecreaseBySmallStep
+		DecreaseByStep
+		IncreaseBySmallStep
+		IncreaseByStep
+		Max
+		Min
+		ScaledValue
+		Self
+		SetMax
+		SetMin
+		SetScaledValue
+		SetStepSize
+		SetValue
+		SetValueArg
+		SmallStepSize
+		StepSize
+		Value
+	}
+
+	BrushSettings = {
+		Amount
+		Hardness
+		PixelSnap
+		Radius
+		AccessSelf
+		Amount
+		Diameter
+		Hardness
+		PixelSnap
+		Radius
+		Self
+		SetAmount
+		SetDiameter
+		SetHardness
+	}
+
+	BrushSettingsDropdown = {
+		Settings
+		AccessSelf
+		Self
+		Settings
+		Thumbnail
+		Toggle
+	}
+
+	BuildBuildingWindow = {
+		AccessProvince
+		AccessSelf
+		GetPossibleBuildings
+		OnClose
+		Self
+	}
+
+	BuildUnitItem = {
+		AccessSelf
+		CanBuild
+		GetBuildCost
+		GetBuildCostTooltip
+		GetBuildDays
+		GetBuildDaysTooltip
+		GetBuildInfo
+		GetMaintenanceCost
+		GetMaintenanceCostTooltip
+		GetManpowerCost
+		GetManpowerCostTooltip
+		GetName
+		GetType
+		GetUnitTooltip
+		Self
+		StartBuild
+	}
+
+	BuildUnitWindow = {
+		AccessProvince
+		AccessConstructions
+		AccessSelf
+		GetPossibleUnits
+		OnClose
+		Self
+	}
+
+	BuildableGlueItem = {
+		GetProvince
+		GetSelectedBuildable
+		AccessSelf
+		CanBuild
+		GetCanBeBuiltAmount
+		GetModifications
+		GetProvince
+		GetProvinceTooltip
+		GetSelectedBuildable
+		OnClick
+		Self
+	}
+
+	Building = {
+		GetModifier
+		AccessSelf
+		GetModifier
+		GetName
+		Self
+	}
+
+	BuildingConstruction = {
+		GetBuilding
+		AccessSelf
+		CancelConstruction
+		GetBuilding
+		GetDurationInformation
+		GetName
+		GetProgress
+		Self
+	}
+
+	BuildingConstructionIcon = {
+		GetBuilding
+		AccessSelf
+		GetBuilding
+		GetProgress
+		GetTooltip
+		Self
+	}
+
+	BuildingItem = {
+		GetBuilding
+		AccessSelf
+		Build
+		CanBuild
+		CanCancel
+		CanDestroy
+		Cancel
+		Destroy
+		GetBuildInfo
+		GetBuildProgress
+		GetBuilding
+		GetCancelInfo
+		GetDestroyInfo
+		GetEffectInfo
+		GetLevel
+		GetName
+		GetQueueSize
+		HasQueue
+		Self
+		ShowCancel
+	}
+
+	CFixedPoint = {
+		AccessSelf
+		GetFixedPoint
+		Self
+	}
+
+	CString = {
+		AccessSelf
+		GetString
+		Self
+	}
+
+	CUTF8String = {
+		AccessSelf
+		GetString
+		Self
+	}
+
+	CVector2f = {
+		AccessSelf
+		GetVector
+		Self
+	}
+
+	CVector2i = {
+		AccessSelf
+		GetVector
+		Self
+	}
+
+	CVector3f = {
+		AccessSelf
+		GetVector
+		Self
+	}
+
+	CVector3i = {
+		AccessSelf
+		GetVector
+		Self
+	}
+
+	CVector4f = {
+		AccessSelf
+		GetVector
+		Self
+	}
+
+	CVector4i = {
+		AccessSelf
+		GetVector
+		Self
+	}
+
+	CapitalMapIcon = {
+		GetCountry
+		AccessSelf
+		GetTooltip
+		IsAlly
+		IsWar
+		OnCoaClicked
+		Self
+		ShouldBeShown
+	}
+
+	CapitalSurplus = {
+		GetTradeGoods
+		AccessSelf
+		GetTooltip
+		GetTradeGoods
+		Self
+	}
+
+	CharMessage = {
+		GetCharacter
+		AccessSelf
+		GetCharacter
+		Self
+	}
+
+	Character = {
+		GetAttributes
+		GetCountry
+		GetCulture
+		GetEmployer
+		GetFamily
+		GetFather
+		GetGovernorship
+		GetMother
+		GetOffice
+		GetParty
+		GetPreferredHeir
+		GetReligion
+		GetSpouse
+		GetTimedModifier
+		GetTitle
+		GetUnitPointer
+		MakeScope
+		AccessSelf
+		CanHavePreferredHeir
+		CanSelectUnit
+		Custom
+		GetAge
+		GetAgeInfo
+		GetAgeOnDeathInfo
+		GetAgeOnDeathOrBirthDate
+		GetAmbitionInformation
+		GetAmbitionInverseProgress
+		GetAmbitionName
+		GetAmbitionProgress
+		GetAnimatedPortrait
+		GetAttributes
+		GetAuntUncle
+		GetCharisma
+		GetCharismaToolTip
+		GetChildren
+		GetCorruption
+		GetCorruptionToolTip
+		GetCountry
+		GetCulture
+		GetDaughterSon
+		GetDeathReason
+		GetEffectiveModifiedAttribute
+		GetEmployer
+		GetExperience
+		GetExperienceInformation
+		GetFamily
+		GetFamilyDisplayAdjective
+		GetFamilyDisplayName
+		GetFamilyMemberText
+		GetFamilyPrestigeContribution
+		GetFather
+		GetFinesse
+		GetFinesseToolTip
+		GetFirstName
+		GetFirstNameForEditbox
+		GetFriends
+		GetFullName
+		GetGenderFrame
+		GetGenderName
+		GetGovernorship
+		GetHeaderToolTip
+		GetHealth
+		GetHealthInformation
+		GetHeirSupportInformation
+		GetHerHim
+		GetHerHis
+		GetHersHis
+		GetHerselfHimself
+		GetHoldingInformation
+		GetID
+		GetIsWas
+		GetLoyalty
+		GetLoyaltyGainChanceValue
+		GetLoyaltyGainToolTip
+		GetLoyaltyNonTitleToolTip
+		GetLoyaltyToolTip
+		GetMartial
+		GetMartialToolTip
+		GetMaxFriendCount
+		GetMaxFriendsInfo
+		GetMaxRivalCount
+		GetMaxRivalsInfo
+		GetModifiedAttribute
+		GetModifierPureValue
+		GetModifierTooltip
+		GetModifierValue
+		GetMonthlyLoyaltyFrame
+		GetMother
+		GetMotherFather
+		GetName
+		GetNameForEffects
+		GetNickName
+		GetNieceNephew
+		GetNumOfFriends
+		GetNumOfHoldings
+		GetNumOfRivals
+		GetNumOfSupportsAsHeir
+		GetNumPossibleHoldings
+		GetNumberOfLoyalCohorts
+		GetOffice
+		GetParty
+		GetPartyName
+		GetPartyTooltip
+		GetPopularity
+		GetPopularityToolTip
+		GetPortrait
+		GetPortraitFrame
+		GetPortraitFrameFrame
+		GetPortraitTooltip
+		GetPortraitTooltipNoClick
+		GetPowerBase
+		GetPowerBaseInfo
+		GetPraenomen
+		GetPreferredHeir
+		GetPregnacyInfo
+		GetProminence
+		GetProminenceToolTip
+		GetRelevantDescription
+		GetReligion
+		GetRivals
+		GetSheHe
+		GetSisterBrother
+		GetSpouse
+		GetSuccessionScore
+		GetSuccessionScoreInfo
+		GetTemporaryModifiers
+		GetTimedModifier
+		GetTitle
+		GetTitleName
+		GetTitleNameShort
+		GetTitleTooltip
+		GetTraits
+		GetUnitPointer
+		GetUnitTooltip
+		GetVariableExpiry
+		GetWealth
+		GetWealthInformation
+		GetWifeHusband
+		GetWomanMan
+		GetWomenMen
+		GetZeal
+		GetZealToolTip
+		HasActiveAmbition
+		HasArmy
+		HasCheckedAmbition
+		HasFather
+		HasHoldings
+		HasLivingSpouse
+		HasMother
+		HasNavy
+		HasTimedModifier
+		HasTitle
+		HasUnit
+		IsAlive
+		IsDead
+		IsDeadAndValid
+		IsEligibleRuler
+		IsFemale
+		IsGovernor
+		IsGovernorOrRuler
+		IsImprisoned
+		IsLocalPlayerRuler
+		IsOtherPlayerRuler
+		IsPregnant
+		IsPretender
+		IsPrimaryHeir
+		IsSuccessor
+		IsValid
+		MakeScope
+		Self
+		ShowParty
+	}
+
+	CharacterGlue = {
+		GetCharacter
+		AccessSelf
+		GetCharacter
+		GetTraitItems
+		Self
+	}
+
+	CharacterInteraction = {
+		AccessSelf
+		Self
+	}
+
+	CharacterItem = {
+		GetCharacter
+		AccessSelf
+		OnClick
+		OnRightClick
+		Self
+	}
+
+	CharacterJob = {
+		MakeScope
+		AccessSelf
+		GetCharacter
+		GetEmployer
+		GetShortTitle
+		GetTitle
+		MakeScope
+		Self
+	}
+
+	CharacterListItem = {
+		GetCharacter
+		GetCharismaSkill
+		GetFinesseSkill
+		GetMartialSkill
+		GetSpecificSkill
+		GetZealSkill
+		AccessSelf
+		GetBool
+		GetCharacter
+		GetCharismaSkill
+		GetFinesseSkill
+		GetInt
+		GetMartialSkill
+		GetNonFittingTraitsCount
+		GetNonFittingTraitsDesc
+		GetSkillItems
+		GetSpecificSkill
+		GetText
+		GetTraitItems
+		GetZealSkill
+		HasNonFittingTraits
+		IsSelectable
+		OnClick
+		Self
+	}
+
+	CharacterRef = {
+		Get
+		AccessSelf
+		Get
+		Self
+	}
+
+	CharacterRightClickMenu = {
+		GetCharacter
+		AccessSelf
+		GetCharacter
+		GetInteractions
+		OnClose
+		Self
+	}
+
+	CharacterSelectionListItem = {
+		GetCharacter
+		AccessSelf
+		GetAnswer
+		GetAnswerReason
+		OnCharacterClick
+		OnCharacterRightClick
+		OnInteractionClick
+		Self
+	}
+
+	CharacterSelectionListWindow = {
+		AccessSelf
+		Close
+		Self
+	}
+
+	CharacterWindow = {
+		GetCharacter
+		AccessSelf
+		GetCharacter
+		GetConvictions
+		GetHeirSupport
+		GetInteractions
+		GetPreviousName
+		GetSiblings
+		GetTraitItems
+		OnClose
+		OnPrevious
+		Self
+	}
+
+	CharactersView = {
+		GetSelectedCountry
+		AccessSelf
+		Filter
+		GetCharacters
+		GetFamilies
+		GetPreviousName
+		GetSelectedCountry
+		IsFamilySorted
+		IsFilterNo
+		IsFilterYes
+		IsFiltered
+		IsPlayer
+		IsShowFamily
+		IsShowParty
+		IsSorted
+		OnClose
+		OnPrevious
+		ResetCountry
+		Self
+		ShowCharacters
+		ShowFamily
+		Sort
+		SortFamily
+	}
+
+	Chat = {
+		GetReceiver
+		AccessChatMessages
+		AccessSelf
+		GetReceiver
+		GetReceiverName
+		GetUnreadMessageCount
+		HasUnreadMessages
+		IsRoomChat
+		Self
+	}
+
+	ChatMessage = {
+		AccessSelf
+		GetMessage
+		GetName
+		Self
+	}
+
+	ChatNotificationMessage = {
+		ChatMessage
+		AccessSelf
+		ChatMessage
+		Kill
+		Self
+		StartChat
+	}
+
+	ChatTab = {
+		GetChat
+		AccessSelf
+		Activate
+		Close
+		GetChat
+		GetChatTitle
+		IsActive
+		Self
+	}
+
+	ChatWindow = {
+		AccessChatTabs
+		AccessSelf
+		CanSendMessage
+		Hide
+		Self
+		SendMessage
+		ShouldBeShown
+		Show
+	}
+
+	ChildGenerator = {
+		AccessSelf
+		GetGenerationItems
+		GetRandomChildrenRatio
+		OnRandomizedRatioChanged
+		Regenerate
+		Self
+	}
+
+	ChildItem = {
+		AccessSelf
+		CopyDnaToClipboard
+		GetDna
+		GetDnaForTexture
+		IsRandomized
+		PasteDna
+		Self
+	}
+
+	CityMapIcon = {
+		AccessSelf
+		GetLabel
+		Self
+	}
+
+	ClanLeaderItem = {
+		GetCharacter
+		AccessSelf
+		GetCharacter
+		Self
+	}
+
+	CoatOfArms = {
+		AccessSelf
+		GetColor
+		GetFrame
+		GetSlot
+		GetTexture
+		Self
+	}
+
+	CoatOfArmsEditorWindow = {
+		AccessCoatOfArmsImage
+		AccessCoatOfArmsImage
+		AccessSelf
+		GetKey
+		GetPatternPath
+		Hide
+		ReRender
+		Save
+		Self
+		SetKey
+		SetPatternPath
+		Show
+	}
+
+	CoatOfArmsImage = {
+		AccessSelf
+		AccessTexture
+		GetFrame
+		GetFrameSize
+		Self
+	}
+
+	Combat = {
+		GetAttacker
+		GetDefender
+		MakeScope
+		AccessSelf
+		GetAttacker
+		GetDefender
+		GetName
+		IsNavalCombat
+		MakeScope
+		Self
+	}
+
+	CombatImminentIcon = {
+		AccessSelf
+		GetIconTexture
+		GetTooltip
+		Self
+	}
+
+	CombatMapIcon = {
+		GetCombat
+		AccessSelf
+		GetAttackerFrame
+		GetCombat
+		GetDefenderFrame
+		OnClick
+		Self
+	}
+
+	CombatModifier = {
+		AccessSelf
+		GetCombatModifierIcon
+		GetFrame
+		GetTooltip
+		GetValue
+		Self
+	}
+
+	CombatTactic = {
+		AccessSelf
+		CalculateCompositionEffectFrom
+		CalculateCompositionEffectiveness
+		GetCombatTactic
+		GetCompositionEffectivenessDescription
+		GetCompositionEffectivenessDescriptionForType
+		GetFullDescription
+		GetIcon
+		GetName
+		GetPowerVersus
+		GetPowerVersusDiff
+		GetPowerVersusDiffWithEfficiency
+		GetPowerVersusDiffWithEfficiencyDescription
+		GetVersusTactics
+		Self
+	}
+
+	CombatView = {
+		GetCombat
+		AccessSelf
+		CanRetreat
+		GetAttackerFrontRow
+		GetCombat
+		GetDefenderFrontRow
+		GetRetreatTooltip
+		GetTerrainTexture
+		OnClose
+		Self
+	}
+
+	CombatViewSubUnit = {
+		GetSubUnit
+		AccessSelf
+		GetSubUnit
+		GetTexture
+		Self
+	}
+
+	Combatant = {
+		GetCommander
+		GetCountry
+		GetLeadingUnit
+		AccessSelf
+		GetBattlefieldLayoutInfo
+		GetCombatModifiers
+		GetCommander
+		GetCountry
+		GetDiscipline
+		GetDisciplineTooltip
+		GetFront
+		GetLeadingUnit
+		GetMoralePercent
+		GetMoraleTooltip
+		GetSubUnitCounts
+		GetSunkShips
+		GetTacticImpactFrame
+		GetVisualStrength
+		GetVisualStrengthTooltip
+		HasCommander
+		HasDiscipline
+		Self
+	}
+
+	ConsoleMenuItem = {
+		AccessSelf
+		GetHelp
+		GetName
+		IsCurrentGroup
+		Select
+		Self
+	}
+
+	ConsoleWindow = {
+		AccessSelf
+		IsMenuShown
+		Self
+		ToggleMenu
+	}
+
+	Container = {
+		AccessSelf
+		Self
+	}
+
+	ContextMenuItem = {
+		AccessSelf
+		GetLabel
+		Self
+	}
+
+	ConvictionGlue = {
+		GetType
+		AccessSelf
+		GetPartyName
+		GetTooltip
+		GetType
+		GetValue
+		Self
+	}
+
+	Country = {
+		AccessCoatOfArms
+		GetActiveOmen
+		GetCapital
+		GetCoRuler
+		GetConsort
+		GetCurrentCivilWar
+		GetCurrentSuccessor
+		GetDiplomaticStance
+		GetGovernment
+		GetHeritage
+		GetMilitaryTradition
+		GetModifier
+		GetOverlord
+		GetPrimaryCulture
+		GetReligion
+		GetRuler
+		GetSuccession
+		GetTimedModifier
+		MakeScope
+		AccessCoatOfArms
+		AccessSelf
+		AutoAcceptTrade
+		BuildPopulationToolTip
+		BuildTotalPopulationToolTip
+		CalcMonthlyStabilityChange
+		CanAffordPrice
+		CanBoostStability
+		Custom
+		Exists
+		GetActiveOmen
+		GetActiveOmenDuration
+		GetActiveOmenDurationInfo
+		GetActiveRelationsInfo
+		GetAdjective
+		GetAverageArmyExperience
+		GetAverageArmyExperienceInfo
+		GetBlockadedPercent
+		GetBoostStabilityReason
+		GetCapital
+		GetCentralization
+		GetCentralizationTooltip
+		GetCivilWarFrame
+		GetClanLeaders
+		GetCoRuler
+		GetCoRulerTitle
+		GetConsort
+		GetConsortTitle
+		GetControlRange
+		GetCountry
+		GetCurrentAgressiveExpansion
+		GetCurrentAgressiveExpansionInfo
+		GetCurrentAtWarWith
+		GetCurrentCivilWar
+		GetCurrentSuccessor
+		GetDebugTag
+		GetDefaultLandMorale
+		GetDefaultLandMoraleTooltip
+		GetDefaultNavalMorale
+		GetDefaultNavalMoraleTooltip
+		GetDescriptiveName
+		GetDiplomacyHeaderToolTip
+		GetDiplomaticReputationTooltip
+		GetDiplomaticStance
+		GetFamilies
+		GetFlag
+		GetFlagTexture
+		GetFlagTextureFrame
+		GetForeignReligionPops
+		GetGovernment
+		GetGovernorships
+		GetHeritage
+		GetId
+		GetLegitimacy
+		GetLegitimacyTooltip
+		GetManpower
+		GetManpowerTooltip
+		GetMapColor
+		GetMilitaryExperience
+		GetMilitaryExperienceDescription
+		GetMilitaryTradition
+		GetMilitaryTraditionToolTip
+		GetModifier
+		GetModifierPureValue
+		GetModifierTooltip
+		GetModifierValue
+		GetMonthlyStabilityChange
+		GetName
+		GetNavalRange
+		GetNavalRangeTooltip
+		GetNonLoyalPowerBase
+		GetNumActiveRelations
+		GetNumStanceChanges
+		GetNumStanceChangesInfo
+		GetOpinionDescription
+		GetOpinionOf
+		GetOverlord
+		GetOwnedProvinceCount
+		GetOwnedProvinceTooltip
+		GetPersonality
+		GetPoliticalInfluence
+		GetPoliticalInfluenceDescription
+		GetPopulation
+		GetPopulationHeaderToolTip
+		GetPossibleCivilWarTooltip
+		GetPossibleRevoltTooltip
+		GetPrice
+		GetPriceTooltip
+		GetPrimaryCulture
+		GetProgressTowardsCivilWar
+		GetProgressTowardsRevolt
+		GetRankFrame
+		GetRankInformation
+		GetRankName
+		GetReligion
+		GetReligiousUnity
+		GetResearch
+		GetResearchRatioInfo
+		GetRevoltFrame
+		GetRuler
+		GetRulerTitle
+		GetScore
+		GetScorePopHapiness
+		GetScoreRank
+		GetScoreStartingSituationDivider
+		GetStability
+		GetStabilityTooltip
+		GetStabilityTooltipPlayer
+		GetStates
+		GetSubjectLoyalty
+		GetSubjectLoyaltyInfo
+		GetSuccession
+		GetTag
+		GetTemporaryModifiers
+		GetTimedModifier
+		GetTotalNumOfCohorts
+		GetTotalNumOfShips
+		GetTotalPopulation
+		GetTotalPowerBase
+		GetTreasury
+		GetTreasuryTooltip
+		GetTyranny
+		GetTyrannyTooltip
+		GetVariableExpiry
+		GetWarExhaustion
+		GetWarExhaustionTooltip
+		GetWarExhaustionTooltipPlayer
+		HasActiveOmen
+		HasGovernmentBonus
+		HasParties
+		HasPositiveBalance
+		HasPositiveManpower
+		HasProgressToCivilWar
+		HasProgressToRevolt
+		HasRank
+		HasTimedModifier
+		HasWeakResearch
+		InOffensiveWar
+		IsAtWar
+		IsBarbarian
+		IsHuman
+		IsInCivilWar
+		IsSubject
+		IsValid
+		MakeScope
+		NeverGiveUpTradeSurplus
+		Self
+		UseCoRuler
+		UseConsort
+	}
+
+	CountryDiplomaticItem = {
+		GetCountry
+		AccessSelf
+		GetCountry
+		GetName
+		GetTooltip
+		GetValue
+		OnSelect
+		Self
+	}
+
+	CountryEntry = {
+		AccessSelf
+		GetCountry
+		Self
+	}
+
+	CountryMessage = {
+		GetFirstCountry
+		GetSecondCountry
+		AccessSelf
+		GetFirstCountry
+		GetSecondCountry
+		Self
+	}
+
+	CountryRef = {
+		Get
+		AccessSelf
+		Get
+		Self
+	}
+
+	CreateImportGlue = {
+		GetGoods
+		GetState
+		AccessSelf
+		CanClick
+		GetGoods
+		GetHasSelectedInfo
+		GetName
+		GetState
+		GetTooltip
+		HasSelectedGoods
+		OnClick
+		Self
+	}
+
+	CreateSocialProfile = {
+		AccessSelf
+		Create
+		GetErrorMessage
+		GetName
+		IsCreatingProfile
+		IsValidName
+		Self
+		SetName
+	}
+
+	CreateSocialProfileWindow = {
+		AccessSelf
+		Hide
+		Self
+		ShouldBeShown
+		Show
+	}
+
+	CreateTradeRoute = {
+		GetCountry
+		AccessSelf
+		CanClick
+		GetAcceptanceFrame
+		GetAcceptanceTooltip
+		GetCountry
+		GetName
+		GetTooltip
+		OnClick
+		RequireAcceptance
+		Self
+	}
+
+	CreateTradeWindow = {
+		GetGoods
+		AccessSelf
+		Back
+		Close
+		GetCategories
+		GetCurrentTradeRoutes
+		GetGoods
+		GetStates
+		Self
+		ShowTradeGoods
+	}
+
+	CreditsWindow = {
+		AccessSelf
+		GetCredits
+		IsFastest
+		IsPaused
+		IsSlowest
+		OnClose
+		OnFaster
+		OnSlower
+		OnTogglePause
+		Self
+	}
+
+	Culture = {
+		GetCultureGroup
+		MakeScope
+		AccessSelf
+		GetCultureGroup
+		GetName
+		GetTooltip
+		MakeScope
+		Self
+	}
+
+	CultureGroup = {
+		MakeScope
+		AccessSelf
+		GetName
+		MakeScope
+		Self
+	}
+
+	CurrentBuildingItem = {
+		GetBuilding
+		AccessSelf
+		GetBuilding
+		GetEffectInfo
+		GetLevel
+		GetModifier
+		GetName
+		GetQueueSize
+		HasQueue
+		Self
+	}
+
+	CurveEditor = {
+		AccessSelf
+		Configure
+		Delete
+		Self
+	}
+
+	CurvePoint = {
+		AccessSelf
+		Position
+		Self
+	}
+
+	Date = {
+		AccessSelf
+		GetText
+		Self
+	}
+
+	DecisionItem = {
+		AccessSelf
+		Enact
+		GetAllowedDesc
+		GetAllowedFrame
+		GetEffect
+		GetName
+		IsAllowed
+		Self
+	}
+
+	DecisionsView = {
+		AccessSelf
+		GetDecisions
+		GetPreviousName
+		OnClose
+		OnPrevious
+		Self
+	}
+
+	DeclareWarAlly = {
+		GetCountry
+		AccessSelf
+		GetCallAllyFrame
+		GetCallAllyTooltip
+		GetCountry
+		GetSenateApprovalFrame
+		GetSenateApprovalTooltip
+		GetWillJoinFrame
+		GetWillJoinTooltip
+		IsCallAllyEnabled
+		IsCallAllyVisible
+		IsSenateApprovalVisible
+		OnCallAllyClick
+		OnSenateApprovalClick
+		Self
+		ShouldCallAlly
+		WillBecomeWarleader
+		WillJoin
+	}
+
+	DeclareWarWindow = {
+		AccessSelf
+		GetDesc
+		GetEnemyAllies
+		GetPlayerAllies
+		GetTitle
+		GetWarGoals
+		IsWindowEnabled
+		OnAccept
+		OnDecline
+		Self
+	}
+
+	DetailData = {
+		AccessSelf
+		ErrorsCount
+		IsUpdating
+		MaterialIntensityBias
+		MaterialsLimit
+		Repack
+		Self
+		SetMaterialIntensityBias
+		SetMaterialIntensityBiasStr
+		SetMaterialsLimit
+		SupportedMaterialsLimits
+	}
+
+	DiploIcon = {
+		GetCountry
+		AccessSelf
+		GetCountry
+		GetFlagTexture
+		GetFlagTextureFrame
+		GetIconTexture
+		GetTooltip
+		OnClick
+		OnRightClick
+		Self
+	}
+
+	DiplomacyDialog = {
+		GetCountry
+		AccessSelf
+		GetActionName
+		GetCountry
+		GetIconTexture
+		GetToolTip
+		OnAction
+		Self
+		ShowAction
+	}
+
+	DiplomaticActionCategory = {
+		AccessSelf
+		GetActions
+		GetName
+		IsExpanded
+		OnClick
+		Self
+	}
+
+	DiplomaticActionItem = {
+		AccessSelf
+		GetAcceptanceFrame
+		GetAcceptanceTooltip
+		GetPrice
+		GetPriceInfo
+		GetSenateFrame
+		GetSenateTooltip
+		GetTitle
+		GetTooltip
+		HasPrice
+		HasSenate
+		IsEnabled
+		OnClick
+		OnSenateClick
+		RequireAcceptance
+		Self
+	}
+
+	DiplomaticStance = {
+		AccessSelf
+		GetDesc
+		GetEffect
+		GetName
+		GetTooltip
+		Self
+	}
+
+	DiplomaticStanceItem = {
+		GetStance
+		AccessSelf
+		CanClick
+		GetClickTooltip
+		GetStance
+		OnClick
+		Self
+	}
+
+	DiplomaticView = {
+		GetDefaultActionCategory
+		GetHorde
+		GetPlayer
+		GetTargetCountry
+		GetTargetProvince
+		AccessSelf
+		GetAEChange
+		GetAEChangeInfo
+		GetActions
+		GetCountries
+		GetDefaultActionCategory
+		GetDiplomaticPendingText
+		GetDiplomaticPendingTooltip
+		GetDiplomaticRange
+		GetDiplomaticRangeTooltip
+		GetDiplomaticRelations
+		GetHorde
+		GetNeighborIconFrame
+		GetPlayer
+		GetPreviousName
+		GetRegionIconFrame
+		GetStances
+		GetTargetCountry
+		GetTargetCountryTooltip
+		GetTargetProvince
+		GetTechnologies
+		HasDiplomaticPending
+		HideStances
+		IsShowStances
+		IsSorted
+		OnClose
+		OnPrevious
+		ResetHighlight
+		Self
+		ShowStances
+		Sort
+		ToggleNeighbor
+		ToggleRegion
+		ViewCharacters
+	}
+
+	Dockable = {
+		AccessSelf
+		Close
+		GetWindowFrame
+		IsCloseable
+		MouseFilter
+		Self
+		Title
+	}
+
+	EconomicPolicyGlue = {
+		AccessSelf
+		CanClick
+		GetIconFrame
+		GetName
+		GetTooltip
+		IsSelected
+		OnClick
+		Self
+	}
+
+	EconomyView = {
+		GetPlayer
+		AccessSelf
+		GetBalance
+		GetDeficitEffect
+		GetDeficitTooltip
+		GetExpense
+		GetIncome
+		GetNoDeficitTooltip
+		GetPlayer
+		GetPreviousName
+		GetTotalExpense
+		GetTotalIncome
+		HasDeficit
+		OnClose
+		OnPrevious
+		Self
+	}
+
+	EmitterNodeWindow = {
+		AccessSelf
+		ConfigureUserData
+		Self
+	}
+
+	EndGameView = {
+		AccessSelf
+		GetRank
+		GetText
+		OnExitToDesktop
+		OnExitToFrontEnd
+		OnObserve
+		Self
+	}
+
+	EndPrepConfirm = {
+		AccessSelf
+		Cancel
+		Confirm
+		Self
+	}
+
+	EnforcePeaceView = {
+		AccessSelf
+		GetWars
+		OnClose
+		Self
+	}
+
+	EnumSettingEntry = {
+		AccessSelf
+		AccessSetting
+		GetEnumString
+		GetGUIName
+		GetTooltip
+		IsSelected
+		Self
+	}
+
+	ErrorMessageBox = {
+		AccessSelf
+		GetErrorMessage
+		Hide
+		Self
+		Show
+	}
+
+	EthnicityItem = {
+		AccessSelf
+		GetName
+		Self
+	}
+
+	EventInfo = {
+		AccessSelf
+		GetAsWhoInfo
+		GetDate
+		GetName
+		Self
+	}
+
+	EventOption = {
+		AccessSelf
+		Effects
+		GetText
+		GetTooltip
+		IsHighlighted
+		Select
+		Self
+	}
+
+	EventTargetSetupContext = {
+		AccessVariableLists
+		AccessVariables
+		AccessSelf
+		Self
+	}
+
+	EventWindow = {
+		GetLeftPortraitCharacter
+		GetRightPortraitCharacter
+		AccessSelf
+		GetDebugInfo
+		GetDescription
+		GetEventPicture
+		GetEventPictureSize
+		GetLeftPortraitCharacter
+		GetRightPortraitCharacter
+		GetSignature
+		GetSigned
+		GetThemeIcon
+		GetTitle
+		GoToLocation
+		HasLeftPortraitCharacter
+		HasLocation
+		HasPortraitCharacters
+		HasRightPortraitCharacter
+		Self
+	}
+
+	ExpenseItem = {
+		AccessSelf
+		GetModifierIcon
+		GetModifierTooltip
+		GetModifierValue
+		GetName
+		GetPolicies
+		GetTooltip
+		GetValue
+		HasModifier
+		Self
+	}
+
+	ExportBonus = {
+		GetTradeGoods
+		AccessSelf
+		GetTooltip
+		GetTradeGoods
+		Self
+	}
+
+	EyeDropper = {
+		GetHoverSample
+		AccessSelf
+		PackedSamples
+		Self
+	}
+
+	EyeDropperPackedSample = {
+		GetSample
+		AccessSelf
+		GetChannel
+		Self
+	}
+
+	EyedropperMode = {
+		AccessSelf
+		IsSelected
+		Self
+	}
+
+	Family = {
+		GetCulture
+		GetReligion
+		MakeScope
+		AccessSelf
+		GetBackgroundColor
+		GetCulture
+		GetFamilyHead
+		GetMembers
+		GetMembersText
+		GetName
+		GetNumOfMembers
+		GetNumberOfExpectedJobs
+		GetNumberOfJobs
+		GetPowerBase
+		GetPowerBaseInfo
+		GetPrestige
+		GetPrestigeTooltip
+		GetReligion
+		GetWageTooltip
+		IsMinor
+		IsScorned
+		MakeScope
+		Self
+	}
+
+	FamilyGlue = {
+		GetFamily
+		AccessSelf
+		GetCharacters
+		GetFamily
+		Self
+	}
+
+	FamilyMember = {
+		GetCharacter
+		AccessSelf
+		GetCharacter
+		Self
+	}
+
+	FindProvinceItem = {
+		AccessSelf
+		AddHighlight
+		GetText
+		OnClick
+		Self
+	}
+
+	FindProvinceView = {
+		AccessSelf
+		GetExactMatchesFrame
+		GetProvinces
+		OnClose
+		OnExactMatchesClick
+		OnFindTextChanged
+		Self
+	}
+
+	ForeignTechItem = {
+		AccessSelf
+		GetIconFrame
+		GetLevel
+		GetLevelInfo
+		GetName
+		Self
+	}
+
+	FortFlipRestoreIcon = {
+		AccessSelf
+		GetProgress
+		GetTooltip
+		Self
+	}
+
+	FortMapIcon = {
+		GetSiege
+		AccessSelf
+		GetFrame
+		GetSiege
+		GetSiegeTooltip
+		GetTooltip
+		HasSiege
+		IsOccupied
+		OnClick
+		Self
+	}
+
+	Friend = {
+		AccessSelf
+		GetAvailabilityString
+		GetName
+		GetNameWithColor
+		GetUnreadMessageCount
+		HasUnreadMessages
+		RemoveWithConfirmation
+		Self
+		StartChat
+	}
+
+	FriendListWindow = {
+		AccessSelf
+		Hide
+		Self
+		ShouldBeShown
+		Show
+		ShowAddFriendWindow
+	}
+
+	FriendRequest = {
+		Accept
+		AccessSelf
+		GetName
+		Reject
+		Self
+	}
+
+	FriendSearchResult = {
+		AccessSelf
+		AddFriend
+		GetName
+		Self
+	}
+
+	Friends = {
+		AccessAvailabilityEntries
+		AccessFriendRequests
+		AccessFriendSearchResults
+		AccessFriends
+		AccessOutgoingFriendRequests
+		AccessSelf
+		CalcNumberOfOnlineFriends
+		GetAvailabilityStringForLocalAccount
+		GetLocalProfileName
+		GetSearchString
+		GetSelectedAvailabilityEntryIndex
+		HasIngoingFriendRequests
+		HasOutgoingFriendRequests
+		Search
+		Self
+		SetSearchString
+		SetSelectedAvailabilityEntryIndex
+		UpdateFriends
+	}
+
+	FrontEndCreditsView = {
+		AccessSelf
+		OnBack
+		Self
+	}
+
+	FrontEndLoadView = {
+		AccessSaves
+		AccessSelf
+		IsWindowEnabled
+		OnBack
+		OnDelete
+		OnLoad
+		Self
+		UpdateFilter
+	}
+
+	FrontEndMainView = {
+		AccessSelf
+		OnContent
+		OnCredits
+		OnMultiPlayer
+		OnNudge
+		OnQuit
+		OnSettings
+		OnSinglePlayer
+		Self
+	}
+
+	FrontEndMultiplayerView = {
+		AccessSelf
+		OnBack
+		OnHost
+		OnLoad
+		OnNewGame
+		Self
+	}
+
+	FrontEndSinglePlayerView = {
+		AccessSelf
+		ContinuePossible
+		ContinueTooltip
+		OnBack
+		OnContinue
+		OnLoad
+		OnNewGame
+		OnTutorial
+		Self
+	}
+
+	GUIAchievement = {
+		GetAchievement
+		AccessLockedTexture
+		AccessSelf
+		AccessTexture
+		GetAchievement
+		GetDescription
+		GetHappenedDescription
+		GetName
+		IsPossible
+		OnClick
+		Remove
+		Self
+	}
+
+	GameConfigurationWindow = {
+		AccessSelf
+		CanChangeConfiguration
+		DecreaseDifficulty
+		GetDifficulty
+		GetDifficultyToolTip
+		GetGenderRulesFrame
+		GetIronmanFrame
+		HasGenderRules
+		IncreaseDifficulty
+		IsIronman
+		Self
+		ToggleGenderRules
+		ToggleIronman
+	}
+
+	GameLobby = {
+		GetGameConfigWindow
+		AccessSelf
+		Self
+		StartGame
+	}
+
+	GeneItem = {
+		AccessSelf
+		GetName
+		Self
+	}
+
+	GenerationItem = {
+		AccessSelf
+		GetChildPortraitItems
+		Self
+	}
+
+	GfxSkin = {
+		AccessSelf
+		GetFolders
+		GetName
+		GetPath
+		GetTextures
+		Self
+	}
+
+	GoodsMessage = {
+		GetGoods
+		AccessSelf
+		GetGoods
+		Self
+	}
+
+	Government = {
+		AccessSelf
+		GetBonusDescription
+		GetDesc
+		GetName
+		GetTooltip
+		IsMonarchy
+		IsRepublic
+		IsTribal
+		Self
+	}
+
+	GovernmentSuccession = {
+		GetPrimaryHeir
+		GetSecondaryHeir
+		AccessSelf
+		GetPrimaryHeir
+		GetSecondaryHeir
+		GetSuccessors
+		Self
+	}
+
+	GovernmentView = {
+		GetCharacter
+		GetNextParty
+		GetPlayer
+		GetSenateLeader
+		AccessSelf
+		CanIncreaseLegitimacy
+		GetCentralizationChangeFrame
+		GetCentralizationChangeTooltip
+		GetCentralizationEffectInfo
+		GetCharacter
+		GetCharismaTooltip
+		GetClanLeaders
+		GetCurrentLaws
+		GetFinesseTooltip
+		GetIncreaseLegitimacyDesc
+		GetLeftSenate
+		GetLegitimacyChangeFrame
+		GetLegitimacyChangeTooltip
+		GetLegitimacyEffectInfo
+		GetLegitimacyTooltip
+		GetMartialTooltip
+		GetNextParty
+		GetNextPartyInfo
+		GetOfficeHolders
+		GetOfficeName
+		GetParties
+		GetPlayer
+		GetPreferredRetinueItems
+		GetPreviousName
+		GetRightSenate
+		GetRulerCorruption
+		GetRulerCorruptionToolTip
+		GetRulerPopularity
+		GetRulerPopularityToolTip
+		GetSenateLeader
+		GetSuccessionScore
+		GetSuccessionScoreInfo
+		GetTermDuration
+		GetTermDurationInfo
+		GetZealTooltip
+		IncreaseLegitimacy
+		IsShowGovernment
+		IsShowLaws
+		IsShowOffices
+		OnClose
+		OnPrevious
+		Self
+		ShowGovernment
+		ShowLaws
+		ShowOffices
+	}
+
+	GovernorPolicy = {
+		AccessSelf
+		GetName
+		GetTooltip
+		Self
+	}
+
+	Governorship = {
+		GetGovernor
+		GetGovernorOrRuler
+		MakeScope
+		AccessSelf
+		GetGovernor
+		GetGovernorOrRuler
+		GetName
+		GetPopulation
+		GetPopulationInfo
+		GetStatesInfo
+		GetTotalPopulation
+		GetUnitsInfo
+		HasUnits
+		IsCapitalRegion
+		MakeScope
+		Self
+	}
+
+	Graph = {
+		AccessSelf
+		Errors
+		HasErrors
+		Self
+	}
+
+	GraphInterfaceNodeWindow = {
+		AccessSelf
+		AddPin
+		Self
+	}
+
+	GraphPanel = {
+		AccessSelf
+		ClearSelection
+		CompoundNodeUpdated
+		Copy
+		Cut
+		Delete
+		Fit
+		InvertSelection
+		IsPasteable
+		IsRedoable
+		IsSaveable
+		IsUndoable
+		Load
+		New
+		Paste
+		PasteSkipOuter
+		Properties
+		Redo
+		Save
+		SaveAs
+		SelectAll
+		Self
+		SetZoom
+		ShowNodeSearch
+		Undo
+	}
+
+	Group = {
+		AccessSelf
+		AccessVisibleAchievements
+		CalcNumberOfUnlockedAchievements
+		GetName
+		GetNumberOfAchievements
+		IsCollapsed
+		Self
+		ToggleCollapsed
+	}
+
+	GuiContext = {
+		AccessSelf
+		GetScreenResolution
+		Self
+	}
+
+	GuiEditor = {
+		SelectionHistory
+		AccessSelf
+		GetSelectedAnchor
+		GetSelectedName
+		GetSelectedParentAnchor
+		GetSelectedType
+		HasWidgetSelected
+		HasWidgetSelectedParent
+		IsDescSelected
+		IsEnableAutosave
+		IsEnableEdit
+		IsEnableFilterFunctions
+		IsEnableFilterOrphanTypes
+		IsEnableFilterPromotes
+		IsEnableFilterTypes
+		IsEnableHierarchy
+		IsEnableOutsideParent
+		IsRedoable
+		IsUndoable
+		SelectNext
+		SelectPrevious
+		Self
+	}
+
+	GuiEditorCategory = {
+		AccessSelf
+		AddProperty
+		OpenFile
+		SelectDescription
+		Self
+	}
+
+	GuiEditorDockable = {
+		AccessSelf
+		OnClose
+		Self
+		Title
+	}
+
+	GuiEditorOutliner = {
+		AccessSelf
+		GetFilterCount
+		HasFilterMatches
+		IsDescTreeFiltered
+		IsShowOnlyActiveFile
+		OpenWindowMenu
+		Self
+		SetShowOnlyActiveFile
+	}
+
+	GuiEditorProperties = {
+		GuiEditor
+		AccessSelf
+		Add
+		CollapseCategories
+		IsShowAll
+		Self
+		SetPropertyFilter
+		SetShowAll
+	}
+
+	GuiEditorProperty = {
+		ToolProperty
+		AccessSelf
+		IsProperty
+		OpenDataPropertySelector
+		RemoveProperty
+		Self
+	}
+
+	Heightmap = {
+		AccessSelf
+		GetHeightmapSize
+		Self
+	}
+
+	HeightmapPainter = {
+		AccessSelf
+		GetSmoothAmount
+		Self
+		SetSmoothAmount
+	}
+
+	HeightmapPainterMode = {
+		AccessSelf
+		IsSelected
+		Self
+	}
+
+	HeightmapResolution = {
+		AccessSelf
+		ClearSelection
+		Decrease
+		GetRectangleSelect
+		Increase
+		InvertSelection
+		SelectAll
+		SelectedCount
+		Self
+	}
+
+	HeirSupportGlue = {
+		GetHeir
+		AccessSelf
+		GetHeir
+		GetTooltip
+		GetValue
+		Self
+	}
+
+	Heritage = {
+		GetModifier
+		AccessSelf
+		GetDesc
+		GetEffect
+		GetModifier
+		GetName
+		GetTooltip
+		Self
+	}
+
+	Horde = {
+		GetArmy
+		GetCulture
+		GetLeader
+		GetReligion
+		AccessSelf
+		GetArmy
+		GetCivilizationValue
+		GetCulture
+		GetLeader
+		GetLoot
+		GetName
+		GetOccupationCount
+		GetOccupationTooltip
+		GetPossibleSlaves
+		GetReligion
+		HasArmy
+		Self
+	}
+
+	Idea = {
+		AccessSelf
+		GetDesc
+		GetFullDescription
+		GetName
+		Self
+	}
+
+	IdeaGroupsArray = {
+		AccessSelf
+		GetIconTexture
+		GetItems
+		GetName
+		Self
+	}
+
+	IdeaItem = {
+		GetIdea
+		AccessSelf
+		CanBePicked
+		GetGroupMatchingTooltip
+		GetGroupTexture
+		GetIcon
+		GetPickInformation
+		IsMisMatch
+		IsValid
+		OpenSelection
+		Pick
+		Self
+	}
+
+	ImageImport = {
+		AcceptSelection
+		AccessSelf
+		Commit
+		DeltaTexture
+		Fit
+		IsCommitable
+		IsDeltaVisible
+		IsLoaded
+		IsSane
+		LoadStep
+		LoadSteps
+		OutputTexture
+		Self
+		Size
+		Skip
+		ToggleDeltaVisible
+		Zoom
+	}
+
+	InGameTopbar = {
+		AccessCoatOfArms
+		GetPlayer
+		AccessCoatOfArms
+		AccessSelf
+		GetFlagDesc
+		GetFlagEntity
+		GetMinorEventItems
+		GetPlayer
+		GetTutorialFrame
+		IsTutorialActive
+		OpenView
+		Self
+	}
+
+	IncomeItem = {
+		AccessSelf
+		GetModifierIcon
+		GetModifierTooltip
+		GetModifierValue
+		GetName
+		GetPolicies
+		GetTooltip
+		GetValue
+		HasModifier
+		Self
+	}
+
+	InteractionItem = {
+		AccessSelf
+		GetClickSound
+		GetName
+		GetSenateFrame
+		GetSenateTooltip
+		GetTooltip
+		HasSenate
+		IsEnabled
+		OnClick
+		OnSenateClick
+		Self
+	}
+
+	Invention = {
+		GetModifier
+		AccessSelf
+		GetLevel
+		GetModifier
+		GetRomanLevel
+		GetRomanTooltip
+		GetSpecialTooltip
+		IsSpecial
+		Self
+	}
+
+	InventionItem = {
+		GetInvention
+		AccessSelf
+		Buy
+		CanBuy
+		GetFrame
+		GetInvention
+		GetName
+		GetTooltip
+		Self
+	}
+
+	JominiGUISetting = {
+		AccessSelf
+		GetTooltip
+		Self
+		ShouldShow
+	}
+
+	JominiPasswordPopup = {
+		AccessSelf
+		OnDecline
+		OnSubmit
+		Self
+	}
+
+	JominiServer = {
+		AccessSelf
+		GetHasPassword
+		GetMaxPlayers
+		GetName
+		GetNumPlayers
+		GetStatus
+		GetVersion
+		IsSameVersion
+		Join
+		Self
+	}
+
+	JominiServerBrowserGui = {
+		AccessSelf
+		AccessServers
+		GetServers
+		IsCrossPlatformFilterSet
+		IsEmptyFilterSet
+		IsFullFilterSet
+		IsHasPasswordFilterSet
+		IsSameModsFilterSet
+		IsSameVersionFilterSet
+		JoinServerWithId
+		RefreshServers
+		Self
+		SetFilterText
+		SortNumPlayersAsc
+		SortNumPlayersDesc
+		SortPasswordAsc
+		SortPasswordDesc
+		SortServerNameAsc
+		SortServerNameDesc
+		SortStatusAsc
+		SortStatusDesc
+		SortVersionAsc
+		SortVersionDesc
+		ToggleCrossPlatformFilter
+		ToggleEmptyFilter
+		ToggleFullFilter
+		ToggleHasPasswordFilter
+		ToggleSameModsFilter
+		ToggleSameVersionFilter
+	}
+
+	JominiSettingsWindow = {
+		AccessActivePage
+		AccessActivePage
+		AccessPages
+		AccessSelf
+		HasChanged
+		Hide
+		RequireRestart
+		Restore
+		Save
+		SaveAndClose
+		Self
+		Show
+	}
+
+	LanguageEntry = {
+		AccessSelf
+		GetLanguage
+		Self
+	}
+
+	Law = {
+		GetModifier
+		AccessSelf
+		GetModifier
+		GetName
+		IsSuccession
+		Self
+	}
+
+	LawGroupItem = {
+		AccessSelf
+		GetClansFrame
+		GetClansTooltip
+		GetLaws
+		GetName
+		GetSenateFrame
+		GetSenateTooltip
+		HasClans
+		HasSenate
+		OnSenateClick
+		Self
+	}
+
+	LawItem = {
+		GetLaw
+		AccessSelf
+		CanEnact
+		Enact
+		GetFrame
+		GetLaw
+		GetName
+		GetTooltip
+		HasLaw
+		IsAllowed
+		Self
+	}
+
+	Layer = {
+		AccessSelf
+		Self
+	}
+
+	Ledger = {
+		AccessSelf
+		Filter
+		GetCharacters
+		GetCountries
+		GetInventions
+		GetPreviousName
+		GetRulers
+		GetStates
+		IsCharacterSorted
+		IsCountrySorted
+		IsFilterNo
+		IsFilterYes
+		IsFiltered
+		IsInventionsSorted
+		IsPageShown
+		IsRulersSorted
+		IsShowParty
+		IsStatesSorted
+		OnClose
+		OnPrevious
+		Self
+		ShowPage
+		SortCharacters
+		SortCountrys
+		SortInventions
+		SortRulers
+		SortStates
+	}
+
+	LoadIngameWindow = {
+		AccessSelf
+		Cancel
+		IsWindowEnabled
+		OnDelete
+		OnLoad
+		Self
+		UpdateFilter
+	}
+
+	LobbyPlayer = {
+		GetLobbyView
+		GetPlayable
+		AccessSelf
+		CanRemovePlayer
+		GetLoadingString
+		GetName
+		GetTransferProgress
+		HasPlayable
+		IsHotjoining
+		IsObserver
+		IsReady
+		RemovePlayer
+		Self
+		ShowReadyStatus
+	}
+
+	LobbyView = {
+		AccessSelectedPlayable
+		GetSelectedPlayable
+		GetServerInfo
+		AccessSelectedPlayable
+		AccessSelf
+		CanControlSelected
+		CanGoBack
+		CanReady
+		CanStart
+		ControlSelected
+		CopyServerID
+		GetControlToolTip
+		GetEnabledDLCs
+		GetEnabledMods
+		GetGoBackToolTip
+		GetOpenMultiplayerToolTip
+		GetReadyToolTip
+		GetSelectText
+		GoBack
+		HasEnabledDLCs
+		HasEnabledMods
+		HasGameConfigurationWindow
+		HasSelectedPlayable
+		HasServerInfo
+		IsObserver
+		IsReady
+		OpenGameConfigurationWindow
+		OpenMultiplayer
+		Players
+		Ready
+		Self
+		ShouldShowEnabledDLCs
+		ShouldShowEnabledMods
+		ShowHosting
+		ShowModifyServer
+		Start
+		StartToolTip
+		ToggleObserve
+		ToggleShowEnabledDLCs
+		ToggleShowEnabledMods
+		UnReady
+	}
+
+	LogEntry = {
+		AccessSelf
+		GetColor
+		GetText
+		GetTime
+		Self
+	}
+
+	MPConfig = {
+		AccessSelf
+		GetOfflinePlayerToolTip
+		GetPrivateToolTip
+		GetPublicToolTip
+		IsCrossplayChecked
+		IsHotjoinAutoAccept
+		IsOffline
+		IsPrivate
+		IsPublic
+		Self
+		SetOffline
+		SetPrivate
+		SetPublic
+		ToggleCrossplay
+		ToggleHotjoinAutoAccept
+	}
+
+	MacroBuilderBuildInProvince = {
+		AccessSelf
+		GetBuildableGlueItems
+		GetModificationHeaders
+		IsInProvinceMode
+		IsProvincesSorted
+		OnBack
+		Self
+		SortProvinces
+	}
+
+	MacroBuilderPage = {
+		AccessSelf
+		GetIconTexture
+		GetName
+		GetTooltip
+		IsActive
+		OnActivate
+		Self
+	}
+
+	MacroBuilderProvinceBuildable = {
+		AccessSelf
+		GetCanBeBuiltAmount
+		GetIconTexture
+		GetName
+		GetPrice
+		GetPriceTooltip
+		GetProvinceTooltip
+		GetTooltip
+		IsEnabled
+		IsSelected
+		OnClick
+		Self
+	}
+
+	MacroBuilderTradeGood = {
+		AccessSelf
+		GetIconTexture
+		GetName
+		GetTooltip
+		IsEnabled
+		IsSelected
+		OnClick
+		Self
+	}
+
+	MacroBuilderTradeGoodsGroup = {
+		AccessSelf
+		GetName
+		GetTooltip
+		GetTradeGoodsModel
+		Self
+	}
+
+	MacroBuilderView = {
+		AccessActivePage
+		GetActivePage
+		GetBuildInProvince
+		AccessActivePage
+		AccessSelf
+		GetActivePage
+		GetBuildInProvince
+		GetBuildInProvinceModel
+		GetPages
+		GetTradeGoodsModel
+		IsLayoutActive
+		OnClose
+		Self
+	}
+
+	MapAnimatedText = {
+		AccessSelf
+		Done
+		GetText
+		Self
+	}
+
+	MapEditor = {
+		AccessSelf
+		CanToggleMaterialVisibility
+		Exit
+		Import
+		IsEnabled
+		IsRedoable
+		IsSavable
+		IsUndoable
+		Redo
+		Save
+		SaveAs
+		Self
+		Undo
+	}
+
+	MapObjectMask = {
+		AccessSelf
+		GetName
+		GetTextValidator
+		GetThumbnail
+		IsSelected
+		Self
+		SetName
+		SetSelected
+	}
+
+	MapObjectPainter = {
+		AccessSelf
+		GetTextValidator
+		MaskList
+		Self
+	}
+
+	MapObjectPainterMode = {
+		AccessSelf
+		IsSelected
+		Self
+	}
+
+	MapObjectPainterOptions = {
+		AccessSelf
+		GetMaskOpacity
+		GetPaintValue
+		IsCurrentBlendMode
+		Self
+		SetBlendMode
+		SetMaskOpacity
+		SetMaskOpacityStr
+		SetPaintValue
+		SetPaintValueStr
+	}
+
+	MapObjectTool = {
+		MoveTool
+		SelectTool
+		AccessSelf
+		GetCurrentToolDescription
+		GetCurrentToolTitle
+		IsCurrentToolShowingTooltip
+		RotateRandom
+		Self
+	}
+
+	Material = {
+		AccessSelf
+		GetDiffuseTexture
+		GetName
+		GetThumbnail
+		IsHighlighted
+		IsLocked
+		IsSelected
+		Self
+		ToggleHighlight
+		ToggleLocked
+		ToggleSelected
+	}
+
+	MaterialBrowser = {
+		GetCurrentMaterial
+		AccessSelf
+		Apply
+		Cancel
+		GetCurrentMaterialsList
+		GetSearchFilter
+		IsAnyMaterialSelected
+		IsMaterialDisabled
+		IsMaterialSelected
+		Self
+		SetSearchFilter
+		ToggleMaterialSelected
+	}
+
+	MaterialEntry = {
+		GetMaterial
+		AccessSelf
+		GetValue
+		IsVisible
+		Self
+	}
+
+	MaterialMix = {
+		AccessMaterials
+		AccessSelf
+		CanAddMaterialEntry
+		GetMaterials
+		GetMaterialsCount
+		GetName
+		IsPersistent
+		Self
+		SetValue
+		TogglePersistence
+	}
+
+	MaterialMixBrush = {
+		GetHoverSample
+		AccessSamples
+		AccessSelf
+		ChangeSampleEntryComposition
+		Delete
+		EndSampleCompositionEdit
+		IsSampling
+		IsSelected
+		RenameSample
+		Samples
+		Self
+		StartSampleCompositionEdit
+		ToggleSampleEntryLock
+		ToggleSamplePersistence
+		ToggleSelected
+	}
+
+	MaterialMixEntry = {
+		AccessMaterial
+		GetMaterial
+		AccessSelf
+		GetPercentageValue
+		GetValue
+		GetValueAsText
+		IsLocked
+		Self
+		SetPercentageValue
+		ToggleLocked
+	}
+
+	MaterialPaintingMode = {
+		AccessSelf
+		IsEraserSelected
+		IsPainterSelected
+		IsSelected
+		Self
+		ToggleEraser
+	}
+
+	Materials = {
+		AccessSelf
+		GetList
+		List
+		SelectFirst
+		SelectLast
+		SelectNext
+		SelectPrevious
+		Self
+		ToggleHighlight
+		ToggleLocked
+	}
+
+	MaterialsSample = {
+		AccessSelf
+		Entries
+		GetX
+		GetY
+		Self
+	}
+
+	Mercenary = {
+		GetCommander
+		GetEmployer
+		GetHome
+		GetUnit
+		AccessSelf
+		GetCommander
+		GetEmployer
+		GetHome
+		GetMaintenanceInfo
+		GetUnit
+		IsEmployed
+		Self
+	}
+
+	MercenaryItem = {
+		GetMercenary
+		AccessSelf
+		CanFire
+		CanHire
+		GetButtonTooltip
+		GetFireButtonTooltip
+		GetFlagTooltip
+		GetMaintenance
+		GetMercLocName
+		GetMercenary
+		GetStrengthTooltip
+		GetSubUnitCounts
+		GetVisualStrength
+		OnClick
+		OnGoto
+		Self
+	}
+
+	MercenaryRef = {
+		AccessSelf
+		Self
+	}
+
+	MercenaryView = {
+		AccessSelf
+		Filter
+		GetFilteredMercenaries
+		GetPreviousName
+		IsFilterNo
+		IsFilterYes
+		IsFiltered
+		IsShowArmy
+		OnClose
+		OnPrevious
+		Self
+		ShowArmy
+		ShowNaval
+	}
+
+	Message = {
+		AccessSelf
+		GetAcceptButtonText
+		GetDeclineButtonText
+		GetText
+		GetTitle
+		HasOnAccept
+		HasOnDecline
+		OnAccept
+		OnDecline
+		Self
+	}
+
+	MessageLog = {
+		AccessSelf
+		GetMessages
+		OnClose
+		Self
+	}
+
+	MessageMenuItem = {
+		AccessSelf
+		GetLog
+		GetPause
+		GetPopup
+		GetShowOnMap
+		GetText
+		Self
+		SetLog
+		SetPause
+		SetPopup
+		SetShowOnMap
+	}
+
+	MessageSettingItem = {
+		AccessSelf
+		GetText
+		IsChecked
+		OnCheck
+		Self
+	}
+
+	MessageSettings = {
+		AccessSelf
+		Close
+		GetItems
+		GetTitle
+		Save
+		Self
+	}
+
+	MessageSettingsMenu = {
+		AccessSelf
+		Close
+		GetItems
+		Reset
+		Save
+		Self
+		UpdateFilter
+	}
+
+	MigratingPopItem = {
+		GetChange
+		GetPop
+		AccessSelf
+		GetChange
+		GetPop
+		Self
+	}
+
+	MilitaryBonus = {
+		GetBonus
+		AccessSelf
+		GetBonus
+		GetCompleteDescription
+		GetName
+		Self
+	}
+
+	MilitaryBonusPath = {
+		GetEndbonus
+		AccessSelf
+		GetDesc
+		GetEndbonus
+		GetMembers
+		GetName
+		Self
+	}
+
+	MilitaryConstruction = {
+		AccessSelf
+		CancelConstruction
+		GetAdditionalInformation
+		GetDurationInformation
+		GetName
+		GetProgress
+		Self
+	}
+
+	MilitaryConstructionIcon = {
+		AccessSelf
+		GetProgress
+		GetTooltip
+		GetType
+		Self
+	}
+
+	MilitaryTradition = {
+		GetStartBonus
+		AccessSelf
+		GetName
+		GetPaths
+		GetStartBonus
+		GetTooltip
+		Self
+	}
+
+	MilitaryView = {
+		GetPlayer
+		AccessSelf
+		GetPlayer
+		GetPreviousName
+		GetSubUnitCounts
+		IsShowArmyStats
+		IsShowNavyStats
+		IsShowTraditions
+		OnClose
+		OnPrevious
+		Self
+		ShowArmyStats
+		ShowNavyStats
+		ShowTraditions
+	}
+
+	MinorEventItem = {
+		AccessSelf
+		GetDaysRemaining
+		GetDefaultOptionTooltip
+		GetTitle
+		OnClick
+		OnRightClick
+		Self
+	}
+
+	MissionItem = {
+		AccessSelf
+		GetAbortTooltip
+		GetButtonDetails
+		GetButtonTooltip
+		GetCompleteTooltip
+		GetCompletionCriteriaDescription
+		GetDescription
+		GetImage
+		GetImageTooltip
+		GetRewardsDescription
+		GetStartTooltip
+		GetTitle
+		IsAbortAllowed
+		IsCompleteAllowed
+		IsSelected
+		IsStartAllowed
+		OnAbort
+		OnComplete
+		OnSelect
+		OnStart
+		Self
+	}
+
+	MissionLineItem = {
+		AccessSelf
+		GetFrom
+		GetLineFrom
+		GetLineTo
+		GetPoints
+		GetPointsInContainer
+		GetPosition
+		GetSize
+		GetTo
+		IsFromNodeVirtual
+		IsToNodeVirtual
+		Self
+	}
+
+	MissionTaskItem = {
+		AccessSelf
+		GetIcon
+		GetKey
+		GetMutuallyExclusiveTooltip
+		GetPosition
+		GetProgress
+		GetProgressTooltip
+		GetText
+		GetTooltip
+		HasDependencies
+		IsBypassed
+		IsCompleted
+		IsFinal
+		IsInProgress
+		IsInstant
+		IsMutuallyExclusive
+		IsPossible
+		IsPreventedBy
+		IsPreventedByHighlightedTask
+		OnClick
+		OnMouseEnter
+		OnMouseLeave
+		Self
+	}
+
+	MissionView = {
+		GetActiveMission
+		GetSelectedMission
+		AccessSelf
+		GetActiveMission
+		GetAvailableMissions
+		GetHeaderImage
+		GetLineItems
+		GetPreviousName
+		GetSelectedMission
+		GetTaskItems
+		HasAvailableMission
+		IsActiveMissionVisible
+		IsMissionSelectionVisible
+		IsWindowEnabled
+		OnClose
+		OnPrevious
+		Self
+	}
+
+	MixBrushMode = {
+		AccessSelf
+		IsSelected
+		Self
+	}
+
+	ModificationItem = {
+		AccessSelf
+		GetDifference
+		GetDifferenceFormatted
+		GetIcon
+		GetKey
+		GetName
+		GetNewValue
+		GetNewValueFormatted
+		GetOldValue
+		GetOldValueFormatted
+		GetTextIcon
+		Self
+	}
+
+	Modifier = {
+		AccessSelf
+		BuildIconSummary
+		BuildIconSummaryCondensed
+		BuildIconSummaryCondensedOneLine
+		GetIcon
+		GetToolTip
+		Self
+	}
+
+	MoveTool = {
+		AccessSelf
+		IsEditHeightOffset
+		Self
+		SetEditHeightOffset
+	}
+
+	MultiUnitWindow = {
+		GetFirstUnit
+		AccessSelf
+		BuildMergeTooltip
+		BuildReorgTooltip
+		BuildSelectObjectiveTooltip
+		CanMerge
+		CanReorg
+		CanSelectObjective
+		GetFirstUnit
+		GetInfo
+		GetTotalUnitStrength
+		GetTotalUnitStrengthTooltip
+		GetUnits
+		IsArmy
+		OnClose
+		OnMerge
+		OnReorg
+		OnSelectObjective
+		Self
+	}
+
+	MultiplayerSetupWindow = {
+		AccessMPConfig
+		GetMPConfig
+		AccessSelf
+		CanHost
+		Cancel
+		GetDefaultServerName
+		GetDefaultServerPassword
+		Host
+		HostToolTip
+		Self
+		ShouldShowMPConfig
+	}
+
+	NewBornMessage = {
+		GetCharacter
+		AccessSelf
+		GetCharacter
+		Self
+	}
+
+	Node = {
+		AccessSelf
+		ErrorColor
+		Name
+		Self
+		Texture
+		Tooltip
+	}
+
+	NodeError = {
+		AccessSelf
+		GoTo
+		Message
+		Node
+		Self
+	}
+
+	NodeLine = {
+		AccessSelf
+		Color
+		From
+		Position
+		Self
+		Size
+		To
+	}
+
+	NodePin = {
+		AccessSelf
+		Color
+		Highlight
+		IsInlinedNodeConnected
+		Name
+		Self
+		TypeColor
+		TypeText
+	}
+
+	NodeWindow = {
+		AccessSelf
+		Close
+		NameDialog
+		Self
+	}
+
+	NonRegisteredDockable = {
+		AccessSelf
+		GetID
+		Self
+	}
+
+	Nudger = {
+		AccessSelf
+		DeleteSelected
+		Deselect
+		IsMultiSpawnEnabled
+		IsSelectedDone
+		IsShowProgress
+		OnTypeClicked
+		Self
+		SetAllLocked
+		SetMultiSpawnEnabled
+		SetSelectedDone
+		SetShowProgress
+	}
+
+	NudgerMode = {
+		AccessSelf
+		IsSelected
+		Self
+	}
+
+	ObjectBrowser = {
+		AccessSelf
+		CopyAsCSV
+		ForceUpdate
+		GetFilterString
+		GetNumObjectsFiltered
+		GetNumObjectsTotal
+		GetProviders
+		GetSelectedProvider
+		GetSelectedView
+		GetViews
+		HasConfig
+		IsObjectSelected
+		IsOutputFlattened
+		IsWaitingForProvider
+		RequestUpdate
+		SelectProvider
+		SelectView
+		Self
+		SetFilterString
+		SetObjectSelected
+		ToggleObjectSelected
+		ToggleOutputFlattened
+	}
+
+	ObjectBrowserView = {
+		AccessSelf
+		Name
+		Self
+	}
+
+	ObjectInspector = {
+		AccessPluginEntries
+		AccessSelf
+		GetObjectName
+		GetTypeName
+		Self
+	}
+
+	ObjectInspectorDockable = {
+		AccessSelf
+		Detach
+		IsAttached
+		Self
+	}
+
+	ObjectInspectorPlugin = {
+		AccessSelf
+		GetErrorMessage
+		GetTitle
+		HasError
+		Self
+	}
+
+	ObjectProvider = {
+		AccessSelf
+		Name
+		RequestUpdate
+		Self
+	}
+
+	OfferPeaceWindow = {
+		GetActive
+		GetPassive
+		AccessSelf
+		GetAcceptanceFrame
+		GetAcceptanceTooltip
+		GetActive
+		GetAllies
+		GetCategories
+		GetDemandText
+		GetDesc
+		GetEnemies
+		GetEnforceableDesc
+		GetEnforceableFrame
+		GetPassive
+		GetPeaceTreaties
+		GetTitle
+		GetTotalAgressiveExpansion
+		GetTotalAgressiveExpansionDesc
+		GetTotalCost
+		IsAutoEnforceAvailable
+		IsDemanding
+		IsEnforceable
+		IsSorted
+		IsStabhit
+		OnAccept
+		OnAcceptEnabled
+		OnAcceptTooltip
+		OnDecline
+		OnDemand
+		OnOffer
+		OnResetPeaceOffer
+		OnSuggestPeaceOffer
+		Self
+		Sort
+		WillInheritWars
+	}
+
+	Office = {
+		AccessSelf
+		GetCulturalName
+		GetName
+		GetRequiredSkill
+		Self
+	}
+
+	OfficeHolderItem = {
+		GetCharacter
+		GetModifier
+		GetOffice
+		AccessSelf
+		CanChange
+		ChangeHolder
+		GetChangeTooltip
+		GetCharacter
+		GetLoyaltyInformation
+		GetModifier
+		GetName
+		GetNameDesc
+		GetOffice
+		GetSkillTooltip
+		GetTooltip
+		HasHolder
+		Self
+	}
+
+	Omen = {
+		GetIcon
+		AccessSelf
+		GetDesc
+		GetEffect
+		GetIcon
+		GetName
+		Self
+	}
+
+	OmenItem = {
+		GetOmen
+		AccessSelf
+		CanInvoke
+		GetDesc
+		GetFlavor
+		GetInvokeReason
+		GetName
+		GetOmen
+		Invoke
+		Self
+	}
+
+	OptionEffectItem = {
+		GetTraitItem
+		AccessSelf
+		AffectedByTrait
+		GetTraitItem
+		IsCritical
+		IsDeath
+		IsGain
+		IsLoss
+		IsTrait
+		Self
+	}
+
+	OutgoingFriendRequest = {
+		AccessSelf
+		GetName
+		Remove
+		Self
+	}
+
+	Outliner = {
+		AccessSelf
+		GetCategories
+		OnShowSettings
+		Self
+	}
+
+	OutlinerCategory = {
+		AccessSelf
+		GetItemCount
+		GetItems
+		GetName
+		GetTooltip
+		IsCollapsed
+		IsVisible
+		Self
+		ToggleCollapsed
+		ToggleVisible
+	}
+
+	OutlinerItem = {
+		AccessSelf
+		GetIcon
+		GetStatus
+		GetStatusPercent
+		GetText
+		GetTooltip
+		IsStatusProgress
+		IsStatusText
+		OnClick
+		OnRightClick
+		Self
+	}
+
+	OutlinerSettings = {
+		AccessSelf
+		GetCategories
+		OnClose
+		Self
+	}
+
+	OutputEntry = {
+		AccessSelf
+		GetInputTextures
+		GetPath
+		IsValid
+		Self
+	}
+
+	OverviewView = {
+		GetPlayer
+		AccessSelf
+		GetCountryModifiers
+		GetGovBonusFrame
+		GetGovBonusTooltip
+		GetIdeaItems
+		GetPlayer
+		GetPopCultures
+		GetPopReligions
+		GetPopTypes
+		GetPowerBaseInfo
+		GetPreviousName
+		GetStates
+		IsSorted
+		OnClose
+		OnPrevious
+		Self
+		Sort
+	}
+
+	OverwriteSaveWindow = {
+		AccessSelf
+		Cancel
+		Confirm
+		GetText
+		Self
+	}
+
+	POPSCreateAccount = {
+		AccessSelf
+		CanCreateAccount
+		CreateAccount
+		GetAddressLineOne
+		GetAddressLineTwo
+		GetCity
+		GetCountries
+		GetCreatedAccount
+		GetDays
+		GetEmail
+		GetErrorMessage
+		GetFirstName
+		GetLanguages
+		GetLastName
+		GetMonths
+		GetOptedIntoMarketingChecked
+		GetPassword
+		GetPhone
+		GetSelectedCountryIndex
+		GetSelectedDayIndex
+		GetSelectedLanguageIndex
+		GetSelectedMonthIndex
+		GetSelectedYearIndex
+		GetState
+		GetYears
+		GetZipCode
+		Hide
+		IsCreatingAccount
+		OnCountryChanged
+		OnDayChanged
+		OnLanguageChanged
+		OnMonthChanged
+		OnOptedIntoMarketingToggled
+		OnYearChanged
+		Self
+		SetAddressLineOne
+		SetAddressLineTwo
+		SetCity
+		SetEmail
+		SetFirstName
+		SetLastName
+		SetPassword
+		SetPhone
+		SetState
+		SetZipCode
+		Show
+		ShowPP
+		ShowToU
+	}
+
+	POPSLoginView = {
+		AccessSelf
+		GetEmail
+		GetErrorMessage
+		GetLoginString
+		GetPassword
+		Hide
+		IsLoggingIn
+		IsValidLoginInfo
+		Login
+		Self
+		SetEmail
+		SetPassword
+		Show
+	}
+
+	POPSStatusWidget = {
+		AccessSelf
+		ConnectAccount
+		DisconnectAccount
+		GetLoginStatus
+		Hide
+		IsAccountConnected
+		IsBusy
+		IsLoggedIn
+		IsLoggingIn
+		IsOffline
+		Logout
+		Self
+		Show
+		SupportsConnectAccount
+		ToggleCreateAccountWindow
+		ToggleCreateProfileWindow
+		ToggleLoginWindow
+	}
+
+	ParametricSelect = {
+		AccessSelf
+		IsHeightDeltaEnabled
+		IsHeightRangeEnabled
+		Select
+		Self
+		SetHeightDeltaMax
+		SetHeightDeltaMin
+		SetHeightRangeMax
+		SetHeightRangeMin
+		Toggle
+	}
+
+	ParticleUserData = {
+		AccessSelf
+		Id
+		IsSelected
+		Label
+		Remove
+		Self
+		ToggleSelected
+		TypeName
+		TypeSize
+	}
+
+	Party = {
+		GetCountry
+		GetLeader
+		MakeScope
+		AccessSelf
+		GetCountry
+		GetLeader
+		MakeScope
+		Self
+	}
+
+	PartyImpact = {
+		AccessSelf
+		GetInfoForPlayer
+		Self
+	}
+
+	PartyItemGlue = {
+		GetPartyLeader
+		GetType
+		AccessSelf
+		CanEndorse
+		Endorse
+		GetEndorseReason
+		GetInPowerInfo
+		GetPartyLeader
+		GetPartyName
+		GetSenateSeats
+		GetSenateSupportDesc
+		GetTooltip
+		GetType
+		IsInPower
+		Self
+	}
+
+	PartyType = {
+		AccessSelf
+		GetName
+		Self
+	}
+
+	PauseMenu = {
+		AccessSelf
+		ExitToDesktop
+		ExitToFrontend
+		IsAchievementsAvailable
+		IsMainWindowEnabled
+		LoadIngame
+		LoadIngameTooltip
+		OpenAchievements
+		OpenMessageSettings
+		OpenMultiplayer
+		OpenPrivacyPolicy
+		OpenSettings
+		Resume
+		Save
+		Self
+	}
+
+	PdxCoreSetting = {
+		AccessSelf
+		RequireRestart
+		Self
+	}
+
+	PdxGuiFoldOut = {
+		AccessSelf
+		Fold
+		IsFolded
+		IsUnfolded
+		Self
+		SetFoldState
+		Toggle
+		Unfold
+	}
+
+	PdxGuiTableRow = {
+		AccessSelf
+		GetIndex
+		Self
+	}
+
+	PdxGuiTreeTable = {
+		AccessSelf
+		CanExpand
+		Expand
+		GetDepth
+		GetIndent
+		GetNumChildren
+		IsExpanded
+		Self
+		ToggleExpand
+		Unexpand
+	}
+
+	PdxGuiWidget = {
+		AccessChild
+		AccessParent
+		FindChild
+		AccessParent
+		AccessSelf
+		FindChild
+		GetRawShortcut
+		GetShortcut
+		Hide
+		InterruptAnimation
+		InterruptThenTriggerAnimation
+		Self
+		Show
+		StackBottom
+		StackTop
+		TriggerAnimation
+	}
+
+	PdxProfiler = {
+		GetName
+		AccessSelf
+		Self
+	}
+
+	PdxSetting = {
+		GetSettingPromoted
+		AccessSelf
+		AccessSetting
+		GetSetting
+		GetTitle
+		HasChanged
+		Self
+	}
+
+	PdxSettingsWindow = {
+		AccessSelf
+		HasChanged
+		OnCancel
+		OnRestore
+		OnSave
+		RequiresRestart
+		Self
+	}
+
+	PdxSettingsWindowCategory = {
+		AccessSelf
+		GetName
+		Self
+	}
+
+	PdxSettingsWindowScopedCategory = {
+		GetCategory
+		AccessSelf
+		Self
+	}
+
+	PdxValueSetting = {
+		AccessSelf
+		GetFormatedValue
+		GetValue
+		Self
+	}
+
+	PeaceOfferCategory = {
+		AccessSelf
+		GetIcon
+		GetIconFrame
+		GetName
+		GetTooltip
+		IsEnabled
+		IsSelected
+		OnClick
+		Self
+	}
+
+	PeaceOfferParticipant = {
+		GetCountry
+		AccessSelf
+		GetCountry
+		GetTooltip
+		OnClick
+		Self
+	}
+
+	Playable = {
+		GetCountry
+		AccessSelf
+		Self
+	}
+
+	PlayerJoinRequest = {
+		Accept
+		AccessSelf
+		GetPlayerName
+		Reject
+		Self
+	}
+
+	Pop = {
+		GetCulture
+		GetProvince
+		GetReligion
+		GetType
+		MakeScope
+		AccessSelf
+		GetCulture
+		GetName
+		GetProvince
+		GetReligion
+		GetType
+		MakeScope
+		Self
+	}
+
+	PopChange = {
+		GetChange
+		GetPop
+		GetTarget
+		AccessSelf
+		GetChange
+		GetPop
+		GetProgress
+		GetTarget
+		Self
+	}
+
+	PopCultureItem = {
+		AccessSelf
+		GetColor
+		GetSize
+		GetTooltip
+		Self
+	}
+
+	PopItem = {
+		GetPop
+		AccessSelf
+		GetCount
+		GetHappyness
+		GetHappynessTooltip
+		GetIconTexture
+		GetPop
+		Self
+	}
+
+	PopReligionItem = {
+		AccessSelf
+		GetColor
+		GetName
+		GetSize
+		Self
+	}
+
+	PopType = {
+		AccessSelf
+		GetFullDescription
+		GetName
+		Self
+	}
+
+	PopTypeItem = {
+		AccessSelf
+		GetColor
+		GetName
+		GetSize
+		Self
+	}
+
+	PopupMenu = {
+		AccessSelf
+		GetModel
+		Self
+	}
+
+	PopupMenuItem = {
+		AccessSelf
+		GetText
+		GetTooltip
+		IsEnabled
+		OnClick
+		Self
+	}
+
+	PortMapIcon = {
+		AccessSelf
+		GetBackgroundFrame
+		GetLabel
+		GetTooltip
+		HasVisibleShips
+		OnClick
+		Self
+		ShouldBeHighlighted
+		ShouldBeShown
+	}
+
+	Portrait3dView = {
+		AccessSelf
+		Close
+		GetPortraitContext
+		GetPortraitEntity
+		Self
+	}
+
+	PortraitEditorWindow = {
+		GetCharacter
+		GetChildGenerator
+		GetSelectedEthnicityItem
+		GetSelectedGeneItem
+		AccessSelf
+		Close
+		GetAge
+		GetAgePercent
+		GetCurrentGeneAccessoryString
+		GetDNA
+		GetPortraitTexture
+		GetSelectedGeneTemplateColorX
+		GetSelectedGeneTemplateColorY
+		GetSelectedGeneTemplateStrength
+		GetSliderMaxValue
+		GetSliderMinValue
+		HasAnySliders
+		IsCurrentContentTab
+		IsSelectedAccessoryGene
+		IsSelectedColorGene
+		IsSelectedMorphGene
+		IsSliderMode
+		IsSliderPortraitType
+		OnAgeChanged
+		OnChangeEthnicityLeft
+		OnChangeEthnicityRight
+		OnChangeGeneLeft
+		OnChangeGeneRight
+		OnChangeSubGeneItemLeft
+		OnChangeSubGeneItemRight
+		OnCopyDNA
+		OnGenerateFromEthnicity
+		OnGenerateFromEthnicityExcept
+		OnPasteDNA
+		OnResetDNA
+		Open3dView
+		ResetSliders
+		Self
+		SetContentTab
+		SetSliderMode
+		SetSliderPortraitType
+	}
+
+	PortraitTooltip = {
+		AccessSelf
+		Self
+	}
+
+	PreferredRetinueItem = {
+		GetType
+		AccessSelf
+		CanClick
+		GetTooltip
+		GetType
+		OnClick
+		Self
+	}
+
+	PreferredUnitItem = {
+		GetType
+		AccessSelf
+		CanClick
+		GetTooltip
+		GetType
+		OnClick
+		Self
+	}
+
+	ProgressInterface = {
+		AccessSelf
+		GetLoadTip
+		GetProgress
+		Self
+	}
+
+	Province = {
+		GetArea
+		GetController
+		GetCulture
+		GetCurrentGrowthPop
+		GetDominantCulture
+		GetDominantReligion
+		GetHorde
+		GetNextBuilding
+		GetOwner
+		GetPopActivity
+		GetRank
+		GetReligion
+		GetState
+		GetTerrain
+		GetTimedModifier
+		GetTradeGoods
+		MakeScope
+		AccessSelf
+		Custom
+		GetActivityInformation
+		GetActivitySpeed
+		GetActivitySpeedTooltip
+		GetActivityStatus
+		GetActualGarrison
+		GetAllowedAmountOfBuildingLevels
+		GetAppliedAttrition
+		GetArea
+		GetBarbarianPower
+		GetBarbarianPowerChange
+		GetBarbarianPowerShortTooltip
+		GetBarbarianPowerTooltip
+		GetBuildFinishedTooltip
+		GetBuildProgress
+		GetBuildingConstructions
+		GetBuildingLevelInformation
+		GetBuildingProgress
+		GetCivilizationMapTooltip
+		GetCivilizationTooltip
+		GetCivilizationValue
+		GetCohortsNeededForSiege
+		GetCommerce
+		GetCommerceDescription
+		GetController
+		GetCulture
+		GetCultureBreakdown
+		GetCurrentGrowthPop
+		GetCurrentIncome
+		GetCurrentManpowerIncome
+		GetCurrentManpowerIncomeDescription
+		GetCurrentPopGrowthStatus
+		GetCurrentPopRatio
+		GetCurrentResearch
+		GetCurrentResearchDescription
+		GetDesiredPopRatio
+		GetDesiredPopRatioInfo
+		GetDominantCulture
+		GetDominantReligion
+		GetFoodIncome
+		GetFoodValueTooltip
+		GetFortLevel
+		GetFortLevelTooltip
+		GetFortificationTooltip
+		GetGarrison
+		GetGarrisonPercentage
+		GetGarrisonTooltip
+		GetGrowthInformation
+		GetHorde
+		GetId
+		GetImpactOnStateLoyalty
+		GetImpactOnStateLoyaltyTooltip
+		GetIncomeDescription
+		GetLocalCivilizationCap
+		GetLocalCivilizationCapTooltip
+		GetLocalCivilizationPercent
+		GetMilitaryConstructions
+		GetModifierPureValue
+		GetModifierTooltip
+		GetModifierValue
+		GetName
+		GetNextBuilding
+		GetNumGoodsProduced
+		GetNumOfCurrentHoldings
+		GetNumOfPossibleHoldings
+		GetOccupierInfo
+		GetOwner
+		GetPopActivity
+		GetPopHappyFrame
+		GetPopHappyInformation
+		GetPopulation
+		GetPopulationBreakdown
+		GetPopulationCapacityInfo
+		GetPopulationCapacityValue
+		GetPopulationInfo
+		GetPopulationTooltip
+		GetProvince
+		GetRank
+		GetReligion
+		GetReligionBreakdown
+		GetShortUnrestDescription
+		GetSize
+		GetState
+		GetStateCapitalTooltip
+		GetTag
+		GetTemporaryModifiers
+		GetTerrain
+		GetTerrainName
+		GetTimedModifier
+		GetTotalAmountOfBuildingLevels
+		GetTradeGoods
+		GetUnrest
+		GetUnrestDescription
+		GetVariableExpiry
+		HasBuildingConstruction
+		HasCityStatus
+		HasOwner
+		HasPirateHaven
+		HasPopActivity
+		HasPopulation
+		HasSiege
+		HasTimedModifier
+		IsCapital
+		IsOccupied
+		IsPopChanging
+		IsPopDeclining
+		IsPopGrowing
+		IsStateCapital
+		MakeScope
+		Self
+	}
+
+	ProvinceRank = {
+		AccessSelf
+		GetDescription
+		GetName
+		GetRankTooltip
+		Self
+	}
+
+	ProvinceViewModifierItem = {
+		GetModifier
+		AccessSelf
+		Exists
+		GetModifier
+		Self
+	}
+
+	ProvinceWindow = {
+		AccessProvince
+		GetProvince
+		GetState
+		AccessSelf
+		BuildBuilding
+		CanBeColonized
+		CanBuildBuilding
+		CanBuildShips
+		CanChangeGovernor
+		CanChangePolicy
+		CanMigrate
+		CanOpenTradeWindow
+		CanTransferOccupation
+		ChangeGovernor
+		ChangePolicy
+		CreateTradeRoute
+		GetAppliedAttrition
+		GetAttritionDescription
+		GetBuildBuildingTooltip
+		GetBuildings
+		GetChangeGovernorTooltip
+		GetColonizeTooltip
+		GetControllerTooltip
+		GetHoldingsCount
+		GetHoldingsOwners
+		GetMigrateTooltip
+		GetModifiers
+		GetOwnerTooltip
+		GetPopCultures
+		GetPopReligions
+		GetPopTypes
+		GetProducedTradeGoodsInfo
+		GetProvince
+		GetProvinceList
+		GetState
+		GetSupplyLimit
+		GetSupplyLimitDescription
+		GetTradeRouteTooltip
+		GetTransferOccupationTooltip
+		HasNoOwner
+		HasProvince
+		HasState
+		IsPlayerProvince
+		Migrate
+		OnClose
+		OpenDiplomacy
+		QuickColonize
+		Self
+		ShowBuildArmies
+		ShowBuildNavies
+		ShowMigrateButton
+		ShowPopDetails
+		ShowSiege
+		TransferOccupation
+	}
+
+	QuickAccessBar = {
+		AccessSelf
+		DropSlot
+		QuickActionApply
+		QuickActionDesc
+		QuickActionEnabled
+		QuickActionIcon
+		Self
+	}
+
+	RansomPrisonerWindow = {
+		AccessSelf
+		CanAccept
+		GetAcceptanceFrame
+		GetAcceptanceTooltip
+		GetDesc
+		GetPrisoners
+		GetTitle
+		OnAccept
+		OnDecline
+		OnPriceChanged
+		Self
+	}
+
+	Region = {
+		MakeScope
+		AccessSelf
+		GetName
+		GetTag
+		MakeScope
+		Self
+	}
+
+	RelationDescItem = {
+		GetCountry
+		AccessFlagIcon
+		AccessSelf
+		GetCountry
+		GetFlagFrame
+		GetToolTip
+		OnClick
+		Self
+	}
+
+	RelationTypeItem = {
+		AccessIcon
+		AccessSelf
+		GetRelations
+		GetToolTip
+		Self
+	}
+
+	Religion = {
+		MakeScope
+		AccessSelf
+		GetName
+		GetTooltip
+		MakeScope
+		Self
+	}
+
+	ReligionView = {
+		GetPlayer
+		AccessSelf
+		CanReduceWarExhaustion
+		GetOmens
+		GetPlayer
+		GetPreviousName
+		GetReduceWarExhaustionTooltip
+		GetReligions
+		GetWarExhaustionChangeFrame
+		GetWarExhaustionChangeTooltip
+		GetWarExhaustionPercentage
+		GetWarExhaustionTooltip
+		OnClose
+		OnPrevious
+		ReduceWarExhaustion
+		Self
+		StabThePig
+	}
+
+	RemoveFriendConfirmWindow = {
+		AccessSelf
+		ConfirmRemove
+		Hide
+		Self
+		ShouldBeShown
+		Show
+	}
+
+	ReorgWindow = {
+		GetLeft
+		GetRight
+		AccessSelf
+		GetLeft
+		GetLeftList
+		GetLeftTypeList
+		GetRight
+		GetRightList
+		GetRightTypeList
+		OnClose
+		Self
+	}
+
+	RepackWindow = {
+		AccessSelf
+		GetCurrentTileSize
+		Repack
+		Self
+		SetTileSize
+		ShouldWrapX
+		Toggle
+		ToggleShouldWrapX
+	}
+
+	ReplayController = {
+		AccessSelf
+		OnAccelerate
+		OnDecelerate
+		OnMaxBackward
+		OnMaxForward
+		OnRewind
+		OnStop
+		OnToEnd
+		Self
+	}
+
+	ResignConfirmationWindow = {
+		AccessSelf
+		Cancel
+		Confirm
+		GetConfirmButtonText
+		GetText
+		Self
+	}
+
+	RulerItem = {
+		GetCharacter
+		GetPartyType
+		AccessSelf
+		GetCharacter
+		GetEndDate
+		GetPartyType
+		GetRulerTitle
+		GetStartDate
+		Self
+	}
+
+	Savable = {
+		AccessSelf
+		Error
+		Filename
+		HasError
+		HasWarning
+		IsFilenameModifiable
+		IsModified
+		IsRevertible
+		Location
+		LocationTooltip
+		RevertLocation
+		Self
+		SetFilename
+		SetLocation
+		SetModified
+		Warning
+	}
+
+	SavableGroup = {
+		AccessSelf
+		HasError
+		HasWarning
+		IsExpanded
+		IsModified
+		IsModifiedIndeterminable
+		IsRevertible
+		Location
+		RevertLocation
+		Savables
+		Self
+		SetLocation
+		SetModified
+		Title
+		ToggleExpanded
+	}
+
+	SaveDialog = {
+		AccessSelf
+		FindGroupLocation
+		FindLocation
+		Groups
+		SavableCount
+		Self
+	}
+
+	SaveGameItem = {
+		AccessSelf
+		GetDate
+		GetMissingDLCString
+		GetName
+		GetPlayerName
+		GetRealDate
+		GetVersionName
+		HasMissingDLC
+		IsCloudSave
+		IsDifferentVersion
+		IsEnabled
+		IsIronman
+		Select
+		Self
+	}
+
+	SaveListWindow = {
+		AccessSaves
+		AccessSelf
+		Self
+	}
+
+	SaveNameWindow = {
+		AccessSelf
+		CanToggleCloudSaves
+		Cancel
+		CloudSaveTooltip
+		GetCloudSaveFrame
+		GetDefaultSaveName
+		GetSaveErrors
+		IsSaveNameOk
+		IsSaveOk
+		IsWindowEnabled
+		OnCloudSaveClick
+		Save
+		Self
+		UpdateFilter
+	}
+
+	SavedEventTargets = {
+		AccessSelf
+		Self
+	}
+
+	Scope = {
+		AreaDefinition
+		Char
+		CharacterJob
+		Combat
+		Country
+		Culture
+		CultureGroup
+		Family
+		From
+		GetCharacter
+		GetCountry
+		GetProvince
+		GetState
+		GetVariable
+		Governorship
+		Party
+		Pop
+		Province
+		Region
+		Religion
+		Siege
+		State
+		SubUnit
+		Unit
+		Var
+		AccessSelf
+		AreaDefinition
+		Char
+		CharacterJob
+		Combat
+		Country
+		Culture
+		CultureGroup
+		Family
+		From
+		GetCharacter
+		GetCountry
+		GetFlagName
+		GetList
+		GetProvince
+		GetState
+		GetValue
+		GetValueWithDefault
+		Governorship
+		Party
+		Pop
+		Province
+		Region
+		Religion
+		Self
+		Siege
+		State
+		SubUnit
+		Unit
+		VarRemaining
+	}
+
+	ScopeDebugData = {
+		AccessSelf
+		GetDebugInformation
+		GetRawID
+		GetTypeData
+		GetTypeID
+		GetTypeName
+		IsValid
+		Self
+		SupportsVariables
+	}
+
+	ScopeDebugInspectorPlugin = {
+		GetScopeData
+		AccessSelf
+		Self
+	}
+
+	ScopeObjectEditor = {
+		AccessSelf
+		AsBool
+		AsColor
+		AsString
+		GetID
+		GetSelectedType
+		GetTypeData
+		GetValue
+		GetVariableTypes
+		IsBool
+		IsColor
+		IsFlag
+		IsNumber
+		IsReference
+		Self
+		SetColor
+		SetFromString
+		SetIDFromString
+		SetSelectedType
+		SetTypeDataFromString
+		ToggleBool
+	}
+
+	ScopeObjectProvider = {
+		AccessSelf
+		GetError
+		GetFilteredResultCount
+		GetTotalResultCount
+		GetTriggerString
+		HasError
+		Self
+		SetTriggerString
+		UpdateFilter
+	}
+
+	ScopeObjectType = {
+		AccessSelf
+		GetName
+		Self
+	}
+
+	ScopedJominiSettingsCategory = {
+		AccessCategory
+		GetCategory
+		AccessSelf
+		Self
+	}
+
+	ScopedJominiSettingsPage = {
+		AccessPage
+		GetPage
+		AccessSelf
+		Self
+	}
+
+	ScoreView = {
+		AccessSelf
+		GetCountries
+		GetScoreRank
+		OnClose
+		Self
+	}
+
+	ScriptRunnerInspector = {
+		AccessEffectResult
+		AccessEventTargets
+		AccessTriggerResult
+		AccessSelf
+		GetEffect
+		GetTrigger
+		ParseEffect
+		RunEffect
+		RunTrigger
+		Self
+		SetEffect
+		SetTrigger
+		ShouldModifyEventTargets
+		ToggleModifyEventTargets
+	}
+
+	ScriptRunnerResult = {
+		AccessSelf
+		GetResult
+		GetTooltip
+		HasResult
+		IsMissingTooltip
+		IsOutputVisible
+		IsValid
+		Self
+		ToggleOutputVisible
+	}
+
+	ScriptedGui = {
+		AccessSelf
+		BuildTooltip
+		Execute
+		ExecuteTooltip
+		IsShown
+		IsShownTooltip
+		IsValid
+		IsValidTooltip
+		Self
+	}
+
+	SelectClaim = {
+		GetState
+		AccessSelf
+		GetCostTooltip
+		GetState
+		OnClick
+		Self
+		ZoomTo
+	}
+
+	SelectCommanderWindow = {
+		AccessSelf
+		CanDetachCommander
+		Close
+		DetachCommander
+		GetDetachCommanderTooltip
+		Self
+	}
+
+	SelectEnforcePeace = {
+		AccessSelf
+		GetAcceptanceFrame
+		GetAcceptanceTooltip
+		GetName
+		GetTooltip
+		OnClick
+		Self
+	}
+
+	SelectFabricateClaimWindow = {
+		AccessSelf
+		GetProvinces
+		OnClose
+		Self
+	}
+
+	SelectGovernorPolicy = {
+		GetGovernorOrRuler
+		GetGovernorPolicy
+		AccessSelf
+		GetGovernorOrRuler
+		GetGovernorPolicy
+		GetTooltip
+		IsEnabled
+		OnClick
+		Self
+	}
+
+	SelectGovernorPolicyWindow = {
+		AccessSelf
+		GetGovernorPolicys
+		GetTitle
+		OnClose
+		Self
+	}
+
+	SelectGovernorWindow = {
+		AccessSelf
+		CanDetachCharacter
+		Close
+		DetachCharacter
+		Self
+	}
+
+	SelectImportDestinationWindow = {
+		GetGoods
+		AccessSelf
+		Close
+		GetGoods
+		GetStates
+		Self
+	}
+
+	SelectInterveneWindow = {
+		AccessSelf
+		GetWars
+		OnClose
+		Self
+	}
+
+	SelectMapModesGlue = {
+		AccessSelf
+		GetMapModeDesc
+		GetMapModeIcon
+		GetMapModeKey
+		GetMapModeName
+		IsSelected
+		OnClick
+		Self
+	}
+
+	SelectMapModesView = {
+		AccessSelf
+		GetMapModes
+		GetTitle
+		OnClose
+		Self
+	}
+
+	SelectMoveGlue = {
+		GetPop
+		AccessSelf
+		CanMove
+		GetCount
+		GetPop
+		GetTooltip
+		OnClick
+		Self
+	}
+
+	SelectMoveWindow = {
+		AccessSelf
+		GetTargets
+		OnClose
+		Self
+	}
+
+	SelectNewIdeaWindow = {
+		GetPlayer
+		AccessSelf
+		Close
+		GetIdeaGroups
+		GetPlayer
+		Self
+	}
+
+	SelectObjective = {
+		AccessSelf
+		GetDesc
+		GetIcon
+		GetName
+		OnSelect
+		Self
+	}
+
+	SelectObjectiveWindow = {
+		AccessSelf
+		CanDeselectRegions
+		CanSelectRegions
+		DeselectRegions
+		GetObjectives
+		GetSelectedRegionText
+		OnClose
+		Self
+	}
+
+	SelectOfficeWindow = {
+		AccessSelf
+		CanDetachCharacter
+		Close
+		DetachCharacter
+		GetDetachTooltip
+		Self
+	}
+
+	SelectParticleUserDataDialog = {
+		AccessSelf
+		DataModel
+		Self
+	}
+
+	SelectPeaceTreaty = {
+		AccessSelf
+		GetAgressiveExpansion
+		GetAgressiveExpansionInfo
+		GetCost
+		GetCostInfo
+		GetInfo
+		GetName
+		HasAgressiveExpansion
+		IsEnabled
+		IsSelected
+		OnClick
+		Self
+		WillInheritWars
+	}
+
+	SelectPreferredUnitGlue = {
+		GetPreferredUnit
+		AccessSelf
+		GetPreferredUnit
+		OnClick
+		Self
+	}
+
+	SelectPreferredUnitWindow = {
+		AccessSelf
+		GetPreferredUnits
+		GetTitle
+		OnClose
+		Self
+	}
+
+	SelectProvinceItem = {
+		GetProvince
+		AccessSelf
+		GetName
+		GetProvince
+		IsOthersProvince
+		IsPlayerProvince
+		OnClick
+		Self
+	}
+
+	SelectRansomPrisoner = {
+		GetPrisoner
+		AccessSelf
+		GetName
+		GetPrisoner
+		GetTooltip
+		IsSelectable
+		IsSelected
+		OnClick
+		Self
+	}
+
+	SelectSellProvince = {
+		GetProvince
+		AccessSelf
+		GetName
+		GetProvince
+		GetTooltip
+		IsSelectable
+		IsSelected
+		OnClick
+		Self
+	}
+
+	SelectTactic = {
+		GetTactic
+		GetUnit
+		AccessSelf
+		GetClickSound
+		GetTactic
+		GetUnit
+		OnClick
+		Self
+	}
+
+	SelectTacticWindow = {
+		AccessSelf
+		GetSubUnitCounts
+		GetTactics
+		OnClose
+		Self
+	}
+
+	SelectTargetCharacterGlue = {
+		GetCharacter
+		AccessSelf
+		GetCharacter
+		GetTraitItems
+		OnClick
+		Self
+	}
+
+	SelectTargetCharacterView = {
+		AccessSelf
+		GetTargetCharacters
+		GetTitle
+		IsSorted
+		OnClose
+		Self
+		Sort
+	}
+
+	SelectTargetCountryGlue = {
+		GetCountry
+		AccessSelf
+		GetCountry
+		OnClick
+		Self
+	}
+
+	SelectTargetCountryView = {
+		AccessSelf
+		GetTargetCountries
+		GetTitle
+		IsSorted
+		OnClose
+		Self
+		Sort
+	}
+
+	SelectTargetProvinceGlue = {
+		GetProvince
+		AccessSelf
+		GetProvince
+		OnClick
+		Self
+	}
+
+	SelectTargetProvinceView = {
+		AccessSelf
+		GetTargetProvinces
+		GetTitle
+		IsSorted
+		OnClose
+		Self
+		Sort
+	}
+
+	SelectTechOfficeWindow = {
+		AccessSelf
+		CanDetachCharacter
+		Close
+		DetachCharacter
+		Self
+	}
+
+	SelectTool = {
+		AccessSelf
+		IsHideSelection
+		Self
+		SetHideSelection
+	}
+
+	SelectTradeGoods = {
+		GetGoods
+		AccessSelf
+		GetGoods
+		GetTooltip
+		GetTradePossibleBlock
+		IsEnabled
+		IsNoTradePossible
+		OnClick
+		Self
+	}
+
+	SelectTransferGlue = {
+		GetCountry
+		AccessSelf
+		CanTransfer
+		GetCountry
+		GetTooltip
+		OnClick
+		Self
+	}
+
+	SelectUnitAbilityWindow = {
+		AccessSelf
+		GetAbilities
+		OnClose
+		Self
+	}
+
+	SelectWar = {
+		AccessSelf
+		GetName
+		GetTooltip
+		OnClick
+		Self
+	}
+
+	SelectWarGoal = {
+		AccessSelf
+		GetInfo
+		GetName
+		IsSelected
+		OnClick
+		Self
+	}
+
+	SelectionHistory = {
+		AccessSelf
+		HasNext
+		HasPrevious
+		Self
+	}
+
+	SelectionLine = {
+		AccessSelf
+		Color
+		From
+		Position
+		Self
+		Size
+		To
+	}
+
+	SellProvinceWindow = {
+		AccessSelf
+		GetAcceptanceFrame
+		GetAcceptanceTooltip
+		GetDesc
+		GetPrice
+		GetProvinces
+		GetTitle
+		HasSelected
+		OnAccept
+		OnDecline
+		OnPriceChanged
+		Self
+	}
+
+	SenateApprovalPartyGlue = {
+		GetType
+		AccessSelf
+		GetLoyaltyImpact
+		GetLoyaltyImpactInfo
+		GetSeatSupport
+		GetSeatSupportInfo
+		GetSupportImpact
+		GetSupportImpactInfo
+		GetSupported
+		GetSupportedInfo
+		GetTooltip
+		GetType
+		Self
+	}
+
+	SenateApprovalWindow = {
+		AccessSelf
+		Close
+		GetParties
+		GetTitle
+		Self
+	}
+
+	SenateItemGlue = {
+		GetType
+		AccessSelf
+		GetPartyName
+		GetType
+		Self
+	}
+
+	ServerInformation = {
+		AccessSelf
+		GetMPMode
+		GetServerID
+		GetServerName
+		HasServerID
+		HasServerName
+		Self
+	}
+
+	SettingCategory = {
+		AccessSelf
+		AccessSettingsOrder
+		GetName
+		Self
+	}
+
+	SettingsPage = {
+		AccessCategories
+		AccessSelf
+		GetName
+		IsSelected
+		OnClick
+		Self
+	}
+
+	SetupEditor = {
+		AccessSelf
+		GetCurrent
+		GetEntries
+		Self
+	}
+
+	SetupEntry = {
+		AccessSelf
+		GetName
+		OnClick
+		Self
+	}
+
+	Siege = {
+		GetBesieger
+		GetCommander
+		GetLocation
+		GetSiegeDefender
+		MakeScope
+		AccessSelf
+		GetBesieger
+		GetBlockadeImpact
+		GetCommander
+		GetDefenderMorale
+		GetEngineerImpact
+		GetFallChance
+		GetFallChanceTooltip
+		GetFortLevelImpact
+		GetLastSiegeDiceRoll
+		GetLeaderImpact
+		GetLocation
+		GetMoralePercent
+		GetMoraleTooltip
+		GetName
+		GetNumOfBreach
+		GetOccupationProgress
+		GetOccupationProgressTooltip
+		GetSiegeDefender
+		GetSiegeMemory
+		GetSiegePhaseProgress
+		GetSiegePhaseProgressTooltip
+		GetSubUnitCounts
+		HasAssault
+		HasBreach
+		IsSiege
+		IsTooFewMen
+		MakeScope
+		Self
+	}
+
+	SiegeView = {
+		GetSiege
+		AccessSelf
+		CanAssault
+		CanAssumeControl
+		GetAssaultTooltip
+		GetAssumeControlTooltip
+		GetAttrition
+		GetAttritionTooltip
+		GetDefensiveness
+		GetDefensivenessTooltip
+		GetEnslavement
+		GetEnslavementTooltip
+		GetSiege
+		GetSiegeAssaultImage
+		GetSiegeBreachImage
+		GetSiegeImage
+		GetSubUnitCounts
+		IsShowAll
+		OnAssault
+		OnAssumeControl
+		OnClose
+		Self
+		ShowProvince
+		ToggleShowAll
+	}
+
+	SimpleProvinceIcon = {
+		GetProvince
+		AccessSelf
+		GetProvince
+		Self
+	}
+
+	SingleUnitWindow = {
+		GetSelectedUnit
+		AccessSelf
+		CanPickTactic
+		CanRenameUnit
+		CanReplaceLeader
+		CanToggleFlankSize
+		GetActionItems
+		GetCommanderTooltip
+		GetCountryTooltip
+		GetExileTooltip
+		GetFlankTooltip
+		GetMaintenance
+		GetMaintenanceTooltip
+		GetObjectiveItems
+		GetPreferredUnitItems
+		GetReorganisationItems
+		GetReplaceLeaderInfo
+		GetSelectedUnit
+		GetSubUnitCounts
+		GetToggleItems
+		GetUnitNameIconFrame
+		GetUnitNameIconTooltip
+		HasCustomUnitName
+		IsShowAll
+		OnClose
+		OnCommanderClick
+		OnPickTactic
+		OpenUnitAbility
+		RenameUnit
+		Self
+		ToggleFlankSize
+		ToggleShowAll
+	}
+
+	SkinEditor = {
+		AccessSelf
+		Self
+	}
+
+	SmartBrushHeightRange = {
+		AccessPattern
+		AccessPattern
+		AccessSelf
+		GetName
+		GetOpacityMaskTexturePath
+		IsVisible
+		Self
+	}
+
+	SmartBrushPattern = {
+		AccessMaterialMix
+		AccessMaterialMix
+		AccessSelf
+		GetAngleL
+		GetAngleR
+		GetBleeding
+		GetDensity
+		GetInterpolationIndex
+		GetModeIndex
+		GetPatternIndex
+		GetSharpness
+		Self
+	}
+
+	SmartBrushPresetManager = {
+		AccessPresets
+		AccessSelf
+		GetPresets
+		Self
+	}
+
+	SmartMaterialPaintingMode = {
+		AccessCurrentPreset
+		AccessCurrentPresetRanges
+		AccessOpacityMaskTexturePreview
+		AccessPatternCurveTexture
+		AccessPatternTypeTexture
+		AccessSelf
+		AddAngle
+		AddBleeding
+		AddDensity
+		AddOpacityMaskOffset
+		AddOpacityMaskRotation
+		AddOpacityMaskScale
+		AddSharpness
+		ApplyChanges
+		CanApplyChanges
+		CanReorderRangeToNext
+		CanReorderRangeToPrev
+		ChangeSampleEntryComposition
+		ClearOpacityMaskTexture
+		ClonePreset
+		CopyCurveToClipboard
+		CreateNewPreset
+		CreateNewRange
+		DeletePreset
+		DeleteRange
+		DiscardChanges
+		EndSampleCompositionEdit
+		GetBackgroundProcessingDesc
+		GetCurrentPreset
+		GetCurveFromClipboard
+		GetDebugDesc
+		GetDebugUIHint
+		GetMaskOpacity
+		GetOpacityMaskOffset
+		GetOpacityMaskRotation
+		GetOpacityMaskScale
+		GetPaintingForbiddenDesc
+		GetPresetIndex
+		GetRangeName
+		GetTopologyPickerDesc
+		HasAnyPresets
+		HasDoneAnyChangesToPresets
+		HasOpacityMaskTexture
+		IsAutosave
+		IsBackgroundProcessing
+		IsCurrentPresetValid
+		IsCurveClipboardEmpty
+		IsDebugActive
+		IsDebugActiveFor
+		IsDebugTooltipVisible
+		IsDebuggingSinglePoint
+		IsEraserSelected
+		IsHeightRangeVisible
+		IsOpacityMaskTextureLoading
+		IsPainterSelected
+		IsPaintingForbidden
+		IsSelected
+		IsTopologyPickerEnabled
+		ReloadPresets
+		RemoveMaterialEntry
+		RenamePreset
+		ReorderRangeToNext
+		ReorderRangeToPrev
+		SavePresets
+		Self
+		SetAngleAsString
+		SetBleedingAsString
+		SetDensityAsString
+		SetHeightRangeName
+		SetInterpolationIndex
+		SetMaskOpacity
+		SetMaskOpacityStr
+		SetOpacityMaskOffsetAsString
+		SetOpacityMaskRotationAsString
+		SetOpacityMaskScaleAsString
+		SetPatternIndex
+		SetPatternMode
+		SetPresetIndex
+		SetSharpnessAsString
+		ShowMaterialBrowserAndAddToCurrentPattern
+		ShowMaterialBrowserAndSetEntryInCurrentPattern
+		StartSampleCompositionEdit
+		ToggleAutosave
+		ToggleDebugActiveFor
+		ToggleEraser
+		ToggleHeightRangeVisible
+		ToggleMaterialLock
+		ToggleSampleEntryLock
+		ToggleTopologyPicker
+	}
+
+	Social = {
+		AccessSelf
+		GetTotalUnreadChatMessages
+		Self
+	}
+
+	SocialNotificationWindow = {
+		AccessChatMessages
+		AccessSelf
+		GetNotificationsLayoutAnchor
+		Hide
+		Self
+		ShouldBeShown
+		Show
+	}
+
+	SocialUI = {
+		AccessSelf
+		Hide
+		IsAllowedToBeShown
+		Self
+		Show
+		ToggleShow
+		WantsToBeShown
+	}
+
+	SocialWidget = {
+		AccessSelf
+		Self
+	}
+
+	State = {
+		GetArea
+		GetCountry
+		GetGovernor
+		GetGovernorOrRuler
+		GetGovernorPolicy
+		GetGovernorship
+		GetState
+		GetTimedModifier
+		MakeScope
+		AccessSelf
+		GetArea
+		GetCommerceIncome
+		GetCountry
+		GetCulturalInfo
+		GetCulturalUnity
+		GetCurrentCommerceIncomeInfo
+		GetCurrentTaxIncomeInfo
+		GetFood
+		GetFoodCapacity
+		GetFoodCapacityPercent
+		GetFoodCapacityTooltip
+		GetFoodFrame
+		GetFoodModifierEffect
+		GetFoodTooltip
+		GetGovernor
+		GetGovernorOrRuler
+		GetGovernorPoliciesTooltip
+		GetGovernorPolicy
+		GetGovernorship
+		GetLongName
+		GetLoyaltyTooltip
+		GetMaxNumTradeRoutes
+		GetMemberInformation
+		GetMonthlyFood
+		GetMonthlyLoyaltyFrame
+		GetName
+		GetNumIncomingTrades
+		GetNumOutgoingTrades
+		GetNumUnusedTradeRoutes
+		GetPopulation
+		GetPopulationInfo
+		GetReligionInfo
+		GetReligiousUnity
+		GetShortName
+		GetState
+		GetStateLoyalty
+		GetSurplusGoods
+		GetTaxIncome
+		GetTimedModifier
+		GetTotalPopulation
+		GetTradeRoutesShort
+		GetTradeRoutesTooltip
+		HasPolicy
+		HasTimedModifier
+		IsCapitalState
+		MakeScope
+		Self
+	}
+
+	StateItem = {
+		GetState
+		AccessSelf
+		GetState
+		Self
+	}
+
+	SubUnit = {
+		GetPersonalLoyalty
+		MakeScope
+		AccessSelf
+		CanAssault
+		CanFight
+		GetCategoryDescription
+		GetCombatTooltip
+		GetCulturalTypeName
+		GetDescription
+		GetExperience
+		GetExperienceInfo
+		GetLoyaltyInformation
+		GetMorale
+		GetMoraleInfo
+		GetMoralePercent
+		GetName
+		GetPersonalLoyalty
+		GetStrength
+		GetStrengthDescription
+		GetType
+		GetTypeDescription
+		GetTypeName
+		HasPersonalLoyalty
+		IsClanRetinue
+		IsDefeated
+		IsMercenary
+		IsMigration
+		IsRegular
+		IsValid
+		MakeScope
+		Self
+	}
+
+	SubUnitCombatCounts = {
+		AccessSelf
+		GetAmountTooltip
+		GetCount
+		GetName
+		GetTooltip
+		GetTotal
+		GetTotalTooltip
+		GetType
+		IsCohort
+		IsCorrectForCombat
+		Self
+	}
+
+	SubUnitCounts = {
+		AccessSelf
+		CanAssault
+		GetAmountTooltip
+		GetCount
+		GetName
+		GetTooltip
+		GetTotal
+		GetTotalTooltip
+		GetType
+		IsCohort
+		Self
+	}
+
+	SubUnitModifierGlue = {
+		AccessSelf
+		GetModifierIcon
+		GetModifierTooltip
+		GetModifierValue
+		Self
+	}
+
+	SubUnitRef = {
+		Get
+		AccessSelf
+		Get
+		Self
+	}
+
+	SubUnitType = {
+		AccessSelf
+		GetAttritionWeight
+		GetAttritionWeightDiff
+		GetFoodStorageCapacity
+		GetFoodStorageCapacityDiff
+		GetInfo
+		GetMoraleDamageDone
+		GetMoraleDamageDoneDiff
+		GetMoraleDamageTaken
+		GetMoraleDamageTakenDiff
+		GetName
+		GetStrengthDamageDone
+		GetStrengthDamageDoneDiff
+		GetStrengthDamageTaken
+		GetStrengthDamageTakenDiff
+		GetType
+		Self
+		ShowAttritionWeight
+		ShowFoodStorageCapacity
+		ShowMoraleDamageDone
+		ShowMoraleDamageTaken
+		ShowStrengthDamageDone
+		ShowStrengthDamageTaken
+	}
+
+	SubUnitTypeGlue = {
+		GetDefinition
+		AccessSelf
+		GetAmountTooltip
+		GetCount
+		GetDefinition
+		GetModifiers
+		GetName
+		GetTooltip
+		GetTotal
+		GetTotalTooltip
+		GetType
+		GetTypeName
+		IsCohort
+		Self
+	}
+
+	SubjectType = {
+		AccessSelf
+		GetName
+		Self
+	}
+
+	TechOfficeItem = {
+		GetCharacter
+		AccessSelf
+		GetCharacter
+		GetCostDesc
+		GetIconFrame
+		GetLevel
+		GetLevelInfo
+		GetName
+		GetProgress
+		GetProgressDesc
+		GetSpeedInfo
+		GetSpeedModifier
+		HasHolder
+		OpenSelection
+		Self
+	}
+
+	TechnologyTable = {
+		AccessSelf
+		GetRequiredSkill
+		Self
+	}
+
+	TechnologyView = {
+		GetPlayer
+		AccessSelf
+		GetMonthlyResearch
+		GetMonthlyResearchDesc
+		GetOffices
+		GetPlayer
+		GetPossibleInventions
+		GetPreviousName
+		GetResearchEfficiency
+		GetResearchEfficiencyDesc
+		GetResearchPointsDesc
+		GetResearchPointsInfo
+		GetResearchRatioFrame
+		OnClose
+		OnPrevious
+		Self
+	}
+
+	TerrainToolButton = {
+		AccessSelf
+		IsSelected
+		Self
+	}
+
+	TerrainType = {
+		AccessSelf
+		GetName
+		GetTooltip
+		IsValid
+		Self
+	}
+
+	TextureEntry = {
+		AccessSelf
+		GetName
+		GetResolution
+		GetTexture
+		IsAvailable
+		OpenTextureViewer
+		Self
+	}
+
+	TextureImporter = {
+		AccessSelf
+		Cancel
+		GetLastConversion
+		GetOutputEntries
+		GetTextures
+		HasLastConversion
+		Import
+		IsImporting
+		Refresh
+		Self
+		SetOutputScale
+	}
+
+	TextureList = {
+		AccessSelf
+		GetAutoUpdate
+		GetFilterString
+		GetTextures
+		Self
+		SetAutoUpdate
+		SetFilterString
+		SortByFormat
+		SortByName
+		SortByRefCount
+		SortByResolution
+		SortBySize
+		UpdateTextureList
+	}
+
+	TextureListTexture = {
+		AccessSelf
+		GetFormat
+		GetName
+		GetRefcount
+		GetResolution
+		GetSize
+		Self
+	}
+
+	TextureNodeWindow = {
+		AccessSelf
+		FileSelect
+		Filename
+		Self
+		Texture
+	}
+
+	TextureViewer = {
+		AccessSelf
+		Fit
+		GetAlpha
+		GetBlue
+		GetConstantBuffers
+		GetEffect
+		GetFlipV
+		GetGreen
+		GetPointSampling
+		GetRed
+		GetTexture
+		GetTextureSize
+		GetTextureString
+		GetTextureZoom
+		GetToGamma
+		OriginalSize
+		Self
+		SetAlpha
+		SetBlue
+		SetFlipV
+		SetGreen
+		SetPointSampling
+		SetRed
+		SetToGamma
+		ShowFileList
+	}
+
+	ThreadDebugTask = {
+		AccessSelf
+		GetName
+		GetTooltip
+		Self
+	}
+
+	ThreadDebugThread = {
+		AccessSelf
+		GetName
+		Self
+	}
+
+	ThreadDebugView = {
+		AccessSelf
+		Close
+		Refresh
+		Self
+	}
+
+	ThreatenTarget = {
+		AccessSelf
+		GetInfo
+		GetName
+		IsSelected
+		OnClick
+		Self
+	}
+
+	ThreatenWarWindow = {
+		AccessSelf
+		GetAcceptanceFrame
+		GetAcceptanceTooltip
+		GetDesc
+		GetTargets
+		GetTitle
+		HasSelectedProvince
+		OnAccept
+		OnDecline
+		Self
+	}
+
+	TimedModifier = {
+		GetModifier
+		AccessSelf
+		GetInverseProgress
+		GetModifier
+		GetProgress
+		GetTooltip
+		Self
+	}
+
+	TimedModifierScoped = {
+		Get
+		AccessSelf
+		Self
+	}
+
+	Title = {
+		AccessSelf
+		GetName
+		GetTooltip
+		IsValid
+		Self
+	}
+
+	ToolDialog = {
+		AccessSelf
+		Buttons
+		Cancel
+		Close
+		Confirm
+		Self
+		Title
+	}
+
+	ToolDialogButton = {
+		AccessSelf
+		OnClick
+		Self
+		Text
+	}
+
+	ToolMessageDialog = {
+		AccessSelf
+		IsError
+		IsInfo
+		IsWarning
+		Message
+		Self
+	}
+
+	ToolProperty = {
+		AccessSelf
+		GetColor
+		GetLabel
+		GetTooltip
+		Self
+	}
+
+	ToolPropertyBool = {
+		AccessSelf
+		IsEnabled
+		Self
+		SetEnabled
+	}
+
+	ToolPropertyCColor = {
+		AccessSelf
+		GetCColor
+		Self
+		SetCColor
+	}
+
+	ToolPropertyCString = {
+		AccessSelf
+		GetString
+		Self
+		SetString
+	}
+
+	ToolPropertyColor = {
+		AccessSelf
+		GetColor
+		Self
+		SetColor
+	}
+
+	ToolPropertyCurve = {
+		AccessSelf
+		GetPreviewTexture
+		HasCurveEditor
+		OpenCurveEditor
+		ResetCurve
+		Self
+		SetCurve
+		ToggleCurveEditor
+	}
+
+	ToolPropertyFloat = {
+		AccessSelf
+		GetFloat
+		Self
+		SetFloat
+	}
+
+	ToolPropertyInt = {
+		AccessSelf
+		GetInt
+		Self
+		SetInt
+	}
+
+	ToolPropertyList = {
+		AccessSelf
+		GetColor
+		GetLabel
+		IsExpanded
+		Self
+		SetExpanded
+	}
+
+	ToolPropertySearchList = {
+		AccessSelf
+		GetSelectedText
+		OpenSearchList
+		Self
+	}
+
+	ToolPropertyString = {
+		AccessSelf
+		GetString
+		Self
+		SetString
+	}
+
+	ToolPropertyUint = {
+		AccessSelf
+		GetUint
+		Self
+		SetUint
+	}
+
+	ToolPropertyVec1fPercent = {
+		AccessSelf
+		GetX
+		Self
+		SetX
+	}
+
+	ToolPropertyVec2f = {
+		AccessSelf
+		GetX
+		GetY
+		Self
+		SetX
+		SetY
+	}
+
+	ToolPropertyVec2fPercent = {
+		AccessSelf
+		GetX
+		GetY
+		Self
+		SetX
+		SetY
+	}
+
+	ToolPropertyVec2i = {
+		AccessSelf
+		GetX
+		GetY
+		Self
+		SetX
+		SetY
+	}
+
+	ToolPropertyVec3f = {
+		AccessSelf
+		GetX
+		GetY
+		GetZ
+		Self
+		SetX
+		SetY
+		SetZ
+	}
+
+	ToolsSearch = {
+		AccessSelf
+		Results
+		Search
+		Self
+	}
+
+	ToolsSearchResult = {
+		AccessSelf
+		Callback
+		Description
+		Self
+		SortScore
+		Text
+	}
+
+	TopScope = {
+		AddScope
+		GetRootScope
+		SetRoot
+		sArea
+		sC
+		sChar
+		sCharacter
+		sCountry
+		sCulture
+		sCultureGroup
+		sFamily
+		sGovernorship
+		sJob
+		sP
+		sPop
+		sProvince
+		sRegion
+		sReligion
+		sState
+		sSubUnit
+		sUnit
+		AccessSelf
+		Custom
+		End
+		GetFlagName
+		GetRootScope
+		GetValue
+		ScriptValue
+		Self
+		sArea
+		sC
+		sChar
+		sCharacter
+		sCountry
+		sCulture
+		sCultureGroup
+		sFamily
+		sGovernorship
+		sJob
+		sP
+		sPop
+		sProvince
+		sRegion
+		sReligion
+		sState
+		sSubUnit
+		sUnit
+	}
+
+	TradeGoods = {
+		AccessSelf
+		GetAppliedBonusDescription
+		GetBonusDescription
+		GetKey
+		GetLocalDescription
+		GetLongDescription
+		GetName
+		GetTooltip
+		Self
+	}
+
+	TradeGoodsCategoryGlue = {
+		AccessSelf
+		GetName
+		GetTradeGoods
+		Self
+	}
+
+	TradeGoodsSurplus = {
+		GetSurplus
+		GetTradeGoods
+		AccessSelf
+		CanBeAvailableForTrade
+		GetAmount
+		GetInfo
+		GetSurplus
+		GetTradeGoods
+		Self
+		ShowSurplusButton
+		ShowSurplusInformation
+	}
+
+	TradeView = {
+		GetPlayer
+		AccessSelf
+		GetAutoFrame
+		GetCapitalSurplus
+		GetCurrentTradeRoutes
+		GetExportBonuses
+		GetPlayer
+		GetPreviousName
+		GetSurplusFrame
+		IsRoutesSorted
+		OnClose
+		OnPrevious
+		Self
+		SortRoutes
+		ToggleAutoAcceptTrade
+		ToggleCapitalSurplus
+	}
+
+	Trait = {
+		AccessSelf
+		GetEffect
+		GetIconHook
+		GetName
+		Self
+	}
+
+	TraitItem = {
+		GetTrait
+		AccessSelf
+		GetIcon
+		GetTooltip
+		IsValid
+		Self
+	}
+
+	TransferOccupationWindow = {
+		AccessSelf
+		GetTargets
+		OnClose
+		Self
+	}
+
+	TransferUnit = {
+		GetSubUnit
+		GetTarget
+		AccessSelf
+		CanTransfer
+		GetSubUnit
+		GetTarget
+		GetTransferInfo
+		Self
+		Transfer
+	}
+
+	TransferUnitType = {
+		GetCountsCache
+		GetTarget
+		AccessSelf
+		GetCountsCache
+		GetTarget
+		GetTransferAllText
+		GetType
+		GetTypeDescription
+		IsEnabled
+		IsVisible
+		Self
+		Transfer
+	}
+
+	TutorialItem = {
+		AccessSelf
+		Complete
+		GetCompletedFrame
+		GetEffect
+		GetName
+		IsAllowed
+		IsCompleted
+		Self
+	}
+
+	TutorialView = {
+		AccessSelf
+		GetCompletedObjectives
+		GetObjectives
+		OnClose
+		Self
+	}
+
+	Tweaker = {
+		AccessSelf
+		GetBool
+		GetColor
+		GetGuiName
+		GetTitle
+		GetValue
+		Self
+	}
+
+	Type = {
+		AccessSelf
+		GetAssetName
+		GetEntityIndex
+		GetInstanceCount
+		GetKey
+		GetMeshIndex
+		IsClampToWaterLevel
+		IsLocked
+		IsSelected
+		Self
+		SetClampToWaterLevel
+		SetEntityFromIndex
+		SetLocked
+		SetLockedExclusive
+		SetMeshFromIndex
+		SetSelected
+	}
+
+	UIMessage = {
+		AccessSelf
+		GetLog
+		GetLogDate
+		GetMessage
+		Self
+	}
+
+	Unit = {
+		GetCommander
+		GetCountry
+		GetCountryOrEmployerCountry
+		GetLocation
+		GetTactic
+		GetTimedModifier
+		MakeScope
+		AccessSelf
+		CanGetFoodFromLocation
+		Custom
+		GetAttrition
+		GetAttritionTooltip
+		GetCommander
+		GetCountry
+		GetCountryOrEmployerCountry
+		GetDesiredFlankSize
+		GetDisbandCost
+		GetEnslavementEffiencyTooltip
+		GetEnslavementEffiencyUI
+		GetFoodConsumption
+		GetFoodPercentage
+		GetFoodSupply
+		GetFoodSupplyInformation
+		GetIsVisibleToAiTooltip
+		GetLocation
+		GetMaintenanceCost
+		GetMaintenanceCostTooltip
+		GetMaximumFoodStorage
+		GetMoralePercent
+		GetMoraleTooltip
+		GetName
+		GetPreferredUnits
+		GetStrengthTooltip
+		GetSubUnitCounts
+		GetSubUnits
+		GetTactic
+		GetTemporaryModifiers
+		GetTimedModifier
+		GetTooltip
+		GetTotalAttritionWeight
+		GetUnit
+		GetVisualStrength
+		HasLeader
+		HasTimedModifier
+		IsArmy
+		IsEmpty
+		IsExiled
+		IsMercenary
+		IsMovementLocked
+		IsNamed
+		IsNavy
+		IsRetreating
+		IsUnemployedMercenary
+		IsVisibleToAi
+		MakeScope
+		Self
+	}
+
+	UnitAbility = {
+		AccessSelf
+		GetHistoricalFlavorText
+		GetName
+		Self
+	}
+
+	UnitAbilityItem = {
+		GetAbility
+		AccessSelf
+		Activate
+		CanActivate
+		GetAbility
+		GetShortcut
+		GetTooltip
+		Self
+	}
+
+	UnitActionItem = {
+		GetAbility
+		AccessSelf
+		Activate
+		CanActivate
+		GetAbility
+		GetShortcut
+		GetTexture
+		GetTooltip
+		IsActive
+		Self
+	}
+
+	UnitItem = {
+		GetCountry
+		GetUnit
+		AccessSelf
+		GetActiveAbilityIcon
+		GetActiveAbilityTooltip
+		GetAttritionTooltip
+		GetAverageMoralePercent
+		GetBackgroundFrame
+		GetBlockadedPercentPerNavy
+		GetCountry
+		GetFlagTexture
+		GetFlagTextureFrame
+		GetLabel
+		GetLeaderFrame
+		GetTooltip
+		GetTotalUnits
+		GetUnit
+		IsClickable
+		IsExiled
+		IsLosingFood
+		IsLosingSoldiers
+		IsMovementLocked
+		IsRegainingFood
+		IsRetreating
+		IsSelected
+		IsSieging
+		OnClick
+		OnFlagClick
+		OnLeaderClick
+		Self
+		ShouldBeHighlighted
+		ShouldBeShownFullWidth
+		ShouldBeShownShortWidth
+		ShowActiveAbility
+		ShowTotalUnits
+	}
+
+	UnitMapIcon = {
+		GetSiege
+		AccessSelf
+		GetArmyCombatStrength
+		GetLabel
+		GetSiege
+		HasSiege
+		Self
+	}
+
+	UnitRef = {
+		Get
+		AccessSelf
+		Get
+		Self
+	}
+
+	UserDataNode = {
+		AccessSelf
+		Configure
+		Id
+		Label
+		Self
+		TypeName
+	}
+
+	VariableEntry = {
+		AccessScopeEditor
+		AccessSelf
+		Delete
+		GetName
+		Self
+		SetName
+	}
+
+	VariableInfo = {
+		AccessSelf
+		GetExpirationDate
+		GetName
+		GetValue
+		HasExpirationDate
+		Self
+	}
+
+	VariableInspectorEntry = {
+		AccessVariable
+		AccessSelf
+		Delete
+		Self
+	}
+
+	VariableInspectorPlugin = {
+		AccessSetupVariable
+		AccessSelf
+		AccessVariables
+		AddVariable
+		GetNumVariables
+		Self
+	}
+
+	VariableInspectorVariable = {
+		AccessScopeEditor
+		AccessSelf
+		GetName
+		GetRemainingTicks
+		Self
+		SetName
+		SetRemainingTicks
+	}
+
+	VariableList = {
+		AccessEntries
+		AccessSelf
+		Delete
+		GetName
+		GetSize
+		Self
+	}
+
+	VariableListEntry = {
+		AccessScopeEditor
+		AccessSelf
+		Delete
+		Self
+	}
+
+	VariableListInspectorPlugin = {
+		AccessListStore
+		AccessSelf
+		Self
+	}
+
+	VariableListStore = {
+		AccessNewEntryEditor
+		AccessSelf
+		AccessVariableLists
+		AddNewEntry
+		GetNewVariableListName
+		GetNumVariableLists
+		Self
+		SetNewVariableListName
+	}
+
+	VariableStore = {
+		AccessNewEntryEditor
+		AccessSelf
+		AccessVariables
+		AddNewEntry
+		GetNewVariableName
+		GetNumVariables
+		Self
+		SetNewVariableName
+	}
+
+	ViewPopsWindow = {
+		GetProvince
+		AccessSelf
+		AddPop
+		GetMigrants
+		GetPopCultures
+		GetPopReligions
+		GetPopTypes
+		GetPops
+		GetProvince
+		GetTitle
+		IsPopsSorted
+		OnClose
+		Self
+		SortPops
+	}
+
+	War = {
+		GetAttackerPops
+		GetAttackerWarLeader
+		GetDefenderPops
+		GetDefenderWarLeader
+		GetOriginalAttacker
+		GetOriginalDefender
+		GetWarGoal
+		AccessSelf
+		GetAttackerPops
+		GetAttackerWarLeader
+		GetConquestInfo
+		GetDefenderPops
+		GetDefenderWarLeader
+		GetName
+		GetOriginalAttacker
+		GetOriginalDefender
+		GetStartDate
+		GetWarGoal
+		GetWarScore
+		GetWhitePeaceInfo
+		HasTickingWarScore
+		IsCivilWar
+		IsConquestWar
+		IsTickingForAutoConquest
+		IsTickingForAutoWhitePeace
+		Self
+	}
+
+	WarGoal = {
+		AccessSelf
+		GetDescription
+		GetName
+		Self
+	}
+
+	WarOverview = {
+		GetEnemyPopStats
+		GetFriendlyPopStats
+		GetWar
+		AccessSelf
+		GetBattles
+		GetBattlesLost
+		GetBattlesWon
+		GetEnemyLandLosses
+		GetEnemyLandLossesTooltip
+		GetEnemyNavalLosses
+		GetEnemyNavalLossesTooltip
+		GetEnemyParticipants
+		GetEnemyPopStats
+		GetEnemySubUnitCounts
+		GetFriendlyLandLosses
+		GetFriendlyLandLossesTooltip
+		GetFriendlyNavalLosses
+		GetFriendlyNavalLossesTooltip
+		GetFriendlyParticipants
+		GetFriendlyPopStats
+		GetFriendlySubUnitCounts
+		GetTickingWarScore
+		GetTickingWarScoreChangeFrame
+		GetTickingWarScoreChangeTooltip
+		GetTickingWarScoreTooltip
+		GetWar
+		GetWarScore
+		GetWarScoreTooltip
+		HasTickingWarScore
+		IsEnemySorted
+		IsFriendlySorted
+		OnClose
+		OnSueForPeace
+		Self
+		SortEnemy
+		SortFriendly
+	}
+
+	WarOverviewBattle = {
+		GetBattleResult
+		AccessSelf
+		GetBattleResult
+		GetResult
+		GetScore
+		GetTypeTexture
+		GetWinLose
+		Self
+	}
+
+	WarOverviewParticipant = {
+		GetCountry
+		AccessSelf
+		GetBlockadedPercentTooltip
+		GetCountry
+		GetWarEnthusiasm
+		GetWarEnthusiasmTooltip
+		IsWarLeader
+		Self
+	}
+
+	WarPopStats = {
+		AccessSelf
+		GetEnslaved
+		GetKilled
+		Self
+	}
+
+	WarsOverview = {
+		AccessSelf
+		GetWars
+		Self
+	}
+
+	WarsOverviewWar = {
+		GetMainEnemy
+		GetWar
+		AccessSelf
+		GetMainEnemy
+		GetWar
+		GetWarEnthusiasmIcon
+		GetWarScore
+		OnClick
+		Self
+	}
+
+	WatchWindow = {
+		AccessSelf
+		Close
+		GetObjectName
+		Self
+		ToggleChangeOnPause
+		WillPauseOnChange
+	}
+
+	bool = {
+		AccessSelf
+		Self
+	}
+
+	double = {
+		AccessSelf
+		Self
+	}
+
+	float = {
+		AccessSelf
+		Self
+	}
+
+	int16 = {
+		AccessSelf
+		GetInt
+		Self
+	}
+
+	int32 = {
+		AccessSelf
+		GetInt
+		Self
+	}
+
+	int64 = {
+		AccessSelf
+		GetInt
+		Self
+	}
+
+	int8 = {
+		AccessSelf
+		GetInt
+		Self
+	}
+
+	uint16 = {
+		AccessSelf
+		GetUint
+		Self
+	}
+
+	uint32 = {
+		AccessSelf
+		GetUint
+		Self
+	}
+
+	uint64 = {
+		AccessSelf
+		GetUint
+		Self
+	}
+
+	uint8 = {
+		AccessSelf
+		GetUint
+		Self
+	}
+
+	void = {
+		AccessSelf
+		Self
+	}
+
+}
+

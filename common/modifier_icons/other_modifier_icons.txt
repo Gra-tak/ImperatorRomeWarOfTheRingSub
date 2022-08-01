@@ -1,0 +1,953 @@
+﻿#### halfing_infantry ####
+
+halfling_infantry_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+halfling_infantry_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+halfling_infantry_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+halfling_infantry_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+halfling_infantry_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+halfling_infantry_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+halfling_infantry_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+halfling_infantry_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+halfling_infantry_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+halfling_infantry_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+halfling_infantry_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+halfling_infantry_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+halfling_infantry_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+halfling_infantry_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+halfling_infantry_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+halfling_infantry_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+halfling_infantry_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+halfling_infantry_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+halfling_infantry_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+halfling_infantry_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+halfling_infantry_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+halfling_infantry_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+halfling_infantry_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+halfling_infantry_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+halfling_infantry_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+halfling_infantry_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}
+
+#### rangers ####
+
+rangers_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+rangers_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+rangers_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+rangers_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+rangers_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+rangers_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+rangers_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+rangers_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+rangers_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+rangers_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+rangers_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+rangers_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+rangers_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+rangers_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+rangers_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+rangers_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+rangers_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+rangers_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+rangers_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+rangers_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+rangers_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+rangers_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+rangers_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+rangers_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+rangers_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+rangers_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}
+
+#### dol_amroth_knights ####
+
+dol_amroth_knights_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+dol_amroth_knights_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+dol_amroth_knights_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+dol_amroth_knights_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+dol_amroth_knights_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+dol_amroth_knights_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+dol_amroth_knights_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+dol_amroth_knights_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+dol_amroth_knights_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+dol_amroth_knights_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+dol_amroth_knights_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+dol_amroth_knights_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+dol_amroth_knights_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+dol_amroth_knights_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+dol_amroth_knights_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+dol_amroth_knights_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+dol_amroth_knights_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+dol_amroth_knights_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+dol_amroth_knights_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+dol_amroth_knights_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+dol_amroth_knights_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+dol_amroth_knights_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+dol_amroth_knights_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+dol_amroth_knights_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+dol_amroth_knights_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+dol_amroth_knights_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}
+
+#### ents ####
+
+ents_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+ents_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+ents_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+ents_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+ents_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+ents_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+ents_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+ents_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+ents_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+ents_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+ents_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+ents_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+ents_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+ents_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+ents_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+ents_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+ents_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+ents_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+ents_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+ents_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+ents_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+ents_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+ents_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+ents_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+ents_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+ents_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}
+
+#### cog ####
+
+cog_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+cog_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+cog_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+cog_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+cog_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+cog_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+cog_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+cog_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+cog_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+cog_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+cog_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+cog_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+cog_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+cog_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+cog_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+cog_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+cog_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+cog_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+cog_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+cog_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+cog_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+cog_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+cog_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+cog_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+cog_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+cog_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}
+
+#### corsair ####
+
+corsair_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+corsair_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+corsair_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+corsair_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+corsair_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+corsair_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+corsair_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+corsair_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+corsair_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+corsair_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+corsair_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+corsair_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+corsair_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+corsair_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+corsair_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+corsair_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+corsair_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+corsair_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+corsair_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+corsair_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+corsair_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+corsair_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+corsair_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+corsair_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+corsair_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+corsair_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}
+
+#### galley ####
+
+galley_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+galley_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+galley_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+galley_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+galley_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+galley_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+galley_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+galley_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+galley_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+galley_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+galley_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+galley_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+galley_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+galley_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+galley_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+galley_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+galley_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+galley_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+galley_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+galley_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+galley_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+galley_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+galley_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+galley_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+galley_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+galley_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}
+
+#### swanship ####
+
+swanship_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+swanship_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+swanship_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+swanship_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+swanship_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+swanship_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+swanship_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+swanship_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+swanship_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+swanship_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+swanship_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+swanship_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+swanship_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+swanship_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+swanship_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+swanship_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+swanship_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+swanship_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+swanship_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+swanship_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+swanship_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+swanship_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+swanship_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+swanship_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+swanship_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+swanship_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}
+
+#### warship ####
+
+warship_discipline = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_discipline.dds"
+}
+
+warship_morale = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_morale.dds"
+}
+
+warship_offensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_offensive.dds"
+}
+
+warship_defensive = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_defensive.dds"
+}
+
+warship_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_cost.dds"
+}
+
+warship_maintenance_cost = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_maintenance_cost.dds"
+}
+
+warship_movement_speed = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_movement_speed.dds"
+}
+
+warship_plains_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_plains_combat_bonus.dds"
+}
+
+warship_mountain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_mountain_combat_bonus.dds"
+}
+
+warship_hills_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_hills_combat_bonus.dds"
+}
+
+warship_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_desert_combat_bonus.dds"
+}
+
+warship_marsh_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_marsh_combat_bonus.dds"
+}
+
+warship_jungle_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_jungle_combat_bonus.dds"
+}
+
+warship_farmland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_farmland_combat_bonus.dds"
+}
+
+warship_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_forest_combat_bonus.dds"
+}
+
+warship_ocean_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_ocean_combat_bonus.dds"
+}
+
+warship_coastal_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_coastal_terrain_combat_bonus.dds"
+}
+
+warship_riverine_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_riverine_terrain_combat_bonus.dds"
+}
+
+warship_impassable_terrain_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_impassable_terrain_combat_bonus.dds"
+}
+
+warship_wasteland_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_wasteland_combat_bonus.dds"
+}
+
+warship_arctic_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_arctic_combat_bonus.dds"
+}
+
+warship_steppe_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_steppe_combat_bonus.dds"
+}
+
+warship_deep_forest_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_deep_forest_combat_bonus.dds"
+}
+
+warship_red_desert_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_red_desert_combat_bonus.dds"
+}
+
+warship_caverns_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_caverns_combat_bonus.dds"
+}
+
+warship_halls_combat_bonus = {
+    positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
+}

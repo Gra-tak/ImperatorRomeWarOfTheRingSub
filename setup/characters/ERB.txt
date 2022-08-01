@@ -1,0 +1,125 @@
+﻿"ERB"={
+	country="ERB"
+
+	31={
+		first_name="Náin Orcsfoe"
+		family = c:ERB.fam:Durin
+		birth_date=2665.2.25
+		death_date=2799.8.2
+		culture="longbeard"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=9
+		add_charisma=8
+		add_finesse=8
+		add_zeal=10
+		no_traits=yes
+		add_trait="dwarf"
+		add_trait="wise"
+		add_trait="line_of_durin"
+	}
+
+	32={
+		first_name="Iliana"
+		family_name="Birchstone"
+		female=yes
+		birth_date=2672.8.15
+		death_date=2797.3.12
+		culture="longbeard"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=7
+		add_charisma=11
+		add_finesse=8
+		add_zeal=11
+		no_traits=yes
+		add_trait="just"
+	}
+
+	33={
+		first_name="Dain II Ironfoot"
+		family = c:ERB.fam:Durin
+		birth_date=2767.2.25
+		culture="longbeard"
+		religion="iluvatarism"
+		father="char:31"
+		mother="char:32"
+		no_stats=yes
+		add_martial=13
+		add_charisma=12
+		add_finesse=12
+		add_zeal=11
+		no_traits=yes
+		add_trait="dwarf"
+		add_trait="wise"
+		add_trait="proud"
+		add_trait="founder"
+		add_trait="line_of_durin"
+		add_gold=250
+		add_popularity=70
+		c:ERB={
+			set_as_ruler=char:33
+		}
+	}
+	
+	34={
+		first_name="Ingith"
+		family_name="Stoneaxe"
+		female=yes
+		birth_date=2768.3.1
+		culture="longbeard"
+		religion="iluvatarism"
+		marry_character="char:33"
+		no_stats=yes
+		add_martial=7
+		add_charisma=15
+		add_finesse=8
+		add_zeal=12
+		no_traits=yes
+		add_trait="just"
+		add_gold=130
+		add_popularity=80
+	}
+	
+	35={
+		first_name="Thorin III Stonehelm"
+		family = c:ERB.fam:Durin
+		birth_date=2866.3.4
+		culture="longbeard"
+		religion="iluvatarism"
+		father="char:33"
+		mother="char:34"
+		no_stats=yes
+		add_martial=11
+		add_charisma=13
+		add_finesse=11
+		add_zeal=10
+		no_traits=yes
+		add_trait="dwarf"
+		add_trait="wise"
+		add_trait="line_of_durin"
+		add_gold=240
+		add_popularity=80
+	}
+	
+	36={
+		first_name="Broin Ironaxe"
+		family = c:ERB.fam:Durin
+		birth_date=2936.6.7
+		culture="longbeard"
+		religion="iluvatarism"
+		father="char:35"
+		no_stats=yes
+		add_martial=10
+		add_charisma=9
+		add_finesse=12
+		add_zeal=14
+		no_traits=yes
+		add_trait="dwarf"
+		add_trait="wise"
+		add_trait="line_of_durin"
+		add_gold=120
+		add_popularity=70
+	}
+	
+}

@@ -1,0 +1,548 @@
+Event Target Documentation:
+
+--------------------
+
+character - Unknown, add something in code registration
+Input Scopes: job
+Output Scopes: character
+
+--------------------
+
+character_party - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: party
+
+--------------------
+
+employer - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: country
+
+--------------------
+
+family - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: family
+
+--------------------
+
+father - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: character
+
+--------------------
+
+job - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: job
+
+--------------------
+
+mother - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: character
+
+--------------------
+
+next_in_family - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: character
+
+--------------------
+
+preferred_heir - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: character
+
+--------------------
+
+ruler - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: character
+
+--------------------
+
+spouse - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: character
+
+--------------------
+
+unit - Unknown, add something in code registration
+Input Scopes: character
+Output Scopes: unit
+
+--------------------
+
+culture_group - Unknown, add something in code registration
+Input Scopes: country, character, province, pop, culture
+Output Scopes: culture group
+
+--------------------
+
+country - Unknown, add something in code registration
+Input Scopes: character, pop, job
+Output Scopes: country
+
+--------------------
+
+color1 - Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: color
+
+--------------------
+
+color2 - Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: color
+
+--------------------
+
+color3 - Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: color
+
+--------------------
+
+consort - Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: character
+
+--------------------
+
+current_co_ruler - Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: character
+
+--------------------
+
+current_heir - Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: character
+
+--------------------
+
+current_ruler - Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: character
+
+--------------------
+
+fam - Unknown, add something in code registration
+Requires Data: yes
+Input Scopes: country
+Output Scopes: family
+
+--------------------
+
+overlord - Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: country
+
+--------------------
+
+party - Unknown, add something in code registration
+Requires Data: yes
+Input Scopes: country
+Output Scopes: party
+
+--------------------
+
+primary_heir - Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: character
+
+--------------------
+
+secondary_heir - Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: character
+
+--------------------
+
+region - Unknown, add something in code registration
+Input Scopes: province, area, state
+Output Scopes: region
+
+--------------------
+
+job - Unknown, add something in code registration
+Requires Data: yes
+Input Scopes: country, province, state, governorship
+Output Scopes: job
+
+--------------------
+
+job_holder - Unknown, add something in code registration
+Requires Data: yes
+Input Scopes: country, province, state, governorship
+Output Scopes: character
+
+--------------------
+
+area - Unknown, add something in code registration
+Input Scopes: province, state
+Output Scopes: area
+
+--------------------
+
+governorship - Unknown, add something in code registration
+Input Scopes: province, state
+Output Scopes: governorship
+
+--------------------
+
+siege_controller - Unknown, add something in code registration
+Input Scopes: siege
+Output Scopes: country
+
+--------------------
+
+governor - Unknown, add something in code registration
+Input Scopes: province, state, governorship
+Output Scopes: character
+
+--------------------
+
+governor_or_ruler - Unknown, add something in code registration
+Input Scopes: province, state, governorship
+Output Scopes: character
+
+--------------------
+
+owner - Unknown, add something in code registration
+Input Scopes: province, state, governorship
+Output Scopes: country
+
+--------------------
+
+location - Unknown, add something in code registration
+Input Scopes: character, siege, pop
+Output Scopes: province
+
+--------------------
+
+color - Unknown, add something in code registration
+Input Scopes: country, religion, culture group
+Output Scopes: color
+
+--------------------
+
+family_country - Unknown, add something in code registration
+Input Scopes: family
+Output Scopes: country
+
+--------------------
+
+head_of_family - Unknown, add something in code registration
+Input Scopes: family
+Output Scopes: character
+
+--------------------
+
+blue - The blue value of a color
+Input Scopes: color
+Output Scopes: value
+
+--------------------
+
+brightness - The brightness value of a color
+Input Scopes: color
+Output Scopes: value
+
+--------------------
+
+green - The green value of a color
+Input Scopes: color
+Output Scopes: value
+
+--------------------
+
+hue - The hue value of a color
+Input Scopes: color
+Output Scopes: value
+
+--------------------
+
+red - The red value of a color
+Input Scopes: color
+Output Scopes: value
+
+--------------------
+
+saturation - The saturation value of a color
+Input Scopes: color
+Output Scopes: value
+
+--------------------
+
+owning_unit - Unknown, add something in code registration
+Input Scopes: subunit
+Output Scopes: unit
+
+--------------------
+
+personal_loyalty - Unknown, add something in code registration
+Input Scopes: subunit
+Output Scopes: character
+
+--------------------
+
+capital_scope - Unknown, add something in code registration
+Input Scopes: country, state, governorship
+Output Scopes: province
+
+--------------------
+
+commander - Unknown, add something in code registration
+Input Scopes: unit
+Output Scopes: character
+
+--------------------
+
+unit_destination - Unknown, add something in code registration
+Input Scopes: unit
+Output Scopes: province
+
+--------------------
+
+unit_location - Unknown, add something in code registration
+Input Scopes: unit
+Output Scopes: province
+
+--------------------
+
+unit_next_location - Unknown, add something in code registration
+Input Scopes: unit
+Output Scopes: province
+
+--------------------
+
+unit_objective_destination - Unknown, add something in code registration
+Input Scopes: unit
+Output Scopes: province
+
+--------------------
+
+unit_owner - Unknown, add something in code registration
+Input Scopes: unit
+Output Scopes: country
+
+--------------------
+
+party_country - Unknown, add something in code registration
+Input Scopes: party
+Output Scopes: country
+
+--------------------
+
+party_leader - Unknown, add something in code registration
+Input Scopes: party
+Output Scopes: character
+
+--------------------
+
+controller - Unknown, add something in code registration
+Input Scopes: province
+Output Scopes: country
+
+--------------------
+
+dominant_province_culture - Unknown, add something in code registration
+Input Scopes: province
+Output Scopes: culture
+
+--------------------
+
+dominant_province_culture_group - Unknown, add something in code registration
+Input Scopes: province
+Output Scopes: culture group
+
+--------------------
+
+dominant_province_religion - Unknown, add something in code registration
+Input Scopes: province
+Output Scopes: religion
+
+--------------------
+
+state - Unknown, add something in code registration
+Input Scopes: province
+Output Scopes: state
+
+--------------------
+
+siege - Unknown, add something in code registration
+Input Scopes: province, unit
+Output Scopes: siege
+
+--------------------
+
+culture - Unknown, add something in code registration
+Input Scopes: country, character, province, pop
+Output Scopes: culture
+
+--------------------
+
+religion - Unknown, add something in code registration
+Input Scopes: country, character, province, pop
+Output Scopes: religion
+
+--------------------
+
+area - Unknown, add something in code registration
+Requires Data: yes
+Output Scopes: area
+
+--------------------
+
+c - Unknown, add something in code registration
+Requires Data: yes
+Output Scopes: country
+
+--------------------
+
+char - Unknown, add something in code registration
+Requires Data: yes
+Output Scopes: character
+
+--------------------
+
+compare_value - A comparison trigger that will return its value in the context it is used eg: root.gold
+Wild Card: yes
+Output Scopes: value
+
+--------------------
+
+culture - Unknown, add something in code registration
+Requires Data: yes
+Output Scopes: culture
+
+--------------------
+
+culture_group - Unknown, add something in code registration
+Requires Data: yes
+Output Scopes: culture group
+
+--------------------
+
+custom - Adds custom text between scope changes
+Requires Data: yes
+
+--------------------
+
+define - Reference the value of a numeric define eg: define:Namespace|Name
+Requires Data: yes
+Global Link: yes
+Output Scopes: value
+
+--------------------
+
+flag - Flag literals eg: flag:the_boss
+Requires Data: yes
+Global Link: yes
+Output Scopes: flag
+
+--------------------
+
+from - DEPRECATED DO NOT USE - WILL BE REMOVED IN A FUTURE PATCH
+The object that sent the previous event
+
+--------------------
+
+global_var - Reference a previous set global variable via its name eg: global_var:important_thing
+Requires Data: yes
+Global Link: yes
+
+--------------------
+
+local_var - Reference a previous set local variable via its name eg: local_var:person_of_interest
+Requires Data: yes
+Global Link: yes
+
+--------------------
+
+named_script_value - A script value that will calculate and returns its value in the context it is used
+Wild Card: yes
+Output Scopes: value
+
+--------------------
+
+no - Boolean literal for false values
+Global Link: yes
+Output Scopes: bool
+
+--------------------
+
+p - Unknown, add something in code registration
+Requires Data: yes
+Output Scopes: province
+
+--------------------
+
+prev - The previous scope
+
+--------------------
+
+region - Unknown, add something in code registration
+Requires Data: yes
+Output Scopes: region
+
+--------------------
+
+religion - Unknown, add something in code registration
+Requires Data: yes
+Output Scopes: religion
+
+--------------------
+
+root - The head of the current top scope eg: reciever of an event, taker of a decision
+Global Link: yes
+
+--------------------
+
+scope - Reference a previously saved scope via its name eg: scope:target
+Requires Data: yes
+Global Link: yes
+
+--------------------
+
+this - The current scope
+
+--------------------
+
+value - A numeric literal value eg: 1, 5.2, -6
+Wild Card: yes
+Global Link: yes
+Output Scopes: value
+
+--------------------
+
+var - Reference a previous set variable via its name eg: var:mortal_enemy
+Requires Data: yes
+
+--------------------
+
+yes - Boolean literal for true values
+Global Link: yes
+Output Scopes: bool
+
+--------------------
+
+Event Targets Saved from Code:
+
+context
+actor
+recipient
+former_ruler
+target
+newborn
+owner
+attacker
+defender
+province
+victory
+former_overlord
+future_overlord
+old_country
+target_subject

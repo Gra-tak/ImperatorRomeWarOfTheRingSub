@@ -1,0 +1,218 @@
+﻿haradrim_philosophy = {
+	color = hsv { 1.1 1 0.5 }
+	image = haradrim_philosophy
+	
+	allow = {
+		trigger_if = {
+			limit = { country_culture_group = haradrim_group }
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			country_culture_group = haradrim_group
+		}
+		trigger_else_if = {
+			limit = { 
+				tag = UMB
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			tag = UMB
+		}
+		trigger_else = {
+			custom_tooltip = {
+				text = integrated_any_haradrim_culture
+				any_country_culture = {
+					is_integrated = yes
+					this.culture.culture_group = culture_group:haradrim_group
+				}
+			}
+		}
+	}
+
+####################
+
+	haradrim_cavalry_path_1 = { ###
+		modifier = {
+			warelephant_defensive = 0.1
+		}
+		icon = persian_bactrian_path_5
+		requires = {}
+	}
+	
+	haradrim_cavalry_path_2 = { ###
+		modifier = {
+			warelephant_jungle_combat_bonus = 0.15
+			warelephant_forest_combat_bonus = 0.15
+		}
+		icon = north_african_army_path_7
+		requires = {haradrim_cavalry_path_1}
+	}
+	
+	haradrim_cavalry_path_3 = { ###
+		modifier = {
+			warelephant_offensive = 0.1
+		}
+		icon = north_african_army_path_5
+		requires = {haradrim_cavalry_path_2}
+	}
+	
+	haradrim_cavalry_path_4 = { ###
+		modifier = {
+			warelephant_morale = 0.15
+		}
+		icon = mauryan_noble_path_6
+		requires = {haradrim_cavalry_path_3}
+	}
+	
+	haradrim_cavalry_path_5 = { ###
+		modifier = {
+			warelephant_defensive = 0.1
+		}
+		icon = north_african_tribal_path_6
+		requires = {haradrim_cavalry_path_4}
+	}
+	
+	haradrim_cavalry_path_6 = { ###
+		modifier = {
+			warelephant_offensive = 0.1
+		}
+		icon = mauryan_noble_path_end_bonus
+		requires = {haradrim_cavalry_path_5}
+	}
+	
+
+	
+####################
+
+	haradrim_infantry_path_1 = { ###
+		modifier = {
+			light_infantry_discipline = 0.15
+		}
+		icon = mauryan_mauryas_path_3
+		requires = {haradrim_cavalry_path_1}
+	}
+	
+	haradrim_infantry_path_2 = { ###
+		modifier = {
+			light_infantry_offensive = 0.15
+		}
+		icon = celtic_britannic_path_2
+		requires = {haradrim_infantry_path_1}
+	}
+	
+	haradrim_infantry_path_3 = { ###
+		modifier = {
+			light_infantry_defensive = 0.2
+		}
+		icon = celtic_germanic_path_5
+		requires = {haradrim_infantry_path_2}
+	}
+	
+	haradrim_infantry_path_4 = { ###
+		modifier = {
+			mercenary_land_maintenance_cost = -0.1
+		}
+		icon = celtic_gallic_path_2
+		requires = {haradrim_infantry_path_3}
+	}
+	
+	haradrim_infantry_path_5 = { ###
+		modifier = {
+		}
+		icon = celtic_germanic_path_1
+		requires = {haradrim_infantry_path_4}
+		on_activate = {
+			custom_tooltip = "create_high_martial_rising_star"
+			hidden_effect = {
+				create_character = {
+					add_martial = 8
+					add_trait = steadfast
+				}
+			}
+		}
+	}
+
+	
+####################
+
+	haradrim_naval_path_1 = { ###
+		modifier = {
+		}
+		allow_unit_type = corsair
+		enable_ability = naval_raiding
+		icon = latin_philosophy_start_bonus
+		requires = {}
+	}
+	
+	haradrim_naval_path_2 = { ###
+		modifier = {
+			corsair_movement_speed = 0.1
+			coastal_terrain_combat_bonus = 0.1
+		}
+		icon = greek_antigonid_path_2
+		requires = {haradrim_naval_path_1}
+		on_activate = {
+			ordered_owned_province = {	#Upgrades a port, or creates one
+				limit = {
+					is_coastal = yes
+					has_building = port_building
+					can_build_building = port_building
+				}
+				alternative_limit = {
+					is_coastal = yes
+					can_build_building = port_building
+				}
+				order_by = total_population
+				add_building_level = port_building
+				add_building_level = port_building
+			}
+		}
+	}
+	
+	haradrim_naval_path_3 = { ###
+		modifier = {
+			naval_range = 0.25
+			global_ship_recruit_speed = 0.1 
+		}
+		icon = persian_achaemenid_path_3
+		requires = {haradrim_naval_path_2}
+	}
+	
+	haradrim_naval_path_4 = { ###
+		modifier = {
+			ship_capture_chance = 0.08
+			ship_cost = -0.1
+			corsair_offensive = 0.1
+		}
+		icon = north_african_naval_path_7
+		requires = {haradrim_naval_path_3}
+	}
+	
+	haradrim_naval_path_5 = { ###
+		modifier = {
+			naval_damage_done = 0.15
+		}
+		icon = north_african_naval_path_4
+		requires = {haradrim_naval_path_4}
+		on_activate = {
+			random_owned_province = {
+				limit = {
+					num_of_port_building > 0 
+				}
+				owner = {
+					create_unit = {
+						navy = yes
+						location = prev.prev
+						add_subunit = corsair
+						add_subunit = corsair
+						add_subunit = corsair
+						add_subunit = corsair
+					}
+				}
+			}
+		}
+	}
+	
+
+}

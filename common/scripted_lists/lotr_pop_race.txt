@@ -1,0 +1,42 @@
+﻿noldor_pop = {
+	base = pops_in_province
+	conditions = { pop_culture_group = noldor_group }
+}
+
+teleri_pop = {
+	base = pops_in_province
+	conditions = { pop_culture_group = teleri_group }
+}
+
+dunedain_pop = {
+	base = pops_in_province
+	conditions = { pop_culture = dunedain }
+}
+
+lesser_dunedain_pop = {
+	base = pops_in_province
+	conditions = { pop_culture = lesser_dunedain }
+}
+
+black_numenorean_pop = {
+	base = pops_in_province
+	conditions = { pop_culture = black_numenorean }
+}
+
+dwarf_pop = {
+	base = pops_in_province
+	conditions = { pop_culture_group = dwarf_group }
+}
+
+orc_pop = {
+	base = pops_in_province
+	conditions = { pop_culture_group = orcs_group }
+}
+
+halfling_pop = {
+	base = pops_in_province
+	conditions = { pop_culture_group = halfling_group }
+}
+
+
+

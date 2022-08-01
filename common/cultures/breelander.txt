@@ -1,0 +1,52 @@
+﻿breelander_group = {
+	
+	levy_template = levy_breelander
+	
+	primary = light_infantry
+	second = heavy_infantry
+	flank = archers
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+	
+	color = hsv { 0.65  0.7  0.8 }
+
+	male_names = {
+		Adso Al Alan Alastor Alden Aldred Alf Allan Alvin Andy Archie Arnie Art Artie Ash Bail Bark Barley Barliman Barnie Bart Barton Ben Bernar Bernie Bert Bill Billy Blockman Bobby Bork Bram Bran Brerion Bron Bronn Burt Cal Califast Caligar Cam Carl Charlie Chum Cliff Cobman Coldomac Cole Cris Cuthbert Dale Del Den Dirk Dob Dolph Ed Edd Eddy Edgar Edgard Edwin Eldo Emis Erling Ernie Falco Flint Fred Freddy Geoffrey Gib Gil Gundo Hal Ham Han Harry Henry Herb Herbie Himlock Hobson Holtman Howie Humbert Jasper Kip Larry Len Leo Lob Mark Mat Matthew Matty Mortimer Morty Ned Nic Nick Nicky Osbert Osborn Osmond Oswald Oswin Oz Parsifal Percy Perry Pip Rastafan Ray Rich Richie Ricky Rob Robbie Robin Rod Rodard Roderic Roderick Rodney Roger Rollo Rory Rowlie Rudolph Rufus Sage Sid Siddard Spike Stan Stem Stew Ted Terry Theo Theobald Tim Toby Tod Tom Tommard Tommy Ubald Wally Walt Wes Wilbard Wilbur Wilfred Will Willard Willy Win Winfred Woody 
+
+	}
+	female_names = {
+		Ada Addie Adel Adelin Aggy Albra Aldis Alice Amber Amy Ann Arabel Ash Asphodel Aud Avi Babs Bailey Barb Bell Berni Berny Berti Bertie Bev Biddy Bindy Bonny Bree Cora Daisy Darla Dawn Dee Dora Dorothy Dot Duffy Edi Edie Effie Ellie Em Emma Emmy Ethelind Fair Fay Fern Flo Gail Gammie Geronima Gertie Greta Hattie Hayley Hazel Hettie Holly Ivy Joy Leila Lilliann Lily Lindy Lolo Maggie Maida Maisy Marge Maribell Mary Milly Minnie Myrtie Olive Pepper Piper Polly Poppy Robyn Rosa Rosalin Rosalind Rosamund Rosella Rosie Sage Sally Sara Sarabel Sarabeth Selona Taylor Tilly Tina Trilly Trudie Violet Willa Wilma Winnie 
+	}
+
+	nickname = {
+	}
+	
+	family = {
+		Tenderlarch
+		Pickthorn
+		Rushlight
+		Thistlewool
+		Heathertoes
+		Goatleaf
+		Ferny
+		Appledore
+		Butterbur
+	}
+	
+	culture = {
+		breelander = {}
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	
+	
+	graphical_culture = celtic_gfx	
+	ethnicities = {
+		10 = britannic
+	}
+}

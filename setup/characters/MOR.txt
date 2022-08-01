@@ -1,0 +1,216 @@
+﻿"MOR"={
+	country="MOR"
+
+	3={
+		first_name="Sauron"
+		family = c:MOR.fam:Melkorionath
+		birth_date=1.1.2
+		culture="black_numenorean"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=12
+		add_charisma=6
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+		add_trait="20_sauron"
+		add_trait="legendary_magic_user"
+		add_trait="intelligent"
+		add_trait="proud"
+		add_trait="maia"
+		add_gold=200
+		add_popularity=100
+		c:MOR={
+			set_as_ruler=char:3
+		}
+		dna="HGkcaV84XzjcldyVAqECoQKFAoUC1wLXAkACQAKMAowCkgKSAnYCdgKJAokChwKHAocChwL7AvsCegJ6An8CfwJ/An8CaAJoAmYCZgLXAtcCfQJ9Ao0CjQJ5AnkCgwKDApkCmQKEAoQCfgJ+ApgCmAKFAoUCogKiAooCigJaAloChQKFApkCmQJrAmsCkQKRAkICQgJ6AnoASwBLA6oDqgJwAnACdwJ3AnUCdQKEAoQCeQJ5AosCiwA4ADgCggKCAnMCcwKQApABZQFlA6UDpQJsAmwCjwKPAm8CbwOfA58CiAKIAn8CfwIAAgAAzADMALwAvABuAG4AcwBzAVYBVgDOAM4AqwCrADEAMQCmAKYBTgFOACoAKgB/AH8AzQDNANEA0QDEAMQAZwBnAFIAUgBHAEcAaQBpAOEA4QB/AH8AVgBWAG8AbwCCAIIAtAC0AF8AXwFBAUEAtQC1AEYARgCwALAAcwBzAB0AHQAvAC8B9AH0AH8AfwsUCxQWAP/C/1L/Uv8N/w1D/xSm/wD/Gf9f/1//DP8MAAAAAAAAAAA="
+	}
+	
+	#Witch King deleted to put in the Minas Morgul/MMO file
+	
+	5={
+		first_name="Khamul"
+		family = c:MOR.fam:Melkorionath
+		birth_date=1.1.5
+		culture="balchoth"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=7
+		add_charisma=6
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+		add_trait="sakhla"
+		add_trait="nazgul"
+		add_trait="novice_magic_user"
+		add_trait="intelligent"
+		add_trait="proud"
+		add_gold=200
+		add_popularity=100
+		father = char:3
+		dna="DrgOuLshuyHJ/Mn8ApgCmAKMAowC0gLSAjcCNwKLAosCigKKAmECYQJnAmcChwKHAmYCZgL8AvwCXwJfAncCdwKQApACewJ7AmYCZgLWAtYCewJ7AoICggKMAowChQKFAosCiwKPAo8CaAJoApUClQJpAmkCowKjApECkQJMAkwClwKXApUClQJqAmoCewJ7AnoCegJ8AnwCdgJ2A6kDqQJ5AnkCdQJ1An8CfwKVApUCcwJzAnwCfAKSApICgAKAAo4CjgTWBNYClwKXAm4CbgJ3AncCegJ6AmsCawJ8AnwE0gTSAoMCgwIAAgAAAQABAW8BbwDHAMcBXQFdAJAAkACAAIAAbwBvAQsBCwCeAJ4AFQAVAVMBUwB/AH8AiwCLAPQA9AEsASwAKQApAM8AzwDnAOcAagBqAAsACwB/AH8AJgAmAMkAyQEWARYAkQCRAPkA+QBGAEYBEAEQAHkAeQDZANkAnACcAWIBYgDcANwDkAHTAH8AfwskCyT/MP8w//j/+P/O/84UfxR///P/8/8Y/xj/ZP9kAAAAAAAAAAA="
+	}
+	
+	6={
+		first_name="Dwar of Waw"
+		family = c:MOR.fam:Melkorionath
+		birth_date=1.1.5
+		culture="balchoth"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=7
+		add_charisma=6
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+		add_trait="adash"
+		add_trait="nazgul"
+		add_trait="novice_magic_user"
+		add_trait="intelligent"
+		add_trait="proud"
+		add_gold=200
+		add_popularity=100
+		father = char:3
+		dna="DrgOuLshuyHJ/Mn8ApgCmAKMAowC0gLSAjcCNwKLAosCigKKAmECYQJnAmcChwKHAmYCZgL8AvwCXwJfAncCdwKQApACewJ7AmYCZgLWAtYCewJ7AoICggKMAowChQKFAosCiwKPAo8CaAJoApUClQJpAmkCowKjApECkQJMAkwClwKXApUClQJqAmoCewJ7AnoCegJ8AnwCdgJ2A6kDqQJ5AnkCdQJ1An8CfwKVApUCcwJzAnwCfAKSApICgAKAAo4CjgTWBNYClwKXAm4CbgJ3AncCegJ6AmsCawJ8AnwE0gTSAoMCgwIAAgAAAQABAW8BbwDHAMcBXQFdAJAAkACAAIAAbwBvAQsBCwCeAJ4AFQAVAVMBUwB/AH8AiwCLAPQA9AEsASwAKQApAM8AzwDnAOcAagBqAAsACwB/AH8AJgAmAMkAyQEWARYAkQCRAPkA+QBGAEYBEAEQAHkAeQDZANkAnACcAWIBYgDcANwDkAHTAH8AfwskCyT/MP8w//j/+P/O/84UfxR///P/8/8Y/xj/ZP9kAAAAAAAAAAA="
+	}
+	
+	7={
+		first_name="Jilndur"
+		family = c:MOR.fam:Melkorionath
+		birth_date=1.1.5
+		culture="balchoth"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=7
+		add_charisma=6
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+		add_trait="juru"
+		add_trait="nazgul"
+		add_trait="novice_magic_user"
+		add_trait="intelligent"
+		add_trait="proud"
+		add_gold=200
+		add_popularity=100
+		father = char:3
+		dna="DrgOuLshuyHJ/Mn8ApgCmAKMAowC0gLSAjcCNwKLAosCigKKAmECYQJnAmcChwKHAmYCZgL8AvwCXwJfAncCdwKQApACewJ7AmYCZgLWAtYCewJ7AoICggKMAowChQKFAosCiwKPAo8CaAJoApUClQJpAmkCowKjApECkQJMAkwClwKXApUClQJqAmoCewJ7AnoCegJ8AnwCdgJ2A6kDqQJ5AnkCdQJ1An8CfwKVApUCcwJzAnwCfAKSApICgAKAAo4CjgTWBNYClwKXAm4CbgJ3AncCegJ6AmsCawJ8AnwE0gTSAoMCgwIAAgAAAQABAW8BbwDHAMcBXQFdAJAAkACAAIAAbwBvAQsBCwCeAJ4AFQAVAVMBUwB/AH8AiwCLAPQA9AEsASwAKQApAM8AzwDnAOcAagBqAAsACwB/AH8AJgAmAMkAyQEWARYAkQCRAPkA+QBGAEYBEAEQAHkAeQDZANkAnACcAWIBYgDcANwDkAHTAH8AfwskCyT/MP8w//j/+P/O/84UfxR///P/8/8Y/xj/ZP9kAAAAAAAAAAA="
+	}
+	
+	8={
+		first_name="Akhorahil"
+		family = c:MOR.fam:Melkorionath
+		birth_date=1.1.5
+		culture="black_numenorean"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=7
+		add_charisma=6
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+		add_trait="mebat"
+		add_trait="nazgul"
+		add_trait="master_magic_user"
+		add_trait="intelligent"
+		add_trait="proud"
+		add_gold=200
+		add_popularity=100
+		father = char:3
+		dna="DrgOuLshuyHJ/Mn8ApgCmAKMAowC0gLSAjcCNwKLAosCigKKAmECYQJnAmcChwKHAmYCZgL8AvwCXwJfAncCdwKQApACewJ7AmYCZgLWAtYCewJ7AoICggKMAowChQKFAosCiwKPAo8CaAJoApUClQJpAmkCowKjApECkQJMAkwClwKXApUClQJqAmoCewJ7AnoCegJ8AnwCdgJ2A6kDqQJ5AnkCdQJ1An8CfwKVApUCcwJzAnwCfAKSApICgAKAAo4CjgTWBNYClwKXAm4CbgJ3AncCegJ6AmsCawJ8AnwE0gTSAoMCgwIAAgAAAQABAW8BbwDHAMcBXQFdAJAAkACAAIAAbwBvAQsBCwCeAJ4AFQAVAVMBUwB/AH8AiwCLAPQA9AEsASwAKQApAM8AzwDnAOcAagBqAAsACwB/AH8AJgAmAMkAyQEWARYAkQCRAPkA+QBGAEYBEAEQAHkAeQDZANkAnACcAWIBYgDcANwDkAHTAH8AfwskCyT/MP8w//j/+P/O/84UfxR///P/8/8Y/xj/ZP9kAAAAAAAAAAA="
+	}
+	
+	9={
+		first_name="Hoarmura"
+		family = c:MOR.fam:Melkorionath
+		birth_date=1.1.5
+		culture="angmarim"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=7
+		add_charisma=6
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+		add_trait="khanto"
+		add_trait="nazgul"
+		add_trait="novice_magic_user"
+		add_trait="intelligent"
+		add_trait="proud"
+		add_gold=200
+		add_popularity=100
+		father = char:3
+		dna="DrgOuLshuyHJ/Mn8ApgCmAKMAowC0gLSAjcCNwKLAosCigKKAmECYQJnAmcChwKHAmYCZgL8AvwCXwJfAncCdwKQApACewJ7AmYCZgLWAtYCewJ7AoICggKMAowChQKFAosCiwKPAo8CaAJoApUClQJpAmkCowKjApECkQJMAkwClwKXApUClQJqAmoCewJ7AnoCegJ8AnwCdgJ2A6kDqQJ5AnkCdQJ1An8CfwKVApUCcwJzAnwCfAKSApICgAKAAo4CjgTWBNYClwKXAm4CbgJ3AncCegJ6AmsCawJ8AnwE0gTSAoMCgwIAAgAAAQABAW8BbwDHAMcBXQFdAJAAkACAAIAAbwBvAQsBCwCeAJ4AFQAVAVMBUwB/AH8AiwCLAPQA9AEsASwAKQApAM8AzwDnAOcAagBqAAsACwB/AH8AJgAmAMkAyQEWARYAkQCRAPkA+QBGAEYBEAEQAHkAeQDZANkAnACcAWIBYgDcANwDkAHTAH8AfwskCyT/MP8w//j/+P/O/84UfxR///P/8/8Y/xj/ZP9kAAAAAAAAAAA="
+	}
+	
+	10={
+		first_name="Adunaphel"
+		family = c:MOR.fam:Melkorionath
+		birth_date=1.1.5
+		culture="black_numenorean"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=7
+		add_charisma=6
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+#		add_trait="saphtan"
+		add_trait="nazgul"
+		add_trait="novice_magic_user"
+		add_trait="intelligent"
+		add_trait="proud"
+		add_gold=200
+		add_popularity=100
+		father = char:3
+		dna="DrgOuLshuyHJ/Mn8ApgCmAKMAowC0gLSAjcCNwKLAosCigKKAmECYQJnAmcChwKHAmYCZgL8AvwCXwJfAncCdwKQApACewJ7AmYCZgLWAtYCewJ7AoICggKMAowChQKFAosCiwKPAo8CaAJoApUClQJpAmkCowKjApECkQJMAkwClwKXApUClQJqAmoCewJ7AnoCegJ8AnwCdgJ2A6kDqQJ5AnkCdQJ1An8CfwKVApUCcwJzAnwCfAKSApICgAKAAo4CjgTWBNYClwKXAm4CbgJ3AncCegJ6AmsCawJ8AnwE0gTSAoMCgwIAAgAAAQABAW8BbwDHAMcBXQFdAJAAkACAAIAAbwBvAQsBCwCeAJ4AFQAVAVMBUwB/AH8AiwCLAPQA9AEsASwAKQApAM8AzwDnAOcAagBqAAsACwB/AH8AJgAmAMkAyQEWARYAkQCRAPkA+QBGAEYBEAEQAHkAeQDZANkAnACcAWIBYgDcANwDkAHTAH8AfwskCyT/MP8w//j/+P/O/84UfxR///P/8/8Y/xj/ZP9kAAAAAAAAAAA="
+	}
+	
+	11={
+		first_name="Ren"
+		family = c:MOR.fam:Melkorionath
+		birth_date=1.1.5
+		culture="nurnim"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=7
+		add_charisma=6
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+		add_trait="nitir"
+		add_trait="nazgul"
+		add_trait="novice_magic_user"
+		add_trait="intelligent"
+		add_trait="proud"
+		add_gold=200
+		add_popularity=100
+		father = char:3
+		dna="DrgOuLshuyHJ/Mn8ApgCmAKMAowC0gLSAjcCNwKLAosCigKKAmECYQJnAmcChwKHAmYCZgL8AvwCXwJfAncCdwKQApACewJ7AmYCZgLWAtYCewJ7AoICggKMAowChQKFAosCiwKPAo8CaAJoApUClQJpAmkCowKjApECkQJMAkwClwKXApUClQJqAmoCewJ7AnoCegJ8AnwCdgJ2A6kDqQJ5AnkCdQJ1An8CfwKVApUCcwJzAnwCfAKSApICgAKAAo4CjgTWBNYClwKXAm4CbgJ3AncCegJ6AmsCawJ8AnwE0gTSAoMCgwIAAgAAAQABAW8BbwDHAMcBXQFdAJAAkACAAIAAbwBvAQsBCwCeAJ4AFQAVAVMBUwB/AH8AiwCLAPQA9AEsASwAKQApAM8AzwDnAOcAagBqAAsACwB/AH8AJgAmAMkAyQEWARYAkQCRAPkA+QBGAEYBEAEQAHkAeQDZANkAnACcAWIBYgDcANwDkAHTAH8AfwskCyT/MP8w//j/+P/O/84UfxR///P/8/8Y/xj/ZP9kAAAAAAAAAAA="
+	}
+	
+	12={
+		first_name="Uvathar"
+		family = c:MOR.fam:Melkorionath
+		birth_date=1.1.5
+		culture="variag"
+		religion="melkorism"
+		no_stats=yes
+		add_martial=7
+		add_charisma=6
+		add_finesse=8
+		add_zeal=8
+		no_traits=yes
+		add_trait="uri"
+		add_trait="nazgul"
+		add_trait="novice_magic_user"
+		add_trait="intelligent"
+		add_trait="proud"
+		add_gold=200
+		add_popularity=100
+		father = char:3
+		dna="DrgOuLshuyHJ/Mn8ApgCmAKMAowC0gLSAjcCNwKLAosCigKKAmECYQJnAmcChwKHAmYCZgL8AvwCXwJfAncCdwKQApACewJ7AmYCZgLWAtYCewJ7AoICggKMAowChQKFAosCiwKPAo8CaAJoApUClQJpAmkCowKjApECkQJMAkwClwKXApUClQJqAmoCewJ7AnoCegJ8AnwCdgJ2A6kDqQJ5AnkCdQJ1An8CfwKVApUCcwJzAnwCfAKSApICgAKAAo4CjgTWBNYClwKXAm4CbgJ3AncCegJ6AmsCawJ8AnwE0gTSAoMCgwIAAgAAAQABAW8BbwDHAMcBXQFdAJAAkACAAIAAbwBvAQsBCwCeAJ4AFQAVAVMBUwB/AH8AiwCLAPQA9AEsASwAKQApAM8AzwDnAOcAagBqAAsACwB/AH8AJgAmAMkAyQEWARYAkQCRAPkA+QBGAEYBEAEQAHkAeQDZANkAnACcAWIBYgDcANwDkAHTAH8AfwskCyT/MP8w//j/+P/O/84UfxR///P/8/8Y/xj/ZP9kAAAAAAAAAAA="
+	}
+	
+}
+	

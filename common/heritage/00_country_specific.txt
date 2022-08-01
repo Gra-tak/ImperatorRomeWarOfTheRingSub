@@ -1,0 +1,44 @@
+﻿gondorian_heritage = {
+	modifier = {
+		#good
+		diplomatic_relations = 3
+		global_monthly_state_loyalty = 0.05
+		
+		#bad
+		fort_maintenance_cost = 0.5
+	}
+	
+	trigger = {
+		tag = GON
+	}
+}
+
+angmar_heritage = {
+	modifier = {
+		#good
+		army_maintenance_cost = -0.15
+		global_slaves_output = 0.2
+		
+		#bad
+		land_morale_modifier = -0.05
+	}
+	
+	trigger = {
+		tag = ANG
+	}
+}
+
+sauron_heritage = {
+	modifier = {
+		#good
+		army_maintenance_cost = -0.2
+		#monthly_military_experience_modifier = 0.2
+		
+		#bad
+		land_morale_modifier = -0.05
+	}
+	
+	trigger = {
+		tag = MOR
+	}
+}

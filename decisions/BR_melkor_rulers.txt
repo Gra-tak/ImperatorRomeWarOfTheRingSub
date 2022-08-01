@@ -1,0 +1,69 @@
+﻿country_decisions = {
+	convert_the_nobles = {
+		potential = {
+			current_ruler = {
+				is_alive = yes
+				is_ruler = yes
+				prisoner = no
+				has_religion = melkorism
+			}
+		}
+		
+		allow = {
+			current_ruler = {
+				is_alive = yes
+				is_ruler = yes
+				prisoner = no
+				has_religion = melkorism
+			}
+		}
+		
+		ai_allow = {
+		}
+		
+		effect = {
+			every_character = { #the ones who will refuse
+				limit = {
+					NOT = { has_religion = melkorism }
+					has_religion = iluvatarism
+				}
+					#add_loyalty = subtract_loyalty_huge
+				}
+			every_character = { #the ones who will convert reluctantly and lose loyalty
+				limit = {
+					NOT = { has_religion = melkorism }
+					NOR = {
+					has_religion = iluvatarism
+					has_trait = cruel
+					has_trait = corrupt
+					has_trait = harsh
+					has_trait = vengeful
+					has_trait = selfish
+					has_trait = reckless
+					}
+				}
+					set_character_religion = melkorism
+					#add_loyalty = subtract_loyalty_huge
+			}
+			every_character = { #the ones who will convert willingly
+				limit = {
+					NOT = { has_religion = melkorism }
+					NOR = {
+					has_trait = cruel
+					has_trait = corrupt
+					has_trait = harsh
+					has_trait = vengeful
+					has_trait = selfish
+					has_trait = reckless
+					}
+				}
+				set_character_religion = melkorism
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+	}
+}

@@ -1,0 +1,10 @@
+﻿object={
+	name="volcanoes"
+	clamp_to_water_level=no
+	render_under_water=yes
+	generated_content=no
+	layer="monument_layer"
+	pdxmesh="volcanic_caldera_01_mesh"
+	count=1
+	transform="4356.752441 -0.300000 2304.197998 -0.000000 -0.200000 -0.000000 0.819656 0.800000 0.400000 0.800000
+"}

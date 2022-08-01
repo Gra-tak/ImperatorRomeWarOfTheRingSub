@@ -1,0 +1,88 @@
+﻿#Galenas
+pipeweed = {
+	category = 1
+
+	gold = 0.3
+	
+	province = {
+		local_population_capacity_modifier = 0.10
+	}
+
+	country = {
+		global_manpower_modifier = 0.1
+	}
+	
+	color = { 0.2 0.8 0.1 }	
+	
+}
+
+#Herbs
+woad = { 
+	category = 2
+
+	gold = 0.2 
+	
+	province = {
+		local_tribesmen_happyness = 0.1
+	}
+
+	country = {
+		global_tribesmen_happyness = 0.1
+	}
+
+	
+	
+	
+	color = hsv { 0.67 0.8 0.9 }
+	
+}
+
+mithril = {
+	category = 0
+	
+	gold = 5.0
+	
+	province = {
+		local_tax_modifier = 0.5
+	}
+
+	country = {
+		heavy_infantry_discipline = 0.2
+	}
+
+
+	color = hsv { 0.6 0.6 0.6 }	
+
+}
+
+mumakil = {
+	category = 0
+	
+	gold = 0.5
+	
+	province = {
+	}
+
+	country = {
+		warelephant_discipline = 0.1
+	}
+	
+	color = hsv { 0.6 0.5 0.5 }	
+}
+
+whale = {
+	category = 1
+
+	gold = 0.4
+	
+	province = {
+		local_freemen_happyness = 0.05
+	}
+
+	country = {
+		global_commerce_modifier = 0.05
+	}
+	
+	color = { 0.0 0.2 0.5 }
+	
+}

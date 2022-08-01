@@ -1,0 +1,21 @@
+﻿"QAR"={ #THIS IS A FILLER
+	country="QAR"
+
+	22={
+		first_name="Hiempsal"
+		family_name="Abdmil"
+		birth_date=2948.1.12
+		culture="qarsag"
+		religion="eastern_animism"
+		no_stats=yes
+		add_martial=7
+		add_charisma=7
+		add_finesse=5
+		add_zeal=8
+		add_gold=200
+		add_popularity=60
+		c:QAR={
+			set_as_ruler=char:22
+		}
+	}
+}

@@ -1,0 +1,243 @@
+﻿namespace = br_dunedain
+
+###Strong Blood of Numenor death and aging###
+#First we assign the old trait to those over 200 that have the strong blood of numenor
+br_dunedain.1 = {
+	
+	type = character_event
+	title = "br_dunedain.1.t"
+	desc = "br_dunedain.1.desc"
+	picture = dunedain_patrol
+	
+
+	trigger = {
+		age >= 200
+		has_trait = strong_blood_of_numenor
+		NOT = { has_trait = old }
+		NOT = { has_trait = nazgul }
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_dunedain.1.a"
+		add_trait = old
+	}
+	
+}
+
+#Then for those with the normal blood of numenor at age 120
+br_dunedain.2 = {
+	
+	type = character_event
+	title = "br_dunedain.1.t"
+	desc = "br_dunedain.1.desc"
+	picture = dunedain_patrol
+	
+
+	trigger = {
+		age >= 120
+		has_trait = blood_of_numenor
+		NOT = { has_trait = old }
+		NOT = { has_trait = nazgul }
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_dunedain.1.a"
+		add_trait = old
+	}
+	
+}
+
+#copy of the death and disease event from vanilla
+br_dunedain.3 = { #this event also works for dwarves who get the old trait
+	
+type = character_event
+title = "death.2.t"
+desc = "death.2.desc"
+picture = dunedain_patrol
+	
+
+left_portrait = root
+	
+	trigger = {
+		is_alive = yes
+		has_trait = old
+		age > 120
+		NOR = {
+			has_trait = dementia
+			has_trait = cancer
+			has_trait = gout
+			has_trait = diphtheria
+		}
+	}
+	
+	weight_multiplier = {
+		modifier = {
+			factor = 3
+			age > 120
+		}
+		modifier = {
+			factor = 3
+			age > 200
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				25 = {
+					trigger = {
+						NOT = {
+							has_trait = dementia
+						}
+					}
+					set_local_variable = {
+						name = terminal_disease_temp
+						value = 1
+					}
+				}
+				25 = {
+					trigger = {
+						NOT = {
+							has_trait = cancer
+						}
+					}
+					set_local_variable = {
+						name = terminal_disease_temp
+						value = 2
+					}
+				}
+				25 = {
+					trigger = {
+						NOT = {
+							has_trait = gout
+						}
+					}
+					set_local_variable = {
+						name = terminal_disease_temp
+						value = 3
+					}
+				}
+				25 = {
+					trigger = {
+						NOT = {
+							has_trait = diphtheria
+						}
+					}
+					set_local_variable = {
+						name = terminal_disease_temp
+						value = 4
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "death.2.a"
+		if = {
+			limit = {
+				local_var:terminal_disease_temp = 1
+			}
+			add_trait = dementia
+		}
+		else_if = {
+			limit = {
+				local_var:terminal_disease_temp = 2
+			}
+			add_trait = cancer
+		}
+		else_if = {
+			limit = {
+				local_var:terminal_disease_temp = 3
+			}
+			add_trait = gout
+		}
+		else_if = {
+			limit = {
+				local_var:terminal_disease_temp = 4
+			}
+			add_trait = diphtheria
+		}
+	}
+}
+
+###Assigning the blood of numenor traits to randomly generated characters on start up###
+br_dunedain.4 = {
+	
+	type = country_event
+	title = "br_dunedain.1.t"
+	desc = "br_dunedain.1.desc"
+	picture = dunedain_patrol
+	hidden = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "OK"
+		every_character = {
+			limit = {
+				OR = {
+					has_culture = dunedain
+					has_culture = rangers
+					has_culture = black_numenorean
+				}
+			}
+			add_trait = strong_blood_of_numenor
+		}
+		
+		every_character = {
+			limit = {
+				OR = {
+				has_culture = lesser_dunedain
+				has_culture = corsair
+				has_culture = dolamroth
+			}
+			}
+			add_trait = blood_of_numenor
+		}
+		#may as well throw in elves, dwarves and orcs here too
+		every_character = {
+			limit = {
+				OR = {
+					has_culture_group = noldor_group
+					has_culture_group = teleri_group
+					has_culture_group = vanyar_group
+				}
+			}
+			add_trait = elf
+		}		
+		
+		every_character = {
+			limit = {
+				has_culture_group = dwarf_group
+			}
+			add_trait = dwarf
+		}	
+
+		every_character = {
+			limit = {
+				has_culture_group = orcs_group
+			}
+			add_trait = orc
+		}	
+		
+		every_character = {
+			limit = {
+			has_culture_group = halfling_group
+			}
+			add_trait = halfling
+		}				
+	}		
+}
+		

@@ -1,0 +1,24 @@
+Event Scope Types:
+none
+value
+bool
+flag
+color
+country
+character
+province
+combat
+siege
+unit
+pop
+family
+party
+religion
+culture
+job
+culture group
+area
+state
+subunit
+governorship
+region

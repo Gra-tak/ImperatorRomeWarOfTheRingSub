@@ -1,0 +1,20 @@
+[14:43:02]: game_hash_long: 2dd37908dec406f72022a11862afabace30ef410
+[14:43:02]: game_hash_short: 2dd3790
+[14:43:02]: game_branch: ms/release/1.2-cicero
+[14:43:02]: game_timestamp: 2019-08-13 17:38:20 +0200
+
+[14:43:02]: jomini_hash_long: 5af9df5a4b460a623ce71803e1f60b7bcb5adc25
+[14:43:02]: jomini_hash_short: 5af9df5
+[14:43:02]: jomini_branch: sulla/ms/1.2-cicero
+[14:43:02]: jomini_timestamp: 2019-08-12 13:31:46 +0200
+
+[14:43:02]: clausewitz_hash_long: ff0fe1bab4609e271c8dd50b085ad7b5acefa5f0
+[14:43:02]: clausewitz_hash_short: ff0fe1b
+[14:43:02]: clausewitz_branch: sulla/ms/1.2-cicero
+[14:43:02]: clausewitz_timestamp: 2019-08-13 12:31:13 +0200
+
+[14:43:02]: external_libs_hash_long: 1e7049c5c7643b442588ad930d27f7720b163788
+[14:43:02]: external_libs_hash_short: 1e7049c
+[14:43:02]: external_libs_branch: HEAD
+[14:43:02]: external_libs_timestamp: 2019-08-08 13:45:53 +0200
+

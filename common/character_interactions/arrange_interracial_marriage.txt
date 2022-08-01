@@ -1,0 +1,90 @@
+﻿arrange_marriage_interracial = { 
+
+	on_other_nation = no
+	on_own_nation = yes
+	
+	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_arrange_marriage"
+	
+	
+	
+	
+	potential_trigger = {
+		scope:actor = {
+			OR = {
+				is_monarchy = yes
+				is_tribal = yes
+			}
+			is_ai = no
+		}
+		hidden:scope:target = {
+			is_alive = yes
+			employer = scope:actor
+			NOT = { employer = { tag = REB } }
+			NOT = { employer = { tag = BAR } }
+			is_adult = yes
+			OR = {
+				is_close_relative = scope:actor.current_ruler
+				is_ruler = yes
+			}
+		}
+	}
+	
+	
+	allowed_trigger = {
+		scope:target = {
+			is_married = no
+		}
+	}
+	
+	
+	#for any character in the scope:target country
+	
+	character_actor_trigger = {
+		is_adult = yes
+		is_married = no
+		NOT = { is_same_gender = scope:target }
+		NOT = { lotr_can_marry_trigger = { TARGET = scope:target } }
+		trigger_if = {
+			limit = {
+				NOT = {
+					scope:target.employer = {
+						has_law = egyption_succession_law
+					}
+				}
+			}
+			NOR = { 
+				is_close_relative = scope:target 
+				this = scope:target.mother
+				this = scope:target.father
+				is_child_of = scope:target
+			}
+		}
+		trigger_else = {
+			OR = {
+				NOR = { 
+					is_close_relative = scope:target
+					this = scope:target.mother
+					this = scope:target.father
+				}
+				is_sibling_of = scope:target
+			}
+		}
+		NOT = {
+			has_character_modifier = foreign_citizen
+		}
+	}
+	
+	
+	effect = {
+		scope:actor.current_ruler = { add_popularity = subtract_popularity_large }
+		if = {	
+			limit = {
+				exists = scope:recipient
+			}
+			scope:target = {
+				marry_character = scope:recipient
+			}
+		}
+	}
+	
+}	

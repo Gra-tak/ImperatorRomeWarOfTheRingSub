@@ -1,0 +1,81 @@
+﻿country_decisions = {
+	
+	# Form Khazad-dûm 
+	form_khazad_dum = {
+		
+		potential = {
+			num_of_cities >= 1
+			any_country_culture = {
+				is_integrated = yes
+				is_culture = longbeard
+			}
+			NOT = {
+				is_endgame_tag_trigger = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 3699
+					province_id = 2999
+					province_id = 3695
+					province_id = 3696
+					province_id = 3697
+					province_id = 3698
+					province_id = 3727
+					province_id = 3668
+					province_id = 3752
+					province_id = 3753
+					province_id = 3754
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = formable_not_khazad_dum_exists
+				NOT = {
+					any_country = {
+						tag = KZD
+					}
+				}
+			}
+			AND = {
+				owns = 3699
+				owns = 2999
+				owns = 3695
+				owns = 3696
+				owns = 3697
+				owns = 3698
+				owns = 3727
+				owns = 3668
+				owns = 3752
+				owns = 3753
+				owns = 3754
+			}
+			can_form_nation_trigger = yes
+		}
+		
+		effect = {
+			change_country_name = "KHAZAD_DUM_NAME"
+			hidden_effect = {
+				change_country_adjective = "KHAZAD_DUM_ADJECTIVE"
+				change_country_color =  "khazad_dum"
+				change_country_tag = KZD
+				change_country_flag = KHAZADDUM
+			}
+			add_country_modifier = {
+				name = formable_country_huge_modifier
+				duration = 7600
+			}
+			add_3_free_province_investments = yes
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+} 
+

@@ -1,0 +1,516 @@
+﻿namespace = br_sauron
+
+br_sauron.1 = { #event triggered for ruler that sauron has corrupt_target_ruler char interaction with
+	
+	type = character_event
+	title = "br_sauron.1.t"
+	desc = "br_sauron.1.desc"
+	picture = dark_priestess
+	goto_location = root
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+		save_scope_as = convert
+	}
+	
+	option = {
+		name = "br_sauron.1.a"
+		set_character_religion = melkorism
+		employer = { set_country_religion = melkorism }
+		C:MOR = {
+			trigger_event = { id = br_sauron.3 days = 30 } #success reply
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 50
+				OR = {
+					has_trait = cruel
+					has_trait = corrupt
+					has_trait = harsh
+					has_trait = vengeful
+					has_trait = selfish
+					has_trait = reckless
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "br_sauron.1.b" #rejection for zealous or basic good religion humans
+		C:MOR = {
+			trigger_event = { id = br_sauron.2 days = 30 } #failure reply
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 50
+				OR = {
+					has_trait = good_natured
+					has_trait = pious
+					has_trait = zealous
+					has_trait = devout
+					has_trait = merciful
+					has_trait = righteous
+				}
+			}
+			modifier = {
+				factor = 100000
+				OR = {
+					has_religion = iluvatarism
+				}
+			}
+		}
+	}	
+			
+}
+	
+br_sauron.2 = { #reply triggered from ruler that sauron has corrupt_target_ruler char interaction with - failure
+	
+	type = country_event
+	title = "br_sauron.2.t"
+	desc = "br_sauron.2.desc"
+	left_portrait = root.current_ruler
+	right_portrait = scope:convert
+	picture = crucifixion
+	goto_location = root
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_sauron.2.a"
+	}		
+}
+	
+br_sauron.3 = { #reply triggered from ruler that sauron has corrupt_target_ruler char interaction with - succes
+	
+	type = country_event
+	title = "br_sauron.3.t"
+	desc = "br_sauron.3.desc"
+	left_portrait = root.current_ruler
+	right_portrait = scope:convert
+	picture = dark_priestess
+	goto_location = root
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_sauron.3.a"
+		every_country = {
+			limit = {
+				NOT = { religion = melkorism }
+			}
+			trigger_event = { id = br_sauron.10 days = 30 } #players are told this ruler has turned to Melkor
+		}
+	}		
+}
+	
+br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will join Sauron as a puppet state, this hidden event checks for the conditions and sends another with the msg
+	
+	type = country_event
+	title = "br_sauron.3.t"
+	desc = "br_sauron.3.desc"
+	left_portrait = root.current_ruler
+	right_portrait = scope:convert
+	picture = dol_guldur
+	goto_location = root
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = servants_of_sauron }
+		NOT = { primary_culture = orcish }
+		NOT = { primary_culture = black_numenorean }
+		NOT = { primary_culture = corsair }
+		NOT = { primary_culture = goblins }
+		NOT = { primary_culture = urukhai }
+	}
+	
+	immediate = {
+	set_local_variable = { name = melkor_pops value = 0 }
+		every_owned_province = {
+			every_pops_in_province = {
+				limit = {
+					pop_religion = melkorism
+					}
+				change_local_variable = { 
+					name = melkor_pops
+					add = 1
+				}
+			}
+		}
+		set_local_variable = { name = total_pops value = 0 }
+		every_owned_province = {
+			every_pops_in_province = {   
+				change_local_variable = {
+					name = total_pops
+					add = 1
+				}
+			}
+		}
+		set_local_variable = { 
+			name = melkor_percentage_pop
+			value = local_var:melkor_pops
+    	}
+		change_local_variable = { 
+			name = melkor_percentage_pop
+			divide = local_var:total_pops
+    	}	
+	}
+	
+	option = {
+		name = "br_sauron.3.a"
+		if = {
+			limit =  {
+				local_var:melkor_percentage_pop >= 0.5
+			}
+			trigger_event = { id = br_sauron.5 }		
+		}
+	}		
+}
+	
+br_sauron.5 = { #the message sent to confirm that the black priesthood is set up and that the realm is now a vassal state of sauron
+	
+	type = country_event
+	title = "br_sauron.5.t"
+	desc = "br_sauron.5.desc"
+	left_portrait = root.current_ruler
+	right_portrait = scope:convert
+	picture = dol_guldur
+	goto_location = root
+	
+	trigger = {
+		NOT = { has_country_modifier = servants_of_sauron }
+		NOT = { primary_culture = orcish }
+		NOT = { primary_culture = black_numenorean }
+		NOT = { primary_culture = corsair }
+		NOT = { primary_culture = goblins }
+		NOT = { primary_culture = urukhai }
+	}
+		
+	immediate = {
+		save_scope_as = new_subject
+		root.current_ruler = {
+			save_scope_as = convert
+		}
+	}
+	
+	option = {
+	name = "br_sauron.5.a"
+	trigger = { is_ai = yes }
+	add_country_modifier = { name = servants_of_sauron }
+	C:MOR = {
+		trigger_event = { id = br_sauron.6 days = 30 } #Sauron is notified
+		}
+	}
+
+	option = {
+		name = "br_sauron.5.a"
+		trigger = { is_ai = no }
+		add_country_modifier = { name = servants_of_sauron }
+		C:MOR = {
+			trigger_event = { id = br_sauron.6 days = 30 } #Sauron is notified
+		}
+	}
+
+}
+
+br_sauron.6 = { #Sauron is informed of his new vassal and can choose to reward them
+	
+	type = country_event
+	title = "br_sauron.6.t"
+	desc = "br_sauron.6.desc"
+	left_portrait = root.current_ruler
+	right_portrait = scope:convert
+	picture = dol_guldur
+	goto_location = root
+	
+	trigger = {
+		always = yes
+	}
+		
+	immediate = {
+	}
+	
+	option = {
+		name = "br_sauron.6.a"
+		make_subject = {
+			target = scope:new_subject
+			type = thrall_tribe
+		}
+		every_country = {
+			limit = {
+				NOT = { religion = melkorism }
+			}
+			trigger_event = { id = br_sauron.12 days = 30 } #players are told this ruler has turned to Melkor
+		}
+	}
+
+}
+
+br_sauron.7 = { #Sauron is informed that he will be spending the next 20 years regaining his substance
+	
+	type = country_event
+	title = "br_sauron.7.t"
+	desc = "br_sauron.7.desc"
+	left_portrait = root.current_ruler
+	picture = dol_guldur
+	goto_location = root
+	
+	trigger = {
+		always = yes
+	}
+		
+	immediate = {
+	}
+	
+	option = {
+		name = "br_sauron.7.a"
+		char:27 = { 
+			mana_cost_effect = { COST = 100 }
+			trigger_event = { id = br_sauron.8 days = 365 }
+		}
+	}
+
+	option = {
+		name = "br_sauron.7.b"
+	}
+
+}
+
+br_sauron.8 = { #Sauron is informed that he has regained some of his form
+	
+	type = character_event
+	title = "br_sauron.8.t"
+	desc = "br_sauron.8.desc"
+	left_portrait = root.current_ruler
+	picture = dol_guldur
+	goto_location = root
+	
+	trigger = {
+		always = yes
+	}
+		
+	immediate = {
+	}
+	
+	option = {
+		name = "br_sauron.8.a"
+		if = {
+			limit = {
+				has_trait = 10_sauron
+			}
+			remove_trait = 10_sauron
+			add_trait = 20_sauron
+		}
+		else_if = {
+			limit = {
+				has_trait = 20_sauron
+			}
+			remove_trait = 20_sauron
+			add_trait = 30_sauron
+		}
+		else_if = {
+			limit = {
+				has_trait = 30_sauron
+			}
+			remove_trait = 30_sauron
+			add_trait = 40_sauron
+		}
+		else_if = {
+			limit = {
+				has_trait = 40_sauron
+			}
+			remove_trait = 40_sauron
+			add_trait = 50_sauron
+		}
+		else_if = {
+			limit = {
+				has_trait = 50_sauron
+			}
+			remove_trait = 50_sauron
+			add_trait = 60_sauron
+		}
+		else_if = {
+			limit = {
+				has_trait = 50_sauron
+			}
+			remove_trait = 50_sauron
+			add_trait = 60_sauron
+		}
+		else_if = {
+			limit = {
+				has_trait = 60_sauron
+			}
+			remove_trait = 60_sauron
+			add_trait = 70_sauron
+		}
+		else_if = {
+			limit = {
+				has_trait = 70_sauron
+			}
+			remove_trait = 70_sauron
+			add_trait = 80_sauron
+		}
+		else_if = {
+			limit = {
+				has_trait = 80_sauron
+			}
+			remove_trait = 80_sauron
+			add_trait = 90_sauron
+		}
+		else_if = {
+			limit = {
+				has_trait = 90_sauron
+			}
+			remove_trait = 90_sauron
+			add_trait = 100_sauron
+		}
+	}
+
+}	
+
+br_sauron.9 = { #AI Sauron version of event triggered for ruler that sauron has corrupt_target_ruler char interaction with
+	
+	type = character_event
+	title = "br_sauron.1.t"
+	desc = "br_sauron.1.desc"
+	picture = dark_priestess
+	goto_location = root
+	
+	trigger = {
+		C:MOR = { is_ai = yes }
+		is_ruler = yes
+		has_religion = eastern_animism
+	}
+	
+	
+	immediate = {
+	save_scope_as = convert
+	}
+	
+	option = {
+		name = "br_sauron.1.a"
+		set_character_religion = melkorism
+		employer = { set_country_religion = melkorism }
+		C:MOR = {
+			trigger_event = { id = br_sauron.3 days = 30 } #success reply
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 10
+				OR = {
+					has_trait = cruel
+					has_trait = corrupt
+					has_trait = harsh
+					has_trait = vengeful
+					has_trait = selfish
+					has_trait = reckless
+				}
+			}
+		}
+	}
+			
+	
+	option = {
+		name = "br_sauron.1.b" #rejection for zealous or basic good religion humans
+		C:MOR = {
+			trigger_event = { id = br_sauron.2 days = 30 } #failure reply
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 50
+				OR = {
+					has_trait = good_natured
+					has_trait = pious
+					has_trait = zealous
+					has_trait = devout
+					has_trait = merciful
+					has_trait = righteous
+				}
+			}
+			modifier = {
+				factor = 100000
+				OR = {
+					has_religion = iluvatarism
+				}
+			}
+		}
+	}	
+			
+}
+	
+br_sauron.10 = { #players are told this ruler has turned to Melkor
+	
+	type = country_event
+	title = "br_sauron.10.t"
+	desc = "br_sauron.10.desc"
+	picture = dol_guldur
+	right_portrait = scope:convert
+	goto_location = root
+	
+	trigger = {
+		always = yes
+	}
+	
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_sauron.10.a"
+	}
+
+	option = {
+		name = "br_sauron.10.b"
+	}
+		
+	option = {
+		name = "br_sauron.10.c"
+	}
+		
+}
+		
+
+		
+br_sauron.12 = { #players are a nation has turned to Melkor worship
+	
+	type = country_event
+	title = "br_sauron.12.t"
+	desc = "br_sauron.12.desc"
+	picture = dol_guldur
+	right_portrait = scope:convert
+	goto_location = root
+	
+	trigger = {
+		always = yes
+	}
+	
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_sauron.10.a"
+	}
+
+	option = {
+		name = "br_sauron.10.b"
+	}
+		
+	option = {
+		name = "br_sauron.10.c"
+	}
+		
+}

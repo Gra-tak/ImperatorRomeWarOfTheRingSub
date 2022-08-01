@@ -1,0 +1,49 @@
+﻿namespace = br_manpower
+
+br_manpower.1 = {
+	
+	type = country_event
+	title = "Hidden"
+	desc = "Hidden"
+	picture = ship_in_storm
+	hidden = yes
+	
+
+	trigger = {
+		manpower_percentage < 0.5
+		NOT = { has_country_modifier = manpower_losses	}
+		}
+	
+	immediate = {
+		add_country_modifier = { name = manpower_losses }	
+	}
+	
+	option = {
+		name = "hidden"
+	}
+	
+}
+
+br_manpower.2 = {
+	
+	type = country_event
+	title = "Hidden"
+	desc = "Hidden"
+	picture = ship_in_storm
+	hidden = yes
+	
+
+	trigger = {
+		manpower_percentage >= 0.5
+		has_country_modifier = manpower_losses
+	}
+	
+	immediate = {
+		remove_country_modifier = manpower_losses
+	}
+	
+	option = {
+		name = "hidden"
+	}
+	
+}

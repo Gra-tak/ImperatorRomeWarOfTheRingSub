@@ -1,0 +1,134 @@
+﻿namespace = br_rangers
+
+
+br_rangers.1 = { #Ask the council whether to come out of the shadows
+	
+	type = country_event
+	title = "br_rangers.1.t"
+	desc = "br_rangers.1.desc"
+	left_portrait = root.current_ruler
+	picture = dunedain_patrol
+	
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_rangers.1.a"
+		C:CAR = {
+					add_country_modifier = {
+					name = rise_of_the_dunedain
+					duration = -1
+				}
+				}
+		C:MOR = {
+			trigger_event = { id = br_rangers.2 days = 45 } #Mordor is informed that the Dunedain of the North are rising
+		}
+	}
+	
+	option = {
+		name = "br_rangers.1.b"		
+	}
+	}
+	
+
+br_rangers.2 = { #Mordor is informed
+	
+	type = country_event
+	title = "br_rangers.2.t"
+	desc = "br_rangers.2.desc"
+	left_portrait = root.current_ruler
+	picture = dunedain_patrol
+	
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_rangers.2.a"
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 100000
+				C:CAR = {
+					is_ai = no
+				}
+			}
+		}
+		C:XXP = {
+			trigger_event = { id = br_rangers.3 days = 30 } #Mordor is informed that the Dunedain of the North are rising
+				}
+		C:XXQ = {
+			trigger_event = { id = br_rangers.3 days = 30 } #Mordor is informed that the Dunedain of the North are rising
+		}
+	}
+	
+	option = { #Do nothing, AI will use this if CAR is AI
+		name = "br_rangers.2.b"
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 100000
+				C:CAR = {
+					is_ai = yes
+				}
+			}
+		}
+				}
+	}
+	
+	
+br_rangers.3 = { #Gobins informed that they must attack the rangers
+	
+	type = country_event
+	title = "br_rangers.3.t"
+	desc = "br_rangers.3.desc"
+	left_portrait = root.current_ruler
+	picture = event_barad_dur_eye
+	
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_rangers.3.a"
+		declare_war_with_wargoal = {
+            war_goal = raiding_wargoal
+            target = CAR
+        }
+		C:CAR = {
+			trigger_event = { id = br_rangers.4 days = 5 }
+		}
+	}
+	
+	}
+
+br_rangers.4 = { #Rangers informed that a goblin army is heading south
+	
+	type = country_event
+	title = "br_rangers.4.t"
+	desc = "br_rangers.4.desc"
+	left_portrait = root.current_ruler
+	picture = event_orc_wargriders
+	
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "br_rangers.4.a"
+	}
+	
+	}

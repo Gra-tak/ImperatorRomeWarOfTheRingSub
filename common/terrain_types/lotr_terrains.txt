@@ -1,0 +1,88 @@
+﻿### Realms in Exile ###
+wasteland = {
+	combat_width = 40
+	color = { 115 72 64 }
+	modifier = {
+		movement_cost = 0.2
+		attrition = 1
+		local_population_capacity_modifier  = -0.2
+		local_monthly_food = 2
+	}
+}
+
+arctic = {
+	combat_width = 40
+	color = { 240 255 250 }
+	modifier = {
+		movement_cost = 0.2
+		attrition = 1
+		local_population_capacity_modifier  = -0.30
+		local_monthly_food = 1.5
+	}
+}
+
+steppe = {
+	combat_width = 40
+	color = { 150 150 90 }
+	modifier = {
+		movement_cost = -0.15
+		local_monthly_food = 2
+	}
+}
+
+deep_forest = {
+	combat_width = 16
+	color = { 0.04 0.12 0.04 }
+	defender = 2
+	modifier = {
+	    supply_limit_modifier = -0.5
+		movement_cost = 0.8	
+		local_population_capacity_modifier  = -0.2
+		#local_population_growth = 0.13 
+		attrition = 1
+		local_monthly_food = 2
+	}
+}
+
+#Matt: Hills + desert.
+red_desert = {
+	combat_width = 40
+	color = { 192 64 64 }
+	defender = 1
+	modifier = {
+		movement_cost = 0.2
+		attrition = 1
+		local_population_capacity_modifier  = -0.60
+		local_monthly_food = 3
+	}
+}
+
+caverns = { #variant of mountains
+	combat_width = 16
+	defender = 2
+	color = { 64 72 112 }
+
+	defender = 3
+
+	modifier = {
+		supply_limit_modifier = -0.75
+		movement_cost = 0.9
+		local_population_capacity_modifier  = -0.1
+		local_monthly_food = 1.5
+	}
+}
+
+halls = { #variant of mountains
+	combat_width = 16
+	defender = 2
+	color = { 112 72 64 }
+
+	defender = 3
+
+	modifier = {
+		supply_limit_modifier = -0.75
+		movement_cost = 0.9
+		local_population_capacity_modifier  = -0.1
+		local_monthly_food = 1.5
+	}
+}

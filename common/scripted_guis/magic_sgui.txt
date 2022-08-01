@@ -1,0 +1,13 @@
+﻿sgui_mana_bar = {
+	scope = character
+	saved_scopes = {
+	}
+
+	is_shown = {
+		is_caster = yes
+	}
+
+	effect = {
+		custom_tooltip = mana_bar_tooltip
+	}
+}
