@@ -4686,10 +4686,29 @@ ip_monarchy.38 = {
 			has_trait = chaste
 			has_trait = incapable
 			has_trait = shrewd
-			has_trait = self_controlled 
+			has_trait = self_controlled
+			has_trait = maia
+			has_trait = nazgul
+			has_trait = asexual
+			has_trait = elf
 			has_variable = mon_38_cooldown 
 			employer = { has_variable = ip_mon_38_flag }
 			employer = { has_variable = mon_38_cooldown }
+		}
+	}
+
+	weight_multiplier = { #reduced likelyhood for long-lived
+		modifier = {
+			factor = 0.25
+			has_trait = dwarf
+		}
+		modifier = {
+			factor = 0.25
+			has_trait = strong_blood_of_numenor
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = blood_of_numenor
 		}
 	}
 	

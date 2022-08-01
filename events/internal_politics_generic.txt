@@ -211,6 +211,7 @@ ip_generic.4 = {
 	trigger = {
 		num_of_rivals > 0 
 		is_adult = yes
+		NOT = { age > 1000 } # prevent immmortal characters being murdered
 		any_rival = {
 			employer = root.employer
 			is_alive = yes
@@ -218,6 +219,7 @@ ip_generic.4 = {
 			NOT = {
 				has_variable = ip_generic_4_toggle
 			}
+			NOT = { age > 1000 } # prevent immmortal characters being murdered
 		}
 	}
 	
@@ -238,6 +240,22 @@ ip_generic.4 = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0.01
+			has_trait = elf
+		}
+		modifier = {
+			factor = 0.02
+			has_trait = dwarf
+		}
+		modifier = {
+			factor = 0.05
+			has_trait = strong_blood_of_numenor
+		}
+		modifier = {
+			factor = 0.1
+			has_trait = blood_of_numenor
+		}
 	}
 	
 	immediate = {
@@ -246,6 +264,7 @@ ip_generic.4 = {
 				employer = root.employer
 				prisoner = no
 				NOT = { has_variable = ip_generic_4_toggle }
+				NOT = { age > 1000 } # prevent immmortal characters being murdered
 			}
 			weight = {
 				title_importance_modifier = yes
