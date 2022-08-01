@@ -382,7 +382,7 @@ main_event_pulse_country = {
 		100 = city.19
 		100 = city.20
 		100 = ip_republic.20
-		100 = ip_republic.21 #Commander Loyalty/Disloyalty Events
+		# 100 = ip_republic.21 #Commander Loyalty/Disloyalty Events
 		100 = ip_republic.22
 		100 = commander_loyalty.1
 		100 = commander_loyalty.2
@@ -715,7 +715,7 @@ commander_loyalty_demand_picker = {
 		10 = commander_loyalty.5
 		10 = commander_loyalty.6
 		10 = commander_loyalty.7
-		10 = commander_loyalty.8
+		# 10 = commander_loyalty.8
 		10 = commander_loyalty.9
 		50 = 0
 	}

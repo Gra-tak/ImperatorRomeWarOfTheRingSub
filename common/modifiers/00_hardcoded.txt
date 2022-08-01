@@ -38,8 +38,8 @@ easy_ai = {
 }
 
 hard_ai = {
-	global_monthly_state_loyalty = 0.05
-	civil_war_threshold = 0.15
+	global_monthly_state_loyalty = 0.2
+	civil_war_threshold = 0.25
 
 }
 
@@ -51,10 +51,10 @@ very_hard_ai = {
 	ruler_popularity_gain = 1
 	monthly_tyranny = -0.04
 	agressive_expansion_monthly_change = -0.02
-	global_monthly_state_loyalty = 0.1
+	global_monthly_state_loyalty = 0.3
 
 	happiness_for_same_culture_modifier = 0.15
-	civil_war_threshold = 0.10
+	civil_war_threshold = 0.4
 }
 
 antagonist_ai = {
