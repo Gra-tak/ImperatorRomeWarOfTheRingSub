@@ -40,8 +40,8 @@ tactician = { #
 		elvish_archers_discipline = 0.05
 		uruk_crossbows_discipline = 0.05
 		light_infantry_discipline = 0.05
-		orc_infantry = 0.05
-		uruk_infantry = 0.05
+		orc_infantry_discipline = 0.05
+		uruk_infantry_discipline = 0.05
 		horse_archers_discipline = 0.05
 		elvish_cavalry_archers_discipline = 0.05
 	}
