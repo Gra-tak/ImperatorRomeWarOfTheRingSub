@@ -1231,9 +1231,9 @@ on_game_initialized = {
 		if = {
 			limit = { tag = GON } #could be any tag, it's just to prevent repeating
 			trigger_event = { id = br_truce.1 }
-			trigger_event = { id = br_maintenance.2 }
 			trigger_event = { id = br_maintenance.3 }
 		}
+		trigger_event = { id = br_maintenance.2 }
 		if = {
 			limit = { tag = GON } #could be any tag, it's just to prevent repeating
 			trigger_event = { id = br_truce.2 }

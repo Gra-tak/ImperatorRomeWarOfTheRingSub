@@ -1,4 +1,4 @@
-﻿treasure_manager = {
+treasure_manager = {
     database = {
 		701 = { #
 			key = "lotr_treasure_elfstone"

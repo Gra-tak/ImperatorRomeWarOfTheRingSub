@@ -68,22 +68,26 @@ br_maintenance.1 = { #racial traits are assigned via BR_dunedain.4 on_initiatili
 
 br_maintenance.2 = { #this on_initialisation event changes chars who should be Maia to Maia culture after the game starts to prevent randomly generated maia courtiers
 	
-	type = character_event
+	type = country_event
 	title = "br_dunedain.1.t"
 	desc = "br_dunedain.1.desc"
 	picture = dunedain_patrol
 	hidden = yes
 
 	trigger = {
-		has_trait = maia
 	}
 	
 	immediate = {
+    every_character = {
+      limit = {
+		    has_trait = maia
+      }
+  		set_culture = maia
+    }
 	}
 	
 	option = {
 		name = "br_dunedain.1.a"	
-		set_culture = maia
 	}	
 }
 	
