@@ -194,7 +194,7 @@ halfling = {
 maia = {
 	type = health
 	health = 5.0
-	fertility = -1.0
+	fertility = -10.0
 }
 
 old = { #for the long-lived but not immortal races

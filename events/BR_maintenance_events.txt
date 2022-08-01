@@ -75,7 +75,7 @@ br_maintenance.2 = { #this on_initialisation event changes chars who should be M
 	hidden = yes
 
 	trigger = {
-		has_trait = 10_sauron
+		has_trait = maia
 	}
 	
 	immediate = {
