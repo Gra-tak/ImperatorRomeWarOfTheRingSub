@@ -32,6 +32,8 @@ sauron_heritage = {
 	modifier = {
 		#good
 		army_maintenance_cost = -0.2
+
+		enslavement_efficiency = 1 #restores vanilla, others have none
 		#monthly_military_experience_modifier = 0.2
 		
 		#bad

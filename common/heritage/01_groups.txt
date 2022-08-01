@@ -2,7 +2,8 @@
 	modifier = {
 		#good
 		light_infantry_offensive = 0.1
-		enslavement_efficiency = 0.2
+		enslavement_efficiency = 1 #restores vanilla, others have none
+
 		
 		#bad
 		land_morale_modifier = -0.05

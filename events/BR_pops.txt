@@ -10,7 +10,8 @@ br_pops.1 = { #Noldor group
 	hidden = yes
 	
 	trigger = {
-		}
+		country_culture_group = noldor_group
+	}
 	
 	immediate = {
 		remove_country_modifier = 100_noldor
@@ -48,10 +49,22 @@ br_pops.1 = { #Noldor group
 			name = noldor_percentage_pop
 			value = local_var:noldor_pops
     	}
-		change_local_variable = { 
-			name = noldor_percentage_pop
-			divide = local_var:total_pops
+		if = {
+			limit = {
+				local_var:total_pops > 0 #not sure how this would ever happen, but error log keeps spamming divide by zero so this event must be sometimes called for empty nations
+			}
+			change_local_variable = { 
+				name = noldor_percentage_pop
+				divide = local_var:total_pops
     	}
+		}
+		else
+		{
+			set_local_variable = { 
+			name = noldor_percentage_pop
+			value = 0
+    	}
+		}
 	}		
 	
 	option = {
@@ -66,73 +79,61 @@ br_pops.1 = { #Noldor group
 		else_if = {
 			limit =  {
 				local_var:noldor_percentage_pop >= 0.9
-				NOT = {	local_var:noldor_percentage_pop >= 1.0 }
-				NOT = { has_country_modifier = 90_noldor }
 			}
 			add_country_modifier = { name = 90_noldor	}
 		}
 		else_if = {
 			limit =  {
 				local_var:noldor_percentage_pop >= 0.8
-				NOT = {	local_var:noldor_percentage_pop >= 0.9 }
-				NOT = { has_country_modifier = 80_noldor }
 			}
 			add_country_modifier = { name = 80_noldor	}
 		}
 		else_if = {
 			limit =  {
 				local_var:noldor_percentage_pop >= 0.7
-				NOT = {	local_var:noldor_percentage_pop >= 0.8 }
-				NOT = { has_country_modifier = 70_noldor }
 			}
 			add_country_modifier = { name = 70_noldor	}
 		}
 		else_if = {
 			limit =  {
 				local_var:noldor_percentage_pop >= 0.6
-				NOT = {	local_var:noldor_percentage_pop >= 0.7 }
-				NOT = { has_country_modifier = 60_noldor }
 			}
 			add_country_modifier = { name = 60_noldor	}
 		}
 		else_if = {
 			limit =  {
 				local_var:noldor_percentage_pop >= 0.5
-				NOT = {	local_var:noldor_percentage_pop >= 0.6 }
-				NOT = { has_country_modifier = 50_noldor }
 			}
 			add_country_modifier = { name = 50_noldor	}
 		}
 		else_if = {
 			limit =  {
 				local_var:noldor_percentage_pop >= 0.4
-				NOT = {	local_var:noldor_percentage_pop >= 0.5 }
-				NOT = { has_country_modifier = 40_noldor }
 			}
 			add_country_modifier = { name = 40_noldor	}
 		}
 		else_if = {
 			limit =  {
 				local_var:noldor_percentage_pop >= 0.3
-				NOT = {	local_var:noldor_percentage_pop >= 0.4 }
-				NOT = { has_country_modifier = 30_noldor }
 			}
 			add_country_modifier = { name = 30_noldor	}
 		}
 		else_if = {
 			limit =  {
 				local_var:noldor_percentage_pop >= 0.2
-				NOT = {	local_var:noldor_percentage_pop >= 0.3 }
-				NOT = { has_country_modifier = 20_noldor }
 			}
 			add_country_modifier = { name = 20_noldor	}
 		}		
+		else_if = {
+			limit =  {
+				local_var:noldor_percentage_pop >= 0.1
+			}
+			add_country_modifier = { name = 10_noldor	}
+		}		
 	}
-	
 }
 
 br_pops.2 = { #Teleri group
-	
 	type = country_event
 	title = "Poppercentage"
 	desc = "Poppercentage"
@@ -141,6 +142,7 @@ br_pops.2 = { #Teleri group
 	hidden = yes
 	
 	trigger = {
+		country_culture_group = teleri_group
 	}
 	
 	immediate = {
@@ -179,10 +181,22 @@ br_pops.2 = { #Teleri group
 			name = teleri_percentage_pop
 			value = local_var:teleri_pops
     	}
-		change_local_variable = { 
-			name = teleri_percentage_pop
-			divide = local_var:total_pops
+		if = {
+			limit = {
+				local_var:total_pops > 0 #not sure how this would ever happen, but error log keeps spamming divide by zero so this event must be sometimes called for empty nations
+			}
+			change_local_variable = { 
+				name = teleri_percentage_pop
+				divide = local_var:total_pops
     	}
+		}
+		else
+		{
+			set_local_variable = { 
+			name = teleri_percentage_pop
+			value = 0
+    	}
+		}
 	}		
 	
 	option = {
@@ -197,73 +211,61 @@ br_pops.2 = { #Teleri group
 		else_if = {
 			limit =  {
 				local_var:teleri_percentage_pop >= 0.9
-				NOT = {	local_var:teleri_percentage_pop >= 1.0 }
-				NOT = { has_country_modifier = 90_teleri }
 			}
 			add_country_modifier = { name = 90_teleri	}
 		}
 		else_if = {
 			limit =  {
 				local_var:teleri_percentage_pop >= 0.8
-				NOT = {	local_var:teleri_percentage_pop >= 0.9 }
-				NOT = { has_country_modifier = 80_teleri }
 			}
 			add_country_modifier = { name = 80_teleri	}
 		}
 		else_if = {
 			limit =  {
 				local_var:teleri_percentage_pop >= 0.7
-				NOT = {	local_var:teleri_percentage_pop >= 0.8 }
-				NOT = { has_country_modifier = 70_teleri }
 			}
 			add_country_modifier = { name = 70_teleri	}
 		}
 		else_if = {
 			limit =  {
 				local_var:teleri_percentage_pop >= 0.6
-				NOT = {	local_var:teleri_percentage_pop >= 0.7 }
-				NOT = { has_country_modifier = 60_teleri }
 			}
 			add_country_modifier = { name = 60_teleri	}
 		}
 		else_if = {
 			limit =  {
 				local_var:teleri_percentage_pop >= 0.5
-				NOT = {	local_var:teleri_percentage_pop >= 0.6 }
-				NOT = { has_country_modifier = 50_teleri }
 			}
 			add_country_modifier = { name = 50_teleri	}
 		}
 		else_if = {
 			limit =  {
 				local_var:teleri_percentage_pop >= 0.4
-				NOT = {	local_var:teleri_percentage_pop >= 0.5 }
-				NOT = { has_country_modifier = 40_teleri }
 			}
 			add_country_modifier = { name = 40_teleri	}
 		}
 		else_if = {
 			limit =  {
 				local_var:teleri_percentage_pop >= 0.3
-				NOT = {	local_var:teleri_percentage_pop >= 0.4 }
-				NOT = { has_country_modifier = 30_teleri }
 			}
 			add_country_modifier = { name = 30_teleri	}
 		}
 		else_if = {
 			limit =  {
 				local_var:teleri_percentage_pop >= 0.2
-				NOT = {	local_var:teleri_percentage_pop >= 0.3 }
-				NOT = { has_country_modifier = 20_teleri }
 			}
 			add_country_modifier = { name = 20_teleri	}
-		}	
+		}		
+		else_if = {
+			limit =  {
+				local_var:teleri_percentage_pop >= 0.1
+			}
+			add_country_modifier = { name = 10_teleri	}
+		}		
 	}
-	
 }
 
-br_pops.3 = { #Dunedain
-	
+br_pops.3 = { #Edain
 	type = country_event
 	title = "Poppercentage"
 	desc = "Poppercentage"
@@ -272,30 +274,28 @@ br_pops.3 = { #Dunedain
 	hidden = yes
 	
 	trigger = {
+		country_culture_group = edain_group
 	}
 	
 	immediate = {
-		remove_country_modifier = 100_dunedain
-		remove_country_modifier = 90_dunedain
-		remove_country_modifier = 80_dunedain
-		remove_country_modifier = 70_dunedain
-		remove_country_modifier = 60_dunedain
-		remove_country_modifier = 50_dunedain
-		remove_country_modifier = 40_dunedain
-		remove_country_modifier = 30_dunedain
-		remove_country_modifier = 20_dunedain
-		remove_country_modifier = 10_dunedain
-		set_local_variable = { name = dunedain_pops value = 0 }
+		remove_country_modifier = 100_edain
+		remove_country_modifier = 90_edain
+		remove_country_modifier = 80_edain
+		remove_country_modifier = 70_edain
+		remove_country_modifier = 60_edain
+		remove_country_modifier = 50_edain
+		remove_country_modifier = 40_edain
+		remove_country_modifier = 30_edain
+		remove_country_modifier = 20_edain
+		remove_country_modifier = 10_edain
+		set_local_variable = { name = edain_pops value = 0 }
 		every_owned_province = {
 			every_pops_in_province = {
 				limit = {
-					OR = {
-					pop_culture = dunedain
-					pop_culture = rangers
-					}
-					}
+					pop_culture_group = edain_group
+				}
 				change_local_variable = { 
-					name = dunedain_pops
+					name = edain_pops
 					add = 1
 				}
         	}
@@ -310,360 +310,94 @@ br_pops.3 = { #Dunedain
         	}
     	}
 		set_local_variable = { 
-			name = dunedain_percentage_pop
-			value = local_var:dunedain_pops
+			name = edain_percentage_pop
+			value = local_var:edain_pops
     	}
-		change_local_variable = { 
-			name = dunedain_percentage_pop
-			divide = local_var:total_pops
+		if = {
+			limit = {
+				local_var:total_pops > 0 #not sure how this would ever happen, but error log keeps spamming divide by zero so this event must be sometimes called for empty nations
+			}
+			change_local_variable = { 
+				name = edain_percentage_pop
+				divide = local_var:total_pops
     	}
+		}
+		else
+		{
+			set_local_variable = { 
+			name = edain_percentage_pop
+			value = 0
+    	}
+		}
 	}		
 	
 	option = {
 		name = "OK"
 		if = {
 			limit =  {
-				local_var:dunedain_percentage_pop >= 1.0
-				NOT = { has_country_modifier = 100_dunedain }
+				local_var:edain_percentage_pop >= 1.0
+				NOT = { has_country_modifier = 100_edain }
 			}
-			add_country_modifier = { name = 100_dunedain }		
+			add_country_modifier = { name = 100_edain }		
 		}
 		else_if = {
 			limit =  {
-				local_var:dunedain_percentage_pop >= 0.9
-				NOT = {	local_var:dunedain_percentage_pop >= 1.0 }
-				NOT = { has_country_modifier = 90_dunedain }
+				local_var:edain_percentage_pop >= 0.9
 			}
-			add_country_modifier = { name = 90_dunedain	}
+			add_country_modifier = { name = 90_edain	}
 		}
 		else_if = {
 			limit =  {
-				local_var:dunedain_percentage_pop >= 0.8
-				NOT = {	local_var:dunedain_percentage_pop >= 0.9 }
-				NOT = { has_country_modifier = 80_dunedain }
+				local_var:edain_percentage_pop >= 0.8
 			}
-			add_country_modifier = { name = 80_dunedain	}
+			add_country_modifier = { name = 80_edain	}
 		}
 		else_if = {
 			limit =  {
-				local_var:dunedain_percentage_pop >= 0.7
-				NOT = {	local_var:dunedain_percentage_pop >= 0.8 }
-				NOT = { has_country_modifier = 70_dunedain }
+				local_var:edain_percentage_pop >= 0.7
 			}
-			add_country_modifier = { name = 70_dunedain	}
+			add_country_modifier = { name = 70_edain	}
 		}
 		else_if = {
 			limit =  {
-				local_var:dunedain_percentage_pop >= 0.6
-				NOT = {	local_var:dunedain_percentage_pop >= 0.7 }
-				NOT = { has_country_modifier = 60_dunedain }
+				local_var:edain_percentage_pop >= 0.6
 			}
-			add_country_modifier = { name = 60_dunedain	}
+			add_country_modifier = { name = 60_edain	}
 		}
 		else_if = {
 			limit =  {
-				local_var:dunedain_percentage_pop >= 0.5
-				NOT = {	local_var:dunedain_percentage_pop >= 0.6 }
-				NOT = { has_country_modifier = 50_dunedain }
+				local_var:edain_percentage_pop >= 0.5
 			}
-			add_country_modifier = { name = 50_dunedain	}
+			add_country_modifier = { name = 50_edain	}
 		}
 		else_if = {
 			limit =  {
-				local_var:dunedain_percentage_pop >= 0.4
-				NOT = {	local_var:dunedain_percentage_pop >= 0.5 }
-				NOT = { has_country_modifier = 40_dunedain }
+				local_var:edain_percentage_pop >= 0.4
 			}
-			add_country_modifier = { name = 40_dunedain	}
+			add_country_modifier = { name = 40_edain	}
 		}
 		else_if = {
 			limit =  {
-				local_var:dunedain_percentage_pop >= 0.3
-				NOT = {	local_var:dunedain_percentage_pop >= 0.4 }
-				NOT = { has_country_modifier = 30_dunedain }
+				local_var:edain_percentage_pop >= 0.3
 			}
-			add_country_modifier = { name = 30_dunedain	}
+			add_country_modifier = { name = 30_edain	}
 		}
 		else_if = {
 			limit =  {
-				local_var:dunedain_percentage_pop >= 0.2
-				NOT = {	local_var:dunedain_percentage_pop >= 0.3 }
-				NOT = { has_country_modifier = 20_dunedain }
+				local_var:edain_percentage_pop >= 0.2
 			}
-			add_country_modifier = { name = 20_dunedain	}
+			add_country_modifier = { name = 20_edain	}
+		}		
+		else_if = {
+			limit =  {
+				local_var:edain_percentage_pop >= 0.1
+			}
+			add_country_modifier = { name = 10_edain	}
 		}		
 	}
-	
-}
-
-br_pops.4 = { #Lesser Dunedain
-	
-	type = country_event
-	title = "Poppercentage"
-	desc = "Poppercentage"
-	picture = ship_in_storm
-	goto_location = root
-	hidden = yes
-	
-	trigger = {
-	}
-	
-	immediate = {
-		remove_country_modifier = 100_lesser_dunedain
-		remove_country_modifier = 90_lesser_dunedain
-		remove_country_modifier = 80_lesser_dunedain
-		remove_country_modifier = 70_lesser_dunedain
-		remove_country_modifier = 60_lesser_dunedain
-		remove_country_modifier = 50_lesser_dunedain
-		remove_country_modifier = 40_lesser_dunedain
-		remove_country_modifier = 30_lesser_dunedain
-		remove_country_modifier = 20_lesser_dunedain
-		remove_country_modifier = 10_lesser_dunedain
-		set_local_variable = { name = lesser_dunedain_pops value = 0 }
-		every_owned_province = {
-			every_pops_in_province = {
-				limit = {
-					OR = {
-					pop_culture = lesser_dunedain
-					pop_culture = corsair
-					pop_culture = dolamroth
-					}
-					}
-				change_local_variable = { 
-					name = lesser_dunedain_pops
-					add = 1
-				}
-			}
-    	}
-		set_local_variable = { name = total_pops value = 0 }
-		every_owned_province = {
-			every_pops_in_province = {   
-				change_local_variable = {
-					name = total_pops
-					add = 1
-				}
-			}
-		}
-		set_local_variable = { 
-			name = lesser_dunedain_percentage_pop
-			value = local_var:lesser_dunedain_pops
-    	}
-		change_local_variable = { 
-			name = lesser_dunedain_percentage_pop
-			divide = local_var:total_pops
-    	}
-	}		
-	
-	option = {
-		name = "OK"
-		if = {
-			limit =  {
-				local_var:lesser_dunedain_percentage_pop >= 1.0
-				NOT = { has_country_modifier = 100_lesser_dunedain }
-			}
-			add_country_modifier = { name = 100_lesser_dunedain }		
-		}
-		else_if = {
-			limit =  {
-				local_var:lesser_dunedain_percentage_pop >= 0.9
-				NOT = {	local_var:lesser_dunedain_percentage_pop >= 1.0 }
-				NOT = { has_country_modifier = 90_lesser_dunedain }
-			}
-			add_country_modifier = { name = 90_lesser_dunedain	}
-		}
-		else_if = {
-			limit =  {
-				local_var:lesser_dunedain_percentage_pop >= 0.8
-				NOT = {	local_var:lesser_dunedain_percentage_pop >= 0.9 }
-				NOT = { has_country_modifier = 80_lesser_dunedain }
-			}
-			add_country_modifier = { name = 80_lesser_dunedain	}
-		}
-		else_if = {
-			limit =  {
-				local_var:lesser_dunedain_percentage_pop >= 0.7
-				NOT = {	local_var:lesser_dunedain_percentage_pop >= 0.8 }
-				NOT = { has_country_modifier = 70_lesser_dunedain }
-			}
-			add_country_modifier = { name = 70_lesser_dunedain	}
-		}
-		else_if = {
-			limit =  {
-				local_var:lesser_dunedain_percentage_pop >= 0.6
-				NOT = {	local_var:lesser_dunedain_percentage_pop >= 0.7 }
-				NOT = { has_country_modifier = 60_lesser_dunedain }
-			}
-			add_country_modifier = { name = 60_lesser_dunedain	}
-		}
-		else_if = {
-			limit =  {
-				local_var:lesser_dunedain_percentage_pop >= 0.5
-				NOT = {	local_var:lesser_dunedain_percentage_pop >= 0.6 }
-				NOT = { has_country_modifier = 50_lesser_dunedain }
-			}
-			add_country_modifier = { name = 50_lesser_dunedain	}
-		}
-		else_if = {
-			limit =  {
-				local_var:lesser_dunedain_percentage_pop >= 0.4
-				NOT = {	local_var:lesser_dunedain_percentage_pop >= 0.5 }
-				NOT = { has_country_modifier = 40_lesser_dunedain }
-			}
-			add_country_modifier = { name = 40_lesser_dunedain	}
-		}
-		else_if = {
-			limit =  {
-				local_var:lesser_dunedain_percentage_pop >= 0.3
-				NOT = {	local_var:lesser_dunedain_percentage_pop >= 0.4 }
-				NOT = { has_country_modifier = 30_lesser_dunedain }
-			}
-			add_country_modifier = { name = 30_lesser_dunedain	}
-		}
-		else_if = {
-			limit =  {
-				local_var:lesser_dunedain_percentage_pop >= 0.2
-				NOT = {	local_var:lesser_dunedain_percentage_pop >= 0.3 }
-				NOT = { has_country_modifier = 20_lesser_dunedain }
-			}
-			add_country_modifier = { name = 20_lesser_dunedain	}
-		}	
-	}
-	
-}
-
-br_pops.5 = { #Black Numenoreans
-	
-	type = country_event
-	title = "Poppercentage"
-	desc = "Poppercentage"
-	picture = ship_in_storm
-	goto_location = root
-	hidden = yes
-	
-	trigger = {
-	}
-	
-	immediate = {
-		remove_country_modifier = 100_black_numenorean
-		remove_country_modifier = 90_black_numenorean
-		remove_country_modifier = 80_black_numenorean
-		remove_country_modifier = 70_black_numenorean
-		remove_country_modifier = 60_black_numenorean
-		remove_country_modifier = 50_black_numenorean
-		remove_country_modifier = 40_black_numenorean
-		remove_country_modifier = 30_black_numenorean
-		remove_country_modifier = 20_black_numenorean
-		remove_country_modifier = 10_black_numenorean
-		set_local_variable = { name = black_numenorean_pops value = 0 }
-		every_owned_province = {
-			every_pops_in_province = {
-				limit = {
-					pop_culture = black_numenorean
-					}
-				change_local_variable = { 
-					name = black_numenorean_pops
-					add = 1
-				}
-			}
-		}
-		set_local_variable = { name = total_pops value = 0 }
-		every_owned_province = {
-			every_pops_in_province = {   
-				change_local_variable = {
-					name = total_pops
-					add = 1
-				}
-			}
-		}
-		set_local_variable = { 
-			name = black_numenorean_percentage_pop
-			value = local_var:black_numenorean_pops
-		}
-		change_local_variable = { 
-			name = black_numenorean_percentage_pop
-			divide = local_var:total_pops
-    	}
-	}		
-	
-	option = {
-		name = "OK"
-		if = {
-			limit =  {
-				local_var:black_numenorean_percentage_pop >= 1.0
-				NOT = { has_country_modifier = 100_black_numenorean }
-			}
-			add_country_modifier = { name = 100_black_numenorean }		
-		}
-		else_if = {
-			limit =  {
-				local_var:black_numenorean_percentage_pop >= 0.9
-				NOT = {	local_var:black_numenorean_percentage_pop >= 1.0 }
-				NOT = { has_country_modifier = 90_black_numenorean }
-			}
-			add_country_modifier = { name = 90_black_numenorean	}
-		}
-		else_if = {
-			limit =  {
-				local_var:black_numenorean_percentage_pop >= 0.8
-				NOT = {	local_var:black_numenorean_percentage_pop >= 0.9 }
-				NOT = { has_country_modifier = 80_black_numenorean }
-			}
-			add_country_modifier = { name = 80_black_numenorean	}
-		}
-		else_if = {
-			limit =  {
-				local_var:black_numenorean_percentage_pop >= 0.7
-				NOT = {	local_var:black_numenorean_percentage_pop >= 0.8 }
-				NOT = { has_country_modifier = 70_black_numenorean }
-			}
-			add_country_modifier = { name = 70_black_numenorean	}
-		}
-		else_if = {
-			limit =  {
-				local_var:black_numenorean_percentage_pop >= 0.6
-				NOT = {	local_var:black_numenorean_percentage_pop >= 0.7 }
-				NOT = { has_country_modifier = 60_black_numenorean }
-			}
-			add_country_modifier = { name = 60_black_numenorean	}
-		}
-		else_if = {
-			limit =  {
-				local_var:black_numenorean_percentage_pop >= 0.5
-				NOT = {	local_var:black_numenorean_percentage_pop >= 0.6 }
-				NOT = { has_country_modifier = 50_black_numenorean }
-			}
-			add_country_modifier = { name = 50_black_numenorean	}
-		}
-		else_if = {
-			limit =  {
-				local_var:black_numenorean_percentage_pop >= 0.4
-				NOT = {	local_var:black_numenorean_percentage_pop >= 0.5 }
-				NOT = { has_country_modifier = 40_black_numenorean }
-			}
-			add_country_modifier = { name = 40_black_numenorean	}
-		}
-		else_if = {
-			limit =  {
-				local_var:black_numenorean_percentage_pop >= 0.3
-				NOT = {	local_var:black_numenorean_percentage_pop >= 0.4 }
-				NOT = { has_country_modifier = 30_black_numenorean }
-			}
-			add_country_modifier = { name = 30_black_numenorean	}
-		}
-		else_if = {
-			limit =  {
-				local_var:black_numenorean_percentage_pop >= 0.2
-				NOT = {	local_var:black_numenorean_percentage_pop >= 0.3 }
-				NOT = { has_country_modifier = 20_black_numenorean }
-			}
-			add_country_modifier = { name = 20_black_numenorean	}
-		}	
-	}
-	
 }
 
 br_pops.6 = { #Dwarves
-	
 	type = country_event
 	title = "Poppercentage"
 	desc = "Poppercentage"
@@ -672,6 +406,7 @@ br_pops.6 = { #Dwarves
 	hidden = yes
 	
 	trigger = {
+		country_culture_group = dwarf_group
 	}
 	
 	immediate = {
@@ -690,29 +425,41 @@ br_pops.6 = { #Dwarves
 			every_pops_in_province = {
 				limit = {
 					pop_culture_group = dwarf_group
-					}
+				}
 				change_local_variable = { 
 					name = dwarf_pops
 					add = 1
 				}
-			}
-		}
+        	}
+    	}
 		set_local_variable = { name = total_pops value = 0 }
 		every_owned_province = {
 			every_pops_in_province = {   
 				change_local_variable = {
 					name = total_pops
 					add = 1
-				}
-			}
-		}
+            	}
+        	}
+    	}
 		set_local_variable = { 
 			name = dwarf_percentage_pop
 			value = local_var:dwarf_pops
-   		}
-		change_local_variable = { 
+    	}
+		if = {
+			limit = {
+				local_var:total_pops > 0 #not sure how this would ever happen, but error log keeps spamming divide by zero so this event must be sometimes called for empty nations
+			}
+			change_local_variable = { 
+				name = dwarf_percentage_pop
+				divide = local_var:total_pops
+    	}
+		}
+		else
+		{
+			set_local_variable = { 
 			name = dwarf_percentage_pop
-			divide = local_var:total_pops
+			value = 0
+    	}
 		}
 	}		
 	
@@ -728,73 +475,61 @@ br_pops.6 = { #Dwarves
 		else_if = {
 			limit =  {
 				local_var:dwarf_percentage_pop >= 0.9
-				NOT = {	local_var:dwarf_percentage_pop >= 1.0 }
-				NOT = { has_country_modifier = 90_dwarf }
 			}
 			add_country_modifier = { name = 90_dwarf	}
 		}
 		else_if = {
 			limit =  {
 				local_var:dwarf_percentage_pop >= 0.8
-				NOT = {	local_var:dwarf_percentage_pop >= 0.9 }
-				NOT = { has_country_modifier = 80_dwarf }
 			}
 			add_country_modifier = { name = 80_dwarf	}
 		}
 		else_if = {
 			limit =  {
 				local_var:dwarf_percentage_pop >= 0.7
-				NOT = {	local_var:dwarf_percentage_pop >= 0.8 }
-				NOT = { has_country_modifier = 70_dwarf }
 			}
 			add_country_modifier = { name = 70_dwarf	}
 		}
 		else_if = {
 			limit =  {
 				local_var:dwarf_percentage_pop >= 0.6
-				NOT = {	local_var:dwarf_percentage_pop >= 0.7 }
-				NOT = { has_country_modifier = 60_dwarf }
 			}
 			add_country_modifier = { name = 60_dwarf	}
 		}
 		else_if = {
 			limit =  {
 				local_var:dwarf_percentage_pop >= 0.5
-				NOT = {	local_var:dwarf_percentage_pop >= 0.6 }
-				NOT = { has_country_modifier = 50_dwarf }
 			}
 			add_country_modifier = { name = 50_dwarf	}
 		}
 		else_if = {
 			limit =  {
 				local_var:dwarf_percentage_pop >= 0.4
-				NOT = {	local_var:dwarf_percentage_pop >= 0.5 }
-				NOT = { has_country_modifier = 40_dwarf }
 			}
 			add_country_modifier = { name = 40_dwarf	}
 		}
 		else_if = {
 			limit =  {
 				local_var:dwarf_percentage_pop >= 0.3
-				NOT = {	local_var:dwarf_percentage_pop >= 0.4 }
-				NOT = { has_country_modifier = 30_dwarf }
 			}
 			add_country_modifier = { name = 30_dwarf	}
 		}
 		else_if = {
 			limit =  {
 				local_var:dwarf_percentage_pop >= 0.2
-				NOT = {	local_var:dwarf_percentage_pop >= 0.3 }
-				NOT = { has_country_modifier = 20_dwarf }
 			}
 			add_country_modifier = { name = 20_dwarf	}
-		}	
+		}		
+		else_if = {
+			limit =  {
+				local_var:dwarf_percentage_pop >= 0.1
+			}
+			add_country_modifier = { name = 10_dwarf	}
+		}		
 	}
-	
 }
 
 br_pops.7 = { #Orcs
-	
 	type = country_event
 	title = "Poppercentage"
 	desc = "Poppercentage"
@@ -803,6 +538,7 @@ br_pops.7 = { #Orcs
 	hidden = yes
 	
 	trigger = {
+		country_culture_group = orcs_group
 	}
 	
 	immediate = {
@@ -821,30 +557,42 @@ br_pops.7 = { #Orcs
 			every_pops_in_province = {
 				limit = {
 					pop_culture_group = orcs_group
-					}
+				}
 				change_local_variable = { 
 					name = orc_pops
 					add = 1
 				}
-			}
-		}
+        	}
+    	}
 		set_local_variable = { name = total_pops value = 0 }
 		every_owned_province = {
 			every_pops_in_province = {   
 				change_local_variable = {
 					name = total_pops
 					add = 1
-				}
-			}
-		}
+            	}
+        	}
+    	}
 		set_local_variable = { 
 			name = orc_percentage_pop
 			value = local_var:orc_pops
     	}
-		change_local_variable = { 
-			name = orc_percentage_pop
-			divide = local_var:total_pops
+		if = {
+			limit = {
+				local_var:total_pops > 0 #not sure how this would ever happen, but error log keeps spamming divide by zero so this event must be sometimes called for empty nations
+			}
+			change_local_variable = { 
+				name = orc_percentage_pop
+				divide = local_var:total_pops
     	}
+		}
+		else
+		{
+			set_local_variable = { 
+			name = orc_percentage_pop
+			value = 0
+    	}
+		}
 	}		
 	
 	option = {
@@ -859,69 +607,58 @@ br_pops.7 = { #Orcs
 		else_if = {
 			limit =  {
 				local_var:orc_percentage_pop >= 0.9
-				NOT = {	local_var:orc_percentage_pop >= 1.0 }
-				NOT = { has_country_modifier = 90_orc }
 			}
 			add_country_modifier = { name = 90_orc	}
 		}
 		else_if = {
 			limit =  {
 				local_var:orc_percentage_pop >= 0.8
-				NOT = {	local_var:orc_percentage_pop >= 0.9 }
-				NOT = { has_country_modifier = 80_orc }
 			}
 			add_country_modifier = { name = 80_orc	}
 		}
 		else_if = {
 			limit =  {
 				local_var:orc_percentage_pop >= 0.7
-				NOT = {	local_var:orc_percentage_pop >= 0.8 }
-				NOT = { has_country_modifier = 70_orc }
 			}
 			add_country_modifier = { name = 70_orc	}
 		}
 		else_if = {
 			limit =  {
 				local_var:orc_percentage_pop >= 0.6
-				NOT = {	local_var:orc_percentage_pop >= 0.7 }
-				NOT = { has_country_modifier = 60_orc }
 			}
 			add_country_modifier = { name = 60_orc	}
 		}
 		else_if = {
 			limit =  {
 				local_var:orc_percentage_pop >= 0.5
-				NOT = {	local_var:orc_percentage_pop >= 0.6 }
-				NOT = { has_country_modifier = 50_orc }
 			}
 			add_country_modifier = { name = 50_orc	}
 		}
 		else_if = {
 			limit =  {
 				local_var:orc_percentage_pop >= 0.4
-				NOT = {	local_var:orc_percentage_pop >= 0.5 }
-				NOT = { has_country_modifier = 40_orc }
 			}
 			add_country_modifier = { name = 40_orc	}
 		}
 		else_if = {
 			limit =  {
 				local_var:orc_percentage_pop >= 0.3
-				NOT = {	local_var:orc_percentage_pop >= 0.4 }
-				NOT = { has_country_modifier = 30_orc }
 			}
 			add_country_modifier = { name = 30_orc	}
 		}
 		else_if = {
 			limit =  {
 				local_var:orc_percentage_pop >= 0.2
-				NOT = {	local_var:orc_percentage_pop >= 0.3 }
-				NOT = { has_country_modifier = 20_orc }
 			}
 			add_country_modifier = { name = 20_orc	}
-		}	
+		}		
+		else_if = {
+			limit =  {
+				local_var:orc_percentage_pop >= 0.1
+			}
+			add_country_modifier = { name = 10_orc	}
+		}		
 	}
-	
 }
 
 br_pops.8 = { #Assign units
