@@ -1791,15 +1791,6 @@ traits.3 = { #leave unreferenced
 	}
 }
 
-# is_long_lived = {
-# 	OR = {
-# 		has_trait = elf
-# 		has_trait = dwarf
-# 		has_trait = maia
-# 		has_trait = strong_blood_of_numenor
-# 		has_trait = blood_of_numenor
-# 	}
-# }
 
 #Add basic ailment event
 traits.4 = {
@@ -1816,6 +1807,7 @@ traits.4 = {
 				has_trait = elf
 				has_trait = dwarf
 				has_trait = maia
+				has_trait = nazgul
 			}
 		}
 		NOT = {

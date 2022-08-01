@@ -8,8 +8,8 @@
 	hidden = {
 		unit_owner = {
 			NOR = { 
-				has_military_tradition = barbarian_philosophy
-				has_military_tradition = orc_philosophy
+				is_tradition_tree_allowed = barbarian_philosophy
+				is_tradition_tree_allowed = orc_philosophy
 			} 
 		}
 	}
@@ -18,11 +18,11 @@
 	
 		unit_owner = { 
 			trigger_if = {
-				limit = { has_military_tradition = barbarian_philosophy }
+				limit = { is_tradition_tree_allowed = barbarian_philosophy }
 				has_military_bonus = barbarian_infantry_path_6
 			}
 			trigger_else_if = {
-				limit = { has_military_tradition = orc_philosophy }
+				limit = { is_tradition_tree_allowed = orc_philosophy }
 				has_military_bonus = orc_infantry_path_7
 			}
 		}

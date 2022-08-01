@@ -48,26 +48,16 @@
 		
 integrate_same_culture = {
 		potential = {
-		any_country_culture = {
-		limit = {
-		is_integrated = no
-		NOT = { culture = culture:urukhai }
-		culture.culture_group = root.culture_group
-		country_culture_pop_count > 1
-		}
-		}
 		}
 		
 		
 		allow = {
-		any_country_culture = {
-		#limit = {
-		is_integrated = no
-		NOT = { culture = culture:urukhai }
-		culture.culture_group = root.culture_group
-		country_culture_pop_count > 1
-		#}
-		}			
+			any_country_culture = {
+				is_integrated = no
+				NOT = { culture = culture:urukhai }
+				culture.culture_group = root.culture_group
+				country_culture_pop_count > 1
+			}			
 		}
 		
 		ai_allow = {

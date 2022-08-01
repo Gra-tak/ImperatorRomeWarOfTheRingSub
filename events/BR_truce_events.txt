@@ -158,7 +158,7 @@ br_truce.3 = { #prevents the easterling/southron humans from attacking Sauron un
 	
 	trigger = {
 		religion = melkorism
-		NOT = { has_country_modifier = we_do_not_fear_sauron } 
+		# NOT = { has_country_modifier = we_do_not_fear_sauron } 
 	}
 			
 	immediate = {
@@ -171,14 +171,14 @@ br_truce.3 = { #prevents the easterling/southron humans from attacking Sauron un
 					prisoner = no
 					employer = C:MOR
 				}
-				NOT = { has_country_modifier = we_do_not_fear_sauron } 
+				# NOT = { has_country_modifier = we_do_not_fear_sauron } 
             }					
             add_to_list = event_list_1
         }
         every_country = {
             limit = {
 				religion = melkorism
-				NOT = { has_country_modifier = we_do_not_fear_sauron } 
+				# NOT = { has_country_modifier = we_do_not_fear_sauron } 
 			}					
             add_to_list = event_list_2
         }

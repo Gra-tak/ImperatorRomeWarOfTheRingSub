@@ -23,8 +23,6 @@ monthly_country_pulse = {
 		br_pops.1
 		br_pops.2
 		br_pops.3
-		br_pops.4
-		br_pops.5
 		br_pops.6
 		br_pops.7
 	}
@@ -36,11 +34,6 @@ monthly_country_pulse = {
 	
 	on_actions = {		
 		dictatorship_power_held_pulse
-		consul_conspiracy_pulse
-		delay = { days = { 1 15 } }
-		dictator_rise_pulse
-		delay = { days = { 1 15 } }
-		passover_supported_characters_pulse
 		monthly_guarantee_pulse
 	}
 }

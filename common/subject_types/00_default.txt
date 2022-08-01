@@ -282,7 +282,7 @@ satrapy = { #BR note: used for gondorian fiefs - we don't want them joining offe
 	}
 	
 	allow = {
-		has_military_tradition = edain_philosophy  #subjected state is Edain.
+		is_tradition_tree_allowed = edain_philosophy  #subjected state is Edain.
 		num_of_cities > 40
 		is_monarchy = yes
 		scope:future_overlord = {

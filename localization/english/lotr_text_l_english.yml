@@ -155,5 +155,6 @@
  NO_CHAR_AVAIL:0 "No character available."
  TEMP_BUILDINGS:0 "Buildings"
  test.6.a:0 "[ROOT.GetCountry.GetPrimaryCulture.GetName]"
+ SENT_COLONISTS_RECENTLY:0 "Colonists were sent recently"
  
  

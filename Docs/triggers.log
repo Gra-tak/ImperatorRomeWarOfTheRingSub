@@ -1219,7 +1219,7 @@ Supported Scopes: country
 
 --------------------
 
-has_military_Tradition - Does the country have a certain military Tradition
+is_tradition_tree_allowed - Does the country have a certain military Tradition
 Supported Scopes: country
 
 --------------------

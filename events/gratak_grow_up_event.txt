@@ -3,8 +3,8 @@
 gratak_grow_up_event.1 = { 
 	type = country_event
 	
-	title = "Grown up"
-	desc = "This character is now an adult"
+	title = "gratak_grown_up"
+	desc = "gratak_grown_up_desc"
 	
 	#left_portrait = current_ruler
 	right_portrait = scope:gratak_grow_up_character
@@ -22,7 +22,7 @@ gratak_grow_up_event.1 = {
 	}
 	
 	option = {
-		name = "Good to know"
+		name = "gratak_good_to_know"
 	}
 
 }

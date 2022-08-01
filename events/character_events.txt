@@ -1883,7 +1883,6 @@ character_events.35 = { #add bloodline traits. this has to be an event, don't pu
 						has_trait = seleucids
 						has_trait = argeads
 						has_trait = aeacidae
-						has_trait = blood_of_menander
 					}
 				}
 			}
@@ -1956,17 +1955,6 @@ character_events.35 = { #add bloodline traits. this has to be an event, don't pu
 			if = {
 				limit = {
 					father = {
-						has_trait = blood_of_menander
-					}
-					NOT = {
-						has_trait = blood_of_menander
-					}
-				}
-				add_trait = blood_of_menander
-			}
-			if = {
-				limit = {
-					father = {
 						has_trait = argeads
 					}
 					NOT = {
@@ -1987,18 +1975,6 @@ character_events.35 = { #add bloodline traits. this has to be an event, don't pu
 				}
 			}
 			add_trait = argeads
-		}
-		if = {
-			limit = {
-				exists = mother
-				mother = {
-					has_trait = blood_of_menander
-				}
-				NOT = {
-					has_trait = blood_of_menander
-				}
-			}
-			add_trait = blood_of_menander
 		}
 	}
 }

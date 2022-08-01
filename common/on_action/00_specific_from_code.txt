@@ -289,21 +289,6 @@ on_ruler_change = {
 			remove_variable = ip_mon_38_flag
 		}
 		if = {
-			limit = { 
-				scope:former_ruler = { has_variable = me_syr_current_tyrant_flag }
-			}
-			scope:former_ruler = { 
-				remove_variable = me_syr_current_tyrant_flag
-				save_scope_as = syracuse_old_tyrant
-				employer = {
-					trigger_event = {
-						id = me_syracuse_1_democracy.3
-						days = 1
-					}
-				}
-			}
-		}
-		if = {
 			limit = {
 				is_monarchy = yes
 			}
@@ -1198,20 +1183,6 @@ on_move_country = { #scope:old_country is the origin country
 			}
 		}
 		if = {
-			limit = { 
-				has_variable = me_syr_democracy_leader
-				employer = {
-					NOT = { has_variable = me_syr_demo_civil_war_active }
-				}
-			}
-			remove_variable = me_syr_democracy_leader
-			clear_saved_scope = democracy_leader
-			save_scope_as = old_democracy_leader
-			employer = {
-				trigger_event = { id = me_syracuse_1_democracy.2 }
-			}
-		}
-		if = {
 			limit = { has_variable = archimedes_flag }
 			if = {
 				limit = { 
@@ -1567,8 +1538,6 @@ on_game_initialized = {
 		br_pops.1
 		br_pops.2
 		br_pops.3
-		br_pops.4
-		br_pops.5
 		br_pops.6
 		br_pops.7
 		br_pops.8
