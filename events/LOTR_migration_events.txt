@@ -1,0 +1,163 @@
+﻿namespace = lotr_migration_events
+
+# Fleeing from the orcs
+lotr_migration_events.1 = {
+	type = country_event
+	title = "lotr_migration_events.1.t"
+	desc = "lotr_migration_events.1.desc"
+	picture = event_gondor
+	hidden = yes
+
+	trigger = {
+		has_law = age_of_the_orc
+	}
+
+	immediate = {
+		set_variable = {
+			name = trying_to_flee_num
+			value = 0
+		}
+		every_owned_province = {
+			set_variable = {
+				name = all
+				value = 0
+			}
+			set_variable = {
+				name = refugee
+				value = 0
+			}
+			every_pops_in_province = {
+				PREV = {
+					change_variable = {
+						name = all
+						add = 1
+					}
+				}
+				if = {
+					limit = { NOT = { this.culture.culture_group = root.culture.culture_group } }
+					PREV = {
+						change_variable = {
+							name = refugee
+							add = 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = { var:all > 0 }
+				set_variable = {
+					name = refugeePerc
+					value = var:refugee
+				}
+				change_variable = {
+					name = refugeePerc
+					divide = var:all
+				}
+				if = {
+					limit = { var:refugeePerc > 0.2 } #if there's less than 20% non orcs, we assume that orcs won't allow anyone to flee
+					every_pops_in_province = {
+						NOT = { this.culture.culture_group = root.culture.culture_group }
+						add_to_list = trying_to_flee_list
+					}
+					ROOT = {
+						change_variable = {
+							name = trying_to_flee_num
+							add = prev.var:refugee
+						}
+				}
+				}
+			}
+			# NOT = { province_dominant_culture_group = orcs_group }
+			# every_pops_in_province = {
+			# 	NOT = { has_culture_group = orcs_group }
+			# 	add_to_list = trying_to_flee_list
+			# 	change_variable = {
+			# 		name = trying_to_flee_num
+			# 		add = 1
+			# 	}
+			# }
+		}
+
+
+		set_variable = {
+			name = fleeSuccess
+			value = { integer_range = { min = 0 max = 5 } }
+		}
+		change_variable = {
+			name = fleeSuccess
+			multiply = var:trying_to_flee_num
+		}
+		change_variable = {
+			name = fleeSuccess
+			divide = 100
+		}
+	}
+	option = {
+		name = "OK"
+		while = {
+			count = var:fleeSuccess
+			random_in_list = {
+				list = trying_to_flee_list
+				if = {
+					limit = {
+						any_country = {
+							culture = PREV.culture
+						}
+					}
+					random_country = {
+						limit = {
+							culture = PREV.culture
+						}
+						weight = {
+							modifier = {
+								factor = 5
+								religion = PREV.religion
+							}
+							modifier = {
+								factor = 0.2
+								religion = melkorism
+							}
+						}
+						# random_province = {
+						# 	limit = { }
+						# 	save_scope_as target
+						# }
+						# if = {
+						# 	limit = { NOT = { exists = scope:target } }
+							random_owned_province = {
+								save_scope_as = target
+							}
+						# }
+					}
+					move_pop = scope:target
+				}
+				else_if = {
+					limit = {
+						any_country = {
+							culture.culture_group = PREV.culture.culture_group
+						}
+					}
+					random_country = {
+						limit = {
+							culture.culture_group = PREV.culture.culture_group
+						}
+						weight = {
+							modifier = {
+								factor = 5
+								religion = PREV.religion
+							}
+							modifier = {
+								factor = 0.2
+								religion = melkorism
+							}
+						}
+						random_owned_province = {
+							save_scope_as = target
+						}
+					}
+					move_pop = scope:target
+				}
+			}
+		}
+	}
+}
