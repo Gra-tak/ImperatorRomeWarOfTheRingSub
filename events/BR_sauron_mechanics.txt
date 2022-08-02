@@ -173,7 +173,23 @@ br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will join 
 			limit =  {
 				local_var:melkor_percentage_pop >= 0.5
 			}
-			trigger_event = { id = br_sauron.5 }		
+			add_opinion = {
+				modifier = sauron_worship_modifier
+				target = c:MOR
+			}
+			# trigger_event = { id = br_sauron.5 }
+			every_country = {
+				limit = {
+					NOT = { religion = melkorism }
+				}
+				PREV = {
+					add_opinion = {
+						modifier = mortal_enemies
+						target = THIS
+					}
+				}
+				trigger_event = { id = br_sauron.12 days = 30 } #players are told this ruler has turned to Melkor
+			}
 		}
 	}		
 }
