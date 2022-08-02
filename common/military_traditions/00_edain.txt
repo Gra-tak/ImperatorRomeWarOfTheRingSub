@@ -13,9 +13,12 @@
 		trigger_else = {
 			custom_tooltip = {
 				text = integrated_any_edain_culture
-				any_country_culture = {
-					is_integrated = yes
-					this.culture.culture_group = culture_group:edain_group
+				OR = {
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:edain_group
+					}
+					has_variable = edain_traditions_unlocked
 				}
 			}
 		}

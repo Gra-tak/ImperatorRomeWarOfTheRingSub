@@ -14,9 +14,12 @@
 		trigger_else = {
 			custom_tooltip = {
 				text = integrated_any_dwarf_culture
-				any_country_culture = {
-					is_integrated = yes
-					this.culture.culture_group = culture_group:dwarf_group
+				OR = {
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:dwarf_group
+					}
+					has_variable = dwarf_traditions_unlocked
 				}
 			}
 		}

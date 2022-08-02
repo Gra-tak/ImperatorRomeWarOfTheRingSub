@@ -13,9 +13,12 @@
 		trigger_else = {
 			custom_tooltip = {
 				text = integrated_any_teleri_culture
-				any_country_culture = {
-					is_integrated = yes
-					this.culture.culture_group = culture_group:teleri_group
+				OR = {
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:teleri_group
+					}
+					has_variable = teleri_traditions_unlocked
 				}
 			}
 		}

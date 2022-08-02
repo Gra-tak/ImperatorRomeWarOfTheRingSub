@@ -29,6 +29,7 @@
 						is_integrated = yes
 						this.culture.culture_group = culture_group:haldadian_group
 					}
+					has_variable = barbarian_traditions_unlocked
 				}
 			}
 		}

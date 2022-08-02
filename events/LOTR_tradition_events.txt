@@ -1,0 +1,548 @@
+﻿namespace = lotr_tradition_events
+
+
+lotr_tradition_events.1 = {
+	type = country_event
+	title = "OK"
+	desc = "OK"
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	immediate = { 
+		if = {
+			limit = {
+				NOR = { 
+					country_culture_group = mirkwoodmen_group
+					country_culture_group = haldadian_group
+					has_variable = barbarian_traditions_unlocked 
+				}
+			}
+			set_variable = {
+				name = specPops
+				value = 0
+			}
+			every_subject = {
+				limit = {
+					OR = {
+						country_culture_group = mirkwoodmen_group
+						country_culture_group = haldadian_group
+					}
+				}
+				every_owned_province = {
+					every_pops_in_province = {
+						limit = {
+							OR = {
+								pop_culture_group = mirkwoodmen_group
+								pop_culture_group = haldadian_group
+							}
+						}
+						ROOT = {
+							change_variable = {
+								name = specPops
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:specPops>100
+				}
+				trigger_event = { id = lotr_tradition_events.2 } 
+			}
+		}
+
+		if = {
+			limit = {
+				NOR = { 
+					country_culture_group = dwarf_group
+					has_variable = dwarf_traditions_unlocked 
+				}
+			}
+			set_variable = {
+				name = specPops
+				value = 0
+			}
+			every_subject = {
+				limit = {
+						country_culture_group = dwarf_group
+				}
+				every_owned_province = {
+					every_pops_in_province = {
+						limit = {
+								pop_culture_group = dwarf_group
+						}
+						ROOT = {
+							change_variable = {
+								name = specPops
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:specPops>100
+				}
+				trigger_event = { id = lotr_tradition_events.3 } 
+			}
+		}
+
+		if = {
+			limit = {
+				NOR = { 
+					country_culture_group = easterling_group
+					has_variable = easterling_traditions_unlocked 
+				}
+			}
+			set_variable = {
+				name = specPops
+				value = 0
+			}
+			every_subject = {
+				limit = {
+						country_culture_group = easterling_group
+				}
+				every_owned_province = {
+					every_pops_in_province = {
+						limit = {
+								pop_culture_group = easterling_group
+						}
+						ROOT = {
+							change_variable = {
+								name = specPops
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:specPops>100
+				}
+				trigger_event = { id = lotr_tradition_events.4 } 
+			}
+		}
+
+		if = {
+			limit = {
+				NOR = { 
+					country_culture_group = edain_group
+					has_variable = edain_traditions_unlocked 
+				}
+			}
+			set_variable = {
+				name = specPops
+				value = 0
+			}
+			every_subject = {
+				limit = {
+						country_culture_group = edain_group
+				}
+				every_owned_province = {
+					every_pops_in_province = {
+						limit = {
+								pop_culture_group = edain_group
+						}
+						ROOT = {
+							change_variable = {
+								name = specPops
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:specPops>100
+				}
+				trigger_event = { id = lotr_tradition_events.5 } 
+			}
+		}
+
+		if = {
+			limit = {
+				NOR = { 
+					country_culture_group = haradrim_group
+					has_variable = haradrim_traditions_unlocked 
+				}
+			}
+			set_variable = {
+				name = specPops
+				value = 0
+			}
+			every_subject = {
+				limit = {
+						country_culture_group = haradrim_group
+				}
+				every_owned_province = {
+					every_pops_in_province = {
+						limit = {
+								pop_culture_group = haradrim_group
+						}
+						ROOT = {
+							change_variable = {
+								name = specPops
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:specPops>100
+				}
+				trigger_event = { id = lotr_tradition_events.6 } 
+			}
+		}
+
+		if = {
+			limit = {
+				NOR = { 
+					country_culture_group = noldor_group
+					has_variable = noldor_traditions_unlocked 
+				}
+			}
+			set_variable = {
+				name = specPops
+				value = 0
+			}
+			every_subject = {
+				limit = {
+						country_culture_group = noldor_group
+				}
+				every_owned_province = {
+					every_pops_in_province = {
+						limit = {
+								pop_culture_group = noldor_group
+						}
+						ROOT = {
+							change_variable = {
+								name = specPops
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:specPops>100
+				}
+				trigger_event = { id = lotr_tradition_events.7 } 
+			}
+		}
+
+		if = {
+			limit = {
+				NOR = { 
+					country_culture_group = orcs_group
+					has_variable = orc_traditions_unlocked 
+				}
+			}
+			set_variable = {
+				name = specPops
+				value = 0
+			}
+			every_subject = {
+				limit = {
+						country_culture_group = orcs_group
+				}
+				every_owned_province = {
+					every_pops_in_province = {
+						limit = {
+								pop_culture_group = orcs_group
+						}
+						ROOT = {
+							change_variable = {
+								name = specPops
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:specPops>100
+				}
+				trigger_event = { id = lotr_tradition_events.8 } 
+			}
+		}
+
+		if = {
+			limit = {
+				NOR = { 
+					country_culture_group = eotheod_group
+					has_variable = rohan_traditions_unlocked 
+				}
+			}
+			set_variable = {
+				name = specPops
+				value = 0
+			}
+			every_subject = {
+				limit = {
+						country_culture_group = eotheod_group
+				}
+				every_owned_province = {
+					every_pops_in_province = {
+						limit = {
+								pop_culture_group = eotheod_group
+						}
+						ROOT = {
+							change_variable = {
+								name = specPops
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:specPops>100
+				}
+				trigger_event = { id = lotr_tradition_events.9 } 
+			}
+		}
+
+		if = {
+			limit = {
+				NOR = { 
+					country_culture_group = teleri_group
+					has_variable = teleri_traditions_unlocked 
+				}
+			}
+			set_variable = {
+				name = specPops
+				value = 0
+			}
+			every_subject = {
+				limit = {
+						country_culture_group = teleri_group
+				}
+				every_owned_province = {
+					every_pops_in_province = {
+						limit = {
+								pop_culture_group = teleri_group
+						}
+						ROOT = {
+							change_variable = {
+								name = specPops
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:specPops>100
+				}
+				trigger_event = { id = lotr_tradition_events.10 } 
+			}
+		}
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
+#barbarian traditions
+lotr_tradition_events.2 = {
+	type = country_event
+	title = "lotr_tradition_events.2.t"
+	desc = "lotr_tradition_events.2.desc"
+	picture = event_dale
+	
+	trigger = {
+	}
+	
+	immediate = { 
+	}
+
+	option = {
+		name = "OK"
+		set_variable = {
+			name = barbarian_traditions_unlocked
+		}
+	}
+}
+
+#dwarf traditions
+lotr_tradition_events.3 = {
+	type = country_event
+	title = "lotr_tradition_events.3.t"
+	desc = "lotr_tradition_events.3.desc"
+	picture = event_hills_mountains
+	
+	trigger = {
+	}
+	
+	immediate = { 
+	}
+
+	option = {
+		name = "OK"
+		set_variable = {
+			name = dwarf_traditions_unlocked
+		}
+	}
+}
+
+#easterling traditions
+lotr_tradition_events.4 = {
+	type = country_event
+	title = "lotr_tradition_events.4.t"
+	desc = "lotr_tradition_events.4.desc"
+	picture = dark_priestess
+	
+	trigger = {
+	}
+	
+	immediate = { 
+	}
+
+	option = {
+		name = "OK"
+		set_variable = {
+			name = easterling_traditions_unlocked
+		}
+	}
+}
+# 
+#edain traditions
+lotr_tradition_events.5 = {
+	type = country_event
+	title = "lotr_tradition_events.5.t"
+	desc = "lotr_tradition_events.5.desc"
+	picture = dunedain_battle
+	
+	trigger = {
+	}
+	
+	immediate = { 
+	}
+
+	option = {
+		name = "OK"
+		set_variable = {
+			name = edain_traditions_unlocked
+		}
+	}
+}
+# 
+#haradrim traditions
+lotr_tradition_events.6 = {
+	type = country_event
+	title = "lotr_tradition_events.6.t"
+	desc = "lotr_tradition_events.6.desc"
+	picture = event_corsairs_attack
+	
+	trigger = {
+	}
+	
+	immediate = { 
+	}
+
+	option = {
+		name = "OK"
+		set_variable = {
+			name = haradrim_traditions_unlocked
+		}
+	}
+}
+# 
+#noldor traditions
+lotr_tradition_events.7 = {
+	type = country_event
+	title = "lotr_tradition_events.7.t"
+	desc = "lotr_tradition_events.7.desc"
+	picture = event_imladris
+	
+	trigger = {
+	}
+	
+	immediate = { 
+	}
+
+	option = {
+		name = "OK"
+		set_variable = {
+			name = noldor_traditions_unlocked
+		}
+	}
+}
+# 
+#orc traditions
+lotr_tradition_events.8 = {
+	type = country_event
+	title = "lotr_tradition_events.8.t"
+	desc = "lotr_tradition_events.8.desc"
+	picture = event_orcs_orcs
+	
+	trigger = {
+	}
+	
+	immediate = { 
+	}
+
+	option = {
+		name = "OK"
+		set_variable = {
+			name = orc_traditions_unlocked
+		}
+	}
+}
+# 
+#rohan traditions
+lotr_tradition_events.9 = {
+	type = country_event
+	title = "lotr_tradition_events.9.t"
+	desc = "lotr_tradition_events.9.desc"
+	picture = event_edoras
+	
+	trigger = {
+	}
+	
+	immediate = { 
+	}
+
+	option = {
+		name = "OK"
+		set_variable = {
+			name = rohan_traditions_unlocked
+		}
+	}
+}
+# 
+#teleri traditions
+lotr_tradition_events.10 = {
+	type = country_event
+	title = "lotr_tradition_events.10.t"
+	desc = "lotr_tradition_events.10.desc"
+	picture = event_deep_forest
+	
+	trigger = {
+	}
+	
+	immediate = { 
+	}
+
+	option = {
+		name = "OK"
+		set_variable = {
+			name = teleri_traditions_unlocked
+		}
+	}
+}
+# 

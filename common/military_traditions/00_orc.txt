@@ -13,9 +13,12 @@
 		trigger_else = {
 			custom_tooltip = {
 				text = integrated_any_orc_culture
-				any_country_culture = {
-					is_integrated = yes
-					this.culture.culture_group = culture_group:orcs_group
+				OR = {
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:orcs_group
+					}
+					has_variable = orc_traditions_unlocked
 				}
 			}
 		}
