@@ -217,10 +217,10 @@ saruman = { #
 	}
 	
 	country = {
-		subject_opinions = 10
-		subject_loyalty = 10
+		subject_opinions = 50
+		subject_loyalty = 50
 		monthly_legitimacy = 0.5
-		stability_monthly_change = 0.5
+		stability_monthly_change = 0.1
 		happiness_for_wrong_culture_group_modifier = 0.10
 	}
 }

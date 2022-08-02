@@ -151,9 +151,9 @@ diplomacy = {
 	alliance = { first = IML second = CAR }
 	
 	#Isengard's client states in Dunland
-	dependency = { first = XVX second = TUR subject_type = client_state }
-	dependency = { first = XVX second = HEB subject_type = client_state }
-	dependency = { first = XVX second = UCH subject_type = client_state }
+	dependency = { first = XVX second = TUR subject_type = saruman_thrall_tribe }
+	dependency = { first = XVX second = HEB subject_type = saruman_thrall_tribe }
+	dependency = { first = XVX second = UCH subject_type = saruman_thrall_tribe }
 	
 	#Rangers of the North
 	dependency = { first = CAR second = BRE subject_type = ranger_protectorate }

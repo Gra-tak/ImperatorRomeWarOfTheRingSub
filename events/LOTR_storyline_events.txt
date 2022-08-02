@@ -15,6 +15,7 @@ lotr_storyline_events.1 = {
 		c:XVX = {
 			set_country_religion = melkorism
 			char:16 = { set_character_religion = melkorism }
+			change_law = age_of_the_orc
 			if = {
 				limit = {
 					exists = c:MOR
@@ -46,40 +47,29 @@ lotr_storyline_events.1 = {
 				}
 			}
 		}
-		allow_uruk_crossbows = yes
-		allow_uruk_heavy_infantry  = yes
-		allow_uruk_infantry = yes
+		# allow_uruk_crossbows = yes
+		# allow_uruk_heavy_infantry  = yes
+		# allow_uruk_infantry = yes
 	}
 	
 	option = {
 		name = lotr_storyline_events.1.a
 		c:MOR = { trigger_event = { id = lotr_storyline_events.12 days = 1 } }
-            create_unit = {
-                navy = no
-                location = capital_scope
-                #commander = scope:target
-                #save_scope_as = bureaucratic_delegation
-                add_subunit = uruk_heavy_infantry
-				add_subunit = uruk_heavy_infantry
-				add_subunit = uruk_heavy_infantry
-				add_subunit = uruk_heavy_infantry
-				add_subunit = uruk_heavy_infantry
-				add_subunit = uruk_heavy_infantry
-				add_subunit = uruk_heavy_infantry
-				add_subunit = uruk_heavy_infantry
-				add_subunit = uruk_heavy_infantry
-				add_subunit = uruk_heavy_infantry
-				add_subunit = uruk_crossbows
-				add_subunit = uruk_crossbows
-				add_subunit = uruk_crossbows
-				add_subunit = uruk_crossbows
-				add_subunit = uruk_crossbows
-				add_subunit = uruk_crossbows
-				add_subunit = uruk_crossbows
-				add_subunit = uruk_crossbows
-				add_subunit = uruk_crossbows
-				add_subunit = uruk_crossbows
-            }
+		every_subject = {
+			limit = { is_subject_type = saruman_thrall_tribe }
+			set_country_religion = melkorism
+			current_ruler = {
+				set_character_religion = melkorism
+			}
+		}
+		every_owned_province = {
+			every_pops_in_province = {
+				set_pop_culture = urukhai
+				set_pop_religion = melkorism
+			}
+		}
+		set_primary_culture = urukhai
+    
 	}
 }
 

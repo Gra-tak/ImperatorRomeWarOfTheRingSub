@@ -6,6 +6,7 @@
  thrall_tribe:2 "Thrall of Mordor"
  
  thrall_tribe:0 "Thrall Tribe"
+ saruman_thrall_tribe:0 "Thrall Tribe"
  
  OFFER_thrall_tribeTITLE:0 "Demand Thrall Tribe Status"
  CANCEL_thrall_tribeTITLE:0 "Cancel Thrall Tribe Status"

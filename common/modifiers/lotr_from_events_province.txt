@@ -221,19 +221,19 @@ barad_dur_foundations_modifier = {
 dol_guldur_modifier = {
 	fort_level = 4
 	local_defensive = 0.05
-	local_slave_output = 0.05
+	local_slaves_output = 0.05
 	local_population_capacity = 50
 }
 carn_dum_modifier = {
 	fort_level = 1
 	local_defensive = 0.05
-	local_slave_output = 0.05
+	local_slaves_output = 0.05
 }
 
 black_gate_modifier = {
 	fort_level = 5
 	local_defensive = 0.05
-	local_slave_output = 0.05
+	local_slaves_output = 0.05
 	local_population_capacity = 30
 }
 ### Other Wonders ###

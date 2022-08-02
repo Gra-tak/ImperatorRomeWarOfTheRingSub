@@ -53,6 +53,7 @@
  lotr_ruler_decisions.7.a:0 "Attack [SCOPE.GetRootScope.GetCountry.MakeScope.GetVariable('potential_targets_scope_1').GetCountry.GetName]"
  lotr_ruler_decisions.7.b:0 "Attack [SCOPE.GetRootScope.GetCountry.MakeScope.GetVariable('potential_targets_scope_2').GetCountry.GetName]"
  lotr_ruler_decisions.7.c:0 "Attack [SCOPE.GetRootScope.GetCountry.MakeScope.GetVariable('potential_targets_scope_3').GetCountry.GetName]"
+ lotr_ruler_decisions.7.cancel:0 "Cancel"
  lotr_ruler_decisions.9.t:0 "Losing our cause"
  lotr_ruler_decisions.9.desc:0 "As we are now engaged in another war, the rest of middle earth looks doubtful about our claims to only wage war for their good."
  lotr_ruler_decisions.9a.desc:0 "Reduced aggressive expansion gain lost."

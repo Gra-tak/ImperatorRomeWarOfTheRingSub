@@ -95,6 +95,46 @@
 	}
 }
 
+saruman_thrall_tribe = {
+	subject_pays = subject_client_state_pays
+	
+	joins_overlord_in_war = yes
+	
+	protected_when_attacked = yes
+	has_overlords_ruler = no
+	can_be_integrated = no
+	costs_diplomatic_slot = no
+	subject_can_cancel = no
+	
+	has_limited_diplomacy = yes
+	
+	overlord_modifier = {
+		global_tribesmen_happyness = 0.03
+	}
+	subject_modifier = {
+		country_civilization_value = 0.1
+		global_monthly_civilization = 0.01
+	}
+	
+	allow = {
+		always = no #just on start
+	}
+	
+	on_enable = {
+	}
+	on_disable = {
+	}
+	# on_monthly = {
+	
+	# }
+	
+	diplo_chance = {
+		base = {
+			offset = -999
+		}
+	}
+}
+
 ranger_protectorate = { #Ranger of the north mechanics
 	subject_pays = subject_pays_ranger_protectorate
 	
