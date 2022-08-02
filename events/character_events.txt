@@ -100,30 +100,15 @@ character_events.2 = {
 		custom_tooltip = character_events.2.b.tooltip
 		hidden_effect = {	
 			scope:target = {
-				while = {
-					limit = {
-						any_child = {
-							NOT = { 
-								has_variable = inheritance_ftw
-							}
+				every_child = {
+					limit = { is_alive = yes }
+					add_gold = {
+						value = 1000
+						divide = {
+							value = scope:target.num_of_children
 						}
 					}
-					random_child = {
-						weight = {
-							title_importance_modifier = yes
-						}
-						add_gold = {
-							value = 1000
-							divide = {
-								value = scope:target.num_of_children
-							}
-						}
-						add_loyalty = loyalty_inheritance_defended
-						set_variable = {
-							name = inheritance_ftw
-							value = 1
-						}
-					}
+					add_loyalty = loyalty_inheritance_defended
 				}
 			}
 		}

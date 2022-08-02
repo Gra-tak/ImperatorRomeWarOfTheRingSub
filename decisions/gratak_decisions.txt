@@ -83,6 +83,7 @@
 	end_all_wars_debug = {
 		potential = {
 			is_ai = no
+			always = no
 		}
 		allow = {}
 		effect = {

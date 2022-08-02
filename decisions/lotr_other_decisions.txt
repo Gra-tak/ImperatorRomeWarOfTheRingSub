@@ -109,6 +109,7 @@
 		}
 		allow = {
 			war = no
+			custom_tooltip = neighbor_age_of_the_orc
 			OR = {
 				any_owned_province = {
 					any_neighbor_province = {
@@ -129,7 +130,6 @@
 					}
 				}
 			}
-			custom_tooltip = neighbor_age_of_the_orc
 		}
 		effect = {
 			hidden_effect = {
