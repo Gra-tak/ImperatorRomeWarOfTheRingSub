@@ -200,59 +200,59 @@ br_maintenance.4 = { #to prevent mass starvation at startup, this event fills th
 		}
 	}
 	
-br_maintenance.5 = { #for now, simple event that sends orc pops to carn dum when they immigrate to non-orc realms
+# br_maintenance.5 = { #for now, simple event that sends orc pops to carn dum when they immigrate to non-orc realms
 	
-	type = country_event
-	title = "truce"
-	desc = "truce"
-	picture = ship_in_storm
-	goto_location = root
-	hidden = yes
+# 	type = country_event
+# 	title = "truce"
+# 	desc = "truce"
+# 	picture = ship_in_storm
+# 	goto_location = root
+# 	hidden = yes
 	
-	trigger = {
-		NOT = { country_culture_group = orcs_group }
-		NOT = { religion = melkorism }
-	}
+# 	trigger = {
+# 		NOT = { country_culture_group = orcs_group }
+# 		NOT = { religion = melkorism }
+# 	}
 			
-	immediate = {
-	}
+# 	immediate = {
+# 	}
 	
-    option = {
-		name = "OK"
-	p:1141 = {
-    add_to_list = targets
-	}
-	p:1030 = {
-    add_to_list = targets
-	}
-	p:1021 = {
-    add_to_list = targets
-	}
-	p:1148 = {
-    add_to_list = targets
-	}
-	p:860 = {
-    add_to_list = targets
-	}
-	p:3758 = {
-    add_to_list = targets
-	}
-	p:913 = {
-    add_to_list = targets
-	}
-	every_owned_province = {
-    limit = {
-        num_foreign_culture > 0
-    }
-    every_orc_pop = {
-        random_in_list = {
-            list = targets
-            save_scope_as = target
-            prev = {
-                move_pop = scope:target
-            }
-        }
-    }
-}
-	}
-}
+#     option = {
+# 		name = "OK"
+# 	p:1141 = {
+#     add_to_list = targets
+# 	}
+# 	p:1030 = {
+#     add_to_list = targets
+# 	}
+# 	p:1021 = {
+#     add_to_list = targets
+# 	}
+# 	p:1148 = {
+#     add_to_list = targets
+# 	}
+# 	p:860 = {
+#     add_to_list = targets
+# 	}
+# 	p:3758 = {
+#     add_to_list = targets
+# 	}
+# 	p:913 = {
+#     add_to_list = targets
+# 	}
+# 	every_owned_province = {
+#     limit = {
+#         num_foreign_culture > 0
+#     }
+#     every_orc_pop = {
+#         random_in_list = {
+#             list = targets
+#             save_scope_as = target
+#             prev = {
+#                 move_pop = scope:target
+#             }
+#         }
+#     }
+# }
+# 	}
+# }

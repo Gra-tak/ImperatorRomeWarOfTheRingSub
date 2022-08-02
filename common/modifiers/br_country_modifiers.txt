@@ -31,3 +31,6 @@ death_of_sauron = {
 orc_war_ae_modifier = {
 	agressive_expansion_impact = -0.75
 }
+
+encourage_migration = {
+}

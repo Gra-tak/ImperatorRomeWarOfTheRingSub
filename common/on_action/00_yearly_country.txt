@@ -56,12 +56,20 @@ yearly_country_pulse =
 		br_truce.2
 		br_truce.3
 		br_sauron.4 #may need to disable if it s OP
-		br_maintenance.5
+		# br_maintenance.5
 		country_diplomacy.40
 		gw_effects.1	# Great Works martial training
 		gw_effects.2	# Great Works finesse training
 		gw_effects.3	# Great Works charisma training
 		gw_effects.4	# Great Works zeal training			
 		lotr_migration_events.1 #fleeing from being eaten by orcs	  
+		#migration:
+		lotr_migration_events.2 
+		lotr_migration_events.3
+		lotr_migration_events.4 
+		lotr_migration_events.5
+		lotr_migration_events.6
+		#incented migration to subjects
+		lotr_migration_events.7
 	}
 }

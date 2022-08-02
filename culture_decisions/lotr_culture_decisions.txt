@@ -29,4 +29,45 @@
 			}
 		}
 	}
+
+	encourage_migration_decision = {
+		potential = {
+			scope:target_culture = {
+				NOT = { has_pop_type_right = citizen }
+				NOT = { has_pop_type_right = nobles }
+				NOT = { has_country_culture_modifier = encourage_migration }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			scope:target_culture = {
+				add_country_culture_modifier = {
+					name = encourage_migration
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+		}
+	}
+
+	stop_encourage_migration_decision = {
+		potential = {
+			scope:target_culture = {
+				NOT = { has_pop_type_right = citizen }
+				NOT = { has_pop_type_right = nobles }
+				has_country_culture_modifier = encourage_migration
+			}
+		}
+		allow = {
+		}
+		effect = {
+			scope:target_culture = {
+				remove_country_culture_modifier = encourage_migration
+			}
+		}
+		ai_will_do = {
+		}
+	}
 }

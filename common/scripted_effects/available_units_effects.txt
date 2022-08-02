@@ -1,4 +1,4 @@
-#after adding new unit types aalong with this file you need to also edit military_view.gui and edit_legion_window.gui
+﻿#after adding new unit types aalong with this file you need to also edit military_view.gui and edit_legion_window.gui
 au_basic_setup = { #runs at the game start to prevent errors, but you could also use it to reset all available units of a country before giving it a new set
 	set_variable = { #archers
 		name = au0
