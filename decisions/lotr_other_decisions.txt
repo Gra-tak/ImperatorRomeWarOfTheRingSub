@@ -63,10 +63,13 @@
 	}
 	lotr_attack_melkor_vassals = {
 		potential = {
+			is_ai = no
 			num_of_cities >= 1
 			NOT = { religion = melkorism }
+			is_subject = no
 		}
 		allow = {
+			war = no
 			any_subject = {
 				religion = melkorism
 			}
@@ -91,6 +94,50 @@
 					}
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	lotr_protect_the_free_people = {
+		potential = {
+			is_ai = no
+			num_of_cities >= 1
+			NOT = { religion = melkorism }
+			is_subject = no
+		}
+		allow = {
+			war = no
+			OR = {
+				any_owned_province = {
+					any_neighbor_province = {
+						has_owner = yes
+						OWNER = {
+							has_law = age_of_the_orc
+						}
+					}
+				}
+				any_subject = {
+					any_owned_province = {
+						any_neighbor_province = {
+							has_owner = yes
+							OWNER = {
+								has_law = age_of_the_orc
+							}
+						}
+					}
+				}
+			}
+			custom_tooltip = neighbor_age_of_the_orc
+		}
+		effect = {
+			hidden_effect = {
+				trigger_event = {
+					id = lotr_ruler_decisions.7
+				}
+			}
+			custom_tooltip = neighbor_age_of_the_orc_attack
 		}
 		ai_will_do = {
 			factor = 0

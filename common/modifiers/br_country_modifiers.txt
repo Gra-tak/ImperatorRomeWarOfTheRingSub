@@ -27,3 +27,7 @@ death_of_sauron = {
 		global_nobles_happyness = -1.0
 		global_monthly_state_loyalty = -50.0
 		}
+
+orc_war_ae_modifier = {
+	agressive_expansion_impact = -0.75
+}

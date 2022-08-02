@@ -241,3 +241,213 @@ lotr_ruler_decisions.6 = {
 		}
 	}
 }
+
+
+lotr_ruler_decisions.7 = {
+  type = country_event
+  title = "lotr_ruler_decisions.7.t"
+  desc = "lotr_ruler_decisions.7.desc"
+  picture = gondor
+
+  left_portrait = current_ruler
+  right_portrait = root.var:potential_targets_scope_1.current_ruler
+  right_portrait = root.var:potential_targets_scope_2.current_ruler
+  right_portrait = root.var:potential_targets_scope_3.current_ruler
+
+  immediate = {
+  	every_country = {
+  		limit = {
+  			has_law = age_of_the_orc
+				any_owned_province = {
+					any_neighbor_province = {
+						has_owner = yes
+						OR = {
+							OWNER = ROOT
+							OWNER = {
+								is_subject = yes
+								overlord = ROOT
+							}
+						}
+					}
+				}
+  		}
+  		add_to_list = potential_targets
+  	}
+  	ordered_in_list = {
+      list = potential_targets
+      position = 0
+      ROOT = {
+	    	set_variable = {
+	    		name = potential_targets_scope_1
+	    		value = PREV
+	    	}
+	    }
+    }
+    if = {
+    	limit = {
+    		list_size = {
+    			name = potential_targets
+    			value >= 2
+    		}
+    	}
+    	ordered_in_list = {
+        list = potential_targets
+        position = 1
+	      ROOT = {
+		    	set_variable = {
+		    		name = potential_targets_scope_2
+		    		value = PREV
+		    	}
+		    }
+      }
+    }
+    if = {
+    	limit = {
+    		list_size = {
+    			name = potential_targets
+    			value >= 3
+    		}
+    	}
+    	ordered_in_list = {
+        list = potential_targets
+        position = 2
+	      ROOT = {
+		    	set_variable = {
+		    		name = potential_targets_scope_3
+		    		value = PREV
+		    	}
+		    }
+      }
+    }
+    save_scope_as = orc_war_attacker
+  }
+
+  option = {
+		name = "lotr_ruler_decisions.7.a"
+		var:potential_targets_scope_1 = {
+    	save_scope_as = orc_war_defender
+		}
+		declare_war_with_wargoal = {
+			war_goal = orc_wargoal
+			target = var:potential_targets_scope_1
+		}
+		trigger_event = {
+  		id = lotr_ruler_decisions.8
+		}
+	}
+  option = {
+		name = "lotr_ruler_decisions.7.b"
+		var:potential_targets_scope_2 = {
+    	save_scope_as = orc_war_defender
+		}
+		trigger = { has_variable = potential_targets_scope_2 }
+		declare_war_with_wargoal = {
+			war_goal = orc_wargoal
+			target = var:potential_targets_scope_2
+		}
+		trigger_event = {
+  		id = lotr_ruler_decisions.8
+		}
+	}
+  option = {
+		name = "lotr_ruler_decisions.7.c"
+		var:potential_targets_scope_3 = {
+    	save_scope_as = orc_war_defender
+		}
+		trigger = { has_variable = potential_targets_scope_3 }
+		declare_war_with_wargoal = {
+			war_goal = orc_wargoal
+			target = var:potential_targets_scope_3
+		}
+		trigger_event = {
+  		id = lotr_ruler_decisions.8
+		}
+	}
+  option = {
+		name = "lotr_ruler_decisions.7.cancel"
+	}
+}
+
+lotr_ruler_decisions.8 = {
+  type = country_event
+  title = "OK"
+  desc = "OK"
+  picture = gondor
+  hidden = yes
+  option = { 
+  	name = "OK"
+  	if = {
+  		limit = {
+				any_current_war = {
+					any_war_attacker = { THIS = ROOT }
+					any_war_defender = {
+						NOT = { religion  = melkorism }
+						PREV = { is_war_leader = PREV }
+					}
+				}
+  		}
+  		# if = {
+  			# limit = { has_country_modifier = orc_war_ae_modifier }
+		  	trigger_event = {
+		  		id = lotr_ruler_decisions.9 #end bonus due to war with non-melkor
+	  		}
+  		# }
+  	}
+  	else_if = {
+  		limit = { war = yes }
+  		if = {
+  			limit = { NOT = { has_country_modifier = orc_war_ae_modifier } }
+				add_country_modifier = {
+					name = orc_war_ae_modifier
+				}
+	  		scope:orc_war_defender = {
+	  			add_country_modifier = { 
+	  				name = orc_war_ae_modifier
+	  			}
+	  		}
+  		}
+  		trigger_event = {
+	  		id = lotr_ruler_decisions.8 #check again later
+	  		days = 90
+  		}
+  	}
+  	else =
+  	{
+	  	trigger_event = {
+	  		id = lotr_ruler_decisions.10 #end bonus due to war having ended
+  		}
+  	}
+  }
+}
+
+lotr_ruler_decisions.9 = {
+  type = country_event
+  title = "lotr_ruler_decisions.9.t"
+  desc = "lotr_ruler_decisions.9.desc"
+  picture = gondor
+
+  option = { 
+  	name = "OK"
+	  custom_tooltip = "lotr_ruler_decisions.9a.desc"
+	  hidden_effect = {
+	  	trigger_event = {
+	  		id = lotr_ruler_decisions.10 #end bonus
+			}
+		}
+  }
+}
+
+lotr_ruler_decisions.10 = {
+  type = country_event
+  title = "OK"
+  desc = "OK"
+  picture = gondor
+  hidden = yes
+  option = { 
+  	name = "OK"
+		remove_country_modifier = orc_war_ae_modifier
+		scope:orc_war_defender = {
+			remove_country_modifier = orc_war_ae_modifier
+		}
+  }
+}

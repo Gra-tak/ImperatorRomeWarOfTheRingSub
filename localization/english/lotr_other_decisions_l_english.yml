@@ -48,3 +48,7 @@
  lotr_ruler_decisions.6.a.tt:0 "[SCOPE.GetRootScope.GetCountry.GetName] remains a Satrapy of Gondor." 
  lotr_ruler_decisions.6.b:0 "It is merely the price of freedom..."
  lotr_ruler_decisions.6.b.tt:0 "[SCOPE.GetRootScope.GetCountry.GetName] becomes independent. Gondor gains claims on all our territories and our relations worsen."
+
+ lotr_ruler_decisions.7.a:0 "Attack [SCOPE.GetRootScope.GetCountry.MakeScope.GetVariable('potential_targets_scope_1').GetCountry.GetName]"
+ lotr_ruler_decisions.7.b:0 "Attack [SCOPE.GetRootScope.GetCountry.MakeScope.GetVariable('potential_targets_scope_2').GetCountry.GetName]"
+ lotr_ruler_decisions.7.c:0 "Attack [SCOPE.GetRootScope.GetCountry.MakeScope.GetVariable('potential_targets_scope_3').GetCountry.GetName]"
