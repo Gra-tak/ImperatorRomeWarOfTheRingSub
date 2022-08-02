@@ -61,5 +61,40 @@
 			factor = 0
 		}
 	}
+	lotr_attack_melkor_vassals = {
+		potential = {
+			num_of_cities >= 1
+			NOT = { religion = melkorism }
+		}
+		allow = {
+			any_subject = {
+				religion = melkorism
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_subject = {
+					limit = {
+						religion = melkorism
+					}
+					add_to_list = melkor_subjects
+					ROOT = { release_subject = PREV }
+				}
+			}
+			every_in_list = {
+        list = melkor_subjects
+				ROOT = {
+					add_tyranny = 3
+					declare_war_with_wargoal = {
+						war_goal = imperial_conquest_wargoal
+						target = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 }
