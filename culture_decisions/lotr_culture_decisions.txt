@@ -1,0 +1,32 @@
+﻿culture_decisions = {
+
+	accept_culture = {
+		potential = {
+			root.culture.culture_group = scope:target_culture.culture.culture_group
+			scope:target_culture = {
+				NOT = { has_pop_type_right = citizen }
+				NOT = { has_pop_type_right = nobles }
+			}
+		}
+		allow = {
+			NOT = { scope:target_culture = { culture = culture:urukhai } }
+		}
+		effect = {
+			ROOT = { integrate_country_culture = scope:target_culture }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				culture_pops_in_country = {
+					target = scope:target_culture
+					value <= 10
+				}
+			}
+			modifier = {
+				factor = 0
+				stability < 50
+			}
+		}
+	}
+}
