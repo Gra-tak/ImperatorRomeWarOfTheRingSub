@@ -192,6 +192,7 @@ br_dunedain.4 = {
 					has_culture = rangers
 					has_culture = black_numenorean
 				}
+				NOT = { has_trait = maia }
 			}
 			add_trait = strong_blood_of_numenor
 		}

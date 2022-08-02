@@ -174,8 +174,10 @@ lotr_on_create_character_effect = {
 		limit = {
 			OR = {
 				has_culture = dunedain
+				has_culture = rangers
 				has_culture = black_numenorean
 			}
+			NOT = { has_trait = maia }
 		}
 		add_trait = strong_blood_of_numenor
 	}
