@@ -71,3 +71,5 @@
  stop_encourage_migration_decision_desc:0 "Just an undo."
  moveMinorities:0 "Move minorities"
  moveMinorities_desc:0 "With some strong incentives, minorities in provinces that are mainly of an accepted culture can be convinced to move into a province where they culture is a majority."
+ aragorn_arwen_promised:0 "Promise your hand to Arwen"
+ aragorn_arwen_promised_desc:0 "Aragorn has not ambitions to take anyone for wife other than Arwen. While Elrond will not allow this at the moment, things may change. Founding Arnor or making Imladris a subject will allow a marriage. Until then, both characters are marriage blocked by a phantom character."

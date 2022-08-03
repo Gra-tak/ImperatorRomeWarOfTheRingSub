@@ -172,3 +172,8 @@ event_dale = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/event_dale.dds"
 }
+
+event_marriage = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/aragorn_arwen.dds"
+}

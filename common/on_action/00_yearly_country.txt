@@ -72,5 +72,6 @@ yearly_country_pulse =
 		#incented migration to subjects
 		lotr_migration_events.7
 		lotr_tradition_events.1
+		lotr_storyline_events.13
 	}
 }

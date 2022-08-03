@@ -4,6 +4,6 @@
 }
 
 grey_company = {
-	value = 0.4
+	value = 40
 	month = 9999
 }

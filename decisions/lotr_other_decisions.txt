@@ -144,4 +144,72 @@
 		}
 	}
 
+	aragorn_arwen_promised = {
+		potential = {
+			is_ai = no #AI would never manage the conditions for a marriage
+			tag = CAR
+		}
+		allow = {
+			char:60 = {
+				is_alive = yes
+				is_married = no
+			}
+			char:15 = {
+				is_alive = yes
+				is_married = no
+			}
+		}
+		effect = {
+			hidden_effect = {
+				set_variable = {
+					name = aragorn_arwen_promised_var
+				}
+				char:60 = {
+					employer = {
+						create_character = {
+							first_name="Aragorn"
+							family_name="(promised)"
+							birth_date=2931.8.25
+							culture="rangers"
+							religion="iluvatarism"
+							no_stats=yes
+							add_martial=0
+							add_charisma=0
+							add_finesse=0
+							add_zeal=0
+							no_traits=yes
+							force_add_trait="strong_blood_of_numenor"
+							force_add_trait="asexual"
+							dna="//8A/KxwrHAAAQAAAqICogKDAoMCigKKAn4CfgKEAoQChAKEAmUCZQJ2AnYChwKHApsCmwKXApcCgQKBApMCkwJzAnMCUAJQAnICcgKmAqYCYgJiAlwCXAJVAlUCgwKDAosCiwKSApICeQJ5AmsCawKOAo4ChwKHAnwCfAKCAoICcwJzAocChwJ6AnoCiQKJApkCmQKYApgClgKWAn8CfwKIAogChAKEAmUCZQKPAo8CagJqAn8CfwKYApgCiwKLAoECgQJ6AnoCiAKIAnACcAJmAmYCagJqAnECcQJqAmoCgQKBAqQCpAIkAiQBXwFfATYBNgGYAZgAsACwAVwBXAAmACYApQClAH0AfQF9AX0BFAEUAA8ADwA3ADcCiwKLAR8BHwK4ArgAwwDDAU0BTQCXAJcDJgMmAIYAhgDgAOAAnQCdATgBOAD7APsBXgFeAQMBAwFLAUsAoQChAPIA8gCDAIMAjgCOAx4DHgA8ADwMAAzkAH8AfwNzA3MWHBZjAP0A/QxDDFQQ2hA6EbER8wAAAAAAAAAAAAAAAAAAAAA="
+							save_scope_as = aragorn_promised_scope
+						}
+					}
+					marry_character = scope:aragorn_promised_scope
+				}
+				create_character = {
+					first_name="Arwen"
+					family_name="(promised)"
+					birth_date=241.1.1
+					culture="imladris"
+					religion="iluvatarism"
+					no_stats=yes
+					add_martial=0
+					add_charisma=0
+					add_finesse=0
+					add_zeal=0
+					no_traits=yes
+					force_add_trait="elf"
+					force_add_trait="asexual"
+					female = yes
+					dna="//9hVgAAeVcAACdpAnwCfAOyA7ICgwKDAnkCeQKHAocChgKGApgCmAJ6AnoCcgJyAn4CfgL/AosCgAKAAnsCewJvAm8CewJ7ApMCkwL/AmwCcgJyAnsCewJnAmcCiwKLBJsEmwJ9An0CfQJ9A6QDpAJ8AnwCigKKAo8CjwJ/An8CmQKZAmwCbAJ4AngCeQJ5BMEEwQJtAm0CcAJwAnICcgKRApECagJqAm0CbQKZApkCbAJsApgCmAJ7AnsCeAJ4AmYCZgTTBNMCkAKQBKwErAKKAooChwKHApYClgKPAo8CggKCAmcCZwJeAl4AUABQAR8BHwDMAMwAhwCHAPQA9AD4APgALgAuACQAJACfAJ8ASQBJAC0ALQB/AH8A0gDSANgA2AExATEAbgBuAA0ADQDDAMMAkgCSAJ8AnwB/AH8A6wDrASABIAAlACUBUQFRALEAsQFiAWIBcQFxApsCmwCaAJoA1ADUAEkASQDrAOsHZAdaAH8AfwS4BLwFsgd9AGIAYgSRBJESiAU9Ev8NFgAAAAAAAAAAAAAAAAAAAAA="
+					save_scope_as = arwen_promised_scope
+				}
+				char:15 = { marry_character = scope:arwen_promised_scope }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 }

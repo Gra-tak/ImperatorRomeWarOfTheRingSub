@@ -71,6 +71,9 @@
 				change_country_color =  arthedain_grey
 				change_country_tag = ARN
 				change_country_flag = ARNOR_FLAG
+				trigger_event = {
+					id = lotr_storyline_events.13
+				}
 			}
 			if = {
 				limit = {

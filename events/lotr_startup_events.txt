@@ -74,7 +74,7 @@ lotr_startup.2 = {
 				move_country = c:IML
 			}
 		}
-		char:57 = {
+		char:17 = {
 			every_child = {
 				death = { 
 					death_reason = departed_for_valinor
@@ -95,7 +95,7 @@ lotr_startup.3 = {
 	}
 	
 	immediate = {
-		char:64 = { add_loyalty = grey_company }
+		char:64 = { add_loyalty = devoted }
 		char:65 = { add_loyalty = grey_company }
 		char:66 = { add_loyalty = grey_company }
 		char:67 = { add_loyalty = grey_company }

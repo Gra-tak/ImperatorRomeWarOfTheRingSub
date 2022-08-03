@@ -755,3 +755,130 @@ lotr_storyline_events.12 = {
 	}
 	
 }
+
+#marriage aragorn arwen
+lotr_storyline_events.13 = {
+	type = country_event
+	title = "OK"
+	desc = "OK"
+	picture = event_marriage
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = CAR
+			tag = ARN
+		}
+		has_variable = aragorn_arwen_promised_var
+	}
+	
+
+	immediate = {
+		if = { 
+			limit = {
+				char:60 = {
+					is_alive = no
+				}
+			}
+			remove_variable = aragorn_arwen_promised_var
+			trigger_event = {
+				id = lotr_storyline_events.15
+			}
+		}
+		else_if = { 
+			limit = {
+				char:15 = {
+					is_alive = no
+				}
+				remove_variable = aragorn_arwen_promised_var
+				c:IML = {
+					trigger_event = {
+						id = lotr_storyline_events.15
+					}
+				}
+			}
+		}
+		else_if = { 
+			limit = {
+				OR = {
+					tag = ARN
+					any_subject = {
+						tag = IML
+					}
+				}	
+			}
+			remove_variable = aragorn_arwen_promised_var
+			trigger_event = {
+				id = lotr_storyline_events.14
+			}
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+}
+
+lotr_storyline_events.14 = {
+	type = country_event
+	title = "lotr_storyline_events.14.t"
+	desc = "lotr_storyline_events.14.desc"
+	picture = event_marriage
+
+	left_portrait = current_ruler
+  right_portrait = char:60
+  right_portrait = char:57
+
+	trigger = {
+	}
+	
+
+	immediate = {
+	}
+	
+	option = {
+		name = lotr_storyline_events.14.a
+		hidden_effect = {
+			char:60 = { 
+				spouse = { death = {} } 
+				every_child = { death = {} } #there shouldn't be any, but they would make issues "heir not my child"
+				move_country = ROOT
+			}
+			char:15 = { 
+				spouse = { 
+					move_country = c:IML #prevent death message
+					death = {} 
+					every_child = { death = {} }  #there shouldn't be any, but they would make issues "heir not my child"
+				} 
+				marry_character = char:60
+			}
+		}
+	}
+}
+
+#arwen died (same event used for ai if aragon died)
+lotr_storyline_events.15 = {
+	type = country_event
+	title = "lotr_storyline_events.15.t"
+	desc = "lotr_storyline_events.15.desc"
+	picture = event_imladris
+
+	left_portrait = current_ruler
+  right_portrait = char:60
+  right_portrait = char:57
+
+	trigger = {
+	}
+	
+
+	immediate = {
+	}
+	
+	option = {
+		name = lotr_storyline_events.14.a
+		hidden_effect = {
+			char:60 = { divorce_character = spouse }
+			char:15 = { divorce_character = spouse }
+	}
+	}
+}
