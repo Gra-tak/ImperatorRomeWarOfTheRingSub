@@ -15,7 +15,7 @@
 		global_tribesmen_happyness = 0.03
 	}
 	subject_modifier = {
-		country_civilization_value = 0.1
+		country_civilization_value = 10
 		global_monthly_civilization = 0.01
 	}
 	
@@ -112,7 +112,7 @@ saruman_thrall_tribe = {
 		global_tribesmen_happyness = 0.03
 	}
 	subject_modifier = {
-		country_civilization_value = 0.1
+		country_civilization_value = 10
 		global_monthly_civilization = 0.01
 	}
 	
@@ -152,12 +152,20 @@ ranger_protectorate = { #Ranger of the north mechanics
 	#	global_tribesmen_happyness = 0.03
 	#}
 	subject_modifier = {
-		country_civilization_value = 0.1
+		country_civilization_value = 10
 		global_monthly_civilization = 0.01
 	}
 	
 	allow = {
-		#is_tribal = yes
+		NOR = {
+			country_culture_group = edain_group
+			country_culture_group = edain_mixed_group
+			country_culture_group = dwarf_group
+			country_culture_group = noldor_group
+			country_culture_group = teleri_group
+			country_culture_group = vanyar_group
+			country_culture_group = orcs_group
+		}
 		scope:future_overlord = {
 			religion = iluvatarism
 			tag = CAR
@@ -249,12 +257,20 @@ ranger_fief = { #Ranger of the north mechanics
 	#	global_tribesmen_happyness = 0.03
 	#}
 	subject_modifier = {
-		country_civilization_value = 0.1
+		country_civilization_value = 10
 		global_monthly_civilization = 0.01
 	}
 	
 	allow = {
-		#is_tribal = yes
+		NOR = {
+			country_culture_group = edain_group
+			country_culture_group = edain_mixed_group
+			country_culture_group = dwarf_group
+			country_culture_group = noldor_group
+			country_culture_group = teleri_group
+			country_culture_group = vanyar_group
+			country_culture_group = orcs_group
+		}
 		scope:future_overlord = {
 			religion = iluvatarism
 			tag = CAR
@@ -263,7 +279,7 @@ ranger_fief = { #Ranger of the north mechanics
 			}
 			any_subject = {
 				count < 10
-				is_subject_type = ranger_protectorate
+				is_subject_type = ranger_fief
 			}
 		}
 	}
