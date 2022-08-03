@@ -57,3 +57,30 @@ lotr_startup.1 = { #Temp fix for new vanilla fort capacity mechanic causing inco
 			}
 	}	
 }
+
+lotr_startup.2 = {
+	
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		tag = LOR
+	}
+	
+	immediate = {
+		if = {
+			limit = { is_ai = no }
+			char:62 = { #move Celebrían to imladris before killing here to prevent popup
+				move_country = c:IML
+			}
+		}
+		char:57 = {
+			every_child = {
+				death = { 
+					death_reason = departed_for_valinor
+				}
+			}
+			add_loyalty = Devoted
+		}
+	}	
+}

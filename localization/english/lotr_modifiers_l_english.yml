@@ -2072,3 +2072,4 @@
  population_building_cost:0 "Granary Building Cost"
  MODIFIER_HOLDINGS_POSSIBLE_FOR_CHARACTER_desc:0 "This is the maximum number of holdings a character can possess."
  revanchism:0 "Revanchism"
+ departed_for_valinor:0 "Departed for Valinor"

@@ -5,6 +5,7 @@
 	martial = 1
 	fertility = -0.1
 	health = 5.0
+	character_loyalty = 5
 }
 
 dwarf = {

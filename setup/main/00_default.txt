@@ -44,14 +44,14 @@ family={
 		}
 		5={
 			key="HouseofElrond"
-			owner=XVX
+			owner=IML
 			culture = imladris
 			prestige=1000
 			color = 0
 		}
 		6={
 			key="HouseofGoldenFlower"
-			owner=XVX
+			owner=IML
 			culture = imladris
 			prestige=1000
 			color = 0
@@ -102,6 +102,20 @@ family={
 			key="Barding"
 			owner=DLE
 			culture = lakemen
+			prestige=1000
+			color = 0
+		}		
+		14={
+			key="HouseofElmo"
+			owner=LOR
+			culture = sindar
+			prestige=1000
+			color = 0
+		}
+		15={
+			key="HouseofHaldir"
+			owner=LOR
+			culture = galadhrim
 			prestige=1000
 			color = 0
 		}
@@ -1248,9 +1262,12 @@ country = {
 		LOR = { #Lorien
 			government = despotic_monarchy
 			family=8
+			family=14
+			family=15
 			diplomatic_stance=appeasement_stance
 			primary_culture = galadhrim
 			religion = iluvatarism
+			succession_law = elective_succession_law #no children for galadriel (only child already left for valinor)
 			
 			technology={
 				military_tech={ level=1 progress=0 }

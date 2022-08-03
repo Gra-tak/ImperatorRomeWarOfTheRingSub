@@ -1,6 +1,7 @@
 ﻿on_game_initialized = {
 	events = {
 		lotr_startup.1
+		lotr_startup.2
 	}
 }
 

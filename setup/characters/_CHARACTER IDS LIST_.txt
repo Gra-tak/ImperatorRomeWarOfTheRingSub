@@ -31,21 +31,20 @@
 #### XVX #### IDs used in events
 #16 Saruman
 
-#### IML ####
-#17 Elrond
-#18 Elladan
-#19 Elrohir
-#20 Arwen
-#21 Glorfindel
+#### LOR ####
+#17 Galadriel
+#18 Celeborn
+#19 Celebrían (departed child of Galadriel and Celeborn. Mother of Arwen)
+#20 father or Haldir
+#21 Haldir
+#22 Rúmil (brother of Haldir)
+#23 Orophin (brother of Haldir)
 
-#### QAR Qarsag #### Filler. Can be deleted
-#22 Hiempsal
+
 
 #### BEO Beornings ####
-#23 Beorn
+#24 Beorn
 
-#### LOR ####
-#24 Galadriel
 
 #### GON Gondor #### IDs used in events
 #25 Turgon
@@ -89,3 +88,10 @@
 #54 Theoden's sister
 #55 Théodwyn king's sister
 #56 Théodred king's son
+
+#### IML ####
+#57 Elrond
+#58 Elladan
+#59 Elrohir
+#60 Arwen
+#61 Glorfindel

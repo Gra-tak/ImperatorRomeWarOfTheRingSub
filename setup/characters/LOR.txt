@@ -1,7 +1,7 @@
 ﻿"LOR"={
 	country="LOR"
 
-	24={
+	17={
 		first_name="Galadriel"
 		family = c:LOR.fam:HouseofFinarfin
 		birth_date=2.1.1
@@ -23,9 +23,97 @@
 		add_gold=200
 		add_popularity=60
 		c:LOR={
-			set_as_ruler=char:24
+			set_as_ruler=char:17
 		}
 		dna="WgFhVnlXeVcAACdpAnwCfAOyA7ICgwKDAnkCeQKHAocChgKGApgCmAJ6AnoCcgJyAn4CfgL/AosCgAKAAnsCewJvAm8CewJ7ApMCkwL/AmwCcgJyAnsCewJnAmcCiwKLBJsEmwJ9An0CfQJ9A6QDpAJ8AnwCigKKAo8CjwJ/An8CmQKZAmwCbAJ4AngCeQJ5BMEEwQJtAm0CcAJwAnICcgKRApECagJqAm0CbQKZApkCbAJsApgCmAJ7AnsCeAJ4AmYCZgTTBNMCkAKQBKwErAKKAooChwKHApYClgKPAo8CggKCAmcCZwJeAl4AUABQAR8BHwDMAMwAhwCHAPQA9AD4APgALgAuACQAJACfAJ8ASQBJAC0ALQB/AH8A0gDSANgA2AExATEAbgBuAA0ADQDDAMMAkgCSAJ8AnwB/AH8A6wDrASABIAAlACUBUQFRALEAsQFiAWIBcQFxApsCmwCaAJoA1ADUAEkASQDrAOsHZAdaAH8AfwS4BLwJZAd9AGIAYgSRBJEDUgU9DQsNFgAAAAAAAAAAAAAAAA=="
+	}
+	18={
+		first_name="Celeborn"
+		family = c:LOR.fam:HouseofElmo
+		birth_date=2.1.1
+		culture="sindar"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=10
+		add_charisma=16
+		add_finesse=9
+		add_zeal=13
+		no_traits=yes
+		female=no
+		add_trait="elf"
+		add_trait="wise"
+		add_trait="asexual"
+		add_gold=200
+		add_popularity=60
+		marry_character=char:17
+	}
+	19={
+		first_name="Celebrían"
+		family = c:LOR.fam:HouseofHaldir
+		birth_date=2.1.1
+		# death_date=2510.1.1
+		culture="lindon"
+		religion="iluvatarism"
+		female=yes
+		add_trait="elf"
+		father="char:18"
+		mother="char:17"
+	}
+	20={
+		first_name="Elmeu"
+		family = c:LOR.fam:HouseofHaldir
+		birth_date=2.1.1
+		death_date=2151.1.24
+		culture="galadhrim"
+		religion="iluvatarism"
+		female=no
+		add_trait="elf"
+	}
+	21={
+		first_name="Haldir"
+		family = c:LOR.fam:HouseofHaldir
+		birth_date=1243.5.29
+		culture="galadhrim"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=14
+		add_charisma=5
+		add_finesse=7
+		add_zeal=7
+		no_traits=yes
+		female=no
+		add_trait="elf"
+		father="char:20"
+	}
+	22={
+		first_name="Rúmil"
+		family = c:LOR.fam:HouseofHaldir
+		birth_date=1263.3.15
+		culture="galadhrim"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=12
+		add_charisma=5
+		add_finesse=4
+		add_zeal=7
+		female=no
+		add_trait="elf"
+		father="char:20"
+	}
+	23={
+		first_name="Orophin"
+		family = c:LOR.fam:HouseofFinarfin
+		birth_date=1272.11.4
+		culture="galadhrim"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=11
+		add_charisma=5
+		add_finesse=5
+		add_zeal=7
+		female=no
+		add_trait="elf"
+		father="char:20"
 	}
 	
 }

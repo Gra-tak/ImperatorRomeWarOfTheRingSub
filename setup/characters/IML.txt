@@ -1,7 +1,7 @@
 ﻿"IML"={
 	country="IML"
 
-	17={
+	57={
 		first_name="Elrond"
 		family = c:IML.fam:HouseofElrond
 		birth_date=2.1.1
@@ -24,15 +24,15 @@
 		add_gold=200
 		add_popularity=60
 		c:IML={
-			set_as_ruler=char:17
+			set_as_ruler=char:57
 		}
 		dna="//sT+wAAAAAAAAAAAqECoQKQApAC1QLVAlQCVAKKAooCiAKIAlgCWAJ1AnUE0QTRAnoCegLbAtsCTAJMApACkAKrAqsCZQJlAmoCagLVAtUCaQJpAqECoQKJAokCkwKTAo0CjQKPAo8CewJ7Ao8CjwKHAocClwKXAoACgAJbAlsCiAKIApYClgJ9An0CjwKPAlkCWQAeAB4CigKKAnQCdAFWAVYCcwJzAn0CfQKVApUCawJrAocChwKGAoYCkQKRAmoCagKSApICmQKZAnYCdgFNAU0CdgJ2AnICcgKCAoICewJ7AoQChAIAAgAA0gDSABsAGwB6AHoA2QDZAOwA7AAVABUC2ALYARMBEwAjACMAoQChACkAKQB/AH8C/QL9AIoAigAnACcA+wD7AQYBBgCZAJkBVQFVASoBKgB/AH8BBAEEAroCugD9AP0AWwBbAvMC8wShBKEAnwCfAO4A7gDaANoDJwMnAAUABQA+AD4ATABMAH8AfwB/AH8TIxOqAOgA6AQABAAWFRYCEnsSRwAAAAAAAAAAAAAAAAI4Ajg="
 	}
 	
-	18={
+	58={
 		first_name="Elladan"
 		family = c:IML.fam:HouseofElrond
-		birth_date=2.1.130
+		birth_date=130.1.1
 		culture="imladris"
 		religion="iluvatarism"
 		no_stats=yes
@@ -48,15 +48,16 @@
 		add_trait="novice_magic_user"
 		add_gold=200
 		add_popularity=60
-		father = char:17
+		father = char:57
+		mother = char:19
 
 		dna="//9yy70cyGoAALflAnsCewJrAmsCiAKIAowCjAKQApAClQKVApYClgKYApgCfQJ9AnwCfAL/AowCxAKWAnsClAJuAm4CgwKDA6MDowP9A7ABXAFcAVoBWgKFAoUCagJqAmsCawKYApgCZwJnAoQChAJsAmwCcQJxA54DngKCAoICkwKTApQClAJxAnECegJ6Ao4CjgKFAoUCbQJtAo0CjQKVApUClgKWAngCeAKHAocCgwKDAoYChgKAAoACiAKIAnsCewJnAmcBVwFXAoICggJyAnICkwKTApkCmQAzADMClgKWAWABYAJ9An0AEwATAGsAawCyALIBWAFYABIAEgCAAIABHQEdARMBEwFPAU8DcgNyAKsAqwB/AH8ABwAHAJwAnABVAFUBLAEsAJEAkQA1ADUA2QDZAXcBdwB/AH8A/gD+AQ0BDQKuAq4AWgBaAE0ATQN5A3kBcAFwAAoACgKgAqAAJAAkAEAAQAC9AL0CAAB1AH8AfwOsA6wQbAEHAGsAawlMCUwHZQHIA54A+AAAAAAAAAAAAAAAAA=="
 	}
 	
-	19={
+	59={
 		first_name="Elrohir"
 		family = c:IML.fam:HouseofElrond
-		birth_date=2.1.130
+		birth_date=130.1.1
 		culture="imladris"
 		religion="iluvatarism"
 		no_stats=yes
@@ -72,15 +73,16 @@
 		add_trait="novice_magic_user"
 		add_gold=200
 		add_popularity=60
-		father = char:17
+		father = char:57
+		mother = char:19
 
 		dna="//9yy70cyGoAALflAnsCewJrAmsCiAKIAowCjAKQApAClQKVApYClgKYApgCfQJ9AnwCfAL/AowCxAKWAnsClAJuAm4CgwKDA6MDowP9A7ABXAFcAVoBWgKFAoUCagJqAmsCawKYApgCZwJnAoQChAJsAmwCcQJxA54DngKCAoICkwKTApQClAJxAnECegJ6Ao4CjgKFAoUCbQJtAo0CjQKVApUClgKWAngCeAKHAocCgwKDAoYChgKAAoACiAKIAnsCewJnAmcBVwFXAoICggJyAnICkwKTApkCmQAzADMClgKWAWABYAJ9An0AEwATAGsAawCyALIBWAFYABIAEgCAAIABHQEdARMBEwFPAU8DcgNyAKsAqwB/AH8ABwAHAJwAnABVAFUBLAEsAJEAkQA1ADUA2QDZAXcBdwB/AH8A/gD+AQ0BDQKuAq4AWgBaAE0ATQN5A3kBcAFwAAoACgKgAqAAJAAkAEAAQAC9AL0CAAB1AH8AfwOsA6wQbAEHAGsAawlMCUwHZQHIA54A+AAAAAAAAAAAAAAAAA=="
 	}
 	
-	20={
+	60={
 		first_name="Arwen"
 		family = c:IML.fam:HouseofElrond
-		birth_date=2.1.241
+		birth_date=241.1.1
 		culture="imladris"
 		religion="iluvatarism"
 		no_stats=yes
@@ -94,13 +96,14 @@
 		add_trait="novice_magic_user"
 		add_gold=200
 		add_popularity=60
-		father = char:17
+		father = char:57
+		mother = char:19
 		female = yes
 
 		dna="//9hVgAAeVcAACdpAnwCfAOyA7ICgwKDAnkCeQKHAocChgKGApgCmAJ6AnoCcgJyAn4CfgL/AosCgAKAAnsCewJvAm8CewJ7ApMCkwL/AmwCcgJyAnsCewJnAmcCiwKLBJsEmwJ9An0CfQJ9A6QDpAJ8AnwCigKKAo8CjwJ/An8CmQKZAmwCbAJ4AngCeQJ5BMEEwQJtAm0CcAJwAnICcgKRApECagJqAm0CbQKZApkCbAJsApgCmAJ7AnsCeAJ4AmYCZgTTBNMCkAKQBKwErAKKAooChwKHApYClgKPAo8CggKCAmcCZwJeAl4AUABQAR8BHwDMAMwAhwCHAPQA9AD4APgALgAuACQAJACfAJ8ASQBJAC0ALQB/AH8A0gDSANgA2AExATEAbgBuAA0ADQDDAMMAkgCSAJ8AnwB/AH8A6wDrASABIAAlACUBUQFRALEAsQFiAWIBcQFxApsCmwCaAJoA1ADUAEkASQDrAOsHZAdaAH8AfwS4BLwFsgd9AGIAYgSRBJESiAU9Ev8NFgAAAAAAAAAAAAAAAAAAAAA="
 	}
 	
-	21={
+	61={
 		first_name="Glorfindel"
 		family = c:IML.fam:HouseofGoldenFlower
 		birth_date=2.1.1

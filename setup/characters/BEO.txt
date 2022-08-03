@@ -1,6 +1,6 @@
 ﻿"BEO"={
 	country="BEO"
-	23={
+	24={
 		first_name="Beorn"
 		family = c:BEO.fam:Oddrsson
 		birth_date=2950.8.25
@@ -18,7 +18,7 @@
 		add_gold=200
 		add_popularity=70
 		c:BEO={
-			set_as_ruler=char:23
+			set_as_ruler=char:24
 		}
 	}
 }
