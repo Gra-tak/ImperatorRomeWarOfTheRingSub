@@ -68,7 +68,7 @@
 	}
 	67={
 		first_name="Dalason"
-		family = c:CAR.fam:Scoundrel
+		family = c:CAR.fam:GreyCompany
 		birth_date=2906.1.1
 		culture="rangers"
 		religion="iluvatarism"
@@ -78,7 +78,7 @@
 	}
 	68={
 		first_name="Dweorh"
-		family = c:CAR.fam:Scoundrel
+		family = c:CAR.fam:GreyCompany
 		birth_date=2908.1.1
 		culture="rangers"
 		religion="iluvatarism"
@@ -87,7 +87,7 @@
 	}
 	69={
 		first_name="Corsanir"
-		family = c:CAR.fam:Scoundrel
+		family = c:CAR.fam:GreyCompany
 		birth_date=2907.1.1
 		culture="rangers"
 		religion="iluvatarism"
@@ -98,7 +98,7 @@
 	}
 	70={
 		first_name="Calenglad"
-		family = c:CAR.fam:Scoundrel
+		family = c:CAR.fam:GreyCompany
 		birth_date=2917.1.1
 		culture="rangers"
 		religion="iluvatarism"
@@ -107,7 +107,7 @@
 	}
 	71={
 		first_name="Qutar"
-		family = c:CAR.fam:Scoundrel
+		family = c:CAR.fam:GreyCompany
 		birth_date=2963.1.1
 		culture="rangers"
 		religion="iluvatarism"
@@ -116,7 +116,7 @@
 	}
 	72={
 		first_name="Meneldir"
-		family = c:CAR.fam:Scoundrel
+		family = c:CAR.fam:GreyCompany
 		birth_date=2917.1.1
 		culture="rangers"
 		religion="iluvatarism"
@@ -125,7 +125,7 @@
 	}
 	73={
 		first_name="Yenyar"
-		family = c:CAR.fam:Scoundrel
+		family = c:CAR.fam:GreyCompany
 		birth_date=2906.1.1
 		culture="rangers"
 		religion="iluvatarism"
@@ -134,7 +134,7 @@
 	}
 	74={
 		first_name="Rána"
-		family = c:CAR.fam:Scoundrel
+		family = c:CAR.fam:GreyCompany
 		birth_date=2982.1.1
 		culture="rangers"
 		religion="iluvatarism"

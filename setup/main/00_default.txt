@@ -127,7 +127,7 @@ family={
 			color = 0
 		}
 		17={
-			key="Scoundrel"
+			key="GreyCompany"
 			owner=CAR
 			culture = rangers
 			prestige=1000
