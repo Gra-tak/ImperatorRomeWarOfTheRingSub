@@ -26,5 +26,120 @@
 		}
 		dna="//8A/KxwrHAAAQAAAqICogKDAoMCigKKAn4CfgKEAoQChAKEAmUCZQJ2AnYChwKHApsCmwKXApcCgQKBApMCkwJzAnMCUAJQAnICcgKmAqYCYgJiAlwCXAJVAlUCgwKDAosCiwKSApICeQJ5AmsCawKOAo4ChwKHAnwCfAKCAoICcwJzAocChwJ6AnoCiQKJApkCmQKYApgClgKWAn8CfwKIAogChAKEAmUCZQKPAo8CagJqAn8CfwKYApgCiwKLAoECgQJ6AnoCiAKIAnACcAJmAmYCagJqAnECcQJqAmoCgQKBAqQCpAIkAiQBXwFfATYBNgGYAZgAsACwAVwBXAAmACYApQClAH0AfQF9AX0BFAEUAA8ADwA3ADcCiwKLAR8BHwK4ArgAwwDDAU0BTQCXAJcDJgMmAIYAhgDgAOAAnQCdATgBOAD7APsBXgFeAQMBAwFLAUsAoQChAPIA8gCDAIMAjgCOAx4DHgA8ADwMAAzkAH8AfwNzA3MWHBZjAP0A/QxDDFQQ2hA6EbER8wAAAAAAAAAAAAAAAAAAAAA="
 	}
+
+	#grey company
+	64={
+		first_name="Halbarad"
+		family = c:CAR.fam:Dunadan
+		birth_date=2901.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=15
+		add_charisma=11
+		add_finesse=11
+		add_zeal=10
+		add_trait="strong_blood_of_numenor"
+		add_trait="just"
+		add_gold=200
+		add_popularity=60
+	}
+	65={
+		first_name="Maia"
+		family = c:CAR.fam:Dunadan
+		birth_date=2906.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		add_trait="strong_blood_of_numenor"
+		add_gold=200
+		add_popularity=60
+		female=yes
+	}
+	66={
+		first_name="Anlipige"
+		birth_date=2900.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		add_martial=5
+		add_trait="strong_blood_of_numenor"
+		add_gold=200
+		add_popularity=60
+		marry_character=char:65
+	}
+	67={
+		first_name="Dalason"
+		family = c:CAR.fam:Scoundrel
+		birth_date=2906.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		add_martial=4
+		add_zeal=4
+		add_trait="strong_blood_of_numenor"
+	}
+	68={
+		first_name="Dweorh"
+		family = c:CAR.fam:Scoundrel
+		birth_date=2908.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		add_martial=4
+		add_trait="strong_blood_of_numenor"
+	}
+	69={
+		first_name="Corsanir"
+		family = c:CAR.fam:Scoundrel
+		birth_date=2907.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		add_martial=2
+		add_charisma=2
+		add_finesse=2
+		add_trait="strong_blood_of_numenor"
+	}
+	70={
+		first_name="Calenglad"
+		family = c:CAR.fam:Scoundrel
+		birth_date=2917.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		add_finesse=8
+		add_trait="strong_blood_of_numenor"
+	}
+	71={
+		first_name="Qutar"
+		family = c:CAR.fam:Scoundrel
+		birth_date=2963.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		add_martial=2
+		add_trait="strong_blood_of_numenor"
+	}
+	72={
+		first_name="Meneldir"
+		family = c:CAR.fam:Scoundrel
+		birth_date=2917.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		add_martial=2
+		add_trait="strong_blood_of_numenor"
+	}
+	73={
+		first_name="Yenyar"
+		family = c:CAR.fam:Scoundrel
+		birth_date=2906.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		add_charisma=5
+		add_trait="strong_blood_of_numenor"
+	}
+	74={
+		first_name="Rána"
+		family = c:CAR.fam:Scoundrel
+		birth_date=2982.1.1
+		culture="rangers"
+		religion="iluvatarism"
+		add_trait="strong_blood_of_numenor"
+		father="char:72"
+	}
 	
 }

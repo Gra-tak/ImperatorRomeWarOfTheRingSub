@@ -121,5 +121,33 @@
 		add_gold=120
 		add_popularity=70
 	}
+
+	62={
+		first_name="Glóin"
+		family_name="Son of Gróin"
+		birth_date=2783.1.1
+		culture="longbeard"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=10
+		add_charisma=6
+		add_finesse=9
+		add_zeal=8
+		add_trait="dwarf"
+	}
+	63={
+		first_name="Gimli"
+		family_name="Son of Glóin"
+		birth_date=2879.1.1
+		culture="longbeard"
+		religion="iluvatarism"
+		father="char:62"
+		no_stats=yes
+		add_martial=18
+		add_charisma=8
+		add_finesse=12
+		add_zeal=12
+		add_trait="dwarf"
+	}
 	
 }

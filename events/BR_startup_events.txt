@@ -1,6 +1,6 @@
 ﻿namespace = br_startup
 
-br_startup.1 = { #Middle Earth Light
+br_startup.1 = { #Middle-earth Light
 	
 	type = country_event
 	title = "br_startup.1.t"
@@ -36,7 +36,7 @@ br_startup.1 = { #Middle Earth Light
 	
 }
 
-br_startup.2 = { #Middle Earth Dark
+br_startup.2 = { #Middle-earth Dark
 	
 	type = country_event
 	title = "br_startup.2.t"

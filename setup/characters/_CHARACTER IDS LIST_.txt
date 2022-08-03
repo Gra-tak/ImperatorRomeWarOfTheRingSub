@@ -95,3 +95,30 @@
 #59 Elrohir
 #60 Arwen
 #61 Glorfindel
+
+#### ERB Gimli #### 
+#62 Glóin
+#63 Gimli
+
+#### CAR Grey Company #### 
+#64 Halbarad 
+#65 Maia
+#66 Anlipige
+#67 Dalason
+#68 Dweorh
+#69 Corsanir
+#70 Calenglad
+#71 Qutar
+#72 Meneldir
+#73 Yenyar
+#74 Rána
+
+### ERY Mirkwood elves ###
+#75 Thranduil
+#76 Legolas
+
+### MIL Mithlond ###
+#77 Círdan the Shipwright
+
+### LIN Mithlond (Lindon) ###
+#78 Galdor of the Havens

@@ -34,3 +34,7 @@ orc_war_ae_modifier = {
 
 encourage_migration = {
 }
+
+devoted_vassal = {
+	loyalty_to_overlord = 50
+}

@@ -1,0 +1,27 @@
+﻿"MIL"={
+	country="MIL"
+
+	77={
+		first_name="Círdan"
+		family = c:MIL.fam:HouseOfCirdan
+		nickname = TheShipwright
+		birth_date=2.1.1
+		culture="sindar"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=4
+		add_charisma=9
+		add_finesse=15
+		add_zeal=25
+		no_traits=yes
+		add_trait="wise"
+		add_trait="elf"
+		add_trait="elf_lord"
+		add_trait="scholar"
+		add_gold=200
+		add_popularity=60
+		c:MIL={
+			set_as_ruler=char:77
+		}
+	}
+}

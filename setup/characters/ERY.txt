@@ -1,0 +1,44 @@
+﻿"ERY"={
+	country="ERY"
+
+	75={
+		first_name="Thranduil"
+		family = c:ERY.fam:HouseOfOropher
+		birth_date=2.1.1
+		culture="sindar"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=15
+		add_charisma=9
+		add_finesse=15
+		add_zeal=13
+		no_traits=yes
+		add_trait="wise"
+		add_trait="elf"
+		add_trait="scholar"
+		add_gold=200
+		add_popularity=60
+		c:ERY={
+			set_as_ruler=char:75
+		}
+	}
+
+	76={
+		first_name="Legolas"
+		family = c:ERY.fam:HouseOfOropher
+		birth_date=2.1.1
+		culture="sindar"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=18
+		add_charisma=16
+		add_finesse=9
+		add_zeal=9
+		no_traits=yes
+		add_trait="wise"
+		add_trait="elf"
+		add_gold=200
+		add_popularity=60
+		father="char:75"
+	}
+}

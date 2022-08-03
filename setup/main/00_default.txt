@@ -119,6 +119,41 @@ family={
 			prestige=1000
 			color = 0
 		}
+		16={
+			key="Dunadan"
+			owner=CAR
+			culture = rangers
+			prestige=1000
+			color = 0
+		}
+		17={
+			key="Scoundrel"
+			owner=CAR
+			culture = rangers
+			prestige=1000
+			color = 0
+		}
+		18={
+			key="HouseOfOropher"
+			owner=ERY
+			culture = sindar
+			prestige=1000
+			color = 0
+		}
+		19={
+			key="HouseOfCirdan"
+			owner=MIL
+			culture = sindar
+			prestige=1000
+			color = 0
+		}
+		20={
+			key="oftheHavens"
+			owner=LIN
+			culture = lindon
+			prestige=1000
+			color = 0
+		}
 	}
 }
 
@@ -913,6 +948,8 @@ country = {
 		
 		CAR = { #Rangers of the North
 			family = 3
+			family = 16
+			family = 17
 			government = despotic_monarchy
 			diplomatic_stance=trading_stance
 			primary_culture = rangers
@@ -940,6 +977,7 @@ country = {
 			diplomatic_stance=appeasement_stance
 			primary_culture = sindar
 			religion = iluvatarism
+			family = 18
 			
 			technology={
 				military_tech={ level=1 progress=0 }
@@ -1319,6 +1357,7 @@ country = {
 		}
 		
 		MIL = { #Mithlond
+			family = 19
 			government = despotic_monarchy
 			diplomatic_stance=appeasement_stance
 			primary_culture = sindar
@@ -2954,6 +2993,7 @@ country = {
 			diplomatic_stance=trading_stance
 			primary_culture = lindon
 			religion = iluvatarism
+			family = 20
 			
 			technology={
 				military_tech={ level=1 progress=0 }

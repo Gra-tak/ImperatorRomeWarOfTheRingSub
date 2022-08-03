@@ -84,3 +84,45 @@ lotr_startup.2 = {
 		}
 	}	
 }
+
+lotr_startup.3 = {
+	
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		tag = CAR
+	}
+	
+	immediate = {
+		char:64 = { add_loyalty = grey_company }
+		char:65 = { add_loyalty = grey_company }
+		char:66 = { add_loyalty = grey_company }
+		char:67 = { add_loyalty = grey_company }
+		char:68 = { add_loyalty = grey_company }
+		char:69 = { add_loyalty = grey_company }
+		char:70 = { add_loyalty = grey_company }
+		char:71 = { add_loyalty = grey_company }
+		char:72 = { add_loyalty = grey_company }
+		char:73 = { add_loyalty = grey_company }
+		char:74 = { add_loyalty = grey_company }
+	}
+}
+
+lotr_startup.4 = {
+	
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		tag = LIN
+	}
+	
+	immediate = {
+		add_country_modifier = {
+			name = devoted_vassal
+			duration = -1
+		}
+	}
+}
+

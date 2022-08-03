@@ -1,0 +1,23 @@
+﻿"LIN"={
+	country="LIN"
+
+	78={
+		first_name="Galdor"
+		family = c:LIN.fam:oftheHavens
+		birth_date=2.1.1
+		culture="lindon"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=8
+		add_charisma=18
+		add_finesse=7
+		add_zeal=9
+		add_trait="elf"
+		add_friend= char:77
+		add_gold=200
+		add_popularity=60
+		c:LIN={
+			set_as_ruler=char:78
+		}
+	}
+}
