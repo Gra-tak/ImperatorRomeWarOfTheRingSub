@@ -790,11 +790,11 @@ lotr_storyline_events.13 = {
 				char:15 = {
 					is_alive = no
 				}
-				remove_variable = aragorn_arwen_promised_var
-				c:IML = {
-					trigger_event = {
-						id = lotr_storyline_events.15
-					}
+			}
+			remove_variable = aragorn_arwen_promised_var
+			c:IML = {
+				trigger_event = {
+					id = lotr_storyline_events.15
 				}
 			}
 		}
