@@ -124,6 +124,7 @@
  lotr_generic_build_army_mission_1:0 "Military Training Standards"
  lotr_generic_build_army_mission_1_DESC:0 "High training standards will play an essential role in training our troops and inspire them to greatness. By improving training sites we will have a greater capacity for recruiting and preparing new soldiers for warfare."
  lotr_generic_build_army_mission_1_tt:0 "Has at least #Y 3#! military buildings in the country."
+ generic_build_army_mission_1_modifier:0 "Training Standards"
  lotr_generic_build_army_mission_2:0 "Hardened Commanders"
  lotr_generic_build_army_mission_2_DESC:0 "Experienced commanders will be able to command and control the many activities of their forces."
  lotr_generic_build_army_mission_3:0 "Enhanced Training Grounds"

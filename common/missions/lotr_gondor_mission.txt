@@ -1,0 +1,965 @@
+﻿lotr_gondor_mission = {
+	header = "lotr_gondor_mission_header"
+	icon = "lotr_gondor_army_mission_icon"
+
+	repeatable = no
+
+	chance = {}
+
+	ai_chance = {
+		factor = 0
+	}
+
+	potential = {
+    	NOT = { has_variable = lotr_gondor_mission_activated_variable }
+		has_civil_war = no
+		is_subject = no
+		tag = GON
+	}
+
+	on_potential = {
+	}
+
+	abort = {
+		ai_mission_back_out_trigger = yes
+	}
+
+	on_start = {
+		add_stability = 5
+		start_mission_ai_effect = yes
+		c:LBN = {
+			save_scope_as = lebennin_country
+		}
+		c:LAM = {
+			save_scope_as = lamedon_country
+		}
+		c:ANF = {
+			save_scope_as = anfalas_country
+		}
+	}
+
+	on_abort = {
+		add_stability = -5
+        set_variable = {
+            name = lotr_gondor_mission_activated_variable
+        }
+	}
+
+	on_completion = {
+		complete_mission_effect = yes
+	}
+	
+	
+############################# Lebennin missions #####################################
+	
+	lotr_gondor_lebennin_mission_1 = {		# 1 Loyal subjects
+		icon = "task_happiness"
+
+    	duration = 365
+		
+        highlight = {
+			scope:province = {
+				exists = c:LBN
+				exists = owner
+				owner = c:LBN
+			}
+        }
+
+        potential = {
+            exists = c:LBN
+            exists = c:DOR
+        }
+
+        bypass = {
+            OR = {
+                c:LBN = { has_land = no }
+                c:LBN = { NOT = { is_subject_of = root } }
+				war_with = c:LBN
+            }
+        }
+
+		allow = {
+			treasury >= 150
+        	not = { war_with = c:LBN }
+        	c:LBN = {
+				is_subject_of = root
+        		opinion = {
+        			target = root
+        			value >= 180
+        		}
+        	}
+        	not = { war_with = c:DOR }
+        	c:DOR = {
+				is_subject_of = root
+        		opinion = {
+        			target = root
+        			value >= 160
+        		}
+        	}
+		}
+
+		on_start = {
+            add_treasury = -150
+		}
+
+		on_completion = {
+            if = {
+                limit = {
+                    exists = c:LBN # LBN is an AI
+                    c:LBN = {
+                        is_ai = yes
+                    }
+                }
+                if = {
+                    limit = {
+						c:LBN = {
+							is_subject_of = root
+						}
+                    }
+                    release_subject = c:LBN
+                    make_subject = {
+                        target = c:LBN
+                        type = client_state
+                    }
+                }
+            }
+            else = {
+				current_ruler = {
+					add_popularity = popularity_large
+				}
+            }
+		} 
+	}
+	
+	lotr_gondor_lebennin_mission_2 = {		# 3 Lebennin integrate
+		icon = "task_economical"
+		
+		requires = { lotr_gondor_lamedon_mission_1 } 
+		
+		duration = 1095
+		
+        highlight = {
+			scope:province = {
+				exists = c:LBN
+				exists = owner
+				owner = c:LBN
+			}
+        }
+
+        potential = {
+            exists = c:LBN
+        }
+
+        bypass = {
+			war_with = c:LBN
+        }
+
+		allow = {
+            c:LBN = {
+                is_subject_of = root
+            }
+			political_influence >= 50
+		}
+
+		on_start = {
+			add_political_influence = -50
+		}
+
+		on_completion = {
+			custom_tooltip = lotr_gondor_lebennin_mission_2_tt
+			hidden_effect = {
+				c:LBN = {
+					every_owned_province = { set_conquered_by = ROOT }
+				}
+			}
+		} 
+	}
+	
+	lotr_gondor_lebennin_mission_3 = {		# 4 Lebennin integrated
+		icon = "task_religion"
+		
+		requires = { lotr_gondor_lebennin_mission_2 } 
+
+        potential = {
+        }
+
+        bypass = {
+        }
+
+		allow = {
+			political_influence >= 10
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			current_ruler = {
+				add_popularity = popularity_medium
+			}
+			add_manpower = {
+				value = 0
+				add = root.max_manpower
+				divide = 10
+				min = 1
+			}
+			add_aggressive_expansion = -5.0
+		} 
+	}
+
+
+############################# Lamedon missions #####################################
+	
+	lotr_gondor_lamedon_mission_1 = {		# 2 Lamedon friends
+		icon = "task_calm"
+
+		requires = { lotr_gondor_lebennin_mission_1 } 
+
+    	duration = 365
+		
+        highlight = {
+			scope:province = {
+				exists = c:LAM
+				exists = owner
+				owner = c:LAM
+			}
+        }
+
+        potential = {
+            exists = c:LAM
+        }
+
+        bypass = {
+            OR = {
+                c:LAM = { has_land = no }
+                c:LAM = { NOT = { is_subject_of = root } }
+				war_with = c:LAM
+            }
+        }
+
+		allow = {
+			treasury >= 120
+        	not = { war_with = c:LAM }
+        	c:LAM = {
+                is_subject_of = root
+        		opinion = {
+        			target = root
+        			value >= 180
+        		}
+        	}
+		}
+
+		on_start = {
+            add_treasury = -120
+		}
+
+		on_completion = {
+            if = {
+                limit = {
+                    exists = c:LAM # LAM is an AI
+                    c:LAM = {
+                        is_ai = yes
+                    }
+                }
+                if = {
+                    limit = {
+						c:LAM = {
+							is_subject_of = root
+						}
+                    }
+                    release_subject = c:LAM
+                    make_subject = {
+                        target = c:LAM
+                        type = client_state
+                    }
+                }
+            }
+            else = {
+				current_ruler = {
+					add_popularity = popularity_large
+				}
+            }
+		} 
+	}
+	
+	lotr_gondor_lamedon_mission_2 = {		# 5 Lamedon integrate
+		icon = "task_happiness"
+		
+		requires = { lotr_gondor_lebennin_mission_3 } 
+		
+		duration = 1095
+		
+        highlight = {
+			scope:province = {
+				exists = c:LAM
+				exists = owner
+				owner = c:LAM
+			}
+        }
+
+        potential = {
+            exists = c:LAM
+        }
+
+        bypass = {
+			war_with = c:LAM
+        }
+
+		allow = {
+			political_influence >= 50
+            c:LAM = {
+                is_subject_of = root
+            }
+		}
+
+		on_start = {
+			add_political_influence = -50
+		}
+
+		on_completion = {
+			custom_tooltip = lotr_gondor_lamedon_mission_2_tt
+			hidden_effect = {
+				c:LAM = {
+					every_owned_province = { set_conquered_by = ROOT }
+				}
+			}
+		} 
+	}
+	
+	lotr_gondor_lamedon_mission_3 = {		# 6 Lamedon integrated
+		icon = "task_calm"
+		
+		requires = { lotr_gondor_lamedon_mission_2 } 
+
+		final = yes
+
+        potential = {
+        }
+
+        bypass = {
+        }
+
+		allow = {
+			political_influence >= 10
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			current_ruler = {
+				add_popularity = popularity_medium
+			}
+			add_manpower = {
+				value = 0
+				add = root.max_manpower
+				divide = 10
+				min = 1
+			}
+			add_aggressive_expansion = -5.0
+		} 
+	}
+
+
+	
+############################# Anfalas missions #####################################
+	
+	lotr_gondor_anfalas_mission_1 = {		# 7 Anfalas friends
+		icon = "task_conquest"
+
+		requires = { lotr_gondor_rohan_mission_2 } 
+
+    	duration = 365
+		
+        highlight = {
+			scope:province = {
+				exists = c:ANF
+				exists = owner
+				owner = c:ANF
+			}
+        }
+
+        potential = {
+            exists = c:ANF
+        }
+
+        bypass = {
+            OR = {
+                c:ANF = { has_land = no }
+                c:ANF = { NOT = { is_subject_of = root } }
+				war_with = c:ANF
+            }
+        }
+
+		allow = {
+			treasury >= 120
+        	not = { war_with = c:ANF }
+        	c:ANF = {
+				is_subject_of = root
+        		opinion = {
+        			target = root
+        			value >= 180
+        		}
+        	}
+		}
+
+		on_start = {
+            add_treasury = -120
+		}
+
+		on_completion = {
+            if = {
+                limit = {
+                    exists = c:ANF # ANF is an AI
+                    c:ANF = {
+                        is_ai = yes
+                    }
+                }
+                if = {
+                    limit = {
+						c:ANF = {
+							is_subject_of = root
+						}
+                    }
+                    release_subject = c:ANF
+                    make_subject = {
+                        target = c:ANF
+                        type = client_state
+                    }
+                }
+            }
+            else = {
+				current_ruler = {
+					add_popularity = popularity_large
+				}
+            }
+		} 
+	}
+	
+	lotr_gondor_anfalas_mission_2 = {		# 8 Anfalas integrate
+		icon = "task_expansion"
+		
+		requires = { lotr_gondor_anfalas_mission_1 } 
+		
+		duration = 1095
+		
+        highlight = {
+			scope:province = {
+				exists = c:ANF
+				exists = owner
+				owner = c:ANF
+			}
+        }
+
+        potential = {
+            exists = c:ANF
+        }
+
+        bypass = {
+            OR = {
+                c:ANF = { has_land = no }
+				war_with = c:ANF
+            }
+        }
+
+		allow = {
+			political_influence >= 50
+            c:ANF = {
+                is_subject_of = root
+            }
+		}
+
+		on_start = {
+			add_political_influence = -50
+		}
+
+		on_completion = {
+			custom_tooltip = lotr_gondor_anfalas_mission_2_tt
+			hidden_effect = {
+				c:ANF = {
+					every_owned_province = { set_conquered_by = ROOT }
+				}
+			}
+		} 
+	}
+	
+	lotr_gondor_anfalas_mission_3 = {		# 9 Anfalas integrated
+		icon = "task_economical"
+		
+		final = yes
+		
+		requires = { lotr_gondor_anfalas_mission_2 } 
+
+        potential = {
+        }
+
+        bypass = {
+        }
+
+		allow = {
+			political_influence >= 10
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			current_ruler = {
+				add_popularity = popularity_medium
+			}
+			add_manpower = {
+				value = 0
+				add = root.max_manpower
+				divide = 10
+				min = 1
+			}
+			add_aggressive_expansion = -5.0
+		} 
+	}
+
+
+############################# Rohan missions #####################################
+	
+	lotr_gondor_rohan_mission_1 = {		# Rohan friends
+		icon = "task_religion"
+		
+		requires = { lotr_gondor_lebennin_mission_1 } 
+		
+        highlight = {
+			scope:province = {
+				exists = c:ROH
+				exists = owner
+				owner = c:ROH
+			}
+        }
+
+        potential = {
+            exists = c:ROH
+            c:ROH = {
+                is_subject_of = root
+            }
+        }
+
+        bypass = {
+            OR = {
+                c:ROH = { has_land = no }
+                c:ROH = { NOT = { is_subject_of = root } }
+				war_with = c:ROH
+            }
+        }
+
+		allow = {
+			c:ROH.current_ruler = { 
+				is_friend = root.current_ruler
+			}
+        	not = { war_with = c:ROH }
+        	c:ROH = {
+        		opinion = {
+        			target = root
+        			value >= 180
+        		}
+        	}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+				current_ruler = {
+					add_popularity = popularity_large
+				}
+		} 
+	}
+	
+	lotr_gondor_rohan_mission_2 = {		# Rohan manpower
+		icon = "task_expansion"
+
+		requires = { lotr_gondor_rohan_mission_1 } 
+
+    	duration = 365
+		
+        highlight = {
+			scope:province = {
+				exists = c:ROH
+				exists = owner
+				owner = c:ROH
+			}
+        }
+
+        potential = {
+            exists = c:ROH
+            c:ROH = {
+                is_subject_of = root
+            }
+        }
+
+        bypass = {
+            OR = {
+                c:ROH = { has_land = no }
+                c:ROH = { NOT = { is_subject_of = root } }
+				war_with = c:ROH
+            }
+        }
+
+		allow = {
+        	not = { war_with = c:ROH }
+        	c:ROH = {
+        		opinion = {
+        			target = root
+        			value >= 180
+        		}
+        	}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			add_manpower = {
+				value = 0
+				add = root.max_manpower
+				divide = 10
+				min = 1
+			}
+        	capital_scope = {
+                create_state_pop = freemen
+            }
+		} 
+	}
+
+############################# Cair Andros #####################################
+	
+	lotr_gondor_cairandros_mission_1 = {		# Strengthen Cair Andros
+		icon = "task_battle"
+		
+        highlight = {
+			scope:province = { province_id = 1201 }
+        }
+
+        potential = {
+        }
+
+        bypass = {
+        }
+
+		allow = {
+    		p:1201 = {
+                exists = owner
+    			owner = root
+				OR = {
+					has_building = military_building
+					has_building = fortress_building
+					has_building = barracks_building
+				}
+    		}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			p:1201 = {
+    			add_province_modifier = {
+    				name = gondor_cairandros_mission_1_modifier
+    				duration = -1
+    			}
+    			while = {
+    				count = 1
+    				define_pop = {
+						type = freemen
+						culture = root.culture
+						religion = root.religion
+					}
+    			}
+			}
+		} 
+	}
+	
+############################# Rebuild Osgiliath #####################################
+	
+	lotr_gondor_osgiliath_mission_1 = {		# Rebuild Osgiliath
+		icon = "task_battle"
+		
+		requires = { lotr_gondor_cairandros_mission_1 } 
+		
+        highlight = {
+			scope:province = { province_id = 1302 }
+        }
+
+        potential = {
+        }
+
+        bypass = {
+        }
+
+		allow = {
+    		p:1302 = {
+                exists = owner
+    			owner = root
+				has_city_status = yes
+				has_building = library_building
+				has_building = commerce_building
+    		}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			p:1302 = {
+    			add_province_modifier = {
+    				name = gondor_osgiliath_mission_1_modifier
+    				duration = 3650
+    			}
+    			while = {
+    				count = 3
+    				define_pop = {
+						type = freemen
+						culture = root.culture
+						religion = root.religion
+					}
+    			}
+			}
+        	if = {
+        		limit = {
+        			NOT = { owns_or_subject_owns = 1030 }
+        		}
+        		p:1030 = { add_claim = root }
+        	}
+		} 
+	}
+
+############################# Minas Ithil missions #####################################
+	
+	lotr_gondor_minasithil_mission_1 = {		# Minas Ithil
+		icon = "task_conquest"
+		
+		requires = { lotr_gondor_osgiliath_mission_1 } 
+		
+    	duration = 220
+		
+        highlight = {
+			scope:province = { province_id = 1030 }
+        }
+
+        potential = {
+        }
+
+        bypass = {
+        }
+
+		allow = {
+    		p:1030 = {
+                exists = owner
+    			owner = root
+				has_city_status = yes
+				has_building = fortress_building
+    		}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			p:1030 = {
+					add_province_modifier = {
+					name = gondor_minasithil_mission_1_modifier
+					duration = 3650
+				}
+			}
+			add_1_free_province_investments = yes
+		} 
+	}
+	
+############################# Umbar missions #####################################
+	
+	lotr_gondor_umbar_mission_1 = {		# Haven of the Corsairs
+		icon = "task_expansion"
+		
+		requires = { lotr_gondor_minasithil_mission_1 } 
+		
+    	duration = 220
+		
+        highlight = {
+			scope:province = { province_id = 1 }
+        }
+
+        potential = {
+        }
+
+        bypass = {
+        }
+
+		allow = {
+    		p:1 = {
+                exists = owner
+    			owner = root
+    		}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			p:1 = {
+				add_province_modifier = {
+					name = gondor_umbar_mission_1_modifier
+					duration = 3650
+				}
+			}
+			current_ruler = {
+				add_popularity = popularity_large
+			}
+		} 
+	}
+	
+############################# Barad-dûr missions #####################################
+	
+	lotr_gondor_baraddur_mission_1 = {		# Dark Fortress
+		icon = "task_conquest"
+		
+		final = yes
+		
+		requires = { lotr_gondor_umbar_mission_1 } 
+		
+    	duration = 220
+		
+        highlight = {
+			scope:province = { province_id = 1141 }
+        }
+
+        potential = {
+        }
+
+        bypass = {
+        }
+
+		allow = {
+    		p:1141 = {
+                exists = owner
+    			owner = root
+    		}
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			p:1141 = {
+				add_province_modifier = {
+					name = gondor_baraddur_mission_1_modifier
+					duration = 3650
+				}
+			}
+			add_1_free_province_investments = yes
+		} 
+	}
+	
+############################# Army missions #####################################
+
+	lotr_gondor_build_army_mission_1 = {		# Military Training Standards
+		icon = "task_diplomatic"
+
+    	duration = 220
+
+		allow = {
+			manpower_percentage > 0.85
+			capital_scope = {
+				has_city_status = yes
+				num_of_military_building >= 1
+			}
+		}
+		
+        highlight = {
+        	scope:province = {
+        		this = root.capital_scope
+        	}
+        }
+
+		on_start = {
+		}
+
+		on_completion = {
+			add_country_modifier = {
+				name = generic_build_army_mission_1_modifier
+				duration = 3650 # 10 years
+			}
+			add_military_experience = 10
+		}
+	}
+	
+	lotr_gondor_build_army_mission_2 = {		# Hardened Commanders
+		icon = "task_happiness"
+
+		requires = { lotr_gondor_build_army_mission_1 } 
+
+    	duration = 220
+
+		allow = {
+			invention = buy_military_tradition_inv
+		}
+		
+		highlight = {
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			add_stability = 10
+        	create_character = {
+        		age = 32
+        		no_traits = yes
+        		no_stats = yes
+        		hidden_effect = {
+        			amazing_martial_effect = yes
+        			great_charisma_effect = yes
+        			good_finesse_effect = yes
+        			average_zeal_effect = yes
+        			positive_martial_trait_effect = yes
+        			positive_martial_trait_effect = yes
+        			random_trait_effect = yes
+        		}
+        	}
+			current_ruler = {
+				add_martial = 1
+			}
+		}
+	}
+	
+	lotr_gondor_build_army_mission_3 = {		# Enhanced Training Grounds
+		icon = "task_political"
+
+    	duration = 220
+
+		requires = { lotr_gondor_build_army_mission_2 } 
+
+		allow = {
+			invention = experience_decay_inv_1
+		}
+		
+		highlight = {
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+			add_manpower = {
+				value = 0
+				add = root.max_manpower
+				divide = 10
+				min = 1
+			}
+			current_ruler = {
+				add_popularity = popularity_medium
+				add_finesse = 1
+				add_prominence = prominence_large
+			}
+		}
+	}
+	
+############################# end #####################################
+	
+	
+}

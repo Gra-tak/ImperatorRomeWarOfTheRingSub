@@ -162,7 +162,7 @@ lotr_war_events.2 = {
 	
 }
 
-# Umbar Harad war
+# Umbar Harad war NEEDS FIXING PROPERLY PUREON
 lotr_war_events.3 = {
 	type = country_event
 	title = "lotr_war_events.3.t"
@@ -171,7 +171,7 @@ lotr_war_events.3 = {
 	
 	left_portrait = current_ruler
 	right_portrait = c:UMB.current_ruler
-	right_portrait = c:HAR.current_ruler
+	right_portrait = c:FEL.current_ruler
 	
 	fire_only_once = yes
 
@@ -181,12 +181,12 @@ lotr_war_events.3 = {
 		is_ai = no
 		NOR = {
 			tag = UMB
-			tag = HAR
+			tag = FEL
 		}
 		c:UMB = {
 			has_land = yes
 		}
-		c:HAR = {
+		c:FEL = {
 			has_land = yes
 			war_with = c:UMB
 		}

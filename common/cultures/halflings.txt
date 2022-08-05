@@ -91,7 +91,7 @@
 	
 	
 	
-	graphical_culture = celtic_gfx	
+	graphical_culture = halfling_gfx
 	ethnicities = {
 		10 = halfling
 	}

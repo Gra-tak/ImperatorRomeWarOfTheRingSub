@@ -178,6 +178,7 @@ erebor_modifier = {
 	fort_level = 5
 	local_defensive = 0.15
 	local_commerce_value_modifier = 0.5
+	local_population_capacity = 60
 }
 iron_hills_modifier = {
 	fort_level = 1

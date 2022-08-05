@@ -1,3 +1,78 @@
+#	color1 = rgb { 252 230 182} #BACKGROUND COLOUR
+#	color2 = rgb { 229 174 76} #MIDDLE COLOUR
+
+#	colored_emblem = {
+#		texture = "ce_khazad_dum.dds"
+#		color1 = rgb { 229 174 76} #MIDDLE COLOUR
+#		color2 = rgb { 239 209 160} #TOP COLOUR
+#	}
+
+RHOVANION_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 25 75 25}
+	color2 = rgb { 224 191 85}
+	
+	colored_emblem = {
+		texture = "ce_rhovanion.dds"
+		color1 = rgb { 224 191 85}
+		color2 = "bone_white"
+	}
+}
+ERE = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 255 188 0}
+	color2 = "ck2_black"
+	
+	colored_emblem = {
+		texture = "ce_erelond.dds"
+		color1 = "ck2_black"
+		color2 = rgb { 9 147 216}
+	}
+}
+SOR = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 242 175 65}
+	color2 = rgb { 79 57 14}
+	
+	colored_emblem = {
+		texture = "ce_soriya.dds"
+		color1 = rgb { 79 57 14}
+		color2 = rgb { 60 117 60}
+	}
+}
+TED = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 232 151 70}
+	color2 = rgb { 65 33 10}
+	
+	colored_emblem = {
+		texture = "ce_tedjin.dds"
+		color1 = rgb { 65 33 10}
+		color2 = rgb { 2 92 93}
+	}
+}
+BEL = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 86 7 64}
+	color2 = rgb { 252 230 182}
+	
+	colored_emblem = {
+		texture = "ce_bellakar.dds"
+		color1 = rgb { 252 230 182}
+		color2 = "bone_white"
+	}
+}
+FEL = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 183 21 21}
+	color2 = rgb { 124 24 11}
+	
+	colored_emblem = {
+		texture = "ce_felaya.dds"
+		color1 = rgb { 124 24 11}
+		color2 = rgb { 242 175 65}
+	}
+}
 DOR = {
 	pattern = "pattern_solid.tga"
 	color1 = "ocean_blue"
@@ -12,13 +87,13 @@ DOR = {
 
 KHAZADDUM = {
 	pattern = "pattern_solid.tga"
-	color1 = rgb { 18 44 89} #background colour
-	color2 = rgb { 229 174 76} #main colour
+	color1 = rgb { 18 44 89}
+	color2 = rgb { 229 174 76}
 
 	colored_emblem = {
 		texture = "ce_khazad_dum.dds"
-		color1 = rgb { 229 174 76} #main colour
-		color2 = rgb { 239 209 160} #top colour
+		color1 = rgb { 229 174 76}
+		color2 = rgb { 239 209 160}
 	}
 }
 
@@ -157,7 +232,7 @@ BALIN_FLAG = {
 	}
 }
 
-HAR = {
+HARAD_FLAG = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 168 15 15}
 	color2 = rgb { 68 11 11}

@@ -58,7 +58,27 @@ lotr_startup.1 = { #Temp fix for new vanilla fort capacity mechanic causing inco
 	}	
 }
 
-lotr_startup.2 = {
+lotr_startup.2 = { #Adds dynamic barad dur model
+	
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		tag = MOR
+		NOT = { has_variable = shown_lotr_wonders }
+	}
+	
+	immediate = {
+		set_variable = { name = shown_lotr_wonders }
+		hidden_effect = {
+			p:1141 = {
+				show_model = "wonder_barad_dur"
+			}
+		}
+	}	
+}
+
+lotr_startup.3 = {
 	
 	type = country_event
 	hidden = yes
@@ -85,7 +105,7 @@ lotr_startup.2 = {
 	}	
 }
 
-lotr_startup.3 = {
+lotr_startup.4 = {
 	
 	type = country_event
 	hidden = yes
@@ -109,7 +129,7 @@ lotr_startup.3 = {
 	}
 }
 
-lotr_startup.4 = {
+lotr_startup.5 = {
 	
 	type = country_event
 	hidden = yes

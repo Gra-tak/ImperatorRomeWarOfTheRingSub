@@ -357,6 +357,20 @@ treasure_manager = {
 				local_defensive = 0.2
 			}
 		}
+		752 = { #
+			key = "lotr_treasure_khazgramaze_shrine"
+			icon = "treasure_architecture"
+			state_modifier = {
+				local_cohort_start_experience = 10
+			}
+		}
+		753 = { #
+			key = "lotr_treasure_windlord_statue"
+			icon = "treasure_architecture"
+			state_modifier = {
+				local_happiness_for_same_religion_modifier = 0.1
+			}
+		}
     }
 }
 
@@ -391,7 +405,7 @@ provinces = {
 	1403 = { # Statue of Galador - Dol Amroth
 		treasure_slots = { treasures = { 716 } }
 	}
-	2401 = { # Statue of Herumor Fuinur Bronze Statue - Aduna
+	2088 = { # Statue of Herumor Fuinur Bronze Statue - Kadar an-Balkhuzor
 		treasure_slots = { treasures = { 717 718 } }
 	}
 	1 = { # Castamir Statue Knight of Umbar Shrine - Umbar
@@ -463,4 +477,10 @@ provinces = {
 	#1546 = { #  Stone of Orthanc - Orthanc
 	#	treasure_slots = { treasures = { 751 } }
 	#}
+	63 = { # Serpent-god shrine - Dol Annabrith
+		treasure_slots = { treasures = { 752 } }
+	}
+	2064 = { # Bronze Windlord statue - Hazaj Tollin
+		treasure_slots = { treasures = { 753 } }
+	}
 }

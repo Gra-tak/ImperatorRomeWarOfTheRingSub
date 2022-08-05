@@ -173,6 +173,16 @@ event_dale = {
 	picture = "gfx/interface/event_window/event_dale.dds"
 }
 
+event_sand_drake = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_sand_drake.dds"
+}
+
+event_desert_coast = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_desert_coast.dds"
+}
+
 event_marriage = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/aragorn_arwen.dds"

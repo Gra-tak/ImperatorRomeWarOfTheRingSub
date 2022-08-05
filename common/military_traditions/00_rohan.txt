@@ -130,6 +130,7 @@
 	rohan_infantry_path_2 = { ###
 		modifier = {
 			light_infantry_defensive = 0.1
+			manpower_recovery_speed = 0.05
 		}
 		icon = greek_antigonid_path_end_bonus
 		requires = {rohan_infantry_path_1}

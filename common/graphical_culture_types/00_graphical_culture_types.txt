@@ -22,3 +22,4 @@ teleri_gfx = {}
 vanyar_gfx = {}
 dwarven_gfx = {}
 eotheod_gfx = {}
+halfling_gfx = {}

@@ -5,7 +5,7 @@
  dark_wards_spell_past:0 "Dark Wards"
  dark_wards_spell_act:0 "Dark Wards"
  dark_wards_spell_act_past:0 "Dark Wards"
- dark_wards_spell_desc:0 "#TF You can cast a powerful dark ward to secure your capital from enemy assault. Foul things such as giant spiders and creeping horrors will come to live in the surrounds, the water sources will be tainted at your command, the crops will die and your enemies will suffer from a host of small calamities while they lay siege while your own garrison will be inspired by the sight of your enemies’ suffering.#!"
+ dark_wards_spell_desc:0 "#TF You can cast a powerful dark ward to secure your capital from enemy assault. Foul things such as giant spiders and creeping horrors will come to live in the surrounds, the water sources will be tainted at your command, the crops will die and your enemies will suffer from a host of small calamities while they lay siege while your own garrison will be inspired by the sight of your enemies' suffering.#!"
  dark_wards_spell_off:0 "Dissolve Dark Wards"
  dark_wards_spell_off_past:0 "Dissolve Dark Wards"
  dark_wards_spell_off_act:0 "Dissolve Dark Wards"

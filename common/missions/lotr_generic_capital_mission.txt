@@ -141,7 +141,7 @@
 				has_building = commerce_building
 			}
 			capital_scope.state = {
-				incoming_trade_routes >= 3 #TODO change to 10
+				incoming_trade_routes >= 10
 			}
 		}
 		
@@ -204,9 +204,9 @@
 
 		allow = {
 			capital_scope = {
-				total_population >= 20  #TODO change to 80
+				total_population >= 80
 				has_province_rank = city_metropolis
-				has_great_work = yes
+#				has_great_work = yes
 			}
 		}
 		
@@ -392,7 +392,7 @@
             }
 		}
 
-		on_completion = { #TODO Make this a fort defense related modifier
+		on_completion = {
 			capital_scope = {
 				add_province_modifier = {
 					name = "fortified_stronghold"

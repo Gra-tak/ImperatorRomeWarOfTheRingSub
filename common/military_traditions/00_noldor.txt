@@ -163,7 +163,7 @@
 
 	noldor_cavalry_path_1 = { ##
 		modifier = {
-			heavy_cavalry_cost = -0.2
+			elvish_cavalry_archers_cost = -0.2
 		}
 		icon = celtic_gallic_path_5
 		requires = {}
@@ -188,7 +188,7 @@
 	
 	noldor_cavalry_path_2 = { ##
 		modifier = {
-			heavy_cavalry_morale = 0.1
+			elvish_cavalry_archers_morale = 0.1
 		}
 		icon = persian_bactrian_path_end_bonus
 		requires = {noldor_cavalry_path_1}
@@ -196,8 +196,7 @@
 	
 	noldor_cavalry_path_3 = { ##
 		modifier = {
-			light_cavalry_defensive = 0.1
-			heavy_cavalry_defensive = 0.15
+			elvish_cavalry_archers_defensive = 0.1
 		}
 		icon = north_african_tribal_path_4
 		requires = {noldor_cavalry_path_2}
@@ -205,8 +204,7 @@
 	
 	noldor_cavalry_path_4 = { ##
 		modifier = {
-			heavy_cavalry_offensive = 0.15
-			light_cavalry_offensive = 0.1
+			elvish_cavalry_archers_offensive = 0.15
 		}
 		icon = latin_support_path_7
 		requires = {noldor_cavalry_path_3}

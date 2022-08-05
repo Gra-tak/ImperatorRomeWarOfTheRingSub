@@ -1,9 +1,0 @@
-﻿l_english:
- 
- form_arnor:0 "Proclaim that Arnor has risen again"
- form_arnor_desc:0 "The ancient Kingdom of Arnor is no more, and its capital of Annunimas and the province of Nan Arnen are now abandoned. If you were to resettle these lands and begin rebuilding the cities of Annunimas and Fornost, you could rightfuly claim that Arnor has risen once again."
- arnor_must_not_exist:0 "#Y Arnor#! must not already exist."
- form_arnor_claims_tooltip:0 "Arnor will gain claims upon the regions of #Y Arthedain#, #Y Fortund#, #Y Uilad#, #Y Rhudaur#, #Y Mintyrnath# and #Y Minhiriath#."
- arnor_ruler_blood:0 "The King must carry the blood of Anarion, Isildur, Thorondur or Aldarion"
- ARNOR_NAME:0 "Arnor"
- ARNOR_ADJECTIVE:0 "Arnorian"

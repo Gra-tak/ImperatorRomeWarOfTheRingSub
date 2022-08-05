@@ -61,6 +61,7 @@
 
 	culture = {
 		mumakanim = {}
+		tulwany = {}
 	}
 	
 	barbarian_names = { 

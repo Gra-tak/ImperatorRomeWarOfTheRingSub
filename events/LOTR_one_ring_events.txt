@@ -142,9 +142,17 @@ lotr_one_ring_events.3 = {
 		hidden_effect = {
 			treasure:lotr_treasure_one_ring = { destroy_treasure = yes }
 			p:1141 = {
+				if = {
+					limit = {
+						is_model_shown = "wonder_barad_dur"
+					}
+					hide_model = "wonder_barad_dur"
+				}
 				add_city_fire_effect = yes
 			}
-#			hide_model = "wonder_barad_dur" # Pureon does not work
+			p:1140 = {
+				show_model = "wonder_barad_dur_rubble"
+			}
 		}
 		current_ruler = {
 			add_health = -30
@@ -163,9 +171,17 @@ lotr_one_ring_events.3 = {
 		hidden_effect = {
 			treasure:lotr_treasure_one_ring = { destroy_treasure = yes }
 			p:1141 = {
+				if = {
+					limit = {
+						is_model_shown = "wonder_barad_dur"
+					}
+					hide_model = "wonder_barad_dur"
+				}
 				add_city_fire_effect = yes
 			}
-#			hide_model = "wonder_barad_dur" # Pureon does not work
+			p:1140 = {
+				show_model = "wonder_barad_dur_rubble"
+			}
 		}
 		current_ruler = {
 			add_health = -30

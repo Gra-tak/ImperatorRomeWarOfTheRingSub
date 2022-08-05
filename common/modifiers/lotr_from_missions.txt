@@ -17,3 +17,36 @@ generic_build_army_mission_1_modifier = {
 	monthly_military_experience_modifier = 0.03
 	global_start_experience = 5
 }
+
+gondor_osgiliath_mission_1_modifier = {
+	local_population_happiness = 0.05
+	local_migration_attraction = 2
+	local_manpower_modifier = 0.10
+}
+
+gondor_minasithil_mission_1_modifier = {
+	local_manpower_modifier = 0.10
+	local_defensive = 0.15
+	local_pop_assimilation_speed = 2
+	local_pop_conversion_speed = 2
+}
+
+gondor_umbar_mission_1_modifier = {
+	local_manpower_modifier = 0.10
+	local_pop_assimilation_speed = 2
+	local_pop_conversion_speed = 2
+}
+
+gondor_baraddur_mission_1_modifier = {
+	local_pop_assimilation_speed = 3
+	local_pop_conversion_speed = 3
+}
+
+gondor_cairandros_mission_1_modifier = {
+	local_defensive = 0.15
+}
+
+lotr_mordor_one_ring_mission_2_modifier = {
+	ruler_popularity_gain = 0.1
+	global_start_experience = 5
+}

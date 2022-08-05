@@ -1,0 +1,71 @@
+deity_manager = {
+	deities_database = { ### KEYS 1150-1199 ###
+		### THESE ARE FROM VANILLA ###
+		1150 = {
+			key = omen_infusion_of_war
+			deity = deity_infusion_of_war
+		}
+		1151 = {
+			key = omen_guidance_of_the_wind
+			deity = deity_guidance_of_the_wind
+		}
+		1152 = {
+			key = omen_moon_guidance
+			deity = deity_moon_guidance
+		}
+		1153 = {
+			key = omen_blessing_life
+			deity = deity_blessing_life
+		}
+		1154 = {
+			key = omen_rites_adult
+			deity = deity_rites_adult
+		}
+		1155 = {
+			key = omen_wealth_earth
+			deity = deity_wealth_earth
+		}
+		1156 = {
+			key = omen_guidance_of_the_sun
+			deity = deity_guidance_of_the_sun
+		}
+		1157 = {
+			key = omen_war_ceremony
+			deity = deity_war_ceremony
+		}
+		### THESE ARE LOTR ###
+		1160 = {
+			key = omen_khazgramaze
+			deity = deity_khazgramaze
+		}
+		1161 = {
+			key = omen_nadimanye
+			deity = deity_nadimanye
+		}
+		1162 = {
+			key = omen_ishtra
+			deity = deity_ishtra
+		}
+		1163 = {
+			key = omen_ladnoca
+			deity = deity_ladnoca
+		}
+		1164 = {
+			key = omen_mumakil
+			deity = deity_mumakil
+		}
+		1165 = {
+			key = omen_claygiants
+			deity = deity_claygiants
+		}
+		1166 = {
+			key = omen_kessem
+			deity = deity_kessem
+		}
+		1167 = {
+			key = omen_sainausta
+			deity = deity_sainausta
+		}
+	}
+}
+

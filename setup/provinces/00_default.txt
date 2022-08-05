@@ -5,22 +5,36 @@
    religion="melkorism"
 	holy_site="omen_castamir"
    trade_goods="spices"
-   civilization_value=85
+   civilization_value=60
    barbarian_power=0
    province_rank="city_metropolis"
-   nobles={
-      amount=3
-   }
-   citizen={
-      amount=10
-   }
-   freemen={
-      amount=20
-   }
-   slaves={
-      amount=1
-   }
-
+	nobles={
+		amount=2
+	}
+	nobles={
+		amount=5
+		culture="black_numenorean"
+		religion="melkor"
+	}
+	citizen={
+		amount=8
+	}
+	freemen={
+		amount=11
+	}
+	freemen={
+		amount=10
+		culture="banadunaim"
+		religion="melkor"
+	}
+	slaves={
+		amount=3
+	}
+	slaves={
+		amount=13
+		culture="haradrim"
+		religion="melkor"
+	}
 
 }
 
@@ -33,7 +47,6 @@
    barbarian_power=0
    province_rank="settlement"
 
-
    slaves={
       amount=8
    }
@@ -42,17 +55,12 @@
 
 3={ #Ruinmen
    terrain="desert"
-   culture="banadunaim"
-   religion="melkorism"
-   trade_goods="cattle"
-   civilization_value=50
+   culture="beasts"
+   religion="eastern_animism"
+   trade_goods=""
+   civilization_value=20
    barbarian_power=0
-   province_rank="settlement"
-
-   freemen={
-      amount=5
-   }
-
+   province_rank=""
 
 }
 
@@ -105,17 +113,17 @@
       amount=2
    }
    slaves={
-      amount=11
+      amount=6
    }
 
 }
 
 7={ #Ruinmen
    terrain="desert"
-   culture="black_numenorean"
-   religion="melkorism"
+   culture="beasts"
+   religion="eastern_animism"
    trade_goods=""
-   civilization_value=75
+   civilization_value=20
    barbarian_power=0
    province_rank=""
 
@@ -124,12 +132,16 @@
 8={ #Pellardur
    terrain="farmland"
    culture="banadunaim"
+	port_building=1
    religion="melkorism"
    trade_goods="dye"
-   civilization_value=50
+   civilization_value=60
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
 
+   citizen={
+      amount=3
+   }
    freemen={
       amount=4
    }
@@ -285,10 +297,10 @@
 
 17={ #Ruinmen
    terrain="desert"
-   culture="black_numenorean"
-   religion="melkorism"
+   culture="beasts"
+   religion="eastern_animism"
    trade_goods=""
-   civilization_value=75
+   civilization_value=20
    barbarian_power=0
    province_rank=""
 
@@ -386,17 +398,12 @@
 
 23={ #Bar Mardath
    terrain="desert"
-   culture="banadunaim"
-   religion="melkorism"
-   trade_goods="cattle"
-   civilization_value=50
+   culture="beasts"
+   religion="eastern_animism"
+   trade_goods=""
+   civilization_value=20
    barbarian_power=0
-   province_rank="settlement"
-
-   freemen={
-      amount=6
-   }
-
+   province_rank=""
 
 }
 
@@ -437,7 +444,7 @@
    terrain="plains"
    culture="haradrim"
    religion="eastern_animism"
-   trade_goods="dates"
+   trade_goods="fish"
    civilization_value=35
    barbarian_power=0
    province_rank="settlement"
@@ -466,16 +473,20 @@
    terrain="plains"
    culture="haradrim"
    religion="eastern_animism"
-   trade_goods="fish"
+   trade_goods="dates"
    civilization_value=35
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
+   fortress_building = 1
 
+   citizen={
+      amount=1
+   }
    freemen={
-      amount=2
+      amount=4
    }
    slaves={
-      amount=6
+      amount=3
    }
 
 }
@@ -555,12 +566,16 @@
 33={ #Tol Uralgaen
    terrain="plains"
    culture="haradrim"
+	port_building=1
    religion="eastern_animism"
    trade_goods="whale"
    civilization_value=35
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
    
+   freemen={
+      amount=4
+   }
    tribesmen={
       amount=2
    }
@@ -978,10 +993,13 @@
    province_rank="settlement"
 
    freemen={
-      amount=1
+      amount=3
+   }
+   tribesmen={
+      amount=2
    }
    slaves={
-      amount=10
+      amount=1
    }
 
 }
@@ -998,8 +1016,11 @@
    freemen={
       amount=1
    }
+   tribesmen={
+      amount=4
+   }
    slaves={
-      amount=10
+      amount=2
    }
 
 }
@@ -1013,11 +1034,11 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=5
    }
    slaves={
-      amount=9
+      amount=2
    }
 
 }
@@ -1031,11 +1052,11 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=5
    }
    slaves={
-      amount=10
+      amount=2
    }
 
 }
@@ -1049,11 +1070,11 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=3
    }
    slaves={
-      amount=8
+      amount=2
    }
 
 }
@@ -1061,17 +1082,22 @@
 63={ #Dol Annabrith
    terrain="plains"
    culture="haradrim"
+	port_building=1
+	holy_site="omen_khazgramaze"
    religion="eastern_animism"
    trade_goods="olive"
    civilization_value=35
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
 
    freemen={
-      amount=1
+      amount=4
+   }
+   tribesmen={
+      amount=4
    }
    slaves={
-      amount=8
+      amount=3
    }
 
 }
@@ -1085,11 +1111,11 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=4
    }
    slaves={
-      amount=7
+      amount=2
    }
 
 }
@@ -1103,11 +1129,11 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=2
+   tribesmen={
+      amount=4
    }
    slaves={
-      amount=6
+      amount=2
    }
 
 }
@@ -1121,18 +1147,18 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
+   tribesmen={
       amount=4
    }
    slaves={
-      amount=5
+      amount=3
    }
 
 }
 
 67={ #Hazad
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="cattle"
    civilization_value=10
@@ -1147,14 +1173,19 @@
 68={ #DÃ»salan
    terrain="plains"
    culture="haradrim"
+	port_building=1
+	holy_site="omen_ishtra"
    religion="eastern_animism"
-   trade_goods="fish"
-   civilization_value=35
+   trade_goods="dates"
+   civilization_value=40
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
 
    freemen={
       amount=2
+   }
+   tribesmen={
+      amount=4
    }
    slaves={
       amount=4
@@ -1171,8 +1202,8 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=4
    }
    slaves={
       amount=5
@@ -1189,7 +1220,7 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
+   tribesmen={
       amount=4
    }
    slaves={
@@ -1207,8 +1238,8 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=4
    }
    slaves={
       amount=5
@@ -1225,11 +1256,11 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=4
    }
    slaves={
-      amount=5
+      amount=2
    }
 
 }
@@ -1243,8 +1274,8 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=3
+   tribesmen={
+      amount=4
    }
    slaves={
       amount=4
@@ -1261,8 +1292,8 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=3
+   tribesmen={
+      amount=7
    }
    slaves={
       amount=4
@@ -1350,8 +1381,8 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=4
    }
    slaves={
       amount=3
@@ -9007,7 +9038,7 @@
 
 552={ #DezfÃ»l
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="salt"
    civilization_value=10
@@ -9023,7 +9054,7 @@
 
 553={ #Inzildar
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="fish"
    civilization_value=10
@@ -9033,13 +9064,13 @@
 
 
    tribesmen={
-      amount=8
+      amount=3
    }
 }
 
 554={ #Imra
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="incense"
    civilization_value=10
@@ -9047,15 +9078,17 @@
    province_rank="settlement"
 
 
-
+	freemen={
+		amount=3
+	}
    tribesmen={
-      amount=6
+      amount=5
    }
 }
 
 555={ #DubdÃ¢roth
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="cattle"
    civilization_value=10
@@ -9071,7 +9104,7 @@
 
 556={ #Zimroth
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="fish"
    civilization_value=10
@@ -9979,7 +10012,6 @@
    terrain="plains"
    culture="harondorian"
    religion="iluvatarism"
-	holy_site="omen_alatar"
    trade_goods="grain"
    civilization_value=35
    barbarian_power=0
@@ -10026,6 +10058,7 @@
    terrain="plains"
    culture="haradrim"
 	port_building=1
+	holy_site="omen_khazgramaze"
    religion="eastern_animism"
    trade_goods="grain"
    civilization_value=35
@@ -17337,16 +17370,16 @@
 
 1085={ #Audaghaim
    terrain="plains"
-   culture="beasts"
-   religion="eastern_animism"
+   culture="stoor"
+   religion="iluvatarism"
    trade_goods="wild_game"
-   civilization_value=0
+   civilization_value=10
    barbarian_power=0
    province_rank="settlement"
 
-
-
-
+   freemen={
+      amount=2
+   }
 }
 
 1086={ #Aes Ruin
@@ -31677,7 +31710,7 @@
 
 1964={ #Gondmagar
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="elephants"
    civilization_value=10
@@ -31687,7 +31720,7 @@
 
 
    tribesmen={
-      amount=9
+      amount=3
    }
 }
 
@@ -33150,11 +33183,11 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=4
    }
    slaves={
-      amount=4
+      amount=2
    }
 
 }
@@ -33168,8 +33201,8 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=2
+   tribesmen={
+      amount=4
    }
    slaves={
       amount=3
@@ -33180,17 +33213,22 @@
 2057={ #Nykkea
    terrain="plains"
    culture="haradrim"
+	port_building=1
+	holy_site="omen_ladnoca"
    religion="eastern_animism"
    trade_goods="wood"
    civilization_value=35
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
 
    freemen={
-      amount=2
+      amount=6
+   }
+   tribesmen={
+      amount=8
    }
    slaves={
-      amount=4
+      amount=6
    }
 
 }
@@ -33253,16 +33291,22 @@
    terrain="plains"
    culture="haradrim"
    religion="eastern_animism"
-   trade_goods="wild_game"
-   civilization_value=35
+   trade_goods="camel"
+   civilization_value=40
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
 
+   citizen={
+      amount=3
+   }
    freemen={
-      amount=2
+      amount=8
+   }
+   tribesmen={
+      amount=6
    }
    slaves={
-      amount=5
+      amount=7
    }
 
 }
@@ -33276,11 +33320,11 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=5
    }
    slaves={
-      amount=4
+      amount=1
    }
 
 }
@@ -33306,17 +33350,28 @@
 2064={ #Hazaj Tollin
    terrain="plains"
    culture="haradrim"
+	port_building=1
+	holy_site="omen_nadimanye"
    religion="eastern_animism"
    trade_goods="fish"
-   civilization_value=35
+   civilization_value=40
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
 
+   nobles={
+      amount=6
+   }
+   citizen={
+      amount=11
+   }
    freemen={
-      amount=3
+      amount=14
+   }
+   tribesmen={
+      amount=4
    }
    slaves={
-      amount=5
+      amount=8
    }
 
 }
@@ -33628,17 +33683,22 @@
 2082={ #Dejka
    terrain="plains"
    culture="haradrim"
+	port_building=1
    religion="eastern_animism"
    trade_goods="dates"
-   civilization_value=35
+   civilization_value=45
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
+   fortress_building = 1
 
+   citizen={
+      amount=5
+   }
    freemen={
-      amount=1
+      amount=9
    }
    slaves={
-      amount=4
+      amount=6
    }
 
 }
@@ -33736,6 +33796,7 @@
 2088={ #Kadar an-Balkhuzor
    terrain="farmland"
    culture="black_numenorean"
+	holy_site="omen_fuinur"
 	port_building=1
    religion="melkorism"
    trade_goods="papyrus"
@@ -33747,14 +33808,13 @@
       amount=6
    }
    citizen={
-      amount=18
+      amount=11
    }
    freemen={
-      amount=30
+      amount=12
    }
    slaves={
-      amount=10
-	  #culture = banadunaim
+      amount=8
    }
 
 }
@@ -33953,20 +34013,24 @@
 
 }
 
-2100={ #BÃ»r Esmer
+2100={ #Bur Esmer
    terrain="desert"
    culture="haradrim"
    religion="eastern_animism"
    trade_goods="papyrus"
-   civilization_value=35
+   civilization_value=40
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
+   fortress_building = 1
 
-   freemen={
+   citizen={
       amount=2
    }
+   freemen={
+      amount=7
+   }
    slaves={
-      amount=3
+      amount=5
    }
 
 }
@@ -34164,11 +34228,11 @@
    barbarian_power=0
    province_rank="settlement"
 
-   freemen={
-      amount=1
+   tribesmen={
+      amount=4
    }
    slaves={
-      amount=4
+      amount=2
    }
 
 }
@@ -38429,15 +38493,19 @@
 
 2380={ #KhorsÃ¢j
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="grain"
    civilization_value=10
    barbarian_power=0
    province_rank="settlement"
 
-
-
+   freemen={
+      amount=1
+   }
+   slaves={
+      amount=4
+   }
    tribesmen={
       amount=8
    }
@@ -38445,7 +38513,7 @@
 
 2381={ #DaglÃ¢nu
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="fish"
    civilization_value=10
@@ -38461,7 +38529,7 @@
 
 2382={ #Azrugar
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="fish"
    civilization_value=10
@@ -38471,13 +38539,13 @@
 
 
    tribesmen={
-      amount=8
+      amount=6
    }
 }
 
 2383={ #Raishoul
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="camel"
    civilization_value=10
@@ -38487,45 +38555,48 @@
 
 
    tribesmen={
-      amount=10
+      amount=5
    }
 }
 
 2384={ #Gimlar
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="dye"
    civilization_value=10
    barbarian_power=0
    province_rank="settlement"
 
-
-
    tribesmen={
-      amount=9
+      amount=4
    }
 }
 
-2385={ #SÃ´riya
+2385={ #Sorîya
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
+	port_building=1
    religion="eastern_animism"
    trade_goods="fish"
    civilization_value=10
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
 
-
-
+   freemen={
+      amount=3
+   }
    tribesmen={
-      amount=7
+      amount=6
+   }
+   slaves={
+      amount=5
    }
 }
 
 2386={ #Ã›rathada
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="wild_game"
    civilization_value=10
@@ -38541,7 +38612,7 @@
 
 2387={ #ZÃ¢in Kadar
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="wild_game"
    civilization_value=10
@@ -38557,7 +38628,7 @@
 
 2388={ #Raymar
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="elephants"
    civilization_value=10
@@ -38567,13 +38638,13 @@
 
 
    tribesmen={
-      amount=8
+      amount=5
    }
 }
 
 2389={ #Bishra
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="wild_game"
    civilization_value=10
@@ -38583,13 +38654,13 @@
 
 
    tribesmen={
-      amount=8
+      amount=4
    }
 }
 
 2390={ #TelarÃ»d
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="whale"
    civilization_value=10
@@ -38599,13 +38670,13 @@
 
 
    tribesmen={
-      amount=8
+      amount=3
    }
 }
 
 2391={ #Hija
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="wood"
    civilization_value=10
@@ -38615,13 +38686,13 @@
 
 
    tribesmen={
-      amount=10
+      amount=4
    }
 }
 
 2392={ #Tamruz
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="wood"
    civilization_value=10
@@ -38631,13 +38702,13 @@
 
 
    tribesmen={
-      amount=8
+      amount=5
    }
 }
 
 2393={ #Nashar
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="gems"
    civilization_value=10
@@ -38647,29 +38718,33 @@
 
 
    tribesmen={
-      amount=7
+      amount=4
    }
 }
 
 2394={ #Qanath
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="fish"
    civilization_value=10
    barbarian_power=0
    province_rank="settlement"
 
-
-
+   freemen={
+      amount=2
+   }
    tribesmen={
-      amount=6
+      amount=5
+   }
+   slaves={
+      amount=4
    }
 }
 
 2395={ #Norjadar
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="iron"
    civilization_value=10
@@ -38679,13 +38754,13 @@
 
 
    tribesmen={
-      amount=7
+      amount=4
    }
 }
 
 2396={ #Sakalar
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="elephants"
    civilization_value=10
@@ -38695,13 +38770,13 @@
 
 
    tribesmen={
-      amount=9
+      amount=5
    }
 }
 
 2397={ #Saparath
    terrain="jungle"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="elephants"
    civilization_value=10
@@ -38711,7 +38786,7 @@
 
 
    tribesmen={
-      amount=6
+      amount=3
    }
 }
 
@@ -38724,8 +38799,6 @@
    barbarian_power=0
    province_rank="settlement"
 
-
-
    tribesmen={
       amount=6
    }
@@ -38733,21 +38806,22 @@
 
 2399={ #Arnubal
    terrain="plains"
-   culture="haradrim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="fish"
    civilization_value=35
    barbarian_power=0
    province_rank="settlement"
 
-
-
+   tribesmen={
+      amount=1
+   }
 
 }
 
 2400={ #NiminÃªrilar
    terrain="jungle"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="vegetables"
    civilization_value=10
@@ -38766,22 +38840,21 @@
    culture="haradrim"
 	port_building=1
    religion="eastern_animism"
-	holy_site="omen_fuinur"
    trade_goods="olive"
    civilization_value=35
    barbarian_power=0
    province_rank="city"
    nobles={
-      amount=5
+      amount=2
    }
    citizen={
-      amount=15
+      amount=5
    }
    freemen={
-      amount=20
+      amount=6
    }
    slaves={
-      amount=15
+      amount=5
    }
 
 }
@@ -43685,7 +43758,7 @@
 
 2709={ #Rumyar
    terrain="jungle"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="base_metals"
    civilization_value=10
@@ -47735,7 +47808,7 @@
 
 2968={ #Soriya
    terrain="jungle"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="wild_game"
    civilization_value=10
@@ -47751,7 +47824,7 @@
 
 2969={ #Udarathala
    terrain="jungle"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="cattle"
    civilization_value=10
@@ -47767,7 +47840,7 @@
 
 2970={ #DÃ»nalaz
    terrain="jungle"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="cattle"
    civilization_value=10
@@ -47783,7 +47856,7 @@
 
 2971={ #KadÃ´rakar
    terrain="jungle"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="wood"
    civilization_value=10
@@ -47870,19 +47943,22 @@
 2976={ #Ingelis
    terrain="plains"
    culture="yopi"
+   port_building=1
    religion="iluvatarism"
    trade_goods="wild_game"
    civilization_value=35
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
 
-   freemen={
-      amount=3
+   citizen={
+      amount=1
    }
-   slaves={
+   freemen={
       amount=5
    }
-
+   slaves={
+      amount=3
+   }
 }
 
 2977={ #DrÃªd
@@ -47978,12 +48054,16 @@
 2982={ #NhordÃ¢d
    terrain="plains"
    culture="yopi"
+	port_building=1
    religion="iluvatarism"
    trade_goods="dates"
    civilization_value=35
    barbarian_power=0
-   province_rank="settlement"
-
+   province_rank="city"
+   
+   citizen={
+      amount=1
+   }
    freemen={
       amount=3
    }
@@ -58199,13 +58279,13 @@
 
 
    tribesmen={
-      amount=12
+      amount=5
    }
 }
 
 3616={ #MarÃ»d
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="wild_game"
    civilization_value=10
@@ -58215,13 +58295,13 @@
 
 
    tribesmen={
-      amount=11
+      amount=4
    }
 }
 
 3617={ #Karazza
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="fish"
    civilization_value=10
@@ -58231,29 +58311,27 @@
 
 
    tribesmen={
-      amount=10
+      amount=5
    }
 }
 
 3618={ #Zennar
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="wood"
    civilization_value=10
    barbarian_power=0
    province_rank="settlement"
 
-
-
    tribesmen={
-      amount=12
+      amount=4
    }
 }
 
 3619={ #Kadar an-KharadÃ»n
    terrain="plains"
-   culture="mumakanim"
+   culture="tulwany"
    religion="eastern_animism"
    trade_goods="glass"
    civilization_value=10
@@ -58309,10 +58387,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=1
+      amount=2
    }
    slaves={
-      amount=11
+      amount=4
    }
 
 }
@@ -59859,10 +59937,10 @@
    terrain="desert"
    culture="beasts"
    religion="eastern_animism"
-   trade_goods="wild_game"
-   civilization_value=0
+   trade_goods=""
+   civilization_value=20
    barbarian_power=0
-   province_rank="settlement"
+   province_rank=""
 
 
 
@@ -76445,19 +76523,20 @@
 5065={ #Valair Sar
    terrain="plains"
    culture="black_numenorean"
+	port_building=1
    religion="melkorism"
    trade_goods="precious_metals"
    civilization_value=50
    barbarian_power=0
    province_rank="city"
    nobles={
-      amount=20
+      amount=10
    }
    citizen={
-      amount=20
+      amount=13
    }
    freemen={
-      amount=20
+      amount=15
    }
    slaves={
       amount=5
@@ -76648,14 +76727,16 @@
 5077={ #Zyayarbi
    terrain="plains"
    culture="sumpa"
+	port_building=1
    religion="eastern_animism"
-   trade_goods="wild_game"
-   civilization_value=10
+   trade_goods="spices"
+   civilization_value=20
    barbarian_power=0
-   province_rank="settlement"
+   province_rank="city"
 
-
-
+   slaves={
+      amount=4
+   }
    tribesmen={
       amount=6
    }

@@ -11,7 +11,11 @@
 	}
 
 	potential = {
-    	NOT = { has_variable = lotr_generic_army_mission_activated_variable }
+    	NOR = {
+			has_variable = lotr_generic_army_mission_activated_variable
+			tag = GON
+			tag = MOR
+		}
 		has_civil_war = no
 		is_subject = no
 		any_owned_province = {
@@ -444,7 +448,7 @@
 				name = generic_build_army_mission_1_modifier
 				duration = 3650 # 10 years
 			}
-			add_military_experience = 4
+			add_military_experience = 10
 		}
 	}
 	

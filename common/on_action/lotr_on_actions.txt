@@ -4,6 +4,7 @@
 		lotr_startup.2
 		lotr_startup.3
 		lotr_startup.4
+		lotr_startup.5
 	}
 }
 
@@ -40,5 +41,7 @@ lotr_character_events_pulse = {
 		12 = lotr_character_events.28
 		15 = lotr_character_events.29
 		8 = lotr_character_events.32
+		12 = lotr_character_events.33
+		13 = lotr_character_events.34
 	}
 }

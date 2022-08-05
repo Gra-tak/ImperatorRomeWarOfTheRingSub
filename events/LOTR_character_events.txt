@@ -1489,6 +1489,10 @@ lotr_character_events.29 = {
 		war = no
 		religion = iluvatarism
 		NOT = { has_variable = lotr_character_spie_melkor_variable }
+		exists = c:MOR
+		c:MOR = {
+			has_land = yes
+		}
 		any_owned_province = {
 			NOT = {
 				has_building = fortress_building
@@ -1849,6 +1853,247 @@ lotr_character_events.32 = {
 			scope:lotr_toy_trader_scope = {
 				remove_all_positions = yes
 				move_country = c:DLE
+			}
+		}
+	}
+}
+
+#Sand Drake
+
+lotr_character_events.33 = {
+	type = country_event
+	title = "lotr_character_events.33.t"
+	desc = "lotr_character_events.33.desc"
+	picture = event_sand_drake
+	
+	goto_location = scope:lotr_sand_drake_location_scope
+	
+	left_portrait = root.current_ruler
+		
+	trigger = {
+		is_ai = no
+		war = no
+		NOT = {
+			has_variable = lotr_character_events_33_variable
+		}
+		any_owned_province = {
+			OR = {
+				terrain = desert
+				terrain = steppe
+			}
+			any_neighbor_province = {
+				OR = {
+					terrain = desert
+					terrain = steppe
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					terrain = desert
+					terrain = steppe
+				}
+				any_neighbor_province = {
+					OR = {
+						terrain = desert
+						terrain = steppe
+					}
+				}
+			}
+			save_scope_as = lotr_sand_drake_location_scope
+		}
+		set_variable = {
+			name = lotr_character_events_33_variable
+			days = 3950
+		}
+	}
+	
+	option = {
+		name = lotr_character_events.33.a
+		custom_tooltip = "lotr_character_events.33.a.tt"
+		scope:lotr_sand_drake_location_scope = {
+			add_province_modifier = {
+				name = lotr_sand_drake_attacks_modifier
+				duration = 365
+			}
+		}
+	}
+	option = {
+		name = lotr_character_events.33.b
+		custom_tooltip = "lotr_character_events.33.b.tt"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 2
+		}
+	}
+}
+
+#Worshipers of the Serpent-god
+
+lotr_character_events.34 = {
+	type = country_event
+	title = "lotr_character_events.34.t"
+	desc = "lotr_character_events.34.desc"
+	picture = event_desert_coast
+	
+	goto_location = scope:lotr_serpent_priestess_province_scope
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_serpent_priestess_scope
+	
+	trigger = {
+		is_ai = no
+		war = no
+		NOT = { has_variable = lotr_serpent-god_variable }
+		any_owned_province = {
+			OR = {
+				is_in_region = andrast_region
+				is_in_region = anfalas_region
+				is_in_region = belfalas_region
+				is_in_region = lebennin_region
+				is_in_region = harondor_region
+				is_in_region = harnendor_region
+				is_in_region = umbar_region
+				is_in_region = mardruak_region
+				is_in_region = felaya_region
+				is_in_region = bellakar_region
+				is_in_region = bozisha_miraz_region
+				is_in_region = tulwang_region
+				is_in_region = an_balkumagan_region
+			}
+			is_coastal = yes
+		}
+	}
+	
+	immediate = { 
+		set_variable = {
+			name = lotr_serpent-god_variable
+			days = 11315 # 31 years 
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					is_in_region = andrast_region
+					is_in_region = anfalas_region
+					is_in_region = belfalas_region
+					is_in_region = lebennin_region
+					is_in_region = harondor_region
+					is_in_region = harnendor_region
+					is_in_region = umbar_region
+					is_in_region = mardruak_region
+					is_in_region = felaya_region
+					is_in_region = bellakar_region
+					is_in_region = bozisha_miraz_region
+					is_in_region = tulwang_region
+					is_in_region = an_balkumagan_region
+				}
+				is_coastal = yes
+			}
+			weight = {
+				modifier = {
+					factor = 10
+					has_city_status = no
+				}
+				modifier = {
+					factor = 30
+					total_population < 6
+				}
+			}
+			save_scope_as = lotr_serpent_priestess_province_scope
+		}
+		hidden_effect = {
+			create_character = {
+				age = 72
+				female = yes
+				religion = eastern_animism
+				culture = qarsag
+				first_name = "Hluig"
+				save_scope_as = lotr_serpent_priestess_scope
+			}
+			scope:lotr_serpent_priestess_scope = {
+				add_gold = 75
+				add_prominence = 50
+				random_list = {
+					50 = {
+						add_trait = pious
+					}
+					50 = {
+						add_trait = zealous
+					}
+				}
+			}
+		}
+	}
+	
+	option = { #dont let them in
+		name = "lotr_character_events.34.a"
+		custom_tooltip = "lotr_character_events.34.a.tt"
+		add_tyranny = tyranny_small
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 2
+		}
+	}
+	
+	option = { #let them in
+		name = "lotr_character_events.34.b"
+		custom_tooltip = "lotr_character_events.34.b.tt"
+		hidden_effect = {
+			random_list = {
+				15 = { # violent uprising
+					trigger_event = {
+						id = lotr_character_events.35
+						days = 7
+					}
+				}
+				85 = {} # Nothing Happens
+			}
+		}
+	}
+}
+
+lotr_character_events.35 = {
+	type = country_event
+	title = "lotr_character_events.35.t"
+	desc = "lotr_character_events.35.desc"
+	picture = event_desert_coast
+	
+	goto_location = scope:lotr_serpent_priestess_province_scope
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_serpent_priestess_scope
+	
+	trigger = {
+		is_ai = no
+		scope:lotr_serpent_priestess_scope = {
+			is_alive = yes
+			employer = root
+			is_ruler = no
+		}
+	}
+	
+	immediate = { 
+	}
+	
+	option = {
+		name = "lotr_character_events.35.a"
+		custom_tooltip = "lotr_character_events.35.a.tt"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 4
+		}
+        current_ruler = {
+			add_popularity = -2
+		}
+		scope:lotr_serpent_priestess_province_scope = {
+			add_state_loyalty = {
+				value = 0
+				subtract = state_loyalty
+				divide = 6
 			}
 		}
 	}

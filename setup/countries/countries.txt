@@ -25,6 +25,7 @@ ANA = "setup/countries/numenorean/anarike.txt"
 MIT = "setup/countries/numenorean/minasithil.txt"
 RON = "setup/countries/numenorean/rangers.txt"
 ROI = "setup/countries/numenorean/rangersofithilien.txt"
+ERE = "setup/countries/numenorean/erelond.txt"
 
 
 #Elven
@@ -113,10 +114,16 @@ ROH = setup/countries/northmen/rohan.txt
 #Haradrim
 BLZ = setup/countries/haradrim/bellazen.txt
 FEL = setup/countries/haradrim/felaya.txt
-HAR = setup/countries/haradrim/haradrim.txt
+#HAR = setup/countries/haradrim/haradrim.txt
 QAR = setup/countries/haradrim/qarzag.txt
 SIR = setup/countries/haradrim/sirayn.txt
 HRW = setup/countries/haradrim/haradwaith.txt
+TED = setup/countries/haradrim/tedjin.txt
+MAR = setup/countries/haradrim/mardruak.txt
+NYK = setup/countries/haradrim/nykkea.txt
+DAN = setup/countries/haradrim/dolannabrith.txt
+ZIM = setup/countries/haradrim/zimrenzil.txt
+URU = setup/countries/haradrim/urudath.txt
 
 #Dwarves
 TUM = setup/countries/dwarves/tumnogost.txt
@@ -133,6 +140,10 @@ YOP = setup/countries/yopi/yopi.txt
 
 #Barangil
 MUM = setup/countries/barangil/mumakanim.txt
+TUL = setup/countries/barangil/tuladen.txt
+TAN = setup/countries/barangil/tandi.txt
+SOR = setup/countries/barangil/soriya.txt
+ETU = setup/countries/barangil/etulia.txt
 
 #MINORS/QUICK ADDS
 XXH = setup/countries/X/xxh.txt
