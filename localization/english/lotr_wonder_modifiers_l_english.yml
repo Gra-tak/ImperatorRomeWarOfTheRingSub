@@ -22,6 +22,8 @@
   #minas_ithil_reunited_modifier: 0 "Minas Ithil: Gardens of the Moon"
  osgiliath_palace_modifier:0 "Osgiliath Palace"
   desc_osgiliath_palace_modifier:0 "Osgiliath was the capital city of Gondor, situated on both sides of the Anduin River between Minas Anor and Minas Ithil."
+  rebuild_osgiliath:0 "Rebuild the palace of osgiliath"
+  rebuild_osgiliath_desc:0 "The great city of osgiliath has lain in ruin for more than a millennia, yet now we have managed to once more rebuild many parts of it. Let us show the world, that our people is as capable as the kings of old and can rebuild the Dome of Stars."
  osgiliath_gardens_modifier:0 "Osgiliath: Twisted Gardens"
   desc_osgiliath_gardens_modifier:0 "The gardens and courtyard are decorated with strange and disturbing sculptures."
   #osgiliath_dome_of_stars_modifier: 0 "Osgiliath: Dome of the Stars"
@@ -43,26 +45,38 @@
   #aglarond_reunited_modifier
  amon_sul_modifier:0 "Amon Sûl"
   desc_amon_sul_modifier:0 "Amon Sûl was the southernmost top of the Weather Hills. A tower has stood on the hill since the days of Elendil, and he has stored a palantír in its chambers."
+  rebuild_amon_sul:0 "Rebuild the watchtower of Amon Sûl"
+  rebuild_amon_sul_desc:0 "The Weathertop has always been a great location for a watchtower. Now that our people are growing once again in a world of many dangers, it is time to rebuild it like in the times of Elednil."
   #amon_sul_desolate_modifier
   #amon_sul_reunited_modifier
  annuminas_palace_modifier:0 "Annúminas Palace"
   desc_annuminas_palace_modifier:0 "Annúminas was the city of the Kings of Arnor. The city lay on the south-east shore of Lake Nenuial, near the source of the Baranduin river. To the south and west of Annúminas rose the Hills of Evendim."
+  rebuild_annuminas:0 "Rebuild the palace of Annúminas"
+  rebuild_annuminas:0 "The city of Annúminas has lain in ruins for more than two millennia. Yet we have managed to rebuild some of it's former glory. Let us rebuild the palace and make sure the Sceptre of Annúminas is returned to it's rightful place."
   #annuminas_kings_hall_modifier
   #annuminas_desolate_modifier
   #annuminas_reunited_modifier
  fornost_modifier:0 "Fornost Erain"
   desc_fornost_modifier:0 "Fornost Erain was located at the south end of the North Downs. The fortress-city was founded after the establishment of the realm of Arnor."
+  rebuild_fornost:0 "Rebuild the fortress of Fornost Erain"
+  rebuild_fornost:0 "Since Arvedui, the last king of Arthedain, lost the city of Fornost to the witch king it is said that the fortress of fornost is haunted. By founding a new city here, we have shown that this is not true and that that remains to rebuild the fortress that has lain in ruins for a millenia."
   #fornost_deadmans_dike_modifier
   #fornost_reunited_modifier
  tharbad_citadel_modifier:0 "Tharbad Citadel"
   desc_tharbad_citadel_modifier:0 "Tharbad was a city on the southern edge of Eriador, high up along the once densely forested banks of the Gwathló."
+  rebuild_thardbad:0 "Rebuild the citadel of Tharbad"
+  rebuild_thardbad_desc:0 "Since the great plague the city of Tharbad has been falling to ruins. Let us rebuild it's citadel for the protection of our people."
  tharbad_bridge_modifier:0 "Bridge of Tharbad"
   desc_tharbad_bridge_modifier:0 "Tharbad's river-port was spanned by a bridge, the immense labour of which was shared by the North and South Kingdoms, and included a fortified town and haven about the great bridge over the Greyflood."
+  rebuild_thardbad_bridge:0 "Rebuild the bridge of Thardbad"
+  rebuild_thardbad_bridge_desc:0 "The great bridge of the Gwathló has been destroyed in TA 2912 after many years of neglect. Let us rebuild this important bridge for the sake of commmerce and the glory of our nation."
   #tharbad_dangerous_ford_modifier
   #tharbad_reunited_modifier
 #lond_daer_modifier
  cameth_brin_modifier:0 "Tower of Cameth Brin"
   desc_cameth_brin_modifier:0 "An unnatural crag, and a tower above it."
+  rebuild_cameth_brin:0 "Rebuild the Tower of Cameth Brin"
+  rebuild_cameth_brin_desc:0 "An unnatural crag, and a tower above it."
   #cameth_brin_twisted_Hill_modifier
   #cameth_brin_reunited_modifier
  amon_hen_modifier:0 "Seat of Seeing on Amon Hen"
