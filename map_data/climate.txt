@@ -154,6 +154,13 @@ mild_winter = LIST {
 	1632 1735 1820 1823 1824 1825 1826 1827 1874 # emyn_sul_area
 	1605 1705 1709 1710 1821 1822 1829 1830 1634 # nan_turnath_area
 	1608 1609 1629 1877 1701 1702 1814 1815 1828 # nan_arnen_area
+	#controlled by elf rings
+	1936 #imladris territory
+	1445 1448 1449 1455 1456 1457 1458 # lorien_area
+	#undergroup cities
+	999 #Elvenking's Halls
+	380 #Erebor
+
 }
 
 #this means frigit
@@ -185,7 +192,7 @@ normal_winter = LIST {
 	368 997 998 2661 2662 2666 2669 2716 # emyn_nu_fuin_area
 	756 761 775 993 1103 1108 1109 1110 1111 2710 2713 2714 # taur_guldur_area
 	363 367 379 755 757 994 996 2715 # angaladh_rhunen_area
-	999 2664 2665 2675 2676 2677 2678 2679 2718 # eryn_arador_area
+	2664 2665 2675 2676 2677 2678 2679 2718 # eryn_arador_area (except Elvenking's Halls)
 	2658 2660 2667 2668 2670 2671 2672 2673 2674 2680 2681 2717 # annuryn_area
 	# Dorwinion
 	190 191 192 193 194 195 196 197 198 199 201 2110 # folyavuld_area
@@ -203,7 +210,7 @@ normal_winter = LIST {
 	352 353 354 364 365 758 1975 1976 1977 2721 2722 2723 # aur_esgalabar_area
 	329 355 356 366 370 372 375 # medvos_verar_area
 	303 304 308 316 318 328 357 358 384 385 319 315 387 386 # nan_carnen_area
-	369 378 380 382 383 772 786 1000 2036 2720 # annendor_area
+	369 378 382 383 772 786 1000 2036 2720 # annendor_area (outdated?! removed Erebor)
 	371 373 374 381 398 399 400 726 727 1002 1003 # nan_morsereg_area
 	388 390 823 852 897 389 391 1001 # agorbad_area
 	# Haerhun (half)
@@ -228,7 +235,7 @@ normal_winter = LIST {
 	305 306 307 317 1990 1991 1998 1999 # gazar_narkad_area
 	2007 2013 2014 2015 2018 2019 2021 2022 # gazar_gord_area
 	# Pend Hithaeglir (most)
-	1765 1767 1785 1915 1935 1936 2113 2114 2115 # imladris_area
+	1765 1767 1785 1915 1935 2113 2114 2115 # imladris_area (excepting imladris whose climate is controlled by elrond)
 	1757 2196 2197 2198 2199 2200 # tal_bruinen_area
 	# Rhudaur (most)
 	1759 1760 1761 1764 1766 1784 1792 1794 # pinnath_tereg_area
@@ -252,8 +259,7 @@ normal_winter = LIST {
 	1712 2323 2514 2542 2546 2547 # helchambenn_area
 	1798 2530 2532 2533 2534 2535 2536 2537 2553 2554 # imladorn_area
 	1602 1627 1716 1809 2221 2217 # caras_celairnen_area
-	# Lorien
-	1445 1448 1449 1455 1456 1457 1458 # lorien_area
+	# Lorien (except lorien area, climate controlled by galadriel)
 	1443 1444 1446 1447 1450 1451 # parth_celebrant_area
 }
 
