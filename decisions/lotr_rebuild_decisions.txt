@@ -68,6 +68,9 @@
 					name = amon_sul_modifier
 					duration = -1
 				}
+				hidden_effect = {
+					show_model = "wonder_amon_sul"
+				}
 			}
 			add_treasury = -200
 			current_ruler = {
@@ -156,6 +159,9 @@
 					name = tharbad_citadel_modifier
 					duration = -1
 				}
+				hidden_effect = {
+					show_model = "wonder_tharbad_castle"
+				}
 			}
 			add_treasury = -200
 			current_ruler = {
@@ -200,6 +206,8 @@
 					name = tharbad_bridge_modifier
 					duration = -1
 				}
+				add_road_towards = p:1872
+				add_road_towards = p:1664
 			}
 			add_treasury = -200
 			current_ruler = {
@@ -243,6 +251,9 @@
 				add_province_modifier = {
 					name = cameth_brin_modifier
 					duration = -1
+				}
+				hidden_effect = {
+					show_model = "wonder_rhudaur_tower"
 				}
 			}
 			add_treasury = -200

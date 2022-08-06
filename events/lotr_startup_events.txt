@@ -115,7 +115,7 @@ lotr_startup.4 = {
 	}
 	
 	immediate = {
-		char:64 = { add_loyalty = devoted }
+		char:64 = { add_loyalty = Devoted }
 		char:65 = { add_loyalty = grey_company }
 		char:66 = { add_loyalty = grey_company }
 		char:67 = { add_loyalty = grey_company }

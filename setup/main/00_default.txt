@@ -457,7 +457,7 @@ road_network = {
 1545 = 1546
 
 #Isengard to Tharbad
-#1541 = 1543
+#1541 = 1543 #bridge destroyed
 1543 = 1904
 1904 = 1901
 1901 = 1902
@@ -467,10 +467,10 @@ road_network = {
 1878 = 1879
 1879 = 1873
 1873 = 1872
-1872 = 1612
+# 1872 = 1612
 
 #Tharbad to Thaendor
-1612 = 1664
+# 1612 = 1664 #bridge destroyed
 1664 = 1672
 1672 = 1671
 1671 = 1743
@@ -481,7 +481,7 @@ road_network = {
 #1852 = 1697
 
 #Tharbad to Amon Sul
-1612 = 1664
+# 1612 = 1664 #bridge destroyed
 1664 = 1673
 1673 = 1847
 1847 = 1740
