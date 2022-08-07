@@ -262,7 +262,9 @@
                     target = c:XVX
                     type = tributary
                 }
-				add_popularity = popularity_small
+				current_ruler = {
+					add_popularity = popularity_small
+				}
             }
             else = {
 				current_ruler = {
@@ -329,7 +331,7 @@
 		} 
 	}
 	
-	lotr_mordor_theoden_mission_2 = {		# Theoden 2
+	lotr_mordor_theoden_mission_2 = {		# Poison Theoden
 		icon = "task_happiness"
 
 		requires = { lotr_mordor_theoden_mission_1 } 
@@ -372,8 +374,8 @@
 		} 
 	}
 	
-	lotr_mordor_theoden_mission_3 = {		# Theoden 3
-		icon = "task_happiness"
+	lotr_mordor_theoden_mission_3 = {		# Convert Theoden
+		icon = "task_religion"
 
 		requires = { lotr_mordor_theoden_mission_2 } 
 
@@ -625,7 +627,7 @@
 		}
 	}
 	
-	lotr_mordor_build_army_mission_2 = {		# Hardened Commanders
+	lotr_mordor_build_army_mission_2 = {		# Breeding out weakness
 		icon = "task_conquest"
 
 		requires = { lotr_mordor_build_army_mission_1 } 
@@ -664,12 +666,49 @@
 		}
 	}
 	
-	lotr_mordor_build_army_mission_3 = {		# Enhanced Training Grounds
+	lotr_mordor_build_army_mission_3 = {		# Olog-hai trolls
 		icon = "task_expansion"
 
     	duration = 220
 
 		requires = { lotr_mordor_build_army_mission_2 } 
+
+		allow = {
+			has_law = standing_army_law
+        	treasury >= 200
+		}
+		
+		highlight = {
+		}
+
+		on_start = {
+        	add_treasury = -200
+		}
+
+		on_completion = {
+			custom_tooltip = lotr_mordor_build_army_mission_3_olog_hai
+			hidden_effect = {
+				capital_scope.governorship = {
+					raise_legion = {
+						save_scope_as = olog_hai_legion
+						create_unit = {
+							location = ROOT.capital_scope
+		                    add_subunit = troll_infantry
+                    		add_subunit = troll_infantry
+		                    add_subunit = troll_infantry
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	lotr_mordor_build_army_mission_4 = {		# Breeding vast hordes
+		icon = "task_conquest"
+
+    	duration = 220
+
+		requires = { lotr_mordor_build_army_mission_3 } 
 
 		allow = {
 			invention = experience_decay_inv_1
