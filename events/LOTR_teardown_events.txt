@@ -1,0 +1,256 @@
+﻿namespace = lotr_teardown_events
+
+lotr_teardown_events.1 = {
+  type = province_event
+  title = "lotr_teardown_events.1.t"
+  desc = "lotr_teardown_events.1.desc"
+  hidden = yes
+  trigger = {
+    exists = owner 
+    OR = {
+      this = p:1141
+      this = p:1021
+      this = p:1030
+      this = p:1105
+    }
+    # owns = 1141
+    OWNER = {
+      NOT = { country_culture_group  = orcs_group }
+      NOT = { religion  = melkorism }
+    }
+  }
+  immediate = {
+  }
+  option = {
+    name = "OK"
+    switch = {
+      trigger = this
+      p:1141 = { #barad dur
+        trigger_event = {
+          id = lotr_teardown_events.2
+        }
+      }
+      p:1021 = { #black gate
+        trigger_event = {
+          id = lotr_teardown_events.3
+        }
+      }
+      p:1030 = { #minas morgul
+        trigger_event = {
+          id = lotr_teardown_events.4
+        }
+      }
+      p:1105 = { #dol guldur
+        trigger_event = {
+          id = lotr_teardown_events.5
+        }
+      }
+    }
+  }
+}
+
+#barad dur
+lotr_teardown_events.2 = {
+  type = province_event
+  title = "lotr_teardown_events.2.t"
+  desc = "lotr_teardown_events.2.desc"
+  picture = event_marriage
+
+  trigger = {}
+
+  option = {
+    name = "lotr_teardown_events.2.a"
+    remove_province_modifier = barad_dur_modifier
+    remove_building_level = fortress_building
+    if = {
+      limit = { has_city_status = yes }
+      set_city_status = settlement
+    }
+    OWNER = {
+      current_ruler = { add_popularity = popularity_medium }
+      add_stability = 5
+    }
+    hidden_effect = {
+      if = {
+        limit = {
+          is_model_shown = "wonder_barad_dur"
+        }
+        hide_model = "wonder_barad_dur"
+      }
+      add_city_fire_effect = yes
+      p:1140 = {
+        show_model = "wonder_barad_dur_rubble"
+      }
+    }
+    ai_chance = { factor = 95 }
+  }
+  option = {
+    name = "lotr_teardown_events.2.b"
+    OWNER = {
+      current_ruler = {
+        add_corruption = 20
+        set_character_religion = melkorism
+      }
+      set_country_religion = melkorism
+    }
+    ai_chance = { 
+      factor = 5 
+      modifier = {
+        factor = 10
+        OWNER = {
+          religion = eastern_animism
+        }
+      }
+    }
+  }
+}
+#black gate 
+lotr_teardown_events.3 = {
+  type = province_event
+  title = "lotr_teardown_events.3.t"
+  desc = "lotr_teardown_events.3.desc"
+  picture = event_marriage
+
+  trigger = {}
+
+  option = {
+    name = "lotr_teardown_events.2.a"
+    remove_province_modifier = black_gate_modifier
+    remove_building_level = fortress_building
+    if = {
+      limit = { has_city_status = yes }
+      set_city_status = settlement
+    }
+    OWNER = {
+      current_ruler = { add_popularity = popularity_medium }
+      add_stability = 5
+    }
+    hidden_effect = {
+      if = {
+        limit = {
+          is_model_shown = "the_black_gate"
+        }
+        hide_model = "the_black_gate"
+      }
+      add_city_fire_effect = yes
+    }
+    ai_chance = { factor = 95 }
+  }
+  option = {
+    name = "lotr_teardown_events.2.b"
+    OWNER = {
+      current_ruler = {
+        add_corruption = 20
+        set_character_religion = melkorism
+      }
+      set_country_religion = melkorism
+    }
+    ai_chance = { 
+      factor = 5 
+      modifier = {
+        factor = 10
+        OWNER = {
+          religion = eastern_animism
+        }
+      }
+    }
+  }
+}
+#minas morgul 
+lotr_teardown_events.4 = {
+  type = province_event
+  title = "lotr_teardown_events.4.t"
+  desc = "lotr_teardown_events.4.desc"
+  picture = event_marriage
+
+  trigger = {}
+
+  option = {
+    name = "lotr_teardown_events.2.a"
+    remove_province_modifier = minas_ithil_modifier
+    remove_building_level = fortress_building
+    if = {
+      limit = { has_city_status = yes }
+      set_city_status = settlement
+    }
+    OWNER = {
+      current_ruler = { add_popularity = popularity_medium }
+      add_stability = 5
+    }
+    hidden_effect = {
+      if = {
+        limit = {
+          is_model_shown = "black_wall"
+        }
+        hide_model = "black_wall"
+      }
+      add_city_fire_effect = yes
+    }
+    ai_chance = { factor = 95 }
+  }
+  option = {
+    name = "lotr_teardown_events.2.b"
+    OWNER = {
+      current_ruler = {
+        add_corruption = 20
+        set_character_religion = melkorism
+      }
+      set_country_religion = melkorism
+    }
+    ai_chance = { 
+      factor = 5 
+      modifier = {
+        factor = 10
+        OWNER = {
+          religion = eastern_animism
+        }
+      }
+    }
+  }
+}
+#dol guldur 
+lotr_teardown_events.5 = {
+  type = province_event
+  title = "lotr_teardown_events.5.t"
+  desc = "lotr_teardown_events.5.desc"
+  picture = event_marriage
+
+  trigger = {}
+
+  option = {
+    name = "lotr_teardown_events.2.a"
+    remove_province_modifier = dol_guldur_modifier
+    remove_building_level = fortress_building
+    if = {
+      limit = { has_city_status = yes }
+      set_city_status = settlement
+    }
+    OWNER = {
+      current_ruler = { add_popularity = popularity_medium }
+      add_stability = 5
+    }
+    hidden_effect = {
+      add_city_fire_effect = yes
+    }
+    ai_chance = { factor = 95 }
+  }
+  option = {
+    name = "lotr_teardown_events.2.b"
+    OWNER = {
+      current_ruler = {
+        add_corruption = 20
+        set_character_religion = melkorism
+      }
+      set_country_religion = melkorism
+    }
+    ai_chance = { 
+      factor = 5 
+      modifier = {
+        factor = 10
+        OWNER = {
+          religion = eastern_animism
+        }
+      }
+    }
+  }
+}

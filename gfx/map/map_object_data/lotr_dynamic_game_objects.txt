@@ -1,0 +1,41 @@
+dynamic_game_object = {
+	name = "wonder_barad_dur"
+	entity_name = "wonder_barad_dur_entity"
+	map_id = { 1141 }
+}
+
+dynamic_game_object = {
+	name = "wonder_barad_dur_rubble"
+	entity_name = "wonder_barad_dur_rubble_entity"
+	map_id = { 1140 }
+}
+
+dynamic_game_object = {
+	name = "wonder_amon_sul"
+	entity_name = "wonder_amon_sul_entity"
+	map_id = { 1632 }
+}
+
+dynamic_game_object = {
+	name = "wonder_rhudaur_tower"
+	entity_name = "wonder_rhudaur_tower_entity"
+	map_id = { 1631 }
+}
+
+dynamic_game_object = {
+	name = "wonder_tharbad_castle"
+	entity_name = "wonder_tharbad_castle_entity"
+	map_id = { 1612 }
+}
+
+dynamic_game_object = {
+	name = "the_black_gate"
+	entity_name = "the_black_gate_entity"
+	map_id = { 1021 }
+}
+
+dynamic_game_object = {
+	name = "black_wall"
+	entity_name = "black_wall_entity"
+	map_id = { 1030 }
+}

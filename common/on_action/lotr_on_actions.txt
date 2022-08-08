@@ -45,3 +45,15 @@ lotr_character_events_pulse = {
 		13 = lotr_character_events.34
 	}
 }
+
+on_province_colonized = {
+	events = {
+		lotr_teardown_events.1
+	}
+}
+
+on_ownership_change = { #province scope
+	events = {
+		lotr_teardown_events.1
+	}
+}
