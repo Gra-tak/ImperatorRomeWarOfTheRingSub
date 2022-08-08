@@ -92,6 +92,13 @@ lotr_teardown_events.2 = {
         set_character_religion = melkorism
       }
       set_country_religion = melkorism
+      save_scope_as = convert
+    }
+    every_country = {
+      limit = {
+        NOT = { religion = melkorism }
+      }
+      trigger_event = { id = br_sauron.10 days = 30 } #players are told this ruler has turned to Melkor
     }
     ai_chance = { 
       factor = 5 
@@ -144,6 +151,13 @@ lotr_teardown_events.3 = {
         set_character_religion = melkorism
       }
       set_country_religion = melkorism
+      save_scope_as = convert
+    }
+    every_country = {
+      limit = {
+        NOT = { religion = melkorism }
+      }
+      trigger_event = { id = br_sauron.10 days = 30 } #players are told this ruler has turned to Melkor
     }
     ai_chance = { 
       factor = 5 
@@ -196,6 +210,13 @@ lotr_teardown_events.4 = {
         set_character_religion = melkorism
       }
       set_country_religion = melkorism
+      save_scope_as = convert
+    }
+    every_country = {
+      limit = {
+        NOT = { religion = melkorism }
+      }
+      trigger_event = { id = br_sauron.10 days = 30 } #players are told this ruler has turned to Melkor
     }
     ai_chance = { 
       factor = 5 
@@ -242,6 +263,13 @@ lotr_teardown_events.5 = {
         set_character_religion = melkorism
       }
       set_country_religion = melkorism
+      save_scope_as = convert
+    }
+    every_country = {
+      limit = {
+        NOT = { religion = melkorism }
+      }
+      trigger_event = { id = br_sauron.10 days = 30 } #players are told this ruler has turned to Melkor
     }
     ai_chance = { 
       factor = 5 
