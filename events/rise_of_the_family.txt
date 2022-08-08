@@ -386,6 +386,8 @@ family_events.3 = {
 						#NOT = { has_character_modifier = was_once_great }
 						is_adult = yes
 						is_mercenary = no
+						is_ruler = no
+						employer = root.employer
 						NOT = { has_variable = olympic_attendee }
 						OR = {
 							employer = { gender_equality = yes }
@@ -417,6 +419,8 @@ family_events.3 = {
 						#NOT = { has_character_modifier = was_once_great }
 						is_adult = yes
 						is_mercenary = no
+						is_ruler = no
+						employer = root.employer
 						NOT = { has_variable = olympic_attendee }
 						OR = {
 							employer = { gender_equality = yes }
@@ -557,13 +561,6 @@ family_events.4 = {
 						NOT = { has_trait = stubborn }
 						NOT = { has_variable = pyrrhus_travelling }
 						citizenship_restrictions_trigger = yes
-						NAND = {
-							#employer = c:SYR
-							OR = {
-								has_variable = me_syr_democracy_leader
-								has_variable = rebel_character_flag
-							}
-						}
 					}
 					save_scope_as = adopted_person
 				}
@@ -594,13 +591,6 @@ family_events.4 = {
 						NOT = { has_trait = stubborn }
 						NOT = { has_variable = pyrrhus_travelling }
 						citizenship_restrictions_trigger = yes
-						#NAND = {
-						#	employer = c:SYR
-						#	OR = {
-						#		has_variable = me_syr_democracy_leader
-						#		has_variable = rebel_character_flag
-						#	}
-						#}
 					}
 					save_scope_as = adopted_person_2
 				}
@@ -636,6 +626,7 @@ family_events.4 = {
 		name = "family_events.4.a"
 		trigger = { exists = scope:adopted_person }
 		scope:adopted_person = {
+			save_scope_as = target
 			set_family = root.family
 			add_character_modifier = {
 				name = adopted_into_great_family
@@ -668,15 +659,19 @@ family_events.4 = {
 			root.family = { add_prestige = adoption_cost_event_pay_svalue }
 			save_scope_as = picked_adoption_candidate
 		}
-		#if = {
-		#	limit = { employer = { is_monarchy = yes } }
-		#	employer = {
-		#		add_legitimacy = {
-		#			subtract = adoption_legitimacy_hit_event_svalue
-		#		}
-		#	}
-		#}
-		trigger_event = { id = family_events.8 }
+		if = {
+			limit = {
+				employer = { is_monarchy = yes }
+			}
+			employer = {
+				add_legitimacy = {
+					subtract = adoption_legitimacy_hit_event_svalue
+				}
+			}
+		}
+		employer = {
+			trigger_event = { id = family_events.8 }
+		}
 	}
 	
 	option = {
@@ -684,6 +679,7 @@ family_events.4 = {
 		trigger = { exists = scope:adopted_person_2 }
 
 		scope:adopted_person_2 = {
+			save_scope_as = target
 			set_family = root.family
 
 			add_character_modifier = {
@@ -717,8 +713,21 @@ family_events.4 = {
 			root.family = { add_prestige = adoption_cost_event_pay_svalue }
 			save_scope_as = picked_adoption_candidate
 		}
-		trigger_event = { id = family_events.8 }
+		if = {
+			limit = {
+				employer = { is_monarchy = yes }
+			}
+			employer = {
+				add_legitimacy = {
+					subtract = adoption_legitimacy_hit_event_svalue
+				}
+			}
+		}
+		employer = {
+			trigger_event = { id = family_events.8 }
+		}
 	}
+
 	option = {
 		name = "family_events.4.c"
 		custom_tooltip = family_events.4.c.tooltip
@@ -1044,7 +1053,8 @@ family_events.7 = {
 		name = "family_events.7.a"
 		if = {
 			limit = {
-				exists = scope:fallen_head #On the remote chance that we are downgrading a family with 0 members we could be looking at scope:fallen head not being saved. In this case we still want that to be the family eliminated but this part of the effect needs to be muted
+				exists = scope:fallen_head
+				scope:fallen_head = { is_alive = yes } #On the remote chance that we are downgrading a family with 0 members we could be looking at scope:fallen head not being saved. In this case we still want that to be the family eliminated but this part of the effect needs to be muted
 			}
 			scope:fallen_head = {
 				remove_all_positions = yes
