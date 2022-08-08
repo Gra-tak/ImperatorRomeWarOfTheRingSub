@@ -107,25 +107,13 @@
 	orc_infantry_path_2 = { ###
 		modifier = {
 			uruk_infantry_offensive = 0.1
-			uruk_crossbows_offensive = 0.1
 		}
 		icon = orc_infantry_path_2
 		requires = {orc_infantry_path_1}
-		on_activate = {
-			ordered_owned_province = {
-				limit = {
-					dominant_province_culture_group = root.culture_group
-				}
-				alternative_limit = {
-					always = yes
-				}
-				order_by = {
-					value = 0
-					add = population_cap
-					subtract = total_population
-				}
-				max = 1
-				create_2_slaves_effect = yes
+		on_activate = { #Uruk infantry
+			custom_tooltip = "orc_infantry_path_2_allow_uruk_infantry"
+			hidden_effect = {
+				allow_uruk_infantry = yes
 			}	
 		}
 	}
@@ -143,6 +131,7 @@
 	orc_infantry_path_4 = { ###
 		modifier = {
 			land_unit_attrition = -0.15
+			uruk_crossbows_offensive = 0.1
 		}
 		icon = orc_infantry_path_4
 		requires = {orc_infantry_path_3}
@@ -155,32 +144,25 @@
 		}
 		icon = orc_infantry_path_5
 		requires = {orc_infantry_path_2}
-		on_activate = {
-			ordered_owned_province = {
-				limit = {
-					dominant_province_culture_group = root.culture_group
-				}
-				alternative_limit = {
-					always = yes
-				}
-				order_by = {
-					value = 0
-					add = population_cap
-					subtract = total_population
-				}
-				max = 1
-				create_2_slaves_effect = yes
+		on_activate = { #Uruk Crossbows
+			custom_tooltip = "orc_infantry_path_5_allow_uruk_crossbows"
+			hidden_effect = {
+				allow_uruk_crossbows = yes
 			}	
 		}
 	}
 
 	orc_infantry_path_6 = { ###
 		modifier = {
-			uruk_heavy_infantry_defensive = 0.1
-			orc_infantry_defensive = 0.1
 		}
 		icon = orc_infantry_path_6
 		requires = {orc_infantry_path_5}
+		on_activate = { #Uruk heavy infantry
+			custom_tooltip = "orc_infantry_path_6_allow_uruk_heavy_infantry"
+			hidden_effect = {
+				allow_uruk_heavy_infantry = yes
+			}
+		}
 	}
 	
 	orc_infantry_path_7 = { ###
@@ -208,6 +190,12 @@
 		}
 		icon = orc_cavalry_path_1
 		requires = {orc_infantry_path_1}
+		on_activate = { #Allow Warg Riders
+			custom_tooltip = "orc_cavalry_path_1_allow_warg_riders"
+			hidden_effect = {
+				allow_warg_riders = yes
+			}
+		}
 	}
 	
 	orc_cavalry_path_2 = { ###
