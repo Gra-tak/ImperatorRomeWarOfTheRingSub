@@ -47,6 +47,8 @@
   desc_amon_sul_modifier:0 "Amon Sûl was the southernmost top of the Weather Hills. A tower has stood on the hill since the days of Elendil, and he has stored a palantír in its chambers."
   rebuild_amon_sul:0 "Rebuild the watchtower of Amon Sûl"
   rebuild_amon_sul_desc:0 "The Weathertop has always been a great location for a watchtower. Now that our people are growing once again in a world of many dangers, it is time to rebuild it like in the times of Elednil."
+  rebuild_amon_sul_vassal:0 "Rebuild a city near Amon Sûl"
+  rebuild_amon_sul_vassal_desc:0 "Required for watchtower."
   #amon_sul_desolate_modifier
   #amon_sul_reunited_modifier
  annuminas_palace_modifier:0 "Annúminas Palace"
@@ -59,13 +61,17 @@
  fornost_modifier:0 "Fornost Erain"
   desc_fornost_modifier:0 "Fornost Erain was located at the south end of the North Downs. The fortress-city was founded after the establishment of the realm of Arnor."
   rebuild_fornost:0 "Rebuild the fortress of Fornost Erain"
-  rebuild_fornost:0 "Since Arvedui, the last king of Arthedain, lost the city of Fornost to the witch king it is said that the fortress of fornost is haunted. By founding a new city here, we have shown that this is not true and that that remains to rebuild the fortress that has lain in ruins for a millenia."
+  rebuild_fornost_desc:0 "Since Arvedui, the last king of Arthedain, lost the city of Fornost to the witch king it is said that the fortress of fornost is haunted. By founding a new city here, we have shown that this is not true and that that remains to rebuild the fortress that has lain in ruins for a millenia."
+  rebuild_fornost_vassal:0 "Rebuild the city of Fornost Erain"
+  rebuild_fornost_vassal_desc:0 "Required to rebuild the fortress"
   #fornost_deadmans_dike_modifier
   #fornost_reunited_modifier
  tharbad_citadel_modifier:0 "Tharbad Citadel"
   desc_tharbad_citadel_modifier:0 "Tharbad was a city on the southern edge of Eriador, high up along the once densely forested banks of the Gwathló."
   rebuild_thardbad:0 "Rebuild the citadel of Tharbad"
   rebuild_thardbad_desc:0 "Since the great plague the city of Tharbad has been falling to ruins. Let us rebuild it's citadel for the protection of our people."
+  rebuild_thardbad_vassal:0 "Rebuild the city of Tharbad"
+  rebuild_thardbad_vassal_desc:0 "Since the great plague the city of Tharbad has been falling to ruins."
  tharbad_bridge_modifier:0 "Bridge of Tharbad"
   desc_tharbad_bridge_modifier:0 "Tharbad's river-port was spanned by a bridge, the immense labour of which was shared by the North and South Kingdoms, and included a fortified town and haven about the great bridge over the Greyflood."
   rebuild_thardbad_bridge:0 "Rebuild the bridge of Thardbad"
@@ -77,6 +83,8 @@
   desc_cameth_brin_modifier:0 "An unnatural crag, and a tower above it."
   rebuild_cameth_brin:0 "Rebuild the Tower of Cameth Brin"
   rebuild_cameth_brin_desc:0 "An unnatural crag, and a tower above it."
+  rebuild_cameth_brin_vassal:0 "Rebuild the city of Cameth Brin"
+  rebuild_cameth_brin_vassal_desc:0 "An unnatural crag, and a tower above it."
   #cameth_brin_twisted_Hill_modifier
   #cameth_brin_reunited_modifier
  amon_hen_modifier:0 "Seat of Seeing on Amon Hen"

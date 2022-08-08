@@ -81,7 +81,6 @@ tharbad_bridge_modifier = {
 cameth_brin_modifier = {
 	local_tax_modifier = 0.15
 	fort_level = 1
-	barbarian_growth = 0.1
 }
 amon_hen_modifier = {
 	army_movement_speed = 0.1

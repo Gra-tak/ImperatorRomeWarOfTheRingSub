@@ -138,7 +138,7 @@ saruman_thrall_tribe = {
 ranger_protectorate = { #Ranger of the north mechanics
 	subject_pays = subject_pays_ranger_protectorate
 	
-	joins_overlord_in_war = no
+	joins_overlord_in_war = yes
 	
 	protected_when_attacked = yes
 	has_overlords_ruler = no
@@ -154,6 +154,7 @@ ranger_protectorate = { #Ranger of the north mechanics
 	subject_modifier = {
 		country_civilization_value = 10
 		global_monthly_civilization = 0.01
+		loyalty_to_overlord = -200
 	}
 	
 	allow = {
