@@ -2,8 +2,8 @@
 
 lotr_teardown_events.1 = {
   type = province_event
-  title = "lotr_teardown_events.1.t"
-  desc = "lotr_teardown_events.1.desc"
+  title = "OK"
+  desc = "OK"
   hidden = yes
   trigger = {
     exists = owner 
@@ -52,14 +52,14 @@ lotr_teardown_events.1 = {
 #barad dur
 lotr_teardown_events.2 = {
   type = province_event
-  title = "lotr_teardown_events.2.t"
-  desc = "lotr_teardown_events.2.desc"
+  title = lotr_teardown_events.2.t
+  desc = lotr_teardown_events.2.desc
   picture = event_marriage
 
   trigger = {}
 
   option = {
-    name = "lotr_teardown_events.2.a"
+    name = lotr_teardown_events.2.a
     remove_province_modifier = barad_dur_modifier
     remove_building_level = fortress_building
     if = {
@@ -85,7 +85,7 @@ lotr_teardown_events.2 = {
     ai_chance = { factor = 95 }
   }
   option = {
-    name = "lotr_teardown_events.2.b"
+    name = lotr_teardown_events.2.b
     OWNER = {
       current_ruler = {
         add_corruption = 20
@@ -107,14 +107,14 @@ lotr_teardown_events.2 = {
 #black gate 
 lotr_teardown_events.3 = {
   type = province_event
-  title = "lotr_teardown_events.3.t"
-  desc = "lotr_teardown_events.3.desc"
+  title = lotr_teardown_events.3.t
+  desc = lotr_teardown_events.3.desc
   picture = event_marriage
 
   trigger = {}
 
   option = {
-    name = "lotr_teardown_events.2.a"
+    name = lotr_teardown_events.2.a
     remove_province_modifier = black_gate_modifier
     remove_building_level = fortress_building
     if = {
@@ -137,7 +137,7 @@ lotr_teardown_events.3 = {
     ai_chance = { factor = 95 }
   }
   option = {
-    name = "lotr_teardown_events.2.b"
+    name = lotr_teardown_events.2.b
     OWNER = {
       current_ruler = {
         add_corruption = 20
@@ -159,14 +159,14 @@ lotr_teardown_events.3 = {
 #minas morgul 
 lotr_teardown_events.4 = {
   type = province_event
-  title = "lotr_teardown_events.4.t"
-  desc = "lotr_teardown_events.4.desc"
+  title = lotr_teardown_events.4.t
+  desc = lotr_teardown_events.4.desc
   picture = event_marriage
 
   trigger = {}
 
   option = {
-    name = "lotr_teardown_events.2.a"
+    name = lotr_teardown_events.2.a
     remove_province_modifier = minas_ithil_modifier
     remove_building_level = fortress_building
     if = {
@@ -189,7 +189,7 @@ lotr_teardown_events.4 = {
     ai_chance = { factor = 95 }
   }
   option = {
-    name = "lotr_teardown_events.2.b"
+    name = lotr_teardown_events.2.b
     OWNER = {
       current_ruler = {
         add_corruption = 20
@@ -211,14 +211,14 @@ lotr_teardown_events.4 = {
 #dol guldur 
 lotr_teardown_events.5 = {
   type = province_event
-  title = "lotr_teardown_events.5.t"
-  desc = "lotr_teardown_events.5.desc"
+  title = lotr_teardown_events.5.t
+  desc = lotr_teardown_events.5.desc
   picture = event_marriage
 
   trigger = {}
 
   option = {
-    name = "lotr_teardown_events.2.a"
+    name = lotr_teardown_events.2.a
     remove_province_modifier = dol_guldur_modifier
     remove_building_level = fortress_building
     if = {
@@ -235,7 +235,7 @@ lotr_teardown_events.5 = {
     ai_chance = { factor = 95 }
   }
   option = {
-    name = "lotr_teardown_events.2.b"
+    name = lotr_teardown_events.2.b
     OWNER = {
       current_ruler = {
         add_corruption = 20

@@ -1,0 +1,12 @@
+﻿l_english:
+ lotr_teardown_events.2.t:0 "Barad-dûr conquered."
+ lotr_teardown_events.2.desc:0 "We have managed to conquer Saurons citadel of Barad-dûr. It's so corrupted, we can be sure there is nothing of any worth for us inside."
+ lotr_teardown_events.2.a:0 "Tear it down!"
+ lotr_teardown_events.2.b:0 "Maybe we should rethink our ways in the face of such dark glory."
+ lotr_teardown_events.3.t:0 "Black Gate conquered."
+ lotr_teardown_events.3.desc:0 "We have managed to conquer the gates guarding the norther entrance to mordor. It's so corrupted, we can be sure there is nothing of any worth for us inside."
+ lotr_teardown_events.4.t:0 "Minas Morgul conquered."
+ lotr_teardown_events.4.desc:0 "We have managed to conquer Minath Morgul. There is nothing left of it's old grace as Minath Ithil, the city of Isildur. It's so corrupted it needs to be completely destroyed for 'although it might in time come to be made clean, no man might dwell there for many long years'."
+ lotr_teardown_events.5.t:0 "Dol Guldur conquered."
+ lotr_teardown_events.5.desc:0 "We have managed to conquer Dol Guldur, the hill of dark sorcery. It's so corrupted, we can be sure there is nothing of any worth for us inside."
+ 
