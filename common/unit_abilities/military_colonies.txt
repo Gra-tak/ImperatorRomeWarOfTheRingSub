@@ -26,12 +26,16 @@
 		}
 		hidden:unit_owner = { can_pay_price = create_military_colony }
 		hidden:unit_location = {
+			has_owner = yes
 			total_population <= 5
 			state_loyalty >= 33
-			NOT = {
-				state = {
-					any_state_province = {
-						is_capital = yes
+			custom_tooltip = {
+				text = military_colonies_capital_tooltip
+				NOT = {
+					state = {
+						any_state_province = {
+							is_capital = yes
+						}
 					}
 				}
 			}
