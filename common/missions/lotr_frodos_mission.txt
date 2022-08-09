@@ -1,0 +1,679 @@
+﻿lotr_frodos_mission = {
+	header = "lotr_frodos_mission_header"
+	icon = "lotr_frodos_mission_icon"
+
+	repeatable = no
+
+	chance = {}
+
+	ai_chance = {
+		factor = 0
+	}
+
+	potential = {
+  	NOT = { has_variable = lotr_frodos_mission_activated_variable }
+		has_civil_war = no
+		is_ai = no
+    OR = {
+      this = c:SHI
+      any_subject = {
+        this = c:SHI
+      }
+      any_allied_country = {
+        this = c:SHI
+      }
+    }
+    current_date > 3003.1.1
+	}
+
+	on_potential = {
+	}
+
+	abort = {
+		ai_mission_back_out_trigger = yes
+	}
+
+	on_start = {
+		start_mission_ai_effect = yes
+    #create hobbits and Gandalf in the shire with olympic_competitor (rename the loc to fellowship. This should prevent many stuff that should not happen, like jobs, citizenship etc)
+	}
+
+	on_abort = {
+		# add_stability = -20
+    set_variable = {
+        name = lotr_frodos_mission_activated_variable
+    }
+	}
+
+	on_completion = {
+		complete_mission_effect = yes
+	}
+	
+	
+	
+	lotr_frodo_start = {	
+		icon = "task_conquest"
+  	# duration = 365
+		
+    highlight = {
+    	scope:province = {
+        OR = {
+    		  is_in_area = formensiril_area
+          is_in_area = baranduin_area
+          is_in_area = breriondor_area
+          is_in_area = oiomiril_area
+          is_in_area = en_eredoriath_area
+          is_in_area = rhudaur_area
+          is_in_area = pinnath_tereg_area
+          is_in_area = imladris_area
+        }
+    	}
+    }
+
+    potential = {
+    }
+
+    # bypass = {
+    # }
+
+		allow = {
+		}
+
+		on_start = {
+      #mordor declares war on you, nazghul army spawned between shire and bree. mordor gets "whips of sauron" army speed, morale and discipline bonuses
+
+      #remaining orcs in the north declare war
+
+      #gandalf moves to isengard, hobbits to CAR (or player if CAR does not exist)
+
+		}
+
+		on_completion = {
+    }
+  }
+
+  lotr_reach_imladris = {  
+    icon = "task_conquest"
+    
+    highlight = {
+      scope:province = {
+        OR = {
+          is_in_area = formensiril_area
+          is_in_area = baranduin_area
+          is_in_area = breriondor_area
+          is_in_area = oiomiril_area
+          is_in_area = en_eredoriath_area
+          is_in_area = rhudaur_area
+          is_in_area = pinnath_tereg_area
+          is_in_area = imladris_area
+        }
+        exists = owner
+        controller = {
+          country_culture_group = orcs_group
+        }
+      }
+    }
+
+    potential = {
+    }
+
+    requires = { lotr_frodo_start } 
+
+    # bypass = {
+    # }
+
+    allow = {
+      NOT = {
+        any_province = {
+          OR = {
+            is_in_area = formensiril_area
+            is_in_area = baranduin_area
+            is_in_area = breriondor_area
+            is_in_area = oiomiril_area
+            is_in_area = en_eredoriath_area
+            is_in_area = rhudaur_area
+            is_in_area = pinnath_tereg_area
+            is_in_area = imladris_area
+          }
+          exists = owner
+          controller = {
+            country_culture_group = orcs_group
+          }
+        }
+      }
+    }
+
+    on_start = {
+    }
+
+    on_completion = {
+      #move hobbits and gandalf to imladris, possibly create copies of Aragorn, Legolas, Gimli, Boromir
+    }
+  }
+
+  lotr_council_of_elrond = {  
+    icon = "task_conquest"
+    # duration = 365
+    
+    highlight = {
+      scope:province = {
+        OR = {
+          is_in_area = tal_bruinen_area
+          is_in_area = pend_eregion_area
+          is_in_area = emyn_sirannon_area
+
+          is_in_area = khazad_dum_area
+          is_in_area = lorien_area
+
+          is_in_area = fordirith_area
+          is_in_area = chail_caerdh_area
+          AND = {
+            is_in_area = calenhardin_area
+            NOT = { this = p:1546 }
+          }
+          is_in_area = garth_annui_area
+
+
+        }
+      }
+    }
+
+    potential = {
+    }
+
+    requires = { lotr_reach_imladris } 
+
+    # bypass = {
+    # }
+
+    allow = {
+    }
+
+    on_start = {
+      #redeclare previous wars where needed
+      #orcs will now declare war on all neighboring eru contries, possibly some specific like balins colony, gondor
+
+      #saruman attacks rohan and the player (if he is evil). Whips of saruman buff
+    }
+
+    on_completion = {
+    }
+  }
+
+  lotr_go_through_moria = {  
+    icon = "task_conquest"
+    
+    highlight = {
+      scope:province = {
+        OR = {
+          is_in_area = tal_bruinen_area
+          is_in_area = pend_eregion_area
+          is_in_area = emyn_sirannon_area
+
+          is_in_area = khazad_dum_area
+          is_in_area = lorien_area
+        }
+        exists = owner
+        controller = {
+          OR = {
+            country_culture_group = orcs_group
+            # AND = {
+            #   exists = overlord
+            #   overlord = {
+            #     country_culture_group = orcs_group
+            #   }
+            # }
+          }
+        }
+      }
+    }
+
+    potential = {
+    }
+
+    requires = { lotr_council_of_elrond } 
+
+    prevented_by = { lotr_go_through_rohan }
+
+    bypass = {
+      has_completed_mission_task = lotr_depart_from_rohan 
+    }
+
+    # bypass = {
+    # }
+
+    allow = {
+      NOT = {
+        any_province = {
+          OR = {
+            is_in_area = tal_bruinen_area
+            is_in_area = pend_eregion_area
+            is_in_area = emyn_sirannon_area
+
+            is_in_area = khazad_dum_area
+            is_in_area = lorien_area
+          }
+          exists = owner
+          controller = {
+            OR = {
+              country_culture_group = orcs_group
+              # AND = {
+              #   exists = overlord
+              #   overlord = {
+              #     country_culture_group = orcs_group
+              #   }
+              # }
+            }
+          }
+        }
+      }
+    }
+
+    on_start = {
+    }
+
+    on_completion = {
+      #move fellowship to lorien
+    }
+  }
+
+  lotr_go_through_rohan = {  
+    icon = "task_conquest"
+    
+    highlight = {
+      scope:province = {
+        OR = {
+          is_in_area = tal_bruinen_area
+          is_in_area = pend_eregion_area
+          is_in_area = emyn_sirannon_area
+
+
+          is_in_area = fordirith_area
+          is_in_area = chail_caerdh_area
+          AND = {
+            is_in_area = calenhardin_area
+            NOT = { this = p:1546 }
+          }
+          is_in_area = garth_annui_area
+        }
+        exists = owner
+        controller = {
+          OR = {
+            country_culture_group = orcs_group
+            # AND = {
+            #   exists = overlord
+            #   overlord = {
+            #     country_culture_group = orcs_group
+            #   }
+            # }
+          }
+        }
+      }
+    }
+
+    potential = {
+    }
+
+    requires = { lotr_council_of_elrond } 
+
+    prevented_by = { lotr_go_through_moria }
+
+    bypass = {
+      has_completed_mission_task = lotr_depart_from_lorien 
+    }
+
+    # bypass = {
+    # }
+
+    allow = {
+      NOT = {
+        any_province = {
+          OR = {
+            is_in_area = tal_bruinen_area
+            is_in_area = pend_eregion_area
+            is_in_area = emyn_sirannon_area
+
+            is_in_area = fordirith_area
+            is_in_area = chail_caerdh_area
+            AND = {
+              is_in_area = calenhardin_area
+              NOT = { this = p:1546 }
+            }
+            is_in_area = garth_annui_area
+          }
+          exists = owner
+          controller = {
+            OR = {
+              country_culture_group = orcs_group
+              # AND = {
+              #   exists = overlord
+              #   overlord = {
+              #     country_culture_group = orcs_group
+              #   }
+              # }
+            }
+          }
+        }
+      }
+    }
+
+    on_start = {
+    }
+
+    on_completion = {
+      #move fellowship to rohan
+    }
+  }
+
+  lotr_depart_from_lorien = {  
+    icon = "task_conquest"
+
+    # duration = 365
+    
+    highlight = {
+      scope:province = {
+        OR = {
+          is_in_region = lorien_region
+          is_in_region = rhuvenlhad_region
+          is_in_region = calenardhon_region
+          is_in_region = anorien_region
+          is_in_region = ithilien_region
+        }
+      }
+    }
+
+    potential = {
+    }
+
+    requires = { lotr_go_through_moria } 
+
+    prevented_by = { lotr_depart_from_rohan }
+
+    bypass = {
+      has_completed_mission_task = lotr_depart_from_rohan 
+    }
+
+
+    allow = {
+    }
+
+    on_start = {
+      #redeclare previous wars where needed
+      # all melkor countries now declare on the player (possibly exluding the extreme eastern ones)
+      # 2 month later on neighboring eru countries
+
+      #buffs for orcs are initially increased but will decay slightly with time
+    }
+
+    on_completion = {
+      #move sam and frodo to ithilien rangers, rest to gondor or rohan
+      #kill boromir (might actually kill the real one unless player is gondor)
+    }
+  }
+
+  lotr_depart_from_rohan = {  
+    icon = "task_conquest"
+
+    # duration = 365
+
+    highlight = {
+      scope:province = {
+        OR = {
+          # is_in_region = lorien_region
+          is_in_region = rhuvenlhad_region
+          is_in_region = calenardhon_region
+          is_in_region = anorien_region
+          is_in_region = ithilien_region
+        }
+      }
+    }
+
+    potential = {
+    }
+
+    requires = { lotr_go_through_rohan } 
+
+    prevented_by = {  }
+
+    bypass = {
+      has_completed_mission_task = lotr_depart_from_lorien
+    }
+
+
+    allow = {
+    }
+
+    on_start = {
+      #same as lorien
+    }
+
+    on_completion = {
+      #move sam and frodo to ithilien rangers, rest to gondor or rohan
+      #kill boromir (might actually kill the real one unless player is gondor)
+    }
+  }
+
+  lotr_hold_back_sauron = {  
+    icon = "task_conquest"
+    
+    highlight = {
+      scope:province = {
+        OR = {
+          AND = {
+            ROOT = {
+              has_completed_mission_task = lotr_depart_from_lorien
+            }
+            is_in_region = lorien_region
+          }
+          is_in_region = rhuvenlhad_region
+          is_in_region = calenardhon_region
+          is_in_region = anorien_region
+          is_in_region = ithilien_region
+        }
+        exists = owner
+        controller = {
+          OR = {
+            country_culture_group = orcs_group
+            # AND = {
+            #   exists = overlord
+            #   overlord = {
+            #     country_culture_group = orcs_group
+            #   }
+            # }
+          }
+        }
+      }
+    }
+
+    potential = {
+    }
+
+    requires = { 
+      lotr_depart_from_lorien 
+      lotr_depart_from_rohan
+    } 
+
+    allow = {
+      NOT = {
+        any_province = {
+          OR = {
+            AND = {
+              ROOT = {
+                has_completed_mission_task = lotr_depart_from_lorien
+              }
+              is_in_region = lorien_region
+            }
+            is_in_region = rhuvenlhad_region
+            is_in_region = calenardhon_region
+            is_in_region = anorien_region
+            is_in_region = ithilien_region
+          }
+          exists = owner
+          controller = {
+            OR = {
+              country_culture_group = orcs_group
+              # AND = {
+              #   exists = overlord
+              #   overlord = {
+              #     country_culture_group = orcs_group
+              #   }
+              # }
+            }
+          }
+        }
+      }
+    }
+
+    on_start = {
+    }
+
+    on_completion = {
+    }
+  }
+
+  lotr_distract_sauron = {  
+    icon = "task_conquest"
+
+    # duration = 365
+
+    highlight = {
+      scope:province = {
+        OR = {
+          is_in_region = rhuvenlhad_region
+          is_in_region = calenardhon_region
+          is_in_region = anorien_region
+          is_in_region = ithilien_region
+          this = p:1021
+        }
+      }
+    }
+
+    potential = {
+    }
+
+    requires = { 
+      lotr_hold_back_sauron 
+    } 
+
+    allow = {
+    }
+
+    on_start = {
+      #redeclare previous wars where needed
+      # start event chain to check for black gate being under siege. Make sure this doesn't break if a battle happens on the black gate
+      # buffs will be renewed once again, possibly army spawned.
+
+      #frodo and sam to mordor. Make sure they are not converted to melkor
+    }
+
+    on_completion = {
+    }
+  }
+
+  lotr_frodo_destroys_ring = {  
+    icon = "task_conquest"
+
+    final = yes
+    
+    highlight = {
+      scope:province = {
+        OR = {
+          is_in_region = rhuvenlhad_region
+          is_in_region = calenardhon_region
+          is_in_region = anorien_region
+          is_in_region = ithilien_region
+          this = p:1021
+        }
+        exists = owner
+        controller = {
+          OR = {
+            country_culture_group = orcs_group
+            # AND = {
+            #   exists = overlord
+            #   overlord = {
+            #     country_culture_group = orcs_group
+            #   }
+            # }
+          }
+        }
+      }
+    }
+
+    potential = {
+    }
+
+    requires = { 
+      lotr_distract_sauron 
+    } 
+
+    allow = {
+      has_variable = black_gate_sieged_long_enough
+      NOT = {
+        any_province = {
+          OR = {
+            is_in_region = rhuvenlhad_region
+            is_in_region = calenardhon_region
+            is_in_region = anorien_region
+            is_in_region = ithilien_region
+          }
+          exists = owner
+          controller = {
+            OR = {
+              country_culture_group = orcs_group
+              # AND = {
+              #   exists = overlord
+              #   overlord = {
+              #     country_culture_group = orcs_group
+              #   }
+              # }
+            }
+          }
+        }
+      }
+      p:1021 = {
+        OR = {
+          NOT = {
+            exists = owner
+            controller = {
+              country_culture_group = orcs_group
+            }
+          }
+          has_siege = yes
+        }
+      }
+    }
+
+    on_start = {
+    }
+
+    on_completion = {
+      #kill sauron and nazghul
+      #disable sauron events (converting countries, possibly others?)
+      #option to end wars given to player (this would end them all, also AI vs AI)
+        #choose between ending all wars or just the ones vs non-orc
+
+      #massive maluses for all orc countries "sauron is defeated"
+      # -80% morale
+      # -40% discipline ?
+      # 20 years +
+      # revert orc growth bonuses (infighting)
+
+      # slightly weaker malus for all melkor countries
+      # 40% morale
+      # -20% discipline
+      # 20 years +
+      # population unhappiness, possibly people converting (back) to ritualism (latter probably only while not at war anymore?)
+      # malus removed by event to convert the country back to ritualism or ERU (latter exclusive culture groups that didn't have ritualism)
+
+
+
+      #fellowship to player
+      #send people home after a few month
+    }
+  }
+	
+
+############################# end #####################################
+	
+	
+}
