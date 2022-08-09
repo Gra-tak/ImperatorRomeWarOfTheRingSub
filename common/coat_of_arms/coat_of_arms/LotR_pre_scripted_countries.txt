@@ -7,6 +7,18 @@
 #		color2 = rgb { 239 209 160} #TOP COLOUR
 #	}
 
+MOR = {
+	pattern = "pattern_solid.tga"
+	color1 = "pitch_black"
+	color2 = "flame_red"
+	
+	colored_emblem = {
+		texture = "ce_mordor.dds"
+		color1 = "flame_red"
+		color2 = "offwhite"
+	}
+}
+
 RHOVANION_FLAG = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 25 75 25}
@@ -508,22 +520,6 @@ ERY = {
 	}
 }
 
-MOR = {
-	pattern = "pattern_solid.tga"
-	color1 = "pitch_black"
-	color2 = "flame_red"
-
-	colored_emblem = {
-		texture = "ce_mordor_eye_4.dds"
-		color1 = "flame_red"
-		instance = { rotation = 0 scale = { 0.5 0.5 } position = { 0.5 0.15 } }
-	}
-	colored_emblem = {
-		texture = "ce_mordor_01.dds"
-		color1 = "offwhite"
-		instance = { rotation = 0 scale = { 0.65 0.65 } position = { 0.5 0.6 } }
-	}
-}
 MOR_REVOLT = {
 	pattern = "pattern_solid.tga"
 	color1 = "pitch_black"
