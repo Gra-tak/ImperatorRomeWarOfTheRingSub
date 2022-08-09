@@ -187,3 +187,58 @@ event_marriage = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/aragorn_arwen.dds"
 }
+
+event_barad_dur_destroyed = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/barad_dur_destroyed.dds"
+}
+
+event_black_gate_destroyed = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/black_gate_destroyed.dds"
+}
+
+event_destruction_dol_guldur = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/destruction_dol_guldur.dds"
+}
+
+event_minasMorgul = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/minasMorgul.dds"
+}
+
+event_battle_black_gate = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/battle_black_gate.dds"
+}
+
+event_hobbit_after_battle = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/hobbit_after_battle.dds"
+}
+
+event_light_of_earendil = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/light_of_earendil.dds"
+}
+
+event_moria_entrance = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/moria_entrance.dds"
+}
+
+event_council_of_elrond = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/council_of_elrond.dds"
+}
+
+event_traval_ruin = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/traval_ruin.dds"
+}
+
+event_nazgul_riders = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/nazgul_riders.dds"
+}

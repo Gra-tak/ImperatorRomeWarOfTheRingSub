@@ -54,7 +54,7 @@ lotr_teardown_events.2 = {
   type = province_event
   title = lotr_teardown_events.2.t
   desc = lotr_teardown_events.2.desc
-  picture = event_marriage
+  picture = event_barad_dur_destroyed
 
   trigger = {}
 
@@ -116,7 +116,7 @@ lotr_teardown_events.3 = {
   type = province_event
   title = lotr_teardown_events.3.t
   desc = lotr_teardown_events.3.desc
-  picture = event_marriage
+  picture = event_black_gate_destroyed
 
   trigger = {}
 
@@ -175,7 +175,7 @@ lotr_teardown_events.4 = {
   type = province_event
   title = lotr_teardown_events.4.t
   desc = lotr_teardown_events.4.desc
-  picture = event_marriage
+  picture = event_minasMorgul
 
   trigger = {}
 
@@ -234,7 +234,7 @@ lotr_teardown_events.5 = {
   type = province_event
   title = lotr_teardown_events.5.t
   desc = lotr_teardown_events.5.desc
-  picture = event_marriage
+  picture = event_destruction_dol_guldur
 
   trigger = {}
 

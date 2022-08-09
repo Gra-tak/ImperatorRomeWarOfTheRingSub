@@ -23,7 +23,8 @@
         this = c:SHI
       }
     }
-    current_date > 3003.1.1
+    # current_date > 3002.1.1 #year after bilbos birthday. It starts much layer in the non-movie timeline, though it is to be expected to take the player some time to take the mission
+    religion = iluvatarism
 	}
 
 	on_potential = {
@@ -34,8 +35,103 @@
 	}
 
 	on_start = {
+    save_scope_as = frodo_protector_country
 		start_mission_ai_effect = yes
     #create hobbits and Gandalf in the shire with olympic_competitor (rename the loc to fellowship. This should prevent many stuff that should not happen, like jobs, citizenship etc)
+    c:SHI = {
+      create_character = {
+        first_name="Frodo"
+        family_name="Baggins"
+        age=34
+        culture="harfoot"
+        religion="iluvatarism"
+        no_stats=yes
+        add_martial=3
+        add_charisma=12
+        add_finesse=12
+        add_zeal=12
+        no_traits=yes
+        force_add_trait="halfling"
+        force_add_trait="olympic_competitor"
+        save_scope_as = frodo
+        dna="W9xb3JNYk1jK0srSAncCdwJ4AngE0ATQAV8BXwKNAo0CbQJtApACkAJnAmcDmgOaACIAIgJoAmgCawJrAnoCegKAAoACfwJ/AoACgAOvA68CcQJxAoQChAJrAmsBbQFtAn4CfgKGAoYChgKGAo4CjgKRApECegJ6AWABYAJ/An8CcwJzA6EDoQJsAmwCeAJ4ApQClAKWApYClAKUAn0CfQJuAm4EwATAAnoCegOhA6ECegJ6AmkCaQKIAogCjAKMBLoEugJmAmYEtgS2AmoCagJtAm0CggKCAnICcgKDAoMCdQJ1An8CfwGyAbIApgCmAPkA+QEUARQCpgKmAS0BLQFmAWYANgA2AAIAAgEvAS8BdAF0AEcARwB/AH8AQQBBAOoA6gCDAIMARgBGAO8A7wApACkD3QPdAUIBQgB/AH8BFQEVAHMAcwBYAFgBTgFOAtUC1QERAREATwBPAVYBVgAKAAoDFQMVAQoBCgCHAIcGmQaZAH8AfwNiA2IXKhcqAOYA5g2fDZ8VHRUdHpcelwAAAAAAAAAAAAAAAAIbAhs=" #alright
+        add_to_list = fellowship
+        add_to_list = frodoSam
+      }
+      create_character = {
+        first_name="Samwise"
+        family_name="Gamgee"
+        age=22
+        culture="harfoot"
+        religion="iluvatarism"
+        no_stats=yes
+        add_martial=1
+        add_charisma=8
+        add_finesse=8
+        add_zeal=16
+        no_traits=yes
+        force_add_trait="halfling"
+        force_add_trait="olympic_competitor"
+        save_scope_as = sam
+        dna="lreWt49Sj1KYlpiWAoECgQJtAm0ChQKFApICkgKQApAClgKWAo8CjwJpAmkBXAFcAmwCbAJ1AnUCdQJ1Am0CbQJoAmgCmAKYBLUEtQJmAmYCmAKYApUClQKXApcCggKCAnMCcwKVApUCcAJwAn8CfwJxAnECfwJ/AWYBZgJtAm0CiQKJAmYCZgJpAmkCcwJzAoQChAFhAWECfAJ8AoYChgJrAmsCaQJpAoQChAKZApkCdgJ2AnoCegJ/An8BVwFXApcClwKPAo8CiwKLAooCigKEAoQCfwJ/AoACgAKHAocDsgOyAnoCegG7AbsATQBNACkAKQAMAAwAsACwArgCuAFjAWMAdAB0ArACsAFIAUgDSgNKAC4ALgB/AH8A5wDnAUwBTAAvAC8CkwKTAIQAhAKXApcAvgC+AJUAlQB/AH8AWABYAuYC5gEeAR4AuAC4AU4BTgKGAoYArgCuAMwAzABeAF4BagFqAPIA8gFhAWEB4wHjAH8AfwQOBA4X4RfhAHQAdA1ADUAVgxWDHuke6QAAAAAAAAAAAAAAAAKTApM=" #good one by chance
+        add_to_list = fellowship
+        add_to_list = frodoSam
+      }
+      create_character = {
+        first_name="Meriadoc 'Merry'"
+        family_name="Brandybuck"
+        age=20
+        culture="harfoot"
+        religion="iluvatarism"
+        no_stats=yes
+        add_martial=5
+        add_charisma=12
+        add_finesse=8
+        add_zeal=4
+        no_traits=yes
+        force_add_trait="halfling"
+        force_add_trait="olympic_competitor"
+        save_scope_as = merry
+        add_to_list = fellowship
+        add_to_list = fellowshipOtherHobbits
+      }
+      create_character = {
+        first_name="Peregrin 'Pippin'"
+        family_name="Took"
+        age=16
+        culture="harfoot"
+        religion="iluvatarism"
+        no_stats=yes
+        add_martial=5
+        add_charisma=12
+        add_finesse=0
+        add_zeal=4
+        no_traits=yes
+        force_add_trait="halfling"
+        force_add_trait="olympic_competitor"
+        save_scope_as = pippin
+        dna="qISohKNUo1SBhoGGApcClwJmAmYAHgAeAnQCdAJtAm0ChgKGAmwCbAJrAmsAGwAbAokCiQKLAosChQKFAooCigOkA6QCjgKOApQClAOiA6ICZgJmApcClwKVApUCcQJxAnECcQJqAmoCdAJ0AngCeAJvAm8CbwJvApYClgKGAoYCcgJyAmgCaAFVAVUChgKGAmsCawJtAm0CfAJ8Am4CbgJvAm8CgwKDAoUChQKSApICcAJwAmcCZwKIAogCjAKMAo8CjwJxAnEBVQFVACYAJgJyAnICewJ7AogCiAJyAnICZgJmAVABUAHwAfABKwErAG4AbgCgAKAAUQBRAL8AvwKbApsBUgFSAREBEQCqAKoExgTGANgA2AB/AH8AJwAnAIQAhADYANgA0wDTAPMA8wC/AL8DkgOSAV8BXwB/AH8BAwEDAPgA+AAYABgAiwCLAT4BPgBcAFwAMwAzAAIAAgDBAMEAKAAoAQABAAEGAQYA5QDlAH8AfwQ6BDoX/xf/ACQAJA3jDeMVohWiHj4ePgAAAAAAAAAAAAAAAAKlAqU=" #not really
+        add_to_list = fellowship
+        add_to_list = fellowshipOtherHobbits
+      }
+      create_character = {
+        first_name="Gandalf"
+        family_name="the Grey"
+        age=2800
+        culture="maia"
+        religion="iluvatarism"
+        no_stats=yes
+        add_martial=10
+        add_charisma=25
+        add_finesse=25
+        add_zeal=25
+        no_traits=yes
+        force_add_trait="maia"
+        force_add_trait="olympic_competitor"
+        save_scope_as = gandalf
+        # add_to_list = fellowship #not yet
+      }
+    }
 	}
 
 	on_abort = {
@@ -53,7 +149,7 @@
 	
 	lotr_frodo_start = {	
 		icon = "task_conquest"
-  	# duration = 365
+  	duration = 365
 		
     highlight = {
     	scope:province = {
@@ -80,15 +176,47 @@
 		}
 
 		on_start = {
+      #gandalf moves to isengard, hobbits to CAR (or player if CAR does not exist). Notify eru countries
+      every_country = {
+        limit = {
+          religion = iluvatarism
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.10
+        }
+      }
+
       #mordor declares war on you, nazghul army spawned between shire and bree. mordor gets "whips of sauron" army speed, morale and discipline bonuses
+      c:MOR = {
+        trigger_event = {
+          id = lotr_frodos_mission_events.100
+          days = { 5 10 } 
+        }
+      }
 
       #remaining orcs in the north declare war
+      every_country = {
+        limit = {
+          OR = { #orcs/goblins in the north
+            this = c:XKX
+            this = c:XXY
+            this = c:XXP
+            this = c:XXQ
+          }
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.110
+          days = { 100 150 } 
+        }
+      }
 
-      #gandalf moves to isengard, hobbits to CAR (or player if CAR does not exist)
 
 		}
 
 		on_completion = {
+      trigger_event = {
+        id = lotr_frodos_mission_events.11
+      }
     }
   }
 
@@ -119,9 +247,6 @@
 
     requires = { lotr_frodo_start } 
 
-    # bypass = {
-    # }
-
     allow = {
       NOT = {
         any_province = {
@@ -147,13 +272,25 @@
     }
 
     on_completion = {
-      #move hobbits and gandalf to imladris, possibly create copies of Aragorn, Legolas, Gimli, Boromir
+      scope:gandalf = {
+        add_to_list = fellowship
+      }
+      #move hobbits and gandalf to imladris,  TODO: possibly create copies of Aragorn, Legolas, Gimli, Boromir
+      trigger_event = {
+        id = lotr_frodos_mission_events.20
+      }
+
+      c:MOR = {
+        trigger_event = {
+          id = lotr_frodos_mission_events.101
+        }
+      }
     }
   }
 
   lotr_council_of_elrond = {  
     icon = "task_conquest"
-    # duration = 365
+    duration = 365
     
     highlight = {
       scope:province = {
@@ -194,9 +331,11 @@
       #orcs will now declare war on all neighboring eru contries, possibly some specific like balins colony, gondor
 
       #saruman attacks rohan and the player (if he is evil). Whips of saruman buff
+      #picture = event_council_of_elrond
     }
 
     on_completion = {
+      #picture = etraval_ruin
     }
   }
 
@@ -274,6 +413,7 @@
 
     on_completion = {
       #move fellowship to lorien
+      #pciture = moria_entrance
     }
   }
 
@@ -362,6 +502,7 @@
 
     on_completion = {
       #move fellowship to rohan
+      #picture = event_orc_wargriders
     }
   }
 
@@ -403,11 +544,14 @@
       # 2 month later on neighboring eru countries
 
       #buffs for orcs are initially increased but will decay slightly with time
+
+      #picture = light_of_earendil
     }
 
     on_completion = {
       #move sam and frodo to ithilien rangers, rest to gondor or rohan
       #kill boromir (might actually kill the real one unless player is gondor)
+      #picture = city_siege
     }
   }
 
@@ -445,11 +589,13 @@
 
     on_start = {
       #same as lorien
+      #picture = event_rohan_riders
     }
 
     on_completion = {
       #move sam and frodo to ithilien rangers, rest to gondor or rohan
       #kill boromir (might actually kill the real one unless player is gondor)
+      #picture = city_siege
     }
   }
 
@@ -525,6 +671,7 @@
     }
 
     on_start = {
+      #picture = hobbit_after_battle
     }
 
     on_completion = {
@@ -559,6 +706,7 @@
     }
 
     on_start = {
+      # picture = throneroom
       #redeclare previous wars where needed
       # start event chain to check for black gate being under siege. Make sure this doesn't break if a battle happens on the black gate
       # buffs will be renewed once again, possibly army spawned.
@@ -567,6 +715,8 @@
     }
 
     on_completion = {
+      #picture = event_battle_black_gate
+      #All that is left now, is to fight and hope for frodo
     }
   }
 
@@ -647,6 +797,8 @@
     }
 
     on_completion = {
+      # picture = event_one_ring_lava
+
       #kill sauron and nazghul
       #disable sauron events (converting countries, possibly others?)
       #option to end wars given to player (this would end them all, also AI vs AI)

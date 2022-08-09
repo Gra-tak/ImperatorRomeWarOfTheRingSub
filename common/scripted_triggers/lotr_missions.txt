@@ -1,0 +1,40 @@
+﻿countries_sauron_wants_attacked = {
+  religion = iluvatarism
+  is_subject = no
+  NOT = { is_at_war_with = ROOT }
+  OR = {
+    THIS = c:GON
+    THIS = c:ROH
+    THIS = c:LOR
+    #balins colony though I don't know how
+    
+    #neighbors
+    any_owned_province = {
+      any_neighbor_province = {
+        owner = ROOT
+      }
+    }
+  }
+}
+
+in_range_of_saurons_call = {
+	capital_scope = {
+		NOR = {
+			is_in_region = cennacatt_region
+			is_in_region = sara_bask_region
+			is_in_region = sirayn_region
+			is_in_region = harshandatt_region
+			# is_in_region = 
+			# is_in_region = 
+			# is_in_region = 
+			# is_in_region = 
+			# is_in_region = 
+		}
+	}
+}
+
+orcs_that_hear_saurons_call = {
+	is_subject = no
+	country_culture_group = orcs_group
+	in_range_of_saurons_call = yes
+}

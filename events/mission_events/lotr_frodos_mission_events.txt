@@ -1,0 +1,377 @@
+﻿namespace = lotr_frodos_mission_events
+
+# lotr_frodos_mission_events.1 = {
+#   type = country_event
+#   hidden = yes
+#   trigger = {
+#   }
+
+#   immediate = {
+
+#   }
+#   option = {
+#     name = "OK"
+#   }
+# }
+
+#hobbits start
+lotr_frodos_mission_events.10 = {
+  type = country_event
+  title = lotr_frodos_mission_event.10.t
+  desc = lotr_frodos_mission_event.10.desc
+  picture = event_bree_pipeweed
+  trigger = {
+   
+  }
+  immediate = {
+    if = {
+      limit = { this = scope:frodo_protector_country }
+      every_in_list = {
+        list = fellowship
+        if = {
+          limit = { exists = c:CAR }
+          move_country = c:CAR
+        }
+        else = {
+          move_country = scope:frodo_protector_country
+        }
+      }
+      scope:gandalf = {
+        if = {
+          limit = { exists = c:XVX }
+          move_country = c:XVX
+          c:XVX = {
+            imprison = {
+              target = scope:gandalf
+            }
+          }
+        }
+        else = {
+          move_country = scope:frodo_protector_country
+        }
+      }
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_event.10.a
+  }
+}
+
+#player told that hobbits may now reach imladris (soon)
+lotr_frodos_mission_events.11 = {
+  type = country_event
+  title = lotr_frodos_mission_event.11.t
+  desc = lotr_frodos_mission_event.11.desc
+  picture = event_nazgul_riders
+  trigger = {
+   
+  }
+  option = {
+    name = lotr_frodos_mission_event.11.a
+  }
+}
+
+#reaching imladris
+lotr_frodos_mission_events.20 = {
+  type = country_event
+  title = lotr_frodos_mission_event.20.t
+  desc = lotr_frodos_mission_event.20.desc
+  picture = event_imladris
+  trigger = {
+   
+  }
+  option = {
+    name = lotr_frodos_mission_event.20.a
+    c:XVX = {
+      release_prisoner = {
+        target = scope:gandalf
+      }
+    }
+    every_in_list = {
+      list = fellowship
+      if = {
+        limit = { exists = c:IML }
+        move_country = c:IML
+      }
+      else = {
+        move_country = scope:frodo_protector_country
+      }
+    }
+  }
+}
+
+lotr_frodos_mission_events.100 = {
+  type = country_event
+  title = lotr_frodos_mission_event.100.t
+  desc = lotr_frodos_mission_event.100.desc
+  picture = event_one_ring_held
+  trigger = {
+   
+  }
+  immediate = {
+  }
+  option = {
+    name = lotr_frodos_mission_event.100.a
+    declare_war_with_wargoal = {
+      war_goal = imperial_conquest_wargoal
+      target = scope:frodo_protector_country
+    }
+    #this event might be called again later if the war alrady ended for some reason. That won't spawn another legion though
+    if = {
+      limit = { 
+        NOT = { has_variable = ring_war_started } 
+        is_ai = yes
+      }
+      set_variable = {
+        name = ring_war_started
+      }
+      add_country_modifier = {
+        name = whips_of_sauron
+        duration = 365
+      }
+      set_variable = {
+        name = number_of_orcs
+        value = 0
+      }
+      every_owned_province = {
+        every_pops_in_province = {
+          if = {
+            limit = { pop_culture_group = orcs_group }
+            ROOT = {
+              change_variable = {
+                name = number_of_orcs
+                add = 1
+              }
+            }
+          }
+        }
+      }
+      create_character = {
+        first_name="Nazgûls"
+        family_name="The Nine"
+        birth_date=1.1.5
+        culture="black_numenorean"
+        religion="melkorism"
+        no_stats=yes
+        add_martial=20
+        add_charisma=11
+        add_finesse=5
+        add_zeal=8
+        no_traits=yes
+        force_add_trait="orom"
+        force_add_trait="nazgul"
+        force_add_trait="legendary_magic_user"
+        force_add_trait="intelligent"
+        force_add_trait="proud"
+        force_add_trait="prince_of_numenor"
+        dna="E/sT+xUNFQ260brRAowCjAKXApcCvwK/AjUCNQKPAo8CkQKRAnQCdAKNAo0CjAKMAlsCWwLsAuwCUwJTAoECgQKWApYCcwJzAm4CbgLWAtYCcQJxApYClgKKAooCkwKTArACsAKSApICZgJmAoICggKFAoUCmgKaApUClQJMAkwChAKEAokCiQJ3AncCcQJxAkoCSgFgAWADqAOoAnkCeQJwAnACegJ6AnkCeQKEAoQCfgJ+AoICggJ3AncCbQJtAncCdwS7BLsCbQJtAmACYAKUApQCZgJmAmkCaQJuAm4CdQJ1ApgCmAIAAgAADwAPAJcAlwCAAIAA9QD1AMgAyABNAE0A7wDvAR4BHgBNAE0A7gDuAKwArAB/AH8AEwATAMAAwAC4ALgAbQBtAFMAUwD8APwAgQCBAIYAhgB/AH8AhgCGADcANwD3APcBOQE5AGUAZQABAAEBVwFXACEAIQCcAJwBSgFKAAEAAQBCAEIMAQWsAH8AfwtzC3P/jf+N/yr/Kv8J/wkU9RT1/8X/xf8h/yH/1P/UAAAAAAAAAAA="
+        save_scope_as = witch_king
+      }
+      set_variable = {
+        name = ring_searching_witch_king
+        value = scope:witch_king
+      }
+      capital_scope.governorship = {
+        if = {
+          limit = { has_legion_trigger = yes }
+          disband_legion = yes
+        }
+        raise_legion = {
+          add_commander = witch_king
+          create_unit = {
+            name = "Nazgûl searchers"
+            location = p:1599
+            sub_unit = supply_train
+            save_scope_as = legion_scope
+          }
+        }
+      }
+      set_variable = {
+        name = ring_searching_legion
+        value = scope:legion_scope
+      }
+      while = {
+        limit = {
+          var:number_of_orcs > 25
+        }
+        scope:legion_scope = {
+          add_subunit = orc_infantry
+          add_subunit = orc_infantry
+          add_subunit = orc_infantry
+          add_subunit = orc_infantry
+          add_subunit = uruk_infantry
+          add_subunit = uruk_infantry
+          add_subunit = uruk_infantry
+          add_subunit = troll_infantry
+        }
+        change_variable = {
+          name = number_of_orcs
+          subtract = 50
+        }
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_event.100.b
+    ai_chance = {
+      factor = 0
+    }
+  }
+}
+
+lotr_frodos_mission_events.101 = {
+  type = country_event
+  title = lotr_frodos_mission_event.101.t
+  desc = lotr_frodos_mission_event.101.desc
+  picture = event_nazgul_riders
+  trigger = {
+   
+  }
+  immediate = {
+    if = {
+      limit = { is_ai = yes }
+      var:ring_searching_witch_king = {
+        death = { }
+      }
+      capital_scope.governorship = {
+        if = {
+          limit = { has_legion_trigger = yes }
+          disband_legion = yes
+        }
+      }
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_event.101.a
+  }
+}
+
+lotr_frodos_mission_events.102 = {
+  type = country_event
+  title = lotr_frodos_mission_event.102.t
+  desc = lotr_frodos_mission_event.102.desc
+  picture = event_orcs_orcs
+  trigger = {
+   
+  }
+  option = {
+    name = lotr_frodos_mission_event.102.a
+    every_country = {
+      limit = {
+        countries_sauron_wants_attacked = yes
+      }
+      ROOT = {
+        declare_war_with_wargoal = {
+          war_goal = imperial_conquest_wargoal
+          target = PREV
+        }
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_event.102.b
+    ai_chance = {
+      factor = 0
+    }
+  }
+}
+
+lotr_frodos_mission_events.110 = {
+  type = country_event
+  title = lotr_frodos_mission_event.110.t
+  desc = lotr_frodos_mission_event.110.desc
+  picture = event_barad_dur_eye
+  trigger = {
+   
+  }
+  immediate = {
+  }
+  option = {
+    name = lotr_frodos_mission_event.110.a
+    declare_war_with_wargoal = {
+      war_goal = imperial_conquest_wargoal
+      target = scope:frodo_protector_country
+    }
+    #this event might be called again later if the war alrady ended for some reason.
+    if = {
+      limit = { 
+        NOT = { has_variable = ring_war_started } 
+        is_ai = yes
+      }
+
+      set_variable = {
+        name = ring_war_started
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_event.110.b
+    add_opinion = {
+      target = c:MOR
+      modifier = mortal_enemies
+    }
+    c:MOR = {
+      add_opinion = {
+        target = PREV
+        modifier = mortal_enemies
+      }
+    }
+    ai_chance = {
+      factor = 0
+    }
+  }
+}
+
+
+lotr_frodos_mission_events.112 = {
+  type = country_event
+  title = lotr_frodos_mission_event.112.t
+  desc = lotr_frodos_mission_event.112.desc
+  picture = event_barad_dur_eye
+  trigger = {
+   
+  }
+  option = {
+    name = lotr_frodos_mission_event.112.a
+    every_country = {
+      limit = {
+        countries_sauron_wants_attacked = yes
+      }
+      ROOT = {
+        declare_war_with_wargoal = {
+          war_goal = imperial_conquest_wargoal
+          target = PREV
+        }
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_event.112.b
+    add_opinion = {
+      target = c:MOR
+      modifier = mortal_enemies
+    }
+    c:MOR = {
+      add_opinion = {
+        target = PREV
+        modifier = mortal_enemies
+      }
+    }
+    ai_chance = {
+      factor = 0
+    }
+  }
+}
+
