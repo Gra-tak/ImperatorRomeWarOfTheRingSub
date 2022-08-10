@@ -9,158 +9,158 @@
 	}
 }
 
-is_in_arnor = { #Only used to determine if lesser dunedain become Arnorians, Gondorians or Banadunaim over time
-	OR = {
-		region = angmar_region
-		region = forodwaith_region
-		region = forochel_region
-		region = uilad_region
-		region = mintyrnath_region
-		region = mithlond_region
-		region = forlindon_region
-		region = harlindon_region
-		region = pend_hithaeglir_region
-		region = rhudaur_region
-		region = arthedain_region
-		region = fortund_region
-		region = siragale_region
-		region = tawar_norndor_region
-		region = numeriador_region
-		region = minhiriath_region
-		region = eregion_region
-	}
-}
+# is_in_arnor = { #Only used to determine if lesser dunedain become Arnorians, Gondorians or Banadunaim over time
+# 	OR = {
+# 		region = angmar_region
+# 		region = forodwaith_region
+# 		region = forochel_region
+# 		region = uilad_region
+# 		region = mintyrnath_region
+# 		region = mithlond_region
+# 		region = forlindon_region
+# 		region = harlindon_region
+# 		region = pend_hithaeglir_region
+# 		region = rhudaur_region
+# 		region = arthedain_region
+# 		region = fortund_region
+# 		region = siragale_region
+# 		region = tawar_norndor_region
+# 		region = numeriador_region
+# 		region = minhiriath_region
+# 		region = eregion_region
+# 	}
+# }
 
-is_in_gondor = { #Only used to determine if lesser dunedain become Arnorians, Gondorians or Banadunaim over time
-	OR = {
-		region = gorgoroth_region
-		region = nurn_region
-		region = anorien_region
-		region = ithilien_region
-		region = lebennin_region
-		region = uvanwaith_region
-		region = harondor_region
-		region = calenardhon_region
-		region = dyr_fladwen_region
-		region = rhuvenlhad_region
-		region = anduin_region
-		region = eryn_galen_region
-		region = dor_rhunen_region
-		region = dorwinion_region
-		region = duirrogwin_region
-		region = rhovanion_region
-		region = dacranamel_region
-		region = haerhun_region
-		region = menelothriand_region
-		region = taur_romen_region
-		region = forrhun_region
-		region = dyr_region
-		region = logathavuld_region
-		region = dor_wathui_region
-		region = belfalas_region
-		region = anfalas_region
-		region = hairaverkien_region
-		region = lamedon_region
-		region = andrast_region
-		region = druwaith_region
-		region = enedhwaith_region
-		region = amruneru_region
-		region = lorien_region
-	}
-}
+# is_in_gondor = { #Only used to determine if lesser dunedain become Arnorians, Gondorians or Banadunaim over time
+# 	OR = {
+# 		region = gorgoroth_region
+# 		region = nurn_region
+# 		region = anorien_region
+# 		region = ithilien_region
+# 		region = lebennin_region
+# 		region = uvanwaith_region
+# 		region = harondor_region
+# 		region = calenardhon_region
+# 		region = dyr_fladwen_region
+# 		region = rhuvenlhad_region
+# 		region = anduin_region
+# 		region = eryn_galen_region
+# 		region = dor_rhunen_region
+# 		region = dorwinion_region
+# 		region = duirrogwin_region
+# 		region = rhovanion_region
+# 		region = dacranamel_region
+# 		region = haerhun_region
+# 		region = menelothriand_region
+# 		region = taur_romen_region
+# 		region = forrhun_region
+# 		region = dyr_region
+# 		region = logathavuld_region
+# 		region = dor_wathui_region
+# 		region = belfalas_region
+# 		region = anfalas_region
+# 		region = hairaverkien_region
+# 		region = lamedon_region
+# 		region = andrast_region
+# 		region = druwaith_region
+# 		region = enedhwaith_region
+# 		region = amruneru_region
+# 		region = lorien_region
+# 	}
+# }
 
-is_in_harad = { #Only used to determine if lesser dunedain become Arnorians, Gondorians or Banadunaim over time
-	OR = {
-		region = umbar_region
-		region = nurad_region
-		region = khand_region
-		region = haradwaith_region
-		region = mardruak_region
-		region = tulwang_region
-		region = bellakar_region
-		region = an_balkumagan_region
-		region = harnendor_region
-		region = bozisha_miraz_region
-		region = sirayn_region
-		region = sara_bask_region
-		region = harshandatt_region
-		region = olyas_kris_region
-		region = khailuza_region
-		region = khey_sart_region
-		region = kargagis_ahar_region
-		region = lu_tyr_su_region
-		region = orgothrath_region
-		region = kykurian_kyn_region
-		region = khurgunin_region
-		region = yopi_region
-		region = nikkea_region
-		region = gathgykarkan_region
-	}
-}
+# is_in_harad = { #Only used to determine if lesser dunedain become Arnorians, Gondorians or Banadunaim over time
+# 	OR = {
+# 		region = umbar_region
+# 		region = nurad_region
+# 		region = khand_region
+# 		region = haradwaith_region
+# 		region = mardruak_region
+# 		region = tulwang_region
+# 		region = bellakar_region
+# 		region = an_balkumagan_region
+# 		region = harnendor_region
+# 		region = bozisha_miraz_region
+# 		region = sirayn_region
+# 		region = sara_bask_region
+# 		region = harshandatt_region
+# 		region = olyas_kris_region
+# 		region = khailuza_region
+# 		region = khey_sart_region
+# 		region = kargagis_ahar_region
+# 		region = lu_tyr_su_region
+# 		region = orgothrath_region
+# 		region = kykurian_kyn_region
+# 		region = khurgunin_region
+# 		region = yopi_region
+# 		region = nikkea_region
+# 		region = gathgykarkan_region
+# 	}
+# }
 
-is_in_cold climate = { #determines whether a caster can cast the winter storm spells
-	OR = {
-		is_in_area = carn_dum_area
-		is_in_area = gundabad_area
-		is_in_area = nan_angmar_area
-		is_in_area = ram_duath_area
-		is_in_area = everdalf_area
-		is_in_area = rast_losnaeth_area
-		is_in_area = lindalf_area
-		is_in_area = lodalf_area
-		is_in_area = linladwen_area
-		is_in_area = rammas_forod_area
-		is_in_area = nimbrith_forochel_area
-		is_in_area = jarvimaa_area
-		is_in_area = sarch_nia_linquelie_area
-		is_in_area = talath_oiohelka_area
-		is_in_area = forovirkain_area
-		is_in_area = goldladwen_area
-		is_in_area = talath_uichel_area
-		is_in_area = durganla_area
-		is_in_area = dyr_uvadan_area
-		is_in_area = dyr_erib_area
-		is_in_area = uilad_rhunen_area
-		is_in_area = annui_uilad_area
-		is_in_area = pinnath_tereg_area
-		is_in_area = pinnath_neryth_area
-		is_in_area = pinnath_aegring_area
-		is_in_area = rhudaur_area
-		is_in_area = en_engladil_area
-		is_in_area = caranduin_area
-		is_in_area = breriondor_area
-		is_in_area = emyn_sul_area
-		is_in_area = nan_turnath_area
-		is_in_area = nan_arnen_area
-		is_in_area = tyrn_formen_area
-		is_in_area = talath_muil_area
-		is_in_area = rammas_formen_area
-		is_in_area = emyn_gelin_area
-		is_in_area = emyn_uial_area
-		is_in_area = formenyar_area
-		is_in_area = emyn_foruial_area
-		is_in_area = gondpinnath_area
-		is_in_area = ramluin_area
-		is_in_area = nan_i_naugrim_area
-		is_in_area = helchambenn_area
-		is_in_area = imladorn_area
-		is_in_area = caras_celairnen_area
-	}
-}
+# is_in_cold_climate = { #determines whether a caster can cast the winter storm spells
+# 	OR = {
+# 		is_in_area = carn_dum_area
+# 		is_in_area = gundabad_area
+# 		is_in_area = nan_angmar_area
+# 		is_in_area = ram_duath_area
+# 		is_in_area = everdalf_area
+# 		is_in_area = rast_losnaeth_area
+# 		is_in_area = lindalf_area
+# 		is_in_area = lodalf_area
+# 		is_in_area = linladwen_area
+# 		is_in_area = rammas_forod_area
+# 		is_in_area = nimbrith_forochel_area
+# 		is_in_area = jarvimaa_area
+# 		is_in_area = sarch_nia_linquelie_area
+# 		is_in_area = talath_oiohelka_area
+# 		is_in_area = forovirkain_area
+# 		is_in_area = goldladwen_area
+# 		is_in_area = talath_uichel_area
+# 		is_in_area = durganla_area
+# 		is_in_area = dyr_uvadan_area
+# 		is_in_area = dyr_erib_area
+# 		is_in_area = uilad_rhunen_area
+# 		is_in_area = annui_uilad_area
+# 		is_in_area = pinnath_tereg_area
+# 		is_in_area = pinnath_neryth_area
+# 		is_in_area = pinnath_aegring_area
+# 		is_in_area = rhudaur_area
+# 		is_in_area = en_engladil_area
+# 		is_in_area = caranduin_area
+# 		is_in_area = breriondor_area
+# 		is_in_area = emyn_sul_area
+# 		is_in_area = nan_turnath_area
+# 		is_in_area = nan_arnen_area
+# 		is_in_area = tyrn_formen_area
+# 		is_in_area = talath_muil_area
+# 		is_in_area = rammas_formen_area
+# 		is_in_area = emyn_gelin_area
+# 		is_in_area = emyn_uial_area
+# 		is_in_area = formenyar_area
+# 		is_in_area = emyn_foruial_area
+# 		is_in_area = gondpinnath_area
+# 		is_in_area = ramluin_area
+# 		is_in_area = nan_i_naugrim_area
+# 		is_in_area = helchambenn_area
+# 		is_in_area = imladorn_area
+# 		is_in_area = caras_celairnen_area
+# 	}
+# }
 
-arnor_area = {
-	AND = { #uses AND trigger to apply effects from spells like winter storms
-		region = uilad_region
-		region = rhudaur_region
-		region = arthedain_region
-		region = fortund_region
-		region = numeriador_region
-	}
-}
+# arnor_area = {
+# 	AND = { #uses AND trigger to apply effects from spells like winter storms
+# 		region = uilad_region
+# 		region = rhudaur_region
+# 		region = arthedain_region
+# 		region = fortund_region
+# 		region = numeriador_region
+# 	}
+# }
 
-anduin_mirkwood_area = {
-	AND = {
-		region = anduin_region
-		region = eryn_galen_region
-	}
-}
+# anduin_mirkwood_area = {
+# 	AND = {
+# 		region = anduin_region
+# 		region = eryn_galen_region
+# 	}
+# }

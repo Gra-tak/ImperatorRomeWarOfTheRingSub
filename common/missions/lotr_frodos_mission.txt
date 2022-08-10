@@ -456,10 +456,11 @@
     }
 
     on_completion = {
-      #move fellowship to lorien
+      #move fellowship to lorien.
       trigger_event = {
         id = lotr_frodos_mission_events.40
       }
+      #todo: kill gandalf the grey
     }
   }
 
@@ -553,7 +554,8 @@
       #move fellowship to rohan
       trigger_event = {
         id = lotr_frodos_mission_events.45
-      
+      }
+      #todo: kill gandalf the grey
     }
   }
 
@@ -629,6 +631,7 @@
     on_completion = {
       #move sam and frodo to ithilien rangers, rest to gondor or rohan
       #TODO kill boromir (might actually kill the real one unless player is gondor)
+      #todo: revive gandalf the white
       trigger_event = {
         id = lotr_frodos_mission_events.51
       }
@@ -705,6 +708,7 @@
     on_completion = {
       #move sam and frodo to ithilien rangers, rest to gondor or rohan
       #TODO kill boromir (might actually kill the real one unless player is gondor)
+      #todo: revive gandalf the white
       trigger_event = {
         id = lotr_frodos_mission_events.56
       }
@@ -875,7 +879,7 @@
       # start event chain to check for black gate being under siege. Make sure this doesn't break if a battle happens on the black gate
       #frodo and sam to mordor. Make sure they are not converted to melkor
       trigger_event = {
-        id = lotr_frodos_mission_events.60
+        id = lotr_frodos_mission_events.70
       }
     }
 
@@ -966,10 +970,7 @@
     }
 
     on_completion = {
-      # picture = event_one_ring_lava
-
       #kill sauron and nazghul
-      #disable sauron events (converting countries, possibly others?)
       #option to end wars given to player (this would end them all, also AI vs AI)
         #choose between ending all wars or just the ones vs non-orc
 
@@ -983,13 +984,15 @@
       # 40% morale
       # -20% discipline
       # 20 years +
-      # population unhappiness, possibly people converting (back) to ritualism (latter probably only while not at war anymore?)
+      # population unhappiness, 
+      #fellowship to player
+      trigger_event = {
+        id = lotr_frodos_mission_events.80
+      }
+      #todo:
+      # possibly people converting (back) to ritualism (latter probably only while not at war anymore?)
       # malus removed by event to convert the country back to ritualism or ERU (latter exclusive culture groups that didn't have ritualism)
 
-
-
-      #fellowship to player
-      #send people home after a few month
     }
   }
 	

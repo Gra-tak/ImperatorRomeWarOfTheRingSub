@@ -553,17 +553,20 @@ br_pops.7 = { #Orcs
 		remove_country_modifier = 20_orc
 		remove_country_modifier = 10_orc
 		set_local_variable = { name = orc_pops value = 0 }
-		every_owned_province = {
-			every_pops_in_province = {
-				limit = {
-					pop_culture_group = orcs_group
-				}
-				change_local_variable = { 
-					name = orc_pops
-					add = 1
-				}
-        	}
-    	}
+		if = {
+			limit = { NOT = { has_global_variable = ring_destroyed } }
+			every_owned_province = {
+				every_pops_in_province = {
+					limit = {
+						pop_culture_group = orcs_group
+					}
+					change_local_variable = { 
+						name = orc_pops
+						add = 1
+					}
+	    	}
+	  	}
+		}
 		set_local_variable = { name = total_pops value = 0 }
 		every_owned_province = {
 			every_pops_in_province = {   

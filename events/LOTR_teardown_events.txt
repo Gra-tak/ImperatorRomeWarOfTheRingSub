@@ -65,6 +65,12 @@ lotr_teardown_events.2 = {
       current_ruler = { add_popularity = popularity_medium }
       add_stability = 5
     }
+    every_country = {
+      limit = {
+        NOT = { THIS = PREV.OWNER }
+      }
+      trigger_event = { id = lotr_frodos_mission_events.95 days = 30 } #players are told
+    }
     ai_chance = { factor = 95 }
   }
   option = {
@@ -109,6 +115,12 @@ lotr_teardown_events.3 = {
     OWNER = {
       current_ruler = { add_popularity = popularity_medium }
       add_stability = 5
+    }    
+    every_country = {
+      limit = {
+        NOT = { THIS = PREV.OWNER }
+      }
+      trigger_event = { id = lotr_frodos_mission_events.96 days = 30 } #players are told
     }
     ai_chance = { factor = 95 }
   }

@@ -44,3 +44,19 @@ fury_of_sauron_0 = {
 	land_morale_modifier = -0.2
 	army_movement_speed = -0.2
 }
+
+sauron_is_defeated_orcs = {
+	land_morale_modifier = -0.8
+	discipline = -0.4
+	global_population_happiness = -0.2
+}
+
+sauron_is_defeated_melkor = {
+	land_morale_modifier = -0.4
+	discipline = -0.2
+	global_population_happiness = -0.2
+}
+
+sauron_is_defeated_eru = {
+	global_population_happiness = 0.2
+}
