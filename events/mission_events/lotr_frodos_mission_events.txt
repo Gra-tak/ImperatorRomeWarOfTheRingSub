@@ -964,12 +964,7 @@ lotr_frodos_mission_events.200 = {
   desc = lotr_frodos_mission_events.200.desc
   picture = event_barad_dur_eye
   trigger = {
-    NOT = {
-      has_opinion = {
-        modifier = mortal_enemies
-        target = c:MOR
-      }
-    }
+    not_mortal_enemy_with_sauron = yes
   }
   option = {
     name = lotr_frodos_mission_events.200.a
@@ -987,12 +982,7 @@ lotr_frodos_mission_events.201 = {
   desc = lotr_frodos_mission_events.200.desc
   picture = event_barad_dur_eye
   trigger = {
-    NOT = {
-      has_opinion = {
-        modifier = mortal_enemies
-        target = c:MOR
-      }
-    }
+    not_mortal_enemy_with_sauron = yes
   }
   option = {
     name = lotr_frodos_mission_events.200.a
@@ -1010,12 +1000,7 @@ lotr_frodos_mission_events.202 = {
   desc = lotr_frodos_mission_events.202.desc
   picture = event_barad_dur_eye
   trigger = {
-    NOT = {
-      has_opinion = {
-        modifier = mortal_enemies
-        target = c:MOR
-      }
-    }
+    not_mortal_enemy_with_sauron = yes
   }
   option = {
     name = lotr_frodos_mission_events.202.a
@@ -1033,12 +1018,7 @@ lotr_frodos_mission_events.203 = {
   desc = lotr_frodos_mission_events.202.desc
   picture = event_barad_dur_eye
   trigger = {
-    NOT = {
-      has_opinion = {
-        modifier = mortal_enemies
-        target = c:MOR
-      }
-    }
+    not_mortal_enemy_with_sauron = yes
   }
   option = {
     name = lotr_frodos_mission_events.202.a
@@ -1056,12 +1036,7 @@ lotr_frodos_mission_events.204 = {
   desc = lotr_frodos_mission_events.202.desc
   picture = event_barad_dur_eye
   trigger = {
-    NOT = {
-      has_opinion = {
-        modifier = mortal_enemies
-        target = c:MOR
-      }
-    }
+    not_mortal_enemy_with_sauron = yes
   }
   option = {
     name = lotr_frodos_mission_events.202.a
@@ -1079,12 +1054,7 @@ lotr_frodos_mission_events.205 = {
   desc = lotr_frodos_mission_events.205.desc
   picture = event_orcs_fleeing
   trigger = {
-    NOT = {
-      has_opinion = {
-        modifier = mortal_enemies
-        target = c:MOR
-      }
-    }
+    not_mortal_enemy_with_sauron = yes
   }
   option = {
     name = lotr_frodos_mission_events.205.a

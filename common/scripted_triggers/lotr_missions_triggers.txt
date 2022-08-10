@@ -90,3 +90,15 @@ sauron_rules = {
 		employer = C:MOR
 	}
 }
+
+not_mortal_enemy_with_sauron = {
+	OR = {
+		this = c:MOR
+    NOT = {
+      has_opinion = {
+        modifier = mortal_enemies
+        target = c:MOR
+      }
+    }
+	}
+}
