@@ -736,6 +736,7 @@
         controller = {
           OR = {
             country_culture_group = orcs_group
+            religion = melkorism
             # AND = {
             #   exists = overlord
             #   overlord = {
@@ -778,6 +779,7 @@
           controller = {
             OR = {
               country_culture_group = orcs_group
+              religion = melkorism
               # AND = {
               #   exists = overlord
               #   overlord = {
@@ -921,6 +923,7 @@
         controller = {
           OR = {
             country_culture_group = orcs_group
+            religion = melkorism
             # AND = {
             #   exists = overlord
             #   overlord = {
@@ -955,6 +958,7 @@
           controller = {
             OR = {
               country_culture_group = orcs_group
+              religion = melkorism
               # AND = {
               #   exists = overlord
               #   overlord = {
