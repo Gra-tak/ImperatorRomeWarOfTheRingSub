@@ -794,8 +794,10 @@
     }
 
     on_completion = {
-      every_country = {
-        remove_existing_sauron_fury = yes
+      hidden_effect = {
+        every_country = {
+          remove_existing_sauron_fury = yes
+        }
       }
       trigger_event = {
         id = lotr_frodos_mission_events.60
@@ -806,7 +808,7 @@
   lotr_distract_sauron = {  
     icon = "task_conquest"
 
-    # duration = 365
+    duration = 365
 
     highlight = {
       scope:province = {
@@ -947,7 +949,7 @@
             is_in_region = rhuvenlhad_region
             is_in_region = calenardhon_region
             is_in_region = anorien_region
-            is_in_region = ithilien_region
+            # is_in_region = ithilien_region
           }
           exists = owner
           controller = {

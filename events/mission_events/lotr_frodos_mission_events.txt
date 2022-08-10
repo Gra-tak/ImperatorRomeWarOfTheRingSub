@@ -210,14 +210,14 @@ lotr_frodos_mission_events.51 = {
 #leaving rohan
 lotr_frodos_mission_events.55 = {
   type = country_event
-  title = lotr_frodos_mission_events.50.t
-  desc = lotr_frodos_mission_events.50.desc
+  title = lotr_frodos_mission_events.55.t
+  desc = lotr_frodos_mission_events.55.desc
   picture = event_rohan_riders
   trigger = {
    
   }
   option = {
-    name = lotr_frodos_mission_events.50.a
+    name = lotr_frodos_mission_events.55.a
   }
 }
 
@@ -282,6 +282,13 @@ lotr_frodos_mission_events.70 = {
         move_country = scope:frodo_protector_country
       }
     }
+    set_variable = {
+      name = sauron_distracted_counter
+      value = 0
+    }
+    trigger_event = {
+      id = lotr_frodos_mission_events.71
+    }
   }
 }
 
@@ -304,6 +311,7 @@ lotr_frodos_mission_events.71 = {
     else = {
       trigger_event = {
         id = lotr_frodos_mission_events.71
+        days = 30
       }
       if = {
         limit = { distracting_sauron_black_gate = yes }
@@ -447,7 +455,7 @@ lotr_frodos_mission_events.80 = {
       every_current_war = {
         if = {
           limit = { 
-            is_war_leader = yes
+            is_war_leader = PREV
             any_war_defender = { religion = iluvatarism }
           }
           force_white_peace = THIS
@@ -470,7 +478,7 @@ lotr_frodos_mission_events.80 = {
       every_current_war = {
         if = {
           limit = { 
-            is_war_leader = yes
+            is_war_leader = PREV
             any_war_defender = { religion = iluvatarism }
           }
           force_white_peace = THIS
