@@ -16,6 +16,7 @@
 				prisoner = no
 				has_religion = melkorism
 			}
+			sauron_rules = yes
 		}
 		
 		ai_allow = {

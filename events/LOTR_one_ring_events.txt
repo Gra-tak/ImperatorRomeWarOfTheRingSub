@@ -113,16 +113,7 @@ lotr_one_ring_events.3 = {
 			NOT = {
 				tag = MOR
 			}
-			exists = c:MOR
-			c:MOR = {
-				has_land = yes
-			}
-			char:3 = { # Sauron
-				is_alive = yes
-				is_ruler = yes
-				prisoner = no
-				employer = C:MOR
-			}
+			sauron_rules = yes
 		}
 		treasure:lotr_treasure_one_ring = {
 			transfer_treasure_to_country = c:MOR

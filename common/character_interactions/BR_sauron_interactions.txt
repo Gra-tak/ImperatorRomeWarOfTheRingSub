@@ -8,14 +8,8 @@
 	potential_trigger = {
 		scope:actor = {
 			tag = MOR
-			#NOT = { ai = yes }
-			char:3 = { # Is Sauron alive?
-				is_alive = yes
-				is_ruler = yes
-				prisoner = no
-				employer = C:MOR
-					}
 		}
+		sauron_rules = yes
 		
 		hidden:scope:target = {
 			is_alive = yes

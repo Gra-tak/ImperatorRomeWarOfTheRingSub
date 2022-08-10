@@ -1,38 +1,22 @@
 ﻿country_decisions = {
-look_into_palantir = {
+	look_into_palantir = {
 		
 		potential = {
-			AND = {
 			tag = XVX
-			char:16 = { # Is Saruman alive?
-				is_alive = yes
-				is_ruler = yes
-				prisoner = no
-				employer = C:XVX
-					}
-					}
-		NOT = { religion = melkorism }
+			NOT = { religion = melkorism }
 		}
-		
-		
-		
 		allow = {	
-			ROOT = {
-				any_country_treasure = {
-					this = treasure:lotr_treasure_palantir_orthanc
-				}
+			any_country_treasure = {
+				this = treasure:lotr_treasure_palantir_orthanc
 			}
-			AND = {
-			tag = XVX
 			char:16 = { # Is Saruman alive?
 				is_alive = yes
 				is_ruler = yes
 				prisoner = no
 				employer = C:XVX
-					}
-					}			
+				}
+			sauron_rules = yes	
 		}
-		
 
 		effect = {
 			trigger_event = { id = lotr_storyline_events.1 }
@@ -41,7 +25,5 @@ look_into_palantir = {
 		ai_will_do = {
 			base = 5
 		}
-		
-		}
-	
 	}
+}

@@ -77,3 +77,16 @@ distracting_sauron_black_gate = {
     }
 	}
 }
+
+sauron_rules = {
+	exists = c:MOR
+	c:MOR = {
+		has_land = yes
+	}
+	char:3 = { # Sauron
+		is_alive = yes
+		is_ruler = yes
+		prisoner = no
+		employer = C:MOR
+	}
+}

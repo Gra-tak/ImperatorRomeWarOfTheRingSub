@@ -22,6 +22,7 @@ lotr_character_events.1 = {
 			is_head_of_family = no
 			loyalty < 60
 		}
+		sauron_rules = yes
 	}
 	
 	immediate = { 
@@ -202,6 +203,7 @@ lotr_character_events.6 = {
 			is_mercenary = no
 			is_head_of_family = no
 		}
+		sauron_rules = yes
 	}
 	
 	immediate = { 
@@ -265,6 +267,7 @@ lotr_character_events.7 = {
 			popularity >= 50
 			num_loyal_cohorts < 6
 		}
+		sauron_rules = yes
 	}
 	
 	immediate = { 
@@ -414,6 +417,7 @@ lotr_character_events.10 = {
 				has_office = office_high_priest
 			}
 		}
+		sauron_rules = yes
 	}
 	
 	fire_only_once = yes
@@ -1488,6 +1492,7 @@ lotr_character_events.29 = {
 		is_ai = no
 		war = no
 		religion = iluvatarism
+		sauron_rules = yes
 		NOT = { has_variable = lotr_character_spie_melkor_variable }
 		exists = c:MOR
 		c:MOR = {
