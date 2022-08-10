@@ -129,7 +129,7 @@
         force_add_trait="maia"
         force_add_trait="olympic_competitor"
         save_scope_as = gandalf
-        # add_to_list = fellowship #not yet
+        dna="AAAH7oppimkAAAAAAp0CnQJ4AngCfwJ/AnYCdgKYApgCiwKLAlYCVgJ3AncCkwKTApcClwKXApcCiwKLAoECgQKLAosCTgJOAm0CbQKTApMCXgJeAmcCZwJWAlYCfwJ/AowCjAKaApoCdgJ2ApICkgKRApECkAKQAmwCbAKJAokCdQJ1ApUClQKeAp4CdAJ0ArACsAKUApQCcwJzAnYCdgKLAosCjAKMAn0CfQKTApMCjAKMAmECYQKMAowClQKVAo8CjwKLAosChgKGAnkCeQJRAlECbQJtAlkCWQKYApgCkwKTAsICwgQEBAQBZQFlATMBMwFhAWEATwBPAVABUAC2ALYALwAvAIcAhwCpAKkEnAScArYCtgFzAXMABwAHAN0A3QFpAWkAPwA/Aq8CrwCxALEDtwO3ARsBGwD5APkCngKeAQMBAwKVApUAOgA6AHwAfABIAEgAwwDDACYAJgD5APkCiAKIA3ADcAD0APQH6QDEAH8AfwQ3BDcWXhZeAPAA8Az+DP4QgxAXEf8R0AAAAAAAAAAAAAAAAAAAAAA="
       }
     }
 	}
@@ -329,6 +329,20 @@
     on_start = {
       #redeclare previous wars where needed
       #orcs will now declare war on all neighboring eru contries, possibly some specific like balins colony, gondor
+      every_country = {
+        limit = {
+          orcs_that_hear_saurons_call = yes #includes sauron and northern orcs if needed
+          NOT = { this = c:XVX }
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.110
+          days = { 1 10 } 
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.112
+          days = { 11 20 } 
+        }
+      }
 
       #saruman attacks rohan and the player (if he is evil). Whips of saruman buff
       #picture = event_council_of_elrond

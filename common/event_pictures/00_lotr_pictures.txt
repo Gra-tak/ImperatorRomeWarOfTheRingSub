@@ -242,3 +242,8 @@ event_nazgul_riders = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/nazgul_riders.dds"
 }
+
+event_saruman_palantir = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/saruman_palantir.dds"
+}

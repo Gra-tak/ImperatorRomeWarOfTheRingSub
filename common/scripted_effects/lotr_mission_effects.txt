@@ -1,0 +1,15 @@
+﻿mordor_mortal_enemies = {
+	if = {
+		limit = { NOT = { THIS = c:MOR } }
+    add_opinion = {
+      target = c:MOR
+      modifier = mortal_enemies
+    }
+    c:MOR = {
+      add_opinion = {
+        target = PREV
+        modifier = mortal_enemies
+      }
+    }
+	}
+}

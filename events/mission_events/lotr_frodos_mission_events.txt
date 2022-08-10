@@ -304,9 +304,13 @@ lotr_frodos_mission_events.110 = {
         NOT = { has_variable = ring_war_started } 
         is_ai = yes
       }
-
       set_variable = {
         name = ring_war_started
+      }
+
+      add_country_modifier = {
+        name = whips_of_saruman
+        duration = 365
       }
     }
     ai_chance = {
@@ -315,16 +319,7 @@ lotr_frodos_mission_events.110 = {
   }
   option = {
     name = lotr_frodos_mission_event.110.b
-    add_opinion = {
-      target = c:MOR
-      modifier = mortal_enemies
-    }
-    c:MOR = {
-      add_opinion = {
-        target = PREV
-        modifier = mortal_enemies
-      }
-    }
+    mordor_mortal_enemies = yes
     ai_chance = {
       factor = 0
     }
@@ -359,16 +354,82 @@ lotr_frodos_mission_events.112 = {
   }
   option = {
     name = lotr_frodos_mission_event.112.b
-    add_opinion = {
-      target = c:MOR
-      modifier = mortal_enemies
+    mordor_mortal_enemies = yes
+    ai_chance = {
+      factor = 0
     }
-    c:MOR = {
-      add_opinion = {
-        target = PREV
-        modifier = mortal_enemies
+  }
+}
+
+lotr_frodos_mission_events.120 = {
+  type = country_event
+  title = lotr_frodos_mission_event.120.t
+  desc = lotr_frodos_mission_event.120.desc
+  picture = event_saruman_palantir
+  trigger = {
+   
+  }
+  immediate = {
+  }
+  option = {
+    name = lotr_frodos_mission_event.120.a
+    declare_war_with_wargoal = {
+      war_goal = imperial_conquest_wargoal
+      target = scope:frodo_protector_country
+    }
+    #this event might be called again later if the war alrady ended for some reason.
+    if = {
+      limit = { 
+        NOT = { has_variable = ring_war_started } 
+        is_ai = yes
+      }
+
+      set_variable = {
+        name = ring_war_started
       }
     }
+    ai_chance = {
+      factor = 100
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_event.120.b
+    mordor_mortal_enemies = yes
+    ai_chance = {
+      factor = 0
+    }
+  }
+}
+
+
+lotr_frodos_mission_events.122 = {
+  type = country_event
+  title = lotr_frodos_mission_event.122.t
+  desc = lotr_frodos_mission_event.122.desc
+  picture = event_saruman_palantir
+  trigger = {
+   
+  }
+  option = {
+    name = lotr_frodos_mission_event.122.a
+    every_country = {
+      limit = {
+        countries_sauron_wants_attacked = yes
+      }
+      ROOT = {
+        declare_war_with_wargoal = {
+          war_goal = imperial_conquest_wargoal
+          target = PREV
+        }
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_event.122.b
+    mordor_mortal_enemies = yes
     ai_chance = {
       factor = 0
     }
