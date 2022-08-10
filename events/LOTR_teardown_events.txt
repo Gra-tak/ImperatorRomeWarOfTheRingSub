@@ -60,27 +60,10 @@ lotr_teardown_events.2 = {
 
   option = {
     name = lotr_teardown_events.2.a
-    remove_province_modifier = barad_dur_modifier
-    remove_building_level = fortress_building
-    if = {
-      limit = { has_city_status = yes }
-      set_city_status = settlement
-    }
+    destroy_barad_dur_effect = yes
     OWNER = {
       current_ruler = { add_popularity = popularity_medium }
       add_stability = 5
-    }
-    hidden_effect = {
-      if = {
-        limit = {
-          is_model_shown = "wonder_barad_dur"
-        }
-        hide_model = "wonder_barad_dur"
-      }
-      add_city_fire_effect = yes
-      p:1140 = {
-        show_model = "wonder_barad_dur_rubble"
-      }
     }
     ai_chance = { factor = 95 }
   }
@@ -122,24 +105,10 @@ lotr_teardown_events.3 = {
 
   option = {
     name = lotr_teardown_events.2.a
-    remove_province_modifier = black_gate_modifier
-    remove_building_level = fortress_building
-    if = {
-      limit = { has_city_status = yes }
-      set_city_status = settlement
-    }
+    destroy_black_gate_effect = yes
     OWNER = {
       current_ruler = { add_popularity = popularity_medium }
       add_stability = 5
-    }
-    hidden_effect = {
-      if = {
-        limit = {
-          is_model_shown = "the_black_gate"
-        }
-        hide_model = "the_black_gate"
-      }
-      add_city_fire_effect = yes
     }
     ai_chance = { factor = 95 }
   }

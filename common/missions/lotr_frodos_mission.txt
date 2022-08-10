@@ -93,7 +93,7 @@
         force_add_trait="olympic_competitor"
         save_scope_as = merry
         add_to_list = fellowship
-        add_to_list = fellowshipOtherHobbits
+        add_to_list = fellowshipStayRohan
       }
       create_character = {
         first_name="Peregrin 'Pippin'"
@@ -112,7 +112,7 @@
         save_scope_as = pippin
         dna="qISohKNUo1SBhoGGApcClwJmAmYAHgAeAnQCdAJtAm0ChgKGAmwCbAJrAmsAGwAbAokCiQKLAosChQKFAooCigOkA6QCjgKOApQClAOiA6ICZgJmApcClwKVApUCcQJxAnECcQJqAmoCdAJ0AngCeAJvAm8CbwJvApYClgKGAoYCcgJyAmgCaAFVAVUChgKGAmsCawJtAm0CfAJ8Am4CbgJvAm8CgwKDAoUChQKSApICcAJwAmcCZwKIAogCjAKMAo8CjwJxAnEBVQFVACYAJgJyAnICewJ7AogCiAJyAnICZgJmAVABUAHwAfABKwErAG4AbgCgAKAAUQBRAL8AvwKbApsBUgFSAREBEQCqAKoExgTGANgA2AB/AH8AJwAnAIQAhADYANgA0wDTAPMA8wC/AL8DkgOSAV8BXwB/AH8BAwEDAPgA+AAYABgAiwCLAT4BPgBcAFwAMwAzAAIAAgDBAMEAKAAoAQABAAEGAQYA5QDlAH8AfwQ6BDoX/xf/ACQAJA3jDeMVohWiHj4ePgAAAAAAAAAAAAAAAAKlAqU=" #not really
         add_to_list = fellowship
-        add_to_list = fellowshipOtherHobbits
+        add_to_list = fellowshipToGondor
       }
       create_character = {
         first_name="Gandalf"
@@ -130,6 +130,7 @@
         force_add_trait="olympic_competitor"
         save_scope_as = gandalf
         dna="AAAH7oppimkAAAAAAp0CnQJ4AngCfwJ/AnYCdgKYApgCiwKLAlYCVgJ3AncCkwKTApcClwKXApcCiwKLAoECgQKLAosCTgJOAm0CbQKTApMCXgJeAmcCZwJWAlYCfwJ/AowCjAKaApoCdgJ2ApICkgKRApECkAKQAmwCbAKJAokCdQJ1ApUClQKeAp4CdAJ0ArACsAKUApQCcwJzAnYCdgKLAosCjAKMAn0CfQKTApMCjAKMAmECYQKMAowClQKVAo8CjwKLAosChgKGAnkCeQJRAlECbQJtAlkCWQKYApgCkwKTAsICwgQEBAQBZQFlATMBMwFhAWEATwBPAVABUAC2ALYALwAvAIcAhwCpAKkEnAScArYCtgFzAXMABwAHAN0A3QFpAWkAPwA/Aq8CrwCxALEDtwO3ARsBGwD5APkCngKeAQMBAwKVApUAOgA6AHwAfABIAEgAwwDDACYAJgD5APkCiAKIA3ADcAD0APQH6QDEAH8AfwQ3BDcWXhZeAPAA8Az+DP4QgxAXEf8R0AAAAAAAAAAAAAAAAAAAAAA="
+        add_to_list = fellowshipToGondor
       }
     }
 	}
@@ -138,6 +139,9 @@
 		# add_stability = -20
     set_variable = {
         name = lotr_frodos_mission_activated_variable
+    }
+    every_country = {
+      remove_existing_sauron_fury = yes
     }
 	}
 
@@ -327,6 +331,10 @@
     }
 
     on_start = {
+      #council_of_elrond info event
+      trigger_event = {
+        id = lotr_frodos_mission_events.30
+      }
       #redeclare previous wars where needed
       #orcs will now declare war on all neighboring eru contries, possibly some specific like balins colony, gondor
       every_country = {
@@ -345,11 +353,23 @@
       }
 
       #saruman attacks rohan and the player (if he is evil). Whips of saruman buff
-      #picture = event_council_of_elrond
+      c:XVX = {
+        trigger_event = {
+          id = lotr_frodos_mission_events.120
+          days = { 1 10 } 
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.122
+          days = { 11 20 } 
+        }
+      }
     }
 
     on_completion = {
-      #picture = etraval_ruin
+      trigger_event = {
+        #notice that you have to decide where to travel
+        id = lotr_frodos_mission_events.31
+      }
     }
   }
 
@@ -427,7 +447,9 @@
 
     on_completion = {
       #move fellowship to lorien
-      #pciture = moria_entrance
+      trigger_event = {
+        id = lotr_frodos_mission_events.40
+      }
     }
   }
 
@@ -516,14 +538,16 @@
 
     on_completion = {
       #move fellowship to rohan
-      #picture = event_orc_wargriders
+      trigger_event = {
+        id = lotr_frodos_mission_events.45
+      
     }
   }
 
   lotr_depart_from_lorien = {  
     icon = "task_conquest"
 
-    # duration = 365
+    duration = 365
     
     highlight = {
       scope:province = {
@@ -556,23 +580,49 @@
       #redeclare previous wars where needed
       # all melkor countries now declare on the player (possibly exluding the extreme eastern ones)
       # 2 month later on neighboring eru countries
+      every_country = {
+        limit = {
+          melkor_countryies_that_hear_saurons_call = yes #includes sauron, orcs, saruman if needed
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.110
+          days = { 1 10 } 
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.112
+          days = { 30 60 } 
+        }
+        #buffs for orcs are initially increased but will decay slightly with time
+        if = {
+          limit = { country_culture_group = orcs_group }
+          trigger_event = {
+            id = lotr_frodos_mission_events.201
+          }
+          trigger_event = {
+            id = lotr_frodos_mission_events.203
+            days = 365
+          }
+        }
+      }
 
-      #buffs for orcs are initially increased but will decay slightly with time
-
-      #picture = light_of_earendil
+      trigger_event = {
+        id = lotr_frodos_mission_events.50
+      }
     }
 
     on_completion = {
       #move sam and frodo to ithilien rangers, rest to gondor or rohan
-      #kill boromir (might actually kill the real one unless player is gondor)
-      #picture = city_siege
+      #TODO kill boromir (might actually kill the real one unless player is gondor)
+      trigger_event = {
+        id = lotr_frodos_mission_events.51
+      }
     }
   }
 
   lotr_depart_from_rohan = {  
     icon = "task_conquest"
 
-    # duration = 365
+    duration = 365
 
     highlight = {
       scope:province = {
@@ -603,13 +653,42 @@
 
     on_start = {
       #same as lorien
-      #picture = event_rohan_riders
+      every_country = {
+        limit = {
+          melkor_countryies_that_hear_saurons_call = yes #includes sauron, orcs, saruman if needed
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.110
+          days = { 1 10 } 
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.112
+          days = { 30 60 } 
+        }
+        #buffs for orcs are initially increased but will decay slightly with time
+        if = {
+          limit = { country_culture_group = orcs_group }
+          trigger_event = {
+            id = lotr_frodos_mission_events.201
+          }
+          trigger_event = {
+            id = lotr_frodos_mission_events.203
+            days = 365
+          }
+        }
+      }
+
+      trigger_event = {
+        id = lotr_frodos_mission_events.55
+      }
     }
 
     on_completion = {
       #move sam and frodo to ithilien rangers, rest to gondor or rohan
-      #kill boromir (might actually kill the real one unless player is gondor)
-      #picture = city_siege
+      #TODO kill boromir (might actually kill the real one unless player is gondor)
+      trigger_event = {
+        id = lotr_frodos_mission_events.56
+      }
     }
   }
 
@@ -685,10 +764,15 @@
     }
 
     on_start = {
-      #picture = hobbit_after_battle
     }
 
     on_completion = {
+      every_country = {
+        remove_existing_sauron_fury = yes
+      }
+      trigger_event = {
+        id = lotr_frodos_mission_events.60
+      }
     }
   }
 
@@ -720,17 +804,71 @@
     }
 
     on_start = {
-      # picture = throneroom
       #redeclare previous wars where needed
-      # start event chain to check for black gate being under siege. Make sure this doesn't break if a battle happens on the black gate
-      # buffs will be renewed once again, possibly army spawned.
+      # buffs will be renewed once again, TODO: possibly army spawned.
+      every_country = {
+        limit = {
+          melkor_countryies_that_hear_saurons_call = yes #includes sauron, orcs, saruman if needed
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.110
+          days = { 1 10 } 
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.112
+          days = { 11 20 } 
+        }
+        #buffs for orcs are initially increased but will decay stongly with time
+        if = {
+          limit = { country_culture_group = orcs_group }
+          trigger_event = {
+            id = lotr_frodos_mission_events.200
+          }
+          trigger_event = {
+            id = lotr_frodos_mission_events.201
+            days = 365
+          }
+          trigger_event = {
+            id = lotr_frodos_mission_events.202
+            days = 730
+          }
+          trigger_event = {
+            id = lotr_frodos_mission_events.203
+            days = 1095
+          }
+          trigger_event = {
+            id = lotr_frodos_mission_events.204
+            days = 1460
+          }
+          trigger_event = {
+            id = lotr_frodos_mission_events.205
+            days = 1825
+          }
+        }
+      }
 
+      # start event chain to check for black gate being under siege. Make sure this doesn't break if a battle happens on the black gate
       #frodo and sam to mordor. Make sure they are not converted to melkor
+      trigger_event = {
+        id = lotr_frodos_mission_events.60
+      }
     }
 
     on_completion = {
-      #picture = event_battle_black_gate
-      #All that is left now, is to fight and hope for frodo
+      if = {
+        limit = { distracting_sauron_black_gate = yes }
+        #picture = event_battle_black_gate
+        #All that is left now, is to fight and hope for frodo
+        trigger_event = {
+          id = lotr_frodos_mission_events.73
+        }
+      }
+      else #warning the player that he is currently not doing what is needed
+      {
+        trigger_event = {
+          id = lotr_frodos_mission_events.74
+        }
+      }
     }
   }
 
@@ -767,11 +905,11 @@
     }
 
     requires = { 
-      lotr_distract_sauron 
+      lotr_distract_sauron
     } 
 
     allow = {
-      has_variable = black_gate_sieged_long_enough
+      has_variable = sauron_fully_distracted
       NOT = {
         any_province = {
           OR = {
@@ -794,17 +932,7 @@
           }
         }
       }
-      p:1021 = {
-        OR = {
-          NOT = {
-            exists = owner
-            controller = {
-              country_culture_group = orcs_group
-            }
-          }
-          has_siege = yes
-        }
-      }
+      distracting_sauron_black_gate = yes
     }
 
     on_start = {

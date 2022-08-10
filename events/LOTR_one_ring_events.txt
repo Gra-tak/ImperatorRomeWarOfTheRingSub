@@ -186,56 +186,7 @@ lotr_one_ring_events.3 = {
 		current_ruler = {
 			add_health = -30
 		}
-		char:3 = {
-			death = {
-						death_reason = death_freak_accident
-			}
-			}
-		char:4 = {
-			death = {
-						death_reason = death_freak_accident
-			}
-			}
-		char:5 = {
-			death = {
-						death_reason = death_freak_accident
-			}
-			}
-		char:6 = {
-			death = {
-						death_reason = death_freak_accident
-			}
-			}
-		char:7 = {
-			death = {
-						death_reason = death_freak_accident
-			}
-			}
-		char:8 = {
-			death = {
-						death_reason = death_freak_accident
-			}
-			}
-		char:9 = {
-			death = {
-						death_reason = death_freak_accident
-			}
-			}
-		char:10 = {
-			death = {
-						death_reason = death_freak_accident
-			}
-			}
-		char:11 = {
-			death = {
-						death_reason = death_freak_accident
-			}
-			}
-		char:12 = {
-			death = {
-						death_reason = death_freak_accident
-			}
-			}
+		kill_sauron_nazgul = yes
 		C:MOR = {
 				add_country_modifier = {
 				name = death_of_sauron

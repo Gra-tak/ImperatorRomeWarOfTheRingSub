@@ -152,7 +152,7 @@ lotr_character_events.3 = {
 		trigger = {
 			exists = c:MOR
 			c:MOR = {
-				has_land = yes
+				ruler = char:3
 			}
 		}
 		add_stability = -5

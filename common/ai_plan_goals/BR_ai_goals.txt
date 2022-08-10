@@ -4,6 +4,7 @@
 is_mordor_aimod = {
 	trigger = {
 		this = c:MOR
+		ruler = char:3
 	}
 	
 	aggressive = 100

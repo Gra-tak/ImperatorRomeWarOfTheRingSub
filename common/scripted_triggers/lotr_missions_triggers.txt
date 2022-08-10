@@ -1,7 +1,7 @@
 ﻿countries_sauron_wants_attacked = {
   religion = iluvatarism
   is_subject = no
-  NOT = { is_at_war_with = ROOT }
+  NOT = { war_with = ROOT }
   OR = {
     THIS = c:GON
     THIS = c:ROH
@@ -18,17 +18,36 @@
 }
 
 in_range_of_saurons_call = {
-	capital_scope = {
-		NOR = {
-			is_in_region = cennacatt_region
-			is_in_region = sara_bask_region
-			is_in_region = sirayn_region
-			is_in_region = harshandatt_region
-			# is_in_region = 
-			# is_in_region = 
-			# is_in_region = 
-			# is_in_region = 
-			# is_in_region = 
+	OR = {
+		capital_scope = {
+			NOR = {
+				is_in_region = cennacatt_region
+				is_in_region = sara_bask_region
+				is_in_region = sirayn_region
+				is_in_region = harshandatt_region
+				is_in_region = khailuza_region
+				is_in_region = anarike_region
+				is_in_region = yopi_region
+				is_in_region = nikkea_region
+				is_in_region = shay_region
+				is_in_region = lokhas_drus_region
+				is_in_region = wer_falin_region
+				is_in_region = ibav_region
+				is_in_region = ralian_region
+				is_in_region = burskadekar_region
+				is_in_region = ubain_region
+				is_in_region = lygar_kraw_region
+				is_in_region = lugnimbar_region
+				is_in_region = lu_tyr_su_region
+				is_in_region = gathgykarkan_region
+				is_in_region = alduryaknar_region
+			}
+		}
+		any_owned_province = {
+			any_neighbor_province = {
+				exists = owner
+				owner = c:MOR
+			}
 		}
 	}
 }
@@ -37,4 +56,24 @@ orcs_that_hear_saurons_call = {
 	is_subject = no
 	country_culture_group = orcs_group
 	in_range_of_saurons_call = yes
+}
+
+melkor_countryies_that_hear_saurons_call = {
+	is_subject = no
+	religion = melkorism
+	in_range_of_saurons_call = yes
+}
+
+distracting_sauron_black_gate = {
+	p:1021 = {
+    OR = {
+      NOT = {
+        exists = owner
+        controller = {
+          country_culture_group = orcs_group
+        }
+      }
+      has_siege = yes
+    }
+	}
 }

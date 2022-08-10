@@ -233,9 +233,9 @@ event_council_of_elrond = {
 	picture = "gfx/interface/event_window/council_of_elrond.dds"
 }
 
-event_traval_ruin = {
+event_travel_ruin = {
 	theme = Uncategorized
-	picture = "gfx/interface/event_window/traval_ruin.dds"
+	picture = "gfx/interface/event_window/travel_ruin.dds"
 }
 
 event_nazgul_riders = {
@@ -246,4 +246,9 @@ event_nazgul_riders = {
 event_saruman_palantir = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/saruman_palantir.dds"
+}
+
+event_orcs_fleeing = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/orcs_fleeing.dds"
 }

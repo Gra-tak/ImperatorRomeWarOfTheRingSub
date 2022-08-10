@@ -13,3 +13,157 @@
     }
 	}
 }
+
+remove_existing_sauron_fury = {
+	if = {
+		limit = { has_country_modifier = fury_of_sauron_5 }
+		remove_country_modifier = fury_of_sauron_5
+	}
+	if = {
+		limit = { has_country_modifier = fury_of_sauron_4 }
+		remove_country_modifier = fury_of_sauron_4
+	}
+	if = {
+		limit = { has_country_modifier = fury_of_sauron_3 }
+		remove_country_modifier = fury_of_sauron_3
+	}
+	if = {
+		limit = { has_country_modifier = fury_of_sauron_2 }
+		remove_country_modifier = fury_of_sauron_2
+	}
+	if = {
+		limit = { has_country_modifier = fury_of_sauron_1 }
+		remove_country_modifier = fury_of_sauron_1
+	}
+	if = {
+		limit = { has_country_modifier = fury_of_sauron_0 }
+		remove_country_modifier = fury_of_sauron_0
+	}
+	if = {
+		limit = { has_country_modifier = whips_of_sauron }
+		remove_country_modifier = whips_of_sauron
+	}
+	if = {
+		limit = { has_country_modifier = whips_of_saruman }
+		remove_country_modifier = whips_of_saruman
+	}
+}
+
+
+frodo_to_ithilien = {
+  every_in_list = {
+    list = frodoSam
+    if = {
+      limit = { exists = c:ROI }
+      move_country = c:ROI
+    }
+    else = { #todo: possibly already move to mordor here
+      move_country = scope:frodo_protector_country
+    }
+  }
+}
+
+gandalf_to_gondor = {
+  every_in_list = {
+    list = fellowshipToGondor
+    if = {
+      limit = { exists = c:GON }
+      move_country = c:GON
+    }
+    else = {
+      move_country = scope:frodo_protector_country
+    }
+  }
+}
+
+destroy_barad_dur_effect = {
+  remove_province_modifier = barad_dur_modifier
+  remove_building_level = fortress_building
+  if = {
+    limit = { has_city_status = yes }
+    set_city_status = settlement
+  }
+  hidden_effect = {
+    if = {
+      limit = {
+        is_model_shown = "wonder_barad_dur"
+      }
+      hide_model = "wonder_barad_dur"
+    }
+    add_city_fire_effect = yes
+    p:1140 = {
+      show_model = "wonder_barad_dur_rubble"
+    }
+  }
+}
+
+destroy_black_gate_effect = {
+  remove_province_modifier = black_gate_modifier
+  remove_building_level = fortress_building
+  if = {
+    limit = { has_city_status = yes }
+    set_city_status = settlement
+  }
+  hidden_effect = {
+    if = {
+      limit = {
+        is_model_shown = "the_black_gate"
+      }
+      hide_model = "the_black_gate"
+    }
+    add_city_fire_effect = yes
+  }
+}
+
+kill_sauron_nazgul = {
+	char:3 = {
+		death = {
+			death_reason = death_freak_accident
+		}
+	}
+	char:4 = {
+		death = {
+			death_reason = death_freak_accident
+		}
+	}
+	char:5 = {
+		death = {
+			death_reason = death_freak_accident
+		}
+	}
+	char:6 = {
+		death = {
+			death_reason = death_freak_accident
+		}
+	}
+	char:7 = {
+		death = {
+			death_reason = death_freak_accident
+		}
+	}
+	char:8 = {
+		death = {
+			death_reason = death_freak_accident
+		}
+	}
+	char:9 = {
+		death = {
+			death_reason = death_freak_accident
+		}
+	}
+	char:10 = {
+		death = {
+			death_reason = death_freak_accident
+		}
+	}
+	char:11 = {
+		death = {
+			death_reason = death_freak_accident
+		}
+	}
+	char:12 = {
+		death = {
+			death_reason = death_freak_accident
+		}
+	}
+}
