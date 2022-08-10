@@ -37,6 +37,10 @@
 
 	on_start = {
     save_scope_as = frodo_protector_country
+    set_global_variable = {
+      name = frodo_protector_country_global
+      value = THIS
+    }
 		start_mission_ai_effect = yes
     #create hobbits and Gandalf in the shire with olympic_competitor (rename the loc to fellowship. This should prevent many stuff that should not happen, like jobs, citizenship etc)
     c:SHI = {
@@ -144,10 +148,12 @@
     every_country = {
       remove_existing_sauron_fury = yes
     }
+    remove_global_variable = frodo_protector_country_global
 	}
 
 	on_completion = {
 		complete_mission_effect = yes
+    remove_global_variable = frodo_protector_country_global
 	}
 	
 	

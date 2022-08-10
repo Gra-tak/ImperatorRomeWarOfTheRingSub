@@ -391,7 +391,7 @@ lotr_frodos_mission_events.80 = {
     every_in_list = {
       list = fellowship
       move_country = scope:frodo_protector_country
-    } #todo: return home, travel to valinor
+    } #todo: return home, travel to valinor. remove olympic from the remaining hobbits
     p:1141 = {
       trigger_event = {
         id = lotr_frodos_mission_events.90

@@ -57,3 +57,27 @@ on_ownership_change = { #province scope
 		lotr_teardown_events.1
 	}
 }
+
+
+on_military_annex = {
+  effect = {
+		if = {
+			limit = { has_global_variable = frodo_protector_country_global }
+			every_character = {
+				limit = { has_trait = olympic_competitor }
+				move_country = global_var:frodo_protector_country_global
+			}
+		}
+	}
+}
+on_diplomatic_annex = {
+  effect = {
+		if = {
+			limit = { has_global_variable = frodo_protector_country_global }
+			every_character = {
+				limit = { has_trait = olympic_competitor }
+				move_country = global_var:frodo_protector_country_global
+			}
+		}
+	}
+}
