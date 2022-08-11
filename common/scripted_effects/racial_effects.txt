@@ -2,86 +2,87 @@
 orc_purge_spawn = {
 	while = {
 		count = $NUM$
-		random_list = {
-			120 = {
-				add_subunit = orc_infantry
-			}
-			50 = {
-				modifier = {
-					factor = 2
-					unit_location = {
-						has_building = barracks_building
-					}
-				}
-				add_subunit = orc_infantry
-			}
-			50 = {
-				modifier = {
-					factor = 0.5
-					unit_location = {
-						OR = {
-							terrain = mountain
-							terrain = marsh
-							terrain = jungle
-						}	
-					}
-				}
-				modifier = {
-					factor = 2
-					unit_location = {
-						has_building = barracks_building
-					}
-				}
-				add_subunit = orc_infantry
-			}
-			30 = {
-				modifier = {
-					factor = 0.1
-					unit_location = {
-						OR = {
-							terrain = mountain
-							terrain = marsh
-							terrain = jungle
-							terrain = forest
-						}	
-					}
-				}
-				modifier = {
-					factor = 2
-					unit_location = {
-						has_building = barracks_building
-					}
-				}
-				add_subunit = orc_infantry
-			}
-			20 = {
-				modifier = {
-					factor = 2
-					unit_location = {
-						terrain = farmland
-					}
-				}
-				add_subunit = orc_infantry
-			}
-			5 = {
-				modifier = {
-					factor = 2
-					unit_location = {
-						terrain = farmland
-					}
-				}
-				add_subunit = orc_infantry
-			}
-			5 = {
-				modifier = {
-					factor = 2
-					unit_location = {
-						has_building = barracks_building
-					}
-				}
-				add_subunit = orc_infantry
-			}
-		}
+		add_subunit = orc_infantry
+		# random_list = {
+		# 	120 = {
+		# 		add_subunit = orc_infantry
+		# 	}
+		# 	50 = {
+		# 		modifier = {
+		# 			factor = 2
+		# 			unit_location = {
+		# 				has_building = barracks_building
+		# 			}
+		# 		}
+		# 		add_subunit = orc_infantry
+		# 	}
+		# 	50 = {
+		# 		modifier = {
+		# 			factor = 0.5
+		# 			unit_location = {
+		# 				OR = {
+		# 					terrain = mountain
+		# 					terrain = marsh
+		# 					terrain = jungle
+		# 				}	
+		# 			}
+		# 		}
+		# 		modifier = {
+		# 			factor = 2
+		# 			unit_location = {
+		# 				has_building = barracks_building
+		# 			}
+		# 		}
+		# 		add_subunit = orc_infantry
+		# 	}
+		# 	30 = {
+		# 		modifier = {
+		# 			factor = 0.1
+		# 			unit_location = {
+		# 				OR = {
+		# 					terrain = mountain
+		# 					terrain = marsh
+		# 					terrain = jungle
+		# 					terrain = forest
+		# 				}	
+		# 			}
+		# 		}
+		# 		modifier = {
+		# 			factor = 2
+		# 			unit_location = {
+		# 				has_building = barracks_building
+		# 			}
+		# 		}
+		# 		add_subunit = orc_infantry
+		# 	}
+		# 	20 = {
+		# 		modifier = {
+		# 			factor = 2
+		# 			unit_location = {
+		# 				terrain = farmland
+		# 			}
+		# 		}
+		# 		add_subunit = orc_infantry
+		# 	}
+		# 	5 = {
+		# 		modifier = {
+		# 			factor = 2
+		# 			unit_location = {
+		# 				terrain = farmland
+		# 			}
+		# 		}
+		# 		add_subunit = orc_infantry
+		# 	}
+		# 	5 = {
+		# 		modifier = {
+		# 			factor = 2
+		# 			unit_location = {
+		# 				has_building = barracks_building
+		# 			}
+		# 		}
+		# 		add_subunit = orc_infantry
+		# 	}
+		# }
 	}
 }
 
@@ -92,61 +93,75 @@ orc_purge_effect = {
 		}
 		if = {
 			limit = { 
-				has_variable = orc_master
-				OR = {
-					AND = {
-						NOT = { var:orc_master = controller }
-						var:orc_master = {
-							war_with = PREV.controller
+				$LOC$ = {
+					has_variable = orc_master
+					OR = {
+						AND = {
+							NOT = { var:orc_master = controller }
+							var:orc_master = {
+								war_with = PREV.controller
+							}
+						}
+						AND = {
+							NOT = { var:orc_master = owner }
+							var:orc_master = {
+								war_with = PREV.owner
+							}
 						}
 					}
-					AND = {
-						NOT = { var:orc_master = owner }
-						var:orc_master = {
-							war_with = PREV.owner
-						}
+					any_neighbor_province = {
+						exists = owner
+						$LOC$.var:orc_master = controller
+						has_siege = no
 					}
 				}
 			}
+			$LOC$ = {
+				random_neighbor_province = {
+					limit = {
+						exists = owner
+						$LOC$.var:orc_master = controller
+						has_siege = no
+					}
+					save_scope_as = destination
+				}
+			}
+
 			var:orc_master = {
 				create_unit = {
-					location = $LOC$
+					location = scope:destination
 					save_scope_as = orcs
-					subunit = orc_infantry
+					sub_unit = orc_infantry
 					name = "Displaced Orcs"
 				}
 			}
 			scope:orcs = {
+				set_variable = {
+					name = displaced_orcs
+				}
 				random_sub_unit = {
 					limit = { subunit_morale_percentage < 100 }
 					add_subunit_morale = 1
 				}
-				while = {
-					limit = {
-						unit_location = {
-							province_has_orcs = yes
+				$LOC$ = {
+					every_pops_in_province = {
+						limit = {
+							pop_culture_group = orcs_group 
 						}
-					}
-					unit_location = {
-						random_pops_in_province = {
-							limit = {
-								pop_culture_group = orcs_group 
-							}
-							switch = {
-								trigger = pop_type
-								citizen = { scope:orcs = { orc_purge_spawn = { NUM = 6 } } }
-								freemen = { scope:orcs = { orc_purge_spawn = { NUM = 5 } } }
-								slaves = { scope:orcs = { orc_purge_spawn = { NUM = 3 } } }
-								fallback = { scope:orcs = { orc_purge_spawn = { NUM = 4 } } }
-							}
-							kill_pop = yes
+						switch = {
+							trigger = pop_type
+							citizen = { scope:orcs = { orc_purge_spawn = { NUM = 4 } } }
+							freemen = { scope:orcs = { orc_purge_spawn = { NUM = 4 } } }
+							slaves = { scope:orcs = { orc_purge_spawn = { NUM = 3 } } }
+							fallback = { scope:orcs = { orc_purge_spawn = { NUM = 3 } } }
 						}
+						kill_pop = yes
 					}
 				}
 			}
 		}
 		else = {
-			move_all_orcs_home_effect = yes
+			$LOC$ = { move_all_orcs_home_effect = yes }
 		}
 	}
 }

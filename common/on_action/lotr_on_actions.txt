@@ -61,8 +61,6 @@ on_ownership_change = { #province scope
 			id = lotr_migration_events.100
 			days = 1
 		}
-		# delay = { days = 1 }
-		# orc_purge_effect = { LOC = ROOT }
 	}
 }
 
@@ -86,6 +84,15 @@ on_diplomatic_annex = {
 				limit = { has_trait = olympic_competitor }
 				move_country = global_var:frodo_protector_country_global
 			}
+		}
+	}
+}
+
+on_ending_war = {
+	effect = {
+		trigger_event = {
+			id = lotr_maintenance.1
+			days = 1 #the war is not yet ended when the on_action fires. We want to make sure it is actually ended to be able to check for war = no if this was the last war.
 		}
 	}
 }

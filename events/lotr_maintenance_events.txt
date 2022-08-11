@@ -1,0 +1,68 @@
+﻿namespace = lotr_maintenance
+
+#Various maintenance events
+
+		
+lotr_maintenance.1 = { 
+	
+	type = country_event
+  title = "lotr_maintenance.1.t"
+  desc = "lotr_maintenance.1.desc"
+  picture = event_orcs_orcs
+
+	trigger = {
+    country_culture_group  = orcs_group
+    war = no
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "OK"	
+    set_variable = {
+      name = num_orcs
+      value = 0
+    }
+    every_unit = {
+      limit = {
+        has_variable = displaced_orcs
+      }
+      every_sub_unit = {
+        ROOT = {
+          change_variable = {
+            name = num_orcs
+            add = 1
+          }
+        }
+      }
+      destroy_unit = yes
+    }
+    while = {
+      limit = { var:num_orcs > 3 }
+      random_owned_province = {
+        limit = {
+          total_population < population_cap
+        }
+        define_pop = {
+          type = slaves
+          culture = root.culture
+          religion = root.religion
+        }
+      }
+      change_variable = {
+        name = num_orcs
+        subtract = 6
+      }
+    }
+    ai_chance = {
+      base = 100
+    }
+	}
+  option = {
+    name = "FightOn" 
+    ai_chance = {
+      base = 0
+    }
+  }
+}
