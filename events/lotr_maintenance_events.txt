@@ -66,3 +66,54 @@ lotr_maintenance.1 = {
     }
   }
 }
+
+
+lotr_maintenance.2 = { 
+  type = country_event
+  hidden = yes
+  trigger = {
+    OR = {
+      this = c:GON
+      this = c:CAR
+      # this = c:ARN
+    }
+    has_civil_war = yes
+  }
+  immediate = {
+    every_current_war = {
+      limit = { is_civil_war = yes }
+      every_war_participant = {
+        limit = {
+          OR = {
+            is_subject_type = satrapy
+            is_subject_type = ranger_protectorate
+          }
+        }
+        add_to_list = fighting_subjects
+        PREV = {
+          remove_from_war = PREV.PREV
+        }
+      }
+    }
+    every_in_list = {
+      list = fighting_subjects
+      overlord = { release_subject = PREV }
+      ROOT = {
+        if = { 
+          limit = { THIS = c:GON }
+          make_subject = {
+            target = PREV
+            type = satrapy
+          }
+        }
+        else
+        {
+          make_subject = {
+            target = PREV
+            type = ranger_protectorate
+          }
+        }
+      }
+    }
+  }
+}

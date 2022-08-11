@@ -24,6 +24,7 @@ vassal_tribe = { #Tribal Vassal
 	
 	allow = {
 		is_tribal = yes
+		exists = scope:future_overlord
 		scope:future_overlord = {
 			is_subject = no
 			is_tribal = no
@@ -110,6 +111,7 @@ tributary = {
 	# subject_modifier = {}
 	
 	allow = {
+		exists = scope:future_overlord
 		scope:future_overlord = {
 			is_subject = no
 		}
@@ -181,6 +183,7 @@ feudatory = { #Latin Allies
 	
 	allow = {
 		num_of_cities <= 10
+		exists = scope:future_overlord
 		scope:future_overlord = {
 			is_subject = no
 			num_of_cities >= 20
@@ -263,7 +266,7 @@ feudatory = { #Latin Allies
 satrapy = { #BR note: used for gondorian fiefs - we don't want them joining offensive wars for balance reasons - they should join via a decision when West Pelargir or Minas Tirith are under siege
 	subject_pays = subject_pays_satrapy
 	
-	joins_overlord_in_war = no
+	joins_overlord_in_war = yes
 	
 	protected_when_attacked = yes
 	has_overlords_ruler = no
@@ -278,13 +281,14 @@ satrapy = { #BR note: used for gondorian fiefs - we don't want them joining offe
 		monthly_legitimacy = 0.02
 	}
 	subject_modifier = {
-		
+		loyalty_to_overlord = -200
 	}
 	
 	allow = {
 		is_tradition_tree_allowed = edain_philosophy  #subjected state is Edain.
 		num_of_cities > 40
 		is_monarchy = yes
+		exists = scope:future_overlord
 		scope:future_overlord = {
 			is_subject = no
 			#num_of_cities >= 150
@@ -349,6 +353,7 @@ client_state = {
 	allow = {
 		num_of_cities < 150
 		is_tribal = no
+		exists = scope:future_overlord
 		scope:future_overlord = {
 			is_subject = no
 			is_tribal = no

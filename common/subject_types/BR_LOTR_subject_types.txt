@@ -21,6 +21,7 @@
 	
 	allow = {
 		#is_tribal = yes
+		exists = scope:future_overlord
 		scope:future_overlord = {
 			religion = melkor
 			tag = MOR
@@ -167,6 +168,7 @@ ranger_protectorate = { #Ranger of the north mechanics
 			country_culture_group = vanyar_group
 			country_culture_group = orcs_group
 		}
+		exists = scope:future_overlord
 		scope:future_overlord = {
 			religion = iluvatarism
 			tag = CAR
@@ -272,6 +274,7 @@ ranger_fief = { #Ranger of the north mechanics
 			country_culture_group = vanyar_group
 			country_culture_group = orcs_group
 		}
+		exists = scope:future_overlord
 		scope:future_overlord = {
 			religion = iluvatarism
 			tag = CAR
