@@ -127,12 +127,18 @@ br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will join 
 	hidden = yes
 	
 	trigger = {
-		NOT = { has_country_modifier = servants_of_sauron }
 		NOT = { primary_culture = orcish }
 		NOT = { primary_culture = black_numenorean }
 		NOT = { primary_culture = corsair }
 		NOT = { primary_culture = goblins }
 		NOT = { primary_culture = urukhai }
+		NOT = { 
+			# has_country_modifier = servants_of_sauron 
+			has_opinion = {
+				modifier = sauron_worship_modifier
+				target = c:MOR
+			}
+		}
 		religion = melkorism
 	}
 	

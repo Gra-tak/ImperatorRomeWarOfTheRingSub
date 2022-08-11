@@ -133,3 +133,5 @@
  lotr_storyline_events.12.t:0 "You find someone else using a Palantir."
  lotr_storyline_events.12.desc:0 "Saruman the White has foolishly gazed into the Palantir. His will is strong, but no match for yours. You show him the power of Mordor and how the East and South are mobilising, how Lorien, Imladris and Minas Tirith will burn, the world of men in flames. Once he is shown the certainty of his defeat, you offer him a choice. If he were to join you willingly, you may consider him as a trusted lieutenant to rule the lands west of the Misty Mountains, and he would be mighty King in his own right, though subservient to Mordor. His will falters, and he slumps, defeated. He has accepted your terms."
  lotr_storyline_events.12.a:0 "Now build me an army worthy of Mordor.."
+ lotr_maintenance.1.t:0 "Our wars have come to an end for the time and we still have displaced orcs in our army. Shall we settle them in our lands once again?"
+ lotr_maintenance.1.b:0 "No. We will fight on."

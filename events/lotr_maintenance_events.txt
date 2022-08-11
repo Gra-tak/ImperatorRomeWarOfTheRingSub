@@ -13,6 +13,9 @@ lotr_maintenance.1 = {
 	trigger = {
     country_culture_group  = orcs_group
     war = no
+    any_unit = {
+      has_variable = displaced_orcs
+    }
 	}
 	
 	immediate = {
@@ -60,7 +63,7 @@ lotr_maintenance.1 = {
     }
 	}
   option = {
-    name = "FightOn" 
+    name = "lotr_maintenance.1.b" 
     ai_chance = {
       base = 0
     }
