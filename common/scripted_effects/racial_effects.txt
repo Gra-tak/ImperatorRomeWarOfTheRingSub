@@ -88,51 +88,77 @@ orc_purge_spawn = {
 orc_purge_effect = {
 	if = {
 		limit = {
-			$LOC$ = { has_owner = no }
+			$LOC$ = { has_owner = yes }
 		}
-		c:REB = {
-			create_unit = {
-				location = $LOC$
-				save_scope_as = orcs
-			}
-		}
-	}
-	else = {
-		owner = {
-			create_unit = {
-				location = $LOC$
-				save_scope_as = orcs
-			}
-		}
-	}
-	scope:orcs = {
-#		set_variable = {
-#			name = purged_orcs
-#		}
-		random_sub_unit = {
-			limit = { subunit_morale_percentage < 100 }
-			add_subunit_morale = 1
-		}
-		while = {
-			limit = {
-				unit_location = {
-					province_has_orcs = yes
+		if = {
+			limit = { 
+				has_variable = orc_master
+				OR = {
+					AND = {
+						NOT = { var:orc_master = controller }
+						var:orc_master = {
+							war_with = PREV.controller
+						}
+					}
+					AND = {
+						NOT = { var:orc_master = owner }
+						var:orc_master = {
+							war_with = PREV.owner
+						}
+					}
 				}
 			}
-			unit_location = {
-				random_pops_in_province = {
+			var:orc_master = {
+				create_unit = {
+					location = $LOC$
+					save_scope_as = orcs
+					subunit = orc_infantry
+					name = "Displaced Orcs"
+				}
+			}
+			scope:orcs = {
+				random_sub_unit = {
+					limit = { subunit_morale_percentage < 100 }
+					add_subunit_morale = 1
+				}
+				while = {
 					limit = {
-						pop_culture_group = orcs_group 
+						unit_location = {
+							province_has_orcs = yes
+						}
 					}
-					switch = {
-						trigger = pop_type
-						citizen = { scope:orcs = { orc_purge_spawn = { NUM = 6 } } }
-						freemen = { scope:orcs = { orc_purge_spawn = { NUM = 5 } } }
-						slaves = { scope:orcs = { orc_purge_spawn = { NUM = 3 } } }
-						fallback = { scope:orcs = { orc_purge_spawn = { NUM = 4 } } }
+					unit_location = {
+						random_pops_in_province = {
+							limit = {
+								pop_culture_group = orcs_group 
+							}
+							switch = {
+								trigger = pop_type
+								citizen = { scope:orcs = { orc_purge_spawn = { NUM = 6 } } }
+								freemen = { scope:orcs = { orc_purge_spawn = { NUM = 5 } } }
+								slaves = { scope:orcs = { orc_purge_spawn = { NUM = 3 } } }
+								fallback = { scope:orcs = { orc_purge_spawn = { NUM = 4 } } }
+							}
+							kill_pop = yes
+						}
 					}
-					kill_pop = yes
 				}
+			}
+		}
+		else = {
+			move_all_orcs_home_effect = yes
+		}
+	}
+}
+
+#country scope
+mark_orc_provinces = {
+	if = {
+		limit = { country_culture_group = orcs_group }
+		every_owned_province = {
+			set_variable = {
+				name = orc_master
+				value = PREV
 			}
 		}
 	}
@@ -208,5 +234,64 @@ lotr_on_create_character_effect = {
 			has_culture_group = orcs_group
 		}
 		add_trait = orc
+	}
+}
+
+move_home_effect = {
+	if = {
+		limit = {
+			any_country = {
+				culture = $CULTURE$
+			}
+		}
+		random_country = {
+			limit = {
+				culture = $CULTURE$
+			}
+			weight = {
+				modifier = {
+					factor = 5
+					religion = $RELIGION$
+				}
+			}
+			random_owned_province = {
+				save_scope_as = target
+			}
+		}
+		move_pop = scope:target
+	}
+	else_if = {
+		limit = {
+			any_country = {
+				culture.culture_group = $CULTURE_GROUP$
+			}
+		}
+		random_country = {
+			limit = {
+				culture.culture_group = $CULTURE_GROUP$
+			}
+			weight = {
+				modifier = {
+					factor = 5
+					religion = $RELIGION$
+				}
+			}
+			random_owned_province = {
+				save_scope_as = target
+			}
+		}
+		move_pop = scope:target
+	}
+}
+
+#provice scope
+move_all_orcs_home_effect = {
+	every_pops_in_province = {
+		limit = { pop_culture_group = orcs_group }
+		move_home_effect = {
+			CULTURE = culture
+			CULTURE_GROUP = culture_group
+			RELIGION = religion
+		}
 	}
 }

@@ -63,10 +63,11 @@
 				if = {
 					limit = {
 						province_has_orcs = yes
-						#NOT = { ROOT = { unit_owner = { country_culture = orcish } } }
+						NOT = { ROOT = { unit_owner = { country_culture_group = orcs_group } } }
 					}
 					save_scope_as = settle_ability_target
-					orc_purge_effect = { LOC = scope:settle_ability_target }
+					move_all_orcs_home_effect = yes
+					# orc_purge_effect = { LOC = scope:settle_ability_target }
 				}
 				set_conquered_by = root.unit_owner
 			}

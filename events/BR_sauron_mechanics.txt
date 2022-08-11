@@ -133,6 +133,7 @@ br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will join 
 		NOT = { primary_culture = corsair }
 		NOT = { primary_culture = goblins }
 		NOT = { primary_culture = urukhai }
+		religion = melkorism
 	}
 	
 	immediate = {
@@ -177,6 +178,9 @@ br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will join 
 				modifier = sauron_worship_modifier
 				target = c:MOR
 			}
+			ruler = {
+				save_scope_as = convert
+			}
 			# trigger_event = { id = br_sauron.5 }
 			every_country = {
 				limit = {
@@ -188,7 +192,7 @@ br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will join 
 						target = PREV
 					}
 				}
-				trigger_event = { id = br_sauron.12 days = 30 } #players are told this ruler has turned to Melkor
+				trigger_event = { id = br_sauron.12 } #players are told this ruler has turned to Melkor
 			}
 		}
 	}		

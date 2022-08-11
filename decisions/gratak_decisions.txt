@@ -2,6 +2,10 @@
 	removeVassalClaims = {
 		potential = {
 			is_ai = no
+			any_subject = {
+				count > 0
+				exists = this
+			}
 		}
 		allow = {}
 		effect = {

@@ -31,6 +31,10 @@ monthly_country_pulse = {
 		595 = 0
 		5 = comet.4
 	}
+
+	effect = {
+		mark_orc_provinces = yes
+	}
 	
 	on_actions = {		
 		dictatorship_power_held_pulse

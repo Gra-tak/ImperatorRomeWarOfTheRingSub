@@ -1631,6 +1631,11 @@ on_province_occupied = { #province scope, it will fire AS WELL as on_siege_won
 		if = {
 			limit = {
 				province_has_orcs = yes
+				NOT = {
+					controller = {
+						country_culture_group = orcs_group
+					}
+				}
 			}
 			orc_purge_effect = { LOC = ROOT }
 		}
