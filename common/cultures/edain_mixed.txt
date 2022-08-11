@@ -2,11 +2,11 @@
 	#edain
 	color = hsv { 0.71 0.17 0.32 }
 
-	levy_template = levy_edain_mixed
+	levy_template = levy_lesserdunedain
 	
-	primary = archers
-	second = heavy_infantry
-	flank = archers
+	primary = dunedain_archers
+	second = dunedain_infantry
+	flank = dunedain_cavalry
 
 	primary_navy = galley
 	secondary_navy = galley

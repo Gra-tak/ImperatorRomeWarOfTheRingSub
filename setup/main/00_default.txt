@@ -179,7 +179,7 @@ diplomacy = {
 	dependency = { first = GON second = DOR subject_type = satrapy }
 	dependency = { first = GON second = LAM subject_type = satrapy }
 	dependency = { first = GON second = ANF subject_type = satrapy }
-	dependency = { first = GON second = ANR subject_type = satrapy }
+	dependency = { first = GON second = ANR subject_type = vassal_tribe }
 	dependency = { first = GON second = XXA subject_type = client_state }
 	dependency = { first = GON second = EHI subject_type = vassal_tribe }
 	dependency = { first = GON second = FOR subject_type = vassal_tribe }
@@ -906,7 +906,12 @@ country = {
 			
 			}
 
-	
+			poptype_rights = { 
+				{
+					culture = gondorian
+					type = citizen
+				}
+			}
 			
 			is_antagonist = no
 			
@@ -951,6 +956,14 @@ country = {
 				religious_tech= { level=1 progress=0  }
 			}
 			
+
+			poptype_rights = { 
+				{
+					culture = gondorian
+					type = citizen
+				}
+			}
+
 			centralization=75
 			capital = 1303
 
@@ -1054,6 +1067,13 @@ country = {
 			
 			}
 
+			poptype_rights = { 
+				{
+					culture = gondorian
+					type = citizen
+				}
+			}
+
 			is_antagonist = no
 
 			own_control_core = 	{
@@ -1062,19 +1082,19 @@ country = {
 		}
 		
 		ANR = { #Andrast
-			government = despotic_monarchy
+			government = tribal_federation
 			diplomatic_stance=appeasement_stance
-			primary_culture = gondorian
+			primary_culture = andrasting
 			religion = iluvatarism
 			
 			technology={
-				military_tech={ level=1 progress=0 }
-				civic_tech={ level=1 progress=0 }
-				oratory_tech={ level=1 progress=0 }
-				religious_tech= { level=1 progress=0  }
+				military_tech={ level=0 progress=0 }
+				civic_tech={ level=0 progress=0 }
+				oratory_tech={ level=0 progress=0 }
+				religious_tech= { level=0 progress=0  }
 			}
 			
-			centralization=75
+			centralization=30
 			capital = 2255
 
 			is_antagonist = no

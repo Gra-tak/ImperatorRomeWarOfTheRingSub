@@ -2075,3 +2075,7 @@
  departed_for_valinor:0 "Departed for Valinor"
  grey_company:0 "Grey Company"
  devoted_vassal:0 "Devoted Vassal"
+ harassed_by_corsairs:0 "Harassed by Corsairs"
+ desc_harassed_by_corsairs:0 "While the vassals of gondor are brave men who would willingly go to war for Gondor, most of the are currently busy fighting of Corsair attacks on their coasts."
+ influenced_by_sarman:0 "Influenced by Saruman"
+ desc_influenced_by_sarman:0 "The army of the horseman of Rohan is no more what it once was. Rumors say, Saruman is whispering to the king and is responsible for this."

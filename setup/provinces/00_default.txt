@@ -20807,7 +20807,7 @@
       amount=1
    }
    slaves={
-      amount=3
+      amount=1
    }
 
 }
@@ -20825,7 +20825,7 @@
       amount=1
    }
    slaves={
-      amount=4
+      amount=1
    }
 
 }
@@ -21396,7 +21396,7 @@
       amount=1
    }
    slaves={
-      amount=3
+      amount=1
    }
 
 }
@@ -21414,7 +21414,7 @@
       amount=1
    }
    slaves={
-      amount=3
+      amount=1
    }
 
 }
@@ -21465,10 +21465,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=2
+      amount=1
    }
    slaves={
-      amount=4
+      amount=1
    }
 
 }
@@ -21483,10 +21483,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=2
+      amount=1
    }
    slaves={
-      amount=2
+      amount=1
    }
 
 }
@@ -21519,10 +21519,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=2
+      amount=1
    }
    slaves={
-      amount=3
+      amount=1
    }
 
 }
@@ -21540,7 +21540,7 @@
       amount=1
    }
    slaves={
-      amount=3
+      amount=1
    }
 
 }
@@ -21576,7 +21576,7 @@
       amount=1
    }
    slaves={
-      amount=3
+      amount=1
    }
 
 }
@@ -21594,7 +21594,7 @@
       amount=1
    }
    slaves={
-      amount=2
+      amount=1
    }
 
 }
@@ -21612,7 +21612,7 @@
       amount=1
    }
    slaves={
-      amount=2
+      amount=1
    }
 
 }
@@ -21630,7 +21630,7 @@
       amount=1
    }
    slaves={
-      amount=4
+      amount=1
    }
 
 }
@@ -21812,14 +21812,18 @@
    civilization_value=60
    barbarian_power=0
    province_rank="city"
+
+   nobles={
+      amount=2
+   }
    citizen={
-      amount=10
+      amount=4
    }
    freemen={
-      amount=10
+      amount=6
    }
    slaves={
-      amount=10
+      amount=8
    }
 
 }
@@ -22601,10 +22605,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=2
+      amount=1
    }
    slaves={
-      amount=3
+      amount=1
    }
 
 }
@@ -22622,7 +22626,7 @@
       amount=1
    }
    slaves={
-      amount=2
+      amount=1
    }
 
 }
@@ -22631,7 +22635,7 @@
    terrain="plains"
    culture="gondorian"
    religion="iluvatarism"
-   trade_goods="cattle"
+   trade_goods="cattf133le"
    civilization_value=60
    barbarian_power=0
    province_rank="settlement"
@@ -22640,7 +22644,7 @@
       amount=1
    }
    slaves={
-      amount=4
+      amount=1
    }
 
 }
@@ -23010,7 +23014,7 @@
       amount=2
    }
    slaves={
-      amount=4
+      amount=3
    }
 
 }
@@ -23028,7 +23032,7 @@
       amount=1
    }
    slaves={
-      amount=4
+      amount=1
    }
 
 }
@@ -23043,10 +23047,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=5
+      amount=2
    }
    slaves={
-      amount=5
+      amount=3
    }
 
 }
@@ -23061,10 +23065,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=2
    }
    slaves={
-      amount=4
+      amount=3
    }
 
 }
@@ -23082,7 +23086,7 @@
       amount=2
    }
    slaves={
-      amount=4
+      amount=3
    }
 
 }
@@ -23100,7 +23104,7 @@
       amount=3
    }
    slaves={
-      amount=6
+      amount=4
    }
 
 }
@@ -23118,7 +23122,7 @@
       amount=2
    }
    slaves={
-      amount=4
+      amount=3
    }
 
 }
@@ -23136,7 +23140,7 @@
       amount=2
    }
    slaves={
-      amount=4
+      amount=3
    }
 
 }
@@ -23169,12 +23173,11 @@
    province_rank="settlement"
 
    freemen={
-      amount=4
+      amount=2
    }
    slaves={
-      amount=4
+      amount=3
    }
-
 }
 
 1429={ #Tir Abedec
@@ -23187,10 +23190,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=2
    }
    slaves={
-      amount=4
+      amount=3
    }
 
 }
@@ -23205,7 +23208,7 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=2
    }
    slaves={
       amount=3
@@ -23223,7 +23226,7 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=2
    }
    slaves={
       amount=3
@@ -23241,7 +23244,7 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=2
    }
    slaves={
       amount=3
@@ -24614,10 +24617,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=2
+      amount=1
    }
    slaves={
-      amount=4
+      amount=2
    }
 
 }
@@ -24632,10 +24635,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=2
    }
    slaves={
-      amount=5
+      amount=3
    }
 
 }
@@ -24650,10 +24653,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=2
    }
    slaves={
-      amount=5
+      amount=3
    }
 
 }
@@ -24684,7 +24687,7 @@
    province_rank="settlement"
    fortress_building = 1
    freemen={
-      amount=5
+      amount=2
    }
    slaves={
       amount=3
@@ -24702,7 +24705,7 @@
    province_rank="settlement"
 
    freemen={
-      amount=2
+      amount=1
    }
    slaves={
       amount=2
@@ -24768,10 +24771,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=2
    }
    slaves={
-      amount=4
+      amount=3
    }
 
 }
@@ -24783,13 +24786,13 @@
    trade_goods="honey"
    civilization_value=60
    barbarian_power=0
-   province_rank="city"
+   province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=2
    }
    slaves={
-      amount=5
+      amount=3
    }
 
 }
@@ -24840,10 +24843,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=1
    }
    slaves={
-      amount=3
+      amount=2
    }
 
 }
@@ -36178,10 +36181,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=2
+      amount=1
    }
    slaves={
-      amount=3
+      amount=2
    }
 
 }
@@ -36194,10 +36197,10 @@
    civilization_value=60
    barbarian_power=0
    province_rank="settlement"
-   citizen={
-      amount=2
-   }
    freemen={
+      amount=1
+   }
+   slaves={
       amount=3
    }
 
@@ -36214,7 +36217,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=6
+      amount=1
+   }
+   slaves={
+      amount=2
    }
 
 
@@ -36231,13 +36237,13 @@
    barbarian_power=0
    province_rank="city"
    citizen={
-      amount=3
+      amount=1
    }
    freemen={
-      amount=6
+      amount=2
    }
    slaves={
-      amount=4
+      amount=3
    }
 
 }
@@ -36252,7 +36258,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=4
+      amount=1
+   }
+   slaves={
+      amount=2
    }
 
 
@@ -36268,10 +36277,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=1
    }
    slaves={
-      amount=3
+      amount=2
    }
 
 }
@@ -36336,10 +36345,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=4
+      amount=1
    }
    slaves={
-      amount=5
+      amount=2
    }
 
 }
@@ -36354,10 +36363,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=1
    }
    slaves={
-      amount=3
+      amount=2
    }
 
 }
@@ -37235,10 +37244,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=4
+      amount=1
    }
    slaves={
-      amount=2
+      amount=3
    }
 
 }
@@ -37269,10 +37278,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=2
+      amount=1
    }
    slaves={
-      amount=5
+      amount=3
    }
 
 }
@@ -37303,10 +37312,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=3
+      amount=1
    }
    slaves={
-      amount=3
+      amount=2
    }
 
 }
@@ -37337,7 +37346,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=5
+      amount=1
+   }
+   slaves={
+      amount=2
    }
 
 
@@ -61864,10 +61876,10 @@
    province_rank="settlement"
 
    freemen={
-      amount=2
+      amount=1
    }
    slaves={
-      amount=3
+      amount=2
    }
 
 }

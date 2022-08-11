@@ -10,6 +10,27 @@ lotr_startup.1 = { #Temp fix for new vanilla fort capacity mechanic causing inco
 	}
 	
 	immediate = {
+		every_subject = {
+			limit = {
+				is_subject_type = satrapy
+			}
+			if = {
+				limit = {
+					this = c:ROH
+				}
+				add_country_modifier = {
+					name = influenced_by_sarman
+					duration = -1
+				}
+			}
+			else
+			{
+				add_country_modifier = {
+					name = harassed_by_corsairs
+					duration = -1
+				}
+			}
+		}
 			p:1300 = {
 				state = {
 					add_state_modifier = {

@@ -36,7 +36,6 @@
 				tag = DOR
 				tag = LAM
 				tag = ANF
-				tag = ANR
 			}
 			is_subject_type = satrapy
 			overlord = {
