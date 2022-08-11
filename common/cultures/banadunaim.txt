@@ -1,11 +1,11 @@
 ﻿banadunaim_group = {
 	#edain
 
-	levy_template = levy_banadunaim
+	levy_template = levy_dunedain	
 	
-	primary = heavy_infantry
-	second = archers
-	flank = light_cavalry
+	primary = dunedain_archers
+	second = dunedain_infantry
+	flank = dunedain_cavalry
 
 	primary_navy = galley
 	secondary_navy = galley

@@ -47,9 +47,13 @@ lotr_storyline_events.1 = {
 				}
 			}
 		}
-		# allow_uruk_crossbows = yes
-		# allow_uruk_heavy_infantry  = yes
-		# allow_uruk_infantry = yes
+		au_basic_setup = yes
+		allow_warg_riders = yes
+		allow_orc_infantry  = yes
+		#rest via traditions
+		set_variable = {
+			name = barbarian_traditions_unlocked #keep traditions
+		}
 	}
 	
 	option = {

@@ -22635,7 +22635,7 @@
    terrain="plains"
    culture="gondorian"
    religion="iluvatarism"
-   trade_goods="cattf133le"
+   trade_goods="cattle"
    civilization_value=60
    barbarian_power=0
    province_rank="settlement"
