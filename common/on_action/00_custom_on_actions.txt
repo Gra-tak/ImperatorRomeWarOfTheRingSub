@@ -636,7 +636,7 @@ yearly_subject_pulse = {
 
 	random_events = {
 		500 = 0
-		100 = country_diplomacy.32
+		# 100 = country_diplomacy.32
 		100 = country_diplomacy.35
 		100 = country_diplomacy.36
 	}
