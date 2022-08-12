@@ -177,8 +177,8 @@ feudatory = { #Latin Allies
 		
 	}
 	subject_modifier = {
-		global_citizen_happyness = negative_happiness_small_svalue
 		army_maintenance_cost = -0.1
+		loyalty_to_overlord = 10
 	}
 	
 	allow = {

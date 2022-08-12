@@ -187,7 +187,7 @@ diplomacy = {
 	
 	#Dale/Erebor/Iron Hills Alliance **Alliances keep breaking, will make Dale and Iron Hills tributaries of Erebor instead
 	dependency = { first = ERB second = DLE subject_type = feudatory }
-	dependency = { first = ERB second = IRO subject_type = feudatory }
+	# dependency = { first = ERB second = IRO subject_type = feudatory } #iron hills is part of ERB
 	
 	#Mordor - starts with Rhun and Variags as client states
 	#dependency = { first = MOR second = XBX subject_type = thrall_tribe } #Rhun

@@ -13,7 +13,7 @@ levy_orcs = {
 levy_urukhai = {
 	default = no
 	uruk_crossbows = 0.2
-	uruk_heavy_infantry =0.3
+	uruk_heavy_infantry = 0.3
 	uruk_infantry = 0.5
 }
 
