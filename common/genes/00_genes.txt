@@ -9948,6 +9948,13 @@ accessory_genes = {
             }
         }
 		
+		gandalf_hat_top_layer = {
+            index = 20
+            male = {
+                1 = male_pointed_hat_1
+            }
+        }
+		
         no_top_layer = {
             index = 30
             male = {
