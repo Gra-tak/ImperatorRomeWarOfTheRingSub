@@ -8,6 +8,7 @@ lotr_tradition_events.1 = {
 	hidden = yes
 	
 	trigger = {
+		is_ai = no #prevent AI from choosing the wrong tree...
 	}
 	
 	immediate = { 
@@ -30,10 +31,10 @@ lotr_tradition_events.1 = {
 						country_culture_group = haldadian_group
 					}
 					OR = {
-						subject_type = client_state
-						subject_type = ranger_fief
-						subject_type = saruman_thrall_tribe
-						subject_type = thrall_tribe
+						is_subject_type = client_state
+						is_subject_type = ranger_fief
+						is_subject_type = saruman_thrall_tribe
+						is_subject_type = thrall_tribe
 					}
 				}
 				every_owned_province = {

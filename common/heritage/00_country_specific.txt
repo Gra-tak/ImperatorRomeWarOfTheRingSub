@@ -35,6 +35,7 @@ sauron_heritage = {
 
 		enslavement_efficiency = 1 #restores vanilla, others have none
 		light_infantry_offensive = 0.2
+		# agressive_expansion_impact = -0.5
 		#monthly_military_experience_modifier = 0.2
 		
 		#bad

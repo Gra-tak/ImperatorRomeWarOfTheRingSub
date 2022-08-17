@@ -679,9 +679,8 @@ lotr_frodos_mission_events.100 = {
     name = lotr_frodos_mission_events.100.a
     if = {
       limit = { NOT = { war_with = scope:frodo_protector_country } }
-      declare_war_with_wargoal = {
-        war_goal = imperial_conquest_wargoal
-        target = scope:frodo_protector_country
+      declare_war_with_potential_truce = {
+        TARGET = scope:frodo_protector_country
       }
     }
     #this event might be called again later if the war alrady ended for some reason. That won't spawn another legion though
@@ -832,9 +831,8 @@ lotr_frodos_mission_events.102 = {
         countries_sauron_wants_attacked = yes
       }
       ROOT = {
-        declare_war_with_wargoal = {
-          war_goal = imperial_conquest_wargoal
-          target = PREV
+        declare_war_with_potential_truce = {
+          TARGET = PREV
         }
       }
     }
@@ -865,9 +863,8 @@ lotr_frodos_mission_events.110 = {
     name = lotr_frodos_mission_events.110.a
     if = {
       limit = { NOT = { war_with = scope:frodo_protector_country } }
-      declare_war_with_wargoal = {
-        war_goal = imperial_conquest_wargoal
-        target = scope:frodo_protector_country
+      declare_war_with_potential_truce = {
+        TARGET = scope:frodo_protector_country
       }
     }
     #this event might be called again later if the war alrady ended for some reason.
@@ -914,9 +911,8 @@ lotr_frodos_mission_events.112 = {
         countries_sauron_wants_attacked = yes
       }
       ROOT = {
-        declare_war_with_wargoal = {
-          war_goal = imperial_conquest_wargoal
-          target = PREV
+        declare_war_with_potential_truce = {
+          TARGET = PREV
         }
       }
     }
@@ -948,10 +944,13 @@ lotr_frodos_mission_events.120 = {
     name = lotr_frodos_mission_events.120.a
     if = {
       limit = { NOT = { war_with = scope:frodo_protector_country } }
-      declare_war_with_wargoal = {
-        war_goal = imperial_conquest_wargoal
-        target = scope:frodo_protector_country
+      declare_war_with_potential_truce = {
+        TARGET = scope:frodo_protector_country
       }
+      # declare_war_with_wargoal = {
+      #   war_goal = imperial_conquest_wargoal
+      #   target = scope:frodo_protector_country
+      # }
     }
     #this event might be called again later if the war alrady ended for some reason.
     if = {
@@ -1001,9 +1000,8 @@ lotr_frodos_mission_events.122 = {
         countries_sauron_wants_attacked = yes
       }
       ROOT = {
-        declare_war_with_wargoal = {
-          war_goal = imperial_conquest_wargoal
-          target = PREV
+        declare_war_with_potential_truce = {
+          TARGET = PREV
         }
       }
     }

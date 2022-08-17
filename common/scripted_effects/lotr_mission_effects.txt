@@ -167,3 +167,28 @@ kill_sauron_nazgul = {
 		}
 	}
 }
+
+declare_war_with_potential_truce = {
+  save_scope_as = attacker
+  if = {
+    limit = {
+      has_truce_with =  $TARGET$
+    }
+    set_local_variable = {
+      name = had_truce
+    }
+    add_stability = 25
+  }
+  declare_war_with_wargoal = {
+    war_goal = imperial_conquest_wargoal
+    target = $TARGET$
+  }
+  if = {
+    limit = {
+      has_local_variable = had_truce
+    }
+    add_stability = 25
+    add_war_exhaustion = -1
+    add_aggressive_expansion = -25
+  }
+}
