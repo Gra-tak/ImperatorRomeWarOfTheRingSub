@@ -4,19 +4,19 @@ clothes = {
 	sauron_clothing_replace = {
 		dna_modifiers = {
 			accessory = {
-				mode = replace_template				
+				mode = replace_template
 				gene = clothes
 				template = nazgul_clothes
-			}	
+			}
 			accessory = {
-				mode = replace_template				
+				mode = replace_template
 				gene = clothes_layer2
 				template = no_top_layer
-			}	
+			}
 		}
 		weight = {
 			base = 0
-			
+
 			modifier = {
 				add = 100
 				this = char:3
@@ -24,6 +24,23 @@ clothes = {
 					tag = MOR
 				}
 				is_female = no
+			}
+		}
+	}
+	gandalf_clothing_replace = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = gandalf_hat_top_layer
+			}	
+		}
+		weight = {
+			base = 0
+			
+			modifier = {
+				add = 100
+				has_variable = gandalf_flag
 			}
 		}
 	}
