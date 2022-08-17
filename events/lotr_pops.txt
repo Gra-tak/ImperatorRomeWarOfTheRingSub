@@ -1,0 +1,166 @@
+﻿ # This file was created by script!
+ # Instead of editing it, you should change the python script.
+ # Changes to the file will be overwritten the next time the script is run.
+namespace = lotr_pops
+lotr_pops.1 = {
+	type = country_event
+	hidden = yes
+	trigger = { NOT = { has_law = age_of_the_orc } }
+	immediate = {
+		remove_country_modifier = foreign_support_95
+		remove_country_modifier = foreign_support_90
+		remove_country_modifier = foreign_support_85
+		remove_country_modifier = foreign_support_80
+		remove_country_modifier = foreign_support_75
+		remove_country_modifier = foreign_support_70
+		remove_country_modifier = foreign_support_65
+		remove_country_modifier = foreign_support_60
+		remove_country_modifier = foreign_support_55
+		remove_country_modifier = foreign_support_50
+		remove_country_modifier = foreign_support_45
+		remove_country_modifier = foreign_support_40
+		remove_country_modifier = foreign_support_35
+		remove_country_modifier = foreign_support_30
+		remove_country_modifier = foreign_support_25
+		remove_country_modifier = foreign_support_20
+		remove_country_modifier = foreign_support_15
+		remove_country_modifier = foreign_support_10
+		remove_country_modifier = foreign_support_5
+		set_local_variable = {
+			name = total_pops
+			value = 0
+		}
+		set_local_variable = {
+			name = foreign_pops
+			value = 0
+		}
+		every_owned_province = {
+			every_pops_in_province = {
+				save_scope_as = pop
+				change_local_variable = {
+					name = total_pops
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							ROOT = { any_integrated_culture = { this.culture = scope:pop.culture } }
+						}
+					}
+					change_local_variable = {
+						name = foreign_pops
+						add = 1
+					}
+				}
+			}
+		}
+		set_local_variable = {
+			name = foreign_pop_percentage
+			value = local_var:foreign_pops
+		}
+		if = {
+			limit = { local_var:total_pops > 0 }
+			change_local_variable = {
+				name = foreign_pop_percentage
+				divide = local_var:total_pops
+			}
+		}
+		else = {
+			set_local_variable = {
+				name = foreign_pop_percentage
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = harassed_by_corsairs
+					has_country_modifier = influenced_by_sarman
+				}
+			}
+			change_local_variable = {
+				name = foreign_pop_percentage
+				divide = 2
+			}
+		}
+	}
+	option = {
+		name = OK
+		if = {
+			limit = { local_var:foreign_pop_percentage >= 0.95 }
+			add_country_modifier = { name = foreign_support_95 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.9 }
+			add_country_modifier = { name = foreign_support_90 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.85 }
+			add_country_modifier = { name = foreign_support_85 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.8 }
+			add_country_modifier = { name = foreign_support_80 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.75 }
+			add_country_modifier = { name = foreign_support_75 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.7 }
+			add_country_modifier = { name = foreign_support_70 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.65 }
+			add_country_modifier = { name = foreign_support_65 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.6 }
+			add_country_modifier = { name = foreign_support_60 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.55 }
+			add_country_modifier = { name = foreign_support_55 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.5 }
+			add_country_modifier = { name = foreign_support_50 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.45 }
+			add_country_modifier = { name = foreign_support_45 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.4 }
+			add_country_modifier = { name = foreign_support_40 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.35 }
+			add_country_modifier = { name = foreign_support_35 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.3 }
+			add_country_modifier = { name = foreign_support_30 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.25 }
+			add_country_modifier = { name = foreign_support_25 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.2 }
+			add_country_modifier = { name = foreign_support_20 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.15 }
+			add_country_modifier = { name = foreign_support_15 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.1 }
+			add_country_modifier = { name = foreign_support_10 }
+		}
+		else_if = {
+			limit = { local_var:foreign_pop_percentage >= 0.05 }
+			add_country_modifier = { name = foreign_support_5 }
+		}
+	}
+}

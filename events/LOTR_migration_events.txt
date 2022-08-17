@@ -92,6 +92,7 @@ lotr_migration_events.1 = {
 			random_in_list = {
 				list = trying_to_flee_list
 				remove_from_list = trying_to_move_list
+				save_scope_as = pop
 				if = {
 					limit = {
 						any_country = {
@@ -121,17 +122,36 @@ lotr_migration_events.1 = {
 				else_if = {
 					limit = {
 						any_country = {
-							culture.culture_group = PREV.culture.culture_group
+							OR = {
+								any_integrated_culture = {
+									this.culture = scope:pop.culture
+								}
+								culture.culture_group = PREV.culture.culture_group
+							}
 						}
 					}
 					random_country = {
 						limit = {
-							culture.culture_group = PREV.culture.culture_group
+							OR = {
+								any_integrated_culture = {
+									this.culture = scope:pop.culture
+								}
+								culture.culture_group = PREV.culture.culture_group
+							}
 						}
 						weight = {
 							modifier = {
 								factor = 5
 								religion = PREV.religion
+							}
+							modifier = {
+								factor = 5
+								AND = {
+									any_integrated_culture = {
+										this.culture = scope:pop.culture
+									}
+									culture.culture_group = PREV.culture.culture_group
+								}
 							}
 							modifier = {
 								factor = 0.2

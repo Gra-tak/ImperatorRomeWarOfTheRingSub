@@ -25,6 +25,7 @@ monthly_country_pulse = {
 		br_pops.3
 		br_pops.6
 		br_pops.7
+		lotr_pops.1
 		lotr_maintenance.2
 	}
 	

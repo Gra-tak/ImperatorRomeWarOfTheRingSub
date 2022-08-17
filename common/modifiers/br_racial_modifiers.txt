@@ -1,4 +1,4 @@
- # This file was created by script!
+﻿ # This file was created by script!
  # Instead of editing it, you should change the python script.
  # Changes to the file will be overwritten the next time the script is run.
 10_noldor = {
@@ -291,22 +291,22 @@
 80_orc = { global_population_growth = 0.48 }
 90_orc = { global_population_growth = 0.54 }
 100_orc = { global_population_growth = 0.6 }
-foreign_support_5 = { levy_size_multiplier = 0.05 }
-foreign_support_10 = { levy_size_multiplier = 0.1 }
-foreign_support_15 = { levy_size_multiplier = 0.15000000000000002 }
-foreign_support_20 = { levy_size_multiplier = 0.2 }
-foreign_support_25 = { levy_size_multiplier = 0.25 }
-foreign_support_30 = { levy_size_multiplier = 0.30000000000000004 }
-foreign_support_35 = { levy_size_multiplier = 0.35000000000000003 }
-foreign_support_40 = { levy_size_multiplier = 0.4 }
-foreign_support_45 = { levy_size_multiplier = 0.45 }
-foreign_support_50 = { levy_size_multiplier = 0.5 }
-foreign_support_55 = { levy_size_multiplier = 0.55 }
-foreign_support_60 = { levy_size_multiplier = 0.6000000000000001 }
-foreign_support_65 = { levy_size_multiplier = 0.65 }
-foreign_support_70 = { levy_size_multiplier = 0.7000000000000001 }
-foreign_support_75 = { levy_size_multiplier = 0.75 }
-foreign_support_80 = { levy_size_multiplier = 0.8 }
-foreign_support_85 = { levy_size_multiplier = 0.8500000000000001 }
+foreign_support_95 = { levy_size_multiplier = 0.95 }
 foreign_support_90 = { levy_size_multiplier = 0.9 }
-foreign_support_95 = { levy_size_multiplier = 0.9500000000000001 }
+foreign_support_85 = { levy_size_multiplier = 0.85 }
+foreign_support_80 = { levy_size_multiplier = 0.8 }
+foreign_support_75 = { levy_size_multiplier = 0.75 }
+foreign_support_70 = { levy_size_multiplier = 0.7 }
+foreign_support_65 = { levy_size_multiplier = 0.65 }
+foreign_support_60 = { levy_size_multiplier = 0.6 }
+foreign_support_55 = { levy_size_multiplier = 0.55 }
+foreign_support_50 = { levy_size_multiplier = 0.5 }
+foreign_support_45 = { levy_size_multiplier = 0.45 }
+foreign_support_40 = { levy_size_multiplier = 0.4 }
+foreign_support_35 = { levy_size_multiplier = 0.35 }
+foreign_support_30 = { levy_size_multiplier = 0.3 }
+foreign_support_25 = { levy_size_multiplier = 0.25 }
+foreign_support_20 = { levy_size_multiplier = 0.2 }
+foreign_support_15 = { levy_size_multiplier = 0.15 }
+foreign_support_10 = { levy_size_multiplier = 0.1 }
+foreign_support_5 = { levy_size_multiplier = 0.05 }
