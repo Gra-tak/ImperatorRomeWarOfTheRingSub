@@ -1,3 +1,8 @@
 ﻿l_english:
  olympic_competitor:0 "Member of the Fellowship"
  olympic_competitor_desc:1 "This is a member of the fellowship of the ring. He is currently traveling through this country."
+ warm_climate:0 "Ideal Climate"
+ temperate_climate:0 "Temperate Climate"
+ frigid_climate:0 "Cold Winters"
+ alpine_climate:0 "Arctic Climate"
+ arid_climate:0 "Arid Climate"
