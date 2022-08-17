@@ -7928,7 +7928,7 @@
 	civilization_value = 20
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 10 }
 	slaves = { amount = 1 }
 }
 750 = { #Burh Kavar (BAL) (duil_rewinion_area) (dor_rhunen_region)
@@ -8635,7 +8635,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 9 }
 	slaves = { amount = 1 }
 }
 822 = { #Burh Fald (unowned) (berennyn_area) (uvanwaith_region)
@@ -10587,7 +10587,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1023 = { #Minas Dûrlith (MOR) (gaer_durlith_area) (gorgoroth_region)
@@ -10598,7 +10598,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1024 = { #Ostigurth (MOR) (gaer_durlith_area) (gorgoroth_region)
@@ -10609,7 +10609,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1025 = { #Den Núrn (MOR) (nurn_area) (nurn_region)
@@ -10643,7 +10643,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1028 = { #Eregwath (MOR) (maegond_area) (nurn_region)
@@ -11778,7 +11778,7 @@
 	barbarian_power = 0
 	province_rank = "city"
 	freemen = { amount = 11 }
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 9 }
 	slaves = { amount = 11 }
 }
 1140 = { #Amon Thaur (MOR) (barad_dur_area) (gorgoroth_region)
@@ -11789,7 +11789,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 1141 = { #Barad-dûr (MOR) (barad_dur_area) (gorgoroth_region)
@@ -11814,7 +11814,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1143 = { #Kirithgal (MOR) (barad_dur_area) (gorgoroth_region)
@@ -11825,7 +11825,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1144 = { #Morigost (MOR) (perth_ulmyn_area) (gorgoroth_region)
@@ -11836,7 +11836,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1145 = { #Orodir (MOR) (perth_ulmyn_area) (gorgoroth_region)
@@ -11847,7 +11847,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1146 = { #Bar-Dúath (MOR) (maegond_area) (nurn_region)
@@ -11982,7 +11982,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1159 = { #Gaer Dûrlith (MOR) (gaer_durlith_area) (gorgoroth_region)
@@ -11993,7 +11993,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1160 = { #Barad Perras (MMO) (ephel_duath_area) (gorgoroth_region)
@@ -12037,7 +12037,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1164 = { #Lugshar (MOR) (perth_ulmyn_area) (gorgoroth_region)
@@ -12048,7 +12048,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1165 = { #Naerband (MOR) (barad_dur_area) (gorgoroth_region)
@@ -12059,7 +12059,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1166 = { #Ennyn Ûr (MOR) (barad_dur_area) (gorgoroth_region)
@@ -12070,7 +12070,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1167 = { #Flaksharbtur (MOR) (perth_ulmyn_area) (gorgoroth_region)
@@ -12081,7 +12081,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1168 = { #Digturmarr (MMO) (ephel_duath_area) (gorgoroth_region)
@@ -12114,7 +12114,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1171 = { #Kâm Lagúrz (MMO) (ephel_duath_area) (gorgoroth_region)
@@ -12137,7 +12137,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 1 }
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 }
 1173 = { #Dor Amarth (MOR) (baugatsor_i_sauron_area) (gorgoroth_region)
 	terrain = "wasteland"
@@ -12148,7 +12148,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 1 }
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 }
 1174 = { #Nargroth (MOR) (gaer_durlith_area) (gorgoroth_region)
 	terrain = "wasteland"
@@ -12375,7 +12375,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 1 }
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 }
 1195 = { #Scara (NUR) (ghurzun_area) (nurn_region)
 	terrain = "plains"
@@ -12815,7 +12815,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1237 = { #Badarîn (MOR) (caradhram_nurn_area) (nurn_region)
@@ -13106,7 +13106,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 1264 = { #Bâsh (MOR) (gaer_durlith_area) (gorgoroth_region)
@@ -13117,7 +13117,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 1265 = { #Kogoruhn (MOR) (lithlad_area) (gorgoroth_region)
@@ -13139,7 +13139,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 1267 = { #Lugulbanda (MOR) (lithlad_area) (gorgoroth_region)
@@ -13150,7 +13150,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 9 }
 	slaves = { amount = 1 }
 }
 1268 = { #Shindrâm (MOR) (lithlad_area) (gorgoroth_region)
@@ -13161,7 +13161,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 1269 = { #Dashte (MOR) (lithlad_area) (gorgoroth_region)
@@ -13172,7 +13172,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 3 }
+	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
 1270 = { #Lashkarg (unowned) (berennyn_area) (uvanwaith_region)
@@ -13806,7 +13806,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 1328 = { #Lorilad (LBN) (lebennivet_area) (lebennin_region)
@@ -15561,7 +15561,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 9 }
 	slaves = { amount = 1 }
 }
 1489 = { #Amon Dim (GON) (doranorien_area) (anorien_region)
@@ -21128,7 +21128,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 2040 = { #Gwegûnok (XBX) (dacranamel_area) (dacranamel_region)
@@ -24136,7 +24136,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 2325 = { #Hrôn Tûmrakhi (VAR) (khur_khand_area) (khand_region)
