@@ -1,5 +1,5 @@
 ﻿harassed_by_corsairs = {
-	levy_size_multiplier = -0.55
+	levy_size_multiplier = -0.45
 }
 
 influenced_by_sarman = {
