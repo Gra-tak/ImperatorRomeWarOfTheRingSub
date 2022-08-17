@@ -20,6 +20,10 @@ lotr_frodos_mission_events.10 = {
   title = lotr_frodos_mission_events.10.t
   desc = lotr_frodos_mission_events.10.desc
   picture = event_bree_pipeweed
+
+  left_portrait = scope:frodo
+  left_portrait = scope:sam
+  right_portrait = scope:gandalf
   trigger = {
    
   }
@@ -63,6 +67,10 @@ lotr_frodos_mission_events.11 = {
   title = lotr_frodos_mission_events.11.t
   desc = lotr_frodos_mission_events.11.desc
   picture = event_nazgul_riders
+  left_portrait = scope:frodo
+  left_portrait = scope:sam
+  right_portrait = scope:pippin
+  right_portrait = scope:merry
   trigger = {
    
   }
@@ -77,6 +85,10 @@ lotr_frodos_mission_events.20 = {
   title = lotr_frodos_mission_events.20.t
   desc = lotr_frodos_mission_events.20.desc
   picture = event_imladris
+  left_portrait = scope:frodo
+  left_portrait = scope:sam
+  right_portrait = char:15
+  right_portrait = scope:gandalf
   trigger = {
    
   }
@@ -106,6 +118,10 @@ lotr_frodos_mission_events.30 = {
   title = lotr_frodos_mission_events.30.t
   desc = lotr_frodos_mission_events.30.desc
   picture = event_council_of_elrond
+  left_portrait = scope:frodo
+  left_portrait = char:57
+  right_portrait = char:15
+  right_portrait = scope:gandalf
   trigger = {
    
   }
@@ -120,6 +136,10 @@ lotr_frodos_mission_events.31 = {
   title = lotr_frodos_mission_events.31.t
   desc = lotr_frodos_mission_events.31.desc
   picture = event_travel_ruin
+  left_portrait = scope:frodo
+  left_portrait = scope:sam
+  right_portrait = char:15
+  right_portrait = scope:gandalf
   trigger = {
    
   }
@@ -135,6 +155,10 @@ lotr_frodos_mission_events.40 = {
   title = lotr_frodos_mission_events.40.t
   desc = lotr_frodos_mission_events.40.desc
   picture = event_moria_entrance
+  left_portrait = scope:frodo
+  left_portrait = char:63
+  right_portrait = char:15
+  right_portrait = scope:gandalf
   trigger = {
    
   }
@@ -159,6 +183,10 @@ lotr_frodos_mission_events.45 = {
   title = lotr_frodos_mission_events.45.t
   desc = lotr_frodos_mission_events.45.desc
   picture = event_orc_wargriders
+  left_portrait = scope:frodo
+  left_portrait = char:76
+  right_portrait = char:15
+  right_portrait = scope:gandalf
   trigger = {
    
   }
@@ -183,6 +211,10 @@ lotr_frodos_mission_events.50 = {
   title = lotr_frodos_mission_events.50.t
   desc = lotr_frodos_mission_events.50.desc
   picture = event_light_of_earendil
+  left_portrait = scope:frodo
+  left_portrait = char:15
+  right_portrait = char:76
+  right_portrait = char:63
   trigger = {
    
   }
@@ -197,6 +229,10 @@ lotr_frodos_mission_events.51 = {
   title = lotr_frodos_mission_events.51.t
   desc = lotr_frodos_mission_events.51.desc
   picture = city_siege
+  left_portrait = scope:frodo
+  left_portrait = char:15
+  right_portrait = char:76
+  right_portrait = char:63
   trigger = {
    
   }
@@ -213,6 +249,10 @@ lotr_frodos_mission_events.55 = {
   title = lotr_frodos_mission_events.55.t
   desc = lotr_frodos_mission_events.55.desc
   picture = event_rohan_riders
+  left_portrait = scope:frodo
+  left_portrait = char:15
+  right_portrait = char:76
+  right_portrait = char:63
   trigger = {
    
   }
@@ -227,6 +267,10 @@ lotr_frodos_mission_events.56 = {
   title = lotr_frodos_mission_events.56.t
   desc = lotr_frodos_mission_events.56.desc
   picture = city_siege
+  left_portrait = scope:frodo
+  left_portrait = char:15
+  right_portrait = char:76
+  right_portrait = char:63
   trigger = {
    
   }
@@ -243,6 +287,10 @@ lotr_frodos_mission_events.60 = {
   title = lotr_frodos_mission_events.60.t
   desc = lotr_frodos_mission_events.60.desc
   picture = event_hobbit_after_battle
+  left_portrait = scope:frodo
+  left_portrait = char:15
+  right_portrait = scope:gandalf
+  right_portrait = char:27
   trigger = {
    
   }
@@ -267,6 +315,11 @@ lotr_frodos_mission_events.70 = {
   title = lotr_frodos_mission_events.70.t
   desc = lotr_frodos_mission_events.70.desc
   picture = throneroom
+  left_portrait = scope:frodo
+  left_portrait = scope:gandalf
+  right_portrait = char:15
+  right_portrait = char:76
+  right_portrait = char:73
   trigger = {
    
   }
@@ -339,6 +392,11 @@ lotr_frodos_mission_events.72 = {
   title = lotr_frodos_mission_events.72.t
   desc = lotr_frodos_mission_events.72.desc
   picture = event_battle_black_gate
+  left_portrait = scope:frodo
+  left_portrait = scope:gandalf
+  right_portrait = char:15
+  right_portrait = char:76
+  right_portrait = char:73
   trigger = {
    
   }
@@ -356,6 +414,11 @@ lotr_frodos_mission_events.73 = {
   title = lotr_frodos_mission_events.73.t
   desc = lotr_frodos_mission_events.73.desc
   picture = event_battle_black_gate
+  left_portrait = scope:frodo
+  left_portrait = scope:gandalf
+  right_portrait = char:15
+  right_portrait = char:76
+  right_portrait = char:73
   trigger = {
    
   }
@@ -370,6 +433,11 @@ lotr_frodos_mission_events.74 = {
   title = lotr_frodos_mission_events.74.t
   desc = lotr_frodos_mission_events.74.desc
   picture = event_battle_black_gate
+  left_portrait = scope:frodo
+  left_portrait = scope:gandalf
+  right_portrait = char:15
+  right_portrait = char:76
+  right_portrait = char:73
   trigger = {
    
   }
@@ -384,6 +452,10 @@ lotr_frodos_mission_events.80 = {
   title = lotr_frodos_mission_events.80.t
   desc = lotr_frodos_mission_events.80.desc
   picture = event_one_ring_lava
+  left_portrait = scope:frodo
+  left_portrait = scope:sam
+  right_portrait = scope:merry
+  right_portrait = scope:pippin
   trigger = {
    
   }
