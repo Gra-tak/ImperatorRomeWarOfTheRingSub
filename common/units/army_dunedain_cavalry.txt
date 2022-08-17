@@ -1,59 +1,54 @@
-﻿dunedain_cavalry = {
+﻿ # This file was created by script!
+ # Instead of editing it, you should change the python script.
+ # Changes to the file will be overwritten the next time the script is run.
+dunedain_cavalry = {
 	army = yes
-
-	levy_tier = advanced
-	enable = no
-	is_flank = yes
+	assault = no
+	levy_tier = basic
 	allow = {
 		trade_good_surplus = { target = horses value > 0 }
 	}
-
-	maneuver = 2
-	movement_speed = 3.5
-
-	build_time = 120
-	#legions = no
-	light_infantry = 3.75
-	heavy_infantry = 2.7
-	heavy_cavalry = 3.0
-	light_cavalry = 3.6
-	camels = 3.6
-	chariots = 3.75
-	warelephant = 1.5
-	horse_archers = 3.0
-	archers = 4.5
-	supply_train = 6.0
-	#light_infantry
-	halfling_infantry = 3.75
-	orc_infantry = 3.75
-	rangers = 3.75
-	#heavy_infantry
-	troll_infantry = 2.7
-	dwarven_infantry = 2.7
-	dunedain_infantry = 2.7
-	elvish_infantry = 2.7
-	uruk_heavy_infantry = 2.7
-	uruk_infantry = 2.7
-	#heavy cavalry
-	dol_amroth_knights = 3.6
-	dunedain_cavalry = 3.6
-	dwarven_goat_riders = 3.6
-	#horse archers
-	elvish_cavalry_archer = 3.0
-	#archers
-	elvish_archers = 4.5
-	dwarven_archers = 4.5
-	uruk_crossbows = 4.5
-	dunedain_archers = 4.5
-		
-	attrition_weight = 0.2
-	build_cost = {
-		gold = 14
-		manpower = 1
-	}
+	maneuver = 3
+	movement_speed = 4
+	build_time = 10
+	 #archers:
+	archers = 2.66
+	dunedain_archers = 2.66
+	dwarven_archers = 2.12
+	elvish_archers = 2.36
+	uruk_crossbows = 2.66
+	 #chariots:
+	chariots = 2.66
+	 #heavyCavalry:
+	heavy_cavalry = 1.7
+	dol_amroth_knights = 1.13
+	dwarven_goat_riders = 1.13
+	warg_riders = 1.7
+	 #heavyInfantry:
+	heavy_infantry = 1.06
+	dunedain_infantry = 0.71
+	dwarven_infantry = 0.61
+	elvish_infantry = 0.65
+	uruk_heavy_infantry = 0.85
+	troll_infantry = 0.42
+	rangers = 0.71
+	 #horseArchers:
+	horse_archers = 2.66
+	elvish_cavalry_archers = 2.12
+	 #lightCavalry:
+	light_cavalry = 2.12
+	dunedain_cavalry = 2.12
+	 #lightInfantry:
+	light_infantry = 2.66
+	halfling_infantry = 2.66
+	orc_infantry = 2.66
+	uruk_infantry = 2.36
+	 #elephants:
+	warelephant = 0.53
+	attrition_weight = 0.15
 	attrition_loss = 0.05
-	strength_damage_taken = 0.75
-	morale_damage_taken = 0.75
-	food_consumption = 0.025
-	food_storage = 0.24
+	food_consumption = 0.25
+	food_storage = 2.4
+	build_cost = { gold = 9 manpower = 1 }
+	morale_damage_taken = 0.67
 }

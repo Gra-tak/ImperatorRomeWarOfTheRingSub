@@ -1,0 +1,55 @@
+﻿ # This file was created by script!
+ # Instead of editing it, you should change the python script.
+ # Changes to the file will be overwritten the next time the script is run.
+warelephant = {
+	army = yes
+	assault = no
+	levy_tier = advanced
+	allow = {
+		trade_good_surplus = { target = elephants value > 0 }
+	}
+	maneuver = 0
+	movement_speed = 2.5
+	build_time = 35
+	 #archers:
+	archers = 1.5
+	dunedain_archers = 1.5
+	dwarven_archers = 1.2
+	elvish_archers = 1.33
+	uruk_crossbows = 1.5
+	 #chariots:
+	chariots = 1.5
+	 #heavyCavalry:
+	heavy_cavalry = 0.9
+	dol_amroth_knights = 0.6
+	dwarven_goat_riders = 0.6
+	warg_riders = 0.9
+	 #heavyInfantry:
+	heavy_infantry = 1.4
+	dunedain_infantry = 0.93
+	dwarven_infantry = 0.8
+	elvish_infantry = 0.86
+	uruk_heavy_infantry = 1.12
+	troll_infantry = 0.56
+	rangers = 0.93
+	 #horseArchers:
+	horse_archers = 0.9
+	elvish_cavalry_archers = 0.72
+	 #lightCavalry:
+	light_cavalry = 0.9
+	dunedain_cavalry = 0.9
+	 #lightInfantry:
+	light_infantry = 1.3
+	halfling_infantry = 1.3
+	orc_infantry = 1.3
+	uruk_infantry = 1.16
+	 #elephants:
+	warelephant = 0.5
+	attrition_weight = 0.3
+	attrition_loss = 0.1
+	food_consumption = 0.3
+	food_storage = 1
+	ai_max_percentage = 15
+	build_cost = { gold = 12 manpower = 1 }
+	morale_damage_taken = 1.2
+}

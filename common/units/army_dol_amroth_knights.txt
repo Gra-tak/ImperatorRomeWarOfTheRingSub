@@ -1,58 +1,54 @@
-﻿dol_amroth_knights = {
+﻿ # This file was created by script!
+ # Instead of editing it, you should change the python script.
+ # Changes to the file will be overwritten the next time the script is run.
+dol_amroth_knights = {
 	army = yes
-
-	levy_tier = basic
-	enable = no
-	legions = no
+	assault = no
+	levy_tier = advanced
 	allow = {
 		trade_good_surplus = { target = horses value > 0 }
 	}
-
 	maneuver = 2
 	movement_speed = 3.5
-
-	build_time = 120
-	
-	light_infantry = 1.25
-	heavy_infantry = 0.9
-	heavy_cavalry = 1.0
-	light_cavalry = 1.2
-	camels = 1.2
-	chariots = 1.25
-	warelephant = 0.5
-	horse_archers = 1.0
-	archers = 1.5
-	supply_train = 2.0
-	#light_infantry
-	halfling_infantry = 1.25
-	orc_infantry = 1.25
-	rangers = 1.25
-	#heavy_infantry
-	troll_infantry = 1.0
-	dwarven_infantry = 1.0
-	dunedain_infantry = 1.0
-	elvish_infantry = 1.0
-	uruk_heavy_infantry = 1.0
-	uruk_infantry = 1.0
-	#heavy cavalry
-	dol_amroth_knights = 1.0
-	dunedain_cavalry = 1.0
-	dwarven_goat_riders = 1.0
-	#horse archers
-	elvish_cavalry_archer = 1.0
-	#archers
-	elvish_archers = 1.5
-	dwarven_archers = 1.5
-	uruk_crossbows = 1.5
-	dunedain_archers = 1.5		
-	attrition_weight = 1.5
-	build_cost = {
-		gold = 14
-		manpower = 1
-	}
+	build_time = 18
+	 #archers:
+	archers = 2.06
+	dunedain_archers = 2.06
+	dwarven_archers = 1.65
+	elvish_archers = 1.83
+	uruk_crossbows = 2.06
+	 #chariots:
+	chariots = 1.72
+	 #heavyCavalry:
+	heavy_cavalry = 1.38
+	dol_amroth_knights = 0.92
+	dwarven_goat_riders = 0.92
+	warg_riders = 1.38
+	 #heavyInfantry:
+	heavy_infantry = 1.24
+	dunedain_infantry = 0.83
+	dwarven_infantry = 0.71
+	elvish_infantry = 0.76
+	uruk_heavy_infantry = 0.99
+	troll_infantry = 0.49
+	rangers = 0.83
+	 #horseArchers:
+	horse_archers = 1.38
+	elvish_cavalry_archers = 1.1
+	 #lightCavalry:
+	light_cavalry = 1.65
+	dunedain_cavalry = 1.65
+	 #lightInfantry:
+	light_infantry = 1.72
+	halfling_infantry = 1.72
+	orc_infantry = 1.72
+	uruk_infantry = 1.53
+	 #elephants:
+	warelephant = 0.34
+	attrition_weight = 0.2
 	attrition_loss = 0.05
-	morale_damage_taken = 0.75
-	strength_damage_taken = 0.75
-	food_consumption = 0.025
-	food_storage = 0.24
+	food_consumption = 0.25
+	food_storage = 2.4
+	build_cost = { gold = 15 manpower = 1 }
+	morale_damage_taken = 0.67
 }

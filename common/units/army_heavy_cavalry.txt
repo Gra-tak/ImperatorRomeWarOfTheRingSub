@@ -1,56 +1,51 @@
-﻿heavy_cavalry = {
+﻿ # This file was created by script!
+ # Instead of editing it, you should change the python script.
+ # Changes to the file will be overwritten the next time the script is run.
+heavy_cavalry = {
 	army = yes
-
+	assault = no
 	levy_tier = advanced
 	allow = {
 		trade_good_surplus = { target = horses value > 0 }
 	}
-
 	maneuver = 2
 	movement_speed = 3.5
-
-	build_time = 120
-	
-	light_infantry = 1.25
-	heavy_infantry = 0.9
-	heavy_cavalry = 1.0
-	light_cavalry = 1.2
-	camels = 1.2
-	chariots = 1.25
-	warelephant = 0.5
-	horse_archers = 1.0
+	build_time = 18
+	 #archers:
 	archers = 1.5
-	supply_train = 2.0
-	#light_infantry
-	halfling_infantry = 1.25
-	orc_infantry = 1.75
-	rangers = 1.25
-	#heavy_infantry
-	troll_infantry = 0.9
-	dwarven_infantry = 0.9
-	dunedain_infantry = 0.9
-	elvish_infantry = 0.9
-	uruk_heavy_infantry = 0.9
-	uruk_infantry = 0.9
-	#heavy cavalry
-	dol_amroth_knights = 1.0
-	dunedain_cavalry = 1.0
-	dwarven_goat_riders = 1.0
-	#horse archers
-	elvish_cavalry_archer = 1.0
-	#archers
-	elvish_archers = 1.5
-	dwarven_archers = 1.5
-	uruk_crossbows = 1.5
 	dunedain_archers = 1.5
-	
+	dwarven_archers = 1.2
+	elvish_archers = 1.33
+	uruk_crossbows = 1.5
+	 #chariots:
+	chariots = 1.25
+	 #heavyCavalry:
+	dol_amroth_knights = 0.67
+	dwarven_goat_riders = 0.67
+	 #heavyInfantry:
+	heavy_infantry = 0.9
+	dunedain_infantry = 0.6
+	dwarven_infantry = 0.51
+	elvish_infantry = 0.55
+	uruk_heavy_infantry = 0.72
+	troll_infantry = 0.36
+	rangers = 0.6
+	 #horseArchers:
+	elvish_cavalry_archers = 0.8
+	 #lightCavalry:
+	light_cavalry = 1.2
+	dunedain_cavalry = 1.2
+	 #lightInfantry:
+	light_infantry = 1.25
+	halfling_infantry = 1.25
+	orc_infantry = 1.25
+	uruk_infantry = 1.11
+	 #elephants:
+	warelephant = 0.25
 	attrition_weight = 0.2
-	build_cost = {
-		gold = 14
-		manpower = 1
-	}
 	attrition_loss = 0.05
-	
-	food_consumption = 0.025
-	food_storage = 0.24
+	food_consumption = 0.25
+	food_storage = 2.4
+	build_cost = { gold = 6 manpower = 1 }
+	morale_damage_taken = 1.0
 }

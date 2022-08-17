@@ -1,56 +1,45 @@
-﻿light_infantry = {
-	#default = yes
+﻿ # This file was created by script!
+ # Instead of editing it, you should change the python script.
+ # Changes to the file will be overwritten the next time the script is run.
+light_infantry = {
 	army = yes
 	assault = yes
-	
-	levy_tier = basic	
-	
+	levy_tier = basic
 	maneuver = 1
 	movement_speed = 2.5
-	build_time = 30
-
-	light_infantry = 1.0
-	heavy_infantry = 0.75
-	heavy_cavalry = 0.75
-	warelephant = 0.75
-	horse_archers = 0.5
+	build_time = 8
+	 #archers:
 	archers = 0.9
-	chariots = 0.9
-	camels = 1.0
-	light_cavalry = 1.0
-	supply_train = 2.0
-#light_infantry
-	halfling_infantry = 1.20
-	orc_infantry = 1.0
-	rangers = 1.0
-	#heavy_infantry
-	troll_infantry = 0.75
-	dwarven_infantry = 0.75
-	dunedain_infantry = 0.75
-	elvish_infantry = 0.75
-	uruk_heavy_infantry = 0.75
-	uruk_infantry = 0.75
-	#heavy cavalry
-	dol_amroth_knights = 0.75
-	dunedain_cavalry = 0.75
-	dwarven_goat_riders = 0.75
-	#horse archers
-	elvish_cavalry_archer = 0.5
-	#archers
-	elvish_archers = 0.9
-	dwarven_archers = 0.9
+	dunedain_archers = 0.9
+	dwarven_archers = 0.72
+	elvish_archers = 0.8
 	uruk_crossbows = 0.9
-	dunedain_archers = 0.9	
-	
+	 #chariots:
+	chariots = 0.9
+	 #heavyCavalry:
+	heavy_cavalry = 0.75
+	dol_amroth_knights = 0.5
+	dwarven_goat_riders = 0.5
+	warg_riders = 0.75
+	 #heavyInfantry:
+	heavy_infantry = 0.8
+	dunedain_infantry = 0.53
+	dwarven_infantry = 0.46
+	elvish_infantry = 0.49
+	uruk_heavy_infantry = 0.64
+	troll_infantry = 0.32
+	rangers = 0.53
+	 #horseArchers:
+	horse_archers = 0.5
+	elvish_cavalry_archers = 0.4
+	 #lightInfantry:
+	uruk_infantry = 0.89
+	 #elephants:
+	warelephant = 0.4
 	attrition_weight = 0.05
 	attrition_loss = 0.025
-	
-	food_consumption = 0.01
-	food_storage = 0.24
-	
-	morale_damage_taken = 0.75
-	build_cost = {
-		gold = 6
-		manpower = 1
-	}
+	food_consumption = 0.1
+	food_storage = 2.4
+	build_cost = { gold = 3 manpower = 1 }
+	morale_damage_taken = 0.7
 }

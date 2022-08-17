@@ -1,285 +1,285 @@
-﻿ # This file was created by script!
+ # This file was created by script!
  # Instead of editing it, you should change the python script.
  # Changes to the file will be overwritten the next time the script is run.
 10_noldor = {
-	land_morale_modifier = 0.04
-	land_morale_recovery = 0.01
-	discipline = 0.04
+	land_morale_modifier = 0.072
+	land_morale_recovery = 0.012
+	discipline = 0.072
 	global_commerce_modifier = 0.03
-	global_population_growth = -0.015
+	global_population_growth = -0.018
 }
 20_noldor = {
-	land_morale_modifier = 0.08
-	land_morale_recovery = 0.02
-	discipline = 0.08
+	land_morale_modifier = 0.144
+	land_morale_recovery = 0.024
+	discipline = 0.144
 	global_commerce_modifier = 0.06
-	global_population_growth = -0.03
+	global_population_growth = -0.036
 }
 30_noldor = {
-	land_morale_modifier = 0.12
-	land_morale_recovery = 0.03
-	discipline = 0.12
+	land_morale_modifier = 0.216
+	land_morale_recovery = 0.036
+	discipline = 0.216
 	global_commerce_modifier = 0.09
-	global_population_growth = -0.045
+	global_population_growth = -0.054
 }
 40_noldor = {
-	land_morale_modifier = 0.16
-	land_morale_recovery = 0.04
-	discipline = 0.16
+	land_morale_modifier = 0.288
+	land_morale_recovery = 0.048
+	discipline = 0.288
 	global_commerce_modifier = 0.12
-	global_population_growth = -0.06
+	global_population_growth = -0.072
 }
 50_noldor = {
-	land_morale_modifier = 0.2
-	land_morale_recovery = 0.05
-	discipline = 0.2
+	land_morale_modifier = 0.36
+	land_morale_recovery = 0.06
+	discipline = 0.36
 	global_commerce_modifier = 0.15
-	global_population_growth = -0.075
+	global_population_growth = -0.09
 }
 60_noldor = {
-	land_morale_modifier = 0.24
-	land_morale_recovery = 0.06
-	discipline = 0.24
+	land_morale_modifier = 0.432
+	land_morale_recovery = 0.072
+	discipline = 0.432
 	global_commerce_modifier = 0.18
-	global_population_growth = -0.09
+	global_population_growth = -0.108
 }
 70_noldor = {
-	land_morale_modifier = 0.28
-	land_morale_recovery = 0.07
-	discipline = 0.28
+	land_morale_modifier = 0.504
+	land_morale_recovery = 0.084
+	discipline = 0.504
 	global_commerce_modifier = 0.21
-	global_population_growth = -0.105
+	global_population_growth = -0.126
 }
 80_noldor = {
-	land_morale_modifier = 0.32
-	land_morale_recovery = 0.08
-	discipline = 0.32
+	land_morale_modifier = 0.576
+	land_morale_recovery = 0.096
+	discipline = 0.576
 	global_commerce_modifier = 0.24
-	global_population_growth = -0.12
+	global_population_growth = -0.144
 }
 90_noldor = {
-	land_morale_modifier = 0.36
-	land_morale_recovery = 0.09
-	discipline = 0.36
+	land_morale_modifier = 0.648
+	land_morale_recovery = 0.108
+	discipline = 0.648
 	global_commerce_modifier = 0.27
-	global_population_growth = -0.135
+	global_population_growth = -0.162
 }
 100_noldor = {
-	land_morale_modifier = 0.4
-	land_morale_recovery = 0.1
-	discipline = 0.4
+	land_morale_modifier = 0.72
+	land_morale_recovery = 0.12
+	discipline = 0.72
 	global_commerce_modifier = 0.3
-	global_population_growth = -0.15
+	global_population_growth = -0.18
 }
 10_teleri = {
-	land_morale_modifier = 0.04
+	land_morale_modifier = 0.06
 	land_morale_recovery = 0.01
-	discipline = 0.04
-	global_commerce_modifier = 0.03
-	global_population_growth = -0.015
+	discipline = 0.06
+	global_commerce_modifier = 0.042
+	global_population_growth = -0.018
 }
 20_teleri = {
-	land_morale_modifier = 0.08
+	land_morale_modifier = 0.12
 	land_morale_recovery = 0.02
-	discipline = 0.08
-	global_commerce_modifier = 0.06
-	global_population_growth = -0.03
+	discipline = 0.12
+	global_commerce_modifier = 0.084
+	global_population_growth = -0.036
 }
 30_teleri = {
-	land_morale_modifier = 0.12
+	land_morale_modifier = 0.18
 	land_morale_recovery = 0.03
-	discipline = 0.12
-	global_commerce_modifier = 0.09
-	global_population_growth = -0.045
+	discipline = 0.18
+	global_commerce_modifier = 0.126
+	global_population_growth = -0.054
 }
 40_teleri = {
-	land_morale_modifier = 0.16
+	land_morale_modifier = 0.24
 	land_morale_recovery = 0.04
-	discipline = 0.16
-	global_commerce_modifier = 0.12
-	global_population_growth = -0.06
+	discipline = 0.24
+	global_commerce_modifier = 0.168
+	global_population_growth = -0.072
 }
 50_teleri = {
-	land_morale_modifier = 0.2
+	land_morale_modifier = 0.3
 	land_morale_recovery = 0.05
-	discipline = 0.2
-	global_commerce_modifier = 0.15
-	global_population_growth = -0.075
-}
-60_teleri = {
-	land_morale_modifier = 0.24
-	land_morale_recovery = 0.06
-	discipline = 0.24
-	global_commerce_modifier = 0.18
+	discipline = 0.3
+	global_commerce_modifier = 0.21
 	global_population_growth = -0.09
 }
+60_teleri = {
+	land_morale_modifier = 0.36
+	land_morale_recovery = 0.06
+	discipline = 0.36
+	global_commerce_modifier = 0.252
+	global_population_growth = -0.108
+}
 70_teleri = {
-	land_morale_modifier = 0.28
+	land_morale_modifier = 0.42
 	land_morale_recovery = 0.07
-	discipline = 0.28
-	global_commerce_modifier = 0.21
-	global_population_growth = -0.105
+	discipline = 0.42
+	global_commerce_modifier = 0.294
+	global_population_growth = -0.126
 }
 80_teleri = {
-	land_morale_modifier = 0.32
+	land_morale_modifier = 0.48
 	land_morale_recovery = 0.08
-	discipline = 0.32
-	global_commerce_modifier = 0.24
-	global_population_growth = -0.12
+	discipline = 0.48
+	global_commerce_modifier = 0.336
+	global_population_growth = -0.144
 }
 90_teleri = {
-	land_morale_modifier = 0.36
+	land_morale_modifier = 0.54
 	land_morale_recovery = 0.09
-	discipline = 0.36
-	global_commerce_modifier = 0.27
-	global_population_growth = -0.135
+	discipline = 0.54
+	global_commerce_modifier = 0.378
+	global_population_growth = -0.162
 }
 100_teleri = {
-	land_morale_modifier = 0.4
+	land_morale_modifier = 0.6
 	land_morale_recovery = 0.1
-	discipline = 0.4
-	global_commerce_modifier = 0.3
-	global_population_growth = -0.15
+	discipline = 0.6
+	global_commerce_modifier = 0.42
+	global_population_growth = -0.18
 }
 10_edain = {
-	land_morale_modifier = 0.032
+	land_morale_modifier = 0.048
 	land_morale_recovery = 0.008
-	discipline = 0.032
+	discipline = 0.048
 	global_commerce_modifier = 0.03
 	global_population_growth = -0.012
 }
 20_edain = {
-	land_morale_modifier = 0.064
+	land_morale_modifier = 0.096
 	land_morale_recovery = 0.016
-	discipline = 0.064
+	discipline = 0.096
 	global_commerce_modifier = 0.06
 	global_population_growth = -0.024
 }
 30_edain = {
-	land_morale_modifier = 0.096
+	land_morale_modifier = 0.144
 	land_morale_recovery = 0.024
-	discipline = 0.096
+	discipline = 0.144
 	global_commerce_modifier = 0.09
 	global_population_growth = -0.036
 }
 40_edain = {
-	land_morale_modifier = 0.128
+	land_morale_modifier = 0.192
 	land_morale_recovery = 0.032
-	discipline = 0.128
+	discipline = 0.192
 	global_commerce_modifier = 0.12
 	global_population_growth = -0.048
 }
 50_edain = {
-	land_morale_modifier = 0.16
+	land_morale_modifier = 0.24
 	land_morale_recovery = 0.04
-	discipline = 0.16
+	discipline = 0.24
 	global_commerce_modifier = 0.15
 	global_population_growth = -0.06
 }
 60_edain = {
-	land_morale_modifier = 0.192
+	land_morale_modifier = 0.288
 	land_morale_recovery = 0.048
-	discipline = 0.192
+	discipline = 0.288
 	global_commerce_modifier = 0.18
 	global_population_growth = -0.072
 }
 70_edain = {
-	land_morale_modifier = 0.224
+	land_morale_modifier = 0.336
 	land_morale_recovery = 0.056
-	discipline = 0.224
+	discipline = 0.336
 	global_commerce_modifier = 0.21
 	global_population_growth = -0.084
 }
 80_edain = {
-	land_morale_modifier = 0.256
+	land_morale_modifier = 0.384
 	land_morale_recovery = 0.064
-	discipline = 0.256
+	discipline = 0.384
 	global_commerce_modifier = 0.24
 	global_population_growth = -0.096
 }
 90_edain = {
-	land_morale_modifier = 0.288
+	land_morale_modifier = 0.432
 	land_morale_recovery = 0.072
-	discipline = 0.288
+	discipline = 0.432
 	global_commerce_modifier = 0.27
 	global_population_growth = -0.108
 }
 100_edain = {
-	land_morale_modifier = 0.32
+	land_morale_modifier = 0.48
 	land_morale_recovery = 0.08
-	discipline = 0.32
+	discipline = 0.48
 	global_commerce_modifier = 0.3
 	global_population_growth = -0.12
 }
 10_dwarf = {
-	land_morale_modifier = 0.032
+	land_morale_modifier = 0.048
 	land_morale_recovery = 0.008
-	discipline = 0.032
+	discipline = 0.048
 	global_commerce_modifier = 0.06
-	global_population_growth = -0.012
+	global_population_growth = -0.015
 }
 20_dwarf = {
-	land_morale_modifier = 0.064
+	land_morale_modifier = 0.096
 	land_morale_recovery = 0.016
-	discipline = 0.064
+	discipline = 0.096
 	global_commerce_modifier = 0.12
-	global_population_growth = -0.024
+	global_population_growth = -0.03
 }
 30_dwarf = {
-	land_morale_modifier = 0.096
+	land_morale_modifier = 0.144
 	land_morale_recovery = 0.024
-	discipline = 0.096
+	discipline = 0.144
 	global_commerce_modifier = 0.18
-	global_population_growth = -0.036
+	global_population_growth = -0.045
 }
 40_dwarf = {
-	land_morale_modifier = 0.128
+	land_morale_modifier = 0.192
 	land_morale_recovery = 0.032
-	discipline = 0.128
+	discipline = 0.192
 	global_commerce_modifier = 0.24
-	global_population_growth = -0.048
-}
-50_dwarf = {
-	land_morale_modifier = 0.16
-	land_morale_recovery = 0.04
-	discipline = 0.16
-	global_commerce_modifier = 0.3
 	global_population_growth = -0.06
 }
+50_dwarf = {
+	land_morale_modifier = 0.24
+	land_morale_recovery = 0.04
+	discipline = 0.24
+	global_commerce_modifier = 0.3
+	global_population_growth = -0.075
+}
 60_dwarf = {
-	land_morale_modifier = 0.192
+	land_morale_modifier = 0.288
 	land_morale_recovery = 0.048
-	discipline = 0.192
+	discipline = 0.288
 	global_commerce_modifier = 0.36
-	global_population_growth = -0.072
+	global_population_growth = -0.09
 }
 70_dwarf = {
-	land_morale_modifier = 0.224
+	land_morale_modifier = 0.336
 	land_morale_recovery = 0.056
-	discipline = 0.224
+	discipline = 0.336
 	global_commerce_modifier = 0.42
-	global_population_growth = -0.084
+	global_population_growth = -0.105
 }
 80_dwarf = {
-	land_morale_modifier = 0.256
+	land_morale_modifier = 0.384
 	land_morale_recovery = 0.064
-	discipline = 0.256
+	discipline = 0.384
 	global_commerce_modifier = 0.48
-	global_population_growth = -0.096
+	global_population_growth = -0.12
 }
 90_dwarf = {
-	land_morale_modifier = 0.288
+	land_morale_modifier = 0.432
 	land_morale_recovery = 0.072
-	discipline = 0.288
+	discipline = 0.432
 	global_commerce_modifier = 0.54
-	global_population_growth = -0.108
+	global_population_growth = -0.135
 }
 100_dwarf = {
-	land_morale_modifier = 0.32
+	land_morale_modifier = 0.48
 	land_morale_recovery = 0.08
-	discipline = 0.32
+	discipline = 0.48
 	global_commerce_modifier = 0.6
-	global_population_growth = -0.12
+	global_population_growth = -0.15
 }
 10_orc = { global_population_growth = 0.06 }
 20_orc = { global_population_growth = 0.12 }
@@ -291,3 +291,22 @@
 80_orc = { global_population_growth = 0.48 }
 90_orc = { global_population_growth = 0.54 }
 100_orc = { global_population_growth = 0.6 }
+foreign_support_5 = { levy_size_multiplier = 0.05 }
+foreign_support_10 = { levy_size_multiplier = 0.1 }
+foreign_support_15 = { levy_size_multiplier = 0.15000000000000002 }
+foreign_support_20 = { levy_size_multiplier = 0.2 }
+foreign_support_25 = { levy_size_multiplier = 0.25 }
+foreign_support_30 = { levy_size_multiplier = 0.30000000000000004 }
+foreign_support_35 = { levy_size_multiplier = 0.35000000000000003 }
+foreign_support_40 = { levy_size_multiplier = 0.4 }
+foreign_support_45 = { levy_size_multiplier = 0.45 }
+foreign_support_50 = { levy_size_multiplier = 0.5 }
+foreign_support_55 = { levy_size_multiplier = 0.55 }
+foreign_support_60 = { levy_size_multiplier = 0.6000000000000001 }
+foreign_support_65 = { levy_size_multiplier = 0.65 }
+foreign_support_70 = { levy_size_multiplier = 0.7000000000000001 }
+foreign_support_75 = { levy_size_multiplier = 0.75 }
+foreign_support_80 = { levy_size_multiplier = 0.8 }
+foreign_support_85 = { levy_size_multiplier = 0.8500000000000001 }
+foreign_support_90 = { levy_size_multiplier = 0.9 }
+foreign_support_95 = { levy_size_multiplier = 0.9500000000000001 }

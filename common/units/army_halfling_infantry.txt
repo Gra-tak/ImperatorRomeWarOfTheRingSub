@@ -1,0 +1,51 @@
+﻿ # This file was created by script!
+ # Instead of editing it, you should change the python script.
+ # Changes to the file will be overwritten the next time the script is run.
+halfling_infantry = {
+	army = yes
+	assault = yes
+	levy_tier = basic
+	maneuver = 1
+	movement_speed = 2.5
+	build_time = 8
+	 #archers:
+	archers = 0.73
+	dunedain_archers = 0.73
+	dwarven_archers = 0.59
+	elvish_archers = 0.65
+	uruk_crossbows = 0.73
+	 #chariots:
+	chariots = 0.73
+	 #heavyCavalry:
+	heavy_cavalry = 0.61
+	dol_amroth_knights = 0.41
+	dwarven_goat_riders = 0.41
+	warg_riders = 0.61
+	 #heavyInfantry:
+	heavy_infantry = 0.65
+	dunedain_infantry = 0.43
+	dwarven_infantry = 0.37
+	elvish_infantry = 0.4
+	uruk_heavy_infantry = 0.52
+	troll_infantry = 0.26
+	rangers = 0.43
+	 #horseArchers:
+	horse_archers = 0.41
+	elvish_cavalry_archers = 0.33
+	 #lightCavalry:
+	light_cavalry = 0.81
+	dunedain_cavalry = 0.81
+	 #lightInfantry:
+	light_infantry = 0.81
+	halfling_infantry = 0.81
+	orc_infantry = 0.81
+	uruk_infantry = 0.72
+	 #elephants:
+	warelephant = 0.33
+	attrition_weight = 0.05
+	attrition_loss = 0.025
+	food_consumption = 0.1
+	food_storage = 2.4
+	build_cost = { gold = 2 manpower = 1 }
+	morale_damage_taken = 0.7
+}

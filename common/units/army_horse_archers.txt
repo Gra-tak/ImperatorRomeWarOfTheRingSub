@@ -1,58 +1,51 @@
-﻿horse_archers = {
+﻿ # This file was created by script!
+ # Instead of editing it, you should change the python script.
+ # Changes to the file will be overwritten the next time the script is run.
+horse_archers = {
 	army = yes
-	is_flank = yes
-
+	assault = no
 	levy_tier = basic
 	allow = {
 		trade_good_surplus = { target = steppe_horses value > 0 }
 	}
-
 	maneuver = 5
 	movement_speed = 4
-	build_time = 60
-	legions = no
-	light_infantry = 1.25
-	heavy_infantry = 1.25
-	heavy_cavalry = 0.9
-	warelephant = 0.8
-	horse_archers = 1.0
-	chariots = 1.25
+	build_time = 16
+	 #archers:
 	archers = 1.25
-	light_cavalry = 0.9
-	camels = 0.9
-	supply_train = 2.0
-#light_infantry
-	halfling_infantry = 1.25
-	orc_infantry = 1.75
-	rangers = 1.25
-	#heavy_infantry
-	troll_infantry = 1.25
-	dwarven_infantry = 1.25
-	dunedain_infantry = 1.25
-	elvish_infantry = 1.25
-	uruk_heavy_infantry = 1.25
-	uruk_infantry = 1.25
-	#heavy cavalry
-	dol_amroth_knights = 0.9
-	dunedain_cavalry = 0.9
-	dwarven_goat_riders = 0.9
-	#horse archers
-	elvish_cavalry_archer = 1.0
-	#archers
-	elvish_archers = 1.25
-	dwarven_archers = 1.25
-	uruk_crossbows = 1.25
 	dunedain_archers = 1.25
-	
+	elvish_archers = 1.11
+	uruk_crossbows = 1.25
+	 #chariots:
+	chariots = 1.25
+	 #heavyCavalry:
+	heavy_cavalry = 0.9
+	dol_amroth_knights = 0.6
+	dwarven_goat_riders = 0.6
+	warg_riders = 0.9
+	 #heavyInfantry:
+	heavy_infantry = 1.25
+	dunedain_infantry = 0.83
+	dwarven_infantry = 0.71
+	elvish_infantry = 0.77
+	troll_infantry = 0.5
+	rangers = 0.83
+	 #horseArchers:
+	elvish_cavalry_archers = 0.8
+	 #lightCavalry:
+	light_cavalry = 0.9
+	dunedain_cavalry = 0.9
+	 #lightInfantry:
+	light_infantry = 1.25
+	halfling_infantry = 1.25
+	orc_infantry = 1.25
+	uruk_infantry = 1.11
+	 #elephants:
+	warelephant = 0.4
 	attrition_weight = 0.15
 	attrition_loss = 0.05
-	
+	food_consumption = 0.25
+	food_storage = 3
+	build_cost = { gold = 5 manpower = 1 }
 	morale_damage_taken = 1.25
-	build_cost = {
-		gold = 14
-		manpower = 1
-	}
-	food_consumption = 0.025
-	food_storage = 0.3
 }
-

@@ -1,41 +1,53 @@
-﻿# The game needs a 'engineer_cohort' definition. If you change it, make sure to keep this, as it uses this to add a cohort to legions for siege
+﻿ # This file was created by script!
+ # Instead of editing it, you should change the python script.
+ # Changes to the file will be overwritten the next time the script is run.
 engineer_cohort = {
 	army = yes
 	assault = no
-	support = yes
-
-	reduces_road_building_cost = yes
-	watercrossing_negation = 1.0
-	siege_impact = 2.0
-
+	levy_tier = basic
 	maneuver = 1
 	movement_speed = 2.5
-
-	light_infantry = 0.1
-	heavy_infantry = 0.1
-	heavy_cavalry = 0.1
-	warelephant = 0.1
-	horse_archers = 0.1
+	build_time = 40
+	 #archers:
 	archers = 0.1
+	dunedain_archers = 0.1
+	dwarven_archers = 0.08
+	elvish_archers = 0.09
+	uruk_crossbows = 0.1
+	 #chariots:
 	chariots = 0.1
-	camels = 0.1
+	 #heavyCavalry:
+	heavy_cavalry = 0.1
+	dol_amroth_knights = 0.07
+	dwarven_goat_riders = 0.07
+	warg_riders = 0.1
+	 #heavyInfantry:
+	heavy_infantry = 0.1
+	dunedain_infantry = 0.07
+	dwarven_infantry = 0.06
+	elvish_infantry = 0.06
+	uruk_heavy_infantry = 0.08
+	troll_infantry = 0.04
+	rangers = 0.07
+	 #horseArchers:
+	horse_archers = 0.1
+	elvish_cavalry_archers = 0.08
+	 #lightCavalry:
 	light_cavalry = 0.1
-	supply_train = 1
-	
-	attrition_weight = 1.0
+	dunedain_cavalry = 0.1
+	 #lightInfantry:
+	light_infantry = 0.1
+	halfling_infantry = 0.1
+	orc_infantry = 0.1
+	uruk_infantry = 0.09
+	 #elephants:
+	warelephant = 0.05
+	attrition_weight = 0.1
 	attrition_loss = 0.1
 	food_consumption = 0.05
 	food_storage = 5
-
+	ai_max_percentage = 15
+	build_cost = { gold = 13 manpower = 1 }
+	strength_damage_taken = 2.0
 	morale_damage_taken = 2.0
-
-	build_time = 120
-	build_cost = {
-		gold = 40
-		manpower = 1
-	}
-
-	setup_fraction = 0.0
-	ai_max_percentage = 10
-	merc_cohorts_required = 10
 }
