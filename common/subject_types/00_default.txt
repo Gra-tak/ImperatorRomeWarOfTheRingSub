@@ -28,6 +28,7 @@ vassal_tribe = { #Tribal Vassal
 		scope:future_overlord = {
 			is_subject = no
 			is_tribal = no
+			NOT = { country_culture_group = orcs_group }
 			capital_scope = {
 				civilization_value > root.capital_scope.civilization_value
 			}
@@ -114,6 +115,7 @@ tributary = {
 		exists = scope:future_overlord
 		scope:future_overlord = {
 			is_subject = no
+			NOT = { country_culture_group = orcs_group }
 		}
 		trigger_if = { #If both parties are AI then we don't use this subject type if country is bigger than 30 territories
 			limit = {
@@ -285,15 +287,17 @@ satrapy = { #BR note: used for gondorian fiefs - we don't want them joining offe
 	}
 	
 	allow = {
-		is_tradition_tree_allowed = edain_philosophy  #subjected state is Edain.
-		num_of_cities > 40
-		is_monarchy = yes
-		exists = scope:future_overlord
-		scope:future_overlord = {
-			is_subject = no
-			#num_of_cities >= 150
-			is_monarchy = yes
-		}
+		always = no
+		# is_tradition_tree_allowed = edain_philosophy  #subjected state is Edain.
+		# num_of_cities > 40
+		# is_monarchy = yes
+		# exists = scope:future_overlord
+		# scope:future_overlord = {
+		# 	is_subject = no
+		# 	#num_of_cities >= 150
+		# 	is_monarchy = yes
+		# 	NOT = { country_culture_group = orcs_group }
+		# }
 	}
 	
 	# on_enable = {}
@@ -357,6 +361,7 @@ client_state = {
 		scope:future_overlord = {
 			is_subject = no
 			is_tribal = no
+			NOT = { country_culture_group = orcs_group }
 		}
 	}
 	

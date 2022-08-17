@@ -29,6 +29,12 @@ lotr_tradition_events.1 = {
 						country_culture_group = mirkwoodmen_group
 						country_culture_group = haldadian_group
 					}
+					OR = {
+						subject_type = client_state
+						subject_type = ranger_fief
+						subject_type = saruman_thrall_tribe
+						subject_type = thrall_tribe
+					}
 				}
 				every_owned_province = {
 					every_pops_in_province = {

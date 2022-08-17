@@ -59,30 +59,21 @@ red_desert = {
 
 caverns = { #variant of mountains
 	combat_width = 16
-	defender = 2
-	color = { 64 72 112 }
-
 	defender = 3
-
+	color = { 64 72 112 }
 	modifier = {
-		supply_limit_modifier = -0.75
-		movement_cost = 0.9
+		supply_limit_modifier = -0.25
+		movement_cost = 0.4
 		local_population_capacity_modifier  = -0.1
-		local_monthly_food = 1.5
+		local_monthly_food = 3
 	}
 }
 
 halls = { #variant of mountains
 	combat_width = 16
-	defender = 2
-	color = { 112 72 64 }
-
 	defender = 3
-
+	color = { 112 72 64 }
 	modifier = {
-		supply_limit_modifier = -0.75
-		movement_cost = 0.9
-		local_population_capacity_modifier  = -0.1
-		local_monthly_food = 1.5
+		local_monthly_food = 2.5
 	}
 }

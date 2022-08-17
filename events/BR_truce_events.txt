@@ -205,3 +205,69 @@ br_truce.3 = { #prevents the easterling/southron humans from attacking Sauron un
     }
 
 }
+
+br_truce.4 = { #prevents Sauron from just focusing on the east before Gondor is defeated
+  
+  type = country_event
+  title = "truce"
+  desc = "truce"
+  picture = ship_in_storm
+  goto_location = root
+  hidden = yes
+  
+  trigger = {
+    tag = MOR
+    is_ai = yes
+    exists = c:GON
+    c:GON = {
+      is_ai = yes #player gondor is responsible himself for keeping mordor out of the east
+      is_subject = no
+      OR = {
+        owns = 1200
+        owns = 1300
+      }
+    }
+  }
+      
+  immediate = {
+    every_country = {
+      limit = {
+        tag = MOR
+      }         
+      add_to_list = event_list_2
+      }
+    every_country = {
+      limit = {
+        OR = {
+          religion = melkorism
+          religion = eastern_animism
+        }
+        NOR = {
+          tag = XBX #rhun
+          tag = XDX #rachot
+          tag = NUR #nurn
+        }
+      }         
+      add_to_list = event_list_1
+    }
+  }
+  
+    option = {
+        name = "OK"
+        every_in_list = {
+            list = event_list_1
+            save_scope_as = event_list_1_target
+            every_in_list = {
+                list = event_list_2
+                limit = {
+                  NOT = { THIS = PREV }
+                }
+                add_truce = {
+                    target = scope:event_list_1_target
+                    duration = 1825
+                }
+            }
+        }
+    }
+
+}

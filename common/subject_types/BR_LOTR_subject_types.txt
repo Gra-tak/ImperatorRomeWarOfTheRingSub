@@ -5,7 +5,7 @@
 	
 	protected_when_attacked = yes
 	has_overlords_ruler = no
-	can_be_integrated = yes
+	can_be_integrated = no
 	costs_diplomatic_slot = no
 	subject_can_cancel = yes
 	
@@ -17,6 +17,7 @@
 	subject_modifier = {
 		country_civilization_value = 10
 		global_monthly_civilization = 0.01
+		loyalty_to_overlord = 25
 	}
 	
 	allow = {

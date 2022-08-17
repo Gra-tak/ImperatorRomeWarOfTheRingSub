@@ -18,7 +18,7 @@ angmar_heritage = {
 		#good
 		army_maintenance_cost = -0.15
 		global_slaves_output = 0.2
-		
+		enslavement_efficiency = 1 #restores vanilla, others have none
 		#bad
 		land_morale_modifier = -0.05
 	}
@@ -34,6 +34,7 @@ sauron_heritage = {
 		army_maintenance_cost = -0.2
 
 		enslavement_efficiency = 1 #restores vanilla, others have none
+		light_infantry_offensive = 0.2
 		#monthly_military_experience_modifier = 0.2
 		
 		#bad

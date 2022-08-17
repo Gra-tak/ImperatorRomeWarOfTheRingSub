@@ -4030,7 +4030,7 @@
 	province_rank = "settlement"
 }
 380 = { #Erebor (ERB) (gonnland_area) (ered_mithrin_region)
-	terrain = "mountain"
+	terrain = "halls"
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "gems"
@@ -10352,7 +10352,7 @@
 	slaves = { amount = 2 }
 }
 999 = { #Aradhrynd (ERY) (eryn_arador_area) (eryn_galen_region)
-	terrain = "deep_forest"
+	terrain = "halls"
 	culture = "sindar"
 	religion = "iluvatarism"
 	holy_site = "omen_vana"
@@ -38979,11 +38979,9 @@
 	terrain = "caverns"
 	culture = "goblins"
 	religion = "melkorism"
-	trade_goods = "marble"
-	civilization_value = 10
-	barbarian_power = 0
+   civilization_value = 20
+   barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 1 }
 }
 3766 = { #Orod-Beleg (XKX) (shathur_dum_area) (hadhondrond_region)
 	terrain = "caverns"

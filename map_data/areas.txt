@@ -1864,7 +1864,7 @@ melek_zudun_area = {
 }
 
 gunud_farak_area = {
-	provinces = { 3668 3752 3753 3754 3764 3765 }
+	provinces = { 3668 3752 3753 3754 3764 }
 }
 
 shathur_dum_area = {
