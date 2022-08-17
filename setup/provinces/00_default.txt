@@ -10351,7 +10351,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-999 = { #Aradhrynd (ERY) (eryn_arador_area) (eryn_galen_region)
+999 = { #Elvenking's Halls (ERY) (eryn_arador_area) (eryn_galen_region)
 	terrain = "halls"
 	culture = "sindar"
 	religion = "iluvatarism"
@@ -13492,7 +13492,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-1300 = { #Minas Anor (GON) (anorien_area) (anorien_region)
+1300 = { #Minas Tirith (GON) (anorien_area) (anorien_region)
 	terrain = "farmland"
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
@@ -38975,12 +38975,12 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 }
-3765 = { #Angnor (unowned) (gunud_farak_area) (hadhondrond_region)
+3765 = { #Angnor (unowned)
 	terrain = "caverns"
 	culture = "goblins"
 	religion = "melkorism"
-   civilization_value = 20
-   barbarian_power = 0
+	civilization_value = 20
+	barbarian_power = 0
 	province_rank = "settlement"
 }
 3766 = { #Orod-Beleg (XKX) (shathur_dum_area) (hadhondrond_region)
