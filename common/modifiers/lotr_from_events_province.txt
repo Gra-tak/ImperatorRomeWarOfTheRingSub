@@ -1,12 +1,12 @@
 ﻿### Numenorean Wonders ###
 minas_anor_modifier = {
-	fort_level = 5
+	fort_level = 4
 	local_defensive = 0.5
 	local_population_capacity = 30
 	local_research_points_modifier = -0.1
 }
 minas_anor_state_modifier = {
-	local_fort_limit = 3
+	local_fort_limit = 2
 	local_defensive = 1.0
 }
 supplied_from_the_rear = {

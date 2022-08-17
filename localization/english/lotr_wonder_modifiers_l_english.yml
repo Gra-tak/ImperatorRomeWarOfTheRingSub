@@ -1,7 +1,7 @@
 ﻿l_english:
 ### Dunedain Wonders ###
- minas_anor_modifier:0 "Minas Anor"
-  desc_minas_anor_modifier:0 "Minas Anor, Tower of the Sun, was a city-fortress of Gondor. It was the western counterpart to Minas Ithil: guarding the western flank of the capital city of Osgiliath."
+ minas_anor_modifier:0 "Minas Tirith"
+  desc_minas_anor_modifier:0 "Minas Tirith, Tower of the Sun, was a city-fortress of Gondor. It was the western counterpart to Minas Ithil: guarding the western flank of the capital city of Osgiliath."
  minas_anor_state_modifier:0 "Anorien Defenses"
   desc_minas_anor_state_modifier:0 "Anorien state defenses."
  minas_anor_tower_modifier:0 "Minas Anor: Palantír"
@@ -10,10 +10,10 @@
   #minas_anor_rammas_echor_modifier: 0 "Minas Anor: Rammas Echor"
   #minas_anor_desolate_modifier: 0 "Ruins of Minas Anor"
   #minas_anor_reunited_modifier: 0 "Minas Anor: Gates of Mithril"
- minas_ithil_modifier:0 "Minas Ithil"
-  desc_minas_ithil_modifier:0 "Minas Ithil, Tower of the Moon, was a city-fortress of Gondor. It was the eastern counterpart to Minas Anor: guarding the eastern flank of the capital city of Osgiliath."
+ minas_ithil_modifier:0 "Minas Morgul"
+  desc_minas_ithil_modifier:0 "Minas Morgul, once theTower of the Moon, was a city-fortress of Gondor. It was the eastern counterpart to Minas Anor: guarding the eastern flank of the capital city of Osgiliath. Now it is the captial of the witch king."
  minas_ithil_state_modifier:0 "Mountain Defenses"
-  desc_minas_ithil_state_modifier:0 "Minas Ithil state defenses."
+  desc_minas_ithil_state_modifier:0 "Minas Morgul state defenses."
  minas_ithil_tower_modifier:0 "Minas Ithil: Palantír"
   desc_minas_ithil_tower_modifier:0 "Minas Ithil was home to Isildur's House, therefore when the seven palantíri were divided amongst the Realms in Exile one was placed in Minas Anor."
   #minas_ithil_archive_modifier: 0 "Minas Ithil: Archives of Islildur"

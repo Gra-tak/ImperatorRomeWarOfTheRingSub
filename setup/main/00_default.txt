@@ -231,7 +231,7 @@ provinces = { #Any entry must contain a comment with city name.
 		modifier = { modifier = supplied_from_the_rear always = yes }
 	}
 
-	1300 = { #Minas Anor
+	1300 = { #Minas Tirith
 		modifier = { modifier = minas_anor_modifier always = yes }
 	}
 
