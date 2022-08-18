@@ -271,7 +271,6 @@
 	civilization_value = 50
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
 }
 25 = { #Erädas (UMB) (umbast_area) (umbar_region)
 	terrain = "plains"
@@ -9686,7 +9685,7 @@
 }
 929 = { #Ehtëhelca (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
-	culture = "goblins"
+	culture = "beasts"
 	religion = "melkorism"
 	trade_goods = "leather"
 	civilization_value = 10
@@ -9695,7 +9694,7 @@
 }
 930 = { #Namminassë (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
-	culture = "goblins"
+	culture = "beasts"
 	religion = "melkorism"
 	trade_goods = "fish"
 	civilization_value = 10
@@ -9704,7 +9703,7 @@
 }
 931 = { #Nén Nalta (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
-	culture = "goblins"
+	culture = "beasts"
 	religion = "melkorism"
 	trade_goods = "leather"
 	civilization_value = 10
@@ -9722,7 +9721,7 @@
 }
 933 = { #Helcoialëa (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
-	culture = "goblins"
+	culture = "beasts"
 	religion = "melkorism"
 	trade_goods = "fur"
 	civilization_value = 10
@@ -9731,7 +9730,7 @@
 }
 934 = { #Amon Anlug (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
-	culture = "goblins"
+	culture = "beasts"
 	religion = "melkorism"
 	trade_goods = "stone"
 	civilization_value = 10
@@ -9749,7 +9748,7 @@
 }
 936 = { #Siida (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
-	culture = "goblins"
+	culture = "beasts"
 	religion = "melkorism"
 	trade_goods = "fish"
 	civilization_value = 10
@@ -9758,7 +9757,7 @@
 }
 937 = { #Nén Mirili (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
-	culture = "goblins"
+	culture = "beasts"
 	religion = "melkorism"
 	trade_goods = "fish"
 	civilization_value = 10
@@ -12710,8 +12709,6 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 2 }
 }
 1226 = { #Hytbold (ROH) (hartalf_area) (rhuvenlhad_region)
 	terrain = "plains"
@@ -39000,7 +38997,7 @@
 }
 3765 = { #Angnor (unowned)
 	terrain = "caverns"
-	culture = "goblins"
+	culture = "beasts"
 	religion = "melkorism"
 	civilization_value = 20
 	barbarian_power = 0
@@ -53636,7 +53633,6 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
 }
 5296 = { #Saerwaith (uninhabitable)
 	terrain = "plains"
@@ -55286,7 +55282,6 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
 }
 5465 = { #Lûrs Vorganís (unowned)
 	terrain = "impassable_terrain"
