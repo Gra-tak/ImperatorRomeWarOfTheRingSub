@@ -8597,7 +8597,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 818 = { #Helka (unowned) (talath_uichel_area) (forodwaith_region)
@@ -8765,7 +8765,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 836 = { #Ehtë-aicassë (unowned) (goldladwen_area) (forodwaith_region)
@@ -9077,7 +9077,7 @@
 	civilization_value = 30
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 869 = { #Nossë Alaturmen (XXQ) (nimbrith_forochel_area) (forochel_region)
@@ -9088,7 +9088,7 @@
 	civilization_value = 30
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 870 = { #Mindil Kepich (unowned) (nimbrith_forochel_area) (forochel_region)
@@ -9536,11 +9536,11 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "city"
-	nobles = { amount = 1 }
-	citizen = { amount = 1 }
+	nobles = { amount = 3 }
+	citizen = { amount = 3 }
 	freemen = { amount = 3 }
-	tribesmen = { amount = 16 }
-	slaves = { amount = 1 }
+	tribesmen = { amount = 20 }
+	slaves = { amount = 5 }
 }
 914 = { #Telarmarda (unowned) (rammas_forod_area) (forochel_region)
 	terrain = "plains"
@@ -9588,7 +9588,7 @@
 	civilization_value = 30
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 919 = { #Firiëlócë (unowned) (rammas_forod_area) (forochel_region)
@@ -9635,7 +9635,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 4 }
 }
 924 = { #Minassë Lumba (unowned) (rast_losnaeth_area) (forochel_region)
@@ -10709,7 +10709,7 @@
 	civilization_value = 30
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 1034 = { #Tarastampë (XXQ) (carn_dum_area) (angmar_region)
@@ -10720,7 +10720,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 3 }
+	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
 1035 = { #Paca-alatapairë (XXQ) (talath_uichel_area) (forodwaith_region)
@@ -10731,7 +10731,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 1036 = { #Hópa nia Marilli (XXN) (linladwen_area) (forochel_region)
