@@ -281,16 +281,16 @@
 	global_commerce_modifier = 0.6
 	global_population_growth = -0.15
 }
-10_orc = { global_population_growth = 0.06 }
-20_orc = { global_population_growth = 0.12 }
-30_orc = { global_population_growth = 0.18 }
-40_orc = { global_population_growth = 0.24 }
-50_orc = { global_population_growth = 0.3 }
-60_orc = { global_population_growth = 0.36 }
-70_orc = { global_population_growth = 0.42 }
-80_orc = { global_population_growth = 0.48 }
-90_orc = { global_population_growth = 0.54 }
-100_orc = { global_population_growth = 0.6 }
+10_orc = { global_pop_assimilation_speed_modifier = 0.1 global_population_growth = 0.015 }
+20_orc = { global_pop_assimilation_speed_modifier = 0.2 global_population_growth = 0.03 }
+30_orc = { global_pop_assimilation_speed_modifier = 0.3 global_population_growth = 0.045 }
+40_orc = { global_pop_assimilation_speed_modifier = 0.4 global_population_growth = 0.06 }
+50_orc = { global_pop_assimilation_speed_modifier = 0.5 global_population_growth = 0.075 }
+60_orc = { global_pop_assimilation_speed_modifier = 0.6 global_population_growth = 0.09 }
+70_orc = { global_pop_assimilation_speed_modifier = 0.7 global_population_growth = 0.105 }
+80_orc = { global_pop_assimilation_speed_modifier = 0.8 global_population_growth = 0.12 }
+90_orc = { global_pop_assimilation_speed_modifier = 0.9 global_population_growth = 0.135 }
+100_orc = { global_pop_assimilation_speed_modifier = 1.0 global_population_growth = 0.15 }
 foreign_support_95 = { levy_size_multiplier = 0.95 }
 foreign_support_90 = { levy_size_multiplier = 0.9 }
 foreign_support_85 = { levy_size_multiplier = 0.85 }
