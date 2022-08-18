@@ -10,7 +10,7 @@
 	secondary_navy = galley
 	flank_navy = cog
 	
-	color = hsv { 0 0 0.16 }
+	color = hsv { 0 0 0.04 }
 
 	male_names = {
 		Azog Bolg Burz Fimbul Gazbag Gazbug Gazduf Gazdush Gazgash Gazhorn Gazhur Gazlag Gazlur Gazluk Gazlun Gazmog Gazmuz Gaznag Gazrad Gazrat Gazthak Gazuf Gazug Gazul Ghash Golfimbul Gorbag Gorbug Gorduf Gordush Gorgash Gorgaz Gorhur Gorluk Gorlun Gornag Gorshag Gorthak Gorzag Gorul Gothmog Grishnakh Grond Lagbug Lagduf Lagdush Laghur Laglug Laglun Lagrad Lagrat Lagthak Laguf Lug Lugbag Lugduf Lugdush Lughorn Lughur Lugluk Luglun Lugnag Lugthak Lugzag Lugul Lurtz Lunbag Lunbug Lunduf Lundush Lungash Lungaz Lungor Lunhur Lunlag Lunluk Lunmaz Lunrad Lunrat Lunshag Lunthak Lunuf Lunug Lunzag Lunul Maubag Maubug Mauduf Maudush Maugash Maugaz Maugor Mauhur Maulur Mauluk Maunag Mauthak Mauzag Muzbag Muzbug Muzduf Muzdush Muzgash Muzgaz Muzgor Muzhur Muzlag Muzlug Muzlur Muzluk Muzlun Muznag Muzrad Muzrat Muzthak Muzug Muzul Nagbug Nagduf Nagdush Naghur Naglug Naglur Nagluk Nagmuz Nagrad Nagrat Nagthak Nagug Nagzag Nuzu Radbag Radbug Radgash Radgaz Radhur Radlag Radluk Radmuz Radnag Radrat Radthak Radug Radzag Shagbug Shagduf Shagdush Shaglur Shagluk Shagrad Shagrat Shagthak Shaguf Shagug Shagul Snaga Ufgaz Uflug Ufluk Ufthak Ufzag Ugbag Ugduf Ugdush Ughur Uglag Uglur Ugluk Ugmuz Ugnag Ugrad Ugrat Ugslap Ugthak Ugzag Yagaz Yagbug Yagduf Yagdush Yaghur Yaglug Yagluk Yaglun Yagmuz Yagor Yagrad Yagrat Yagthak Yaguf Yagug Yagul Zagbug Zagduf Zagdush Zaghur Zaglag Zaglug Zagluk Zaglun Zagmuz Zagrad Zagrat Zagthak Zaguf Zagug 

@@ -10,7 +10,7 @@
 	secondary_navy = galley
 	flank_navy = cog
 	
-	color = hsv { 0.65  0.7  0.8 }
+	color = hsv { 0.65  1  0.8 }
 
 	male_names = {
 		Adso Al Alan Alastor Alden Aldred Alf Allan Alvin Andy Archie Arnie Art Artie Ash Bail Bark Barley Barliman Barnie Bart Barton Ben Bernar Bernie Bert Bill Billy Blockman Bobby Bork Bram Bran Brerion Bron Bronn Burt Cal Califast Caligar Cam Carl Charlie Chum Cliff Cobman Coldomac Cole Cris Cuthbert Dale Del Den Dirk Dob Dolph Ed Edd Eddy Edgar Edgard Edwin Eldo Emis Erling Ernie Falco Flint Fred Freddy Geoffrey Gib Gil Gundo Hal Ham Han Harry Henry Herb Herbie Himlock Hobson Holtman Howie Humbert Jasper Kip Larry Len Leo Lob Mark Mat Matthew Matty Mortimer Morty Ned Nic Nick Nicky Osbert Osborn Osmond Oswald Oswin Oz Parsifal Percy Perry Pip Rastafan Ray Rich Richie Ricky Rob Robbie Robin Rod Rodard Roderic Roderick Rodney Roger Rollo Rory Rowlie Rudolph Rufus Sage Sid Siddard Spike Stan Stem Stew Ted Terry Theo Theobald Tim Toby Tod Tom Tommard Tommy Ubald Wally Walt Wes Wilbard Wilbur Wilfred Will Willard Willy Win Winfred Woody 
