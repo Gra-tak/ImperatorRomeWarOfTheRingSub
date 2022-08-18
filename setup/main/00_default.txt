@@ -154,6 +154,13 @@ family={
 			prestige=1000
 			color = 0
 		}
+		21={
+			key="Durin_2"
+			owner=BLC
+			culture = longbeard
+			prestige=1000
+			color = 0
+		}
 	}
 }
 
@@ -187,6 +194,7 @@ diplomacy = {
 	
 	#Dale/Erebor/Iron Hills Alliance **Alliances keep breaking, will make Dale and Iron Hills tributaries of Erebor instead
 	dependency = { first = ERB second = DLE subject_type = feudatory }
+	dependency = { first = ERB second = BLC subject_type = feudatory }
 	# dependency = { first = ERB second = IRO subject_type = feudatory } #iron hills is part of ERB
 	
 	#Mordor - starts with Rhun and Variags as client states
@@ -2551,7 +2559,40 @@ country = {
 			is_antagonist = no
 			
 			own_control_core = 	{
-			380 381 1002 374 1003 3675 3674 3673 3925 371 3819 382 383
+			380 381 1002 374 1003 3675 3674 3673 3925 371 3819 383
+			}	
+		}
+
+		BLC = { #balins colony
+			government = plutocratic_monarchy
+			family=21
+			diplomatic_stance=trading_stance
+			primary_culture = longbeard
+			religion = iluvatarism
+			
+			technology={
+				military_tech={ level=1 progress=0 }
+				civic_tech={ level=1 progress=0 }
+				oratory_tech={ level=1 progress=0 }
+				religious_tech= { level=1 progress=0  }
+			}
+			
+			centralization=50
+			capital = 382
+			
+			pantheon = { 
+			
+			{ deity = 4 }
+			{ deity = 21 }
+			{ deity = 51 }
+			{ deity = 61 }
+			
+			}
+
+			is_antagonist = no
+			
+			own_control_core = 	{
+			382
 			}	
 		}
 		

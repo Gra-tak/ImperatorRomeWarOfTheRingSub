@@ -122,3 +122,8 @@
 
 ### LIN Mithlond (Lindon) ###
 #78 Galdor of the Havens
+
+### Balin ###
+#79 Balin
+#80 Óin
+#81 Ori

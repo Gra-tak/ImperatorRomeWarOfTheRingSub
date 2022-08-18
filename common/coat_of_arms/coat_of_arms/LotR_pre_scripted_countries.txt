@@ -232,7 +232,7 @@ DBK = {
 }
 
 #Balin Colony BLC
-BALIN_FLAG = {
+BLC = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 42 79 41}
 	color2 = "bone_white"

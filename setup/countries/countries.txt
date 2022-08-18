@@ -133,7 +133,7 @@ DBK = setup/countries/dwarves/dobrok.txt
 ERB = setup/countries/dwarves/erebor.txt
 KZK = setup/countries/dwarves/khazikal.txt
 IRO = setup/countries/dwarves/ironhills.txt
-KHZ = setup/countries/dwarves/khazaddum.txt
+BLC = setup/countries/dwarves/khazaddum.txt #balin colony
 
 #Yopi
 YOP = setup/countries/yopi/yopi.txt

@@ -281,12 +281,22 @@ br_truce.5 = { #prevents orcs of misty mountains to instantly attack orcs of mor
   trigger = {
     tag = XKX
     is_ai = yes
+    c:XJX = {
+      is_ai = yes
+    }
+    current_date <= 2990.1.1
   }
       
   immediate = {
     add_truce = {
-      target = c:XJX
-      duration = 1825
+      target = XJX
+      duration = 3649
+    }
+    c:XJX = {
+      add_truce = {
+        target = XKX
+        duration = 3649
+      }
     }
   }
   

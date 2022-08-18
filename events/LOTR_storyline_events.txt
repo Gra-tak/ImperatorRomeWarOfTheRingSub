@@ -233,16 +233,16 @@ lotr_storyline_events.5 = {
 	hidden = yes
 
 	trigger = {
-		is_ai = no
+		tag = BLC
 		exists = c:XJX  # Orcs of Moria
 		c:XJX = {
 			is_ai = yes
 			has_land = yes
 			owns = 2999
 		}
-		c:LOR = {
-			is_ai = yes
-		}
+		# c:LOR = {
+		# 	is_ai = yes
+		# }
 		current_date > 2989.1.3 # 2989.1.3
 		current_date <= 2992.1.1
 	}
@@ -284,7 +284,9 @@ lotr_storyline_events.5 = {
 #Balin wins battle
 lotr_storyline_events.6 = {
 	type = country_event
-	hidden = yes
+	title = "lotr_storyline_events.7.t"
+	desc = "lotr_storyline_events.7.desc"
+	picture = event_hills_mountains
 
 	trigger = {
 		exists = c:XJX  # Orcs of Moria
@@ -293,106 +295,118 @@ lotr_storyline_events.6 = {
 			has_land = yes
 			owns = 2999
 		}
-		c:LOR = {
-			is_ai = yes
-		}
+		# c:LOR = {
+		# 	is_ai = yes
+		# }
 	}
 	
 	fire_only_once = yes
 	
 	immediate = {
+		char:79 = {
+			add_nickname = lordOfMoria
+		}
+		if = {
+			limit = {
+				exists = c:ERB
+				is_subject = yes
+				is_subject_of = c:ERB
+			}
+			c:ERB = {
+				release_subject = ROOT
+			}
+			every_current_war = {
+				remove_from_war = ROOT
+			}
+		}
+		add_treasury = 500
+		current_ruler = {
+			save_scope_as = balin_leader_scope
+		}
+		save_scope_as = lotr_balins_colony_scope
 		hidden_effect = {
 			p:2999 = {
-				create_country = {
-					save_scope_as = lotr_balins_colony_scope
-					name = {
-						name = balins_colony
-						adjective = balin_colonys
-					}
-#					change_country_tag = BLC
-					change_country_flag = BALIN_FLAG
-					change_country_color = light_gold
-					set_primary_culture = longbeard
-					set_country_religion = iluvatarism
-					set_country_heritage = dwarven_heritage
-					change_government = plutocratic_monarchy
-					add_treasury = 500
-					create_character = {
-						first_name = "Balin"
-						family_name = "Durin"
-						force_add_trait = brave
-						force_add_trait = original_thinker
-						no_stats=yes
-						add_martial=11
-						add_charisma=8
-						add_finesse=5
-						add_zeal=9
-						culture = longbeard
-						religion = iluvatarism
-						age = 226
-						female = no
-						save_scope_as = balin_leader_scope
-					}
-					set_as_ruler = scope:balin_leader_scope
-				}
+				set_conquered_by = ROOT
 			}
-			while = { # Populate with some longbeard characters
-				count = 15
-				scope:lotr_balins_colony_scope = {
-					create_character = {
-						culture = longbeard
-						religion = iluvatarism
-						female = no
-					}
-					create_character = {
-						culture = longbeard
-						religion = iluvatarism
-						female = yes
-					}
-				}
-			}
-			scope:lotr_balins_colony_scope = {
-				every_character = {
-					limit = {
-						has_religion = melkorism
-					}
-					move_country = c:XJX
-					set_as_minor_character = THIS
-				}
-				add_truce = {
-					target = c:XJX
-					duration = 40
-				}
-				add_truce = {
-					target = c:LOR
-					duration = 40
-				}
+			add_truce = {
+				target = c:LOR
+				duration = 40
 			}
 			c:XJX = {
 				add_truce = {
-					target = scope:lotr_balins_colony_scope
+					target = ROOT
 					duration = 40
+				}
+			}
+			c:XKX = {
+				add_truce = {
+					target = ROOT
+					duration = 1000
 				}
 			}
 			c:LOR = {
 				add_truce = {
-					target = scope:lotr_balins_colony_scope
-					duration = 40
+					target = ROOT
+					duration = 9125
 				}
 			}
-			scope:lotr_balins_colony_scope.capital_scope = {
+			p:2999 = {
+				create_state_pop = nobles
+				create_state_pop = nobles
+				create_state_pop = citizen
 				create_state_pop = citizen
 				create_state_pop = citizen
 				create_state_pop = citizen
 				create_state_pop = freemen
 				create_state_pop = freemen
 				create_state_pop = freemen
+				create_state_pop = slaves
+				create_state_pop = slaves
+				create_state_pop = slaves
+				create_state_pop = slaves
+				create_state_pop = slaves
+				create_state_pop = slaves
+				create_state_pop = slaves
+				create_state_pop = slaves
+			}
+			if = {
+				limit = {
+					exists = c:ERB
+				}
+				p:382 = {
+					set_conquered_by = c:ERB
+					remove_claim = ROOT
+				}
+			}
+			area:khazad_dum_area = {
+				every_area_province = { add_claim = ROOT }
 			}
 		}
-		trigger_event = {
-			id = lotr_storyline_events.7
-			days = 10
+		every_country = {
+			trigger_event = {
+				id = lotr_storyline_events.7
+				days = 1
+			}
 		}
+	}
+	option = {
+		name = lotr_storyline_events.6.a
+		capital_scope = {
+			ordered_pops_in_province = {
+				limit = {
+					NOT = { pop_culture = longbeard }
+				}
+				order_by = pop_hapiness
+				max = 8
+				check_range_bounds = no
+				set_pop_culture = longbeard
+			}
+			add_civilization_value = 35
+		}
+		current_ruler = {
+			add_popularity = popularity_large
+		}
+		add_stability = 30
 	}
 }
 
@@ -411,6 +425,7 @@ lotr_storyline_events.7 = {
 
 	trigger = {
 		is_ai = no
+		NOT = { tag = BLC }
 		exists = scope:balin_leader_scope
 		scope:balin_leader_scope = {
 			is_alive = yes
@@ -421,28 +436,6 @@ lotr_storyline_events.7 = {
 	fire_only_once = yes
 	
 	immediate = {
-		hidden_effect = {
-			scope:lotr_balins_colony_scope = {
-				set_primary_culture = longbeard
-				set_country_religion = iluvatarism
-				capital_scope = {
-					ordered_pops_in_province = {
-						limit = {
-							NOT = { pop_culture = longbeard }
-						}
-						order_by = pop_hapiness
-						max = 8
-						check_range_bounds = no
-						set_pop_culture = longbeard
-					}
-					add_civilization_value = 35
-				}
-				current_ruler = {
-					add_popularity = popularity_large
-				}
-				add_stability = 30
-			}
-		}
 	}
 	
 	option = { #Generic response

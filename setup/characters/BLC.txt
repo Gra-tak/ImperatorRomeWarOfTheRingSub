@@ -1,0 +1,60 @@
+﻿"BLC"={
+	country="BLC"
+	79={
+		first_name="Balin"
+		family = c:BLC.fam:Durin_2
+		birth_date=2763.8.25
+		culture="longbeard"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=11
+		add_charisma=8
+		add_finesse=5
+		add_zeal=9
+		no_traits=yes
+		add_trait="dwarf"
+		add_trait="brave"
+		add_trait="original_thinker"
+		add_gold=200
+		add_popularity=70
+		c:BLC={
+			set_as_ruler=char:79
+		}
+	}
+	80={
+		first_name="Óin"
+		family = c:BLC.fam:Durin_2
+		birth_date=2774.8.25
+		culture="longbeard"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=11
+		add_charisma=8
+		add_finesse=5
+		add_zeal=9
+		no_traits=yes
+		add_trait="dwarf"
+		add_trait="brave"
+		add_trait="original_thinker"
+		add_gold=100
+		add_popularity=50
+	}
+	81={
+		first_name="Ori"
+		family = c:BLC.fam:Durin_2
+		birth_date=2876.8.25
+		culture="longbeard"
+		religion="iluvatarism"
+		no_stats=yes
+		add_martial=11
+		add_charisma=8
+		add_finesse=5
+		add_zeal=9
+		no_traits=yes
+		add_trait="dwarf"
+		add_trait="brave"
+		add_trait="original_thinker"
+		add_gold=100
+		add_popularity=50
+	}
+}
