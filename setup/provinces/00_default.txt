@@ -1089,7 +1089,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 101 = { #Szrel-Arkasa (unowned) (szrelavuld_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1099,7 +1099,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 102 = { #Riavod (unowned) (szrelavuld_area) (duirrogwin_region)
 	terrain = "forest"
@@ -1109,7 +1109,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 103 = { #Andarimn (unowned) (dobok_rhin_area) (dorwinion_region)
 	terrain = "forest"
@@ -1119,7 +1119,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 104 = { #Lostarfarn (unowned) (dobok_rhin_area) (dorwinion_region)
 	terrain = "plains"
@@ -1129,7 +1129,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 105 = { #Caras-Sant (unowned) (dobok_rhin_area) (dorwinion_region)
 	terrain = "plains"
@@ -1139,7 +1139,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 106 = { #Dradorny-Arnas (unowned) (dobok_rhin_area) (dorwinion_region)
 	terrain = "plains"
@@ -1149,7 +1149,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 107 = { #Ereg-toba (unowned) (fangorn_area) (lorien_region)
 	terrain = "deep_forest"
@@ -1168,7 +1168,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 109 = { #Scarakikot (unowned) (pinnon_rhun_area) (dorwinion_region)
 	terrain = "plains"
@@ -1178,7 +1178,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 110 = { #Lest (unowned) (pinnon_rhun_area) (dorwinion_region)
 	terrain = "plains"
@@ -1188,7 +1188,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 111 = { #Goldavo (XBX) (dacranamel_area) (dacranamel_region)
 	terrain = "farmland"
@@ -1417,7 +1417,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 132 = { #Burh Sarasthu (unowned) (agasha_dag_area) (taur_romen_region)
 	terrain = "farmland"
@@ -1427,7 +1427,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 133 = { #Minndra (unowned) (agasha_dag_area) (taur_romen_region)
 	terrain = "farmland"
@@ -1437,7 +1437,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 134 = { #Aurlant (unowned) (fangorn_area) (lorien_region)
 	terrain = "deep_forest"
@@ -1456,7 +1456,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 136 = { #Agarn (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "steppe"
@@ -1466,7 +1466,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 137 = { #Rhûdar (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "steppe"
@@ -1476,7 +1476,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 138 = { #Fokerdo (XOX) (fola_gach_area) (taur_romen_region)
 	terrain = "plains"
@@ -1568,7 +1568,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 147 = { #Kuriz (XOX) (fola_gach_area) (taur_romen_region)
 	terrain = "plains"
@@ -1601,7 +1601,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 150 = { #Kuirs (XOX) (gazar_ibar_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1710,7 +1710,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 161 = { #Ciskarn (unowned) (tauremindon_area) (menelothriand_region)
 	terrain = "steppe"
@@ -1720,7 +1720,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 162 = { #Szrelga (unowned) (szrelavuld_area) (duirrogwin_region)
 	terrain = "forest"
@@ -1730,7 +1730,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 163 = { #Taca (unowned) (szrelavuld_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1740,7 +1740,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 164 = { #Eryn Tîn (unowned) (fangorn_area) (lorien_region)
 	terrain = "deep_forest"
@@ -1759,7 +1759,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 166 = { #Khazh (XBX) (kolomok_area) (haerhun_region)
 	terrain = "steppe"
@@ -1780,7 +1780,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 168 = { #Sadvar (unowned) (nagadar_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1790,7 +1790,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 169 = { #Burh Mora (unowned) (nagadar_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1800,7 +1800,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 170 = { #Taur Mîngond (unowned) (fangorn_area) (lorien_region)
 	terrain = "deep_forest"
@@ -1819,7 +1819,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 172 = { #Ambenn-thôn (unowned) (fangorn_area) (lorien_region)
 	terrain = "deep_forest"
@@ -1838,7 +1838,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 174 = { #Vadvan (unowned) (nagadar_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1848,7 +1848,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 175 = { #Banolda (unowned) (szrelavuld_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1858,7 +1858,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 176 = { #Scarakikot (unowned) (szrelavuld_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1868,7 +1868,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 177 = { #Thancoll (unowned) (fangorn_area) (lorien_region)
 	terrain = "deep_forest"
@@ -1887,7 +1887,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 179 = { #Kalerodorin (unowned) (szrelavuld_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1897,7 +1897,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 180 = { #Daranel Toron (unowned) (szrelavuld_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1907,7 +1907,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 181 = { #Foralas (unowned) (forod_engrin_area) (forrhun_region)
 	terrain = "plains"
@@ -1926,7 +1926,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 183 = { #Tuval (XDX) (gazar_barak_area) (logathavuld_region)
 	terrain = "plains"
@@ -1959,7 +1959,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 186 = { #Pelenwod (unowned) (dobok_rhin_area) (dorwinion_region)
 	terrain = "plains"
@@ -1969,7 +1969,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 187 = { #Asanori (unowned) (dobok_rhin_area) (dorwinion_region)
 	terrain = "plains"
@@ -1979,7 +1979,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 188 = { #Pargeltir (unowned) (dobok_rhin_area) (dorwinion_region)
 	terrain = "plains"
@@ -1989,7 +1989,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 189 = { #Gastwolk (unowned) (dobok_rhin_area) (dorwinion_region)
 	terrain = "plains"
@@ -1999,7 +1999,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 190 = { #Killindrow (DWN) (folyavuld_area) (dorwinion_region)
 	terrain = "plains"
@@ -2142,7 +2142,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 203 = { #Yselvod (unowned) (durannon_area) (duirrogwin_region)
 	terrain = "plains"
@@ -2152,7 +2152,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 204 = { #Dollantir (unowned) (durannon_area) (duirrogwin_region)
 	terrain = "plains"
@@ -2162,7 +2162,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 205 = { #Althrith (unowned) (durannon_area) (duirrogwin_region)
 	terrain = "plains"
@@ -2172,7 +2172,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 206 = { #Millenda (unowned) (pinnon_rhun_area) (dorwinion_region)
 	terrain = "plains"
@@ -2192,6 +2192,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 208 = { #Askal (unowned) (pinnon_rhun_area) (dorwinion_region)
 	terrain = "plains"
@@ -2234,7 +2235,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 212 = { #Kerve (DWN) (deneral_area) (dorwinion_region)
 	terrain = "plains"
@@ -2310,7 +2311,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 219 = { #Burh Maridais (unowned) (arkran_area) (rhovanion_region)
 	terrain = "plains"
@@ -2342,7 +2343,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 222 = { #Dol Calenmir (unowned) (pinnon_rhun_area) (dorwinion_region)
 	terrain = "plains"
@@ -2352,7 +2353,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 223 = { #Tinalerin (unowned) (pinnon_rhun_area) (dorwinion_region)
 	terrain = "plains"
@@ -2362,7 +2363,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 224 = { #Dol Calamin (unowned) (pinnon_rhun_area) (dorwinion_region)
 	terrain = "plains"
@@ -2372,7 +2373,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 225 = { #Bereg (BAL) (sagathavuld_area) (dor_rhunen_region)
 	terrain = "steppe"
@@ -2393,7 +2394,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 227 = { #Kingarh (unowned) (pinnon_rhun_area) (dorwinion_region)
 	terrain = "plains"
@@ -2403,7 +2404,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 228 = { #Tund (unowned) (pinnon_rhun_area) (dorwinion_region)
 	terrain = "plains"
@@ -2413,7 +2414,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 229 = { #Alesthla (XBX) (morad_area) (dacranamel_region)
 	terrain = "steppe"
@@ -2469,7 +2470,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 234 = { #Tsathan (DWN) (dobok_bron_area) (dorwinion_region)
 	terrain = "forest"
@@ -2568,7 +2569,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 243 = { #Vari (unowned) (agasha_dag_area) (taur_romen_region)
 	terrain = "steppe"
@@ -2578,7 +2579,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 244 = { #Wedarna (unowned) (agasha_dag_area) (taur_romen_region)
 	terrain = "steppe"
@@ -2588,7 +2589,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 245 = { #Paras (unowned) (agasha_dag_area) (taur_romen_region)
 	terrain = "steppe"
@@ -2598,7 +2599,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 246 = { #Morthepand (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "plains"
@@ -2608,7 +2609,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 247 = { #Dazakur (unowned) (agasha_dag_area) (taur_romen_region)
 	terrain = "plains"
@@ -2618,7 +2619,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 248 = { #Tálkharâr (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "plains"
@@ -2628,7 +2629,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 249 = { #Enandi (XBX) (nildorien_area) (haerhun_region)
 	terrain = "steppe"
@@ -2988,7 +2989,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 282 = { #Uthisth (XBX) (morad_area) (dacranamel_region)
 	terrain = "steppe"
@@ -3229,7 +3230,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 304 = { #Pathar (unowned) (nan_carnen_area) (rhovanion_region)
 	terrain = "plains"
@@ -3239,7 +3240,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 305 = { #Larenth (unowned) (gazar_narkad_area) (logathavuld_region)
 	terrain = "plains"
@@ -3249,7 +3250,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 306 = { #Adzarva (unowned) (gazar_narkad_area) (logathavuld_region)
 	terrain = "plains"
@@ -3259,7 +3260,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 307 = { #Moth (unowned) (gazar_narkad_area) (logathavuld_region)
 	terrain = "plains"
@@ -3269,7 +3270,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 308 = { #Kusthav (unowned) (nan_carnen_area) (rhovanion_region)
 	terrain = "plains"
@@ -3279,7 +3280,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 309 = { #Banoraril (BAL) (taj_ures_area) (dor_rhunen_region)
 	terrain = "steppe"
@@ -3333,7 +3334,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 314 = { #Kherâs (XBX) (pustrava_area) (saerwaith_region)
 	terrain = "steppe"
@@ -3354,7 +3355,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 316 = { #Kramin (unowned) (nan_carnen_area) (rhovanion_region)
 	terrain = "plains"
@@ -3364,7 +3365,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 317 = { #Tâtoramara (unowned) (gazar_narkad_area) (logathavuld_region)
 	terrain = "plains"
@@ -3374,7 +3375,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 318 = { #Nûraz (unowned) (nan_carnen_area) (rhovanion_region)
 	terrain = "hills"
@@ -3446,7 +3447,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 325 = { #Khuba (unowned) (forkug_area) (taur_romen_region)
 	terrain = "plains"
@@ -3456,7 +3457,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 326 = { #Raranâ (XBX) (kolomok_area) (haerhun_region)
 	terrain = "plains"
@@ -3488,7 +3489,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 329 = { #Klófnakot (DLE) (medvos_verar_area) (rhovanion_region)
 	terrain = "plains"
@@ -3575,7 +3576,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 337 = { #Khama (XBX) (muldin_area) (haerhun_region)
 	terrain = "steppe"
@@ -3607,7 +3608,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 340 = { #Alax (XBX) (muldin_area) (haerhun_region)
 	terrain = "steppe"
@@ -3628,7 +3629,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 342 = { #Nar (XBX) (muldin_area) (haerhun_region)
 	terrain = "steppe"
@@ -3671,7 +3672,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 346 = { #Wayhidstede (unowned) (talath_rhain_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -3681,7 +3682,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 347 = { #Desh (unowned) (aglonedrain_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -3691,7 +3692,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 348 = { #Sêdara (unowned) (aglonedrain_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -3701,7 +3702,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 349 = { #Burh Beorills (unowned) (talath_rhain_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -3711,7 +3712,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 350 = { #Mokta (BAL) (duil_rewinion_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -3732,7 +3733,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 352 = { #Burh Waldmarhis (DLE) (aur_esgalabar_area) (rhovanion_region)
 	terrain = "plains"
@@ -3797,7 +3798,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 358 = { #Sêntadû (unowned) (nan_carnen_area) (rhovanion_region)
 	terrain = "plains"
@@ -3807,7 +3808,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 359 = { #Khepatari (XBX) (kolomok_area) (haerhun_region)
 	terrain = "steppe"
@@ -3850,7 +3851,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 363 = { #Chahûzke (unowned) (angaladh_rhunen_area) (eryn_galen_region)
 	terrain = "deep_forest"
@@ -3997,7 +3998,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 377 = { #Khuzherth (unowned) (logathavuld_area) (logathavuld_region)
 	terrain = "plains"
@@ -4007,7 +4008,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 378 = { #Maedwe-Dukas (DLE) (annendor_area) (rhovanion_region)
 	terrain = "plains"
@@ -4155,7 +4156,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 393 = { #Kúse (unowned) (logathavuld_area) (logathavuld_region)
 	terrain = "plains"
@@ -4165,7 +4166,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 3 }
+	tribesmen = { amount = 2 }
 }
 394 = { #Akalpuz (unowned) (logathavuld_area) (logathavuld_region)
 	terrain = "plains"
@@ -4175,7 +4176,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 395 = { #Valandakan (unowned) (logathavuld_area) (logathavuld_region)
 	terrain = "plains"
@@ -4185,7 +4186,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 396 = { #Daz (unowned) (logathavuld_area) (logathavuld_region)
 	terrain = "plains"
@@ -4195,7 +4196,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 397 = { #Ahatanesain (unowned) (logathavuld_area) (logathavuld_region)
 	terrain = "plains"
@@ -4205,7 +4206,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 398 = { #Aerinin (unowned) (gonnland_area) (ered_mithrin_region)
 	terrain = "plains"
@@ -6309,7 +6310,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 599 = { #Basira (unowned) (basira_area) (nafarat_region)
 	terrain = "desert"
@@ -6319,7 +6320,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 3 }
+	tribesmen = { amount = 2 }
 }
 600 = { #Gadirkana (unowned) (basira_area) (nafarat_region)
 	terrain = "desert"
@@ -6329,7 +6330,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 601 = { #Dharan-Sar (unowned) (basira_area) (nafarat_region)
 	terrain = "desert"
@@ -6339,7 +6340,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 602 = { #602 (uninhabitable)
 	terrain = "desert"
@@ -6911,7 +6912,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 654 = { #Brafenas (unowned) (lurmsakun_area) (nafarat_region)
 	terrain = "desert"
@@ -6921,7 +6922,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 655 = { #Krûk Datmen (unowned) (lurmsakun_area) (nafarat_region)
 	terrain = "plains"
@@ -6931,7 +6932,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 656 = { #Laorki (VAR) (sar_khand_area) (khand_region)
 	terrain = "steppe"
@@ -6952,7 +6953,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 658 = { #Zhaneen (unowned) (lurmsakun_area) (nafarat_region)
 	terrain = "plains"
@@ -6962,7 +6963,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 659 = { #Trijha Peh (unowned) (lurmsakun_area) (nafarat_region)
 	terrain = "plains"
@@ -6972,7 +6973,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 660 = { #Maresh (unowned) (lurmsakun_area) (nafarat_region)
 	terrain = "plains"
@@ -6982,7 +6983,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 661 = { #Ka'hae (VAR) (sar_khand_area) (khand_region)
 	terrain = "plains"
@@ -7168,7 +7169,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 678 = { #Momirath (VAR) (khand_khurvesra_area) (khand_region)
 	terrain = "steppe"
@@ -7189,7 +7190,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 680 = { #Simurgh-dara (XEX) (subi_area) (nurad_region)
 	terrain = "steppe"
@@ -7254,7 +7255,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 686 = { #Ruzakarâral (unowned) (ardhallad_area) (saerwaith_region)
 	terrain = "steppe"
@@ -7264,7 +7265,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 687 = { #Mandân (MOR) (nurn_area) (nurn_region)
 	terrain = "plains"
@@ -7284,7 +7285,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 689 = { #Istha (XEX) (kol_nurad_area) (nurad_region)
 	terrain = "steppe"
@@ -7462,7 +7463,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 705 = { #Khed (unowned) (ardhallad_area) (saerwaith_region)
 	terrain = "steppe"
@@ -7472,7 +7473,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 706 = { #Mardu-hash (unowned) (talath_narchsul_area) (saerwaith_region)
 	terrain = "plains"
@@ -7482,7 +7483,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 707 = { #Dokhtar (NUR) (rhunen_nurn_area) (nurn_region)
 	terrain = "plains"
@@ -7557,7 +7558,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 714 = { #Imak Peh (unowned) (arysis_area) (nafarat_region)
 	terrain = "plains"
@@ -7567,7 +7568,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 715 = { #Ôvatharak (unowned) (arysis_area) (nafarat_region)
 	terrain = "plains"
@@ -7577,7 +7578,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 716 = { #Tereze (unowned) (arysis_area) (nafarat_region)
 	terrain = "plains"
@@ -7587,7 +7588,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 717 = { #Anrkuz (unowned) (arysis_area) (nafarat_region)
 	terrain = "plains"
@@ -7597,7 +7598,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 718 = { #Isth (unowned) (arysis_area) (nafarat_region)
 	terrain = "plains"
@@ -7607,7 +7608,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 719 = { #Mûrilak (VAR) (sar_khand_area) (khand_region)
 	terrain = "steppe"
@@ -7661,7 +7662,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 724 = { #Lavaralda-minassë (unowned) (forod_engrin_area) (forrhun_region)
 	terrain = "plains"
@@ -7727,7 +7728,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 731 = { #Tyathe (unowned) (forkug_area) (taur_romen_region)
 	terrain = "plains"
@@ -7737,7 +7738,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 732 = { #Gestharer (unowned) (forkug_area) (taur_romen_region)
 	terrain = "plains"
@@ -7747,7 +7748,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 733 = { #Argatju (unowned) (forkug_area) (taur_romen_region)
 	terrain = "plains"
@@ -7757,7 +7758,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 734 = { #Umaweni (NUR) (rhunen_nurn_area) (nurn_region)
 	terrain = "plains"
@@ -7778,7 +7779,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 736 = { #Khest (NUR) (rhunen_nurn_area) (nurn_region)
 	terrain = "plains"
@@ -7799,7 +7800,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 738 = { #Nebûrkha (unowned) (talath_narchsul_area) (saerwaith_region)
 	terrain = "steppe"
@@ -7809,7 +7810,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 739 = { #Ahargi (MOR) (glamhoth_area) (nurn_region)
 	terrain = "plains"
@@ -7841,7 +7842,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 742 = { #Uzha (unowned) (talath_narchsul_area) (saerwaith_region)
 	terrain = "plains"
@@ -7851,7 +7852,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 743 = { #Carvarad (BAL) (aramuth_ayal_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -7961,7 +7962,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 753 = { #Thuringwathost (unowned) (dagorlad_area) (uvanwaith_region)
 	terrain = "plains"
@@ -8031,7 +8032,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 760 = { #Râdthor (unowned) (talath_harroch_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -8041,7 +8042,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 761 = { #Burh Hleow (XXT) (taur_guldur_area) (eryn_galen_region)
 	terrain = "deep_forest"
@@ -8101,7 +8102,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 767 = { #Lorini (unowned) (talath_harroch_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -8177,7 +8178,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 774 = { #Fiskwor (unowned) (berennyn_area) (uvanwaith_region)
 	terrain = "plains"
@@ -8206,7 +8207,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 777 = { #Manorarkava (unowned) (talath_harroch_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -8216,7 +8217,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 778 = { #Nenal (unowned) (nan_lothanduin_area) (uvanwaith_region)
 	terrain = "plains"
@@ -8327,7 +8328,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 790 = { #Ziylinaku (XEX) (subi_area) (nurad_region)
 	terrain = "steppe"
@@ -8403,7 +8404,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 797 = { #Khaldaza (XBX) (muldin_area) (haerhun_region)
 	terrain = "steppe"
@@ -10187,7 +10188,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 983 = { #Sturlurza-Núrn (MOR) (glamhoth_area) (nurn_region)
 	terrain = "plains"
@@ -10241,7 +10242,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 988 = { #Burh Shalca (unowned) (talath_harroch_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -10251,7 +10252,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 989 = { #Arstini (unowned) (talath_harroch_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -10261,7 +10262,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 990 = { #Marirga (unowned) (talath_harroch_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -10271,7 +10272,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 991 = { #Ganzav (unowned) (talath_harroch_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -10281,7 +10282,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 992 = { #Burh Sauthis (unowned) (talath_harroch_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -10291,7 +10292,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 993 = { #Cor Angálaladh (XXT) (taur_guldur_area) (eryn_galen_region)
 	terrain = "deep_forest"
@@ -10434,7 +10435,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1007 = { #Myrld (unowned) (nanetha_area) (menelothriand_region)
 	terrain = "plains"
@@ -10444,7 +10445,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 1008 = { #Khôren (BAL) (duil_rewinion_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -10474,7 +10475,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1011 = { #Tirith Nimnen (unowned) (dagorlad_area) (uvanwaith_region)
 	terrain = "plains"
@@ -10547,7 +10548,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1019 = { #Ashkirir (unowned) (dagorlad_area) (uvanwaith_region)
 	terrain = "plains"
@@ -12302,7 +12303,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1188 = { #Orduga-Aivaisa (MOR) (glamhoth_area) (nurn_region)
 	terrain = "plains"
@@ -12906,7 +12907,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1245 = { #Ankadar (NUR) (ghurzun_area) (nurn_region)
 	terrain = "plains"
@@ -20398,7 +20399,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1969 = { #Parnin (unowned) (aglonedrain_area) (dor_rhunen_region)
 	terrain = "plains"
@@ -20408,7 +20409,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1970 = { #Narlar (XEX) (kol_nurad_area) (nurad_region)
 	terrain = "steppe"
@@ -20548,7 +20549,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1983 = { #Délút (unowned) (durannon_area) (duirrogwin_region)
 	terrain = "plains"
@@ -20558,7 +20559,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 1984 = { #Carga (unowned) (durannon_area) (duirrogwin_region)
 	terrain = "forest"
@@ -20568,7 +20569,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 1985 = { #Mad-Hurs (unowned) (durannon_area) (duirrogwin_region)
 	terrain = "plains"
@@ -20578,7 +20579,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 1986 = { #Vonnar (unowned) (durannon_area) (duirrogwin_region)
 	terrain = "forest"
@@ -20588,7 +20589,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 1987 = { #Weld (unowned) (durannon_area) (duirrogwin_region)
 	terrain = "plains"
@@ -20598,7 +20599,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 1988 = { #Tomsaraz (unowned) (durannon_area) (duirrogwin_region)
 	terrain = "plains"
@@ -20608,7 +20609,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 1989 = { #Milarsell (unowned) (durannon_area) (duirrogwin_region)
 	terrain = "plains"
@@ -20618,7 +20619,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1990 = { #Dird-ur (unowned) (gazar_narkad_area) (logathavuld_region)
 	terrain = "plains"
@@ -20628,7 +20629,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1991 = { #Burime (unowned) (gazar_narkad_area) (logathavuld_region)
 	terrain = "plains"
@@ -20638,7 +20639,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 1992 = { #Alazar (XDX) (gazar_barak_area) (logathavuld_region)
 	terrain = "plains"
@@ -20714,7 +20715,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 1999 = { #Kran-arari (unowned) (gazar_narkad_area) (logathavuld_region)
 	terrain = "plains"
@@ -20724,7 +20725,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2000 = { #Ryrkna (XDX) (gazar_barak_area) (logathavuld_region)
 	terrain = "plains"
@@ -20756,7 +20757,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 2003 = { #Paglara (unowned) (nagadar_area) (duirrogwin_region)
 	terrain = "plains"
@@ -20766,7 +20767,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2004 = { #Garaleni (unowned) (nagadar_area) (duirrogwin_region)
 	terrain = "plains"
@@ -20776,7 +20777,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2005 = { #Karinn (unowned) (gazar_utal_area) (logathavuld_region)
 	terrain = "plains"
@@ -20786,7 +20787,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2006 = { #Vemas (unowned) (gazar_utal_area) (logathavuld_region)
 	terrain = "plains"
@@ -20796,7 +20797,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2007 = { #Enar (unowned) (gazar_gord_area) (logathavuld_region)
 	terrain = "hills"
@@ -20806,7 +20807,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2008 = { #Gavogu (unowned) (gazar_utal_area) (logathavuld_region)
 	terrain = "plains"
@@ -20816,7 +20817,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2009 = { #Darind (unowned) (logathavuld_area) (logathavuld_region)
 	terrain = "plains"
@@ -20826,7 +20827,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2010 = { #Tygal (unowned) (gazar_utal_area) (logathavuld_region)
 	terrain = "plains"
@@ -20836,7 +20837,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2011 = { #Lômiral (unowned) (gazar_utal_area) (logathavuld_region)
 	terrain = "plains"
@@ -20846,7 +20847,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2012 = { #Alarmarât (unowned) (gazar_utal_area) (logathavuld_region)
 	terrain = "plains"
@@ -20856,7 +20857,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2013 = { #Nuirugae (unowned) (gazar_gord_area) (logathavuld_region)
 	terrain = "hills"
@@ -20866,7 +20867,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2014 = { #Dínahu (unowned) (gazar_gord_area) (logathavuld_region)
 	terrain = "hills"
@@ -20876,7 +20877,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2015 = { #Barilth (unowned) (gazar_gord_area) (logathavuld_region)
 	terrain = "hills"
@@ -20886,7 +20887,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2016 = { #Val (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "plains"
@@ -20896,7 +20897,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2017 = { #Barui (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "plains"
@@ -20906,7 +20907,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2018 = { #Aladi (unowned) (gazar_gord_area) (logathavuld_region)
 	terrain = "hills"
@@ -20916,7 +20917,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2019 = { #Amliste (unowned) (gazar_gord_area) (logathavuld_region)
 	terrain = "hills"
@@ -20926,7 +20927,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2020 = { #Adîfarm (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "plains"
@@ -20936,7 +20937,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2021 = { #Kanâ (unowned) (gazar_gord_area) (logathavuld_region)
 	terrain = "hills"
@@ -20946,7 +20947,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2022 = { #Khinyinâwa (unowned) (gazar_gord_area) (logathavuld_region)
 	terrain = "hills"
@@ -20956,7 +20957,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2023 = { #Uldaarek (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "plains"
@@ -20966,7 +20967,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2024 = { #Alsu (unowned) (forkug_area) (taur_romen_region)
 	terrain = "hills"
@@ -20976,7 +20977,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2025 = { #Kóldaga (unowned) (forkug_area) (taur_romen_region)
 	terrain = "plains"
@@ -20986,7 +20987,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2026 = { #Cüclarmar (unowned) (forkug_area) (taur_romen_region)
 	terrain = "plains"
@@ -20996,7 +20997,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2027 = { #Kharâs (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "plains"
@@ -21006,7 +21007,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2028 = { #Gêduagainis (XBX) (nildorien_area) (haerhun_region)
 	terrain = "steppe"
@@ -21113,7 +21114,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2038 = { #Bar Annunaid (LBN) (lebennivet_area) (lebennin_region)
 	terrain = "plains"
@@ -21282,7 +21283,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 3 }
+	tribesmen = { amount = 2 }
 }
 2055 = { #Kil-Kadar (MAR) (mardruak_area) (mardruak_region)
 	terrain = "plains"
@@ -24208,7 +24209,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2331 = { #Gondrinn (unowned) (en_eredoriath_area) (dyr_erib_region)
 	terrain = "plains"
@@ -24713,7 +24714,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2383 = { #Raishoul (unowned) (kanjar_area) (tulwang_region)
 	terrain = "plains"
@@ -24723,7 +24724,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2384 = { #Gimlar (unowned) (kanjar_area) (tulwang_region)
 	terrain = "plains"
@@ -24733,7 +24734,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 2385 = { #Sôriya (SOR) (kanjar_area) (tulwang_region)
 	terrain = "plains"
@@ -24756,7 +24757,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2387 = { #Zâin Kadar (SOR) (kanjar_area) (tulwang_region)
 	terrain = "plains"
@@ -24777,7 +24778,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2389 = { #Bishra (unowned) (bishra_area) (tulwang_region)
 	terrain = "plains"
@@ -24787,7 +24788,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 2390 = { #Telarûd (unowned) (bishra_area) (tulwang_region)
 	terrain = "plains"
@@ -24797,7 +24798,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 3 }
+	tribesmen = { amount = 2 }
 }
 2391 = { #Hija (unowned) (bishra_area) (tulwang_region)
 	terrain = "plains"
@@ -24807,7 +24808,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 2392 = { #Tamruz (unowned) (bishra_area) (tulwang_region)
 	terrain = "plains"
@@ -24817,7 +24818,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2393 = { #Nashar (ETU) (nisur_area) (tulwang_region)
 	terrain = "plains"
@@ -27028,7 +27029,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2610 = { #Dûlat (unowned) (basira_area) (nafarat_region)
 	terrain = "desert"
@@ -27038,7 +27039,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2611 = { #Erszavar (unowned) (arysis_area) (nafarat_region)
 	terrain = "plains"
@@ -27048,7 +27049,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 2612 = { #Nilalu (QAR) (siakan_area) (nafarat_region)
 	terrain = "plains"
@@ -27228,6 +27229,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 2629 = { #Toradaguz (unowned) (aiatar_area) (forrhun_region)
 	terrain = "plains"
@@ -27255,6 +27257,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 2632 = { #Khrazam (unowned) (aiatar_area) (forrhun_region)
 	terrain = "plains"
@@ -27264,6 +27267,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 2633 = { #Gênín (unowned) (aiatar_area) (forrhun_region)
 	terrain = "plains"
@@ -27273,6 +27277,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 2634 = { #Naheyarmû (unowned) (aiatar_area) (forrhun_region)
 	terrain = "plains"
@@ -27291,6 +27296,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 2636 = { #Verardû (unowned) (aiatar_area) (forrhun_region)
 	terrain = "plains"
@@ -27300,6 +27306,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 2637 = { #Kral (unowned) (aiatar_area) (forrhun_region)
 	terrain = "plains"
@@ -27309,6 +27316,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 2638 = { #Ulufald (unowned) (hardyr_area) (dyr_region)
 	terrain = "plains"
@@ -27365,7 +27373,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2644 = { #Ûshat (YOP) (bulkhyades_area) (khailuza_region)
 	terrain = "plains"
@@ -27886,7 +27894,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2696 = { #2696 (uninhabitable)
 	terrain = "desert"
@@ -28033,7 +28041,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2710 = { #Barad Dolni (XXT) (taur_guldur_area) (eryn_galen_region)
 	terrain = "deep_forest"
@@ -28184,7 +28192,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2725 = { #Dôl Tirith (unowned) (nan_i_naugrim_area) (numeriador_region)
 	terrain = "plains"
@@ -28443,7 +28451,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2753 = { #Cilairan (unowned) (langurian_kyn_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -28453,7 +28461,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2754 = { #Vedz (XGX) (khirar_area) (kykurian_kyn_region)
 	terrain = "forest"
@@ -28485,7 +28493,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2757 = { #Kyarian (YOP) (muran_area) (harshandatt_region)
 	terrain = "plains"
@@ -28506,7 +28514,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2759 = { #Istanda (unowned) (gadilah_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -28516,7 +28524,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2760 = { #Lughr (unowned) (gadilah_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -28526,7 +28534,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2761 = { #Khorsha (XGX) (otuala_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -28798,7 +28806,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2786 = { #Umaweni (unowned) (boli_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28808,7 +28816,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2787 = { #Kúnín (unowned) (boli_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28818,7 +28826,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2788 = { #Danar (unowned) (boli_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28828,7 +28836,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2789 = { #U-Uza (unowned) (boli_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28838,7 +28846,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2790 = { #Sarail (unowned) (boli_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28848,7 +28856,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2791 = { #Gêna (unowned) (boli_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28858,7 +28866,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2792 = { #Gangaha (unowned) (boli_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28868,7 +28876,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2793 = { #Tiriând (unowned) (velirinda_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28878,7 +28886,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2794 = { #Kinadirk (unowned) (velirinda_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28888,7 +28896,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2795 = { #Napa (unowned) (velirinda_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28898,7 +28906,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2796 = { #Lynren (unowned) (velirinda_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28908,7 +28916,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 2797 = { #Derli (unowned) (velirinda_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28918,7 +28926,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2798 = { #Parathan (unowned) (velirinda_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28928,7 +28936,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2799 = { #Dufa (unowned) (nanetha_area) (menelothriand_region)
 	terrain = "plains"
@@ -28938,7 +28946,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 2800 = { #Gananyre (unowned) (nanetha_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28948,7 +28956,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2801 = { #Karanar (unowned) (velirinda_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28958,7 +28966,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2802 = { #Iskat (unowned) (velirinda_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28968,7 +28976,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2803 = { #Kaga (unowned) (tauremindon_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28978,7 +28986,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2804 = { #Tinar (unowned) (boli_area) (menelothriand_region)
 	terrain = "steppe"
@@ -28988,7 +28996,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2805 = { #Khrazam (XGX) (rethu_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -29031,7 +29039,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2809 = { #Jeyargag (unowned) (tauremindon_area) (menelothriand_region)
 	terrain = "steppe"
@@ -29041,7 +29049,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2810 = { #Tiarmindi (unowned) (tauremindon_area) (menelothriand_region)
 	terrain = "steppe"
@@ -29051,7 +29059,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2811 = { #Naalk (unowned) (tauremindon_area) (menelothriand_region)
 	terrain = "steppe"
@@ -29061,7 +29069,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2812 = { #Teminthi (unowned) (tauremindon_area) (menelothriand_region)
 	terrain = "steppe"
@@ -29071,7 +29079,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2813 = { #Khe (unowned) (tauremindon_area) (menelothriand_region)
 	terrain = "steppe"
@@ -29081,7 +29089,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2814 = { #Kyanda (XGX) (rethu_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -29190,7 +29198,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 2824 = { #Mûlp (unowned) (huadis_area) (menelothriand_region)
 	terrain = "steppe"
@@ -29200,7 +29208,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2825 = { #Kre (unowned) (huadis_area) (menelothriand_region)
 	terrain = "steppe"
@@ -29210,7 +29218,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2826 = { #Khepatari (unowned) (huadis_area) (menelothriand_region)
 	terrain = "steppe"
@@ -29220,7 +29228,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2827 = { #Zinaskaru (unowned) (huadis_area) (menelothriand_region)
 	terrain = "steppe"
@@ -29230,7 +29238,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2828 = { #Kósatarmaz (unowned) (lotan_area) (dyr_region)
 	terrain = "steppe"
@@ -29285,7 +29293,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2834 = { #Karinasak (unowned) (dyr_area) (dyr_region)
 	terrain = "forest"
@@ -29304,7 +29312,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2836 = { #Liknekar (unowned) (nanetha_area) (menelothriand_region)
 	terrain = "steppe"
@@ -29314,7 +29322,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2837 = { #Gepyl (unowned) (nanetha_area) (menelothriand_region)
 	terrain = "plains"
@@ -29324,7 +29332,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2838 = { #Uldinûgan (unowned) (nanetha_area) (menelothriand_region)
 	terrain = "plains"
@@ -29334,7 +29342,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2839 = { #Khai (unowned) (nanetha_area) (menelothriand_region)
 	terrain = "plains"
@@ -29344,7 +29352,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 3 }
+	tribesmen = { amount = 2 }
 }
 2840 = { #Kûgilta (unowned) (hardyr_area) (dyr_region)
 	terrain = "forest"
@@ -29363,7 +29371,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2842 = { #Bora (unowned) (nanetha_area) (menelothriand_region)
 	terrain = "plains"
@@ -29373,7 +29381,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2843 = { #Morkanara (unowned) (dyr_area) (dyr_region)
 	terrain = "forest"
@@ -29509,6 +29517,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 2858 = { #Dôan-Lôa (unowned) (hardyr_area) (dyr_region)
 	terrain = "forest"
@@ -29644,7 +29653,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2871 = { #Par (unowned) (vugisen_area) (khey_sart_region)
 	terrain = "steppe"
@@ -29654,7 +29663,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2872 = { #Alerâwema (unowned) (othokav_area) (khey_sart_region)
 	terrain = "steppe"
@@ -29664,7 +29673,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2873 = { #Meyalin (unowned) (othokav_area) (khey_sart_region)
 	terrain = "steppe"
@@ -29674,7 +29683,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2874 = { #Nar (unowned) (othokav_area) (khey_sart_region)
 	terrain = "steppe"
@@ -29684,7 +29693,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2875 = { #Barorn (XXJ) (doriant_area) (harnendor_region)
 	terrain = "plains"
@@ -29749,7 +29758,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2881 = { #Dalar (XRX) (khy_area) (khailuza_region)
 	terrain = "plains"
@@ -29836,7 +29845,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2889 = { #Gên (unowned) (vugisen_area) (khey_sart_region)
 	terrain = "steppe"
@@ -29846,7 +29855,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2890 = { #Dûra (XCX) (murgarm_area) (khey_sart_region)
 	terrain = "steppe"
@@ -29911,7 +29920,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2896 = { #Amarin (XEX) (nurad_area) (nurad_region)
 	terrain = "steppe"
@@ -29932,7 +29941,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2898 = { #Dendurmar (XTX) (shor_area) (kargagis_ahar_region)
 	terrain = "steppe"
@@ -29986,7 +29995,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2903 = { #Raral (XRX) (cashiloma_area) (orgothrath_region)
 	terrain = "plains"
@@ -30062,7 +30071,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2910 = { #Thysaz-Lars (XCX) (heb_aran_area) (khey_sart_region)
 	terrain = "steppe"
@@ -30358,7 +30367,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2937 = { #Kheyr (unowned) (gadilah_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -30368,7 +30377,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2938 = { #Momothreyri (unowned) (gadilah_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -30378,7 +30387,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2939 = { #Gej-Isa (unowned) (gadilah_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -30388,7 +30397,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2940 = { #Gupan (unowned) (gadilah_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -30398,7 +30407,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2941 = { #Kroldani (unowned) (langurian_kyn_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -30408,7 +30417,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2942 = { #Gangaha (unowned) (langurian_kyn_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -30418,7 +30427,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2943 = { #Torlk (unowned) (langurian_kyn_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -30428,7 +30437,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2944 = { #Khecemp (unowned) (langurian_kyn_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -30438,7 +30447,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 2945 = { #Saru (XLX) (bru_isra_area) (cennacatt_region)
 	terrain = "plains"
@@ -30860,7 +30869,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 2984 = { #Ciryatandor (uninhabitable)
 	terrain = "plains"
@@ -31096,7 +31105,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3009 = { #Sûmo (XCX) (heb_aran_area) (khey_sart_region)
 	terrain = "steppe"
@@ -31128,7 +31137,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3012 = { #Mûmúloke (XRX) (vag_area) (khailuza_region)
 	terrain = "plains"
@@ -31160,7 +31169,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3015 = { #Núník (XEX) (kol_nurad_area) (nurad_region)
 	terrain = "steppe"
@@ -31258,7 +31267,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3024 = { #Ahagon (unowned) (gadilah_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -31268,7 +31277,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3025 = { #Golarir (unowned) (gadilah_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -31278,7 +31287,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 3026 = { #Teradyka (XGX) (otuala_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -31343,7 +31352,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3032 = { #Kindokag (unowned) (vugisen_area) (khey_sart_region)
 	terrain = "steppe"
@@ -31353,7 +31362,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3033 = { #Sanel (XCX) (murgarm_area) (khey_sart_region)
 	terrain = "steppe"
@@ -31385,7 +31394,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3036 = { #Kógi (unowned) (othokav_area) (khey_sart_region)
 	terrain = "steppe"
@@ -31395,7 +31404,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3037 = { #Vesharâ (XCX) (khey_area) (khey_sart_region)
 	terrain = "steppe"
@@ -31416,7 +31425,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3039 = { #Ûlg (XFX) (atha_area) (khurgunin_region)
 	terrain = "steppe"
@@ -31470,7 +31479,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 3044 = { #Vethai (unowned) (langurian_kyn_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -31480,7 +31489,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3045 = { #Szelari (XCX) (ulk_khey_sart_area) (khey_sart_region)
 	terrain = "steppe"
@@ -31545,7 +31554,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 3051 = { #Mari (unowned) (lotan_area) (dyr_region)
 	terrain = "steppe"
@@ -31586,7 +31595,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3055 = { #Vururay (XFX) (tauretath_area) (khurgunin_region)
 	terrain = "steppe"
@@ -31618,7 +31627,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3058 = { #Kôpantha (XRX) (vag_area) (khailuza_region)
 	terrain = "plains"
@@ -31903,7 +31912,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3084 = { #Thular (XRX) (dominthi_area) (orgothrath_region)
 	terrain = "plains"
@@ -31957,7 +31966,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 3089 = { #Agirado (XCX) (murgarm_area) (khey_sart_region)
 	terrain = "steppe"
@@ -32693,7 +32702,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3158 = { #Kósheth (XCX) (ulk_khey_sart_area) (khey_sart_region)
 	terrain = "steppe"
@@ -32725,7 +32734,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3161 = { #Thalanâ (XCX) (khey_area) (khey_sart_region)
 	terrain = "steppe"
@@ -32812,7 +32821,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3169 = { #Tára (XUX) (rykholiz_area) (dalpygis_region)
 	terrain = "steppe"
@@ -33702,6 +33711,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 3250 = { #Kharari (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
@@ -33711,6 +33721,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 3251 = { #Gêndrur (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
@@ -33720,6 +33731,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 3252 = { #Tharir (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
@@ -33729,6 +33741,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 3253 = { #Tîrdam (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
@@ -33738,6 +33751,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 3254 = { #Narekem (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "forest"
@@ -33777,6 +33791,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 3258 = { #Kole (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "forest"
@@ -33786,6 +33801,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 3259 = { #Kanth (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
@@ -33795,6 +33811,7 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 3260 = { #Rênakanah (XUX) (y_lusturanysur_area) (lu_tyr_su_region)
 	terrain = "steppe"
@@ -35426,7 +35443,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3409 = { #Rukht (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
@@ -35436,7 +35453,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3410 = { #Isvat (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
@@ -35446,7 +35463,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3411 = { #Ganshô (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
@@ -35456,7 +35473,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3412 = { #Azagarbhûn (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
@@ -35466,7 +35483,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3413 = { #Tûrisar (unowned) (lu_tyr_su_area) (lu_tyr_su_region)
 	terrain = "steppe"
@@ -35586,7 +35603,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 3425 = { #Niyukha (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
@@ -35596,7 +35613,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3426 = { #Gashtahan (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
@@ -35606,7 +35623,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3427 = { #Haxât (unowned) (othokav_area) (khey_sart_region)
 	terrain = "plains"
@@ -35616,7 +35633,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3428 = { #Hothac Smew (XNX) (wol_area) (lokhas_drus_region)
 	terrain = "plains"
@@ -37451,7 +37468,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 2 }
 }
 3617 = { #Karazza (unowned) (bishra_area) (tulwang_region)
 	terrain = "plains"
@@ -37461,7 +37478,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 }
 3618 = { #Zennar (SOR) (kanjar_area) (tulwang_region)
 	terrain = "plains"
@@ -37482,7 +37499,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3620 = { #Tyll Hâlfaras (BEL) (sirezain_area) (bellakar_region)
 	terrain = "plains"
@@ -37653,7 +37670,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3636 = { #Alsan (FEL) (arazain_area) (felaya_region)
 	terrain = "plains"
@@ -38391,7 +38408,7 @@
 	civilization_value = 15
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3708 = { #Erahavar (VAR) (sar_khand_area) (khand_region)
 	terrain = "plains"
@@ -39670,7 +39687,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3835 = { #Thobachabri (XXV) (duirrograw_area) (anduin_region)
 	terrain = "plains"
@@ -39885,7 +39902,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3856 = { #Thalnen (XYX) (hashgmur_area) (mintyrnath_region)
 	terrain = "plains"
@@ -40539,7 +40556,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3921 = { #Tasthan (DLE) (medvos_verar_area) (rhovanion_region)
 	terrain = "plains"
@@ -40571,7 +40588,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3924 = { #Dan-Hu (unowned) (agasha_dag_area) (taur_romen_region)
 	terrain = "plains"
@@ -40581,7 +40598,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3925 = { #Thorek (ERB) (emyn_engrin_area) (ered_mithrin_region)
 	terrain = "plains"
@@ -40654,7 +40671,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 3932 = { #Isarulir (BEL) (sirezain_area) (bellakar_region)
 	terrain = "plains"
@@ -53178,7 +53195,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 5252 = { #Haradwaith (uninhabitable)
 	terrain = "plains"
@@ -53573,7 +53590,7 @@
 	civilization_value = 5
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 }
 5291 = { #Kâfa Kykurian (uninhabitable) (khirar_area) (kykurian_kyn_region)
 	terrain = "plains"
