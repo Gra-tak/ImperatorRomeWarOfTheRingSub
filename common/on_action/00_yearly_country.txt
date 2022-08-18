@@ -56,6 +56,7 @@ yearly_country_pulse =
 		br_truce.2
 		br_truce.3
 		br_truce.4
+		br_truce.5
 		br_sauron.4 #may need to disable if it s OP
 		# br_maintenance.5
 		country_diplomacy.40

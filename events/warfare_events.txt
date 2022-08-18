@@ -30,6 +30,7 @@ warfare.1 = {
 				has_variable = sacking_cooldown
 				has_province_modifier = utterly_sacked
 			}
+			exists = owner
 		}
 	}
 	

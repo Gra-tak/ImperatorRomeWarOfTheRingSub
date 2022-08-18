@@ -43,7 +43,8 @@ mild_winter = LIST {
 	1196 1219 1220 1221 1222 1262 1323 #forithilien_area
 	1122 1204 1205 1206 1212 1215 1216 1218 1299 #harithilien_area
 	696 697 770 771 1208 1209 1213 1214 1315 1326 #poros_area
-	 ### angmar_region ### not carn_dum_area not gundabad_area not ram_duath_area
+	 ### angmar_region ### not carn_dum_area not ram_duath_area
+	860 #gundabad_area (only: Gundabad)
 	903 #nan_angmar_area (only: Nordinbad)
 	 ### hadhondrond_region ###
 	2999 3695 3696 3697 3698 3699 3727 #khazad_dum_area
@@ -313,7 +314,7 @@ severe_winter = LIST {
 	256 2628 2629 2630 2631 2632 2633 2634 2635 2636 2637 #aiatar_area
 	 ### angmar_region ###
 	866 868 873 904 913 923 963 980 1034 #carn_dum_area
-	800 859 860 883 884 896 1086 1087 1580 #gundabad_area
+	800 859 883 884 896 1086 1087 1580 #gundabad_area (mostly: Den Lóke, Gundalok, Nan Lóke, Ûgûlai, Zirin Malasul, Aes Ruin, Parth Hithram, Basânabad) (misses: 860:Gundabad)
 	862 863 864 865 867 874 902 920 1059 1290 #nan_angmar_area (mostly: Latash, Nan Angmar, Parth Gurthil, Mindil Kepich, Morkai, Angirith, Nan Gurth, Ravda, Maethad, Nan Lithad) (misses: 903:Nordinbad)
 	875 906 907 908 921 1780 2361 879 878 880 905 3890 #ram_duath_area
 	 ### forodwaith_region ###

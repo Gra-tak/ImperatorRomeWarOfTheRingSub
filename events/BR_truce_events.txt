@@ -269,5 +269,28 @@ br_truce.4 = { #prevents Sauron from just focusing on the east before Gondor is 
             }
         }
     }
+}
 
+br_truce.5 = { #prevents orcs of misty mountains to instantly attack orcs of moria
+  
+  type = country_event
+  title = "truce"
+  desc = "truce"
+  hidden = yes
+  
+  trigger = {
+    tag = XKX
+    is_ai = yes
+  }
+      
+  immediate = {
+    add_truce = {
+      target = c:XJX
+      duration = 1825
+    }
+  }
+  
+    option = {
+        name = "OK"
+    }
 }

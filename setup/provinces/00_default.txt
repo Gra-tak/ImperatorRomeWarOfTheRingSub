@@ -1586,7 +1586,7 @@
 	trade_goods = "fur"
 	civilization_value = 75
 	barbarian_power = 0
-	province_rank = "settlement"
+	province_rank = "city"
 	citizen = { amount = 8 }
 	nobles = { amount = 8 }
 	slaves = { amount = 8 }
@@ -8992,11 +8992,11 @@
 	tribesmen = { amount = 6 }
 }
 860 = { #Gundabad (XXY) (gundabad_area) (angmar_region)
-	terrain = "plains"
+	terrain = "halls"
 	culture = "goblins"
 	religion = "melkorism"
 	trade_goods = "iron"
-	civilization_value = 10
+	civilization_value = 16
 	barbarian_power = 0
 	province_rank = "city_metropolis"
 	citizen = { amount = 5 }
@@ -37443,7 +37443,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 13 }
+	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
 3615 = { #Abarrûkh (TAN) (kalz_raishoul_area) (an_balkumagan_region)

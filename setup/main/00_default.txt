@@ -285,6 +285,19 @@ provinces = { #Any entry must contain a comment with city name.
 		temple_building = 6
 	}
 
+	860 = { #gundabad
+		aqueduct_building = 2
+	}
+	1138 = { #towns in mordor
+		aqueduct_building = 2
+	}
+	1139 = { #towns in mordor
+		aqueduct_building = 2
+	}
+	1026 = { #towns in mordor
+		aqueduct_building = 1
+	}
+
 	2720 = { #Dale
 		modifier = { modifier = dale_modifier always = yes }
 	}
