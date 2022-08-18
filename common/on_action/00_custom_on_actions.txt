@@ -68,7 +68,7 @@ disloyal_powerful_characters_pulse = {
 		is_ai = no
 		NOR = {
 			has_variable = disloyal_powerful_characters_pulse_cd
-			has_variable = death_to_tyrants_flag
+			# has_variable = death_to_tyrants_flag
 		}
 	}
 	effect = {

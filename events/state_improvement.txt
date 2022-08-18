@@ -49,31 +49,31 @@ state_improvement.3 = { #Oratory
 	trigger = { exists = scope:state_improvement_target }
 	
 	immediate = {
-		if = {
-			limit = {
-				owner = {
-					has_variable = capital_trade_mission_ongoing
-				}
-				NOT = { has_variable = trade_routes_added }
-			}
-			set_variable = {
-				name = trade_routes_added
-				value = 1
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					has_variable = capital_trade_mission_ongoing
-				}
-				has_variable = trade_routes_added
-			}
-			change_variable = {
-				name = trade_routes_added
-				add = 1
-			}
-		}
-		else = { } #Nothing!
+		# if = {
+		# 	limit = {
+		# 		owner = {
+		# 			has_variable = capital_trade_mission_ongoing
+		# 		}
+		# 		NOT = { has_variable = trade_routes_added }
+		# 	}
+		# 	set_variable = {
+		# 		name = trade_routes_added
+		# 		value = 1
+		# 	}
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		owner = {
+		# 			has_variable = capital_trade_mission_ongoing
+		# 		}
+		# 		has_variable = trade_routes_added
+		# 	}
+		# 	change_variable = {
+		# 		name = trade_routes_added
+		# 		add = 1
+		# 	}
+		# }
+		# else = { } #Nothing!
 		add_state_modifier = {
 			name = state_improvement_oratory
 			duration = -1
@@ -99,31 +99,31 @@ state_improvement.4 = { #Religious
 			mode = add
 		}
 		hidden_effect = {
-			if = {
-				limit = {
-					owner = {
-						has_variable = shrine_mission_ongoing
-					}
-					NOT = { has_variable = endowments_made }
-				}
-				set_variable = {
-					name = endowments_made
-					value = 1
-				}
-			}
-			else_if = {
-				limit = {
-					owner = {
-						has_variable = shrine_mission_ongoing
-					}
-					has_variable = endowments_made
-				}
-				change_variable = {
-					name = endowments_made
-					add = 1
-				}
-			}
-			else = { } #Nothing!
+			# if = {
+			# 	limit = {
+			# 		owner = {
+			# 			has_variable = shrine_mission_ongoing
+			# 		}
+			# 		NOT = { has_variable = endowments_made }
+			# 	}
+			# 	set_variable = {
+			# 		name = endowments_made
+			# 		value = 1
+			# 	}
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		owner = {
+			# 			has_variable = shrine_mission_ongoing
+			# 		}
+			# 		has_variable = endowments_made
+			# 	}
+			# 	change_variable = {
+			# 		name = endowments_made
+			# 		add = 1
+			# 	}
+			# }
+			# else = { } #Nothing!
 		}
 		owner = {
 			trigger_event = { id = state_improvement.15 }

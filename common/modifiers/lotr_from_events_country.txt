@@ -1,0 +1,15 @@
+﻿##################################################################################################
+# LOTR country modifiers from events
+##################################################################################################
+
+lotr_formable_harad_modifier = {
+	land_morale_modifier = 0.1
+    character_loyalty = 10
+	global_pop_conversion_speed_modifier = 0.25
+    global_tribesmen_happyness = happiness_huge_svalue
+}
+lotr_formable_rhovanion_modifier = {
+	land_morale_modifier = 0.1
+    character_loyalty = 10
+	global_pop_conversion_speed_modifier = 0.25
+}

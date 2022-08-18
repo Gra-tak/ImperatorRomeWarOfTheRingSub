@@ -1,0 +1,26 @@
+﻿league_city_button = {
+    scope = province
+	saved_scopes = {
+		player
+	}
+	confirm_title = "league_city_title"
+	confirm_text = "league_city_desc"
+    is_shown = { # Can be omitted as always true
+		scope:player = {
+			has_variable = league_city_var
+			has_dlc = "Heirs of Alexander"
+		}
+		has_owner = yes
+		controller = scope:player
+		owner = scope:player
+    }
+	ai_is_valid = {
+		always = no
+	}
+    is_valid = {
+		always = no
+    }
+	
+    effect = {
+	}
+}

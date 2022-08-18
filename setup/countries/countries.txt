@@ -188,3 +188,14 @@ XUX = setup/countries/X/xux.txt
 XVX = setup/countries/X/xvx.txt
 XYX = setup/countries/X/xyx.txt
 XZX = setup/countries/X/xzx.txt
+
+
+#warning prevetion
+EGY = "setup/countries/africa/egypt.txt"
+BIT = "setup/countries/anatolia/bithynia.txt"
+ELT = "setup/countries/greece/eleutherna.txt"
+IOA = "setup/countries/anatolia/aeolia.txt"
+MAC = "setup/countries/greece/macedonia.txt"
+PRY = "setup/countries/anatolia/phrygia.txt"
+SEL = "setup/countries/caucasiamesopotamia/seleucid empire.txt"
+TRE = "setup/countries/greece/thrace.txt"

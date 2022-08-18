@@ -776,11 +776,11 @@ cities_in_province_svalue = {
 }
 
 rm_punic_exodus_svalue = {
-	value = c:ROM.var:rm_punic_exodus_pop_total
+	value = 0
 }
 
 rm_gallic_exodus_svalue = {
-	value = c:ROM.var:rm_gallic_exodus_pop_total
+	value = 0
 }
 
 rm_total_latin_subject_strength_svalue = {
@@ -934,74 +934,19 @@ cm_economic_ports_counter_svalue = {
 }
 
 rm_land_grants_svalue = {
-	value = var:rm_land_grants_counter_var
+	value = 0
 }
 
 rm_4_deter_convinced_counter_svalue = {
 	value = 0
-	if = {
-		limit = {
-			any_country = { has_variable = rm_4_deter_convinced_flag }
-		}
-		every_country = {
-			limit = { has_variable = rm_4_deter_convinced_flag }
-			add = 1
-		}
-	}
 }
 
 rm_4_deter_loyal_counter_svalue = {
 	value = 0
-	if = {
-		limit = {
-			any_country = { 
-				NOT = { has_variable = rm_4_deter_convinced_flag }
-				has_variable = rm_4_convincing_flag
-				OR = {
-					alliance_with = c:CAR
-					is_subject_of = c:CAR
-				}
-			}
-		}
-		every_country = {
-			limit = { 
-				NOT = { has_variable = rm_4_deter_convinced_flag }
-				has_variable = rm_4_convincing_flag
-				OR = {
-					alliance_with = c:CAR
-					is_subject_of = c:CAR
-				}
-			}
-			add = 1
-		}
-	}
 }
 
 rm_4_deter_unconvinced_counter_svalue = {
 	value = 0
-	if = {
-		limit = {
-			any_country = { 
-				NOT = { has_variable = rm_4_deter_convinced_flag }
-				has_variable = rm_4_convincing_flag
-				NOR = {
-					alliance_with = c:CAR
-					is_subject_of = c:CAR
-				}
-			}
-		}
-		every_country = {
-			limit = { 
-				NOT = { has_variable = rm_4_deter_convinced_flag }
-				has_variable = rm_4_convincing_flag
-				NOR = {
-					alliance_with = c:CAR
-					is_subject_of = c:CAR
-				}
-			}
-			add = 1
-		}
-	}
 }
 
 rm_4_rome_city_count_counter_svalue = {
@@ -1046,15 +991,6 @@ rm_4_rome_subject_city_counter_svalue = {
 
 rm_siculia_counter_svalue = {
 	value = 0 
-	if = {
-		limit = {
-			any_country = { has_variable = rm_4_deter_convinced_flag }
-		}
-		every_country = {
-			limit = { has_variable = rm_4_deter_convinced_flag }
-			add = 1
-		}
-	}
 }
 
 rm_4_rome_subject_city_counter_compare_svalue = {
@@ -1747,11 +1683,11 @@ older_character_age_range_svalue = {
 }
 
 per_treasury_svalue = {
-	value = scope:pergamon_scope.treasury
+	value = 0
 }
 
 per_manpower_svalue = {
-	value = scope:pergamon_scope.manpower
+	value = 0
 }
 
 percent_size_culture_group_comparison = {
@@ -1845,14 +1781,4 @@ seize_property_svalue = {
 
 antigonids_area_transfer_min_value = { # defines minimum territories of a province a non-historical Diadochi must hold to seize that area in Antigonid split events (must also hold more than the historical country)
 	value = 0
-	scope:antigonid_transfer_area = {
-		every_area_province = {
-			limit = {
-				has_owner = yes
-				owner = scope:antigonid_transfer_scope
-			}
-			add = 1
-		}
-	}
-	min = 3
 }

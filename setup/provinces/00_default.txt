@@ -12,20 +12,20 @@
 	nobles = {
 		amount = 5
 		culture = "black_numenorean"
-		religion = "melkor"
+		religion = "melkorism"
 	}
 	citizen = { amount = 8 }
 	freemen = { amount = 11 }
 	freemen = {
 		amount = 10
 		culture = "banadunaim"
-		religion = "melkor"
+		religion = "melkorism"
 	}
 	slaves = { amount = 3 }
 	slaves = {
 		amount = 13
 		culture = "haradrim"
-		religion = "melkor"
+		religion = "melkorism"
 	}
 }
 2 = { #Khôrazûl (UMB) (umbar_area) (umbar_region)
@@ -10670,7 +10670,7 @@
 1030 = { #Minas Morgul (MMO) (ephel_duath_area) (gorgoroth_region)
 	terrain = "mountain"
 	culture = "urukhai"
-	religion = "melkor"
+	religion = "melkorism"
 	trade_goods = "marble"
 	civilization_value = 30
 	barbarian_power = 0
@@ -17268,12 +17268,13 @@
 }
 1649 = { #Talugdaeri (XXO) (rhudaur_area) (rhudaur_region)
 	terrain = "plains"
-	culture = "beasts"
-	religion = "eastern_animism"
+	culture = "rhudaurim"
+	religion = "iluvatarism"
 	trade_goods = "cattle"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
+	slaves = { amount = 1 }
 }
 1650 = { #Nadior (SAR) (saralainn_area) (minhiriath_region)
 	terrain = "plains"

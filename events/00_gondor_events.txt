@@ -1,60 +1,60 @@
 ﻿namespace = gondor_events
 
-gondor_events.1 = { #Gondor is asking their subject for help
-	type = country_event
-	title = "gondor_events.1.t"
-	desc = "gondor_events.1.desc"
-	picture = steppe_cavalry
+# gondor_events.1 = { #Gondor is asking their subject for help
+# 	type = country_event
+# 	title = "gondor_events.1.t"
+# 	desc = "gondor_events.1.desc"
+# 	picture = steppe_cavalry
 	
-	left_portrait = root.current_ruler
-	right_portrait = c:GON.current_ruler
+# 	left_portrait = root.current_ruler
+# 	right_portrait = c:GON.current_ruler
 	
-	immediate = {
+# 	immediate = {
 		
-	}
+# 	}
 	
-	option = { # send the troops
-		name = "gondor_events.1.a"
-		every_in_local_list = {
-			variable = wars_to_call_into
-			limit = { #check if already in war to prevent errors in log
-				NOT = {
-					any_war_participant = {
-						this = root
-					}
-				}
-			}
-			save_scope_as = war_to_join
-			ROOT = {
-				add_to_war = {
-					target = scope:war_to_join
-					attacker = no
-					leader = no
-				}
-			}
-		}
-		ai_chance = {
-			factor = 100
-		}
-	}
+# 	option = { # send the troops
+# 		name = "gondor_events.1.a"
+# 		every_in_local_list = {
+# 			variable = wars_to_call_into
+# 			limit = { #check if already in war to prevent errors in log
+# 				NOT = {
+# 					any_war_participant = {
+# 						this = root
+# 					}
+# 				}
+# 			}
+# 			save_scope_as = war_to_join
+# 			ROOT = {
+# 				add_to_war = {
+# 					target = scope:war_to_join
+# 					attacker = no
+# 					leader = no
+# 				}
+# 			}
+# 		}
+# 		ai_chance = {
+# 			factor = 100
+# 		}
+# 	}
 	
-	option = { # dishonor the alliance
-		name = "gondor_events.1.b"
-		c:GON = {
-			if = {
-				limit = {
-					root = { is_subject_of = c:GON }
-				}
-				release_subject = root
-			}
-			add_opinion = {
-				modifier = opinion_grave_insult # -50 opinion with 1 per year decay
-				target = root
-			}
-		}
-		remove_stability_effect = yes
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
+# 	option = { # dishonor the alliance
+# 		name = "gondor_events.1.b"
+# 		c:GON = {
+# 			if = {
+# 				limit = {
+# 					root = { is_subject_of = c:GON }
+# 				}
+# 				release_subject = root
+# 			}
+# 			add_opinion = {
+# 				modifier = opinion_grave_insult # -50 opinion with 1 per year decay
+# 				target = root
+# 			}
+# 		}
+# 		remove_stability_effect = yes
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 	}
+# }

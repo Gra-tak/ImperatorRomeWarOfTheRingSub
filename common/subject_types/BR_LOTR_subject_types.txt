@@ -24,7 +24,7 @@
 		#is_tribal = yes
 		exists = scope:future_overlord
 		scope:future_overlord = {
-			religion = melkor
+			religion = melkorism
 			tag = MOR
 			capital_scope = {
 				civilization_value > root.capital_scope.civilization_value

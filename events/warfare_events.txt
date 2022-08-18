@@ -593,10 +593,10 @@ warfare.1 = {
 			}
 			add_trait = cruel
 		}
-		set_local_variable = {
-			name = looted_gold
-			value = warfare_1_loot_huge_value
-		}
+		# set_local_variable = {
+		# 	name = looted_gold
+		# 	value = warfare_1_loot_huge_value
+		# }
 		local_var:sieged_city = {
 			while = {
 				count = 6
@@ -1264,13 +1264,13 @@ warfare.12 = { #successor support
 		}
 		add_alliance = scope:supported_target.employer
 		custom_tooltip = "if_small_enough_subject_tt"
-		scope:supported_target = {
-			set_variable = {
-				name = complete_pretender_support
-				value = root
-				days = 3650
-			}
-		}
+		# scope:supported_target = {
+		# 	set_variable = {
+		# 		name = complete_pretender_support
+		# 		value = root
+		# 		days = 3650
+		# 	}
+		# }
 	}
 	
 	option = {

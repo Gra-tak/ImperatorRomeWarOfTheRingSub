@@ -1,5 +1,5 @@
 ﻿latin = {
-	color = hsv { 0 0.91 0.55 }
+	color = hsv { 0.01 0.91 0.55 }
 	
 	levy_template = levy_italic
 	

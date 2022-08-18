@@ -10,7 +10,7 @@
 	secondary_navy = galley
 	flank_navy = cog
 	
-	color = hsv { 0.13 0.35 0.95 }
+	color = hsv { 0.13 0.35 0.94 }
 
 	male_names = {
 		X

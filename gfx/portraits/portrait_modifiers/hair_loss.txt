@@ -11,6 +11,7 @@ hair_loss = {
 				mode = add
 				gene = gene_tags
 				template = no_hair
+				value = 1.0
 			}
 		}
 		weight = {

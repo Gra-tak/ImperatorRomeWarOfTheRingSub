@@ -1,8 +1,8 @@
 ﻿#pops
 
-count_stacks_pops = {
-	value = local_var:count_pops
-	divide = root.country_population
-	multiply = 10
-	floor = yes
-}
+# count_stacks_pops = {
+# 	value = local_var:count_pops
+# 	divide = root.country_population
+# 	multiply = 10
+# 	floor = yes
+# }
