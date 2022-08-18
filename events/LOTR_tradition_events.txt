@@ -67,6 +67,12 @@ lotr_tradition_events.1 = {
 				NOR = { 
 					country_culture_group = dwarf_group
 					has_variable = dwarf_traditions_unlocked 
+					OR = {
+						is_subject_type = client_state
+						is_subject_type = ranger_fief
+						is_subject_type = saruman_thrall_tribe
+						is_subject_type = thrall_tribe
+					}
 				}
 			}
 			set_variable = {
@@ -113,6 +119,12 @@ lotr_tradition_events.1 = {
 			every_subject = {
 				limit = {
 						country_culture_group = easterling_group
+					OR = {
+						is_subject_type = client_state
+						is_subject_type = ranger_fief
+						is_subject_type = saruman_thrall_tribe
+						is_subject_type = thrall_tribe
+					}
 				}
 				every_owned_province = {
 					every_pops_in_province = {
@@ -150,6 +162,12 @@ lotr_tradition_events.1 = {
 			every_subject = {
 				limit = {
 						country_culture_group = edain_group
+					OR = {
+						is_subject_type = client_state
+						is_subject_type = ranger_fief
+						is_subject_type = saruman_thrall_tribe
+						is_subject_type = thrall_tribe
+					}
 				}
 				every_owned_province = {
 					every_pops_in_province = {
@@ -187,6 +205,12 @@ lotr_tradition_events.1 = {
 			every_subject = {
 				limit = {
 						country_culture_group = haradrim_group
+					OR = {
+						is_subject_type = client_state
+						is_subject_type = ranger_fief
+						is_subject_type = saruman_thrall_tribe
+						is_subject_type = thrall_tribe
+					}
 				}
 				every_owned_province = {
 					every_pops_in_province = {
@@ -224,6 +248,12 @@ lotr_tradition_events.1 = {
 			every_subject = {
 				limit = {
 						country_culture_group = noldor_group
+					OR = {
+						is_subject_type = client_state
+						is_subject_type = ranger_fief
+						is_subject_type = saruman_thrall_tribe
+						is_subject_type = thrall_tribe
+					}
 				}
 				every_owned_province = {
 					every_pops_in_province = {
@@ -261,6 +291,12 @@ lotr_tradition_events.1 = {
 			every_subject = {
 				limit = {
 						country_culture_group = orcs_group
+					OR = {
+						is_subject_type = client_state
+						is_subject_type = ranger_fief
+						is_subject_type = saruman_thrall_tribe
+						is_subject_type = thrall_tribe
+					}
 				}
 				every_owned_province = {
 					every_pops_in_province = {
@@ -298,6 +334,13 @@ lotr_tradition_events.1 = {
 			every_subject = {
 				limit = {
 						country_culture_group = eotheod_group
+					OR = {
+						is_subject_type = client_state
+						is_subject_type = ranger_fief
+						is_subject_type = saruman_thrall_tribe
+						is_subject_type = thrall_tribe
+						#allow satrapy for rohan? I'd say no, but others might disagree. Will be hard to get currently
+					}
 				}
 				every_owned_province = {
 					every_pops_in_province = {
@@ -326,6 +369,12 @@ lotr_tradition_events.1 = {
 				NOR = { 
 					country_culture_group = teleri_group
 					has_variable = teleri_traditions_unlocked 
+					OR = {
+						is_subject_type = client_state
+						is_subject_type = ranger_fief
+						is_subject_type = saruman_thrall_tribe
+						is_subject_type = thrall_tribe
+					}
 				}
 			}
 			set_variable = {
