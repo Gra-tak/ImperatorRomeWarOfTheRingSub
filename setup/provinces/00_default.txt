@@ -11385,21 +11385,23 @@
 }
 1101 = { #Smalug (unowned) (emyn_guldur_area) (eryn_galen_region)
 	terrain = "deep_forest"
-	culture = "beasts"
-	religion = "eastern_animism"
+	culture = "orcish"
+	religion = "melkorism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 1102 = { #Naquath Hlain (unowned) (emyn_guldur_area) (eryn_galen_region)
 	terrain = "deep_forest"
-	culture = "beasts"
-	religion = "eastern_animism"
+	culture = "orcish"
+	religion = "melkorism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 1103 = { #Sâd Morangol (unowned) (taur_guldur_area) (eryn_galen_region)
 	terrain = "deep_forest"
@@ -11413,12 +11415,13 @@
 }
 1104 = { #Taur Morvith (unowned) (emyn_guldur_area) (eryn_galen_region)
 	terrain = "deep_forest"
-	culture = "beasts"
-	religion = "eastern_animism"
+	culture = "orcish"
+	religion = "melkorism"
 	trade_goods = "base_metals"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 1105 = { #Dol Guldur (DGD) (emyn_guldur_area) (eryn_galen_region)
 	terrain = "deep_forest"
@@ -11434,12 +11437,13 @@
 }
 1106 = { #Lughâsh (unowned) (emyn_guldur_area) (eryn_galen_region)
 	terrain = "deep_forest"
-	culture = "beasts"
-	religion = "eastern_animism"
+	culture = "orcish"
+	religion = "melkorism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 1107 = { #Barad Morwatha (unowned) (angaladh_area) (eryn_galen_region)
 	terrain = "deep_forest"
@@ -11531,12 +11535,13 @@
 }
 1116 = { #Lugdûm (unowned) (emyn_guldur_area) (eryn_galen_region)
 	terrain = "deep_forest"
-	culture = "beasts"
-	religion = "eastern_animism"
+	culture = "orcish"
+	religion = "melkorism"
 	trade_goods = "glass"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 1117 = { #Viduvairibaurg (unowned) (angaladh_area) (eryn_galen_region)
 	terrain = "deep_forest"
