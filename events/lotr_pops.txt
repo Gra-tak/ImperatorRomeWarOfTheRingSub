@@ -75,7 +75,7 @@ lotr_pops.1 = {
 			limit = {
 				OR = {
 					has_country_modifier = harassed_by_corsairs
-					has_country_modifier = influenced_by_sarman
+					has_country_modifier = influenced_by_saruman
 				}
 			}
 			change_local_variable = {

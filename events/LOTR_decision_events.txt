@@ -75,6 +75,7 @@ lotr_ruler_decisions.2 = {
 			multiply = 6
 		}
 		add_political_influence = -10
+    remove_country_modifier = influenced_by_saruman
 	}
 }
 
@@ -100,6 +101,7 @@ lotr_ruler_decisions.3 = {
 		name = "lotr_ruler_decisions.3.b"
 		custom_tooltip = "lotr_ruler_decisions.3.b.tt"
 		overlord = { release_subject = ROOT }
+    remove_country_modifier = influenced_by_saruman
 		add_stability = -15
 		if = {
 			limit = {
@@ -196,6 +198,7 @@ lotr_ruler_decisions.5 = {
 			multiply = 6
 		}
 		add_political_influence = -10
+    remove_country_modifier = harassed_by_corsairs
 	}
 }
 
@@ -221,6 +224,7 @@ lotr_ruler_decisions.6 = {
 		name = "lotr_ruler_decisions.6.b"
 		custom_tooltip = "lotr_ruler_decisions.6.b.tt"
 		overlord = { release_subject = ROOT }
+    remove_country_modifier = harassed_by_corsairs
 		add_stability = -15
 		if = {
 			limit = {

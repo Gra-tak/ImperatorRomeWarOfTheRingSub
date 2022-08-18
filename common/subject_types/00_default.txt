@@ -283,7 +283,7 @@ satrapy = { #BR note: used for gondorian fiefs - we don't want them joining offe
 		monthly_legitimacy = 0.02
 	}
 	subject_modifier = {
-		loyalty_to_overlord = -200
+		# loyalty_to_overlord = -200
 	}
 	
 	allow = {

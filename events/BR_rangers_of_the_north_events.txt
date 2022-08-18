@@ -104,7 +104,7 @@ br_rangers.3 = { #Gobins informed that they must attack the rangers
 		if = {
 			limit = {
 				exists = c:XXO
-				x:XXO = {
+				c:XXO = {
 					is_subject = yes
 					is_subject_of = c:CAR
 				}

@@ -956,10 +956,10 @@ generic_1_pulse = {
 			has_variable = oa_pulse_toggle
 		}
 	}
-	random_events = {
-		10 = generic_mission.1
-		10 = generic_mission.2
-	}
+	# random_events = {
+	# 	10 = generic_mission.1
+	# 	10 = generic_mission.2
+	# }
 	effect = {
 		set_variable = {
 			name = oa_pulse_toggle

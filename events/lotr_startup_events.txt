@@ -19,7 +19,7 @@ lotr_startup.1 = { #Temp fix for new vanilla fort capacity mechanic causing inco
 					this = c:ROH
 				}
 				add_country_modifier = {
-					name = influenced_by_sarman
+					name = influenced_by_saruman
 					duration = -1
 				}
 			}
