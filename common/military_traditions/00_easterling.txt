@@ -35,6 +35,10 @@
 		requires = {}
 		on_activate = {
 			add_innovation = 1
+			custom_tooltip = "tradition_allow_chariots"
+			hidden_effect = {
+				allow_chariots = yes
+			}	
 		}
 	}
 	
@@ -117,6 +121,12 @@
 		}
 		icon = greek_antigonid_path_end_bonus
 		requires = {easterling_infantry_path_2}
+		on_activate = {
+			custom_tooltip = "tradition_allow_heavy_infantry"
+			hidden_effect = {
+				allow_heavy_infantry = yes
+			}
+		}
 	}
 	
 	easterling_infantry_path_4 = { ##

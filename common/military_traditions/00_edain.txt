@@ -147,6 +147,12 @@
 		}
 		icon = celtic_gallic_path_5
 		requires = {edain_civic_path_1}
+		on_activate = {
+			custom_tooltip = "tradition_allow_dunedain_archers"
+			hidden_effect = {
+				allow_dunedain_archers = yes
+			}
+		}
 	}
 	
 	edain_infantry_path_2 = { ###
@@ -157,6 +163,12 @@
 		enable_tactic = triplex_acies
 		icon = persian_achaemenid_path_7
 		requires = {edain_infantry_path_1}
+		on_activate = {
+			custom_tooltip = "tradition_allow_dunedain_infantry"
+			hidden_effect = {
+				allow_dunedain_infantry = yes
+			}
+		}
 	}
 	
 	edain_infantry_path_3 = { ###
@@ -166,6 +178,12 @@
 		}
 		icon = north_african_tribal_path_6
 		requires = {edain_infantry_path_2}
+		on_activate = {
+			custom_tooltip = "tradition_allow_dunedain_cavalry"
+			hidden_effect = {
+				allow_dunedain_cavalry = yes
+			}
+		}
 	}
 	
 	edain_infantry_path_4 = { ###

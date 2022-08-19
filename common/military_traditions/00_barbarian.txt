@@ -79,6 +79,12 @@
 		}
 		icon = greek_antigonid_path_end_bonus
 		requires = {barbarian_civic_path_1}
+		on_activate = { #Light infantry
+			custom_tooltip = "tradition_allow_light_infantry"
+			hidden_effect = {
+				allow_light_infantry = yes
+			}	
+		}
 	}
 	
 	barbarian_infantry_path_2 = { ###

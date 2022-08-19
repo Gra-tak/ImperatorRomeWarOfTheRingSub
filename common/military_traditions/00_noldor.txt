@@ -53,6 +53,12 @@
 		enable_tactic = padma_vyuha
 		icon = persian_bactrian_path_7
 		requires = {noldor_archer_path_2}
+		on_activate = {
+			custom_tooltip = "tradition_allow_elvish_archers"
+			hidden_effect = {
+				allow_elvish_archers = yes
+			}
+		}
 	}
 	
 	noldor_archer_path_4 = { ##
@@ -73,6 +79,12 @@
 		}
 		icon = persian_philosophy_start_bonus
 		requires = {noldor_archer_path_6}
+		on_activate = {
+			custom_tooltip = "tradition_allow_elvish_cavalry_archers"
+			hidden_effect = {
+				allow_elvish_cavalry_archers = yes
+			}
+		}
 	}
 
 	noldor_archer_path_6 = { ##
@@ -81,6 +93,12 @@
 		}
 		icon = latin_tribal_path_1
 		requires = {noldor_archer_path_4}
+		on_activate = {
+			custom_tooltip = "tradition_allow_elvish_infantry"
+			hidden_effect = {
+				allow_elvish_infantry = yes
+			}
+		}
 	}
 	
 	noldor_archer_path_7 = { ##

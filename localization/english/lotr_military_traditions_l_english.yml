@@ -39,7 +39,7 @@
  rohan_infantry_path_4_desc:0 "Summoned by the king to accompany him to battle either by foot or horse."
  rohan_traditions_enable:1 "Embrace Rohan Influence"
  rohan_traditions_enable_desc:0 ""
- integrated_any_rohan_culture:0 "Has integrated a Rohan culture"
+ integrated_any_rohan_culture:0 "Has integrated a Rohan culture or has enough vassals."
 
 #Orc
  orc_philosophy:0 "Orc Traditions"
@@ -83,7 +83,7 @@
  orc_cavalry_path_3_desc:0 "Wargs are used as mounts by Orcs."
  orc_traditions_enable:1 "Embrace Orc Influence"
  orc_traditions_enable_desc:0 ""
- integrated_any_orc_culture:0 "Has integrated an Orc culture"
+ integrated_any_orc_culture:0 "Has integrated an Orc culture or has enough vassals."
 
 #Dwarven Traditions
  dwarven_philosophy:0 "Traditions of the Mountain Halls"
@@ -131,7 +131,7 @@
  dwarven_defensive_path_5_desc:0 "Better defense is best."
  dwarven_traditions_enable:1 "Embrace Dwarven Influence"
  dwarven_traditions_enable_desc:0 ""
- integrated_any_dwarf_culture:0 "Has integrated a Dwarven culture"
+ integrated_any_dwarf_culture:0 "Has integrated a Dwarven culture or has enough vassals."
 
 #Barbarian
  barbarian_philosophy:0 "Barbarian Traditions"
@@ -167,7 +167,7 @@
  barbarian_cavalry_path_3_desc:0 "The strong-backed domestic horse is a result of thousands of years of selective breeding, and capable of carrying a single rider into battle."
  barbarian_traditions_enable:1 "Embrace Barbarian Influence"
  barbarian_traditions_enable_desc:0 ""
- integrated_any_barbarian_culture:0 "Has integrated a Barbarian culture"
+ integrated_any_barbarian_culture:0 "Has integrated a Barbarian culture or has enough vassals."
 
 #Noldor
  noldor_philosophy:0 "Traditions of the High Elves"
@@ -211,7 +211,7 @@
  noldor_cavalry_path_end_bonus_desc:0 "Our newly bred horses are stronger and overall better than our previous horses."
  noldor_traditions_enable:1 "Embrace Noldor Influence"
  noldor_traditions_enable_desc:0 ""
- integrated_any_noldor_culture:0 "Has integrated a Noldor culture"
+ integrated_any_noldor_culture:0 "Has integrated a Noldor culture or has enough vassals."
 
 
 #Easterling
@@ -252,7 +252,7 @@
  easterling_cavalry_path_5_desc:0 "Chariots, wagons and wains are not only used in warfare, they are also mobile homes and used to fortify camps."
  easterling_traditions_enable:1 "Embrace Easterling Influence"
  easterling_traditions_enable_desc:0 ""
- integrated_any_easterling_culture:0 "Has integrated an Easterling culture"
+ integrated_any_easterling_culture:0 "Has integrated an Easterling culture or has enough vassals."
 
 
 #Edain
@@ -297,7 +297,7 @@
  edain_naval_path_6_desc:0 "The enthusiasm for naval dominance continues."
  edain_traditions_enable:1 "Embrace Edain Influence"
  edain_traditions_enable_desc:0 ""
- integrated_any_edain_culture:0 "Has integrated an Edain culture"
+ integrated_any_edain_culture:0 "Has integrated an Edain culture or has enough vassals."
 
 #Haradrim
  haradrim_philosophy:0 "Traditions of the Haradrim"
@@ -339,7 +339,7 @@
  haradrim_naval_path_5_desc:0 "It was the nations of men that created great fleets of ships for the purposes of exploration and war."
  haradrim_traditions_enable:1 "Embrace Haradrim Influence"
  haradrim_traditions_enable_desc:0 ""
- integrated_any_haradrim_culture:0 "Has integrated a Haradrim culture"
+ integrated_any_haradrim_culture:0 "Has integrated a Haradrim culture or has enough vassals."
 
 #Teleri
  teleri_philosophy:0 "Traditions of the Wood Elves"
@@ -391,7 +391,7 @@
  teleri_naval_path_end_bonus_desc:0 ""
  teleri_traditions_enable:1 "Embrace Teleri Influence"
  teleri_traditions_enable_desc:0 ""
- integrated_any_teleri_culture:0 "Has integrated a Teleri culture"
+ integrated_any_teleri_culture:0 "Has integrated a Teleri culture or has enough vassals."
 
 #Default Path
  default_philosophy:0 "Middle-Earth Traditions"
@@ -444,3 +444,19 @@
  lotr_tradition_events.9.desc:0 "Our rohirrim vassals offer to teach us about their ways"
  lotr_tradition_events.10.t:0 "Teleri traditions"
  lotr_tradition_events.10.desc:0 "Our teleri vassals offer to teach us about their ways"
+ tradition_allow_dwarven_infantry:0 "#Y Dwarven Infantry#! units can be added to Legions as a foreign race."
+ tradition_allow_dwarven_goat_riders:0 "#Y Dwarven Goat Riders#! units can be added to Legions as a foreign race."
+ tradition_allow_dwarven_archers:0 "#Y Dwarven Archers#! units can be added to Legions as a foreign race."
+ tradition_allow_dunedain_infantry:0 "#Y Dunedain Infantry#! units can be added to Legions as a foreign race."
+ tradition_allow_dunedain_cavalry:0 "#Y Dunedain Cavalry#! units can be added to Legions as a foreign race."
+ tradition_allow_dunedain_archers:0 "#Y Dunedain Archers#! units can be added to Legions as a foreign race."
+ tradition_allow_elvish_infantry:0 "#Y Elvish Infantry#! units can be added to Legions as a foreign race."
+ tradition_allow_elvish_cavalry_archers:0 "#Y Elvish Cavalry Archers#! units can be added to Legions as a foreign race."
+ tradition_allow_elvish_archers:0 "#Y Elvish Archers#! units can be added to Legions as a foreign race."
+ tradition_allow_light_cavalry:0 "#Y Light Cavalry#! units can be added to Legions as a foreign race."
+ tradition_allow_heavy_cavalry:0 "#Y Heavy Cavalry#! units can be added to Legions as a foreign race."
+ tradition_allow_heavy_infantry:0 "#Y Heavy Infantry#! units can be added to Legions as a foreign race."
+ tradition_allow_chariots:0 "#Y Chariot#! units can be added to Legions as a foreign race."
+ tradition_allow_warelephant:0 "#Y War Elephants#! units can be added to Legions as a foreign race."
+ tradition_allow_light_infantry:0 "#Y Light infantry#! units can be added to Legions as a foreign race."
+ tradition_allow_horse_archers:0 "#Y Horse Archer#! units can be added to Legions as a foreign race."

@@ -41,6 +41,12 @@
 		}
 		icon = celtic_britannic_path_2
 		requires = {teleri_archer_path_1}
+		on_activate = {
+			custom_tooltip = "tradition_allow_elvish_archers"
+			hidden_effect = {
+				allow_elvish_archers = yes
+			}
+		}
 	}
 	
 	teleri_archer_path_3 = { ###

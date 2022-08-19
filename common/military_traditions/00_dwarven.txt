@@ -101,6 +101,12 @@
 		}
 		icon = mauryan_mauryas_path_3
 		requires = {dwarven_infantry_path_1}
+		on_activate = {
+			custom_tooltip = "tradition_allow_dwarven_infantry"
+			hidden_effect = {
+				allow_dwarven_infantry = yes
+			}
+		}
 	}
 	
 	dwarven_infantry_path_3 = { ###Fighting For Our Families
@@ -111,6 +117,12 @@
 		}
 		icon = greek_antigonid_path_end_bonus
 		requires = {dwarven_infantry_path_2}
+		on_activate = {
+			custom_tooltip = "tradition_allow_dwarven_goat_riders"
+			hidden_effect = {
+				allow_dwarven_goat_riders = yes
+			}
+		}
 	}
 	
 	dwarven_infantry_path_4 = { ###A New Metal
@@ -121,6 +133,12 @@
 		}
 		icon = latin_tribal_path_5
 		requires = {dwarven_infantry_path_3}
+		on_activate = {
+			custom_tooltip = "tradition_allow_dwarven_archers"
+			hidden_effect = {
+				allow_dwarven_archers = yes
+			}
+		}
 	}
 	
 	dwarven_infantry_path_5 = { ###Mastery of the Hills

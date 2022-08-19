@@ -284,8 +284,8 @@ lotr_storyline_events.5 = {
 #Balin wins battle
 lotr_storyline_events.6 = {
 	type = country_event
-	title = "lotr_storyline_events.7.t"
-	desc = "lotr_storyline_events.7.desc"
+	title = "lotr_storyline_events.6.t"
+	desc = "lotr_storyline_events.6.desc"
 	picture = event_hills_mountains
 
 	trigger = {
