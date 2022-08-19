@@ -11,7 +11,7 @@
 	secondary_navy = galley
 	flank_navy = cog
 	
-	color = hsv { 0.8 0.6 0.6 }
+	color = hsv { 0.8 0.6 1 }
 
 	male_names = {
 		Cenni_Ellagan Kadalan Kochaet_Cenni Maran Nan_Maran
