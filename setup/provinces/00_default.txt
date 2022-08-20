@@ -7462,7 +7462,8 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 4 }
+	slaves = { amount = 1 }
 }
 705 = { #Khed (unowned) (ardhallad_area) (saerwaith_region)
 	terrain = "steppe"

@@ -173,3 +173,24 @@ lotr_startup.5 = {
 	}
 }
 
+lotr_startup.6 = {
+	
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		is_ai = yes
+		tag = ERB
+		c:DLE = {
+			is_ai = yes
+		}
+	}
+	
+	immediate = {
+    make_subject = {
+        target = c:DLE
+        type = feudatory
+    }
+	}
+}
+

@@ -193,8 +193,9 @@ diplomacy = {
 	dependency = { first = GON second = ROH subject_type = satrapy }
 	
 	#Dale/Erebor/Iron Hills Alliance **Alliances keep breaking, will make Dale and Iron Hills tributaries of Erebor instead
-	dependency = { first = ERB second = DLE subject_type = feudatory }
-	dependency = { first = ERB second = BLC subject_type = feudatory }
+	alliance = { first = ERB second = DLE } ## converted to vassal if both are AI on start
+	# dependency = { first = ERB second = DLE subject_type = feudatory }
+	dependency = { first = ERB second = BLC subject_type = feudatory } #to allow players to choose Balin at start. Will move to moria.
 	# dependency = { first = ERB second = IRO subject_type = feudatory } #iron hills is part of ERB
 	
 	#Mordor - starts with Rhun and Variags as client states

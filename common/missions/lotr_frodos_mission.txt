@@ -1,5 +1,5 @@
 ﻿lotr_frodos_mission = {
-	header = "lotr_frodos_mission_header"
+	header = "lotr_mordor_mission_header"
 	icon = "lotr_frodos_mission_icon"
 
 	repeatable = no

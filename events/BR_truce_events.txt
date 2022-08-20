@@ -1,208 +1,346 @@
 ﻿namespace = br_truce
 
-br_truce.1 = { #prevents the goodie humans from going to war with each other unless this stance is cancelled via a decision/potential event
-	
-	type = country_event
-	title = "truce"
-	desc = "truce"
-	picture = ship_in_storm
-	goto_location = root
-	hidden = yes
-	
-	trigger = {
-		OR = { #the group of countries that will not go to war with elves
-			primary_culture = dunedain
-			primary_culture = lesser_dunedain
-			primary_culture = arnorian
-			primary_culture = gondorian
-			primary_culture = rangers
-			primary_culture = dolamroth
-			country_culture_group = mirkwoodmen_group
-			country_culture_group = halfling_group
-			country_culture_group = eotheod_group
-			country_culture_group = breelander_group
-			country_culture_group = haldadian_group
-		}
-		NOT = { has_country_modifier = old_alliances_are_dead } 
-		}
-			
-	immediate = {
-        every_country = {
-            limit = {
-				OR = { #elven culture groups who have not declared that the old alliances are dead
-					country_culture_group = noldor_group
-					country_culture_group = teleri_group
-					country_culture_group = vanyar_group
-				}
-				NOT = { has_country_modifier = old_alliances_are_dead } 
-            }					
-            add_to_list = event_list_1
-        }
-        every_country = {
-            limit = {
-				OR = { #goodie culture groups who have not declared that the old alliances are dead
-					primary_culture = dunedain
-					primary_culture = lesser_dunedain
-					primary_culture = arnorian
-					primary_culture = gondorian
-					primary_culture = rangers
-					primary_culture = dolamroth
-					country_culture_group = mirkwoodmen_group
-					country_culture_group = halfling_group
-					country_culture_group = eotheod_group
-					country_culture_group = breelander_group
-					country_culture_group = haldadian_group
-				}
-				NOT = { has_country_modifier = old_alliances_are_dead } 
-            }					
-            add_to_list = event_list_2
-        }
+br_truce.1 = { #prevents the goodie humans from going to war with elves and dwarfs (AI only for the latter) unless this stance is cancelled via a decision/potential event
+  
+  type = country_event
+  title = "truce"
+  desc = "truce"
+  picture = ship_in_storm
+  goto_location = root
+  hidden = yes
+  
+  trigger = {
+    OR = { #the group of countries that will not go to war
+      primary_culture = dunedain
+      primary_culture = lesser_dunedain
+      primary_culture = arnorian
+      primary_culture = gondorian
+      primary_culture = rangers
+      primary_culture = dolamroth
+      country_culture_group = mirkwoodmen_group
+      country_culture_group = halfling_group
+      country_culture_group = eotheod_group
+      country_culture_group = breelander_group
+      country_culture_group = haldadian_group
+      # country_culture_group = noldor_group
+      # country_culture_group = teleri_group
+      # country_culture_group = vanyar_group
+      # AND = {
+      #   is_ai = yes
+      #   country_culture_group = dwarf_group
+      # }
     }
-	
-    option = {
-        name = "OK"
-        every_in_list = {
-            list = event_list_1
-            save_scope_as = event_list_1_target
-            every_in_list = {
-                list = event_list_2
-                limit = {
-                  NOT = { THIS = PREV }
-                }
-                add_truce = {
-                    target = scope:event_list_1_target
-                    duration = 1825
-                }
-            }
-        }
+    NOT = { has_country_modifier = old_alliances_are_dead } 
+    NOR = { 
+      primary_culture = nandor 
+      primary_culture = ironfist 
     }
+    religion = iluvatarism
+  }
 
+  immediate = {
+    every_country = {
+      limit = {
+        NOT = { ROOT = THIS }
+        OR = { #the group of countries they will not go to war with
+          # primary_culture = dunedain
+          # primary_culture = lesser_dunedain
+          # primary_culture = arnorian
+          # primary_culture = gondorian
+          # primary_culture = rangers
+          # primary_culture = dolamroth
+          # country_culture_group = mirkwoodmen_group
+          # country_culture_group = halfling_group
+          # country_culture_group = eotheod_group
+          # country_culture_group = breelander_group
+          # country_culture_group = haldadian_group
+          country_culture_group = noldor_group
+          country_culture_group = teleri_group
+          country_culture_group = vanyar_group
+          AND = {
+            ROOT = { is_ai = yes }
+            country_culture_group = dwarf_group
+          }
+        }
+        NOT = { has_country_modifier = old_alliances_are_dead } 
+        NOR = { 
+          primary_culture = nandor 
+          primary_culture = ironfist 
+        }
+        religion = iluvatarism
+      }
+      add_to_list = truce_country_list
+    }
+  }
+
+  option = {
+    name = "OK"
+    every_in_list = {
+      list = truce_country_list
+      ROOT = {
+        add_truce = {
+          target = PREV
+          duration = 1825
+        }
+      }
+    }
+  }
 }
 
-br_truce.2 = { #prevents the elves from going to war with each other unless this stance is cancelled via a decision/potential event	
-	type = country_event
-	title = "truce"
-	desc = "truce"
-	picture = ship_in_storm
-	goto_location = root
-	hidden = yes
-	
-	trigger = {
-		OR = { #the group of countries that will not go to war with humans
-			country_culture_group = noldor_group
-            country_culture_group = teleri_group
-            country_culture_group = vanyar_group
-		}
-		NOT = { has_country_modifier = old_alliances_are_dead } 
-	}
-			
-	immediate = {
-        every_country = {
-            limit = {
-				OR = { #human culture groups who have not declared that the old alliances are dead
-					primary_culture = dunedain
-					primary_culture = lesser_dunedain
-					primary_culture = arnorian
-					primary_culture = gondorian
-					primary_culture = rangers
-					primary_culture = dolamroth
-					country_culture_group = mirkwoodmen_group
-					country_culture_group = halfling_group
-					country_culture_group = eotheod_group
-					country_culture_group = breelander_group
-					country_culture_group = haldadian_group
-				}
-				NOT = { has_country_modifier = old_alliances_are_dead } 
-            }					
-            add_to_list = event_list_1
-        }
-        every_country = {
-            limit = {
-				OR = { #the group of countries that will not go to war with humans
-					country_culture_group = noldor_group
-					country_culture_group = teleri_group
-					country_culture_group = vanyar_group
-				}
-				NOT = { has_country_modifier = old_alliances_are_dead } 
-			}					
-            add_to_list = event_list_2
-        }
+br_truce.2 = { #prevents the goodie elves and AI dwarfs from going to war with goodies unless this stance is cancelled via a decision/potential event
+  
+  type = country_event
+  title = "truce"
+  desc = "truce"
+  picture = ship_in_storm
+  goto_location = root
+  hidden = yes
+  
+  trigger = {
+    OR = { #the group of countries that will not go to war
+      country_culture_group = noldor_group
+      country_culture_group = teleri_group
+      country_culture_group = vanyar_group
+      AND = {
+        is_ai = yes
+        country_culture_group = dwarf_group
+      }
     }
-	
-    option = {
-        name = "OK"
-        every_in_list = {
-            list = event_list_1
-            save_scope_as = event_list_1_target
-            every_in_list = {
-                list = event_list_2
-                limit = {
-                  NOT = { THIS = PREV }
-                }
-                add_truce = {
-                    target = scope:event_list_1_target
-                    duration = 1825
-                }
-            }
-        }
+    NOT = { has_country_modifier = old_alliances_are_dead } 
+    NOR = { 
+      primary_culture = nandor 
+      primary_culture = ironfist 
     }
+    religion = iluvatarism
+  }
 
+  immediate = {
+    every_country = {
+      limit = {
+        NOT = { ROOT = THIS }
+        OR = { #the group of countries they will not go to war with
+          primary_culture = dunedain
+          primary_culture = lesser_dunedain
+          primary_culture = arnorian
+          primary_culture = gondorian
+          primary_culture = rangers
+          primary_culture = dolamroth
+          country_culture_group = mirkwoodmen_group
+          country_culture_group = halfling_group
+          country_culture_group = eotheod_group
+          country_culture_group = breelander_group
+          country_culture_group = haldadian_group
+          country_culture_group = noldor_group
+          country_culture_group = teleri_group
+          country_culture_group = vanyar_group
+          AND = {
+            ROOT = { is_ai = yes }
+            country_culture_group = dwarf_group
+          }
+        }
+        NOT = { has_country_modifier = old_alliances_are_dead } 
+        NOR = { 
+          primary_culture = nandor 
+          primary_culture = ironfist 
+        }
+        religion = iluvatarism
+      }
+      add_to_list = truce_country_list
+    }
+  }
+
+  option = {
+    name = "OK"
+    every_in_list = {
+      list = truce_country_list
+      ROOT = {
+        add_truce = {
+          target = PREV
+          duration = 1825
+        }
+      }
+    }
+  }
 }
+
+
+
+# br_truce.1 = { #prevents the goodie humans from going to war with each other unless this stance is cancelled via a decision/potential event
+  
+#   type = country_event
+#   title = "truce"
+#   desc = "truce"
+#   picture = ship_in_storm
+#   goto_location = root
+#   hidden = yes
+  
+#   trigger = {
+#     OR = { #the group of countries that will not go to war with elves
+#       primary_culture = dunedain
+#       primary_culture = lesser_dunedain
+#       primary_culture = arnorian
+#       primary_culture = gondorian
+#       primary_culture = rangers
+#       primary_culture = dolamroth
+#       country_culture_group = mirkwoodmen_group
+#       country_culture_group = halfling_group
+#       country_culture_group = eotheod_group
+#       country_culture_group = breelander_group
+#       country_culture_group = haldadian_group
+#     }
+#     NOT = { has_country_modifier = old_alliances_are_dead } 
+#     }
+      
+#   immediate = {
+#         every_country = {
+#             limit = {
+#         OR = { #elven culture groups who have not declared that the old alliances are dead
+#           country_culture_group = noldor_group
+#           country_culture_group = teleri_group
+#           country_culture_group = vanyar_group
+#         }
+#         NOT = { has_country_modifier = old_alliances_are_dead } 
+#             }         
+#             add_to_list = event_list_1
+#         }
+#         every_country = {
+#             limit = {
+#         OR = { #goodie culture groups who have not declared that the old alliances are dead
+#           primary_culture = dunedain
+#           primary_culture = lesser_dunedain
+#           primary_culture = arnorian
+#           primary_culture = gondorian
+#           primary_culture = rangers
+#           primary_culture = dolamroth
+#           country_culture_group = mirkwoodmen_group
+#           country_culture_group = halfling_group
+#           country_culture_group = eotheod_group
+#           country_culture_group = breelander_group
+#           country_culture_group = haldadian_group
+#         }
+#         NOT = { has_country_modifier = old_alliances_are_dead } 
+#             }         
+#             add_to_list = event_list_2
+#         }
+#     }
+  
+#     option = {
+#         name = "OK"
+#         every_in_list = {
+#             list = event_list_1
+#             save_scope_as = event_list_1_target
+#             every_in_list = {
+#                 list = event_list_2
+#                 limit = {
+#                   NOT = { THIS = PREV }
+#                 }
+#                 add_truce = {
+#                     target = scope:event_list_1_target
+#                     duration = 1825
+#                 }
+#             }
+#         }
+#     }
+
+# }
+
+# br_truce.2 = { #prevents the elves from going to war with each other unless this stance is cancelled via a decision/potential event 
+#   type = country_event
+#   title = "truce"
+#   desc = "truce"
+#   picture = ship_in_storm
+#   goto_location = root
+#   hidden = yes
+  
+#   trigger = {
+#     OR = { #the group of countries that will not go to war with humans
+#       country_culture_group = noldor_group
+#             country_culture_group = teleri_group
+#             country_culture_group = vanyar_group
+#     }
+#     NOT = { has_country_modifier = old_alliances_are_dead } 
+#   }
+      
+#   immediate = {
+#         every_country = {
+#             limit = {
+#         OR = { #human culture groups who have not declared that the old alliances are dead
+#           primary_culture = dunedain
+#           primary_culture = lesser_dunedain
+#           primary_culture = arnorian
+#           primary_culture = gondorian
+#           primary_culture = rangers
+#           primary_culture = dolamroth
+#           country_culture_group = mirkwoodmen_group
+#           country_culture_group = halfling_group
+#           country_culture_group = eotheod_group
+#           country_culture_group = breelander_group
+#           country_culture_group = haldadian_group
+#         }
+#         NOT = { has_country_modifier = old_alliances_are_dead } 
+#             }         
+#             add_to_list = event_list_1
+#         }
+#         every_country = {
+#             limit = {
+#         OR = { #the group of countries that will not go to war with humans
+#           country_culture_group = noldor_group
+#           country_culture_group = teleri_group
+#           country_culture_group = vanyar_group
+#         }
+#         NOT = { has_country_modifier = old_alliances_are_dead } 
+#       }         
+#             add_to_list = event_list_2
+#         }
+#     }
+  
+#     option = {
+#         name = "OK"
+#         every_in_list = {
+#             list = event_list_1
+#             save_scope_as = event_list_1_target
+#             every_in_list = {
+#                 list = event_list_2
+#                 limit = {
+#                   NOT = { THIS = PREV }
+#                 }
+#                 add_truce = {
+#                     target = scope:event_list_1_target
+#                     duration = 1825
+#                 }
+#             }
+#         }
+#     }
+
+# }
 
 br_truce.3 = { #prevents the easterling/southron humans from attacking Sauron unless cancelled via event
-	
-	type = country_event
-	title = "truce"
-	desc = "truce"
-	picture = ship_in_storm
-	goto_location = root
-	hidden = yes
-	
-	trigger = {
-		religion = melkorism
-		# NOT = { has_country_modifier = we_do_not_fear_sauron } 
-	}
-			
-	immediate = {
-        every_country = {
-            limit = {
-				tag = MOR
-				char:3 = { # Is Sauron alive?
-					is_alive = yes
-					is_ruler = yes
-					prisoner = no
-					employer = C:MOR
-				}
-				# NOT = { has_country_modifier = we_do_not_fear_sauron } 
-            }					
-            add_to_list = event_list_1
-        }
-        every_country = {
-            limit = {
-				religion = melkorism
-				# NOT = { has_country_modifier = we_do_not_fear_sauron } 
-			}					
-            add_to_list = event_list_2
-        }
-	}
-	
-    option = {
-        name = "OK"
-        every_in_list = {
-            list = event_list_1
-            save_scope_as = event_list_1_target
-            every_in_list = {
-                list = event_list_2
-                limit = {
-                  NOT = { THIS = PREV }
-                }
-                add_truce = {
-                    target = scope:event_list_1_target
-                    duration = 1825
-                }
-            }
-        }
+  
+  type = country_event
+  title = "truce"
+  desc = "truce"
+  picture = ship_in_storm
+  goto_location = root
+  hidden = yes
+  
+  trigger = {
+    religion = melkorism
+    NOT = { tag = MOR }
+    is_ai = yes
+    sauron_rules = yes
+    # NOT = { has_country_modifier = we_do_not_fear_sauron } 
+  }
+      
+  immediate = {
+    add_truce = {
+      target = MOR
+      duration = 1825
     }
+  }
+  
+  option = {
+    name = "OK"
+  }
 
 }
 
@@ -232,12 +370,6 @@ br_truce.4 = { #prevents Sauron from just focusing on the east before Gondor is 
   immediate = {
     every_country = {
       limit = {
-        tag = MOR
-      }         
-      add_to_list = event_list_2
-      }
-    every_country = {
-      limit = {
         OR = {
           religion = melkorism
           religion = eastern_animism
@@ -246,29 +378,26 @@ br_truce.4 = { #prevents Sauron from just focusing on the east before Gondor is 
           tag = XBX #rhun
           tag = XDX #rachot
           tag = NUR #nurn
+          tag = MOR #nurn
         }
       }         
       add_to_list = event_list_1
     }
   }
   
-    option = {
-        name = "OK"
-        every_in_list = {
-            list = event_list_1
-            save_scope_as = event_list_1_target
-            every_in_list = {
-                list = event_list_2
-                limit = {
-                  NOT = { THIS = PREV }
-                }
-                add_truce = {
-                    target = scope:event_list_1_target
-                    duration = 1825
-                }
-            }
+  option = {
+    name = "OK"
+    every_in_list = {
+      list = event_list_1
+      save_scope_as = event_list_1_target
+      ROOT = {
+        add_truce = {
+          target = scope:event_list_1_target
+          duration = 1825
         }
+      }
     }
+  }
 }
 
 br_truce.5 = { #prevents orcs of misty mountains to instantly attack orcs of moria
