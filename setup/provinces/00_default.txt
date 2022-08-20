@@ -4053,7 +4053,7 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 2 }
 }
-382 = { #Felagsgard (ERB) (annendor_area) (rhovanion_region)
+382 = { #Felagsgard (BLC) (annendor_area) (rhovanion_region)
 	terrain = "plains"
 	culture = "longbeard"
 	religion = "iluvatarism"
@@ -18332,7 +18332,7 @@
 }
 1759 = { #Benhuis (unowned) (pinnath_tereg_area) (rhudaur_region)
 	terrain = "forest"
-	culture = "silvan"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "fish"
 	civilization_value = 20
@@ -18350,7 +18350,7 @@
 }
 1761 = { #Dol Carak (unowned) (pinnath_tereg_area) (rhudaur_region)
 	terrain = "forest"
-	culture = "silvan"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wood"
 	civilization_value = 20
@@ -18378,7 +18378,7 @@
 }
 1764 = { #Tirthon (unowned) (pinnath_tereg_area) (rhudaur_region)
 	terrain = "forest"
-	culture = "silvan"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "amber"
 	civilization_value = 20
@@ -18563,7 +18563,7 @@
 }
 1784 = { #Bairg (unowned) (pinnath_tereg_area) (rhudaur_region)
 	terrain = "forest"
-	culture = "silvan"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
 	civilization_value = 20
@@ -18662,7 +18662,7 @@
 }
 1794 = { #Tagol Tirith (unowned) (pinnath_tereg_area) (rhudaur_region)
 	terrain = "forest"
-	culture = "silvan"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "fur"
 	civilization_value = 20
@@ -19401,10 +19401,6 @@
 	civilization_value = 20
 	barbarian_power = 0
 	province_rank = "settlement"
-	nobles = { amount = 1 }
-	citizen = { amount = 1 }
-	freemen = { amount = 3 }
-	slaves = { amount = 1 }
 	tribesmen = { amount = 4 }
 }
 1870 = { #Redvyrne (unowned) (agathurush_area) (enedhwaith_region)
