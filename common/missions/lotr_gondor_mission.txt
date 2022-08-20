@@ -75,6 +75,9 @@
 				c:LBN = { has_land = no }
 				c:LBN = { NOT = { is_subject_of = root } }
 				war_with = c:LBN
+				c:DOR = { has_land = no }
+				c:DOR = { NOT = { is_subject_of = root } }
+				war_with = c:DOR
 			}
 		}
 
@@ -116,10 +119,8 @@
 							is_subject_of = root
 						}
 					}
-					release_subject = c:LBN
-					make_subject = {
-						target = c:LBN
-						type = client_state
+					c:LBN = {
+						remove_country_modifier = harassed_by_corsairs
 					}
 				}
 			}
@@ -267,10 +268,8 @@
 							is_subject_of = root
 						}
 					}
-					release_subject = c:LAM
-					make_subject = {
-						target = c:LAM
-						type = client_state
+					c:LAM = {
+						remove_country_modifier = harassed_by_corsairs
 					}
 				}
 			}
@@ -421,10 +420,8 @@
 							is_subject_of = root
 						}
 					}
-					release_subject = c:ANF
-					make_subject = {
-						target = c:ANF
-						type = client_state
+					c:ANF = {
+						remove_country_modifier = harassed_by_corsairs
 					}
 				}
 			}
