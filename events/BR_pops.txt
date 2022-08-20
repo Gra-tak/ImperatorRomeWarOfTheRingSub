@@ -298,7 +298,7 @@ br_pops.3 = { #Edain
           limit = {
             OR = {
               pop_culture = lesser_dunedain
-              pop_culture = rangers
+              pop_culture = dolamroth
               pop_culture = corsair
             }
           }
