@@ -20,10 +20,16 @@
         this = c:SHI
       }
       any_allied_country = {
-        this = c:SHI
+        is_ai = yes
+        OR = {
+          this = c:SHI
+          any_subject = {
+            this = c:SHI
+          }
+        }
       }
     }
-    # current_date > 3002.1.1 #year after bilbos birthday. It starts much layer in the non-movie timeline, though it is to be expected to take the player some time to take the mission
+    current_date > 3002.1.1 #year after bilbos birthday. It starts much layer in the non-movie timeline, though it is to be expected to take the player some time to take the mission
     religion = iluvatarism
     sauron_rules = yes
 	}

@@ -497,6 +497,7 @@ lotr_storyline_events.8 = {
 		}
 		current_date > 3004.2.5
 		current_date <= 3006.1.1
+		NOT = { has_variable = lotr_frodos_mission_activated_variable } #make sure this event does not trigger after frodos mission is started
 		capital_scope = {
 			OR = {
 				is_in_region = forochel_region
@@ -567,6 +568,7 @@ lotr_storyline_events.9 = {
 
 	trigger = {
 		is_ai = no
+		NOT = { has_variable = lotr_frodos_mission_activated_variable } #make sure this event does not trigger after frodos mission is started
 		c:SHI = {
 			is_ai = yes
 			has_land = yes
