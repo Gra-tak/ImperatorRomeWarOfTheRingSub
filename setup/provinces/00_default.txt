@@ -11650,7 +11650,7 @@
 }
 1127 = { #Men Harondor (XXE) (aegardh_area) (harondor_region)
 	terrain = "plains"
-	culture = "beasts"
+	culture = "harondorian"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
 	civilization_value = 0
@@ -19168,7 +19168,7 @@
 }
 1846 = { #Nen-i-Sûl (BRE) (tyrn_hyarinen_area) (mintyrnath_region)
 	terrain = "hills"
-	culture = "beasts"
+	culture = "breelander"
 	religion = "eastern_animism"
 	trade_goods = "stone"
 	civilization_value = 0
@@ -26399,7 +26399,7 @@
 }
 2552 = { #Lhundol (MIL) (ardalinderion_area) (harlindon_region)
 	terrain = "plains"
-	culture = "beasts"
+	culture = "sindar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
 	civilization_value = 0
@@ -37050,7 +37050,7 @@
 }
 3576 = { #Taûrsa (XNX) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
-	culture = "beasts"
+	culture = "black_numenorean"
 	religion = "eastern_animism"
 	trade_goods = "earthware"
 	civilization_value = 0
@@ -39226,7 +39226,7 @@
 }
 3788 = { #Emyn Winion (XXG) (harnendor_area) (harnendor_region)
 	terrain = "plains"
-	culture = "beasts"
+	culture = "harondorian"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
 	civilization_value = 0
@@ -39329,7 +39329,7 @@
 }
 3799 = { #Rast Hanadh (ANR) (ras_morthil_area) (andrast_region)
 	terrain = "plains"
-	culture = "beasts"
+	culture = "andrasting"
 	religion = "eastern_animism"
 	trade_goods = "whale"
 	civilization_value = 0
@@ -39950,7 +39950,7 @@
 }
 3861 = { #Mîraja (XHX) (kes_zum_area) (bozisha_miraz_region)
 	terrain = "plains"
-	culture = "beasts"
+	culture = "haradrim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
 	civilization_value = 0
