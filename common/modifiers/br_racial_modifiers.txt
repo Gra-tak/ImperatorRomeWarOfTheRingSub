@@ -291,22 +291,22 @@
 80_orc = { global_pop_assimilation_speed_modifier = 0.8 global_population_growth = 0.12 }
 90_orc = { global_pop_assimilation_speed_modifier = 0.9 global_population_growth = 0.135 }
 100_orc = { global_pop_assimilation_speed_modifier = 1.0 global_population_growth = 0.15 }
-foreign_support_95 = { levy_size_multiplier = 0.95 }
-foreign_support_90 = { levy_size_multiplier = 0.9 }
-foreign_support_85 = { levy_size_multiplier = 0.85 }
-foreign_support_80 = { levy_size_multiplier = 0.8 }
-foreign_support_75 = { levy_size_multiplier = 0.75 }
-foreign_support_70 = { levy_size_multiplier = 0.7 }
-foreign_support_65 = { levy_size_multiplier = 0.65 }
-foreign_support_60 = { levy_size_multiplier = 0.6 }
-foreign_support_55 = { levy_size_multiplier = 0.55 }
-foreign_support_50 = { levy_size_multiplier = 0.5 }
-foreign_support_45 = { levy_size_multiplier = 0.45 }
-foreign_support_40 = { levy_size_multiplier = 0.4 }
-foreign_support_35 = { levy_size_multiplier = 0.35 }
-foreign_support_30 = { levy_size_multiplier = 0.3 }
-foreign_support_25 = { levy_size_multiplier = 0.25 }
-foreign_support_20 = { levy_size_multiplier = 0.2 }
-foreign_support_15 = { levy_size_multiplier = 0.15 }
-foreign_support_10 = { levy_size_multiplier = 0.1 }
-foreign_support_5 = { levy_size_multiplier = 0.05 }
+foreign_support_95 = { levy_size_multiplier = 0.48 }
+foreign_support_90 = { levy_size_multiplier = 0.45 }
+foreign_support_85 = { levy_size_multiplier = 0.43 }
+foreign_support_80 = { levy_size_multiplier = 0.4 }
+foreign_support_75 = { levy_size_multiplier = 0.38 }
+foreign_support_70 = { levy_size_multiplier = 0.35 }
+foreign_support_65 = { levy_size_multiplier = 0.33 }
+foreign_support_60 = { levy_size_multiplier = 0.3 }
+foreign_support_55 = { levy_size_multiplier = 0.28 }
+foreign_support_50 = { levy_size_multiplier = 0.25 }
+foreign_support_45 = { levy_size_multiplier = 0.23 }
+foreign_support_40 = { levy_size_multiplier = 0.2 }
+foreign_support_35 = { levy_size_multiplier = 0.18 }
+foreign_support_30 = { levy_size_multiplier = 0.15 }
+foreign_support_25 = { levy_size_multiplier = 0.12 }
+foreign_support_20 = { levy_size_multiplier = 0.1 }
+foreign_support_15 = { levy_size_multiplier = 0.08 }
+foreign_support_10 = { levy_size_multiplier = 0.05 }
+foreign_support_5 = { levy_size_multiplier = 0.03 }
