@@ -5669,7 +5669,7 @@ famine_relocation_effect = {
 			random_state_province = {
 				limit = {
 					owner = scope:fe_city.owner
-					total_population > 1
+					# total_population > 1
 				}
 				weight = {
 					modifier = {

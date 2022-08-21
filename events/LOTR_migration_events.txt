@@ -948,23 +948,24 @@ lotr_migration_events.7 = {
 			random_in_list = {
 				list = trying_to_move_list
 				remove_from_list = trying_to_move_list
+				save_scope_as = pop_from_list
 				if = {
 					limit = {
 						ROOT = {
 							any_subject = {
-								culture = prev.prev.culture
+								culture = scope:pop_from_list.culture
 							}
 						}
 					}
 					ROOT = {
 						random_subject = {
 							limit = {
-								culture = prev.prev.culture
+								culture = scope:pop_from_list.culture
 							}
 							weight = {
 								modifier = {
 									factor = 5
-									religion = prev.prev.religion
+									religion = scope:pop_from_list.religion
 								}
 							}
 							random_owned_province = {
@@ -979,19 +980,19 @@ lotr_migration_events.7 = {
 					limit = {
 						ROOT = {
 							any_subject = {
-								culture.culture_group = prev.prev.culture.culture_group
+								culture.culture_group = scope:pop_from_list.culture.culture_group
 							}
 						}
 					}
 					ROOT = {
 						random_subject = {
 							limit = {
-								culture.culture_group = prev.prev.culture.culture_group
+								culture.culture_group = scope:pop_from_list.culture.culture_group
 							}
 							weight = {
 								modifier = {
 									factor = 5
-									religion = prev.prev.religion
+									religion = scope:pop_from_list.religion
 								}
 							}
 							random_owned_province = {

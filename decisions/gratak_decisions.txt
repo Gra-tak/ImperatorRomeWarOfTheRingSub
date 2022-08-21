@@ -113,4 +113,16 @@
 			}
 		}
 	}
+	debug_gratak = {
+		potential = {
+			is_ai = no
+			always = no
+		}
+		allow = {}
+		effect = {
+			treasure:lotr_treasure_dor_lomin_helmet = {
+				transfer_treasure_to_country = CAR
+			}
+		}
+	}
 }
