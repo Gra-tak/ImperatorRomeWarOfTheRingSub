@@ -8924,7 +8924,7 @@
 }
 853 = { #Melfda (unowned) (duirrograw_area) (anduin_region)
 	terrain = "plains"
-	culture = "northmen"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 20
@@ -8933,7 +8933,7 @@
 }
 854 = { #Eagduru (unowned) (duirrograw_area) (anduin_region)
 	terrain = "plains"
-	culture = "northmen"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 20
@@ -9286,7 +9286,7 @@
 }
 889 = { #Havabauri (unowned) (duirrograw_area) (anduin_region)
 	terrain = "plains"
-	culture = "northmen"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "grain"
 	civilization_value = 20
@@ -18534,7 +18534,7 @@
 }
 1781 = { #Nan Dhelu (unowned) (pinnath_neryth_area) (rhudaur_region)
 	terrain = "plains"
-	culture = "rhudaurim"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "amber"
 	civilization_value = 0
@@ -18543,7 +18543,7 @@
 }
 1782 = { #Ost Cyrn (unowned) (rhudaur_area) (rhudaur_region)
 	terrain = "plains"
-	culture = "rhudaurim"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wood"
 	civilization_value = 10
@@ -19708,7 +19708,7 @@
 }
 1899 = { #Amon Lind (unowned) (emyn_sirannon_area) (eregion_region)
 	terrain = "forest"
-	culture = "dunlending"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "stone"
 	civilization_value = 20
@@ -20012,7 +20012,7 @@
 }
 1931 = { #Filgogen (unowned) (emyn_sirannon_area) (eregion_region)
 	terrain = "forest"
-	culture = "dunlending"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
 	civilization_value = 20
@@ -37220,7 +37220,7 @@
 }
 3592 = { #Gondethil (unowned) (dusador_area) (mardruak_region)
 	terrain = "plains"
-	culture = "haradrim"
+	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "fish"
 	civilization_value = 35
@@ -38084,7 +38084,7 @@
 }
 3676 = { #Nahald-Kûdan (unowned) (emyn_engrin_area) (ered_mithrin_region)
 	terrain = "plains"
-	culture = "lakemen"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "iron"
 	civilization_value = 40
