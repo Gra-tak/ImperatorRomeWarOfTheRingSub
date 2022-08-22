@@ -24,8 +24,20 @@ br_traits.1 = {
 			#blood of numenor traits
 			if = {
 				limit = {
-					mother = { has_trait = strong_blood_of_numenor }
-					father = { has_trait = strong_blood_of_numenor }
+					OR = {
+						AND = {
+							mother = { has_trait = strong_blood_of_numenor }
+							father = { has_trait = strong_blood_of_numenor }
+						}
+						AND = {
+							mother = { has_trait = elf }
+							father = { has_trait = strong_blood_of_numenor }
+						}
+						AND = {
+							mother = { has_trait = strong_blood_of_numenor }
+							father = { has_trait = elf }
+						}
+					}
 				}
 				add_trait = strong_blood_of_numenor
 			}					
@@ -49,7 +61,6 @@ br_traits.1 = {
 					25 = { add_trait = blood_of_numenor }
 				}
 			}
-				
 			else_if = {
 				limit = {
 					father = { has_trait = strong_blood_of_numenor }
@@ -60,7 +71,6 @@ br_traits.1 = {
 					25 = { add_trait = blood_of_numenor }
 				}
 			}
-				
 			else_if = {
 				limit = {
 					mother = { has_trait = strong_blood_of_numenor }
@@ -83,7 +93,6 @@ br_traits.1 = {
 					75 = { add_trait = blood_of_numenor }
 				}
 			}
-				
 			else_if = {
 				limit = {
 					mother = { has_trait = blood_of_numenor }
@@ -95,7 +104,6 @@ br_traits.1 = {
 					50 = { add_trait = proud }
 				}
 			}
-				
 			else_if = {
 				limit = {
 					father = { has_trait = blood_of_numenor }
@@ -107,27 +115,21 @@ br_traits.1 = {
 					50 = { add_trait = proud }
 				}
 			}
-				
-			#elf traits
-			else_if = { 
+			else_if = { #elf traits
 				limit = {
 					mother = { has_trait = elf }
 					father = { has_trait = elf }
 				}
 				add_trait = elf
-			}	
-				
-			#dwarf traits
-			else_if = { 
+			}
+			else_if = { #dwarf traits
 				limit = {
 					mother = { has_trait = dwarf }
 					father = { has_trait = dwarf }
 				}
 				add_trait = dwarf
 			}
-
-			#orc traits
-			else_if = { 
+			else_if = { #orc traits
 				limit = {
 					mother = { has_trait = orc }
 					father = { has_trait = orc }
@@ -135,13 +137,13 @@ br_traits.1 = {
 				add_trait = orc
 			}
 
-			#half-dunedain
-			else_if = {
-				limit = {
-					NOT = { mother = { has_culture = dunedain }}
-					father = {has_culture = dunedain}
-				}
-			}
+			# #half-dunedain
+			# else_if = {
+			# 	limit = {
+			# 		NOT = { mother = { has_culture = dunedain }}
+			# 		father = {has_culture = dunedain}
+			# 	}
+			# }
 		}
 	}					
 }

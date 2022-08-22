@@ -210,47 +210,47 @@ lotr_culling = {
 	}
 }
 
-lotr_on_create_character_effect = {
-	if = {
-		limit = {
-			OR = {
-				has_culture = dunedain
-				has_culture = rangers
-				has_culture = black_numenorean
-			}
-			NOT = { has_trait = maia }
-		}
-		add_trait = strong_blood_of_numenor
-	}
-	else_if = {
-		limit = {
-			has_culture = lesser_dunedain
-		}
-		add_trait = blood_of_numenor
-	}
-	else_if = {
-		limit = {
-			OR = {
-				has_culture_group = noldor_group
-				has_culture_group = teleri_group
-				has_culture_group = vanyar_group
-			}
-		}
-		add_trait = elf
-	}
-	else_if = {
-		limit = {
-			has_culture_group = dwarf_group
-		}
-		add_trait = dwarf
-	}
-	else_if = {
-		limit = {
-			has_culture_group = orcs_group
-		}
-		add_trait = orc
-	}
-}
+# lotr_on_create_character_effect = {
+# 	if = {
+# 		limit = {
+# 			OR = {
+# 				has_culture = dunedain
+# 				has_culture = rangers
+# 				has_culture = black_numenorean
+# 			}
+# 			NOT = { has_trait = maia }
+# 		}
+# 		add_trait = strong_blood_of_numenor
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_culture = lesser_dunedain
+# 		}
+# 		add_trait = blood_of_numenor
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			OR = {
+# 				has_culture_group = noldor_group
+# 				has_culture_group = teleri_group
+# 				has_culture_group = vanyar_group
+# 			}
+# 		}
+# 		add_trait = elf
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_culture_group = dwarf_group
+# 		}
+# 		add_trait = dwarf
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_culture_group = orcs_group
+# 		}
+# 		add_trait = orc
+# 	}
+# }
 
 move_home_effect = {
 	if = {

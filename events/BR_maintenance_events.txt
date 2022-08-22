@@ -16,6 +16,8 @@ br_maintenance.1 = { #racial traits are assigned via BR_dunedain.4 on_initiatili
 		NOT = { has_trait = elf }
 		NOT = { has_trait = halfling }
 		NOT = { has_trait = dwarf }
+		NOT = { has_trait = blood_of_numenor }
+		NOT = { has_trait = strong_blood_of_numenor }
 		OR = {
 			has_culture_group = noldor_group
 			has_culture_group = teleri_group
