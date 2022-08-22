@@ -76,9 +76,9 @@ lotr_maintenance.2 = {
   hidden = yes
   trigger = {
     OR = {
-      this = c:GON
-      this = c:CAR
-      # this = c:ARN
+      tag = GON
+      tag = CAR
+      tag = ARN
     }
     has_civil_war = yes
   }

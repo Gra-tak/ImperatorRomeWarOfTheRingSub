@@ -6,9 +6,6 @@
 		potential = {
 			num_of_cities >= 1
 			tag = CAR
-			#NOT = { tag = ARN }
-			#has_country_modifier = rise_of_the_dunedain
-			#NOT = { NOT = { has_country_modifier = rise_of_the_dunedain } }
 		}
 
 		allow = {
@@ -20,7 +17,12 @@
 					}
 				}
 			}
-			#has_country_modifier = rise_of_the_dunedain
+			custom_tooltip = {
+				text = rise_of_the_dunedain_completed
+				NOT = { has_variable = arnor_delay }
+				has_country_modifier = rise_of_the_dunedain
+			}
+			war = no
 			AND = {
 				#owns = 1612  #Tharbad
 				owns = 1609  #Annuminas
@@ -84,6 +86,38 @@
 					}
 				}
 				set_capital = 1609
+			}
+			if = {
+				limit = {
+					exists = treasure:lotr_treasure_sceptre_annuminas
+					exists = c:IML
+					c:IML = {
+						owns = 1936
+						OR = {
+							any_allied_country = {
+								this = ROOT
+							}
+							AND = {
+								is_subject = yes
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				treasure:lotr_treasure_sceptre_annuminas = {
+					transfer_treasure_to_country = ROOT
+				}
+				hidden_effect = {
+					treasure:lotr_treasure_sceptre_annuminas = { destroy_treasure = yes }
+					create_country_treasure = {
+						key = "lotr_treasure_sceptre_annuminas_copy"
+						icon = "lotr_treasure_sceptre_annuminas"
+						modifier = {
+			 				local_happiness_for_same_culture_modifier = 0.05
+							local_nobles_output = 0.1 
+						}
+					}
+				}
 			}
 			#p:1609 = {
 			#	capital_formable_large_effect = yes

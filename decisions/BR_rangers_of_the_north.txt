@@ -9,17 +9,9 @@
 		
 		
 		allow = {
-			AND = {
-				tag = CAR
-				NOT = { has_country_modifier = rise_of_the_dunedain } 
-			}
 			}
 		
 		ai_allow = {
-			AND = {
-				tag = CAR
-				NOT = { has_country_modifier = rise_of_the_dunedain } 
-			}
 		}
 		
 		effect = {

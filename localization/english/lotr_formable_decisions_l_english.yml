@@ -4,6 +4,7 @@
  ARNOR_NAME:0 "Arnor"
  ARNOR_ADJECTIVE:0 "Arnorian"
  formable_not_arnor_exists:0 "#Y Arnor#! must NOT exist."
+ rise_of_the_dunedain_completed:0 "The Dunedain must have proclaimed themselves as heirs of Arnor and must have handled the consequences."
  form_arnor:0 "Proclaim that Arnor has risen again"
  form_arnor_desc:0 "The ancient Kingdom of Arnor is no more, and its capital of Annunimas and the province of Nan Arnen are now abandoned. If you were to resettle these lands and begin rebuilding the cities of Annunimas and Fornost, you could rightfuly claim that Arnor has risen once again."
  form_arnor_claims_tooltip:0 "Arnor will gain claims upon the regions of #Y Arthedain#, #Y Fortund#, #Y Uilad#, #Y Rhudaur#, #Y Mintyrnath# and #Y Minhiriath#."

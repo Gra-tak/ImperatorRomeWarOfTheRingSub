@@ -60,7 +60,8 @@ treasure_manager = {
 			key = "lotr_treasure_sceptre_annuminas"
 			icon = "lotr_treasure_sceptre_annuminas"
 			state_modifier = {
-				local_monthly_state_loyalty = 0.15
+				local_happiness_for_same_culture_modifier = 0.05
+				local_nobles_output = 0.1
 			}
 		}
 		710 = { #

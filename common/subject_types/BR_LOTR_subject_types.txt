@@ -172,7 +172,10 @@ ranger_protectorate = { #Ranger of the north mechanics
 		exists = scope:future_overlord
 		scope:future_overlord = {
 			religion = iluvatarism
-			tag = CAR
+			OR = {
+				tag = ARN
+				tag = CAR
+			}
 			capital_scope = {
 				civilization_value > root.capital_scope.civilization_value
 			}
@@ -278,7 +281,10 @@ ranger_fief = { #Ranger of the north mechanics
 		exists = scope:future_overlord
 		scope:future_overlord = {
 			religion = iluvatarism
-			tag = CAR
+			OR = {
+				tag = ARN
+				tag = CAR
+			}
 			capital_scope = {
 				civilization_value > root.capital_scope.civilization_value
 			}

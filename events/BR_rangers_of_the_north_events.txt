@@ -19,11 +19,15 @@ br_rangers.1 = { #Ask the council whether to come out of the shadows
 	option = {
 		name = "br_rangers.1.a"
 		C:CAR = {
-					add_country_modifier = {
-					name = rise_of_the_dunedain
-					duration = -1
-				}
-				}
+			add_country_modifier = {
+				name = rise_of_the_dunedain
+				duration = -1
+			}
+			set_variable = {
+				name = arnor_delay
+				days = 45
+			}
+		}
 		C:MOR = {
 			trigger_event = { id = br_rangers.2 days = 45 } #Mordor is informed that the Dunedain of the North are rising
 		}
@@ -32,7 +36,7 @@ br_rangers.1 = { #Ask the council whether to come out of the shadows
 	option = {
 		name = "br_rangers.1.b"		
 	}
-	}
+}
 	
 
 br_rangers.2 = { #Mordor is informed
