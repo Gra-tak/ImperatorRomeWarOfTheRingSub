@@ -237,6 +237,7 @@ jungle_heritage = {
 forest_heritage = {
 	modifier = {
 		archers_offensive = 0.1
+		rangers_offensive = 0.1
 		global_tribesmen_happyness = 0.05
 		build_cost = 0.1
 	}

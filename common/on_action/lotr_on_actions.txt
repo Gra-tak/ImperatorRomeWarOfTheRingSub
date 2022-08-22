@@ -6,6 +6,7 @@
 		lotr_startup.4
 		lotr_startup.5
 		lotr_startup.6
+		lotr_startup.7
 	}
 }
 

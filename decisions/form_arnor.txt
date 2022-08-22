@@ -42,6 +42,10 @@
 				p:1609 = { has_city_status = yes }
 				p:1605 = { has_city_status = yes }
 			}
+			OR = {
+				rank = major_power
+				rank = great_power
+			}
 			can_form_nation_trigger = yes
 		}
 		
@@ -68,6 +72,7 @@
 		
 		effect = {
 			change_country_name = "ARNOR_NAME"
+			set_country_heritage = arnor_heritage
 			hidden_effect = {
 				change_country_adjective = "ARNOR_ADJECTIVE"
 				change_country_color =  arthedain_grey

@@ -75,5 +75,6 @@ yearly_country_pulse =
 		lotr_migration_events.7
 		lotr_tradition_events.1
 		lotr_storyline_events.13
+		lotr_startup.7 #making sure orcs actually use age of the orc
 	}
 }

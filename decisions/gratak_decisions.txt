@@ -120,9 +120,19 @@
 		}
 		allow = {}
 		effect = {
-			treasure:lotr_treasure_dor_lomin_helmet = {
-				transfer_treasure_to_country = CAR
+			# set_country_heritage = arnor_heritage
+			# treasure:lotr_treasure_dor_lomin_helmet = {
+			# 	transfer_treasure_to_country = CAR
+			# }
+			every_country = {
+				limit = {
+					is_ai = yes
+					country_culture_group = orcs_group
+					NOT = { has_law = age_of_the_orc }
+				}
+   			change_law = age_of_the_orc
 			}
 		}
 	}
+	
 }

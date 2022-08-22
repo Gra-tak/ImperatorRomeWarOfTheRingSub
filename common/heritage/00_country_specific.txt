@@ -13,6 +13,22 @@
 	}
 }
 
+arnor_heritage = {
+	modifier = {
+		#good
+		diplomatic_relations = 2
+		global_monthly_state_loyalty = 0.05
+		rangers_offensive = 0.1
+		
+		#bad
+		build_cost = 0.1
+	}
+	
+	trigger = {
+		tag = ARN
+	}
+}
+
 angmar_heritage = {
 	modifier = {
 		#good
