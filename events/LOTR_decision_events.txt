@@ -277,9 +277,10 @@ lotr_ruler_decisions.7 = {
   		}
   		add_to_list = potential_targets
   	}
-  	ordered_in_list = {
+  	random_in_list = {
       list = potential_targets
-      position = 0
+      remove_from_list = potential_targets
+      # position = 0
       ROOT = {
 	    	set_variable = {
 	    		name = potential_targets_scope_1
@@ -294,9 +295,10 @@ lotr_ruler_decisions.7 = {
     			value >= 2
     		}
     	}
-    	ordered_in_list = {
+    	random_in_list = {
         list = potential_targets
-        position = 1
+        remove_from_list = potential_targets
+        # position = 1
 	      ROOT = {
 		    	set_variable = {
 		    		name = potential_targets_scope_2
@@ -312,9 +314,10 @@ lotr_ruler_decisions.7 = {
     			value >= 3
     		}
     	}
-    	ordered_in_list = {
+    	random_in_list = {
         list = potential_targets
-        position = 2
+        remove_from_list = potential_targets
+        # position = 2
 	      ROOT = {
 		    	set_variable = {
 		    		name = potential_targets_scope_3

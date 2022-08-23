@@ -254,7 +254,10 @@ monarchy_citizen_law = {
 
 monarchy_religious_laws = {
 	potential = {
-		is_monarchy = yes
+		OR = {
+			is_monarchy = yes
+			country_culture_group = orcs_group
+		}
 	}
 	
 	religious_tolerance_monarchy = {
