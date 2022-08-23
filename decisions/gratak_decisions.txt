@@ -118,7 +118,18 @@
 			is_ai = no
 			always = no
 		}
-		allow = {}
+		allow = {
+			any_owned_province = {
+				save_temporary_scope_as = provin
+				owner = {
+					# is_ai = no
+					any_country_culture = {
+						is_integrated = no
+						this.culture = scope:provin.dominant_province_culture
+					}
+				}
+			}
+		}
 		effect = {
 			# set_country_heritage = arnor_heritage
 			# treasure:lotr_treasure_dor_lomin_helmet = {

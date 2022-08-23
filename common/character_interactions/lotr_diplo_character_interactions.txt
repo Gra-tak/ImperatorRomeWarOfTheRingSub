@@ -1,0 +1,199 @@
+﻿#pretty much options that should be in the diplo menu but since that isn't customizable it's done here
+lotr_buy_wrong_culture_from_vassal = {
+
+	on_other_nation = yes
+	on_own_nation = no
+	message = no
+
+	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_give_free_hands"
+
+	potential_trigger = {
+		scope:target = {
+			employer = {
+				is_ai = yes
+			}
+			is_ruler = yes
+			employer = {
+				is_subject = yes
+				is_subject_of = scope:actor
+			}
+		}
+	}
+					# OWNER = {
+					# 	any_integrated_culture = {
+					# 		this.culture = prev.prev.dominant_province_culture
+					# 	}
+					# }
+
+	allowed_trigger = {
+		custom_tooltip = {
+			text = "has_any_non_integrated_province"
+			scope:target = {
+				employer = {
+					any_owned_province = {
+						save_temporary_scope_as = tmpProv
+						OWNER = {
+							# is_ai = no
+							any_country_culture = {
+								is_integrated = no
+								this.culture = scope:tmpProv.culture
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+
+	effect = {
+		scope:target = {
+			employer = {
+				every_owned_province = {
+					save_scope_as = tmpProv
+					if = {
+						limit = {
+							owner = {
+								any_country_culture = {
+									is_integrated = no
+									this.culture = scope:tmpProv.dominant_province_culture
+								}
+							}
+						}
+						add_to_list = potential_targets
+						# set_conquered_by = scope:actor
+					}
+				}
+			}
+		}
+		scope:actor = {
+			remove_variable = potential_targets_scope_1
+			remove_variable = potential_targets_scope_2
+			remove_variable = potential_targets_scope_3
+	  	random_in_list = {
+	      list = potential_targets
+	      remove_from_list = potential_targets
+	      scope:actor = {
+		    	set_variable = {
+		    		name = potential_targets_scope_1
+		    		value = PREV
+		    	}
+		    }
+	    }
+	    if = {
+	    	limit = {
+	    		list_size = {
+	    			name = potential_targets
+	    			value >= 1
+	    		}
+	    	}
+	    	random_in_list = {
+	        list = potential_targets
+	        remove_from_list = potential_targets
+		      scope:actor = {
+			    	set_variable = {
+			    		name = potential_targets_scope_2
+			    		value = PREV
+			    	}
+			    }
+	      }
+	    }
+	    if = {
+	    	limit = {
+	    		list_size = {
+	    			name = potential_targets
+	    			value >= 1
+	    		}
+	    	}
+	    	random_in_list = {
+	        list = potential_targets
+	        remove_from_list = potential_targets
+		      scope:actor = {
+			    	set_variable = {
+			    		name = potential_targets_scope_3
+			    		value = PREV
+			    	}
+			    }
+	      }
+			}
+			trigger_event = {
+				id = lotr_ruler_decisions.11
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+}
+
+# gratak_suicide = {
+
+# 	on_other_nation = no
+# 	on_own_nation = yes
+# 	message = no
+	
+# 	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_give_free_hands"
+	
+# 	potential_trigger = {
+# 		scope:target = {
+# 			employer = {
+# 				is_ai = no
+# 			}
+# 			is_ruler = yes
+# 			health < 10
+# 		}
+# 	}
+
+# 	allowed_trigger = {
+# 	}
+	
+# 	effect = {
+# 		scope:target = {
+# 			add_health = -10
+# 		}
+# 	}
+	
+# 	ai_will_do = {
+# 		factor = 0 #Should use event instead.
+# 	}
+	
+# }
+
+
+
+# gratak_test = {
+
+# 	on_other_nation = yes
+# 	on_own_nation = no
+# 	message = no
+	
+# 	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_give_free_hands"
+	
+# 	potential_trigger = {
+# 		scope:target = {
+# 			is_ruler = yes
+# 		}
+# 	}
+
+# 	allowed_trigger = {
+# 	}
+	
+# 	effect = {
+# 		scope:target = {
+# 			employer = {
+# 				every_owned_province = {
+# 			 		limit = {
+# 							NOT = { owner = scope:actor }
+# 						}
+# 						set_conquered_by = scope:actor
+# 				}
+# 			}
+# 		}
+# 	}
+	
+# 	ai_will_do = {
+# 		factor = 0 #Should use event instead.
+# 	}
+	
+# }

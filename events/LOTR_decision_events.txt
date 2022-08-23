@@ -458,3 +458,82 @@ lotr_ruler_decisions.10 = {
 		}
   }
 }
+
+
+lotr_ruler_decisions.11 = {
+  type = country_event
+  title = "lotr_ruler_decisions.11.t"
+  desc = "lotr_ruler_decisions.11.desc"
+  picture = gondor
+
+  left_portrait = current_ruler
+  right_portrait = scope:target
+
+  immediate = {
+  }
+
+  option = {
+    name = "lotr_ruler_decisions.11.a"
+    var:potential_targets_scope_1 = {
+      save_temporary_scope_as = tmpProv
+      set_conquered_by = ROOT
+    }
+    scope:target = {
+      employer = {
+        add_treasury = {
+          value = scope:tmpProv.total_population
+          multiply = 20
+        }
+      }
+    }
+    add_treasury = {
+      value = scope:tmpProv.total_population
+      multiply = -20
+    }
+  }
+  option = {
+    name = "lotr_ruler_decisions.11.b"
+    trigger = { has_variable = potential_targets_scope_2 }
+    var:potential_targets_scope_2 = {
+      save_temporary_scope_as = tmpProv
+      set_conquered_by = ROOT
+    }
+    scope:target = {
+      employer = {
+        add_treasury = {
+          value = scope:tmpProv.total_population
+          multiply = 20
+        }
+      }
+    }
+    add_treasury = {
+      value = scope:tmpProv.total_population
+      multiply = -20
+    }
+
+  }
+  option = {
+    name = "lotr_ruler_decisions.11.c"
+    trigger = { has_variable = potential_targets_scope_3 }
+    var:potential_targets_scope_3 = {
+      save_temporary_scope_as = tmpProv
+      set_conquered_by = ROOT
+    }
+    scope:target = {
+      employer = {
+        add_treasury = {
+          value = scope:tmpProv.total_population
+          multiply = 20
+        }
+      }
+    }
+    add_treasury = {
+      value = scope:tmpProv.total_population
+      multiply = -20
+    }
+
+  }
+  option = {
+    name = "lotr_ruler_decisions.7.cancel"
+  }
+}
