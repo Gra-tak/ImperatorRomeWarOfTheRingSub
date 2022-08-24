@@ -907,7 +907,7 @@ lotr_migration_events.7 = {
 					divide = var:all
 				}
 				if = {
-					limit = { var:moverPerc < 0.75 } #leave enclaves intact
+					limit = { var:moverPerc < 0.9 } #leave enclaves intact
 					every_pops_in_province = {
 						limit = {
 							country_culture = {
@@ -1002,6 +1002,151 @@ lotr_migration_events.7 = {
 						add_treasury = -5
 					}
 					move_pop = scope:target
+				}
+			}
+		}
+	}
+}
+
+# Encourage movement from vassals
+lotr_migration_events.8 = {
+	type = country_event
+	title = "OK"
+	desc = "OK"
+	picture = event_gondor
+	hidden = yes
+
+	trigger = {
+		is_ai = no
+		any_country_culture = {
+			has_country_culture_modifier = encourage_migration_to_overlord
+		}
+	}
+
+	immediate = {
+		set_local_variable = {
+			name = trying_to_move_num
+			value = 0
+		}
+		every_country_culture = {
+			limit = { has_country_culture_modifier = encourage_migration_to_overlord }
+			save_temporary_scope_as = tmpCulture
+			ROOT = {
+				every_subject = {
+					limit = {
+						is_ai = yes
+					}
+					every_country_culture = {
+						limit = {
+							is_integrated = no
+							this.culture = scope:tmpCulture.culture
+						}
+						add_country_culture_modifier = {
+							name = encourage_migration_to_overlord
+							duration = 360
+						}
+					}
+				}
+			}
+		}
+		every_subject = {
+			every_owned_province = {
+				set_local_variable = {
+					name = all
+					value = 0
+				}
+				set_local_variable = {
+					name = mover
+					value = 0
+				}
+				every_pops_in_province = {
+					change_local_variable = {
+						name = all
+						add = 1
+					}
+					if = {
+						limit = {
+							country_culture = {
+								has_country_culture_modifier = encourage_migration_to_overlord
+							} 
+						}
+						change_local_variable = {
+							name = mover
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = { local_var:all > 0 }
+					set_local_variable = {
+						name = moverPerc
+						value = local_var:mover
+					}
+					change_local_variable = {
+						name = moverPerc
+						divide = local_var:all
+					}
+					if = {
+						limit = { local_var:moverPerc < 0.9 } #leave enclaves intact
+						every_pops_in_province = {
+							limit = {
+								country_culture = {
+									has_country_culture_modifier = encourage_migration_to_overlord
+								} 
+							}
+							add_to_list = trying_to_move_list
+						}
+						change_local_variable = {
+							name = trying_to_move_num
+							add = local_var:mover
+						}
+					}
+				}
+			}
+		}
+
+
+		set_variable = {
+			name = actualMover
+			# value = { integer_range = { min = 100 max = 100 } }
+			value = { integer_range = { min = 0 max = 20 } }
+		}
+		change_variable = {
+			name = actualMover
+			multiply = local_var:trying_to_move_num
+		}
+		change_variable = {
+			name = actualMover
+			divide = 100
+		}
+	}
+	option = {
+		name = "OK"
+		while = {
+			count = var:actualMover
+			limit = { treasury >= 100 }
+			random_in_list = {
+				list = trying_to_move_list
+				remove_from_list = trying_to_move_list
+				save_scope_as = pop_from_list
+				ROOT = {
+					random_owned_province = {
+		        limit = { 
+		        	total_population < population_cap 
+		        	dominant_province_culture = scope:pop_from_list.culture
+		        }
+						save_scope_as = popTarget
+					}
+				}
+				if = {
+					limit = { exists = scope:popTarget }
+					country = { #previous pop country
+						add_treasury = 5
+					}
+					move_pop = scope:popTarget
+					ROOT = {
+						add_treasury = -10
+					}
 				}
 			}
 		}
