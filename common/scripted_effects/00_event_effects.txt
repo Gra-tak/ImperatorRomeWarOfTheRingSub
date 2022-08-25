@@ -2494,273 +2494,56 @@ add_relevant_loyal_subunit_effect = {
 	if = {
 		limit = {
 			exists = commander
-			commander = {
-				OR = {
-					has_culture_group = east_levantine
-					has_culture_group = south_levantine
-					has_culture_group = numidian
-				}
-			}
 		}
 		commander = {
 			add_gold = -20
 		}
-		random_list = {
-			25 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = camel
-								trade_goods = camel
-							}
-						}
-					}
+		if = {
+			limit = {
+				commander = {
+					has_culture = rangers
 				}
-				add_loyal_subunit = camels
 			}
-			25 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
+			add_loyal_subunit = rangers
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture = dolamroth
 				}
-				add_loyal_subunit = light_cavalry
 			}
-			25 = {
-				add_loyal_subunit = light_infantry
-			}
-			25 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
-				}
-				add_loyal_subunit = heavy_cavalry
+			random_list = {
+				50 = { add_loyal_subunit = dol_amroth_knights }
+				50 = { add_loyal_subunit = dunedain_infantry }
 			}
 		}
-	}
-	else_if = {
-		limit = {
-			exists = commander
-			commander = {
-				OR = {
-					has_culture_group = west_levantine
-					has_culture_group = hellenic
-					has_culture_group = latin
-					has_culture_group = persia
-					has_culture_group = anatolian
-					has_culture_group = caucasian
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = edain_group
 				}
+			}
+			random_list = {
+				60 = { add_loyal_subunit = dunedain_infantry }
+				20 = { add_loyal_subunit = dunedain_archers }
+				20 = { add_loyal_subunit = dunedain_cavalry }
 			}
 		}
-		commander = {
-			add_gold = -20
-		}
-		random_list = {
-			20 = {
-				add_loyal_subunit = light_infantry
-			}
-			30 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = iron
-								trade_goods = iron
-							}
-						}
-					}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = haldadian_group
 				}
-				add_loyal_subunit = heavy_infantry
 			}
-			20 = {
-				add_loyal_subunit = archers
-			}
-			20 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
-				}
-				add_loyal_subunit = light_cavalry
-			}
-			10 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = elephants
-								trade_goods = elephants
-							}
-						}
-					}
-				}
-				add_loyal_subunit = warelephant
+			random_list = {
+				60 = { add_loyal_subunit = light_infantry }
+				20 = { add_loyal_subunit = archers }
+				20 = { add_loyal_subunit = heavy_infantry }
 			}
 		}
-	}
-	else_if = {
-		limit = {
-			exists = commander
-			commander = {
-				OR = {
-					has_culture_group = aryan
-					has_culture_group = pracyan
-					has_culture_group = indian
-					has_culture_group = tibetan
-				}
-			}
-		}
-		commander = {
-			add_gold = -20
-		}
-		random_list = {
-			20 = {
-				add_loyal_subunit = light_infantry
-			}
-			10 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = iron
-								trade_goods = iron
-							}
-						}
-					}
-				}
-				add_loyal_subunit = heavy_infantry
-			}
-			30 = {
-				add_loyal_subunit = archers
-			}
-			20 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = elephants
-								trade_goods = elephants
-							}
-						}
-					}
-				}
-				add_loyal_subunit = warelephant
-			}
-			20 = {
-				add_loyal_subunit = chariots
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			exists = commander
-			commander = {
-				has_culture_group = scythia
-			}
-		}
-		commander = {
-			add_gold = -20
-		}
-		random_list = {
-			20 = {
-				add_loyal_subunit = light_infantry
-			}
-			20 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
-				}
-				add_loyal_subunit = heavy_cavalry
-			}
-			40 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = steppe_horses
-								trade_goods = steppe_horses
-							}
-						}
-					}
-				}
-				add_loyal_subunit = horse_archers
-			}
-			20 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
-				}
-				add_loyal_subunit = light_cavalry
-			}
-		}
-	}
-	else_if = {
-		limit = { exists = commander }
-		commander = {
-			add_gold = -20
-		}
-		random_list = {
-			20 = {
-				add_loyal_subunit = chariots
-			}
-			20 = {
-				add_loyal_subunit = light_infantry
-			}
-			40 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
-				}
-				add_loyal_subunit = light_cavalry
-			}
-			20 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = iron
-								trade_goods = iron
-							}
-						}
-					}
-				}
-				add_loyal_subunit = heavy_infantry
-			}
+		#TODO OTHERS (ALSO FIX VERSION ABOVE IF THAT IS ACTUALLY USED)
+		else = {
+			add_loyal_subunit = light_infantry
 		}
 	}
 }

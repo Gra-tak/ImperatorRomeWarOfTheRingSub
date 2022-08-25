@@ -68,6 +68,7 @@
  lotr_ruler_decisions.11.c:0 "Buy [SCOPE.GetRootScope.GetCountry.MakeScope.GetVariable('potential_targets_scope_3').GetProvince.GetName]"
  lotr_buy_wrong_culture_from_vassal:0 "Buy Province" 
  lotr_buy_wrong_culture_from_vassal_act:0 "Allows us to buy wrong cultured provinces from our subject." 
+ has_any_non_integrated_province:0 "Required to have any province with non integrated majority that you could buy."
  lotr_protect_the_free_people:0 "Defend the free poeple of Middle-earth"
  lotr_protect_the_free_people_desc:0 "At our borders, orcs are gathered and are enslaving and killing the free folks of Middle-earth. We have to make an end of this. Wo should we attack? Due this being a righteous cause, we will get strongly reduced aggressive expansion, as long as we do not attack anyone who isn't orcish and the war is going on."
  neighbor_age_of_the_orc:0 "Need to neighbor any country that has 'Age of the Orc' law"

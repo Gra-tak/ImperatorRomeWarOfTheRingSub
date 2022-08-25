@@ -208,7 +208,7 @@ declare_war_against_orcs = {
     limit = {
       NOR = {
         is_subject_type = tributary
-        is_subject_type = trival_vassal
+        is_subject_type = vassal_tribe
       }
       has_subject_loyalty >= 33
     }
