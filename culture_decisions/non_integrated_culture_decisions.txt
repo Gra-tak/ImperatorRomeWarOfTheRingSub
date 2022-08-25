@@ -175,6 +175,7 @@
 			scope:target_culture = {
 				NOT = { has_pop_type_right = citizen }
 				NOT = { has_pop_type_right = nobles }
+				always = no
 			}
 			scope:target_culture = {
 				NOT = { has_country_culture_modifier = right_of_marriage }

@@ -2931,7 +2931,7 @@ country_diplomacy.40 = {
 			NOT = { has_truce_with = overlord }
 			war = no
 			OR = {
-				num_of_cohorts > overlord.num_of_cohorts
+				# num_of_cohorts > overlord.num_of_cohorts
 				has_subject_loyalty < 35
 				AND = {
 					has_subject_loyalty < 50

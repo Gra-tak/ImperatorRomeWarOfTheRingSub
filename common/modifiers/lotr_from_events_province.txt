@@ -174,7 +174,7 @@ esgaroth_modifier = {
 ### Rohan Wonders ###
 ### Dwarvish Wonders ###
 erebor_modifier = {
-	fort_level = 5
+	fort_level = 3
 	local_defensive = 0.15
 	local_commerce_value_modifier = 0.5
 	local_population_capacity = 60
@@ -186,7 +186,7 @@ iron_hills_modifier = {
 moria_west_gate_modifier = {
 	local_commerce_value_modifier = 0.1
 	local_defensive = 0.05
-	fort_level = 5
+	fort_level = 3
 }
 celebdil_modifier = {
 	base_resources = 1
@@ -201,7 +201,7 @@ durins_tower_modifier = {
 	local_research_points_modifier = 0.05
 }
 moria_east_gate_modifier = {
-	fort_level = 5
+	fort_level = 3
 	local_defensive = 0.15
 }
 ### Sauron Wonders ###

@@ -334,10 +334,7 @@ lotr_ruler_decisions.7 = {
 		var:potential_targets_scope_1 = {
     	save_scope_as = orc_war_defender
 		}
-		declare_war_with_wargoal = {
-			war_goal = orc_wargoal
-			target = var:potential_targets_scope_1
-		}
+		declare_war_against_orcs = { TARGET = var:potential_targets_scope_1 }
 		trigger_event = {
   		id = lotr_ruler_decisions.8
 		}
@@ -348,10 +345,7 @@ lotr_ruler_decisions.7 = {
     	save_scope_as = orc_war_defender
 		}
 		trigger = { has_variable = potential_targets_scope_2 }
-		declare_war_with_wargoal = {
-			war_goal = orc_wargoal
-			target = var:potential_targets_scope_2
-		}
+    declare_war_against_orcs = { TARGET = var:potential_targets_scope_2 }
 		trigger_event = {
   		id = lotr_ruler_decisions.8
 		}
@@ -362,10 +356,7 @@ lotr_ruler_decisions.7 = {
     	save_scope_as = orc_war_defender
 		}
 		trigger = { has_variable = potential_targets_scope_3 }
-		declare_war_with_wargoal = {
-			war_goal = orc_wargoal
-			target = var:potential_targets_scope_3
-		}
+    declare_war_against_orcs = { TARGET = var:potential_targets_scope_3 }
 		trigger_event = {
   		id = lotr_ruler_decisions.8
 		}

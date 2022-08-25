@@ -33,9 +33,11 @@ orc_war_ae_modifier = {
 }
 
 encourage_migration = {
+	cultural_integration_speed_modifier = -4
 }
 
 encourage_migration_to_overlord = {
+	culture_nobles_output = 0.001
 }
 
 devoted_vassal = {
