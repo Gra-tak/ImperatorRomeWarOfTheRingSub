@@ -1,0 +1,85 @@
+﻿# object={
+# 	name="wonder_amon_sul"
+# 	clamp_to_water_level=yes
+# 	render_under_water=yes
+# 	generated_content=no
+# 	layer="monument_layer"
+# 	entity="wonder_amon_sul_entity"
+# 	count=1
+# 	transform="3270.959229 -0.722168 3000.917969 -0.000000 -0.000000 -0.000000 1.000000 1.000000 1.000000 1.000000
+# "}
+object={
+	name="wonder_dol_amroth"
+	clamp_to_water_level=yes
+	render_under_water=yes
+	generated_content=no
+	layer="monument_layer"
+	entity="wonder_dol_amroth_entity"
+	count=1
+	transform="3608.149414 0.000000 2052.661377 -0.000000 -0.994469 -0.000000 0.105026 1.000000 1.000000 1.000000
+"}
+object={
+	name="wonder_gondor_beacon"
+	clamp_to_water_level=yes
+	render_under_water=yes
+	generated_content=no
+	layer="monument_layer"
+	entity="wonder_gondor_beacon_entity"
+	count=7
+	transform="4094.000000 0.000000 2224.000000 -0.000000 -0.500000 -0.000000 0.200000 1.200000 1.200000 1.200000
+4070.000000 0.000000 2242.000000 -0.000000 -0.500000 -0.000000 0.200000 1.200000 1.200000 1.200000
+4014.000000 0.000000 2268.000000 -0.000000 -0.900000 -0.000000 0.200000 1.200000 1.200000 1.200000
+3965.000000 0.000000 2287.000000 -0.000000 -0.900000 -0.000000 0.200000 1.200000 1.200000 1.200000
+3882.000000 0.000000 2318.000000 -0.000000 -0.900000 -0.000000 0.200000 1.200000 1.200000 1.200000
+3813.000000 0.000000 2326.000000 -0.000000 -0.900000 -0.000000 0.200000 1.200000 1.200000 1.200000
+3752.000000 0.000000 2350.000000 -0.000000 -0.900000 -0.000000 0.200000 1.200000 1.200000 1.200000
+"}
+object={
+	name="wonder_minas_tirith"
+	clamp_to_water_level=yes
+	render_under_water=yes
+	generated_content=no
+	layer="monument_layer"
+	entity="wonder_minas_tirith_entity"
+	count=1
+	transform="4104.744141 -0.200000 2213.479980 -0.000000 -0.632529 -0.000000 0.774536 1.000000 0.950000 1.000000
+"}
+object={
+	name="wonder_moria_tower"
+	clamp_to_water_level=yes
+	render_under_water=yes
+	generated_content=no
+	layer="monument_layer"
+	entity="wonder_moria_tower_entity"
+	count=1
+	transform="3648.896729 -6.173096 2763.913086 -0.000000 -0.000000 -0.000000 1.000000 1.000000 1.000000 1.000000
+"}
+object={
+	name="wonder_orthanc"
+	clamp_to_water_level=yes
+	render_under_water=no
+	generated_content=no
+	layer="monument_layer"
+	entity="orthanc_entity"
+	count=1
+	transform="863.885803 0.000000 3238.776855 -0.000000 -0.000000 -0.000000 1.000000 1.000000 1.000000 1.000000
+"}
+# object={
+# 	name="wonder_rhudaur_tower"
+# 	clamp_to_water_level=yes
+# 	render_under_water=yes
+# 	generated_content=no
+# 	layer="monument_layer"
+# 	entity="wonder_rhudaur_tower_entity"
+# 	count=1
+# 	transform="3528.717041 -1.437012 3077.075684 -0.000000 0.977693 -0.000000 -0.210037 1.000000 1.000000 1.000000
+# "}
+object={
+	name="wonder_tharbad_castle"
+	clamp_to_water_level=yes
+	render_under_water=yes
+	generated_content=no
+	layer="monument_layer"
+	entity="wonder_tharbad_castle_entity"
+	count=0
+}
