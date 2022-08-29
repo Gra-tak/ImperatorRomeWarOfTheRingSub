@@ -528,3 +528,25 @@ lotr_ruler_decisions.11 = {
     name = "lotr_ruler_decisions.7.cancel"
   }
 }
+
+lotr_ruler_decisions.12 = {
+  type = country_event
+  title = "lotr_ruler_decisions.12.t"
+  desc = "lotr_ruler_decisions.12.desc"
+  picture = dunedain_patrol
+
+  left_portrait = current_ruler
+
+  immediate = {
+  }
+
+  option = {
+  	trigger = { war = no }
+    name = OK
+  }
+  option = {
+  	trigger = { war = yes }
+    name = "lotr_ruler_decisions.12.b"
+  }
+
+}

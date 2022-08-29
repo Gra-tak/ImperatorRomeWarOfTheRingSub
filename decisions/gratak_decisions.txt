@@ -84,6 +84,16 @@
 			}
 		}
 	}
+	levyReminderDecision = {
+		potential = { is_ai = no }
+		allow = {	}
+		effect = {
+			trigger_event = {
+				id = lotr_ruler_decisions.12
+				days = 244
+			}
+		}
+	}
 	end_all_wars_debug = {
 		potential = {
 			is_ai = no

@@ -377,3 +377,5 @@
  install_eunostos_egypt_reward_tt:0 "The Pasikratids may be released as subjects on [GetProvince('(int32)333').GetArea.GetName] in exchange for gold."
  removeVassalClaims:0 "Remove all your claims from subjects"
  removeVassalClaims_desc:0 "Remove all your claims from non-tributary, non-tribal subjects."
+ levyReminderDecision:0 "Remind levy disband"
+ levyReminderDecision_desc:0 "If you disband levies after 8 month they give some military experience. This decision just sends a reminder event in 8 month."
