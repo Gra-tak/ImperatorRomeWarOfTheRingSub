@@ -1,6 +1,7 @@
 ﻿country_decisions = {
 	become_tribal_chiefdom = {
 		potential = {
+			is_ai = no
 			num_of_cities >= 1
 			OR = { 
 				government = tribal_federation

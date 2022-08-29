@@ -1257,7 +1257,7 @@ country = {
 		}
 		
 		BEO = { #Beornings
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			family=11
 			diplomatic_stance=appeasement_stance
 			primary_culture = woodsmen
@@ -1292,7 +1292,7 @@ country = {
 		
 			#The 9 major tribes of the dunlendings#
 			ATH = { #Arth-Lûth
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = dunlending
 			religion = iluvatarism
@@ -1324,7 +1324,7 @@ country = {
 		}
 
 			AVA = { #Avanc-Lûth
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = dunlending
 			religion = iluvatarism
@@ -1355,7 +1355,7 @@ country = {
 		}
 		
 			BLE = { #Bleid-Lûth
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = dunlending
 			religion = iluvatarism
@@ -1386,7 +1386,7 @@ country = {
 		}
 		
 			BRA = { #Brân-Lûth
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = dunlending
 			religion = iluvatarism
@@ -1418,7 +1418,7 @@ country = {
 		}
 		
 			CRU = { #Caru-Lûth
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = dunlending
 			religion = iluvatarism
@@ -1450,7 +1450,7 @@ country = {
 		}
 		
 			DRA = { #Draig-Lûth
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = dunlending
 			religion = iluvatarism
@@ -1482,7 +1482,7 @@ country = {
 		}
 		
 			HEB = { #Hebog-Lûth
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = dunlending
 			religion = iluvatarism
@@ -1514,7 +1514,7 @@ country = {
 		}
 		
 			TUR = { #Turch-Lûth
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = dunlending
 			religion = iluvatarism
@@ -1546,7 +1546,7 @@ country = {
 		}
 		
 			UCH = { #Uch-Lûth
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = dunlending
 			religion = iluvatarism
@@ -1580,7 +1580,7 @@ country = {
 		#Tribes of Harondor
 
 			XXA = { #Poros
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = harondorian
 			religion = iluvatarism
@@ -1603,7 +1603,7 @@ country = {
 		}	
 
 			XXB = { #Methir
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = harondorian
 			religion = iluvatarism
@@ -1626,7 +1626,7 @@ country = {
 		}
 
 			XXC = { #Ered Eryn
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = harondorian
 			religion = iluvatarism
@@ -1649,7 +1649,7 @@ country = {
 		}
 
 			XXD = { #Harfalas
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = harondorian
 			religion = iluvatarism
@@ -1672,7 +1672,7 @@ country = {
 		}
 
 			XXE = { #Aegardh
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = harondorian
 			religion = iluvatarism
@@ -1695,7 +1695,7 @@ country = {
 		}
 
 			XXF = { #Carmenthir
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = harondorian
 			religion = iluvatarism
@@ -1718,7 +1718,7 @@ country = {
 		}	
 
 			XXG = { #Harnendor
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = harondorian
 			religion = iluvatarism
@@ -1926,7 +1926,7 @@ country = {
 
 		
 			FOR = { #Forlefnui
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = eredrim
 			religion = iluvatarism
@@ -1949,7 +1949,7 @@ country = {
 		}
 		
 			EHI = { #Sardani
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = eredrim
 			religion = iluvatarism
@@ -1972,7 +1972,7 @@ country = {
 		}
 		
 			ISH = { #Ishmalogim
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = eredrim
 			religion = eastern_animism
@@ -2147,7 +2147,7 @@ country = {
 		
 		
 			SAR = { #Saralain
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = druwaithing
 			religion = iluvatarism
@@ -2170,7 +2170,7 @@ country = {
 		}
 		
 			XXL = { #Oyer
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = druwaithing
 			religion = iluvatarism
@@ -2193,7 +2193,7 @@ country = {
 		}
 		
 			XXM = { #Ramradas
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = druwaithing
 			religion = iluvatarism
@@ -2216,7 +2216,7 @@ country = {
 		}
 		
 			XXN = { #Lossoth
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = lossoth
 			religion = iluvatarism
@@ -2248,7 +2248,7 @@ country = {
 		}
 		
 			XXO = { #Rhudaurim
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = rhudaurim
 			religion = iluvatarism
@@ -2294,7 +2294,7 @@ country = {
 		}
 		
 			XXP = { #Ashkai
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = goblins
 			religion = melkorism
@@ -2317,7 +2317,7 @@ country = {
 		}
 		
 			XXQ = { #Carn Dûm
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = goblins
 			religion = melkorism
@@ -2349,7 +2349,7 @@ country = {
 		}
 		
 			XXR = { #Lhûn Riverfolk
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = druwaithing
 			religion = iluvatarism
@@ -2622,7 +2622,7 @@ country = {
 		}		
 		
 			XXU = { #Riwdor
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = woodsmen
 			religion = iluvatarism
@@ -2677,7 +2677,7 @@ country = {
 		}			
 		
 			XXX = { #Vrakyabaurg
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = northmen
 			religion = iluvatarism 
@@ -2700,7 +2700,7 @@ country = {
 		}	
 		
 			XXY = { #Gundabad
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = goblins
 			religion = melkorism
@@ -2723,7 +2723,7 @@ country = {
 		}	
 		
 			XXZ = { #Daoine
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = daoine
 			religion = iluvatarism
@@ -2746,7 +2746,7 @@ country = {
 		}	
 		
 			XAX = { #Haurtarang
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = druwaithing
 			religion = iluvatarism
@@ -3090,7 +3090,7 @@ country = {
 		}
 		
 			QAR = { #Qarzag
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = qarsag
 			religion = eastern_animism
@@ -3145,7 +3145,7 @@ country = {
 		}
 		
 			XMX = { #Dol Tinereb
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = silvan
 			religion = iluvatarism
@@ -3456,7 +3456,7 @@ country = {
 			}	
 		}
 		MAR = { #Mardruak
-			government = tribal_chiefdom
+			government = tribal_kingdom
 			diplomatic_stance=trading_stance
 			primary_culture = haradrim
 			religion = eastern_animism
