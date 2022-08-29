@@ -6,3 +6,10 @@
 # 	multiply = 10
 # 	floor = yes
 # }
+
+country_count_integrated_pops = {
+  value = 0
+  every_integrated_culture = {
+    add = country_culture_pop_count
+  }
+}

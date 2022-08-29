@@ -15,12 +15,11 @@
 			ROOT = { integrate_country_culture = scope:target_culture }
 		}
 		ai_will_do = {
-			factor = 100
+			factor = 0
 			modifier = {
-				factor = 0
-				culture_pops_in_country = {
-					target = scope:target_culture
-					value <= 10
+				add = 100
+				scope:target_culture = {
+					is_large_culture = yes
 				}
 			}
 		}

@@ -71,6 +71,7 @@ lotr_maintenance.1 = {
 }
 
 
+#pseudo diloyal vassals in civil wars
 lotr_maintenance.2 = { 
   type = country_event
   hidden = yes
@@ -117,6 +118,25 @@ lotr_maintenance.2 = {
           }
         }
       }
+    }
+  }
+}
+
+#accept cultures for AI (somehow they seem to fail to use the cultural decision)
+lotr_maintenance.3 = { 
+  type = country_event
+  hidden = yes
+  trigger = {
+    is_ai = yes
+  }
+  immediate = {
+    every_country_culture = {
+      limit = {
+        is_integrated = no
+        culture.culture_group = ROOT.country_culture_group
+        is_large_culture = yes
+      }
+      ROOT = { integrate_country_culture = PREV }
     }
   }
 }
