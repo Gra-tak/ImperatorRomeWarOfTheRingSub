@@ -97,11 +97,13 @@ lotr_migration_events.1 = {
 					limit = {
 						any_country = {
 							culture = PREV.culture
+							any_owned_province = { total_population < population_cap }
 						}
 					}
 					random_country = {
 						limit = {
 							culture = PREV.culture
+							any_owned_province = { total_population < population_cap }
 						}
 						weight = {
 							modifier = {
@@ -114,6 +116,7 @@ lotr_migration_events.1 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -122,6 +125,7 @@ lotr_migration_events.1 = {
 				else_if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							OR = {
 								any_integrated_culture = {
 									this.culture = scope:pop.culture
@@ -132,6 +136,7 @@ lotr_migration_events.1 = {
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							OR = {
 								any_integrated_culture = {
 									this.culture = scope:pop.culture
@@ -159,6 +164,7 @@ lotr_migration_events.1 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -267,11 +273,13 @@ lotr_migration_events.2 = {
 				if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							culture = PREV.culture
 						}
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							culture = PREV.culture
 						}
 						weight = {
@@ -281,6 +289,7 @@ lotr_migration_events.2 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -289,11 +298,13 @@ lotr_migration_events.2 = {
 				else_if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							culture.culture_group = PREV.culture.culture_group
 						}
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
@@ -303,6 +314,7 @@ lotr_migration_events.2 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -415,11 +427,13 @@ lotr_migration_events.3 = {
 				if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							culture = PREV.culture
 						}
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							culture = PREV.culture
 						}
 						weight = {
@@ -429,6 +443,7 @@ lotr_migration_events.3 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -437,12 +452,14 @@ lotr_migration_events.3 = {
 				else_if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							culture.culture_group = PREV.culture.culture_group
 							NOT = { primary_culture = nandor }
 						}
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							culture.culture_group = PREV.culture.culture_group
 							NOT = { primary_culture = nandor }
 						}
@@ -453,6 +470,7 @@ lotr_migration_events.3 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -561,11 +579,13 @@ lotr_migration_events.4 = {
 				if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							culture = PREV.culture
 						}
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							culture = PREV.culture
 						}
 						weight = {
@@ -575,6 +595,7 @@ lotr_migration_events.4 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -583,11 +604,13 @@ lotr_migration_events.4 = {
 				else_if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							culture.culture_group = PREV.culture.culture_group
 						}
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
@@ -597,6 +620,7 @@ lotr_migration_events.4 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -634,11 +658,13 @@ lotr_migration_events.5 = {
 				if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							culture = PREV.culture
 						}
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							culture = PREV.culture
 						}
 						weight = {
@@ -648,6 +674,7 @@ lotr_migration_events.5 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -656,11 +683,13 @@ lotr_migration_events.5 = {
 				else_if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							culture.culture_group = PREV.culture.culture_group
 						}
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
@@ -670,6 +699,7 @@ lotr_migration_events.5 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -800,11 +830,13 @@ lotr_migration_events.6 = {
 				if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							culture = PREV.culture
 						}
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							culture = PREV.culture
 						}
 						weight = {
@@ -814,6 +846,7 @@ lotr_migration_events.6 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -822,11 +855,13 @@ lotr_migration_events.6 = {
 				else_if = {
 					limit = {
 						any_country = {
+							any_owned_province = { total_population < population_cap }
 							culture.culture_group = PREV.culture.culture_group
 						}
 					}
 					random_country = {
 						limit = {
+							any_owned_province = { total_population < population_cap }
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
@@ -836,6 +871,7 @@ lotr_migration_events.6 = {
 							}
 						}
 						random_owned_province = {
+							limit = { total_population < population_cap }
 							save_scope_as = target
 						}
 					}
@@ -969,6 +1005,7 @@ lotr_migration_events.7 = {
 								}
 							}
 							random_owned_province = {
+								limit = { total_population < population_cap }
 								save_scope_as = target
 							}
 						}
@@ -996,6 +1033,7 @@ lotr_migration_events.7 = {
 								}
 							}
 							random_owned_province = {
+								limit = { total_population < population_cap }
 								save_scope_as = target
 							}
 						}
