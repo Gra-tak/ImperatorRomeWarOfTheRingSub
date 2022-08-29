@@ -1,12 +1,13 @@
 ﻿countries_sauron_wants_attacked = {
   religion = iluvatarism
   is_subject = no
+  has_land = yes
   NOT = { war_with = ROOT }
   OR = {
-    THIS = c:GON
-    THIS = c:ROH
-    THIS = c:LOR
-    #balins colony though I don't know how
+    tag = GON
+    tag = ROH
+    tag = LOR
+    tag = BLC
     
     #neighbors
     any_owned_province = {
