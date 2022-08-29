@@ -33,7 +33,10 @@ lotr_frodos_mission_events.10 = {
       every_in_list = {
         list = fellowship
         if = {
-          limit = { exists = c:CAR }
+          limit = {
+            exists = c:CAR
+            c:CAR = { has_land = yes }
+          }
           move_country = c:CAR
         }
         else = {
@@ -42,7 +45,10 @@ lotr_frodos_mission_events.10 = {
       }
       scope:gandalf = {
         if = {
-          limit = { exists = c:XVX }
+          limit = {
+            exists = c:XVX
+            c:XVX = { has_land = yes }
+          }
           move_country = c:XVX
           c:XVX = {
             imprison = {
@@ -102,7 +108,10 @@ lotr_frodos_mission_events.20 = {
     every_in_list = {
       list = fellowship
       if = {
-        limit = { exists = c:IML }
+        limit = {
+          exists = c:IML
+          c:IML = { has_land = yes }
+        }
         move_country = c:IML
       }
       else = {
@@ -167,7 +176,10 @@ lotr_frodos_mission_events.40 = {
     every_in_list = {
       list = fellowship
       if = {
-        limit = { exists = c:LOR }
+        limit = {
+          exists = c:LOR
+          c:LOR = { has_land = yes }
+        }
         move_country = c:LOR
       }
       else = {
@@ -195,7 +207,10 @@ lotr_frodos_mission_events.45 = {
     every_in_list = {
       list = fellowship
       if = {
-        limit = { exists = c:ROH }
+        limit = {
+          exists = c:ROH
+          c:ROH = { has_land = yes }
+        }
         move_country = c:ROH
       }
       else = {
@@ -299,7 +314,10 @@ lotr_frodos_mission_events.60 = {
     every_in_list = {
       list = fellowshipStayRohan
       if = {
-        limit = { exists = c:GON }
+        limit = {
+          exists = c:GON
+          c:GON = { has_land = yes }
+        }
         move_country = c:GON
       }
       else = {
@@ -328,7 +346,10 @@ lotr_frodos_mission_events.70 = {
     every_in_list = {
       list = frodoSam
       if = {
-        limit = { exists = c:MOR }
+        limit = {
+          exists = c:MOR
+          c:MOR = { has_land = yes }
+        }
         move_country = c:MOR
       }
       else = {

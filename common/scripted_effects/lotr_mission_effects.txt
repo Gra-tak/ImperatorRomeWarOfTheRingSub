@@ -54,7 +54,10 @@ frodo_to_ithilien = {
   every_in_list = {
     list = frodoSam
     if = {
-      limit = { exists = c:ROI }
+      limit = {
+        exists = c:ROI
+        c:ROI = { has_land = yes }
+      }
       move_country = c:ROI
     }
     else = { #todo: possibly already move to mordor here
@@ -67,7 +70,10 @@ gandalf_to_gondor = {
   every_in_list = {
     list = fellowshipToGondor
     if = {
-      limit = { exists = c:GON }
+      limit = {
+        exists = c:GON
+        c:GON = { has_land = yes }
+      }
       move_country = c:GON
     }
     else = {
