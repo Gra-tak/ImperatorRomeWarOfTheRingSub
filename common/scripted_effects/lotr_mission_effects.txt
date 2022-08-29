@@ -197,6 +197,31 @@ declare_war_with_potential_truce = {
     add_war_exhaustion = -1
     add_aggressive_expansion = -25
   }
+  every_current_war = {
+    save_scope_as = targetWar
+    PREV = {
+		  every_subject = {
+		    limit = {
+					save_temporary_scope_as = temp_subject_war_scope
+					scope:targetWar = {
+						NOR = {
+							any_war_attacker = { this = scope:temp_subject_war_scope }
+							any_war_defender = { this = scope:temp_subject_war_scope }
+						}
+					}
+		      NOR = {
+		        is_subject_type = tributary
+		        is_subject_type = vassal_tribe
+		      }
+		      has_subject_loyalty >= 33
+		    }
+		    add_to_war = {
+		      target = scope:targetWar
+		      attacker = yes
+		    }
+		  }
+    }
+  }
 }
 
 declare_war_against_orcs = {

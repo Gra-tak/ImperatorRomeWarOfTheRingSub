@@ -626,6 +626,7 @@ tribal_reform = {
 			current_ruler = {
 				popularity >= 80
 			}
+			NOT = { country_culture_group = orcs_group }
 		} 
 		
 		final = yes
