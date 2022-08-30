@@ -152,11 +152,9 @@ lotr_maintenance.4 = {
     every_region = {
       limit = {
         any_region_province = {
-          limit = {
-            has_owner = yes
-            owner = {
-              primary_culture = goblins
-            }
+          has_owner = yes
+          owner = {
+            primary_culture = goblins
           }
         }
       }
@@ -164,23 +162,21 @@ lotr_maintenance.4 = {
         limit = {
           OR = {
             has_owner = no
-            primary_culture = goblins
+            owner = { religion = melkorism }
           }
         }
         set_variable = {
           name = hasGoblinsRaidsFlag
-          duration = 365
+          days = 365
         }
       }
     }
     every_region = {
       limit = {
         any_region_province = {
-          limit = {
-            has_owner = yes
-            owner = {
-              primary_culture = orcish
-            }
+          has_owner = yes
+          owner = {
+            primary_culture = orcish
           }
         }
       }
@@ -188,23 +184,21 @@ lotr_maintenance.4 = {
         limit = {
           OR = {
             has_owner = no
-            primary_culture = orcish
+            owner = { religion = melkorism }
           }
         }
         set_variable = {
           name = hasOrcRaidsFlag
-          duration = 365
+          days = 365
         }
       }
     }
     every_region = {
       limit = {
         any_region_province = {
-          limit = {
-            has_owner = yes
-            owner = {
-              primary_culture = urukhai
-            }
+          has_owner = yes
+          owner = {
+            primary_culture = urukhai
           }
         }
       }
@@ -212,53 +206,31 @@ lotr_maintenance.4 = {
         limit = {
           OR = {
             has_owner = no
-            primary_culture = urukhai
+            owner = { religion = melkorism }
           }
         }
         set_variable = {
           name = hasUrukRaidsFlag
-          duration = 365
+          days = 365
         }
       }
+    every_country = {
+      limit = {
+        NOT = { religion = melkorism }
+        is_ai = no
+      }
+      set_variable = {
+        name = golbin_raid_province_num
+        value = country_count_possibly_raided_provinces_goblins
+      }
+      set_variable = {
+        name = orc_raid_province_num
+        value = country_count_possibly_raided_provinces_orcs
+      }
+      set_variable = {
+        name = uruk_raid_province_num
+        value = country_count_possibly_raided_provinces_uruk
+      }
     }
-#    every_country = {
-#      limit = {
-#        primary_culture = goblins
-#      }
-#      every_owned_province = {
-#        every_neighbor_province = {
-#          set_variable = {
-#            name = hasGoblinsRaidsFlag
-#            duration = 365
-#          }
-#        }
-#      }
-#    }
-#    every_country = {
-#      limit = {
-#        primary_culture = orcish
-#      }
-#      every_owned_province = {
-#        every_neighbor_province = {
-#          set_variable = {
-#            name = hasOrcRaidsFlag
-#            duration = 365
-#          }
-#        }
-#      }
-#    }
-#    every_country = {
-#      limit = {
-#        primary_culture = urukhai
-#      }
-#      every_owned_province = {
-#        every_neighbor_province = {
-#          set_variable = {
-#            name = hasUrukRaidsFlag
-#            duration = 365
-#          }
-#        }
-#      }
-#    }
   }
 }

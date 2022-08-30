@@ -9,20 +9,21 @@ orc_raid_events.1 = {
 	
 	left_portrait = root.current_ruler
 	
-	goto_location = scope:orc_raid_event1_scope
+	goto_location = scope:orc_raid_target_province
 	
 	trigger = {
 		is_ai = no
 		NOT = { religion = melkorism }
 		any_owned_province = {
-			NOT = {
-				has_building = fortress_building
-			}
+      NOR = { 
+        has_building = fortress_building
+        has_variable = protected_against_raids
+      }
 			any_neighbor_province = {
-				OR = {
+				OR = { #check for this again here, see weight multiplier comment
 					has_owner = no
 					owner = { religion = melkorism }
-				}l
+				}
 				has_variable = hasGoblinsRaidsFlag
 			}
 		}
@@ -30,15 +31,43 @@ orc_raid_events.1 = {
 			has_variable = orc_raid_event1_variable
 		}
 	}
+
+	weight_multiplier = {
+		#don't do a zero modifier instead of the trigger. While this would be cheaper, the last eligable province might have disappeared in between the update of the variable and this event and that would lead to an error without having the trigger check
+		modifier = {
+			factor = 0.5
+			var:golbin_raid_province_num <= 2
+		}
+		modifier = {
+			factor = 0.5
+			var:golbin_raid_province_num <= 4
+		}
+		modifier = {
+			factor = 1.5
+			var:golbin_raid_province_num > 12
+		}
+		modifier = {
+			factor = 1.5
+			var:golbin_raid_province_num > 24
+		}
+		modifier = {
+			factor = 1.5
+			var:golbin_raid_province_num > 48
+		}
+	}
 	
 	immediate = {
 		random_owned_province = {
 			limit = {
-				NOT = {
-					has_building = fortress_building
-				}
+	      NOR = { 
+	        has_building = fortress_building
+	        has_variable = protected_against_raids
+	      }
 				any_neighbor_province = {
-					NOT = { owner = root }
+					OR = {
+						has_owner = no
+						owner = { religion = melkorism }
+					}
 					has_variable = hasGoblinsRaidsFlag
 				}
 			}
@@ -48,28 +77,39 @@ orc_raid_events.1 = {
 					has_city_status = no
 				}
 				modifier = {
-					factor = 10
+					factor = 5
+					total_population < 3
+				}
+				modifier = {
+					factor = 2
 					total_population < 6
 				}
 			}
-			save_scope_as = orc_raid_event1_scope
+			save_scope_as = orc_raid_target_province
 		}
 		set_variable = {
 			name = orc_raid_event1_variable
-			days = 1825
+			days = 1825 #5 years no raids anywhere
 		}
 	}
 	
 	option = {
 		name = orc_raid_events.1.a
-		custom_tooltip = "orc_raid_events.1.a.tt"
+		# custom_tooltip = "orc_raid_events.1.a.tt"
+		custom_tooltip = "orc_raid_province_protected"
 		add_manpower = -2
 		add_stability = 5
+		scope:orc_raid_target_province = {
+			set_variable = {
+				name = protected_against_raids
+				days = 18250 #50 years no raids in this province. May reduce the total likelyhood as the number of possible provinces goes down (see weight_multiplier)
+			}
+		}
 	}
 	option = {
 		name = orc_raid_events.1.b
-		custom_tooltip = "orc_raid_events.1.b.tt"
-		scope:orc_raid_event1_scope = {
+		# custom_tooltip = "orc_raid_events.1.b.tt"
+		scope:orc_raid_target_province = {
 			add_province_modifier = {
 				name = merchants_killed_orcs
 				duration = 220
@@ -78,11 +118,8 @@ orc_raid_events.1 = {
 	}
 	option = {
 		name = orc_raid_events.1.c
-		custom_tooltip = "orc_raid_events.1.c.tt"
-		add_treasury = {
-			subtract = root.has_monthly_income
-			multiply = 6
-		}
+		# custom_tooltip = "orc_raid_events.1.c.tt"
+		add_treasury = capped_loss_6
 	}
 }
 
@@ -95,88 +132,65 @@ orc_raid_events.2 = {
 	
 	left_portrait = root.current_ruler
 	
-	goto_location = scope:orc_raid_event2_scope
+	goto_location = scope:orc_raid_target_province
 	
 	trigger = {
 		is_ai = no
-		religion = iluvatarism
-		c:XJX = { has_land = yes } #Orcs of Moria
-		capital_scope = {
-			OR = {
-				is_in_region = forochel_region
-				is_in_region = forlindon_region
-				is_in_region = numeriador_region
-				is_in_region = mithlond_region
-				is_in_region = harlindon_region
-				is_in_region = tawar_norndor_region
-				is_in_region = fortund_region
-				is_in_region = siragale_region
-				is_in_region = arthedain_region
-				is_in_region = angmar_region
-				is_in_region = dyr_erib_region
-				is_in_region = mintyrnath_region
-				is_in_region = cardolan_region
-				is_in_region = minhiriath_region
-				is_in_region = enedhwaith_region
-				is_in_region = druwaith_region
-				is_in_region = andrast_region
-				is_in_region = anfalas_region
-				is_in_region = hairaverkien_region
-				is_in_region = dunendor_region
-				is_in_region = dor_wathui_region
-				is_in_region = eregion_region
-				is_in_region = rhudaur_region
-				is_in_region = pend_hithaeglir_region
-				is_in_region = anduin_region
-				is_in_region = lorien_region
-				is_in_region = rhuvenlhad_region
-				is_in_region = calenardhon_region
-				is_in_region = eryn_galen_region
-				is_in_region = ered_mithrin_region
-				is_in_region = uvanwaith_region
-				is_in_region = lamedon_region
-				is_in_region = belfalas_region
-				is_in_region = anorien_region
-				is_in_region = lebennin_region
-				is_in_region = ithilien_region
-			}
-		}
+		NOT = { religion = melkorism }
 		any_owned_province = {
-			NOT = {
-				has_building = fortress_building
-			}
+      NOR = { 
+        has_building = fortress_building
+        has_variable = protected_against_raids
+      }
 			any_neighbor_province = {
-				NOT = { owner = root }
 				OR = {
-					terrain = hills
-					terrain = mountains
-					terrain = forest
-					terrain = farmland
+					has_owner = no
+					owner = { religion = melkorism }
 				}
+				has_variable = hasOrcRaidsFlag
 			}
 		}
 		NOT = {
-			OR = {
-				has_variable = orc_raid_event2_variable
-				has_variable = orc_raid_event2_defended_variable
-			}
+			has_variable = orc_raid_event2_variable
+		}
+	}
+
+	weight_multiplier = {
+		modifier = {
+			factor = 0.5
+			var:orc_raid_province_num <= 2
+		}
+		modifier = {
+			factor = 0.5
+			var:orc_raid_province_num <= 4
+		}
+		modifier = {
+			factor = 1.5
+			var:orc_raid_province_num > 12
+		}
+		modifier = {
+			factor = 1.5
+			var:orc_raid_province_num > 24
+		}
+		modifier = {
+			factor = 1.5
+			var:orc_raid_province_num > 48
 		}
 	}
 	
 	immediate = {
 		random_owned_province = {
 			limit = {
-				NOT = {
-					has_building = fortress_building
-				}
+	      NOR = { 
+	        has_building = fortress_building
+	        has_variable = protected_against_raids
+	      }
 				any_neighbor_province = {
-					NOT = { owner = root }
 					OR = {
-						terrain = hills
-						terrain = mountains
-						terrain = forest
-						terrain = farmland
+						has_owner = no
+						owner = { religion = melkorism }
 					}
+					has_variable = hasOrcRaidsFlag
 				}
 			}
 			weight = {
@@ -185,22 +199,25 @@ orc_raid_events.2 = {
 					has_city_status = no
 				}
 				modifier = {
-					factor = 300
-					has_city_status = no
+					factor = 5
+					total_population < 3
+				}
+				modifier = {
+					factor = 2
 					total_population < 6
 				}
 			}
-			save_scope_as = orc_raid_event2_scope
+			save_scope_as = orc_raid_target_province
 		}
 		set_variable = {
 			name = orc_raid_event2_variable
-			days = 1825
+			days = 1825 #5 years no raids anywhere
 		}
 	}
 	
 	option = {
 		name = orc_raid_events.2.a
-		custom_tooltip = "orc_raid_events.2.a.tt"
+		# custom_tooltip = "orc_raid_events.2.a.tt"
 		add_stability = -5
 		current_ruler = {
 			add_popularity = subtract_popularity_small
@@ -209,11 +226,14 @@ orc_raid_events.2 = {
 	
 	option = {
 		name = orc_raid_events.2.b
-		custom_tooltip = "orc_raid_events.2.b.tt"
+		# custom_tooltip = "orc_raid_events.2.b.tt"
+		custom_tooltip = "orc_raid_province_protected"
 		add_manpower = -2
-		set_variable = {
-			name = orc_raid_event2_defended_variable
-			days = 3650 # 10 years
+		scope:orc_raid_target_province = {
+			set_variable = {
+				name = protected_against_raids
+				days = 18250 #50 years no raids in this province. May reduce the total likelyhood as the number of possible provinces goes down (see weight_multiplier)
+			}
 		}
 		current_ruler = {
 			add_popularity = popularity_large
@@ -221,11 +241,8 @@ orc_raid_events.2 = {
 	}
 	option = {
 		name = orc_raid_events.2.c
-		custom_tooltip = "orc_raid_events.2.c.tt"
-		add_treasury = {
-			subtract = root.has_monthly_income
-			multiply = 6
-		}
+		# custom_tooltip = "orc_raid_events.2.c.tt"
+		add_treasury = capped_loss_6
 	}
 }
 
@@ -238,85 +255,65 @@ orc_raid_events.3 = {
 	
 	left_portrait = root.current_ruler
 	
-	goto_location = scope:orc_raid_event3_scope
+	goto_location = scope:orc_raid_target_province
 	
 	trigger = {
 		is_ai = no
-		religion = iluvatarism
-		c:XJX = { has_land = yes } #Orcs of Moria
-		capital_scope = {
-			OR = {
-				is_in_region = forochel_region
-				is_in_region = forlindon_region
-				is_in_region = numeriador_region
-				is_in_region = mithlond_region
-				is_in_region = harlindon_region
-				is_in_region = tawar_norndor_region
-				is_in_region = fortund_region
-				is_in_region = siragale_region
-				is_in_region = arthedain_region
-				is_in_region = angmar_region
-				is_in_region = dyr_erib_region
-				is_in_region = mintyrnath_region
-				is_in_region = cardolan_region
-				is_in_region = minhiriath_region
-				is_in_region = enedhwaith_region
-				is_in_region = druwaith_region
-				is_in_region = andrast_region
-				is_in_region = anfalas_region
-				is_in_region = hairaverkien_region
-				is_in_region = dunendor_region
-				is_in_region = dor_wathui_region
-				is_in_region = eregion_region
-				is_in_region = rhudaur_region
-				is_in_region = pend_hithaeglir_region
-				is_in_region = anduin_region
-				is_in_region = lorien_region
-				is_in_region = rhuvenlhad_region
-				is_in_region = calenardhon_region
-				is_in_region = eryn_galen_region
-				is_in_region = ered_mithrin_region
-				is_in_region = uvanwaith_region
-				is_in_region = lamedon_region
-				is_in_region = belfalas_region
-				is_in_region = anorien_region
-				is_in_region = lebennin_region
-				is_in_region = ithilien_region
-			}
-		}
+		NOT = { religion = melkorism }
 		any_owned_province = {
-			NOT = {
-				has_building = fortress_building
-			}
+      NOR = { 
+        has_building = fortress_building
+        has_variable = protected_against_raids
+      }
 			any_neighbor_province = {
-				NOT = { owner = root }
 				OR = {
-					terrain = hills
-					terrain = mountains
-					terrain = forest
-					terrain = farmland
+					has_owner = no
+					owner = { religion = melkorism }
 				}
+				has_variable = hasUrukRaidsFlag
 			}
 		}
 		NOT = {
 			has_variable = orc_raid_event3_variable
 		}
 	}
+
+	weight_multiplier = {
+		modifier = {
+			factor = 0.5
+			var:uruk_raid_province_num <= 2
+		}
+		modifier = {
+			factor = 0.5
+			var:uruk_raid_province_num <= 4
+		}
+		modifier = {
+			factor = 1.5
+			var:uruk_raid_province_num > 12
+		}
+		modifier = {
+			factor = 1.5
+			var:uruk_raid_province_num > 24
+		}
+		modifier = {
+			factor = 1.5
+			var:uruk_raid_province_num > 48
+		}
+	}
 	
 	immediate = {
 		random_owned_province = {
 			limit = {
-				NOT = {
-					has_building = fortress_building
-				}
+	      NOR = { 
+	        has_building = fortress_building
+	        has_variable = protected_against_raids
+	      }
 				any_neighbor_province = {
-					NOT = { owner = root }
 					OR = {
-						terrain = hills
-						terrain = mountains
-						terrain = forest
-						terrain = farmland
+						has_owner = no
+						owner = { religion = melkorism }
 					}
+					has_variable = hasUrukRaidsFlag
 				}
 			}
 			weight = {
@@ -325,49 +322,53 @@ orc_raid_events.3 = {
 					has_city_status = no
 				}
 				modifier = {
-					factor = 0
-					has_city_status = no
-					num_of_fortress_building > 0
+					factor = 5
+					total_population < 3
 				}
 				modifier = {
-					factor = 300
+					factor = 2
 					total_population < 6
 				}
-				modifier = {
-					factor = 500
-					has_city_status = no
-					num_of_fortress_building = 0
-				}
 			}
-			save_scope_as = orc_raid_event3_scope
+			save_scope_as = orc_raid_target_province
 		}
 		set_variable = {
 			name = orc_raid_event3_variable
-			days = 1825
+			days = 1825 #5 years no raids anywhere
 		}
 	}
 	
 	option = {
 		name = orc_raid_events.3.a
-		custom_tooltip = "orc_raid_events.3.a.tt"
-		add_manpower = -2
-		add_stability = 5
+		# custom_tooltip = "orc_raid_events.3.a.tt"
+		custom_tooltip = "orc_raid_province_protected"
+		add_manpower = -3
+		scope:orc_raid_target_province = {
+			set_variable = {
+				name = protected_against_raids
+				days = 18250 #50 years no raids in this province. May reduce the total likelyhood as the number of possible provinces goes down (see weight_multiplier)
+			}
+		}
+		current_ruler = {
+			add_popularity = popularity_large
+		}
 	}
 	option = {
 		name = orc_raid_events.3.b
-		custom_tooltip = "orc_raid_events.3.b.tt"
-		add_political_influence = -10
+		# custom_tooltip = "orc_raid_events.3.b.tt"
+		scope:orc_raid_target_province = {
+			random_pops_in_province = {
+				kill_pop = yes
+			}
+		}
 		current_ruler = {
 			add_popularity = subtract_popularity_small
 		}
 	}
 	option = {
 		name = orc_raid_events.3.c
-		custom_tooltip = "orc_raid_events.3.c.tt"
-		add_treasury = {
-			subtract = root.has_monthly_income
-			multiply = 6
-		}
+		# custom_tooltip = "orc_raid_events.3.c.tt"
+		add_treasury = capped_loss_6
 	}
 }
 
@@ -379,58 +380,31 @@ orc_raid_events.4 = {
 	picture = event_orcs_burning
 	
 	left_portrait = root.current_ruler
+	right_portrait = scope:neighbor.current_ruler
 	
-	goto_location = scope:orc_raid_event4_province
-	
+	goto_location = scope:orc_raid_target_province
+
 	trigger = {
 		is_ai = no
-		religion = iluvatarism
-		c:XJX = { has_land = yes } #Orcs of Moria
-		capital_scope = {
-			OR = {
-				is_in_region = forochel_region
-				is_in_region = forlindon_region
-				is_in_region = numeriador_region
-				is_in_region = mithlond_region
-				is_in_region = harlindon_region
-				is_in_region = tawar_norndor_region
-				is_in_region = fortund_region
-				is_in_region = siragale_region
-				is_in_region = arthedain_region
-				is_in_region = angmar_region
-				is_in_region = dyr_erib_region
-				is_in_region = mintyrnath_region
-				is_in_region = cardolan_region
-				is_in_region = minhiriath_region
-				is_in_region = enedhwaith_region
-				is_in_region = druwaith_region
-				is_in_region = andrast_region
-				is_in_region = anfalas_region
-				is_in_region = hairaverkien_region
-				is_in_region = dunendor_region
-				is_in_region = dor_wathui_region
-				is_in_region = eregion_region
-				is_in_region = rhudaur_region
-				is_in_region = pend_hithaeglir_region
-				is_in_region = anduin_region
-				is_in_region = lorien_region
-				is_in_region = rhuvenlhad_region
-				is_in_region = calenardhon_region
-				is_in_region = eryn_galen_region
-				is_in_region = ered_mithrin_region
-				is_in_region = uvanwaith_region
-				is_in_region = lamedon_region
-				is_in_region = belfalas_region
-				is_in_region = anorien_region
-				is_in_region = lebennin_region
-				is_in_region = ithilien_region
-			}
-		}
-		any_neighbour_country = { #Is ai eru neighbor
+		NOT = { religion = melkorism }
+
+		any_neighbour_country = { #neighbor that can be raided
 			is_ai = yes
-			religion = iluvatarism
+			NOT = { religion = melkorism }
 			NOT = { war_with = root }
 			any_owned_province = {
+				NOT = { has_building = fortress_building }
+				any_neighbor_province = {
+					OR = {
+						has_owner = no
+						owner = { religion = melkorism }
+					}
+					OR = {
+						has_variable = hasGoblinsRaidsFlag
+						has_variable = hasOrcRaidsFlag
+						has_variable = hasUrukRaidsFlag
+					}
+				}
 				any_neighbor_province = {
 					has_owner = yes
 					owner = ROOT
@@ -443,54 +417,111 @@ orc_raid_events.4 = {
 	}
 	
 	immediate = {
-		random_neighbour_country = {
-			limit = { #Is ai eru neighbor
+		random_neighbour_country = { #neighbor that can be raided
+			limit = {
 				is_ai = yes
-				religion = iluvatarism
+				NOT = { religion = melkorism }
 				NOT = { war_with = root }
 				any_owned_province = {
+					NOT = { has_building = fortress_building }
+					any_neighbor_province = {
+						OR = {
+							has_owner = no
+							owner = { religion = melkorism }
+						}
+						OR = {
+							has_variable = hasGoblinsRaidsFlag
+							has_variable = hasOrcRaidsFlag
+							has_variable = hasUrukRaidsFlag
+						}
+					}
 					any_neighbor_province = {
 						has_owner = yes
 						owner = ROOT
 					}
 				}
 			}
-			save_scope_as = orc_raid_event4_country
-		}
-		ordered_owned_province = {
-			limit = {
-				any_neighbor_province = {
-					has_owner = yes
-					owner = scope:orc_raid_event4_country
+			save_scope_as = neighbor
+			random_owned_province = {
+				limit = {
+					NOT = { has_building = fortress_building }
+					any_neighbor_province = {
+						OR = {
+							has_owner = no
+							owner = { religion = melkorism }
+						}
+						OR = {
+							has_variable = hasGoblinsRaidsFlag
+							has_variable = hasOrcRaidsFlag
+							has_variable = hasUrukRaidsFlag
+						}
+					}
+					any_neighbor_province = {
+						has_owner = yes
+						owner = ROOT
+					}
+				}
+				save_scope_as = orc_raid_flee_source_province
+				random_pops_in_province = {
+					weight = {
+						modifier = {
+							factor = 10
+							pop_religion = ROOT.religion
+						}
+						modifier = {
+							factor = 5
+							pop_culture = ROOT.culture
+						}
+						modifier = {
+							factor = 5
+							pop_culture_group = ROOT.culture_group
+						}
+					}
+					save_scope_as = fleeing_pop
+				}
+				ordered_neighbor_province = {
+					limit = {
+						has_owner = yes
+						owner = ROOT
+					}
+					order_by = {
+						value = 0
+						add = population_cap
+						subtract = total_population
+					}
+					position = 0
+					save_scope_as = orc_raid_target_province
 				}
 			}
-			order_by = {
-				value = 0
-				add = population_cap
-				subtract = total_population
-			}
-			save_scope_as = orc_raid_event4_province
 		}
-		set_variable = {
-			name = orc_raid_event4_variable
-			days = 1825
-		}
-	} # orc_raid_event4_scope
+	}
 	
 	option = {
 		name = orc_raid_events.4.a
 		custom_tooltip = "orc_raid_events.4.a.tt"
-		scope:orc_raid_event4_province = {
-			define_pop = {
-				type = freemen
-				religion = scope:orc_raid_event4_country.religion
-				culture = scope:orc_raid_event4_country.culture
+		scope:fleeing_pop = {
+				move_pop = scope:orc_raid_target_province
+		}
+		scope:orc_raid_target_province = {
+			add_province_modifier = {
+				name = fleeing_movements
+				duration = 365
 			}
 		}
+		# scope:orc_raid_target_province = {
+		# 	define_pop = {
+		# 		type = freemen
+		# 		religion = scope:neighbor.religion
+		# 		culture = scope:neighbor.culture
+		# 	}
+		# }
 	}
 	option = {
 		name = orc_raid_events.4.b
 		custom_tooltip = "orc_raid_events.4.b.tt"
-		add_tyranny = tyranny_small
+		add_tyranny = tyranny_large
+		scope:fleeing_pop = {
+				kill_pop = yes
+		}
 	}
 }

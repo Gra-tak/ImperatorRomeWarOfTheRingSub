@@ -239,6 +239,12 @@ black_gate_modifier = {
 ### Other Wonders ###
 
 
+###non wonder
+
+fleeing_movements = {
+	local_population_happiness = -0.05
+}
+
 
 
 

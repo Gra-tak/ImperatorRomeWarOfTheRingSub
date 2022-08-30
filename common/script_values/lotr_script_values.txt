@@ -13,3 +13,60 @@ country_count_integrated_pops = {
     add = country_culture_pop_count
   }
 }
+
+#raids
+
+country_count_possibly_raided_provinces_goblins = {
+  value = 0
+  every_owned_province = {
+    limit = {
+      NOR = { 
+        has_building = fortress_building
+        has_variable = protected_against_raids
+      }
+      any_neighbor_province = {
+        # OR = {
+        #   has_owner = no
+        #   owner = { religion = melkorism }
+        # }
+        has_variable = hasGoblinsRaidsFlag
+      }
+    }
+  }
+}
+country_count_possibly_raided_provinces_orcs = {
+  value = 0
+  every_owned_province = {
+    limit = {
+      NOR = { 
+        has_building = fortress_building
+        has_variable = protected_against_raids
+      }
+      any_neighbor_province = {
+        # OR = {
+        #   has_owner = no
+        #   owner = { religion = melkorism }
+        # }
+        has_variable = hasOrcRaidsFlag
+      }
+    }
+  }
+}
+country_count_possibly_raided_provinces_uruk = {
+  value = 0
+  every_owned_province = {
+    limit = {
+      NOR = { 
+        has_building = fortress_building
+        has_variable = protected_against_raids
+      }
+      any_neighbor_province = {
+        # OR = {
+        #   has_owner = no
+        #   owner = { religion = melkorism }
+        # }
+        has_variable = hasUrukRaidsFlag
+      }
+    }
+  }
+}
