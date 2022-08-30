@@ -140,3 +140,125 @@ lotr_maintenance.3 = {
     }
   }
 }
+
+#mark provinces near orcs for raids.
+lotr_maintenance.4 = { 
+  type = country_event
+  hidden = yes
+  trigger = {
+    is_ai = no
+  }
+  immediate = {
+    every_region = {
+      limit = {
+        any_region_province = {
+          limit = {
+            has_owner = yes
+            owner = {
+              primary_culture = goblins
+            }
+          }
+        }
+      }
+      every_region_province = {
+        limit = {
+          OR = {
+            has_owner = no
+            primary_culture = goblins
+          }
+        }
+        set_variable = {
+          name = hasGoblinsRaidsFlag
+          duration = 365
+        }
+      }
+    }
+    every_region = {
+      limit = {
+        any_region_province = {
+          limit = {
+            has_owner = yes
+            owner = {
+              primary_culture = orcish
+            }
+          }
+        }
+      }
+      every_region_province = {
+        limit = {
+          OR = {
+            has_owner = no
+            primary_culture = orcish
+          }
+        }
+        set_variable = {
+          name = hasOrcRaidsFlag
+          duration = 365
+        }
+      }
+    }
+    every_region = {
+      limit = {
+        any_region_province = {
+          limit = {
+            has_owner = yes
+            owner = {
+              primary_culture = urukhai
+            }
+          }
+        }
+      }
+      every_region_province = {
+        limit = {
+          OR = {
+            has_owner = no
+            primary_culture = urukhai
+          }
+        }
+        set_variable = {
+          name = hasUrukRaidsFlag
+          duration = 365
+        }
+      }
+    }
+#    every_country = {
+#      limit = {
+#        primary_culture = goblins
+#      }
+#      every_owned_province = {
+#        every_neighbor_province = {
+#          set_variable = {
+#            name = hasGoblinsRaidsFlag
+#            duration = 365
+#          }
+#        }
+#      }
+#    }
+#    every_country = {
+#      limit = {
+#        primary_culture = orcish
+#      }
+#      every_owned_province = {
+#        every_neighbor_province = {
+#          set_variable = {
+#            name = hasOrcRaidsFlag
+#            duration = 365
+#          }
+#        }
+#      }
+#    }
+#    every_country = {
+#      limit = {
+#        primary_culture = urukhai
+#      }
+#      every_owned_province = {
+#        every_neighbor_province = {
+#          set_variable = {
+#            name = hasUrukRaidsFlag
+#            duration = 365
+#          }
+#        }
+#      }
+#    }
+  }
+}

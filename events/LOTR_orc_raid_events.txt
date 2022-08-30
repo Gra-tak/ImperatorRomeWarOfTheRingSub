@@ -13,6 +13,7 @@ orc_raid_events.1 = {
 	
 	trigger = {
 		is_ai = no
+		NOT = { religion = melkorism }
 		religion = iluvatarism
 		c:XJX = { has_land = yes } #Orcs of Moria
 		capital_scope = {
@@ -61,12 +62,6 @@ orc_raid_events.1 = {
 			}
 			any_neighbor_province = {
 				NOT = { owner = root }
-				OR = {
-					terrain = hills
-					terrain = mountains
-					terrain = forest
-					terrain = farmland
-				}
 			}
 		}
 		NOT = {
@@ -96,18 +91,8 @@ orc_raid_events.1 = {
 					has_city_status = no
 				}
 				modifier = {
-					factor = 0
-					has_city_status = no
-					num_of_fortress_building > 0
-				}
-				modifier = {
-					factor = 300
+					factor = 10
 					total_population < 6
-				}
-				modifier = {
-					factor = 500
-					has_city_status = no
-					num_of_fortress_building = 0
 				}
 			}
 			save_scope_as = orc_raid_event1_scope
