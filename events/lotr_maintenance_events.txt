@@ -371,20 +371,88 @@ lotr_maintenance.5 = {
         }
       }
     }
+    every_country = {
+      limit = {
+        NOT = { religion = melkorism }
+        any_owned_province = {
+          OR = {
+            can_build_building = port_building
+            num_of_port_building >= 1
+          }
+          any_neighbor_province = {
+            has_variable = corsairRaidDistance
+          }
+          NOR = { 
+            has_building = fortress_building
+            has_variable = protected_against_corsairs
+          }
+        }
+      }
+      set_local_variable = {
+        name = corsair_raid_strength_total
+        value = 0
+      }
+      every_owned_province = {
+        limit = {
+          OR = {
+            can_build_building = port_building
+            num_of_port_building >= 1
+          }
+          any_neighbor_province = {
+            has_variable = corsairRaidDistance
+          }
+          NOR = { 
+            has_building = fortress_building
+            has_variable = protected_against_corsairs
+          }
+        }
+        set_local_variable = {
+          name = corsair_distance
+          value = 10
+        }
+        every_neighbor_province = {
+          limit = {
+            has_variable = corsairRaidDistance
+            var:corsairRaidDistance < local_var:corsair_distance
+          }
+          set_local_variable = {
+            name = corsair_distance
+            value = var:corsairRaidDistance
+          }
+        }
+        set_variable = {
+          name = corsair_raid_strength
+          value = 11
+          subtract = local_var:corsair_distance
+          days = 365
+        }
+        change_local_variable = {
+          name = corsair_raid_strength_total
+          add = var:corsair_raid_strength
+        }
+      }
+      set_variable = {
+        name = corsair_raid_strength
+        value = local_var:corsair_raid_strength
+        divide = 5 #todo check examples if this is reasonable
+        days = 365
+      }
+    }
+
   }
 
   option = {
     name = OK
-    every_in_list = {
-      list = raidSeaZones
-      every_neighbor_province = {
-        limit = { 
-          exists = owner
-          NOT = { owner = ROOT }
-        }
-        set_conquered_by = ROOT
-      }
-    }
+    # every_in_list = {
+    #   list = raidSeaZones
+    #   every_neighbor_province = {
+    #     limit = { 
+    #       exists = owner
+    #       NOT = { owner = ROOT }
+    #     }
+    #     set_conquered_by = ROOT
+    #   }
+    # }
   }
   # immediate = {
   #   # capital_scope.region = {

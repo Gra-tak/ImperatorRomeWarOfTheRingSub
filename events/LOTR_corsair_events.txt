@@ -8,6 +8,7 @@ corsair_raid_events.1 = {
 	picture = corsair_ships
 	
 	left_portrait = root.current_ruler
+	left_portrait = c:UMB.current_ruler
 	
 	goto_location = scope:corsair_raid_event1_scope
 	
