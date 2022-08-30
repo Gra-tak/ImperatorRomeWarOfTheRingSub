@@ -219,6 +219,7 @@ lotr_maintenance.4 = {
           days = 365
         }
       }
+    }
     every_country = {
       limit = {
         NOT = { religion = melkorism }
@@ -238,4 +239,201 @@ lotr_maintenance.4 = {
       }
     }
   }
+}
+
+#mark provinces near corsairs for raids.
+lotr_maintenance.5 = { 
+  type = country_event
+  title = OK
+  desc = OK
+  # hidden = yes
+  trigger = {
+    tag = UMB
+  }
+  immediate = {
+    # capital_scope.region = {
+    # }
+    if = {
+      limit = { NOT = { has_variable = rivers_marked_flag } }
+      every_sea_and_river_zone = {
+        limit = {
+          is_sea = no
+        }
+        set_variable = {
+          name = is_a_river
+        }
+      }
+      set_variable = {
+        name = rivers_marked_flag
+      }
+    }
+    every_owned_province = {
+      limit = {
+        is_coastal = yes
+      }
+      every_neighbor_province = {
+        limit = {
+          OR = {
+            is_sea = yes
+            has_variable = is_a_river
+          }
+          NOT = {
+            is_in_list = raidSeaZones
+          }
+        }
+        add_to_list = raidSeaZones
+      }
+    }
+    if = {
+      limit = {
+        military_tech > 20
+      }
+      set_local_variable = {
+        name = currentDistance
+        value = 0
+      }
+    }
+    else_if = {
+      limit = {
+        military_tech > 16
+      }
+      set_local_variable = {
+        name = currentDistance
+        value = 1
+      }
+    }
+    else_if = {
+      limit = {
+        military_tech > 12
+      }
+      set_local_variable = {
+        name = currentDistance
+        value = 2
+      }
+    }
+    else_if = {
+      limit = {
+        military_tech > 8
+      }
+      set_local_variable = {
+        name = currentDistance
+        value = 3
+      }
+    }
+    else_if = {
+      limit = {
+        military_tech > 4
+      }
+      set_local_variable = {
+        name = currentDistance
+        value = 4
+      }
+    }
+    else
+    {
+      set_local_variable = {
+        name = currentDistance
+        value = 5
+      }
+    }
+    while = {
+      count = 10 #maximum with high military tech. Probably not needed but let's make sure the game doesn't go infinite loop
+      limit = {
+        local_var:currentDistance < 10
+      }
+      change_local_variable = {
+        name = currentDistance
+        add = 1
+      }
+      every_in_list = {
+        list = raidSeaZones
+        limit = {
+          NOT = { has_variable = corsairRaidDistance }
+        }
+        set_variable = {
+          name = corsairRaidDistance
+          value = local_var:currentDistance
+          days = 364
+        }
+        every_neighbor_province = {
+          limit = {
+            NOR = {
+              is_in_list = raidSeaZones
+              has_variable = corsairRaidDistance
+              this = p:5499 #impassable part of the sea
+            }
+            OR = {
+              is_sea = yes
+              has_variable = is_a_river
+            }
+          }
+          add_to_list = raidSeaZones
+        }
+      }
+    }
+  }
+
+  option = {
+    name = OK
+    every_in_list = {
+      list = raidSeaZones
+      every_neighbor_province = {
+        limit = { 
+          exists = owner
+          NOT = { owner = ROOT }
+        }
+        set_conquered_by = ROOT
+      }
+    }
+  }
+  # immediate = {
+  #   # capital_scope.region = {
+  #   # }
+  #   every_owned_province = {
+  #     limit = {
+  #       is_coastal = yes
+  #     }
+  #     region = {
+  #       if = {
+  #         limit = {
+  #           NOT = {
+  #             is_in_list = raidRegions
+  #           }
+  #         }
+  #         add_to_list = raidRegions
+  #       }
+  #     }
+  #   }
+  #   while = {
+  #     count = 5
+  #     every_in_list = {
+  #       list = raidRegions
+  #       every_neighbor_region = {
+  #         limit = {
+  #           NOT = {
+  #             is_in_list = raidRegions
+  #           }
+  #           any_region_province = {
+  #             is_coastal = yes
+  #           }
+  #         }
+  #         add_to_list = raidRegions
+  #       }
+  #     }
+  #   }
+  # }
+
+  # option = {
+  #   name = OK
+  #   every_in_list = {
+  #     list = raidRegions
+  #     every_region_province = {
+  #       limit = { 
+  #         exists = owner
+  #         NOT = { owner = ROOT }
+  #       }
+  #       set_conquered_by = ROOT
+  #     }
+  #   }
+  # }
 }
