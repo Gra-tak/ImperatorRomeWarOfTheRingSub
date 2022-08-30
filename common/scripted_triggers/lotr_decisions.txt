@@ -47,11 +47,11 @@ has_unminable_trade_good_trigger = {
 		trade_goods = mithril
 	}
 }
-is_large_culture = {
-	set_local_variable = {
-		name = requiredNum
-		value = country_count_integrated_pops
-		multiply = 0.2
-	}
-	country_culture_pop_count > local_var:requiredNum
-}
+# is_large_culture = {
+# 	set_local_variable = {
+# 		name = requiredNum
+# 		value = country_count_integrated_pops
+# 		multiply = 0.2
+# 	}
+# 	country_culture_pop_count > local_var:requiredNum
+# }

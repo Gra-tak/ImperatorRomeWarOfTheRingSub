@@ -19,7 +19,7 @@
 			modifier = {
 				add = 100
 				scope:target_culture = {
-					is_large_culture = yes
+					country_culture_pop_count > ROOT.twenty_percent_integrated_pops
 				}
 			}
 		}

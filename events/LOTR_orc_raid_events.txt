@@ -466,15 +466,15 @@ orc_raid_events.4 = {
 					weight = {
 						modifier = {
 							factor = 10
-							pop_religion = ROOT.religion
+							religion = ROOT.religion
 						}
 						modifier = {
 							factor = 5
-							pop_culture = ROOT.culture
+							culture = ROOT.culture
 						}
 						modifier = {
 							factor = 5
-							pop_culture_group = ROOT.culture_group
+							culture_group = ROOT.culture_group
 						}
 					}
 					save_scope_as = fleeing_pop

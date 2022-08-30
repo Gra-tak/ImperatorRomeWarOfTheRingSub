@@ -70,3 +70,8 @@ country_count_possibly_raided_provinces_uruk = {
     }
   }
 }
+
+twenty_percent_integrated_pops = {
+  value = country_count_integrated_pops
+  multiply = 0.2
+}

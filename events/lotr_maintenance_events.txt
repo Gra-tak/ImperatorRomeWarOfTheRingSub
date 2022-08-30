@@ -125,6 +125,8 @@ lotr_maintenance.2 = {
 #accept cultures for AI (somehow they seem to fail to use the cultural decision)
 lotr_maintenance.3 = { 
   type = country_event
+  title = OK
+  desc = OK
   hidden = yes
   trigger = {
     is_ai = yes
@@ -133,11 +135,14 @@ lotr_maintenance.3 = {
     every_country_culture = {
       limit = {
         is_integrated = no
-        culture.culture_group = ROOT.country_culture_group
-        is_large_culture = yes
+        culture.culture_group = ROOT.culture_group
+        country_culture_pop_count > ROOT.twenty_percent_integrated_pops
       }
       ROOT = { integrate_country_culture = PREV }
     }
+  }
+  option = {
+    name = OK
   }
 }
 
