@@ -1,4 +1,4 @@
-﻿color = rgb { 0 218 251 }
+﻿color = rgb { 203 175 76 }
 
 gender_equality = no
 
