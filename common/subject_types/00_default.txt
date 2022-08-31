@@ -28,13 +28,22 @@ vassal_tribe = { #Tribal Vassal
 		scope:future_overlord = {
 			is_subject = no
 			is_tribal = no
-			NOT = { country_culture_group = orcs_group }
 			capital_scope = {
 				civilization_value > root.capital_scope.civilization_value
 			}
 			any_subject = {
 				count < 10
 				is_subject_type = vassal_tribe
+			}
+		}
+		OR = {
+			AND = {
+				country_culture_group = orcs_group
+				scope:future_overlord = { country_culture_group = orcs_group }
+			}
+			NOR = {
+				country_culture_group = orcs_group
+				scope:future_overlord = { country_culture_group = orcs_group }
 			}
 		}
 	}
@@ -115,7 +124,16 @@ tributary = {
 		exists = scope:future_overlord
 		scope:future_overlord = {
 			is_subject = no
-			NOT = { country_culture_group = orcs_group }
+		}
+		OR = {
+			AND = {
+				country_culture_group = orcs_group
+				scope:future_overlord = { country_culture_group = orcs_group }
+			}
+			NOR = {
+				country_culture_group = orcs_group
+				scope:future_overlord = { country_culture_group = orcs_group }
+			}
 		}
 		trigger_if = { #If both parties are AI then we don't use this subject type if country is bigger than 30 territories
 			limit = {
@@ -357,6 +375,7 @@ client_state = {
 	allow = {
 		num_of_cities < 150
 		is_tribal = no
+		NOT = { country_culture_group = orcs_group }
 		exists = scope:future_overlord
 		scope:future_overlord = {
 			is_subject = no
