@@ -259,9 +259,32 @@ lotr_ruler_decisions.7 = {
   right_portrait = root.var:potential_targets_scope_3.current_ruler
 
   immediate = {
+    if = {
+      limit = {
+        has_variable = potential_targets_scope_1
+      }
+      var:potential_targets_scope_1 = { add_to_list = previous_targets }
+      remove_variable = potential_targets_scope_1
+    }
+    if = {
+      limit = {
+        has_variable = potential_targets_scope_2
+      }
+      var:potential_targets_scope_2 = { add_to_list = previous_targets }
+      remove_variable = potential_targets_scope_2
+    }
+    if = {
+      limit = {
+        has_variable = potential_targets_scope_3
+      }
+      var:potential_targets_scope_3 = { add_to_list = previous_targets }
+      remove_variable = potential_targets_scope_3
+    }
   	every_country = {
   		limit = {
-  			has_law = age_of_the_orc
+  			# has_law = age_of_the_orc
+        country_culture_group = orcs_group
+        # NOT = { primary_culture = goblins }
 				any_owned_province = {
 					any_neighbor_province = {
 						has_owner = yes
@@ -277,10 +300,19 @@ lotr_ruler_decisions.7 = {
   		}
   		add_to_list = potential_targets
   	}
+    every_in_list = {
+      limit = { 
+        list_size = {
+          name = potential_targets
+          value > 3
+        }
+      }
+      list = previous_targets
+      remove_from_list = potential_targets
+    }
   	random_in_list = {
       list = potential_targets
       remove_from_list = potential_targets
-      # position = 0
       ROOT = {
 	    	set_variable = {
 	    		name = potential_targets_scope_1
@@ -292,13 +324,12 @@ lotr_ruler_decisions.7 = {
     	limit = {
     		list_size = {
     			name = potential_targets
-    			value >= 2
+    			value >= 1
     		}
     	}
     	random_in_list = {
         list = potential_targets
         remove_from_list = potential_targets
-        # position = 1
 	      ROOT = {
 		    	set_variable = {
 		    		name = potential_targets_scope_2
@@ -311,13 +342,12 @@ lotr_ruler_decisions.7 = {
     	limit = {
     		list_size = {
     			name = potential_targets
-    			value >= 3
+    			value >= 1
     		}
     	}
     	random_in_list = {
         list = potential_targets
         remove_from_list = potential_targets
-        # position = 2
 	      ROOT = {
 		    	set_variable = {
 		    		name = potential_targets_scope_3

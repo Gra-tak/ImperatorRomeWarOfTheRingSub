@@ -229,23 +229,28 @@ declare_war_against_orcs = {
     war_goal = orc_wargoal
     target = $TARGET$
   }
-  random_current_war = {
-    # limit = { #this somehow fails, but since condition for this war is being at peace before, random war will always be the right one
-    #   any_war_defender = { this = $TARGET$ }
-    # }
-    save_scope_as = targetWar
-  }
-  every_subject = {
-    limit = {
-      NOR = {
-        is_subject_type = tributary
-        is_subject_type = vassal_tribe
-      }
-      has_subject_loyalty >= 33
+  hidden_effect = {
+    random_current_war = {
+      # limit = { #this somehow fails, but since condition for this war is being at peace before, random war will always be the right one
+      #   any_war_defender = { this = $TARGET$ }
+      # }
+      save_scope_as = targetWar
     }
-    add_to_war = {
-      target = scope:targetWar
-      attacker = yes
+    if = { 
+      limit = { exists = targetWar }
+      every_subject = {
+        limit = {
+          NOR = {
+            is_subject_type = tributary
+            is_subject_type = vassal_tribe
+          }
+          has_subject_loyalty >= 33
+        }
+        add_to_war = {
+          target = scope:targetWar
+          attacker = yes
+        }
+      }
     }
   }
 }
