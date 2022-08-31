@@ -1,0 +1,9 @@
+﻿raided_by_corsairs_trade = {
+	state_commerce_modifier = -0.5
+}
+
+corsair_bribe_not_paid = {
+	state_commerce_modifier = -0.25
+	local_unrest = 10
+	minimum_unrest = 10
+}

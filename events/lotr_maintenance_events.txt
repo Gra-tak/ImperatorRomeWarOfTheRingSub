@@ -284,6 +284,25 @@ lotr_maintenance.5 = {
         add_to_list = raidSeaZones
       }
     }
+    every_subject = {
+      every_owned_province = {
+        limit = {
+          is_coastal = yes
+        }
+        every_neighbor_province = {
+          limit = {
+            OR = {
+              is_sea = yes
+              has_variable = is_a_river
+            }
+            NOT = {
+              is_in_list = raidSeaZones
+            }
+          }
+          add_to_list = raidSeaZones
+        }
+      }
+    }
     if = {
       limit = {
         military_tech > 20
@@ -406,25 +425,41 @@ lotr_maintenance.5 = {
             has_variable = protected_against_corsairs
           }
         }
-        set_local_variable = {
-          name = corsair_distance
-          value = 10
-        }
-        every_neighbor_province = {
-          limit = {
-            has_variable = corsairRaidDistance
-            var:corsairRaidDistance < local_var:corsair_distance
+        # set_local_variable = {
+        #   name = corsair_distance
+        #   value = 10
+        # }
+        ordered_neighbor_province = {
+          limit = { has_variable = corsairRaidDistance }
+          order_by = {
+            value = 11
+            subtract = var:corsairRaidDistance
           }
+          position = 0
           set_local_variable = {
             name = corsair_distance
             value = var:corsairRaidDistance
           }
         }
+        # every_neighbor_province = {
+        #   limit = {
+        #     has_variable = corsairRaidDistance
+        #     var:corsairRaidDistance < local_var:corsair_distance
+        #   }
+        #   set_local_variable = {
+        #     name = corsair_distance
+        #     value = var:corsairRaidDistance
+        #   }
+        # }
         set_variable = {
           name = corsair_raid_strength
           value = 11
-          subtract = local_var:corsair_distance
+          # subtract = local_var:corsair_distance
           days = 365
+        }
+        change_variable = {
+          name = corsair_raid_strength
+          subtract = local_var:corsair_distance
         }
         change_local_variable = {
           name = corsair_raid_strength_total
@@ -432,17 +467,146 @@ lotr_maintenance.5 = {
         }
       }
       set_variable = {
-        name = corsair_raid_strength
-        value = local_var:corsair_raid_strength
-        divide = 5 #todo check examples if this is reasonable
+        name = corsair_raid_strength_total
+        value = local_var:corsair_raid_strength_total
         days = 365
       }
+      change_variable = {
+        name = corsair_raid_strength_total
+        divide = 5 #todo check examples if this is reasonable
+      }
+      set_variable = {
+        name = corsair_raid_strength_half
+        value = var:corsair_raid_strength_total
+        days = 365
+      }
+      change_variable = {
+        name = corsair_raid_strength_half
+        divide = 2
+      }
+      set_variable = {
+        name = corsair_raid_strength_quarter
+        value = var:corsair_raid_strength_half
+        days = 365
+      }
+      change_variable = {
+        name = corsair_raid_strength_quarter
+        divide = 2
+      }
+      round_variable = {
+        name = corsair_raid_strength_total
+      }
     }
-
+    every_country = {
+      limit = { 
+        any_subject = {
+          has_variable = corsair_raid_strength_total
+          num_of_ships < var:corsair_raid_strength_total
+        } 
+      }
+      if = {
+        limit = { has_variable = corsair_raid_strength_total }
+        set_local_variable = {
+          name = corsair_raid_strength_with_subjects
+          value = var.corsair_raid_strength_total
+        }
+      }
+      else = {
+        set_local_variable = {
+          name = corsair_raid_strength_with_subjects
+          value = 0
+        }
+      }
+      every_subject = {
+        limit = {
+          has_variable = corsair_raid_strength_total
+        }
+        if = {
+          limit = {
+            num_of_ships < var:corsair_raid_strength_quarter
+          }
+          change_local_variable = {
+            name = corsair_raid_strength_with_subjects
+            add = var:corsair_raid_strength_total
+          }
+          set_variable = {
+            name = corsair_raid_strength_subject
+            value = var:corsair_raid_strength_total
+            days = 365
+          }
+        }
+        else_if = {
+          limit = {
+            num_of_ships < var:corsair_raid_strength_half
+          }
+          change_local_variable = {
+            name = corsair_raid_strength_with_subjects
+            add = var:corsair_raid_strength_half
+          }
+          set_variable = {
+            name = corsair_raid_strength_subject
+            value = var:corsair_raid_strength_half
+            days = 365
+          }
+        }
+        else_if = {
+          limit = {
+            num_of_ships < var:corsair_raid_strength_total
+          }
+          change_local_variable = {
+            name = corsair_raid_strength_with_subjects
+            add = var:corsair_raid_strength_quarter
+          }
+          set_variable = {
+            name = corsair_raid_strength_subject
+            value = var:corsair_raid_strength_quarter
+            days = 365
+          }
+        }
+      }
+      set_variable = {
+        name = corsair_raid_strength_with_subjects
+        value = local_var:corsair_raid_strength_with_subjects
+        days = 365
+      }
+      change_variable = {
+        name = corsair_raid_strength_with_subjects
+        divide = 5 #todo check examples if this is reasonable
+      }
+      set_variable = {
+        name = corsair_raid_strength_with_subjects_half
+        value = var:corsair_raid_strength_with_subjects
+        days = 365
+      }
+      change_variable = {
+        name = corsair_raid_strength_with_subjects_half
+        divide = 2
+      }
+      set_variable = {
+        name = corsair_raid_strength_with_subjects_quarter
+        value = var:corsair_raid_strength_with_subjects_half
+        days = 365
+      }
+      change_variable = {
+        name = corsair_raid_strength_with_subjects_quarter
+        divide = 2
+      }
+      round_variable = {
+        name = corsair_raid_strength_with_subjects
+      }
+    }
   }
 
   option = {
     name = OK
+    every_province = {
+      limit = { 
+        has_variable = corsair_raid_strength
+        exists = owner
+        NOT = { owner = ROOT }
+      }
+      set_conquered_by = ROOT
+    }
     # every_in_list = {
     #   list = raidSeaZones
     #   every_neighbor_province = {

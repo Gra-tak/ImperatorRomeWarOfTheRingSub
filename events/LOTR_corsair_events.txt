@@ -8,19 +8,25 @@ corsair_raid_events.1 = {
 	picture = corsair_ships
 	
 	left_portrait = root.current_ruler
-	left_portrait = c:UMB.current_ruler
+	right_portrait = c:UMB.current_ruler
 	
-	goto_location = scope:corsair_raid_event1_scope
+	goto_location = scope:corsair_raid_target_province
 	
 	trigger = {
+		is_ai = no
 		exists = c:UMB
 		c:UMB = {
 			has_land = yes
 		}
-		num_of_ships < 20
-		is_ai = no
-		religion = iluvatarism
+		has_variable = corsair_raid_strength_total
+		num_of_ships < var:corsair_raid_strength_total
+		NOT = { religion = melkorism }
 		any_owned_province = {
+			has_variable = corsair_raid_strength_total
+			NOR = {
+	      has_building = fortress_building
+	      has_variable = protected_against_corsairs
+			}
 			OR = {
 				can_build_building = port_building
 				num_of_port_building >= 1
@@ -30,18 +36,51 @@ corsair_raid_events.1 = {
 			has_variable = corsair_raid_event1_variable
 		}
 	}
+
+	weight_multiplier = {
+		modifier = {
+			factor = 0.5
+			num_of_ships >= var:corsair_raid_strength_half
+		}
+		modifier = {
+			factor = 2
+			num_of_ships < var:corsair_raid_strength_quarter
+		}
+		modifier = {
+			factor = 0.5
+			var:corsair_raid_strength_total <= 10
+		}
+		modifier = {
+			factor = 2
+			var:corsair_raid_strength_total > 50
+		}
+		modifier = {
+			factor = 2
+			var:corsair_raid_strength_total > 200
+		}
+		modifier = {
+			factor = 2
+			var:corsair_raid_strength_total > 800
+		}
+	}
 	
 	immediate = {
 		random_owned_province = {
 			limit = {
+				has_variable = corsair_raid_strength_total
+				NOR = {
+		      has_building = fortress_building
+		      has_variable = protected_against_corsairs
+				}
 				OR = {
 					can_build_building = port_building
 					num_of_port_building >= 1
-					is_coastal = yes
 				}
-				owner = root
 			}
-			save_scope_as = corsair_raid_event1_scope
+			# weight = {
+			# 	base = var:corsair_raid_strength_total
+			# }
+			save_scope_as = corsair_raid_target_province
 		}
 		set_variable = {
 			name = corsair_raid_event1_variable
@@ -51,10 +90,16 @@ corsair_raid_events.1 = {
 	
 	option = {
 		name = corsair_raid_events.1.a
-		scope:corsair_raid_event1_scope = {
+		scope:corsair_raid_target_province = {
 			add_province_modifier = {
 				name = raided_by_corsairs
-				duration = 180
+				duration = 185
+			}
+			state = {
+				add_state_modifier = {
+					name = raided_by_corsairs_trade
+					duration = 365
+				}
 			}
 		}
 	}
@@ -68,18 +113,24 @@ corsair_raid_events.2 = {
 	picture = event_angry_corsairs
 	
 	left_portrait = root.current_ruler
+	right_portrait = c:UMB.current_ruler
 	
-	goto_location = scope:corsair_raid_event2_scope
+	goto_location = scope:corsair_raid_target_province
 	
 	trigger = {
 		exists = c:UMB
 		c:UMB = {
 			has_land = yes
 		}
-		num_of_ships < 25
-		is_ai = no
-		religion = iluvatarism
+		has_variable = corsair_raid_strength_total
+		num_of_ships < var:corsair_raid_strength_total
+		NOT = { religion = melkorism }
 		any_owned_province = {
+			has_variable = corsair_raid_strength_total
+			NOR = {
+	      has_building = fortress_building
+	      has_variable = protected_against_corsairs
+			}
 			OR = {
 				can_build_building = port_building
 				num_of_port_building >= 1
@@ -89,18 +140,51 @@ corsair_raid_events.2 = {
 			has_variable = corsair_raid_event2_variable
 		}
 	}
+
+	weight_multiplier = {
+		modifier = {
+			factor = 0.5
+			num_of_ships >= var:corsair_raid_strength_half
+		}
+		modifier = {
+			factor = 2
+			num_of_ships < var:corsair_raid_strength_quarter
+		}
+		modifier = {
+			factor = 0.5
+			var:corsair_raid_strength_total <= 10
+		}
+		modifier = {
+			factor = 2
+			var:corsair_raid_strength_total > 50
+		}
+		modifier = {
+			factor = 2
+			var:corsair_raid_strength_total > 200
+		}
+		modifier = {
+			factor = 2
+			var:corsair_raid_strength_total > 800
+		}
+	}
 	
 	immediate = {
 		random_owned_province = {
 			limit = {
+				has_variable = corsair_raid_strength_total
+				NOR = {
+		      has_building = fortress_building
+		      has_variable = protected_against_corsairs
+				}
 				OR = {
 					can_build_building = port_building
 					num_of_port_building >= 1
-					is_coastal = yes
 				}
-				owner = root
 			}
-			save_scope_as = corsair_raid_event2_scope
+			# weight = {
+			# 	base = var:corsair_raid_strength_total
+			# }
+			save_scope_as = corsair_raid_target_province
 		}
 		set_variable = {
 			name = corsair_raid_event2_variable
@@ -110,30 +194,46 @@ corsair_raid_events.2 = {
 	
 	option = {
 		name = corsair_raid_events.2.a
-		scope:corsair_raid_event2_scope.state = {
+		scope:corsair_raid_target_province.state = {
 			add_state_modifier = {
 				name = corsair_bribe_not_paid
 				duration = 365 # 1 year
 			}
 		}
-		scope:corsair_raid_event2_scope = {
+		scope:corsair_raid_target_province = {
 			add_state_loyalty = -10.0
 		}
 	}
 	
 	option = {
 		name = corsair_raid_events.2.b
+		custom_tooltip = "state_protected_from_corsairs"
 		current_ruler = {
 			add_popularity = popularity_small
 		}
-		add_treasury = {
-			subtract = root.has_monthly_income
-			multiply = 6
+		add_treasury = capped_loss_6
+		scope:corsair_raid_target_province.state = {
+			every_state_province = {
+				limit = {
+					exists = owner
+					owner = ROOT
+				}
+				set_variable = {
+					name = protected_against_corsairs
+					days = 7300
+				}
+			}
+		}
+		save_scope_as = raided_country
+		c:UMB = {
+			trigger_event = {
+				id = corsair_raid_events.4
+			}
 		}
 	}
 }
 
-#Corsair neighbour attack
+#Corsair neighbour subject
 corsair_raid_events.3 = {
 	type = country_event
 	title = "corsair_raid_events.3.t"
@@ -141,54 +241,81 @@ corsair_raid_events.3 = {
 	picture = event_corsairs_attack
 	
 	left_portrait = root.current_ruler
-	right_portrait = scope:corsair_raid_event3_scope.current_ruler
+	left_portrait = scope:corsair_raid_target_subject.current_ruler
+	right_portrait = c:UMB.current_ruler
 	
-	goto_location = scope:corsair_raid_event3_scope
+	goto_location = scope:corsair_raid_target_province
 	
 	trigger = {
 		exists = c:UMB
 		c:UMB = {
 			has_land = yes
 		}
-		num_of_ships < 30
-		is_ai = no
-		religion = iluvatarism
-		any_neighbour_country = {
-			NOT = { war_with = root }
-			religion = iluvatarism
-			opinion = {
-				target = root
-				value > 5
+		has_variable = corsair_raid_strength_with_subjects
+		num_of_ships < var:corsair_raid_strength_with_subjects
+		NOT = { religion = melkorism }
+		any_owned_province = {
+			has_variable = corsair_raid_strength_total
+			NOR = {
+	      has_building = fortress_building
+	      has_variable = protected_against_corsairs
 			}
-			any_owned_province = {
-				OR = {
-					can_build_building = port_building
-					num_of_port_building >= 1
-				}
+			OR = {
+				can_build_building = port_building
+				num_of_port_building >= 1
 			}
 		}
 		NOT = {
 			has_variable = corsair_raid_event3_variable
 		}
 	}
+
+	weight_multiplier = {
+		modifier = {
+			factor = 0.5
+			num_of_ships >= var:corsair_raid_strength_with_subjects_half
+		}
+		modifier = {
+			factor = 2
+			num_of_ships < var:corsair_raid_strength_with_subjects_quarter
+		}
+		modifier = {
+			factor = 0.5
+			var:corsair_raid_strength_with_subjects <= 30
+		}
+		modifier = {
+			factor = 2
+			var:corsair_raid_strength_with_subjects > 150
+		}
+		modifier = {
+			factor = 2
+			var:corsair_raid_strength_with_subjects > 600
+		}
+		modifier = {
+			factor = 2
+			var:corsair_raid_strength_with_subjects > 2400
+		}
+	}
+
 	
 	immediate = {
-		random_neighbour_country = {
+		random_subject = {
 			limit = {
-				NOT = { war_with = root }
-				religion = iluvatarism
-				opinion = {
-					target = root
-					value > 5
-				}
-				any_owned_province = {
-					OR = {
-						can_build_building = port_building
-						num_of_port_building >= 1
-					}
-				}
+				has_variable = corsair_raid_strength_subject
 			}
-			save_scope_as = corsair_raid_event3_scope
+			# weight = {
+			# 	base = var:corsair_raid_strength_subject
+			# }
+			save_scope_as = corsair_raid_target_subject
+			random_owned_province = {
+				limit = {
+					has_variable = corsair_raid_strength_total
+				}
+				# weight = {
+				# 	base = var:corsair_raid_strength_total
+				# }
+				save_scope_as = corsair_raid_target_province
+			}
 		}
 		set_variable = {
 			name = corsair_raid_event3_variable
@@ -196,14 +323,11 @@ corsair_raid_events.3 = {
 		}
 	}
 	
-	option = { #Give neighbour money
+	option = { #Give subject money
 		name = corsair_raid_events.3.a
-		add_treasury = {
-			subtract = root.has_monthly_income
-			multiply = 6
-		}
+		add_treasury = capped_loss_6
 		add_tyranny = -2
-		scope:corsair_raid_event3_scope = {
+		scope:corsair_raid_target_subject = {
 			add_opinion = {
 				modifier = helped_after_corsairs
 				target = root
@@ -211,16 +335,43 @@ corsair_raid_events.3 = {
 		}
 	}
 	
-	option = { #Don't help neighbour
+	option = { #Don't help subject
 		name = corsair_raid_events.3.b
 		current_ruler = {
 			add_popularity = subtract_popularity_small
 		}
-		scope:corsair_raid_event3_scope = {
+		scope:corsair_raid_target_subject = {
 			add_opinion = {
 				modifier = ignored_after_corsairs
 				target = root
 			}
 		}
+		scope:corsair_raid_target_province = {
+			add_province_modifier = {
+				name = raided_by_corsairs
+				duration = 185
+			}
+			state = {
+				add_state_modifier = {
+					name = raided_by_corsairs_trade
+					duration = 365
+				}
+			}
+		}
 	}
 }
+
+#Some of the tribute money going to Umbar
+corsair_raid_events.4 = {
+	type = country_event
+	title = "corsair_raid_events.4.t"
+	desc = "corsair_raid_events.4.desc"
+	picture = event_corsairs_attack
+	
+	left_portrait = root.current_ruler
+	right_portrait = scope:raided_country.current_ruler
+
+	option = {
+		name = OK
+		add_treasury = scope:raided_country.capped_gain_3
+	}

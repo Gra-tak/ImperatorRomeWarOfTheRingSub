@@ -13,11 +13,6 @@ raided_by_corsairs = {
 	minimum_unrest = 5
 }
 
-corsair_bribe_not_paid = {
-	state_commerce_modifier = -0.25
-	local_unrest = 10
-	minimum_unrest = 10
-}
 
 merchants_killed_orcs = {
 	local_base_trade_routes_modifier = -0.25
