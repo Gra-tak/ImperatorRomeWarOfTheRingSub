@@ -464,10 +464,10 @@ orc_raid_events.4 = {
 				save_scope_as = orc_raid_flee_source_province
 				random_pops_in_province = {
 					weight = {
-						modifier = {
-							factor = 10
-							religion = ROOT.religion
-						}
+						# modifier = {
+						# 	factor = 10
+						# 	religion = ROOT.religion
+						# }
 						modifier = {
 							factor = 5
 							culture = ROOT.culture

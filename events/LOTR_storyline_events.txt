@@ -1,4 +1,4 @@
-namespace = lotr_storyline_events
+﻿namespace = lotr_storyline_events
 
 #Saruman & Isengard convert to Melkor
 lotr_storyline_events.1 = {

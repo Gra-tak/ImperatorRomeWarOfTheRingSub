@@ -5910,7 +5910,7 @@ new_family_generation_effect = {
 		ordered_family = {
 			order_by = prestige
 			limit  = { NOT = { THIS = scope:$FAMILY_CANDIDATE$.family } }
-			position = num_of_families
+			position = end
 			save_scope_as = poor_family
 		}
 		scope:$FAMILY_CANDIDATE$.family = {
