@@ -237,7 +237,7 @@ declare_war_against_orcs = {
       save_scope_as = targetWar
     }
     if = { 
-      limit = { exists = targetWar }
+      limit = { exists = scope:targetWar }
       every_subject = {
         limit = {
           NOR = {

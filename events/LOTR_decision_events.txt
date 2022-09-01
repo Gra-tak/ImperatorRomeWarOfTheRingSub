@@ -282,6 +282,11 @@ lotr_ruler_decisions.7 = {
     }
   	every_country = {
   		limit = {
+        NOT = {
+          ROOT = {
+            has_truce_with = PREV
+          }
+        }
   			# has_law = age_of_the_orc
         country_culture_group = orcs_group
         # NOT = { primary_culture = goblins }

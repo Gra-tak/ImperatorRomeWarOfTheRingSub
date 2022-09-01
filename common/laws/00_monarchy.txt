@@ -292,7 +292,7 @@ monarchy_religious_laws = {
 		}
 		}
 		modifier = {
-			global_pop_assimilation_speed = 2.0
+			global_pop_assimilation_speed = 3.0 #increased to offset people running away
 			happiness_for_wrong_culture_group_modifier = -1.0
 			global_monthly_state_loyalty = 0.2
 			#global_pop_assimilation_speed_modifier = 1.0
