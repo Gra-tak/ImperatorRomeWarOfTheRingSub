@@ -135,6 +135,7 @@ lotr_maintenance.3 = {
     every_country_culture = {
       limit = {
         is_integrated = no
+        NOT = { culture = culture:urukhai }
         culture.culture_group = ROOT.culture_group
         country_culture_pop_count > ROOT.twenty_percent_integrated_pops
       }
