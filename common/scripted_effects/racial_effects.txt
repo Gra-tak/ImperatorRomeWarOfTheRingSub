@@ -109,6 +109,9 @@ orc_purge_effect = {
 							}
 						}
 					}
+					any_pops_in_province = {
+						pop_culture_group = orcs_group #not sure why, but this seems to sometimes be triggered despite there already being no more orcs
+					}
 				}
 			}
 			if = {
@@ -198,6 +201,9 @@ orc_purge_local_effect = {
 								war_with = PREV.owner
 							}
 						}
+					}
+					any_pops_in_province = {
+						pop_culture_group = orcs_group #not sure why, but this seems to sometimes be triggered despite there already being no more orcs
 					}
 				}
 			}
