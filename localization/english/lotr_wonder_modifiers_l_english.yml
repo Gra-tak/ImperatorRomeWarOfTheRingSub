@@ -54,7 +54,7 @@
  annuminas_palace_modifier:0 "Annúminas Palace"
   desc_annuminas_palace_modifier:0 "Annúminas was the city of the Kings of Arnor. The city lay on the south-east shore of Lake Nenuial, near the source of the Baranduin river. To the south and west of Annúminas rose the Hills of Evendim."
   rebuild_annuminas:0 "Rebuild the palace of Annúminas"
-  rebuild_annuminas:0 "The city of Annúminas has lain in ruins for more than two millennia. Yet we have managed to rebuild some of it's former glory. Let us rebuild the palace and make sure the Sceptre of Annúminas is returned to it's rightful place."
+  rebuild_annuminas_desc:0 "The city of Annúminas has lain in ruins for more than two millennia. Yet we have managed to rebuild some of it's former glory. Let us rebuild the palace and make sure the Sceptre of Annúminas is returned to it's rightful place."
   #annuminas_kings_hall_modifier
   #annuminas_desolate_modifier
   #annuminas_reunited_modifier

@@ -14,7 +14,7 @@ neighbor_expand_mission_expansion_modifier = {
 }
 
 generic_build_army_mission_1_modifier = {
-	monthly_military_experience_modifier = 0.03
+	monthly_military_experience_modifier = 0.1
 	global_start_experience = 5
 }
 
