@@ -2074,3 +2074,7 @@
  desc_harassed_by_corsairs:0 "While the vassals of gondor are brave men who would willingly go to war for Gondor, most of the are currently busy fighting of Corsair attacks on their coasts."
  influenced_by_saruman:0 "Influenced by Saruman"
  desc_influenced_by_saruman:0 "The army of the horseman of Rohan is no more what it once was. Rumors say, Saruman is whispering to the king and is responsible for this."
+ orc_war_ae_modifier:0 "Defending the free people"
+ orc_war_ae_modifier:0 "We are fighting a war to free a people form the orc. People are not going to object to us freeing them."
+ war_goal_orc_wargoal:0 "Defending the free people"
+ war_goal_orc_wargoal_desc:2 "War Goal is to show superiority. Participants will get more war score from winning battles.\nAccumulating more than $THRESHOLD|Y%$ warscore from won battles will grant you a ticking war score."
