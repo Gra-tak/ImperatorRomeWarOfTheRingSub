@@ -1270,24 +1270,24 @@ on_game_initialized = {
 			char:12 = { #Nazgul
 				trigger_event = { id = main_magic.1 }
 			}
-			char:68 = { #Jilndur
-				trigger_event = { id = main_magic.1 }
-			}
-			char:69 = { #Akhorahil
-				trigger_event = { id = main_magic.1 }
-			}
-			char:70 = { #Hoarmurath
-				trigger_event = { id = main_magic.1 }
-			}
-			char:71 = { #Adunaphel
-				trigger_event = { id = main_magic.1 }
-			}
-			char:72 = { #Ren
-				trigger_event = { id = main_magic.1 }
-			}
-			char:73 = { #Uvathar
-				trigger_event = { id = main_magic.1 }
-			}
+			# char:68 = { #Jilndur
+			# 	trigger_event = { id = main_magic.1 }
+			# }
+			# char:69 = { #Akhorahil
+			# 	trigger_event = { id = main_magic.1 }
+			# }
+			# char:70 = { #Hoarmurath
+			# 	trigger_event = { id = main_magic.1 }
+			# }
+			# char:71 = { #Adunaphel
+			# 	trigger_event = { id = main_magic.1 }
+			# }
+			# char:72 = { #Ren
+			# 	trigger_event = { id = main_magic.1 }
+			# }
+			# char:73 = { #Uvathar
+			# 	trigger_event = { id = main_magic.1 }
+			# }
 			trigger_event = { id = main_magic.2 }
 			# trigger_event = { id = br_truce.3 }
 		}

@@ -173,6 +173,12 @@ lotr_frodos_mission_events.40 = {
   }
   option = {
     name = lotr_frodos_mission_events.40.a
+    scope:gandalf = {
+      remove_from_list = fellowship
+      death = {
+        death_reason = death_claimed_by_the_underworld
+      }
+    }
     every_in_list = {
       list = fellowship
       if = {
@@ -204,6 +210,12 @@ lotr_frodos_mission_events.45 = {
   }
   option = {
     name = lotr_frodos_mission_events.45.a
+    scope:gandalf = {
+      remove_from_list = fellowship
+      death = {
+        death_reason = death_claimed_by_the_underworld
+      }
+    }
     every_in_list = {
       list = fellowship
       if = {
@@ -253,8 +265,18 @@ lotr_frodos_mission_events.51 = {
   }
   option = {
     name = lotr_frodos_mission_events.51.a
+    if = {
+      limit = {
+        c:XVX = { has_land = yes } #isengard
+      }
+      char:29 = {
+        death = {
+          death_reason = death_battle
+        }
+      }
+    }
     frodo_to_ithilien = yes
-    gandalf_to_gondor = yes
+    other_to_rohan = yes
   }
 }
 
@@ -337,7 +359,7 @@ lotr_frodos_mission_events.70 = {
   left_portrait = scope:gandalf
   right_portrait = char:15
   right_portrait = char:76
-  right_portrait = char:73
+  right_portrait = char:63
   trigger = {
    
   }
@@ -417,7 +439,7 @@ lotr_frodos_mission_events.72 = {
   left_portrait = scope:gandalf
   right_portrait = char:15
   right_portrait = char:76
-  right_portrait = char:73
+  right_portrait = char:63
   trigger = {
    
   }
@@ -439,7 +461,7 @@ lotr_frodos_mission_events.73 = {
   left_portrait = scope:gandalf
   right_portrait = char:15
   right_portrait = char:76
-  right_portrait = char:73
+  right_portrait = char:63
   trigger = {
    
   }
@@ -458,7 +480,7 @@ lotr_frodos_mission_events.74 = {
   left_portrait = scope:gandalf
   right_portrait = char:15
   right_portrait = char:76
-  right_portrait = char:73
+  right_portrait = char:63
   trigger = {
    
   }

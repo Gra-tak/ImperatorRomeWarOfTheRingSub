@@ -141,7 +141,6 @@
         force_add_trait="olympic_competitor"
         save_scope_as = gandalf
         dna="AAAH7oppimkAAAAAAp0CnQJ4AngCfwJ/AnYCdgKYApgCiwKLAlYCVgJ3AncCkwKTApcClwKXApcCiwKLAoECgQKLAosCTgJOAm0CbQKTApMCXgJeAmcCZwJWAlYCfwJ/AowCjAKaApoCdgJ2ApICkgKRApECkAKQAmwCbAKJAokCdQJ1ApUClQKeAp4CdAJ0ArACsAKUApQCcwJzAnYCdgKLAosCjAKMAn0CfQKTApMCjAKMAmECYQKMAowClQKVAo8CjwKLAosChgKGAnkCeQJRAlECbQJtAlkCWQKYApgCkwKTAsICwgQEBAQBZQFlATMBMwFhAWEATwBPAVABUAC2ALYALwAvAIcAhwCpAKkEnAScArYCtgFzAXMABwAHAN0A3QFpAWkAPwA/Aq8CrwCxALEDtwO3ARsBGwD5APkCngKeAQMBAwKVApUAOgA6AHwAfABIAEgAwwDDACYAJgD5APkCiAKIA3ADcAD0APQH6QDEAH8AfwQ3BDcWXhZeAPAA8Az+DP4QgxAXEf8R0AAAAAAAAAAAAAAAAAAAAAA="
-        add_to_list = fellowshipToGondor
       }
       scope:gandalf = {
         set_variable = {
@@ -648,7 +647,6 @@
     on_completion = {
       #move sam and frodo to ithilien rangers, rest to gondor or rohan
       #TODO kill boromir (might actually kill the real one unless player is gondor)
-      #todo: revive gandalf the white
       trigger_event = {
         id = lotr_frodos_mission_events.51
       }
@@ -717,6 +715,8 @@
         }
       }
 
+
+      gandalf_the_white = yes
       trigger_event = {
         id = lotr_frodos_mission_events.55
       }
@@ -725,7 +725,6 @@
     on_completion = {
       #move sam and frodo to ithilien rangers, rest to gondor or rohan
       #TODO kill boromir (might actually kill the real one unless player is gondor)
-      #todo: revive gandalf the white
       trigger_event = {
         id = lotr_frodos_mission_events.56
       }
@@ -813,6 +812,13 @@
     }
 
     on_completion = {
+      if = {
+        limit = {
+          has_completed_mission_task = lotr_depart_from_lorien
+        }
+        gandalf_the_white = yes
+        gandalf_to_gondor = yes
+      }
       hidden_effect = {
         every_country = {
           remove_existing_sauron_fury = yes

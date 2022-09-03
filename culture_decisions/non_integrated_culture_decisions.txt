@@ -3,7 +3,7 @@
 
 	right_of_inheritance = {
 		potential = {
-			NOT = { primary_culture = scope:target_culture.culture }
+			NOT = { root.culture.culture_group = scope:target_culture.culture.culture_group }
 			scope:target_culture = {
 				NOT = { has_pop_type_right = citizen }
 				NOT = { has_pop_type_right = nobles }
@@ -64,6 +64,7 @@
 	
 	right_of_contract = {
 		potential = {
+			NOT = { root.culture.culture_group = scope:target_culture.culture.culture_group }
 			scope:target_culture = {
 				NOT = { has_pop_type_right = citizen }
 				NOT = { has_pop_type_right = nobles }
@@ -112,6 +113,8 @@
 	}
 	protection_against_torture = {
 		potential = {
+			NOT = { root.culture.culture_group = scope:target_culture.culture.culture_group }
+			always =
 			scope:target_culture = {
 				NOT = { has_pop_type_right = citizen }
 				NOT = { has_pop_type_right = nobles }
