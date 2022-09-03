@@ -114,7 +114,6 @@
 	protection_against_torture = {
 		potential = {
 			NOT = { root.culture.culture_group = scope:target_culture.culture.culture_group }
-			always =
 			scope:target_culture = {
 				NOT = { has_pop_type_right = citizen }
 				NOT = { has_pop_type_right = nobles }

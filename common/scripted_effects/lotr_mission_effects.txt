@@ -134,6 +134,7 @@ destroy_barad_dur_effect = {
 
 destroy_black_gate_effect = {
   remove_province_modifier = black_gate_modifier
+  remove_province_modifier = supplied_from_the_rear
   remove_building_level = fortress_building
   if = {
     limit = { has_city_status = yes }
