@@ -86,6 +86,16 @@ orc_raid_events.1 = {
 				}
 			}
 			save_scope_as = orc_raid_target_province
+			random_neighbor_province = {
+				limit = {
+					OR = {
+						has_owner = no
+						owner = { religion = melkorism }
+					}
+					has_variable = hasGoblinsRaidsFlag
+				}
+				save_scope_as = orc_raid_target_province_start
+			}
 		}
 		set_variable = {
 			name = orc_raid_event1_variable
@@ -208,6 +218,16 @@ orc_raid_events.2 = {
 				}
 			}
 			save_scope_as = orc_raid_target_province
+			random_neighbor_province = {
+				limit = {
+					OR = {
+						has_owner = no
+						owner = { religion = melkorism }
+					}
+					has_variable = hasOrcRaidsFlag
+				}
+				save_scope_as = orc_raid_target_province_start
+			}
 		}
 		set_variable = {
 			name = orc_raid_event2_variable
@@ -331,6 +351,16 @@ orc_raid_events.3 = {
 				}
 			}
 			save_scope_as = orc_raid_target_province
+			random_neighbor_province = {
+				limit = {
+					OR = {
+						has_owner = no
+						owner = { religion = melkorism }
+					}
+					has_variable = hasUrukRaidsFlag
+				}
+				save_scope_as = orc_raid_target_province_start
+			}
 		}
 		set_variable = {
 			name = orc_raid_event3_variable
@@ -462,6 +492,20 @@ orc_raid_events.4 = {
 					}
 				}
 				save_scope_as = orc_raid_flee_source_province
+				random_neighbor_province = {
+					limit = {
+						OR = {
+							has_owner = no
+							owner = { religion = melkorism }
+						}
+						OR = {
+							has_variable = hasGoblinsRaidsFlag
+							has_variable = hasOrcRaidsFlag
+							has_variable = hasUrukRaidsFlag
+						}
+					}
+					save_scope_as = orc_raid_target_province_start
+				}
 				random_pops_in_province = {
 					weight = {
 						# modifier = {
