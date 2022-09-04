@@ -252,3 +252,12 @@ event_orcs_fleeing = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/orcs_fleeing.dds"
 }
+event_hobbit_marriage = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/hobbit_marriage.dds"
+}
+
+event_sam = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/sam.dds"
+}

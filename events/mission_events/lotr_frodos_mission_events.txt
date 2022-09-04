@@ -503,10 +503,47 @@ lotr_frodos_mission_events.80 = {
    
   }
   immediate = {
+    scope:gandalf = {
+      add_to_list = fellowship
+    }
     every_in_list = {
       list = fellowship
       move_country = scope:frodo_protector_country
     } #todo: return home, travel to valinor. remove olympic from the remaining hobbits
+    if = {
+      limit = {
+        c:SHI = { has_land = yes }
+      }
+      c:SHI = {
+        set_variable = {
+          name = samScopeVar
+          value = scope:sam
+        }
+        hidden_effect = {
+          create_character = {
+            first_name="Rose 'Rosie'"
+            family_name="Cotton"
+            female = yes
+            age=22
+            culture="harfoot"
+            religion="iluvatarism"
+            no_stats=yes
+            add_martial=1
+            add_charisma=16
+            add_finesse=16
+            add_zeal=8
+            force_add_trait="halfling"
+            force_add_trait="olympic_competitor"
+            save_scope_as = rosie
+          }
+        }
+      }
+      trigger_event = {
+        id = lotr_frodos_mission_events.81
+        days = 1
+        # days = 365
+      }
+    }
     p:1141 = {
       trigger_event = {
         id = lotr_frodos_mission_events.90
@@ -597,6 +634,242 @@ lotr_frodos_mission_events.80 = {
             any_war_defender = { religion = iluvatarism }
           }
           force_white_peace = THIS
+        }
+      }
+    }
+  }
+}
+
+#hobbits return home
+lotr_frodos_mission_events.81 = {
+  type = country_event
+  title = lotr_frodos_mission_events.81.t
+  desc = lotr_frodos_mission_events.81.desc
+  picture = event_hobbit_marriage
+  left_portrait = scope:frodo
+  left_portrait = scope:sam
+  left_portrait = scope:rosie
+  right_portrait = scope:merry
+  right_portrait = scope:pippin
+
+  immediate = {
+    every_in_list = {
+      list = fellowship
+      if = {
+        limit = {
+          NOT = { has_variable = gandalf_flag }
+        }
+        move_country = c:SHI
+        remove_trait = olympic_competitor
+      }
+    }
+    scope:rosie = {
+      remove_trait = olympic_competitor
+      marry_character = scope:sam
+    }
+    c:SHI = {
+      set_as_ruler = scope:frodo
+    }
+    trigger_event = {
+      id = lotr_frodos_mission_events.82
+      days = 1
+      # days = 365
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_events.81.a
+  }
+}
+
+#to valinor
+lotr_frodos_mission_events.82 = {
+  type = country_event
+  title = lotr_frodos_mission_events.82.t
+  desc = lotr_frodos_mission_events.82.desc
+  picture = great_city
+  left_portrait = scope:frodo
+  left_portrait = scope:gandalf
+  right_portrait = char:57
+  right_portrait = char:17
+  right_portrait = char:18
+
+  immediate = {
+    trigger_event = {
+      id = lotr_frodos_mission_events.83
+      days = 1
+      # days = 365
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_events.82.a
+    custom_tooltip = lotr_frodos_mission_events.82.a.tt
+    hidden_effect = {
+      scope:frodo = { add_to_list = depart }
+      scope:gandalf = { add_to_list = depart }
+      char:57 = { #elrond
+        if = { 
+          limit = {
+            is_alive = yes
+            country = {
+              is_ai = yes
+            }
+          }
+          add_to_list = depart
+        }
+      }
+      char:17 = { #galadriel
+        if = { 
+          limit = {
+            is_alive = yes
+            country = {
+              is_ai = yes
+            }
+          }
+          add_to_list = depart
+        }
+      }
+      char:18 = { #celeborn
+        if = { 
+          limit = {
+            is_alive = yes
+            country = {
+              is_ai = yes
+            }
+          }
+          add_to_list = depart
+        }
+      }
+      every_in_list = {
+        list = depart
+        death = {
+          death_reason = departed_for_valinor
+        }
+      }
+    }
+  }
+}
+
+#sam becomes major
+lotr_frodos_mission_events.83 = {
+  type = country_event
+  title = lotr_frodos_mission_events.83.t
+  desc = lotr_frodos_mission_events.83.desc
+  picture = event_sam
+
+  trigger = {
+    scope:sam = {
+      is_alive = yes
+    }
+  }
+
+  immediate = {
+    c:SHI = {
+      set_as_ruler = scope:sam
+      set_variable = {
+        name = sam_stays_ruler
+        # days = 17880
+        days = 2
+      }
+      set_variable = {
+        name = sam_in_shire
+      }
+      var:samScopeVar = {
+        set_variable = {
+          name = long_lived_flag
+        }
+        # set_variable = {
+        #   name = major_repeats
+        # }
+      }
+    }
+  }
+  option = {
+    name = lotr_frodos_mission_events.83.a
+  }
+}
+
+#sam stays major
+lotr_frodos_mission_events.84 = {
+  type = country_event
+  hidden = yes
+
+  trigger = {
+    tag = SHI
+    has_variable = sam_in_shire
+    current_ruler = {
+      NOT = { has_variable = samScopeVar }
+    }
+    var:samScopeVar = {
+      is_alive = yes
+    }
+  }
+
+  immediate = {
+    if = {
+      limit = {
+        has_variable = sam_stays_ruler
+      }
+      set_as_ruler = var:samScopeVar
+    }
+    else = {
+      remove_variable = sam_in_shire
+      every_country = {
+        limit = {
+          is_ai = no
+          religion = iluvatarism
+        }
+        trigger_event = {
+          id = lotr_frodos_mission_events.85
+          days = { 2000 2200 }
+          # days = 2
+        }
+      }
+    }
+  }
+}
+
+#test
+lotr_frodos_mission_events.86 = {
+  type = country_event
+  hidden = yes
+
+  trigger = {
+  }
+
+  immediate = {
+    c:SHI = {
+      random_character = {
+        save_scope_as = test
+      }
+      set_as_ruler = scope:test
+    }
+  }
+}
+
+#to valinor sam
+lotr_frodos_mission_events.85 = {
+  type = country_event
+  title = lotr_frodos_mission_events.85.t
+  desc = lotr_frodos_mission_events.85.desc
+  picture = great_city
+  left_portrait = current_ruler
+  right_portrait = var:samScopeVar
+
+  trigger = {
+    c:SHI = {
+      var:samScopeVar = {
+        is_alive = yes
+      }
+    }
+  }
+
+  option = {
+    name = lotr_frodos_mission_events.85.a
+    custom_tooltip = lotr_frodos_mission_events.85.a.tt
+    hidden_effect = {
+      c:SHI.var:samScopeVar = { 
+        death = {
+          death_reason = departed_for_valinor
         }
       }
     }

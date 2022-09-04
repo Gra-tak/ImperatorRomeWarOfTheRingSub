@@ -164,7 +164,10 @@ lotr_teardown_events.4 = {
     name = lotr_teardown_events.2.a
     remove_province_modifier = minas_ithil_modifier
     remove_province_modifier = supplied_from_the_rear
-    remove_building_level = fortress_building
+    while = {
+      count = num_of_fortress_building
+      remove_building_level = fortress_building
+    }
     if = {
       limit = { has_city_status = yes }
       set_city_status = settlement
@@ -223,7 +226,13 @@ lotr_teardown_events.5 = {
   option = {
     name = lotr_teardown_events.2.a
     remove_province_modifier = dol_guldur_modifier
-    remove_building_level = fortress_building
+    while = {
+      count = num_of_fortress_building
+      remove_building_level = fortress_building
+    }
+    state = {
+      remove_state_modifier = minas_ithil_state_modifier
+    }
     if = {
       limit = { has_city_status = yes }
       set_city_status = settlement

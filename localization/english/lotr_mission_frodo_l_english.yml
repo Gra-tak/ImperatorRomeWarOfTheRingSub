@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 ### events for the mission country:
  lotr_frodos_mission_events.10.t:0 "Four hobbits leave the Shire"
  lotr_frodos_mission_events.10.desc:0 "After having been warned about the One Ring, Frodo Baggins and his friends seem to have left Bag End. There are rumours of dark riders being seen at Sarn Ford. We need to make sure the hobbits are not caught."
@@ -56,6 +56,20 @@
  lotr_frodos_mission_events.80.a:0 "Keep fighting while the followers of Melkor are weak."
  lotr_frodos_mission_events.80.b:0 "Make peace with the humans that fell to Sauron, but drive out the orcs from Middle-earth."
  lotr_frodos_mission_events.80.c:0 "We need to recover from our losses. Pull back all our armies while the enemies are disarranged."
+ lotr_frodos_mission_events.81.t:0 "The hobbits return to the shire"
+ lotr_frodos_mission_events.81.desc:0 "Having recieved the highest honors for the achievements during their voyage to mordor, the four hobbits are now returning to their old live in the Shire. But much has changed. Some for the better. Such as Sam finally finding the courage to ask for the hand of Rosie.\n\nFrodo takes over as Deputy Mayor of the Shire has recovered from the war."
+ lotr_frodos_mission_events.81.a:0 "They have deserved it."
+ lotr_frodos_mission_events.82.t:0 "A ship departs for Valinor"
+ lotr_frodos_mission_events.82.desc:0 "The time has come for the Ring-bearers to leave Middle-earth. Bilbo Baggins is brought to the Gray-Havens. Together with Frodo, he has been granted an honor that no Hobbit could have ever dreemed of. They are allowed to enter the Undying Lands of Valinor. With them return Gandalf, Elrond, Galadriel and Celeborn."
+ lotr_frodos_mission_events.82.a:0 "Let their wounds be healed"
+ lotr_frodos_mission_events.82.a.tt:0 "The characters will leave Middle-earth, abandoning all their titles. The latter three will not leave if they are in any player country."
+ lotr_frodos_mission_events.83.t:0 "A new Mayor in the Shire"
+ lotr_frodos_mission_events.83.desc:0 "Samwise Gamgee has been elected Mayor of the Shire. If he stays as virtous as when he escorted Frodo to Mount Doom, his reign will surely be long and prosperous."
+ lotr_frodos_mission_events.83.a:0 "Good to know"
+ lotr_frodos_mission_events.85.t:0 "Another ship departs for Valinor"
+ lotr_frodos_mission_events.85.desc:0 "Though he only bear the ring for two days, Sam Gamgee has been effected by the ring. Now that he has grown old, he is also granted the honor to enter the Undying Lands of Valinor."
+ lotr_frodos_mission_events.85.a:0 "He is rejoined with his friend"
+ lotr_frodos_mission_events.85.a.tt:0 "The character will leave Middle-earth, abandoning all titles."
 
 ###destruction events (both for owner and rest of the world)
  lotr_frodos_mission_events.90.t:0 "Barad-dûr has been destroyed"
