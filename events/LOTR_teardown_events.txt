@@ -65,9 +65,11 @@ lotr_teardown_events.2 = {
       current_ruler = { add_popularity = popularity_medium }
       add_stability = 5
     }
+    NOT = { has_global_variable = ring_destroyed }
     every_country = {
       limit = {
         NOT = { THIS = PREV.OWNER }
+        NOT = { THIS = ROOT }
       }
       trigger_event = { id = lotr_frodos_mission_events.95 days = 30 } #players are told
     }
@@ -115,10 +117,12 @@ lotr_teardown_events.3 = {
     OWNER = {
       current_ruler = { add_popularity = popularity_medium }
       add_stability = 5
-    }    
+    }
+    NOT = { has_global_variable = ring_destroyed }
     every_country = {
       limit = {
         NOT = { THIS = PREV.OWNER }
+        NOT = { THIS = ROOT }
       }
       trigger_event = { id = lotr_frodos_mission_events.96 days = 30 } #players are told
     }

@@ -657,6 +657,28 @@ lotr_frodos_mission_events.81 = {
   right_portrait = scope:pippin
 
   immediate = {
+    scope:sam = { 
+      add_martial = 5
+      add_charisma = 3
+      add_finesse = 3
+    }
+    scope:merry = { 
+      add_martial = 2
+      add_charisma = 3
+      add_finesse = 3
+      add_zeal = 3
+    }
+    scope:pippin = { 
+      add_martial = 2
+      add_charisma = 3
+      add_finesse = 3
+      add_zeal = 3
+    }
+    scope:frodo = { 
+      add_martial = 5
+      add_charisma = 3
+      add_finesse = 3
+    }
     every_in_list = {
       list = fellowship
       if = {
