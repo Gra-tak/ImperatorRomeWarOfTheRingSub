@@ -9,6 +9,7 @@ br_sauron.1 = { #event triggered for ruler that sauron has corrupt_target_ruler 
 	goto_location = root
 	trigger = {
 		sauron_rules = yes
+		NOT = {	has_global_variable = ring_destroyed }
 	}
 	
 	immediate = {
@@ -141,6 +142,7 @@ br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will have 
 		}
 		religion = melkorism
 		war = no
+		NOT = {	has_global_variable = ring_destroyed }
 	}
 	
 	immediate = {
