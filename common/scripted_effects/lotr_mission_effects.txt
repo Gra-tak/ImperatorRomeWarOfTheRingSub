@@ -325,3 +325,226 @@ gandalf_the_white = {
     }
   }
 }
+
+count_religions = {
+  set_local_variable = { name = melkor_pops value = 0 }
+  set_local_variable = { name = eru_pops value = 0 }
+  set_local_variable = { name = ritual_pops value = 0 }
+  set_local_variable = { name = total_pops value = 0 }
+  every_owned_province = {
+    change_local_variable = {
+      name = total_pops
+      add = total_population
+    }
+    every_pops_in_province = {
+      if = {
+        limit = {
+          pop_religion = melkorism
+          }
+        change_local_variable = { 
+          name = melkor_pops
+          add = 1
+        }
+      }
+      else_if = {
+        limit = {
+          pop_religion = iluvatarism
+          }
+        change_local_variable = { 
+          name = eru_pops
+          add = 1
+        }
+      }
+      else
+      {
+        change_local_variable = { 
+          name = ritual_pops
+          add = 1
+        }
+      }
+    }
+  }
+  set_variable = {
+    name = melkor_pop_fraction
+    value = local_var:melkor_pops
+  }
+  change_variable = {
+    name = melkor_pop_fraction
+    divide = local_var:total_pops
+  }
+  set_variable = {
+    name = eru_pop_fraction
+    value = local_var:eru_pops
+  }
+  change_variable = {
+    name = eru_pop_fraction
+    divide = local_var:total_pops
+  }
+  set_variable = {
+    name = ritual_pop_fraction
+    value = local_var:ritual_pops
+  }
+  change_variable = {
+    name = ritual_pop_fraction
+    divide = local_var:total_pops
+  }
+  set_variable = {
+    name = eru_vs_melkor_pop_chance
+    value = local_var:eru_pops
+  }
+  if = {
+    limit = {
+      local_var:melkor_pops > 0
+    }
+    change_variable = {
+      name = eru_vs_melkor_pop_chance
+      divide = local_var:melkor_pops
+    }
+  }
+  set_variable = {
+    name = ritual_vs_melkor_pop_chance
+    value = local_var:ritual_pops
+  }
+  change_variable = {
+    name = ritual_vs_melkor_pop_chance
+    divide = local_var:melkor_pops
+  }
+  if = {
+    limit = {
+      local_var:melkor_pops > 0
+    }
+    change_variable = {
+      name = ritual_vs_melkor_pop_chance
+      divide = local_var:melkor_pops
+    }
+  }
+}
+
+
+change_religion_effect_lotr = {
+  custom_tooltip = religion_conversion_tooltip
+  custom_tooltip = religion_conversion_family_tooltip
+  if = {
+    limit = { 
+      is_republic = yes
+      has_party_type = traditionalist_party
+    }
+    add_party_approval = {
+      party_type = traditionalist_party
+      value = -10
+    }
+  }
+  if = {
+    limit = { 
+      is_republic = yes
+      has_party_type = boni_party
+    }
+    add_party_approval = {
+      party_type = boni_party
+      value = -10
+    }
+  }
+  add_political_influence = -200
+  add_stability = -30
+  add_country_modifier = {
+    name = "recent_convert_modifier"
+    duration = 3650
+  }
+  set_country_religion = $RELIGION$
+  current_ruler = {
+    if = {
+      limit = {
+        NOT = { has_religion = $RELIGION$ }
+      }
+      set_character_religion = $RELIGION$
+    }
+  }
+  hidden_effect = {
+    current_ruler.family = {
+      every_family_member = {
+        limit = {
+          employer = ROOT
+          loyalty >= 40
+          NOT = { has_religion = $RELIGION$ }
+        }
+        set_character_religion = $RELIGION$
+      }
+    }
+  }
+  every_character = {
+    limit = {
+      loyalty >= 50
+      NOT = { has_religion = $RELIGION$ }
+      is_ruler = no
+      from_ruler_family = no
+    }
+    set_character_religion = $RELIGION$
+  }
+  hidden_effect = {
+    every_character = {
+      limit = { NOT = { has_same_religion_as = employer.current_ruler } }
+      add_loyalty = national_conversion_l
+    }
+  }
+  if = {
+    limit = {
+      has_senate_approval < 60
+      is_republic = yes
+      NOT = { has_variable = dictatorship_enabled }
+    }
+    add_tyranny = {
+      # Calculates the percentage of disapproval
+      value = 0.6 # -- SENATE_REQUIRED_APPROVAL_WITHOUT_PENALTIES
+      subtract = has_senate_approval
+      divide = 0.3 # -- SENATE_REQUIRED_APPROVAL
+      
+      # This is the real value that you want for 100% of the effect
+      multiply = 20
+    }
+  }
+}
+
+clear_melkor_opinions = {
+  every_country = {
+    limit = { 
+      NOT = { this = ROOT }
+      has_opinion = { 
+        modifier = mortal_enemies
+        target = ROOT
+      }
+    }
+    remove_opinion = { 
+      modifier = mortal_enemies
+      target = ROOT
+    }
+  }
+  every_country = {
+    limit = {
+      NOT = { this = ROOT }
+      PREV = {
+        has_opinion = { 
+          modifier = mortal_enemies
+          target = PREV
+        }
+      }
+    }
+    PREV = {
+      remove_opinion = { 
+        modifier = mortal_enemies
+        target = PREV
+      }
+    }
+  }
+  if = {
+    limit = {
+      has_opinion = { 
+        modifier = sauron_worship_modifier
+        target = c:MOR
+      }
+    }
+    remove_opinion = { 
+      modifier = sauron_worship_modifier
+      target = c:MOR
+    }
+  }
+}

@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 ### events for the mission country:
  lotr_frodos_mission_events.10.t:0 "Four hobbits leave the Shire"
  lotr_frodos_mission_events.10.desc:0 "After having been warned about the One Ring, Frodo Baggins and his friends seem to have left Bag End. There are rumours of dark riders being seen at Sarn Ford. We need to make sure the hobbits are not caught."
@@ -14,7 +14,7 @@ l_english:
  lotr_frodos_mission_events.30.a:0 "One does not simply walk into mordor."
  lotr_frodos_mission_events.31.t:0 "The fellowship is on its way south"
  lotr_frodos_mission_events.31.desc:0 "The fears of Saruman having turned to evil are true. His spies have spotted the fellowship and we can be sure that he will be hunting for them."
- # lotr_frodos_mission_events.31.a:0 "What shall we do?"
+ lotr_frodos_mission_events.31.a:0 "What shall we do?"
  lotr_frodos_mission_events.40.t:0 "The mines of Moria"
  lotr_frodos_mission_events.40.desc:0 "The fellowship has determined that the safest way it through the ancient mines of Moria. They are attacked by a Balrog of Morgoth and Gandalf the Grey falls into the depth protecting the fellowship."
  lotr_frodos_mission_events.40.a:0 "Fly, you fools!"
@@ -70,6 +70,10 @@ l_english:
  lotr_frodos_mission_events.85.desc:0 "Though he only bear the ring for two days, Sam Gamgee has been effected by the ring. Now that he has grown old, he is also granted the honor to enter the Undying Lands of Valinor."
  lotr_frodos_mission_events.85.a:0 "He is rejoined with his friend"
  lotr_frodos_mission_events.85.a.tt:0 "The character will leave Middle-earth, abandoning all titles."
+ lotr_frodos_mission_events.87.t:0 "Melkor losing followers"
+ lotr_frodos_mission_events.87.desc:0 "In the light of the recent defeat of Sauron, a country has converted back to it's old ritualist ways."
+ lotr_frodos_mission_events.88.t:0 "Worship of Eru"
+ lotr_frodos_mission_events.88.desc:0 "In the light of the recent defeat of Sauron, a country has converted to the worship of Eru Iluvatar and the Valar."
 
 ###destruction events (both for owner and rest of the world)
  lotr_frodos_mission_events.90.t:0 "Barad-dûr has been destroyed"

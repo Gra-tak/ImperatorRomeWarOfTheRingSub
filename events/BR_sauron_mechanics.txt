@@ -8,7 +8,7 @@ br_sauron.1 = { #event triggered for ruler that sauron has corrupt_target_ruler 
 	picture = dark_priestess
 	goto_location = root
 	trigger = {
-		always = yes
+		sauron_rules = yes
 	}
 	
 	immediate = {
@@ -115,7 +115,7 @@ br_sauron.3 = { #reply triggered from ruler that sauron has corrupt_target_ruler
 	}		
 }
 	
-br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will join Sauron as a puppet state, this hidden event checks for the conditions and sends another with the msg
+br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will have modifiers applied to like mordor and become mortal enemies with non melkorism countries
 	
 	type = country_event
 	title = "br_sauron.3.t"
@@ -140,6 +140,7 @@ br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will join 
 			}
 		}
 		religion = melkorism
+		war = no
 	}
 	
 	immediate = {
@@ -187,7 +188,6 @@ br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will join 
 			current_ruler = {
 				save_scope_as = convert
 			}
-			# trigger_event = { id = br_sauron.5 }
 			every_country = {
 				limit = {
 					NOT = { religion = melkorism }
@@ -202,85 +202,6 @@ br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will join 
 			}
 		}
 	}		
-}
-	
-br_sauron.5 = { #the message sent to confirm that the black priesthood is set up and that the realm is now a vassal state of sauron
-	
-	type = country_event
-	title = "br_sauron.5.t"
-	desc = "br_sauron.5.desc"
-	left_portrait = root.current_ruler
-	right_portrait = scope:convert
-	picture = dol_guldur
-	goto_location = root
-	
-	trigger = {
-		NOT = { has_country_modifier = servants_of_sauron }
-		NOT = { primary_culture = orcish }
-		NOT = { primary_culture = black_numenorean }
-		NOT = { primary_culture = corsair }
-		NOT = { primary_culture = goblins }
-		NOT = { primary_culture = urukhai }
-	}
-		
-	immediate = {
-		save_scope_as = new_subject
-		root.current_ruler = {
-			save_scope_as = convert
-		}
-	}
-	
-	option = {
-	name = "br_sauron.5.a"
-	trigger = { is_ai = yes }
-	add_country_modifier = { name = servants_of_sauron }
-	C:MOR = {
-		trigger_event = { id = br_sauron.6 days = 30 } #Sauron is notified
-		}
-	}
-
-	option = {
-		name = "br_sauron.5.a"
-		trigger = { is_ai = no }
-		add_country_modifier = { name = servants_of_sauron }
-		C:MOR = {
-			trigger_event = { id = br_sauron.6 days = 30 } #Sauron is notified
-		}
-	}
-
-}
-
-br_sauron.6 = { #Sauron is informed of his new vassal and can choose to reward them
-	
-	type = country_event
-	title = "br_sauron.6.t"
-	desc = "br_sauron.6.desc"
-	left_portrait = root.current_ruler
-	right_portrait = scope:convert
-	picture = dol_guldur
-	goto_location = root
-	
-	trigger = {
-		always = yes
-	}
-		
-	immediate = {
-	}
-	
-	option = {
-		name = "br_sauron.6.a"
-		make_subject = {
-			target = scope:new_subject
-			type = thrall_tribe
-		}
-		every_country = {
-			limit = {
-				NOT = { religion = melkorism }
-			}
-			trigger_event = { id = br_sauron.12 days = 30 } #players are told this ruler has turned to Melkor
-		}
-	}
-
 }
 
 br_sauron.7 = { #Sauron is informed that he will be spending the next 20 years regaining his substance

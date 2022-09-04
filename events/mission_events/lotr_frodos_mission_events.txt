@@ -577,6 +577,7 @@ lotr_frodos_mission_events.80 = {
           name = sauron_is_defeated_melkor
           duration = 14600
         }
+        count_religions = yes
       }
       every_country = {
         limit = { 
@@ -756,6 +757,10 @@ lotr_frodos_mission_events.83 = {
   desc = lotr_frodos_mission_events.83.desc
   picture = event_sam
 
+
+  left_portrait = current_ruler
+  right_portrait = scope:sam
+
   trigger = {
     scope:sam = {
       is_alive = yes
@@ -853,7 +858,7 @@ lotr_frodos_mission_events.85 = {
   desc = lotr_frodos_mission_events.85.desc
   picture = great_city
   left_portrait = current_ruler
-  right_portrait = var:samScopeVar
+  right_portrait = c:SHI.var:samScopeVar
 
   trigger = {
     c:SHI = {
@@ -873,6 +878,36 @@ lotr_frodos_mission_events.85 = {
         }
       }
     }
+  }
+}
+
+#back to ritualism
+lotr_frodos_mission_events.87 = {
+  type = country_event
+  title = lotr_frodos_mission_events.87.t
+  desc = lotr_frodos_mission_events.87.desc
+  picture = event_desert_coast
+  left_portrait = current_ruler
+  right_portrait = scope:target.current_ruler
+
+
+  option = {
+    name = "OK"
+  }
+}
+
+#back to iluvatarism
+lotr_frodos_mission_events.88 = {
+  type = country_event
+  title = lotr_frodos_mission_events.88.t
+  desc = lotr_frodos_mission_events.88.desc
+  picture = city_construction
+  left_portrait = current_ruler
+  right_portrait = scope:target.current_ruler
+
+
+  option = {
+    name = "OK"
   }
 }
 

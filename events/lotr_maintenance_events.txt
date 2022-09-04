@@ -252,8 +252,6 @@ lotr_maintenance.5 = {
     tag = UMB
   }
   immediate = {
-    # capital_scope.region = {
-    # }
     if = {
       limit = { NOT = { has_variable = rivers_marked_flag } }
       every_sea_and_river_zone = {
@@ -588,73 +586,150 @@ lotr_maintenance.5 = {
 
   option = {
     name = OK
-    # every_province = {
-    #   limit = { 
-    #     has_variable = corsair_raid_strength
-    #     exists = owner
-    #     NOT = { owner = ROOT }
-    #   }
-    #   set_conquered_by = ROOT
-    }
-    # every_in_list = {
-    #   list = raidSeaZones
-    #   every_neighbor_province = {
-    #     limit = { 
-    #       exists = owner
-    #       NOT = { owner = ROOT }
-    #     }
-    #     set_conquered_by = ROOT
-    #   }
-    # }
   }
-  # immediate = {
-  #   # capital_scope.region = {
-  #   # }
-  #   every_owned_province = {
-  #     limit = {
-  #       is_coastal = yes
-  #     }
-  #     region = {
-  #       if = {
-  #         limit = {
-  #           NOT = {
-  #             is_in_list = raidRegions
-  #           }
-  #         }
-  #         add_to_list = raidRegions
-  #       }
-  #     }
-  #   }
-  #   while = {
-  #     count = 5
-  #     every_in_list = {
-  #       list = raidRegions
-  #       every_neighbor_region = {
-  #         limit = {
-  #           NOT = {
-  #             is_in_list = raidRegions
-  #           }
-  #           any_region_province = {
-  #             is_coastal = yes
-  #           }
-  #         }
-  #         add_to_list = raidRegions
-  #       }
-  #     }
-  #   }
-  # }
-
-  # option = {
-  #   name = OK
-  #   every_in_list = {
-  #     list = raidRegions
-  #     every_region_province = {
-  #       limit = { 
-  #         exists = owner
-  #         NOT = { owner = ROOT }
-  #       }
-  #       set_conquered_by = ROOT
-  #     }
-  #   }
-  # }
 }
+
+
+#Keeping track of number of melkorism citizen after Sauron falls. Randomly converting some
+lotr_maintenance.6 = {
+  type = country_event
+  title = OK
+  desc = OK
+  hidden = yes
+  trigger = {
+    religion = melkorism
+    has_country_modifier = sauron_is_defeated_melkor
+  }
+  immediate = {
+    ###convert to ritualism
+    #part 1: existing ritualism convert others
+    set_local_variable = {
+      name = convert_ritual_chance
+      value = { integer_range = { min = -40 max = 40 } }
+    }
+    change_local_variable = {
+      name = convert_ritual_chance
+      multiply = var:ritual_pop_fraction
+    }
+    #part 2: new ritualism people without existing 
+    set_local_variable = {
+      name = convert_ritual_chance_base
+      value = { integer_range = { min = -50 max = 15 } }
+    }
+    if = {
+      limit = {
+        local_var:convert_ritual_chance_base > 0
+      }
+      change_local_variable = {
+        name = convert_ritual_chance
+        add = local_var:convert_ritual_chance_base
+      }
+    }
+    ###convert to eru (unlikely unless there are already many eru in the country)
+    #part 1: existing eru convert others
+    set_local_variable = {
+      name = convert_eru_chance
+      value = { integer_range = { min = -40 max = 40 } }
+    }
+    change_local_variable = {
+      name = convert_eru_chance
+      multiply = var:eru_pop_fraction
+    }
+    #part 2: unlikely new eru people
+    set_local_variable = {
+      name = convert_eru_chance_base
+      value = { integer_range = { min = -50 max = 5 } }
+    }
+    if = {
+      limit = {
+        local_var:convert_eru_chance_base > 0
+      }
+      change_local_variable = {
+        name = convert_eru_chance
+        add = local_var:convert_eru_chance_base
+      }
+    }
+
+    #doing the actual conversions
+    every_owned_province = {
+      set_local_variable = {
+        name = ritual_converts
+        value = total_population
+      }
+      change_local_variable = {
+        name = ritual_converts
+        multiply = local_var:convert_ritual_chance
+      }
+      change_local_variable = {
+        name = ritual_converts
+        divide = 100
+      }
+      if = { #fake rounding (the real rounding doesn't seem to work). Small provinces would get way too little to we round for below 1 conversion with a bias
+        limit = { 
+          local_var:ritual_converts < 1 
+          local_var:ritual_converts >= 0.4 
+        }
+        set_local_variable = {
+          name = ritual_converts
+          value = 1
+        }
+      }
+      if = {
+        limit = { local_var:ritual_converts >= 1 }
+        while = {
+          count = local_var:ritual_converts
+          limit = {
+            any_pops_in_province = {
+              pop_religion = melkorism
+            }
+          }
+          random_pops_in_province = {
+            limit = {
+              pop_religion = melkorism
+            }
+            set_pop_religion = eastern_animism
+          }
+        }
+      }
+      set_local_variable = {
+        name = eru_converts
+        value = total_population
+      }
+      change_local_variable = {
+        name = eru_converts
+        multiply = local_var:convert_eru_chance
+      }
+      change_local_variable = {
+        name = eru_converts
+        divide = 100
+      }
+      if = {
+        limit = { 
+          local_var:eru_converts < 1 
+          local_var:eru_converts >= 0.4
+        }
+        set_local_variable = {
+          name = eru_converts
+          value = 1
+        }
+      }
+      if = {
+        limit = { local_var:eru_converts >= 1 }
+        while = {
+          count = local_var:eru_converts
+          limit = {
+            any_pops_in_province = {
+              pop_religion = melkorism
+            }
+          }
+          random_pops_in_province = {
+            limit = {
+              pop_religion = melkorism
+            }
+            set_pop_religion = iluvatarism
+          }
+        }
+      }
+    }
+    count_religions = yes
+  }
