@@ -544,6 +544,9 @@ lotr_frodos_mission_events.80 = {
         days = 365
       }
     }
+    p:1030 = { #minas morgul
+      remove_province_modifier = supplied_from_the_rear
+    }
     p:1141 = {
       trigger_event = {
         id = lotr_frodos_mission_events.90

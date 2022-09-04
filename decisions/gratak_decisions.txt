@@ -129,30 +129,11 @@
 			always = no
 		}
 		allow = {
-			any_owned_province = {
-				save_temporary_scope_as = provin
-				owner = {
-					# is_ai = no
-					any_country_culture = {
-						is_integrated = no
-						this.culture = scope:provin.dominant_province_culture
-					}
-				}
-			}
 		}
 		effect = {
-			# set_country_heritage = arnor_heritage
-			# treasure:lotr_treasure_dor_lomin_helmet = {
-			# 	transfer_treasure_to_country = CAR
-			# }
-			every_country = {
-				limit = {
-					is_ai = yes
-					country_culture_group = orcs_group
-					NOT = { has_law = age_of_the_orc }
-				}
-   			change_law = age_of_the_orc
-			}
+	    p:1030 = { #minas morgul
+	      remove_province_modifier = supplied_from_the_rear
+	    }
 		}
 	}
 	
