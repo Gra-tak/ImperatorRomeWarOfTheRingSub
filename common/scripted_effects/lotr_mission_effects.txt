@@ -146,7 +146,7 @@ destroy_black_gate_effect = {
     remove_building_level = fortress_building
   }
   state = {
-    remove_state_modifier = barad_dur_state_modifier
+    remove_state_modifier = black_gate_state_modifier
   }
   if = {
     limit = { has_city_status = yes }

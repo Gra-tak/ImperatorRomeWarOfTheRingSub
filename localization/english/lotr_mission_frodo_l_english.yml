@@ -51,7 +51,7 @@
  lotr_frodos_mission_events.74.desc:0 "We need to make a move. While we are fighting the armies of mordor, we still haven't done enough to fully get Sauron's attention away from the path of the Hobbits. We need to siege the Black Gate!"
  lotr_frodos_mission_events.74.a:0 "For Frodo!"
  lotr_frodos_mission_events.80.t:0 "The ring is destroyed"
- lotr_frodos_mission_events.80.desc:0 "'It's gone. It's done.' - 'Yes Frodo, it's over now.' He has succeded! Mount Doom is exploding. The dark lord is no more! The morale of the orcs and followers of melkor is failing. "
+ lotr_frodos_mission_events.80.desc:0 "'It's gone. It's done.' - 'Yes Frodo, it's over now.'\n\nHe has succeded! Mount Doom is exploding. The dark lord is no more! The morale of the orcs and followers of melkor is failing. "
  #I can see the shire
  lotr_frodos_mission_events.80.a:0 "Keep fighting while the followers of Melkor are weak."
  lotr_frodos_mission_events.80.b:0 "Make peace with the humans that fell to Sauron, but drive out the orcs from Middle-earth."
