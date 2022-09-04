@@ -540,8 +540,8 @@ lotr_frodos_mission_events.80 = {
       }
       trigger_event = {
         id = lotr_frodos_mission_events.81
-        days = 1
-        # days = 365
+        # days = 1
+        days = 365
       }
     }
     p:1141 = {
@@ -673,8 +673,8 @@ lotr_frodos_mission_events.81 = {
     }
     trigger_event = {
       id = lotr_frodos_mission_events.82
-      days = 1
-      # days = 365
+      # days = 1
+      days = 365
     }
   }
   option = {
@@ -697,8 +697,8 @@ lotr_frodos_mission_events.82 = {
   immediate = {
     trigger_event = {
       id = lotr_frodos_mission_events.83
-      days = 1
-      # days = 365
+      # days = 1
+      days = 365
     }
   }
   option = {
@@ -772,8 +772,8 @@ lotr_frodos_mission_events.83 = {
       set_as_ruler = scope:sam
       set_variable = {
         name = sam_stays_ruler
-        # days = 17880
-        days = 2
+        days = 17880
+        # days = 2
       }
       set_variable = {
         name = sam_in_shire
@@ -782,9 +782,6 @@ lotr_frodos_mission_events.83 = {
         set_variable = {
           name = long_lived_flag
         }
-        # set_variable = {
-        #   name = major_repeats
-        # }
       }
     }
   }
@@ -833,23 +830,23 @@ lotr_frodos_mission_events.84 = {
   }
 }
 
-#test
-lotr_frodos_mission_events.86 = {
-  type = country_event
-  hidden = yes
+# #test
+# lotr_frodos_mission_events.86 = {
+#   type = country_event
+#   hidden = yes
 
-  trigger = {
-  }
+#   trigger = {
+#   }
 
-  immediate = {
-    c:SHI = {
-      random_character = {
-        save_scope_as = test
-      }
-      set_as_ruler = scope:test
-    }
-  }
-}
+#   immediate = {
+#     c:SHI = {
+#       random_character = {
+#         save_scope_as = test
+#       }
+#       set_as_ruler = scope:test
+#     }
+#   }
+# }
 
 #to valinor sam
 lotr_frodos_mission_events.85 = {

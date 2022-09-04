@@ -476,7 +476,6 @@
       trigger_event = {
         id = lotr_frodos_mission_events.40
       }
-      #todo: kill gandalf the grey
     }
   }
 
@@ -571,7 +570,6 @@
       trigger_event = {
         id = lotr_frodos_mission_events.45
       }
-      #todo: kill gandalf the grey
     }
   }
 
@@ -646,7 +644,6 @@
 
     on_completion = {
       #move sam and frodo to ithilien rangers, rest to gondor or rohan
-      #TODO kill boromir (might actually kill the real one unless player is gondor)
       trigger_event = {
         id = lotr_frodos_mission_events.51
       }
@@ -724,7 +721,6 @@
 
     on_completion = {
       #move sam and frodo to ithilien rangers, rest to gondor or rohan
-      #TODO kill boromir (might actually kill the real one unless player is gondor)
       trigger_event = {
         id = lotr_frodos_mission_events.56
       }
@@ -975,7 +971,7 @@
             is_in_region = rhuvenlhad_region
             is_in_region = calenardhon_region
             is_in_region = anorien_region
-            # is_in_region = ithilien_region
+            is_in_region = ithilien_region
           }
           exists = owner
           controller = {
@@ -1004,24 +1000,13 @@
         #choose between ending all wars or just the ones vs non-orc
 
       #massive maluses for all orc countries "sauron is defeated"
-      # -80% morale
-      # -40% discipline ?
-      # 20 years +
-      # revert orc growth bonuses (infighting)
-
+      # remove orc growth bonuses
       # slightly weaker malus for all melkor countries
-      # 40% morale
-      # -20% discipline
-      # 20 years +
-      # population unhappiness, 
+      # conversion away frm melkorism (removed modifier if fully embraced)
       #fellowship to player
       trigger_event = {
         id = lotr_frodos_mission_events.80
       }
-      #todo:
-      # possibly people converting (back) to ritualism (latter probably only while not at war anymore?)
-      # malus removed by event to convert the country back to ritualism or ERU (latter exclusive culture groups that didn't have ritualism)
-
     }
   }
 	
