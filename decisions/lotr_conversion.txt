@@ -1,0 +1,100 @@
+﻿#Rules for religious conversions can be found in 00_religions in common/scripted_triggers, the effect for changing religion is in common/00_religions in scripted_effects.
+
+country_decisions = {
+	abandon_melkor_for_ritualist = {
+		potential = {
+			num_of_cities >= 1
+	    religion = melkorism
+   		has_country_modifier = sauron_is_defeated_melkor
+		}
+
+		allow = {
+			war = no
+		}
+		
+		ai_allow = {
+			has_variable = ritual_vs_melkor_pop_chance
+			var:ritual_vs_melkor_pop_chance >= 0.5
+		}
+		
+		effect = {
+			change_religion_effect_lotr = {
+				RELIGION = eastern_animism
+			}
+			remove_country_modifier = sauron_is_defeated_melkor
+			save_scope_as = target
+			clear_melkor_opinions = yes
+			every_country = {
+				limit = { is_ai = no }
+				trigger_event = {
+					id = lotr_frodos_mission_events.87
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 0.1
+			modifier = {
+				factor = 50
+				capital_scope = {
+					dominant_province_religion = eastern_animism
+				}
+			}
+		}
+	}
+	abandon_melkor_for_eru = {
+		potential = {
+			num_of_cities >= 1
+	    religion = melkorism
+   		has_country_modifier = sauron_is_defeated_melkor
+		}
+
+		allow = {
+			war = no
+		}
+		
+		ai_allow = {
+			has_variable = eru_vs_melkor_pop_chance
+			var:eru_vs_melkor_pop_chance >= 0.5
+		}
+		
+		effect = {
+			change_religion_effect_lotr = {
+				RELIGION = iluvatarism
+			}
+			remove_country_modifier = sauron_is_defeated_melkor
+			save_scope_as = target
+			clear_melkor_opinions = yes
+			every_country = {
+				limit = { religion = melkorism }
+				add_opinion = {
+					modifier = mortal_enemies
+					target = ROOT
+				}
+				PREV = {
+					add_opinion = {
+						modifier = mortal_enemies
+						target = PREV
+					}
+				}
+			}
+			every_country = {
+				limit = { is_ai = no }
+				trigger_event = {
+					id = lotr_frodos_mission_events.88
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 0.1
+			modifier = {
+				factor = 50
+				capital_scope = {
+					dominant_province_religion = iluvatarism
+				}
+			}
+		}
+	}
+}
+
