@@ -733,3 +733,59 @@ lotr_maintenance.6 = {
     }
     count_religions = yes
   }
+}
+
+lotr_maintenance.7 = {
+  type = country_event
+  title = OK
+  desc = OK
+  hidden = yes
+  trigger = {
+  }
+  immediate = {
+    if = {
+      limit = {
+        any_owned_province = {
+          is_in_area = khazad_dum_area
+        }
+      }
+      random_owned_province = {
+        limit = { 
+          is_in_area = khazad_dum_area
+        }
+        save_scope_as = p
+      }
+      if = {
+        limit = {
+          scope:p.state = { has_state_modifier = moria_state_modifier }
+        }
+        if = {
+          limit = {
+            OR = {
+              NOT = { owns = 3695 }
+              NOT = { owns = 2999 }
+            }
+          }
+          scope:p.state = { remove_state_modifier = moria_state_modifier }
+        }
+      }
+      else_if = {
+        limit = {
+          NOT = { scope:p.state = { has_state_modifier = moria_state_modifier } }
+        }
+        if = {
+          limit = {
+            owns = 3695
+            owns = 2999
+          }
+          scope:p.state = { 
+            add_state_modifier = {
+              name = moria_state_modifier
+              duration = -1
+            }
+          }
+        }
+      }
+    }
+  }
+}
