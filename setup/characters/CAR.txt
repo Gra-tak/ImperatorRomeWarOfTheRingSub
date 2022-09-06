@@ -82,7 +82,7 @@
 		birth_date=2908.1.1
 		culture="rangers"
 		religion="iluvatarism"
-		add_martial=4
+		add_martial=3
 		add_trait="strong_blood_of_numenor"
 	}
 	69={
@@ -107,7 +107,7 @@
 	}
 	71={
 		first_name="Qutar"
-		family = c:CAR.fam:GreyCompany
+		family = c:CAR.fam:Dunadan
 		birth_date=2963.1.1
 		culture="rangers"
 		religion="iluvatarism"
@@ -125,11 +125,11 @@
 	}
 	73={
 		first_name="Yenyar"
-		family = c:CAR.fam:GreyCompany
+		family = c:CAR.fam:Dunadan
 		birth_date=2906.1.1
 		culture="rangers"
 		religion="iluvatarism"
-		add_charisma=5
+		add_martial=4
 		add_trait="strong_blood_of_numenor"
 	}
 	74={
@@ -140,6 +140,7 @@
 		religion="iluvatarism"
 		add_trait="strong_blood_of_numenor"
 		father="char:72"
+		female=yes
 	}
 	
 }

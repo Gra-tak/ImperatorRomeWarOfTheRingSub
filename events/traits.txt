@@ -1834,11 +1834,11 @@ traits.4 = {
 
 	weight_multiplier = {
 		modifier = {
-			factor = 0.15
+			factor = 0.25
 			has_trait = strong_blood_of_numenor
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.5
 			has_trait = blood_of_numenor
 		}
 	}
