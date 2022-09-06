@@ -327,7 +327,6 @@ provinces = {
 			treasures = {
 				701
 				709
-				725
 			}
 		}
 	}
@@ -335,29 +334,9 @@ provinces = {
 		 # Ring of Barahir - Lossoth
 		treasure_slots = { treasures = { 702 } }
 	}
-	1648 = {
-		 # Dor-lómin Helmet Shards of Narsil - Rangers of the North
-		treasure_slots = {
-			treasures = { 704 710 }
-		}
-	}
-	380 = {
-		 # The Arkenstone Statue of Mahal - Erebor
-		treasure_slots = {
-			treasures = { 705 713 }
-		}
-	}
-	1810 = {
-		 # Palantír of Elostirion - Elostirion
-		treasure_slots = { treasures = { 706 } }
-	}
 	1449 = {
 		 # Mirror of Galadriel - Lorein
 		treasure_slots = { treasures = { 711 } }
-	}
-	3821 = {
-		 # Elendil's Casket - Halifirien
-		treasure_slots = { treasures = { 712 } }
 	}
 	1300 = {
 		 # Statue of Eärnil II - Minas Anor
@@ -409,7 +388,6 @@ provinces = {
 			treasures = {
 				726
 				746
-				747
 			}
 		}
 	}
@@ -419,17 +397,9 @@ provinces = {
 			treasures = { 727 749 }
 		}
 	}
-	3755 = {
-		 # Great Goblin Crown - Orcs Misty Mountains
-		treasure_slots = { treasures = { 728 } }
-	}
 	1276 = {
 		 # Anduin Mother Shrine - Beornings
 		treasure_slots = { treasures = { 729 } }
-	}
-	2720 = {
-		 # Golden Bell - Dale
-		treasure_slots = { treasures = { 730 } }
 	}
 	3674 = {
 		 # Sculpture of Durin Statue of Grór Raven Crown - Iron Hills
@@ -437,7 +407,6 @@ provinces = {
 			treasures = {
 				731
 				732
-				733
 			}
 		}
 	}
@@ -453,10 +422,6 @@ provinces = {
 		 # Two Fathers Statue - Tumnogoth
 		treasure_slots = { treasures = { 736 } }
 	}
-	700 = {
-		 # Lady of the Nets Shrine - Methir
-		treasure_slots = { treasures = { 738 } }
-	}
 	97 = {
 		 # Cult of Melkor Altar - Ethir Harnen
 		treasure_slots = { treasures = { 739 } }
@@ -468,18 +433,6 @@ provinces = {
 	913 = {
 		 # Altar of Sauron - Carn Dum
 		treasure_slots = { treasures = { 741 } }
-	}
-	200 = {
-		 # Yavanna Figurine - Dorwinion
-		treasure_slots = { treasures = { 742 } }
-	}
-	2891 = {
-		 # Fire Cult Effigy - Khey
-		treasure_slots = { treasures = { 743 } }
-	}
-	441 = {
-		 # Bozisha Gold Idol - Bôzisha-Mîraz
-		treasure_slots = { treasures = { 744 } }
 	}
 	1646 = {
 		 # Spirit of the Forest - Cillien
