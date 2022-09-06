@@ -1,6 +1,5 @@
 ﻿harondorian_group = {
 	#
-	
 	levy_template = levy_harondorian
 	
 	primary = light_infantry

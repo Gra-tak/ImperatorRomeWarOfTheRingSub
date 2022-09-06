@@ -475,9 +475,6 @@ provinces = {
 	1646 = { # Spirit of the Forest - Cillien
 		treasure_slots = { treasures = { 745 } }
 	}
-	#1546 = { #  Stone of Orthanc - Orthanc
-	#	treasure_slots = { treasures = { 751 } }
-	#}
 	63 = { # Serpent-god shrine - Dol Annabrith
 		treasure_slots = { treasures = { 752 } }
 	}
