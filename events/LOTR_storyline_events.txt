@@ -15,7 +15,6 @@ lotr_storyline_events.1 = {
 		c:XVX = {
 			set_country_religion = melkorism
 			char:16 = { set_character_religion = melkorism }
-			change_law = age_of_the_orc
 			if = {
 				limit = {
 					exists = c:MOR
@@ -67,12 +66,16 @@ lotr_storyline_events.1 = {
 			}
 		}
 		every_owned_province = {
+			limit = {
+				is_in_area = calenhardin_area
+			}
 			every_pops_in_province = {
 				set_pop_culture = urukhai
 				set_pop_religion = melkorism
 			}
 		}
 		set_primary_culture = urukhai
+		change_law = age_of_the_orc
     
 	}
 }
