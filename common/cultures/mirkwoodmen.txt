@@ -1,6 +1,5 @@
 ﻿mirkwoodmen_group = {
 	#
-	
 	levy_template = levy_mirkwoodmen
 	
 	primary = archers

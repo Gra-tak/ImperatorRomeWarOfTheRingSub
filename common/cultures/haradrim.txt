@@ -1,6 +1,5 @@
 ﻿haradrim_group = {
 	#
-	
 	levy_template = levy_haradrim
 	
 	primary = light_infantry

@@ -2225,267 +2225,230 @@ create_2_nobles_effect = {
 add_relevant_subunit_effect = {
 	if = {
 		limit = {
-			commander = {
-				OR = {
-					has_culture_group = east_levantine
-					has_culture_group = south_levantine
-					has_culture_group = numidian
-				}
-			}
+			exists = commander
 		}
 		commander = {
 			add_gold = -20
 		}
-		random_list = {
-			25 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = camel
-								trade_goods = camel
-							}
-						}
-					}
+		if = {
+			limit = {
+				commander = {
+					has_culture = rangers
 				}
-				add_subunit = camels
 			}
-			25 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
+			add_subunit = rangers
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture = dolamroth
 				}
-				add_subunit = light_cavalry
 			}
-			25 = {
-				add_subunit = light_infantry
-			}
-			25 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
-				}
-				add_subunit = heavy_cavalry
+			random_list = {
+				50 = { add_subunit = dol_amroth_knights }
+				50 = { add_subunit = dunedain_infantry }
 			}
 		}
-	}
-	else_if = {
-		limit = {
-			commander = {
-				OR = {
-					has_culture_group = west_levantine
-					has_culture_group = hellenic
-					has_culture_group = latin
-					has_culture_group = persia
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = edain_group
 				}
+			}
+			random_list = {
+				60 = { add_subunit = dunedain_infantry }
+				20 = { add_subunit = dunedain_archers }
+				20 = { add_subunit = dunedain_cavalry }
 			}
 		}
-		commander = {
-			add_gold = -20
 		}
-		random_list = {
-			20 = {
-				add_subunit = light_infantry
-			}
-			30 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = iron
-								trade_goods = iron
-							}
-						}
-					}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = haldadian_group
 				}
-				add_subunit = heavy_infantry
 			}
-			20 = {
-				add_subunit = archers
-			}
-			20 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
-				}
-				add_subunit = light_cavalry
-			}
-			10 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = elephants
-								trade_goods = elephants
-							}
-						}
-					}
-				}
-				add_subunit = warelephant
+			random_list = {
+				60 = { add_subunit = light_infantry }
+				20 = { add_subunit = archers }
+				20 = { add_subunit = heavy_infantry }
 			}
 		}
-	}
-	else_if = {
-		limit = {
-			commander = {
-				OR = {
-					has_culture_group = aryan
-					has_culture_group = pracyan
-					has_culture_group = indian
-					has_culture_group = tibetan
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = eotheod_group
 				}
+			}
+			random_list = {
+				60 = { add_subunit = light_cavalry }
+				20 = { add_subunit = heavy_cavalry }
+				20 = { add_subunit = horse_archers }
 			}
 		}
-		commander = {
-			add_gold = -20
+		else_if = {
+			limit = {
+				commander = {
+					has_culture = orcs
+				}
+			}
+			add_subunit = orc_infantry
 		}
-		random_list = {
-			20 = {
-				add_subunit = light_infantry
-			}
-			10 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = iron
-								trade_goods = iron
-							}
-						}
-					}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture = goblins
 				}
-				add_subunit = heavy_infantry
 			}
-			30 = {
-				add_subunit = archers
-			}
-			20 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = elephants
-								trade_goods = elephants
-							}
-						}
-					}
-				}
-				add_subunit = warelephant
-			}
-			20 = {
-				add_subunit = chariots
+			random_list = {
+				80 = { add_subunit = orc_infantry }
+				20 = { add_subunit = warg_riders }
 			}
 		}
-	}
-	else_if = {
-		limit = {
-			commander = {
-				has_culture_group = scythia
+		else_if = {
+			limit = {
+				commander = {
+					has_culture = urukhai
+				}
+			}
+			random_list = {
+				50 = { add_subunit = uruk_infantry }
+				30 = { add_subunit = uruk_heavy_infantry }
+				20 = { add_subunit = uruk_crossbows }
 			}
 		}
-		commander = {
-			add_gold = -20
-		}
-		random_list = {
-			20 = {
-				add_subunit = light_infantry
-			}
-			20 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = barangil_group
 				}
-				add_subunit = heavy_cavalry
 			}
-			40 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = steppe_horses
-								trade_goods = steppe_horses
-							}
-						}
-					}
-				}
-				add_subunit = horse_archers
-			}
-			20 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
-					}
-				}
-				add_subunit = light_cavalry
+			random_list = {
+				50 = { add_subunit = light_infantry }
+				30 = { add_subunit = archers }
+				20 = { add_subunit = warelephant }
 			}
 		}
-	}
-	else = {
-		commander = {
-			add_gold = -20
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = breelander_group
+				}
+			}
+			random_list = {
+				50 = { add_subunit = archers }
+				30 = { add_subunit = heavy_infantry }
+				20 = { add_subunit = light_cavalry }
+			}
 		}
-		random_list = {
-			20 = {
-				add_subunit = chariots
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = easterling_group
+				}
 			}
-			20 = {
-				add_subunit = light_infantry
+			random_list = {
+				50 = { add_subunit = heavy_infantry }
+				25 = { add_subunit = chariots }
+				25 = { add_subunit = light_cavalry }
 			}
-			40 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = horses
-								trade_goods = horses
-							}
-						}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = forodwaith_group
+				}
+			}
+			random_list = {
+				40 = { add_subunit = archers }
+				60 = { add_subunit = light_infantry }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = halfling_group
+				}
+			}
+			add_subunit = halfling_infantry
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = haradrim_group
+				}
+			}
+			random_list = {
+				50 = { add_subunit = heavy_infantry }
+				30 = { add_subunit = light_infantry }
+				20 = { add_subunit = warelephant }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = dwarf_group
+				}
+			}
+			random_list = {
+				50 = { add_subunit = dwarven_infantry }
+				30 = { add_subunit = dwarven_archers }
+				20 = { add_subunit = dwarven_goat_riders }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = harondorian_group
+				}
+			}
+			random_list = {
+				50 = { add_subunit = light_infantry }
+				25 = { add_subunit = heavy_infantry }
+				25 = { add_subunit = archers }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = mirkwoodmen_group
+				}
+			}
+			random_list = {
+				60 = { add_subunit = archers }
+				20 = { add_subunit = heavy_infantry }
+				20 = { add_subunit = light_cavalry }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					OR = {
+						has_culture_group = teleri_group
+						has_culture_group = noldor_group
 					}
 				}
-				add_subunit = light_cavalry
 			}
-			20 = {
-				trigger = {
-					commander.employer = {
-						any_owned_province = {
-							OR = {
-								is_importing_trade_good = iron
-								trade_goods = iron
-							}
-						}
-					}
+			random_list = {
+				50 = { add_subunit = elvish_archers }
+				25 = { add_subunit = elvish_infantry }
+				25 = { add_subunit = elvish_cavalry_archers }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = yopi_group
 				}
-				add_subunit = heavy_infantry
 			}
+			random_list = {
+				50 = { add_subunit = light_infantry }
+				30 = { add_subunit = heavy_infantry }
+				20 = { add_subunit = light_cavalry }
+			}
+		}
+		else = { #maia, possibly others?
+			add_subunit = light_infantry
 		}
 	}
 }
@@ -2529,6 +2492,7 @@ add_relevant_loyal_subunit_effect = {
 				20 = { add_loyal_subunit = dunedain_cavalry }
 			}
 		}
+		}
 		else_if = {
 			limit = {
 				commander = {
@@ -2541,8 +2505,180 @@ add_relevant_loyal_subunit_effect = {
 				20 = { add_loyal_subunit = heavy_infantry }
 			}
 		}
-		#TODO OTHERS (ALSO FIX VERSION ABOVE IF THAT IS ACTUALLY USED)
-		else = {
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = eotheod_group
+				}
+			}
+			random_list = {
+				60 = { add_loyal_subunit = light_cavalry }
+				20 = { add_loyal_subunit = heavy_cavalry }
+				20 = { add_loyal_subunit = horse_archers }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture = orcs
+				}
+			}
+			add_loyal_subunit = orc_infantry
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture = goblins
+				}
+			}
+			random_list = {
+				80 = { add_loyal_subunit = orc_infantry }
+				20 = { add_loyal_subunit = warg_riders }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture = urukhai
+				}
+			}
+			random_list = {
+				50 = { add_loyal_subunit = uruk_infantry }
+				30 = { add_loyal_subunit = uruk_heavy_infantry }
+				20 = { add_loyal_subunit = uruk_crossbows }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = barangil_group
+				}
+			}
+			random_list = {
+				50 = { add_loyal_subunit = light_infantry }
+				30 = { add_loyal_subunit = archers }
+				20 = { add_loyal_subunit = warelephant }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = breelander_group
+				}
+			}
+			random_list = {
+				50 = { add_loyal_subunit = archers }
+				30 = { add_loyal_subunit = heavy_infantry }
+				20 = { add_loyal_subunit = light_cavalry }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = easterling_group
+				}
+			}
+			random_list = {
+				50 = { add_loyal_subunit = heavy_infantry }
+				25 = { add_loyal_subunit = chariots }
+				25 = { add_loyal_subunit = light_cavalry }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = forodwaith_group
+				}
+			}
+			random_list = {
+				40 = { add_loyal_subunit = archers }
+				60 = { add_loyal_subunit = light_infantry }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = halfling_group
+				}
+			}
+			add_loyal_subunit = halfling_infantry
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = haradrim_group
+				}
+			}
+			random_list = {
+				50 = { add_loyal_subunit = heavy_infantry }
+				30 = { add_loyal_subunit = light_infantry }
+				20 = { add_loyal_subunit = warelephant }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = dwarf_group
+				}
+			}
+			random_list = {
+				50 = { add_loyal_subunit = dwarven_infantry }
+				30 = { add_loyal_subunit = dwarven_archers }
+				20 = { add_loyal_subunit = dwarven_goat_riders }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = harondorian_group
+				}
+			}
+			random_list = {
+				50 = { add_loyal_subunit = light_infantry }
+				25 = { add_loyal_subunit = heavy_infantry }
+				25 = { add_loyal_subunit = archers }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = mirkwoodmen_group
+				}
+			}
+			random_list = {
+				60 = { add_loyal_subunit = archers }
+				20 = { add_loyal_subunit = heavy_infantry }
+				20 = { add_loyal_subunit = light_cavalry }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					OR = {
+						has_culture_group = teleri_group
+						has_culture_group = noldor_group
+					}
+				}
+			}
+			random_list = {
+				50 = { add_loyal_subunit = elvish_archers }
+				25 = { add_loyal_subunit = elvish_infantry }
+				25 = { add_loyal_subunit = elvish_cavalry_archers }
+			}
+		}
+		else_if = {
+			limit = {
+				commander = {
+					has_culture_group = yopi_group
+				}
+			}
+			random_list = {
+				50 = { add_loyal_subunit = light_infantry }
+				30 = { add_loyal_subunit = heavy_infantry }
+				20 = { add_loyal_subunit = light_cavalry }
+			}
+		}
+		else = { #maia, possibly others?
 			add_loyal_subunit = light_infantry
 		}
 	}

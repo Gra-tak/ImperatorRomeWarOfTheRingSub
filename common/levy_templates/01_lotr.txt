@@ -75,7 +75,7 @@ levy_haradrim = {
 levy_dwarf = {
 	default = no
 	dwarven_infantry = 0.5
-	dwarven_archers = 0.25
+	dwarven_archers = 0.3
 	dwarven_goat_riders = 0.2
 }
 
