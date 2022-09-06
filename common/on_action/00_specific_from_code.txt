@@ -1230,16 +1230,6 @@ on_game_initialized = {
 			value = religious_tech
 		}
 		if = {
-			limit = { tag = GON } #could be any tag, it's just to prevent repeating
-			# trigger_event = { id = br_truce.1 }
-			trigger_event = { id = br_maintenance.3 }
-		}
-		trigger_event = { id = br_maintenance.2 }
-		# if = {
-		# 	limit = { tag = GON } #could be any tag, it's just to prevent repeating
-		# 	trigger_event = { id = br_truce.2 }
-		# }
-		if = {
 			limit = { tag = MOR } #could be any tag, it's just to prevent repeating
 			char:3 = { #Sauron
 				trigger_event = { id = main_magic.1 }
@@ -1558,6 +1548,8 @@ on_game_initialized = {
 		br_truce.3
 		br_truce.4
 		br_truce.5
+		br_maintenance.2 #maia trait to culture
+		br_maintenance.3 #mortal enemies
 		br_maintenance.4 #gives full food to provs to avoid starvation at game start
 	}
 }
