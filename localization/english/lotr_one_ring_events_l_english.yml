@@ -1,7 +1,7 @@
 ﻿l_english:
  # One Ring events
  lotr_treasure_one_ring:0 "The One Ring"
- lotr_treasure_one_ring_desc:0 "Forged by Dark Lord Sauron to gain dominion over Middle-earth, The One Ring is the most powerful of all Rings.\n\n#E Ruler stats:#!\nMonthly Corruption: #Y +1#!\nMartial: #Y +20#!  Finesse: #Y +14#!\nCharisma: #Y +18#!  Zeal: #Y +16#!\nHealth: #Y Long life#!\nMonthly increases to: #Y Prominence#!, #Y Popularity#!, #Y Wage#!\n+ Events & Decisions related to the Ring"
+ lotr_treasure_one_ring_desc:0 "Forged by Dark Lord Sauron to gain dominion over Middle-earth, The One Ring is the most powerful of all Rings.\n\n#E Ruler stats:#!\nMonthly Corruption: #Y 0.51#!\nMartial: #Y +20#!  Finesse: #Y +14#!\nCharisma: #Y +18#!  Zeal: #Y +16#!\nHealth: #Y Long life#!\nMonthly increases to: #Y Prominence#!, #Y Popularity#!, #Y Wage#!\n+ Events & Decisions related to the Ring"
  owns_one_ring_modifier:0 "One Ring"
  owns_one_ring_modifier_desc:0 "One Ring"
  # Decisions
@@ -9,6 +9,15 @@
  lotr_treasure_one_ring_decision_desc:0 "The One Ring treasure provides the nation's ruler with powerful bonuses, however it also causes several negative side-effects. The bearer develops a very strong attachment to the ring, therefore any decisions that are made related to it will cause a negative effect on the ruler's health and a reduction in stability.\n\n#Y Once enacted, this decision will be unavailable for 1 year.#!"
  lotr_treasure_one_ring_decision_tooltip:0 "Nation's ruler loses #R health#! each time Ring decisions are enacted."
  # Decision Events
+ lotr_one_ring_events.1.t:0 "We found the One Ring"
+ lotr_one_ring_events.1.desc:0 "Forged by Dark Lord Sauron to gain dominion over Middle-earth, the Ring progressively corrupts the wearer's mind to evil, while also greatly extending the life of any mortal possessor.\n\nTo destroy the ring it must be taken deep into Mordor and cast back into the fiery chasm from whence it came! More specifically the nation's ruler, [ROOT.GetCountry.GetRulerTitle] [ROOT.GetCountry.GetRuler.GetName], must be in command of an army beside Mount Doom while being at war with the owner or having decolonized it, altenatively it can be conquered, in order to destroy The One Ring."
+ lotr_one_ring_events.1.a:0 "Take the ring"
+ lotr_one_ring_events.1.b:0 "It is too dangerous. Leave it to the Hobbits"
+ lotr_one_ring_events.2.t:0 "We came into possession of the One Ring"
+ lotr_one_ring_events.2.desc:0 "Forged by Dark Lord Sauron to gain dominion over Middle-earth, the Ring progressively corrupts the wearer's mind to evil, while also greatly extending the life of any mortal possessor.\n\nTo destroy the ring it must be taken deep into Mordor and cast back into the fiery chasm from whence it came! More specifically the nation's ruler, [ROOT.GetCountry.GetRulerTitle] [ROOT.GetCountry.GetRuler.GetName], must be in command of an army beside Mount Doom while being at war with the owner or having decolonized it, altenatively it can be conquered, in order to destroy The One Ring."
+ lotr_one_ring_events.2.a:0 "Take the ring"
+ lotr_one_ring_events.2.b:0 "It is too dangerous. Return it to the Hobbits"
+ frodo_mission_hint_tooltip:0 "There is a mission to help Frodo destroy the ring instead of risking your ruler falling to it."
  lotr_one_ring_events.3.t:0 "The One Ring"
  lotr_one_ring_events.3.desc:0 "Forged by Dark Lord Sauron to gain dominion over Middle-earth, the Ring progressively corrupts the wearer's mind to evil, while also greatly extending the life of any mortal possessor.\n\nTo destroy the ring it must be taken deep into Mordor and cast back into the fiery chasm from whence it came! More specifically the nation's ruler, [ROOT.GetCountry.GetRulerTitle] [ROOT.GetCountry.GetRuler.GetName], must be in command of an army beside Mount Doom in order to destroy The One Ring.\n\n#Y More decisions become available as the [ROOT.GetCountry.GetRulerTitle]'s corruption increases.#!"
  lotr_one_ring_events.3.a:0 "My precious! We needs it."
@@ -29,3 +38,7 @@
  lotr_one_ring_events.5.desc:0 "An emissary of the Black Priesthood in your realm comes to you quievering, shaking and pale - 'Our Lord and God, Sauron, is most foully slain! The wicked men and elves of the West destroyed his ring, and now his body is cast into the void! Fleeee! Flee and die in what manner seems best to you!' And then he runs off, leaving you and your entire court in stunned silence."
  lotr_one_ring_events.5.a:0 "Chaos... is a ladder..."
  lotr_one_ring_events.5.b:0 "Impossible! He must be lying!"
+ lotr_one_ring_events.6.t:0 "Falling to the power of the ring"
+ lotr_one_ring_events.6.desc:0 "Our will to resist the power of the ring is finally failing. We are but moments away from the point of no return. Either we get rid of the One Ring now at great costs, or our fate is sealed."
+ lotr_one_ring_events.6.a:0 "My precious! We needs it."
+ lotr_one_ring_events.6.b:0 "It is too dangerous. Return it to the Hobbits"

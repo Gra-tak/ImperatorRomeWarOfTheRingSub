@@ -32,6 +32,11 @@
     current_date > 3002.1.1 #year after bilbos birthday. It starts much layer in the non-movie timeline, though it is to be expected to take the player some time to take the mission
     religion = iluvatarism
     sauron_rules = yes
+    current_ruler = {
+      NOT = {
+        has_character_modifier = owns_one_ring_modifier
+      }
+    }
 	}
 
 	on_potential = {

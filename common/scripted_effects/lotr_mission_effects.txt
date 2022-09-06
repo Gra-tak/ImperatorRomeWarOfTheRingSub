@@ -111,6 +111,61 @@ gandalf_to_gondor = {
   }
 }
 
+ring_destroyed_effect = {
+  p:1030 = { #minas morgul
+    remove_province_modifier = supplied_from_the_rear
+  }
+  p:1141 = {
+    trigger_event = {
+      id = lotr_frodos_mission_events.90
+    }
+  }
+  p:1021 = {
+    trigger_event = {
+      id = lotr_frodos_mission_events.91
+    }
+  }
+  p:1140 = {
+    trigger_event = {
+      id = lotr_frodos_mission_events.92
+    }
+  }
+  hidden_effect = {
+    set_global_variable = ring_destroyed
+    every_country = {
+      remove_existing_sauron_fury = yes
+    }
+    every_country = {
+      limit = { country_culture_group = orcs_group }
+      add_country_modifier = {
+        name = sauron_is_defeated_orcs
+        duration = 14600
+      }
+    }
+    every_country = {
+      limit = { 
+        NOT = { country_culture_group = orcs_group }
+        religion = melkorism
+      }
+      add_country_modifier = {
+        name = sauron_is_defeated_melkor
+        duration = 14600
+      }
+      count_religions = yes
+    }
+    every_country = {
+      limit = { 
+        NOT = { country_culture_group = orcs_group }
+        religion = iluvatarism
+      }
+      add_country_modifier = {
+        name = sauron_is_defeated_eru
+        duration = 14600
+      }
+    }
+  }
+}
+
 destroy_barad_dur_effect = {
   remove_province_modifier = barad_dur_modifier
   while = {
@@ -548,5 +603,81 @@ clear_melkor_opinions = {
       modifier = sauron_worship_modifier
       target = c:MOR
     }
+  }
+}
+
+apply_one_ring_to_ruler = {
+  current_ruler = {
+    add_martial = 20
+    add_finesse = 14
+    add_charisma = 18
+    add_zeal = 16
+    add_character_modifier = {
+      name = owns_one_ring_modifier
+      duration = -1
+    }
+  }
+}
+
+remove_one_ring_from_previous_owner = {
+  every_living_character = {
+    limit = {
+      has_character_modifier = owns_one_ring_modifier
+    }
+    remove_character_modifier = owns_one_ring_modifier
+    add_martial = -18
+    add_finesse = -12
+    add_charisma = -16
+    add_zeal = -14
+  }
+}
+
+release_shire = {
+  return_provinces_to_shire = yes
+  make_subject = {
+    target = c:SHI
+    type = client_state
+  }
+}
+
+return_provinces_to_shire = {
+  if = {
+    limit = {
+      p:1621 = { #michel delving
+        exists = owner
+        owner = ROOT
+      }
+    }
+    p:1621 = { set_conquered_by = c:SHI }
+  }
+  every_owned_province = {
+    limit = { 
+      dominant_province_culture_group = halfling_group 
+      is_in_region = siragale_region #todo: check if that's enough
+    }
+    set_conquered_by = c:SHI
+  }
+}
+
+ring_to_shire_effect = {
+  if = {
+    limit = {
+      c:SHI = {
+        has_land = no
+      }
+    }
+    release_shire = yes
+  }
+  else_if = {
+    limit = {
+      p:1621 = { #michel delving
+        exists = owner
+        owner = ROOT
+      }
+    }
+    return_provinces_to_shire = yes
+  }
+  treasure:lotr_treasure_one_ring = {
+    transfer_treasure_to_country = c:SHI
   }
 }

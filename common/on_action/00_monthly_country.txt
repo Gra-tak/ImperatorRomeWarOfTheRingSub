@@ -12,6 +12,7 @@ monthly_country_pulse = {
 		family_events.9 #Rise of Family in Republics
 		lotr_one_ring_events.1
 		lotr_one_ring_events.2
+		lotr_one_ring_events.6
 		#lotr_storyline_events.1
 		lotr_storyline_events.2
 		lotr_storyline_events.3

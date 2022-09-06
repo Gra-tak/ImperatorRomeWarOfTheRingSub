@@ -2,49 +2,59 @@
 
 #The Ring is found by country that has occupied the shire
 lotr_one_ring_events.1 = {
-	type = country_event
-	hidden = yes
+    type = country_event
+    title = "lotr_one_ring_events.1.t"
+    desc = "lotr_one_ring_events.1.desc"
+    picture = event_one_ring_held
+
+    left_portrait = current_ruler
+    right_portrait = char:3
 
 	trigger = {
 		is_ai = no
-		p:1621 = {
-			NOT = {
-				owner = c:SHI
+		NOT = { tag = SHI }
+		p:1621 = { #michel delving
+			exists = owner
+			owner = ROOT
+		}
+		NOT = {
+			any_country_treasure = {
+				this = treasure:lotr_treasure_one_ring
 			}
 		}
-		current_date > 2986.3.3  #Pureon - this needs rethinking
-		NOT = {
-			has_variable = lotr_one_ring_event1_variable
-		}
+		NOT = { has_global_variable = ring_destroyed }
+		NOT = { has_global_variable = frodo_protector_country_global }
 	}
 	
-	fire_only_once = yes
-	
 	immediate = {
-		set_variable = {
-			name = lotr_one_ring_event1_variable
+	}
+	option = {
+		name = "lotr_one_ring_events.1.a"
+		treasure:lotr_treasure_one_ring = {
+			transfer_treasure_to_country = ROOT
 		}
-		p:1621.owner = {
-			save_scope_as = shire_new_owner_scope
+		apply_one_ring_to_ruler = yes
+	}
+	option = {
+		name = "lotr_one_ring_events.1.b"
+		trigger = {
+			NOT = { religion = melkorism }
 		}
-		if = {
-			limit = {
-				exists = scope:shire_new_owner_scope
-			}
-			treasure:lotr_treasure_one_ring = {
-				transfer_treasure_to_country = scope:shire_new_owner_scope
-			}
-		}
+		custom_tooltip = "frodo_mission_hint_tooltip"
+		ring_to_shire_effect = yes
 	}
 }
 
 #Rings power given to ruler of nation with ring treasure
 lotr_one_ring_events.2 = {
-	type = country_event
-	hidden = yes
-
+    type = country_event
+    title = "lotr_one_ring_events.1.t"
+    desc = "lotr_one_ring_events.1.desc"
+    picture = event_one_ring_held
+    left_portrait = current_ruler
+    right_portrait = char:3
 	trigger = {
-		current_date > 2986.4.3  #Pureon - move back
+		NOT = { tag = SHI }
 		exists = treasure:lotr_treasure_one_ring
 		ROOT = {
 			any_country_treasure = {
@@ -58,28 +68,52 @@ lotr_one_ring_events.2 = {
 		}
 	}
 	
-	immediate = {
+	option = {
+		name = "lotr_one_ring_events.2.a"
+		remove_one_ring_from_previous_owner = yes
+		apply_one_ring_to_ruler = yes
+	}
+	option = {
+		name = "lotr_one_ring_events.2.b"
+		trigger = {
+			NOT = { religion = melkorism }
+		}
+		remove_one_ring_from_previous_owner = yes
+		ring_to_shire_effect = yes
+	}
+}
+
+#Rings corrupts bearer
+lotr_one_ring_events.6 = {
+    type = country_event
+    title = "lotr_one_ring_events.6.t"
+    desc = "lotr_one_ring_events.6.desc"
+    picture = event_one_ring_held
+    left_portrait = current_ruler
+    right_portrait = char:3
+	trigger = {
+		NOT = { religion = melkorism }
+		current_ruler = { 
+			has_character_modifier = owns_one_ring_modifier 
+			corruption >= 99
+		}
+	}
+	
+	option = {
+		name = "lotr_one_ring_events.6.a"
+		set_country_religion = melkorism
 		current_ruler = {
-			add_martial = 20
-			add_finesse = 14
-			add_charisma = 18
-			add_zeal = 16
-			add_character_modifier = {
-				name = owns_one_ring_modifier
-				duration = -1
-			}
+			set_character_religion = melkorism
 		}
-		random_character = {
-			limit = {
-				is_ruler = no
-				has_character_modifier = owns_one_ring_modifier
-			}
-			remove_character_modifier = owns_one_ring_modifier
-			add_martial = -18
-			add_finesse = -12
-			add_charisma = -16
-			add_zeal = -14
+	}
+	option = {
+		name = "lotr_one_ring_events.6.b"
+		remove_one_ring_from_previous_owner = yes
+		add_stability = -50
+		current_ruler = {
+			add_health = -75
 		}
+		ring_to_shire_effect = yes
 	}
 }
 
@@ -89,7 +123,8 @@ lotr_one_ring_events.3 = {
     title = "lotr_one_ring_events.3.t"
     desc = "lotr_one_ring_events.3.desc"
     picture = event_one_ring_held
-	
+    left_portrait = current_ruler
+    right_portrait = char:3
 	immediate = {
 		set_variable = {
 			name = lotr_one_ring_events3_variable
@@ -109,14 +144,18 @@ lotr_one_ring_events.3 = {
 		name = "lotr_one_ring_events.3.b"
 		custom_tooltip = "lotr_one_ring_events.3.b.tt"
 		trigger = {
-			exists = treasure:lotr_treasure_one_ring
 			NOT = {
 				tag = MOR
 			}
 			sauron_rules = yes
+			religion = melkorism
 		}
+		remove_one_ring_from_previous_owner = yes
 		treasure:lotr_treasure_one_ring = {
 			transfer_treasure_to_country = c:MOR
+		}
+		c:MOR = {
+			apply_one_ring_to_ruler = yes
 		}
 		current_ruler = {
 			add_health = -50
@@ -130,21 +169,7 @@ lotr_one_ring_events.3 = {
 			exists = treasure:lotr_treasure_one_ring
 			owns_or_subject_owns = 1140
 		}
-		hidden_effect = {
-			treasure:lotr_treasure_one_ring = { destroy_treasure = yes }
-			p:1141 = {
-				if = {
-					limit = {
-						is_model_shown = "wonder_barad_dur"
-					}
-					hide_model = "wonder_barad_dur"
-				}
-				add_city_fire_effect = yes
-			}
-			p:1140 = {
-				show_model = "wonder_barad_dur_rubble"
-			}
-		}
+		ring_destroyed_effect = yes
 		current_ruler = {
 			add_health = -30
 		}
@@ -158,32 +183,18 @@ lotr_one_ring_events.3 = {
 			current_ruler = {
 				is_at_location = 1140
 			}
-		}
-		hidden_effect = {
-			treasure:lotr_treasure_one_ring = { destroy_treasure = yes }
-			p:1141 = {
-				if = {
-					limit = {
-						is_model_shown = "wonder_barad_dur"
-					}
-					hide_model = "wonder_barad_dur"
+			war = yes
+			OR = {
+				p:1140 = {
+					has_owner = no
 				}
-				add_city_fire_effect = yes
-			}
-			p:1140 = {
-				show_model = "wonder_barad_dur_rubble"
+				any_countries_at_war_with = { this = p:1140.owner }
 			}
 		}
+		ring_destroyed_effect = yes
 		current_ruler = {
-			add_health = -30
+			add_health = -50
 		}
-		kill_sauron_nazgul = yes
-		C:MOR = {
-				add_country_modifier = {
-				name = death_of_sauron
-				duration = 7300
-				}
-				}
 		every_country = {
 			limit = {
 				NOT = { religion = melkorism }
@@ -207,10 +218,24 @@ lotr_one_ring_events.3 = {
 			current_ruler = {
 				corruption >= 40
 			}
+			NOT = { religion = melkorism }
 		}
 		current_ruler = {
 			set_character_religion = melkorism
 		}
+		set_country_religion = melkorism
+	}
+	option = {
+		name = "lotr_one_ring_events.6.b"
+		trigger = {
+			NOT = { religion = melkorism }
+		}
+		remove_one_ring_from_previous_owner = yes
+		add_stability = -50
+		current_ruler = {
+			add_health = -75
+		}
+		ring_to_shire_effect = yes
 	}
 	
 }

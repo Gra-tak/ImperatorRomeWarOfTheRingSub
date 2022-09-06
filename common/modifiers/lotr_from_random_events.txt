@@ -1,6 +1,6 @@
 ﻿### New LOTR modifiers only ###
 owns_one_ring_modifier = {
-	monthly_corruption = 1.0 
+	monthly_corruption = 0.5 
 	health = 5.0
 	monthly_character_prominence = 0.1
 	monthly_character_popularity = 0.3

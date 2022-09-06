@@ -550,58 +550,7 @@ lotr_frodos_mission_events.80 = {
         days = 365
       }
     }
-    p:1030 = { #minas morgul
-      remove_province_modifier = supplied_from_the_rear
-    }
-    p:1141 = {
-      trigger_event = {
-        id = lotr_frodos_mission_events.90
-      }
-    }
-    p:1021 = {
-      trigger_event = {
-        id = lotr_frodos_mission_events.91
-      }
-    }
-    p:1140 = {
-      trigger_event = {
-        id = lotr_frodos_mission_events.92
-      }
-    }
-    hidden_effect = {
-      set_global_variable = ring_destroyed
-      every_country = {
-        remove_existing_sauron_fury = yes
-      }
-      every_country = {
-        limit = { country_culture_group = orcs_group }
-        add_country_modifier = {
-          name = sauron_is_defeated_orcs
-          duration = 14600
-        }
-      }
-      every_country = {
-        limit = { 
-          NOT = { country_culture_group = orcs_group }
-          religion = melkorism
-        }
-        add_country_modifier = {
-          name = sauron_is_defeated_melkor
-          duration = 14600
-        }
-        count_religions = yes
-      }
-      every_country = {
-        limit = { 
-          NOT = { country_culture_group = orcs_group }
-          religion = iluvatarism
-        }
-        add_country_modifier = {
-          name = sauron_is_defeated_eru
-          duration = 14600
-        }
-      }
-    }
+    ring_destroyed_effect = yes
   }
   #keep fighting
   option = {
