@@ -5338,7 +5338,7 @@ restore_food_effect = {
 		had_vegetables = { set_trade_goods = vegetables remove_variable = had_vegetables  }
 		had_woad = { set_trade_goods = woad remove_variable = had_woad  }
 		had_fur = { set_trade_goods = fur remove_variable = had_fur  }
-		had_fur = { set_trade_goods = wild_game remove_variable = had_wild_game  }
+		had_wild_game = { set_trade_goods = wild_game remove_variable = had_wild_game  }
 	}
 }
 

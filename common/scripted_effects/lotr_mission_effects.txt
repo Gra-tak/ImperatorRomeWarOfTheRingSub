@@ -298,29 +298,31 @@ declare_war_against_orcs = {
 }
 
 gandalf_the_white = {
-  c:SHI = {
-    create_character = {
-      first_name="Gandalf"
-      family_name="the White"
-      age=2800
-      culture="maia"
-      religion="iluvatarism"
-      no_stats=yes
-      add_martial=20
-      add_charisma=25
-      add_finesse=25
-      add_zeal=25
-      no_traits=yes
-      force_add_trait="maia"
-      force_add_trait="olympic_competitor"
-      save_scope_as = gandalf
-      dna="AAAH7oppimkAAAAAAp0CnQJ4AngCfwJ/AnYCdgKYApgCiwKLAlYCVgJ3AncCkwKTApcClwKXApcCiwKLAoECgQKLAosCTgJOAm0CbQKTApMCXgJeAmcCZwJWAlYCfwJ/AowCjAKaApoCdgJ2ApICkgKRApECkAKQAmwCbAKJAokCdQJ1ApUClQKeAp4CdAJ0ArACsAKUApQCcwJzAnYCdgKLAosCjAKMAn0CfQKTApMCjAKMAmECYQKMAowClQKVAo8CjwKLAosChgKGAnkCeQJRAlECbQJtAlkCWQKYApgCkwKTAsICwgQEBAQBZQFlATMBMwFhAWEATwBPAVABUAC2ALYALwAvAIcAhwCpAKkEnAScArYCtgFzAXMABwAHAN0A3QFpAWkAPwA/Aq8CrwCxALEDtwO3ARsBGwD5APkCngKeAQMBAwKVApUAOgA6AHwAfABIAEgAwwDDACYAJgD5APkCiAKIA3ADcAD0APQH6QDEAH8AfwQ3BDcWXhZeAPAA8Az+DP4QgxAXEf8R0AAAAAAAAAAAAAAAAAAAAAA="
-      add_to_list = fellowshipToGondor
-      add_to_list = fellowship
-    }
-    scope:gandalf = {
-      set_variable = {
-        name = gandalf_flag
+  hidden_effect = {
+    c:SHI = {
+      create_character = {
+        first_name="Gandalf"
+        family_name="the White"
+        age=2800
+        culture="maia"
+        religion="iluvatarism"
+        no_stats=yes
+        add_martial=20
+        add_charisma=25
+        add_finesse=25
+        add_zeal=25
+        no_traits=yes
+        force_add_trait="maia"
+        force_add_trait="olympic_competitor"
+        save_scope_as = gandalf
+        dna="AAAH7oppimkAAAAAAp0CnQJ4AngCfwJ/AnYCdgKYApgCiwKLAlYCVgJ3AncCkwKTApcClwKXApcCiwKLAoECgQKLAosCTgJOAm0CbQKTApMCXgJeAmcCZwJWAlYCfwJ/AowCjAKaApoCdgJ2ApICkgKRApECkAKQAmwCbAKJAokCdQJ1ApUClQKeAp4CdAJ0ArACsAKUApQCcwJzAnYCdgKLAosCjAKMAn0CfQKTApMCjAKMAmECYQKMAowClQKVAo8CjwKLAosChgKGAnkCeQJRAlECbQJtAlkCWQKYApgCkwKTAsICwgQEBAQBZQFlATMBMwFhAWEATwBPAVABUAC2ALYALwAvAIcAhwCpAKkEnAScArYCtgFzAXMABwAHAN0A3QFpAWkAPwA/Aq8CrwCxALEDtwO3ARsBGwD5APkCngKeAQMBAwKVApUAOgA6AHwAfABIAEgAwwDDACYAJgD5APkCiAKIA3ADcAD0APQH6QDEAH8AfwQ3BDcWXhZeAPAA8Az+DP4QgxAXEf8R0AAAAAAAAAAAAAAAAAAAAAA="
+        add_to_list = fellowshipToGondor
+        add_to_list = fellowship
+      }
+      scope:gandalf = {
+        set_variable = {
+          name = gandalf_flag
+        }
       }
     }
   }

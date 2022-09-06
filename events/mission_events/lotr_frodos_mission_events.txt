@@ -333,6 +333,12 @@ lotr_frodos_mission_events.60 = {
   }
   option = {
     name = lotr_frodos_mission_events.60.a
+    if = {
+      limit = {
+        has_completed_mission_task = lotr_depart_from_lorien
+      }
+      gandalf_to_gondor = yes
+    }
     every_in_list = {
       list = fellowshipStayRohan
       if = {
