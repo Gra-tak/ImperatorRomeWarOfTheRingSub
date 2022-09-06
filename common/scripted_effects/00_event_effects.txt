@@ -2261,7 +2261,6 @@ add_relevant_subunit_effect = {
 				20 = { add_subunit = dunedain_cavalry }
 			}
 		}
-		}
 		else_if = {
 			limit = {
 				commander = {
@@ -2289,7 +2288,7 @@ add_relevant_subunit_effect = {
 		else_if = {
 			limit = {
 				commander = {
-					has_culture = orcs
+					has_culture = orcish
 				}
 			}
 			add_subunit = orc_infantry
@@ -2492,7 +2491,6 @@ add_relevant_loyal_subunit_effect = {
 				20 = { add_loyal_subunit = dunedain_cavalry }
 			}
 		}
-		}
 		else_if = {
 			limit = {
 				commander = {
@@ -2520,7 +2518,7 @@ add_relevant_loyal_subunit_effect = {
 		else_if = {
 			limit = {
 				commander = {
-					has_culture = orcs
+					has_culture = orcish
 				}
 			}
 			add_loyal_subunit = orc_infantry

@@ -56,7 +56,9 @@ lotr_teardown_events.2 = {
   desc = lotr_teardown_events.2.desc
   picture = event_barad_dur_destroyed
 
-  trigger = {}
+  trigger = {
+    NOT = { has_global_variable = ring_destroyed }
+  }
 
   option = {
     name = lotr_teardown_events.2.a
@@ -65,7 +67,6 @@ lotr_teardown_events.2 = {
       current_ruler = { add_popularity = popularity_medium }
       add_stability = 5
     }
-    NOT = { has_global_variable = ring_destroyed }
     every_country = {
       limit = {
         NOT = { THIS = PREV.OWNER }
@@ -109,7 +110,9 @@ lotr_teardown_events.3 = {
   desc = lotr_teardown_events.3.desc
   picture = event_black_gate_destroyed
 
-  trigger = {}
+  trigger = {
+    NOT = { has_global_variable = ring_destroyed }
+  }
 
   option = {
     name = lotr_teardown_events.2.a
@@ -118,7 +121,6 @@ lotr_teardown_events.3 = {
       current_ruler = { add_popularity = popularity_medium }
       add_stability = 5
     }
-    NOT = { has_global_variable = ring_destroyed }
     every_country = {
       limit = {
         NOT = { THIS = PREV.OWNER }

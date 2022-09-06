@@ -632,11 +632,39 @@ remove_one_ring_from_previous_owner = {
   }
 }
 
+revive_country = {
+  hidden_effect = {
+    add_stability = 50
+    add_treasury = 100
+    while = {
+      count = num_allowed_families
+      create_character = { save_scope_as = target }
+      create_family = scope:target
+    }
+    while = {
+      count = 30
+      create_character = { save_scope_as = target }
+      random_family = {
+        save_scope_as = fam
+      }
+      scope:target = { set_family = scope:fam }
+    }
+    while = {
+      count = 10
+      create_character = { }
+    }
+  }
+}
+
 release_shire = {
   return_provinces_to_shire = yes
   make_subject = {
     target = c:SHI
     type = client_state
+  }
+
+  c:SHI = {
+    revive_country = yes
   }
 }
 
@@ -652,8 +680,8 @@ return_provinces_to_shire = {
   }
   every_owned_province = {
     limit = { 
-      dominant_province_culture_group = halfling_group 
-      is_in_region = siragale_region #todo: check if that's enough
+      province_dominant_culture_group = halfling_group 
+      is_in_region = siragale_region
     }
     set_conquered_by = c:SHI
   }
