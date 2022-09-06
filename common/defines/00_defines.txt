@@ -60,7 +60,7 @@ NCountry = {
 	MAX_COLONISATION_BARB_IN_TARGET = 2
 	FORT_MAINTENANCE = 0.2
 	
-	BASE_FORT_LIMIT_PER_STATE = 8
+	BASE_FORT_LIMIT_PER_STATE = 5
 	FIRST_FORT_COST_IN_POINTS = 3 # Is measured against BASE_FORT_LIMIT_PER_STATE. This applies for the first fort in every province - every other fort in the same province is 1 point towards this limit
 	
 	LAND_MAINTENANCE_FACTOR = 0.25 

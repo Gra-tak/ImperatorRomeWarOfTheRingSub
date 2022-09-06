@@ -6,7 +6,7 @@ minas_anor_modifier = {
 	local_research_points_modifier = -0.1
 }
 minas_anor_state_modifier = {
-	local_fort_limit = 2
+	local_fort_limit = 5
 	local_defensive = 1.0
 }
 supplied_from_the_rear = {
@@ -23,7 +23,7 @@ minas_ithil_modifier = {
 	local_monthly_food_modifier = 1.0
 }
 minas_ithil_state_modifier = {
-	local_fort_limit = 3
+	local_fort_limit = 6
 	local_defensive = 0.5
 }
 black_gate_modifier = {
@@ -35,7 +35,7 @@ black_gate_modifier = {
 }
 black_gate_state_modifier = {
 	local_defensive = 0.5
-	local_fort_limit = 3
+	local_fort_limit = 6
 	local_hostile_attrition = 0.5
 }
 osgiliath_palace_modifier = {
@@ -49,7 +49,7 @@ orthanc_modifier = {
 	monthly_local_governor_wage = 0.1
 }
 orthanc_state_modifier = {
-	local_fort_limit = 3
+	local_fort_limit = 6
 }
 helms_deep_modifier = {
 	local_hostile_attrition = 0.3
@@ -97,7 +97,10 @@ umbar_harbour_modifier = {
 	local_ship_start_experience = 10
 	local_commerce_value_modifier = 0.1
 	local_tax_modifier = 0.15
-	fort_level = 5
+	fort_level = 4
+}
+umbar_state_modifier = {
+	local_fort_limit = 2
 }
 great_tower_modifier = {
 	fort_level = 1
@@ -189,6 +192,9 @@ moria_west_gate_modifier = {
 	local_defensive = 0.05
 	fort_level = 3
 }
+moria_state_modifier = {
+	local_fort_limit = 5
+}
 celebdil_modifier = {
 	base_resources = 1
 }
@@ -213,7 +219,7 @@ barad_dur_modifier = {
 	local_monthly_food_modifier = 2.0
 }
 barad_dur_state_modifier = {
-	local_fort_limit = 3
+	local_fort_limit = 6
 }
 barad_dur_foundations_modifier = {
 	fort_level = 1
@@ -224,6 +230,9 @@ dol_guldur_modifier = {
 	local_defensive = 0.05
 	local_slaves_output = 0.05
 	local_population_capacity = 50
+}
+dol_guldur_state_modifier = {
+	local_fort_limit = 3
 }
 carn_dum_modifier = {
 	fort_level = 1

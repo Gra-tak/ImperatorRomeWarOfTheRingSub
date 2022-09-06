@@ -31,51 +31,70 @@ lotr_startup.1 = { #Temp fix for new vanilla fort capacity mechanic causing inco
 				}
 			}
 		}
-			p:1300 = {
-				state = {
-					add_state_modifier = {
-						name = minas_anor_state_modifier
-						duration = -1
-						mode = add
-					}
+		p:1300 = {
+			state = {
+				add_state_modifier = {
+					name = minas_anor_state_modifier
+					duration = -1
 				}
 			}
-			p:1030 = {
-				state = {
-					add_state_modifier = {
-						name = minas_ithil_state_modifier
-						duration = -1
-						mode = add
-					}
+		}
+		p:1030 = {
+			state = {
+				add_state_modifier = {
+					name = minas_ithil_state_modifier
+					duration = -1
 				}
 			}
-			p:1141 = {
-				state = {
-					add_state_modifier = {
-						name = barad_dur_state_modifier
-						duration = -1
-						mode = add
-					}
+		}
+		p:1141 = {
+			state = {
+				add_state_modifier = {
+					name = barad_dur_state_modifier
+					duration = -1
 				}
 			}
-			p:1021 = {
-				state = {
-					add_state_modifier = {
-						name = black_gate_state_modifier
-						duration = -1
-						mode = add
-					}
+		}
+		p:1021 = {
+			state = {
+				add_state_modifier = {
+					name = black_gate_state_modifier
+					duration = -1
 				}
 			}
-			p:1546 = {
-				state = {
-					add_state_modifier = {
-						name = orthanc_state_modifier
-						duration = -1
-						mode = add
-					}
+		}
+		p:1546 = {
+			state = {
+				add_state_modifier = {
+					name = orthanc_state_modifier
+					duration = -1
 				}
 			}
+		}
+		p:1105 = {
+			state = {
+				add_state_modifier = {
+					name = dol_guldur_state_modifier
+					duration = -1
+				}
+			}
+		}
+		p:3695 = {
+			state = {
+				add_state_modifier = {
+					name = moria_state_modifier
+					duration = -1
+				}
+			}
+		}
+		p:1 = {
+			state = {
+				add_state_modifier = {
+					name = umbar_state_modifier
+					duration = -1
+				}
+			}
+		}
 	}	
 }
 
