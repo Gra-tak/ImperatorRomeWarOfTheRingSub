@@ -1,0 +1,183 @@
+Features:
+- Mission to protect Frodo on his way to destroy the Ring.
+	- You need to keep the way of Frodo and the Fellowship cleared of Orcs and other followers of Melkor while more and more countries will attack you as well as Eru countries that neighbor them.
+	- Should lead to an actual "War of the Ring"
+	- On completion of the mission, Sauron and the Nazghul will die, Barad-Dur and the Black Gate will be destroyed and Orcs and followers of Melkor will get major debuffs for 40 years, the latter being given the option to convert away instead
+	- Many events and characters included of which I don't want to spoil too much here ;)
+- Tradition trees are now unlocked if you have enough of the according pops in your subjects (only counts client states, ranger fief (not protectorates), mordor and saruman thralls: 200 for Elves and Edain, 400 for Dwarfs and Rohirim, 1000 for others. All pops of the culture group are added, it doesn't require to be a single culture.
+- New known character:
+	- Legolas, Thranduil, Gimli, Gloin, Celeborn, Haldir (+family), Halbarad (+ Grey company), Cirdan the Shipwright, Galdor of the Havens, Oin and Ori (Balin)
+- Foreign units for legions can now be unlocked in their tradition trees
+- Decisions to rebuild some of the wonders of middle earth (can be done in vassals as well)
+	- Annuminas
+	- Amon Sul (3D model now only visible after this decision)
+	- Osgiliath
+	- Fornost
+	- Tharbad (with added 3D model)
+	- Tharbad bridge (road through Tharbad no longer there at start of game)
+	- Cameth brin tower (3D model now only visible after this decision)
+- Evil wonders can now be torn down on conquest. The alternative is turning evil yourself
+	- Barad Dur, Black Gate, Dol Guldur, Minas Morgul
+- Orc and Corsair raid events now actually have reasonable triggers and mtth modifiers
+	- Orc raids happen if you unfortified border provinces in region or directly neighboring a region that has goblin/orc/uruk provinces (one event for each). The event tells you this (including naming the region that is the issue)
+	- Corsair raids happen on unfortified coastal provinces in range of the Corsair. The close you are and the more provinces are effected the more ships are needed to prevent them
+- Decision to declare war as Eru country on any vassals that have turned to Melkor worship with imperial conquest wargoal (instant conquest of provinces, as you may be unable to conquer their provinces otherwise and just turning them back into a vassal wouldn't convert them)
+- Decision for non-ai Eru countries to declare war without claim and with reduced AE creation on any orc country that neighbors you or one of you vassals
+	- Reduced AE creation as orcs and melkor countries hate you anyway and others shouldn't hate you for freeing people from the orcs
+	- AE reduction goes both ways though
+- Decision for Aragon and Arwen to promise themselves to each other. Actual marriage can be done on re-founding Arnor or turning Imladris to be your subject
+- Can now accept same culture group cultures via cultural decision (though, you can decide which one to accept, rather than having to accept all current cultures of your group)
+- Pops now sometimes move away from wrong cultured countries towards countries of their cultures
+	- Any non-orc may flee being eaten by orcs from provinces which are owned by orcs but don't have orc majority (yet): About 5-10% per year
+		- This is offset by a much faster conversion, see below
+	- Orcs/Goblins/Uruks always move to a country of their culture at the start of each year (replacing moving them to carn dum only)
+	- Elves and dwarfs have a general tendency to do this: About 5-10% per year. Not applied on provinces with more than 75% elves/dwarfs
+	- Others do the same but much more rarely (less than 1% per year)
+	- Cultural decision to entice people to move towards one of your subjects where they are an accepted culture. Costs 5 gold per pop and is only applied as long as you own at least 100 gold. About 5-10% per year.
+	- Cultural decision to entice people to move to your country from one of your subjects where they are a non-accepted culture. Costs 10 gold per pop and is only applied as long as you own at least 100 gold. 5 of these 10 gold go to the subject. About 5-10% per year.
+- Gondors large vassals as well as Ranger protectorates that previously were "do not join wars" but had decisions to join wars are now instead permanetly "disloyal" but do join wars.
+	- This is needed since there is a vanilla bug which makes countries joining by event into a defensive war always take over war leadership, even over their overlord
+	- They now join and fight normally in defensive war but never join offensive ones
+	- This "disloyalty" for the Gondorian vassals is explained by them being unable to help Gondor currently due to corsair attacks/Saruman and can be removed together with the levy debuffs (see below)
+	- In a civil war, these vassals will be taken out of the war and returned to the original overlord despite being disloyal
+	- Disloyalty events are also removed for these subject types
+	- Higher relation requirement for subject transfer to prevent that these vassals are easily snatched away
+- You can now buy wrong cultured provinces from your vassals for 20 gold per pop via a character interaction (sorry, unable to do a new gui here)
+- Levy disband reminder decision (after 8 month)
+- Elves, Dwarfs and Numenorians can now get children later in life
+	- Event to make human women infertile at the age of 45
+	- Elves have low fertility and have a chance to get Asexual with every child they birth. Chance increases per child.
+	- Dwarfs and Numenorian simply low fertility
+
+
+Immersion changes:
+- Saruman's Isengard now actually turns Uruk when he falls for Sauron. Pops of initially owned provinces are converted to uruks.
+- Removed enslavements on occupation for non-orcs.
+	- I know it would be realistic for melkor countries but wrong cultured pops are pretty useless except for orcs.
+- Removed some events that created light infantry units for armies even for countries who don't use those.
+- Three more trade goods changed on city founding: Woad, Fur and wild game
+- Elves are now generally more loyal
+- Renamed satrapies to Feudal Principalities (Gondor subjects)
+- Sauron thralls no longer intgratable to make sure Sauron actually has Balchot and Variags "allies"
+- AI mordor now gets truces towards the east and Umbar forced upon him until he conquers Osgiliath and Minas Tirith. This makes sure they actually attack Gondor at some point. Rhun is excepted from this to make sure Mordor has some space to expand except for Gondor.
+- Restricted who can create what subjects
+	- Ranger fiefs and protectorates now normal humans only
+	- Orcs can only do tributaries and orc tribal vassals. Mordor can still do their thralls, but melkor only now
+	- Can not have orc as subjects as non-orc
+- Changed the climate to better represent what we know of middle earth
+	- Mostly made Eriador more friendly (except for the North)
+	- Fixed lot's of forgotten or misplaced single provinces
+	- Lorien and Imladris now got perfect climate (as controlled by the elven rings)
+	- No more climate in caves and underground halls
+	- Made frigid climate less severe and alpine climate more severe. Also renaming the latter to arctic
+- Renamed some provinces that still had the names from thousands of years ago (previous version of this mod)
+- Gondor, Dol Amroth and Leme now has Gondorian as integrated culture. As only similar levy cultures can reasonable be integrated due to the vanilla levy bug, this requires some major changes:
+	- Gondorian levy is now the same as Lesser Dunedain, making them much stronger and thus needed a nerf, see below
+	- Andrast is now a tribal vassal of andrast culture. Sourced say Gondor claimed it, but never forced any control or taxes except for keeping a single castle
+	- Reduced population numbers in gondor vassals
+	- Added strong debuffs on levy percentages on the major vassals
+		- Corsair attacks preventing the southern vassals from sending their troops to help the King
+		- Saruman influence weakening Rohan
+		- These can be removed by defeating the Corsairs/Isengard
+	- According to my tests, Gondor in AI hands is now about as strong as before the changes, thus still slowly losing to Mordor and Umbar
+- Corsairs and Dark Numenorian now accept Banaduim culture (analog to Gondor accepting Gondorian). These mixed edain now also use the edain levies. No balance changes needed here as both were pretty weak anyway imho and got their needed boost.
+- Replaced many more mentionings of the lowest pop tier to be called slaves. Freemen and citizens now also actually renamed to Middle and Upper tier (the latter is a bugfix as this was already intended before)
+- Elvenking's Halls and Erebor are now Underground halls rather than Deep forest/Mountain
+- Singe province north of Isengard uninhabitable now to prevent Saruman from going into the Misty Mountains instantly
+- Erebor and Dale now allied if either is human (between two AIs, the subject relation is still needed to keep them from their throats)
+- AI dwarfs and elves no longer fight each other. While they don't like each other, open warfare at the end of the Third age are not realistic.
+- Sceptre of Annuminas now moved from Imladris to Arnor on creation of Arnor
+- Made sure there are no orc repubics possible
+	
+
+Balance changes:
+- Overhauled racial country properties
+	- Lower growth bonuses for orcs, instead faster assimilation (a.k.a. eating pops)
+	- Lower morale recovery bonuses (still very powerful but no longer instant recovery)
+	- Slighly lower growth penalties
+	- Can now only get the bonuses of you main culture
+	- Combined all Edain cultures into a single modifiers. Lesser Dunedain and Corsairs only count half as many of their ancestors wouldn't actually be Numenorian
+- Overhauled all units:
+	- Maximum bonuses slighly reduced to prevent getting to the point where elves only have two choices in battle against orcs: Winning or getting instant stackwiped for being less than 1:10. This should be offset by less difference in growth bonuses (see above)
+	- Fixed some units being forgotten (?), like Dol-Amroth knights of specific combinations
+	- Replaced strength damage recieved modifiers: Instead every unit now has lower attack bonuses against armored units
+	- Dwarfs, Crossbowman and trolls have "armor piercing", they ignore half the damage reduction from armor
+- Disabled many cultural decisions that would give bonuses to integration or assimilation as both are disabled in wotr and thus those decisions made very little sense. Also, there is a limit on how many fit the UI and we needed that space.
+- Discipline modifiers on trade goods and inventions now include lotr specific units
+- Changed difficulty modifiers:
+	- Hard now only makes the AI much more stable: Higher civil war threshold and province loyalty boost
+	- Very hard keeps it's vanilla bonuses with added AI stability
+- Removed province loyality boost after province rebellion for AI
+- Replaced percentage capacity modifiers on famous cities by initially comparably valued base increases to prevent aqueducts going insane
+- Newly turned majority melkor states now get large relations bonus towards mordor and mortal enemies relations malus to non-melkor states
+- Removed most vanilla pop move events as they didn't work well without assimilation or integration of cultures
+	- Some instead modified to only trigger on pops that have the culture group of the recieving country
+- Metropolis now allowed in non-province capitals (for those who want to make Western Osgiliath a metropolis once again)
+- Feudatories and mordor thralls get a small loyalty boost
+- Reduced some fort levels a bit: Only the Black Gate, Minas Morgul and Barad Dur keep the full 5 fort bonus
+- Reduced fort capacity and making first fort count for 3 capacity (as vanilla. important for unrest reduction)
+	- Prevents mega forts somewhere in unknown countries
+	- Made sure no state is now above limit as start
+- Increased number of tribal orcs in mordor at start of the game (another offset for reduced growth rate)
+- Underground halls got their terrain modifiers vastly improved, caves slightly
+- Pop changes in initially unowned provinces:
+	- No more beast pops (anywhere)
+	- No more empty non-beast-group cultured provinces at start
+		- Many simply turned beast, some filled with pops (some orcs around Dol Guldur, some dwarfs that were previously extinct)
+	- Reduced pop numbers, most will have 2 (if any) pops now at start of the game
+- Strengthened Carn Dum
+- Orcs that attack the rangers at the Ranger decalaration will now not pull Bree, Shire and Riverfolk into that war. This should make this war a bit more of a challenge.
+- Non-orc countries now get levy percentage increases per percentage of non-integrated pops. This will always be worse than what one would get for integrated cultures and will get worse the higher the percentage goes, but this should offset a bit, that due to a vanilla bug we cannot allow integration outside of the culture group.
+- Reduced some insane bonuses:
+	- Rise of the dunedain no longer given 30% noble happiness
+	- 25% non-integrated culture happiness reduced to 15% (might still be too high, but 25% made them like you more than your integrated to)
+	- 75 vassal loyalty down to 50
+	- 2 legitimacy per month down to 1
+- Re-enabling innovation gain by good traits (not sure why it was removed before, but that was confusing as the game still told you these are useful for researchers)
+- Made ranger heritage (wood heritage) somewhat useful and giving Arnor a new one
+- AI countries will accept same culture group cultures if their pops number at least 20% of their integrated pops.
+- Doubled pig stab and devotio duration
+- Made mercenaries slighly larger (but more rare) and actually have supply units
+- Ahead of time reserach penalty halved
+- Maximum court size without childbirth penalties doubled
+- Reduced expected jobs for great families from 70% to 60%
+- Made AI a bit smarter in regard to building forts. They should focus a bit more on not having huge undefended areas
+- Seek treatment is not paid by rich characters themselves or by your ruler if he is rich
+- Setting min and max gold amount of most treasury changes in events (especially province/Area/Charcter specific ones that shouldn't scale too much with country size
+
+Bug fixes:
+- Sauron and Saruman now actually Maia cultured
+- No more diseases for immortals, reduced disease likelyhood for numenorians
+- Fixed some provinces being uninhabited but owned (and thus inhabited) at the start of the game
+- Removed many error messages that probably didn't do anything bad but spammed the error log
+- Fixed the bloodline events. No more bloodlines lost and no more being able to combine bloodlines on bastards
+- Removed lower events for infertile characters like Sauron, redcued likelyhood for long lived characters
+- Removed murder events for immortal characters, reduced likelyhood for long lived characters
+- Sauron is no longer numenorian
+- Sauron and nazghul no longer getting old trait and terminal diseases
+- Replaced non-functioning country modifiers on some provinces
+- Fixed below 1% max civilization bonuses to the intended values (*100)
+- Redone orcs spawning on province conquered
+	- No longer spawning for wrong country sometimes
+	- Trying to spawn in neighbor province to avoid the game going crazy on army spawn with instant combat
+	- Also spawning from occupied provinces at the end each month (to avoid orcs staying in provinces that are occupied via province capital/forts with non-orcs
+	- Slighly reduced spawn numbers: 1 slave/noble/tribe -> 3 units. 1 freeman/citized -> 4 units.
+	- Can be turned into pops once again at peacetime: 6 units -> 1 slave (thus some losses)
+- Changed culture colors to make them differ more
+- Made sure no province have overpopulation at the start of the game (placed some aqueducts, no pops removed here)
+- Added missing localization for new subject types
+- Tribal orcs now use pop assimilation as well
+- No more migratoy tribes at the start of the game
+	- You may still turn migratoy
+	- AI was messing them up totally in many cases and never uses them in a good way
+- Fixed cave "crossings" in the misty mountains. All now work and are actually visible
+- Holding owners are now removed when a province is decolonized via orcs rising up
+- Fixed some trade good categories
+
+
+Vanilla bug fixes:
+- Fixed Hunt Pirates objective
+- Fixed inheritance event possibly giving your ruler tens of thousands of personal treasury
+- Tributaries will no longer break because they have "more cohorts", while all your levies are disbanded...
+- No longer removing the strongest family but the weakest if one neeeds to be removed
+- Fixed conversion policy being applied despite nobody to convert
