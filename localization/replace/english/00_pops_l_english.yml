@@ -74,3 +74,7 @@
  CVIEW_NOBLES_POPTYPE_TOOLTIP:0 "We have [CultureView.GetNumberOfPopsOfType('nobles')] Nobles in our country. These belong to the following cultures:\n[CultureView.GetPopulationCultureBreakdownToolTip('nobles')]"
  global_slaves_output_inv_1_desc:0 "The rights and living-standard of the poor varies wildly from state to state, but we believe that a basic code of human rights will encourage our people to work harder."
  global_slaves_output_inv_4_desc:0 "Giving the opportunity to rise, gives an incentive for the poor to be calm and productive throughout their working lives."
+ TRADE_GOODS_CATEGORY_3:2 "@citizen! Upper Tier"
+ TRADE_GOODS_CATEGORY_4:1 "@freemen! Middle Tier"
+ TRADE_GOODS_CATEGORY_5:0 "@tribesmen! Lower Tier & Tribesmen"
+ TRADE_GOODS_CATEGORY_6:0 "Other"
