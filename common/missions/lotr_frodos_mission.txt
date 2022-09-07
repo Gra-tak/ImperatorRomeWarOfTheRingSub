@@ -281,21 +281,24 @@
     requires = { lotr_frodo_start } 
 
     allow = {
-      NOT = {
-        any_province = {
-          OR = {
-            is_in_area = formensiril_area
-            is_in_area = baranduin_area
-            is_in_area = breriondor_area
-            is_in_area = oiomiril_area
-            is_in_area = en_eredoriath_area
-            is_in_area = rhudaur_area
-            is_in_area = pinnath_tereg_area
-            is_in_area = imladris_area
-          }
-          exists = owner
-          controller = {
-            country_culture_group = orcs_group
+      custom_tooltip = {
+        text = "frodo_mission_no_orcs_tt"
+        NOT = {
+          any_province = {
+            OR = {
+              is_in_area = formensiril_area
+              is_in_area = baranduin_area
+              is_in_area = breriondor_area
+              is_in_area = oiomiril_area
+              is_in_area = en_eredoriath_area
+              is_in_area = rhudaur_area
+              is_in_area = pinnath_tereg_area
+              is_in_area = imladris_area
+            }
+            exists = owner
+            controller = {
+              country_culture_group = orcs_group
+            }
           }
         }
       }
@@ -449,26 +452,29 @@
     # }
 
     allow = {
-      NOT = {
-        any_province = {
-          OR = {
-            is_in_area = tal_bruinen_area
-            is_in_area = pend_eregion_area
-            is_in_area = emyn_sirannon_area
-
-            is_in_area = khazad_dum_area
-            is_in_area = lorien_area
-          }
-          exists = owner
-          controller = {
+      custom_tooltip = {
+        text = "frodo_mission_no_orcs_tt"
+        NOT = {
+          any_province = {
             OR = {
-              country_culture_group = orcs_group
-              # AND = {
-              #   exists = overlord
-              #   overlord = {
-              #     country_culture_group = orcs_group
-              #   }
-              # }
+              is_in_area = tal_bruinen_area
+              is_in_area = pend_eregion_area
+              is_in_area = emyn_sirannon_area
+
+              is_in_area = khazad_dum_area
+              is_in_area = lorien_area
+            }
+            exists = owner
+            controller = {
+              OR = {
+                country_culture_group = orcs_group
+                # AND = {
+                #   exists = overlord
+                #   overlord = {
+                #     country_culture_group = orcs_group
+                #   }
+                # }
+              }
             }
           }
         }
@@ -538,31 +544,34 @@
     # }
 
     allow = {
-      NOT = {
-        any_province = {
-          OR = {
-            is_in_area = tal_bruinen_area
-            is_in_area = pend_eregion_area
-            is_in_area = emyn_sirannon_area
-
-            is_in_area = fordirith_area
-            is_in_area = chail_caerdh_area
-            AND = {
-              is_in_area = calenhardin_area
-              NOT = { this = p:1546 }
-            }
-            is_in_area = garth_annui_area
-          }
-          exists = owner
-          controller = {
+      custom_tooltip = {
+        text = "frodo_mission_no_orcs_tt"
+        NOT = {
+          any_province = {
             OR = {
-              country_culture_group = orcs_group
-              # AND = {
-              #   exists = overlord
-              #   overlord = {
-              #     country_culture_group = orcs_group
-              #   }
-              # }
+              is_in_area = tal_bruinen_area
+              is_in_area = pend_eregion_area
+              is_in_area = emyn_sirannon_area
+
+              is_in_area = fordirith_area
+              is_in_area = chail_caerdh_area
+              AND = {
+                is_in_area = calenhardin_area
+                NOT = { this = p:1546 }
+              }
+              is_in_area = garth_annui_area
+            }
+            exists = owner
+            controller = {
+              OR = {
+                country_culture_group = orcs_group
+                # AND = {
+                #   exists = overlord
+                #   overlord = {
+                #     country_culture_group = orcs_group
+                #   }
+                # }
+              }
             }
           }
         }
@@ -781,31 +790,34 @@
     } 
 
     allow = {
-      NOT = {
-        any_province = {
-          OR = {
-            AND = {
-              ROOT = {
-                has_completed_mission_task = lotr_depart_from_lorien
-              }
-              is_in_region = lorien_region
-            }
-            is_in_region = rhuvenlhad_region
-            is_in_region = calenardhon_region
-            is_in_region = anorien_region
-            is_in_region = ithilien_region
-          }
-          exists = owner
-          controller = {
+      custom_tooltip = {
+        text = "frodo_mission_no_melkor_tt"
+        NOT = {
+          any_province = {
             OR = {
-              country_culture_group = orcs_group
-              religion = melkorism
-              # AND = {
-              #   exists = overlord
-              #   overlord = {
-              #     country_culture_group = orcs_group
-              #   }
-              # }
+              AND = {
+                ROOT = {
+                  has_completed_mission_task = lotr_depart_from_lorien
+                }
+                is_in_region = lorien_region
+              }
+              is_in_region = rhuvenlhad_region
+              is_in_region = calenardhon_region
+              is_in_region = anorien_region
+              is_in_region = ithilien_region
+            }
+            exists = owner
+            controller = {
+              OR = {
+                country_culture_group = orcs_group
+                religion = melkorism
+                # AND = {
+                #   exists = overlord
+                #   overlord = {
+                #     country_culture_group = orcs_group
+                #   }
+                # }
+              }
             }
           }
         }
@@ -965,31 +977,40 @@
     } 
 
     allow = {
-      has_variable = sauron_fully_distracted
       NOT = {
-        any_province = {
-          OR = {
-            is_in_region = rhuvenlhad_region
-            is_in_region = calenardhon_region
-            is_in_region = anorien_region
-            is_in_region = ithilien_region
-          }
-          exists = owner
-          controller = {
+        custom_tooltip = {
+          text = "frodo_mission_no_melkor_tt"
+          any_province = {
             OR = {
-              country_culture_group = orcs_group
-              religion = melkorism
-              # AND = {
-              #   exists = overlord
-              #   overlord = {
-              #     country_culture_group = orcs_group
-              #   }
-              # }
+              is_in_region = rhuvenlhad_region
+              is_in_region = calenardhon_region
+              is_in_region = anorien_region
+              is_in_region = ithilien_region
+            }
+            exists = owner
+            controller = {
+              OR = {
+                country_culture_group = orcs_group
+                religion = melkorism
+                # AND = {
+                #   exists = overlord
+                #   overlord = {
+                #     country_culture_group = orcs_group
+                #   }
+                # }
+              }
             }
           }
         }
       }
-      distracting_sauron_black_gate = yes
+      custom_tooltip = {
+        text = "frodo_mission_black_gate_tt"
+        distracting_sauron_black_gate = yes
+      }
+      custom_tooltip = {
+        text = "sauron_fully_distracted_tt"
+        has_variable = sauron_fully_distracted
+      }
     }
 
     on_start = {
