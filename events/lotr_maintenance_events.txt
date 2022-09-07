@@ -787,5 +787,199 @@ lotr_maintenance.7 = {
         }
       }
     }
+    if = {
+      limit = {
+        any_owned_province = {
+          is_in_area = anorien_area
+        }
+      }
+      random_owned_province = {
+        limit = { 
+          is_in_area = anorien_area
+        }
+        save_scope_as = p
+      }
+      if = {
+        limit = {
+          scope:p.state = { has_state_modifier = minas_anor_state_modifier }
+        }
+        if = {
+          limit = {
+            OR = {
+              NOT = { owns = 1300 } #minas tirith
+              NOT = { owns = 1302 } #west osgiliath (same area)
+            }
+          }
+          scope:p.state = { remove_state_modifier = minas_anor_state_modifier }
+        }
+      }
+      else_if = {
+        limit = {
+          NOT = { scope:p.state = { has_state_modifier = minas_anor_state_modifier } }
+        }
+        if = {
+          limit = {
+            owns = 1300
+            owns = 1302
+          }
+          scope:p.state = { 
+            add_state_modifier = {
+              name = minas_anor_state_modifier
+              duration = -1
+            }
+          }
+        }
+      }
+    }
+    if = {
+      limit = {
+        owns = 1141 #barad dur
+        p:1141.state = {
+          NOT = { has_state_modifier = barad_dur_state_modifier }
+        }
+      }
+      p:1141.state = {
+        add_state_modifier = {
+          name = barad_dur_state_modifier
+          duration = -1
+        }
+      }
+      every_country = {
+        limit = {
+          any_province = {
+            is_in_area = barad_dur_area
+          }
+        }
+        random_province = {
+          limit = { is_in_area = barad_dur_area }
+          state = { remove_state_modifier = barad_dur_state_modifier }
+        }
+      }
+    }
+    if = {
+      limit = {
+        owns = 1021 #black gate
+        p:1021.state = {
+          NOT = { has_state_modifier = black_gate_state_modifier }
+        }
+      }
+      p:1021.state = {
+        add_state_modifier = {
+          name = black_gate_state_modifier
+          duration = -1
+        }
+      }
+      every_country = {
+        limit = {
+          any_province = {
+            is_in_area = udun_area
+          }
+        }
+        random_province = {
+          limit = { is_in_area = udun_area }
+          state = { remove_state_modifier = black_gate_state_modifier }
+        }
+      }
+    }
+    if = {
+      limit = {
+        owns = 1546 #orthanc
+        p:1546.state = {
+          NOT = { has_state_modifier = orthanc_state_modifier }
+        }
+      }
+      p:1546.state = {
+        add_state_modifier = {
+          name = orthanc_state_modifier
+          duration = -1
+        }
+      }
+      every_country = {
+        limit = {
+          any_province = {
+            is_in_area = calenhardin_area
+          }
+        }
+        random_province = {
+          limit = { is_in_area = calenhardin_area }
+          state = { remove_state_modifier = orthanc_state_modifier }
+        }
+      }
+    }
+    if = {
+      limit = {
+        owns = 1105 #dol guldur
+        p:1105.state = {
+          NOT = { has_state_modifier = dol_guldur_state_modifier }
+        }
+      }
+      p:1105.state = {
+        add_state_modifier = {
+          name = dol_guldur_state_modifier
+          duration = -1
+        }
+      }
+      every_country = {
+        limit = {
+          any_province = {
+            is_in_area = emyn_guldur_area
+          }
+        }
+        random_province = {
+          limit = { is_in_area = emyn_guldur_area }
+          state = { remove_state_modifier = dol_guldur_state_modifier }
+        }
+      }
+    }
+    if = {
+      limit = {
+        owns = 1 #Umbar
+        p:1.state = {
+          NOT = { has_state_modifier = umbar_state_modifier }
+        }
+      }
+      p:1.state = {
+        add_state_modifier = {
+          name = umbar_state_modifier
+          duration = -1
+        }
+      }
+      every_country = {
+        limit = {
+          any_province = {
+            is_in_area = umbar_area
+          }
+        }
+        random_province = {
+          limit = { is_in_area = umbar_area }
+          state = { remove_state_modifier = umbar_state_modifier }
+        }
+      }
+    }
+    if = {
+      limit = {
+        owns = 1030 #Minas Morgul
+        p:1030.state = {
+          NOT = { has_state_modifier = minas_ithil_state_modifier }
+        }
+      }
+      p:1030.state = {
+        add_state_modifier = {
+          name = minas_ithil_state_modifier
+          duration = -1
+        }
+      }
+      every_country = {
+        limit = {
+          any_province = {
+            is_in_area = ephel_duath_area
+          }
+        }
+        random_province = {
+          limit = { is_in_area = ephel_duath_area }
+          state = { remove_state_modifier = minas_ithil_state_modifier }
+        }
+      }
+    }
   }
 }

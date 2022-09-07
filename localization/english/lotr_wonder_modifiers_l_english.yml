@@ -96,6 +96,8 @@
   desc_argonath_modifier:0 "The Gate of Kings was a landmark on the northern edge of Gondor. It consisted of two enormous rock pillars, carved in the likeness of Isildur and Anárion facing to the north. Their weapons held in their right hand and their left hand rose in a gesture of defiance to the enemies of Gondor. The two statues stood upon either side of the River Anduin."
  umbar_harbour_modifier:0 "Harbour of Umbar"
   desc_umbar_harbour_modifier:0 "Umbar was a great haven to the far south of Gondor, a great cape and land-locked firth formed the port."
+umbar_state_modifier:0 "Umbar defenses"
+desc_umbar_state_modifier:0 "Umbar state defenses"
 #stone_of_erech_modifier
 #warning_beacons_modifier
 #henneth_annun_modifier
@@ -160,6 +162,8 @@ durins_tower_modifier:0 "Durin's Tower and the Endless Stair"
   desc_durins_tower_modifier:0 ""
 moria_east_gate_modifier:0 "Moria East Gate and the Bridge of Khazad-dûm"
   desc_moria_east_gate_modifier:0 ""
+moria_state_modifier:0 "Moria defenses"
+desc_moria_state_modifier:0 "Moria state defenses"
 gundabad_modifier:0 "Gundabad"
   gundabad_modifier:0 ""
   #fort 4
@@ -177,6 +181,8 @@ barad_dur_foundations_modifier:0 "Foundations of Barad-dûr"
   desc_barad_dur_foundations_modifier:0 ""
 dol_guldur_modifier:0 "Dol Guldur"
   desc_dol_guldur_modifier:0 ""
+dol_guldur_state_modifier:0 "Dol Guldur defenses"
+desc_dol_guldur_state_modifier:0 "Dol Guldur state defenses"
 carn_dum_modifier:0 "Carn Dûm"
   desc_carn_dum_modifier:0 ""
 black_gate_modifier:0 "Black Gate"
