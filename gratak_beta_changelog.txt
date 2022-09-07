@@ -49,6 +49,8 @@ Features:
 	- Event to make human women infertile at the age of 45
 	- Elves have low fertility and have a chance to get Asexual with every child they birth. Chance increases per child.
 	- Dwarfs and Numenorian simply low fertility
+- New Eastern Dwarfs that should fit the lore better (by Pureon)
+- New mountain range in the east (by Pureon)
 
 
 Immersion changes:
@@ -92,7 +94,7 @@ Immersion changes:
 - AI dwarfs and elves no longer fight each other. While they don't like each other, open warfare at the end of the Third age are not realistic.
 - Sceptre of Annuminas now moved from Imladris to Arnor on creation of Arnor
 - Made sure there are no orc repubics possible
-- Eastern countries renamed (by Pureon)
+- Eastern countries and cultures renamed (by Pureon)
 	
 
 Balance changes:
@@ -150,6 +152,7 @@ Balance changes:
 - Made AI a bit smarter in regard to building forts. They should focus a bit more on not having huge undefended areas
 - Seek treatment is not paid by rich characters themselves or by your ruler if he is rich
 - Setting min and max gold amount of most treasury changes in events (especially province/Area/Charcter specific ones that shouldn't scale too much with country size
+- Overhauled pop numbers and cililization values in the east (by Pureon)
 
 Bug fixes:
 - Sauron and Saruman now actually Maia cultured
