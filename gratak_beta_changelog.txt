@@ -4,6 +4,7 @@ Features:
 	- Should lead to an actual "War of the Ring"
 	- On completion of the mission, Sauron and the Nazghul will die, Barad-Dur and the Black Gate will be destroyed and Orcs and followers of Melkor will get major debuffs for 40 years, the latter being given the option to convert away instead
 	- Many events and characters included of which I don't want to spoil too much here ;)
+	- Previous ring decision on conquest of Shire is still there and was updated and improved. It is now the mostly evil version of handling the ring (though if you are quick or very good against corruption you might still use it for good)
 - Tradition trees are now unlocked if you have enough of the according pops in your subjects (only counts client states, ranger fief (not protectorates), mordor and saruman thralls: 200 for Elves and Edain, 400 for Dwarfs and Rohirim, 1000 for others. All pops of the culture group are added, it doesn't require to be a single culture.
 - New known character:
 	- Legolas, Thranduil, Gimli, Gloin, Celeborn, Haldir (+family), Halbarad (+ Grey company), Cirdan the Shipwright, Galdor of the Havens, Oin and Ori (Balin)
@@ -52,9 +53,11 @@ Features:
 
 Immersion changes:
 - Saruman's Isengard now actually turns Uruk when he falls for Sauron. Pops of initially owned provinces are converted to uruks.
+- Renamed many provinces to actually known ones, especially Shire (more of a bugfix, as they were already in but didn't work)
 - Removed enslavements on occupation for non-orcs.
 	- I know it would be realistic for melkor countries but wrong cultured pops are pretty useless except for orcs.
 - Removed some events that created light infantry units for armies even for countries who don't use those.
+	- Replaced some to actually give the right units where possible
 - Three more trade goods changed on city founding: Woad, Fur and wild game
 - Elves are now generally more loyal
 - Renamed satrapies to Feudal Principalities (Gondor subjects)
@@ -80,6 +83,7 @@ Immersion changes:
 		- Saruman influence weakening Rohan
 		- These can be removed by defeating the Corsairs/Isengard
 	- According to my tests, Gondor in AI hands is now about as strong as before the changes, thus still slowly losing to Mordor and Umbar
+	- Gondor mission slightly changed to work with the changes
 - Corsairs and Dark Numenorian now accept Banaduim culture (analog to Gondor accepting Gondorian). These mixed edain now also use the edain levies. No balance changes needed here as both were pretty weak anyway imho and got their needed boost.
 - Replaced many more mentionings of the lowest pop tier to be called slaves. Freemen and citizens now also actually renamed to Middle and Upper tier (the latter is a bugfix as this was already intended before)
 - Elvenking's Halls and Erebor are now Underground halls rather than Deep forest/Mountain
@@ -88,6 +92,7 @@ Immersion changes:
 - AI dwarfs and elves no longer fight each other. While they don't like each other, open warfare at the end of the Third age are not realistic.
 - Sceptre of Annuminas now moved from Imladris to Arnor on creation of Arnor
 - Made sure there are no orc repubics possible
+- Eastern countries renamed (by Pureon)
 	
 
 Balance changes:
@@ -115,9 +120,10 @@ Balance changes:
 - Metropolis now allowed in non-province capitals (for those who want to make Western Osgiliath a metropolis once again)
 - Feudatories and mordor thralls get a small loyalty boost
 - Reduced some fort levels a bit: Only the Black Gate, Minas Morgul and Barad Dur keep the full 5 fort bonus
-- Reduced fort capacity and making first fort count for 3 capacity (as vanilla. important for unrest reduction)
+- Reduced fort capacity to vanilla and making first fort count for 3 capacity (as vanilla. important for unrest reduction)
 	- Prevents mega forts somewhere in unknown countries
-	- Made sure no state is now above limit as start
+	- Provinces with special forts have state modifiers that make sure they don't go over the limit
+		- These state modifiers are now updated yearly (in case of conquests). Only the owner of the province(s) with the special forts keeps them
 - Increased number of tribal orcs in mordor at start of the game (another offset for reduced growth rate)
 - Underground halls got their terrain modifiers vastly improved, caves slightly
 - Pop changes in initially unowned provinces:
@@ -149,6 +155,7 @@ Bug fixes:
 - Sauron and Saruman now actually Maia cultured
 - No more diseases for immortals, reduced disease likelyhood for numenorians
 - Fixed some provinces being uninhabited but owned (and thus inhabited) at the start of the game
+- Fixed some relics being lost as being stored in provinces that have no holy site (or not enough space in the holy site)
 - Removed many error messages that probably didn't do anything bad but spammed the error log
 - Fixed the bloodline events. No more bloodlines lost and no more being able to combine bloodlines on bastards
 - Removed lower events for infertile characters like Sauron, redcued likelyhood for long lived characters
@@ -173,6 +180,8 @@ Bug fixes:
 - Fixed cave "crossings" in the misty mountains. All now work and are actually visible
 - Holding owners are now removed when a province is decolonized via orcs rising up
 - Fixed some trade good categories
+- Fixed some missing mortal enemies (orcs and good people hating each other)
+- Straits to make unreachable provinces in sea of Rhun reachable (might enable ships in the future if people want that)
 
 
 Vanilla bug fixes:

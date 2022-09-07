@@ -344,6 +344,7 @@ br_sauron.9 = { #AI Sauron version of event triggered for ruler that sauron has 
 		C:MOR = { is_ai = yes }
 		is_ruler = yes
 		has_religion = eastern_animism
+		sauron_rules = yes
 	}
 	
 	
