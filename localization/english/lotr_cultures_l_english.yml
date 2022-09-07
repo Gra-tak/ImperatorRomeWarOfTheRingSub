@@ -1,4 +1,10 @@
 ﻿l_english:
+ # Amrûn Farthest East
+ amrun_group:0 "Amrûn"
+ lenitani:0 "Lênitani"
+ lutyr:0 "Lú-Tyr"
+ kulahar:0 "Kul-Ahar"
+ kargarim:0 "Kargarim"
  # Breelander
  breelander_group:0 "Breelander"
  breelander:0 "Breelander"

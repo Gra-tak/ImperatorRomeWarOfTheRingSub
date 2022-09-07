@@ -134,6 +134,7 @@ ERB = setup/countries/dwarves/erebor.txt
 KZK = setup/countries/dwarves/khazikal.txt
 IRO = setup/countries/dwarves/ironhills.txt
 BLC = setup/countries/dwarves/khazaddum.txt #balin colony
+AON = setup/countries/dwarves/nargubraz.txt
 
 #Yopi
 YOP = setup/countries/yopi/yopi.txt

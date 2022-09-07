@@ -7,6 +7,18 @@
 #		color2 = rgb { 239 209 160} #TOP COLOUR
 #	}
 
+AON = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 53 47 46}
+	color2 = rgb { 204 136 47}
+
+	colored_emblem = {
+		texture = "ce_nargubraz_dwarves.dds"
+		color1 = rgb { 204 136 47}
+		color2 = "bone_white"
+	}
+}
+
 MOR = {
 	pattern = "pattern_solid.tga"
 	color1 = "pitch_black"
