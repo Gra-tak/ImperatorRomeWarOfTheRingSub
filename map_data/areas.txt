@@ -1186,7 +1186,7 @@ basira_area = {
 }
 
 arysis_area = {
-	provinces = { 713 714 715 716 717 718 2611 3635 }
+	provinces = { 714 715 716 717 718 2611 }
 }
 
 siakan_area = {
@@ -1421,7 +1421,7 @@ vag_area = {
 }
 
 klyan_area = {
-	provinces = { 3408 3409 3410 3411 3412 3424 3425 3426 }
+	provinces = { 713 3408 3409 3410 3411 3412 3424 3425 3426 3635 }
 }
 
 #Anarike
