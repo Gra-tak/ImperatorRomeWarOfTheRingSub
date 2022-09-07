@@ -1,0 +1,55 @@
+﻿amrun_group = {
+	#Farthest East
+	color = hsv { 0.53 0.12 0.47 }
+	
+	primary = light_cavalry
+	second = light_infantry
+	flank = horse_archers
+
+	primary_navy = galley
+	secondary_navy = galley
+	flank_navy = cog
+
+	levy_template = levy_easterling
+
+	male_names = {
+		Atimuwer Berkya Bonchung Chimetsukphu Chirum Chunmardang Dakhor Damitheke Damshe Dangwa Demdruk Denpar
+		Dokchen Donla Draktsen Draktsubkye Drenpa Dud Duddul Durshen Dzomar Gawagye Gekho Gon Gowar Gurser Guwer
+		Gyalwa Gyer Gyerme Gyerpung Gyung Gyungyar Harachipar Hrido Hripa Hrista Jonwa Kalarasa Khyabpa Kuchi
+		Kunla Kyabpai Kyeshe Kyichuk Kyile Labchen Lakring Lampa Langboche Larje Likmigyal Likmikya Likmur
+		Liknyashur Liknyikya Liknyirhya Liwergyer Lokpai Lopo Lopon Ludrub Luje Lurab Lutsen Mabu Mangke Marpo
+		Martang Mebar Meka Meri Merutse Milusamlek Mikmar Milwo Mra Mrabon Mranyite Mrawa Mucho Mukho Mukhung
+		Mulakhung Mumar Mune Muwer Muwernor Namdak Namje Namkha Namse Nangwa Nangzher Naro Nor Norgyi Okar
+		Osel Pebon Pholha Pung Pungse Rabtson Rakhuk Salwa Sangjo Sangpo Sangto Sehrigyer Senggetram Shebu Shele
+		Shelgyung Shenlha Shenpa Shenrab Sridpa Takla Takma Tenzin Thenwa Thipang Thokgo Thoktse Thuchen Tobchen
+		Tonggyung Tonpa Traphu Trideiopo Tridem Tridu Trimen Triwer Troto Tsepo Wal Werya Yangje Yidring Zache
+		Zijid Zingkye Zingpa Zutse
+	}
+	female_names = {
+		Atak Ataklumo Atakmo Ba Batsame Bumtsho Cha Changmo Chatsame Chukmo Dangra Dongkar
+		Drangma Drablai Dronglek Duk Duktsuk Dzomo Gyi Gyichangmo Gyilumo Gyitsame Kering Khyungza Kyinam Kyidagi
+		Kyukma Lekyi Lhogyal Liwer Lumo Magyal Menchung Mewar Molha Mracham Nangze Neuchung Nyakchikma
+		Ongma Ringtsun Semarkar Shenza Silema Takber Takliwer Ting Tingber Tinglumo Tingtsame Trakthung
+		Tsa Tsadagi Tsame Tsatsame Tshogyal Trinyen Wangmo Yid Yidongma Yum Yumtsame Yuyi Zamatok Zangza Zazu
+	}
+	family = {
+		Anini Bari Bel Broza Bumthang Chakhar Chimshang Chimza Damgyi Dro Gar Glo Gnyal Gos Huldi Hungrel Itanager Jambay Karchen Khangsarpa Khon Khu Khyungpo Kyichu Lang Lherig Lhomon Lhoyu Machig Mang Monyul Myang Namgyal Nanam Nge Nyang Omade Pakmodru Palrin Paro Poyul Purgyal Ruyong Sakya Sepla Sharpa Thonmi Trongsa Tsepong We Yarlung Zhang
+	}
+	
+	culture = {
+		lenitani = {}
+		lutyr = {}
+		kulahar = {}
+		kargarim = {}
+	}
+	
+	barbarian_names = { 
+		BAR
+	}
+	
+	graphical_culture = north_indian_gfx
+	ethnicities = {
+		10 = tibetan
+	}
+}
+
