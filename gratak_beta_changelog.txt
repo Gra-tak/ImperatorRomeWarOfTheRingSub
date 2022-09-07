@@ -182,6 +182,7 @@ Bug fixes:
 - Fixed some trade good categories
 - Fixed some missing mortal enemies (orcs and good people hating each other)
 - Straits to make unreachable provinces in sea of Rhun reachable (might enable ships in the future if people want that)
+- Hopefully fixed (please give feedback): No more children for Saruman and Sauron
 
 
 Vanilla bug fixes:

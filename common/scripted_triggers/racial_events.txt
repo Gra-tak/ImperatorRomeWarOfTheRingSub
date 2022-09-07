@@ -26,16 +26,6 @@ country_is_human_trigger = {
 
 is_sterile_trigger = {
 	OR = {
-		has_trait = 10_sauron
-		has_trait = 20_sauron
-		has_trait = 30_sauron
-		has_trait = 40_sauron
-		has_trait = 50_sauron
-		has_trait = 60_sauron
-		has_trait = 70_sauron
-		has_trait = 80_sauron
-		has_trait = 90_sauron
-		has_trait = 100_sauron
 		has_trait = maia
 		has_trait = nazgul
 	}
@@ -43,16 +33,6 @@ is_sterile_trigger = {
 
 lotr_story_character_trigger = {
 	OR = {
-		has_trait = 10_sauron
-		has_trait = 20_sauron
-		has_trait = 30_sauron
-		has_trait = 40_sauron
-		has_trait = 50_sauron
-		has_trait = 60_sauron
-		has_trait = 70_sauron
-		has_trait = 80_sauron
-		has_trait = 90_sauron
-		has_trait = 100_sauron
 		has_trait = maia
 		has_trait = nazgul
 	}

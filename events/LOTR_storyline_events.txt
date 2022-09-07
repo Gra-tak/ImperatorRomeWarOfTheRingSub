@@ -807,6 +807,7 @@ lotr_storyline_events.13 = {
 					is_alive = no
 				}
 			}
+			char:15 = { remove_trait = asexual }
 			remove_variable = aragorn_arwen_promised_var
 			trigger_event = {
 				id = lotr_storyline_events.15
@@ -818,6 +819,7 @@ lotr_storyline_events.13 = {
 					is_alive = no
 				}
 			}
+			char:6o = { remove_trait = asexual }
 			remove_variable = aragorn_arwen_promised_var
 			c:IML = {
 				trigger_event = {
@@ -834,6 +836,8 @@ lotr_storyline_events.13 = {
 					}
 				}	
 			}
+			char:15 = { remove_trait = asexual }
+			char:6o = { remove_trait = asexual }
 			remove_variable = aragorn_arwen_promised_var
 			trigger_event = {
 				id = lotr_storyline_events.14

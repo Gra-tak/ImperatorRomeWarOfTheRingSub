@@ -983,3 +983,27 @@ lotr_maintenance.7 = {
     }
   }
 }
+
+lotr_maintenance.8 = {
+  type = character_event
+  title = OK
+  desc = OK
+  hidden = yes
+  trigger = {
+    is_sterile_trigger = yes
+    exists = spouse
+    spouse = {
+      NOR = {
+        is_sterile_trigger = yes
+        has_trait = asexual
+        has_trait = barren
+        has_trait = castrated
+      }
+    }
+  }
+  immediate = {
+    spouse = {
+      add_trait = barren
+    }
+  }
+}

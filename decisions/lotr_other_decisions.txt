@@ -240,6 +240,7 @@
 							save_scope_as = aragorn_promised_scope
 						}
 					}
+					add_trait = asexual
 					marry_character = scope:aragorn_promised_scope
 				}
 				create_character = {
@@ -260,7 +261,10 @@
 					dna="//9hVgAAeVcAACdpAnwCfAOyA7ICgwKDAnkCeQKHAocChgKGApgCmAJ6AnoCcgJyAn4CfgL/AosCgAKAAnsCewJvAm8CewJ7ApMCkwL/AmwCcgJyAnsCewJnAmcCiwKLBJsEmwJ9An0CfQJ9A6QDpAJ8AnwCigKKAo8CjwJ/An8CmQKZAmwCbAJ4AngCeQJ5BMEEwQJtAm0CcAJwAnICcgKRApECagJqAm0CbQKZApkCbAJsApgCmAJ7AnsCeAJ4AmYCZgTTBNMCkAKQBKwErAKKAooChwKHApYClgKPAo8CggKCAmcCZwJeAl4AUABQAR8BHwDMAMwAhwCHAPQA9AD4APgALgAuACQAJACfAJ8ASQBJAC0ALQB/AH8A0gDSANgA2AExATEAbgBuAA0ADQDDAMMAkgCSAJ8AnwB/AH8A6wDrASABIAAlACUBUQFRALEAsQFiAWIBcQFxApsCmwCaAJoA1ADUAEkASQDrAOsHZAdaAH8AfwS4BLwFsgd9AGIAYgSRBJESiAU9Ev8NFgAAAAAAAAAAAAAAAAAAAAA="
 					save_scope_as = arwen_promised_scope
 				}
-				char:15 = { marry_character = scope:arwen_promised_scope }
+				char:15 = { 
+					add_trait = asexual
+					marry_character = scope:arwen_promised_scope 
+				}
 			}
 		}
 		ai_will_do = {
