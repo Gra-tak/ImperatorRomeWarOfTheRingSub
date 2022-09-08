@@ -4,13 +4,12 @@
 	
 -Assimilation and (most) conversion have been disabled
 
--Slaves/Lower tier and freemen/middle tier pops can both be moved manually, but as a result, they do not migrate. If orc pops migrate to a non-orc realm, they will move on to Carn Dum and serve the Witch King of Angmar within a year.
+-If orc pops migrate to a non-orc realm, they will move back to an orc country within a year.
+-If a province containing orcs is occupied by a non-orc country, the orcs will raise as units to fight the occupier (pops are removed, after the war surviving units can be turned back to pops at a loss)
 
--Colonisation doesn't require country culture pops
+-Colonisation only requires 5 pops
 
 -As units are 10% of the size (100), attrition weight, upkeep, etc. has also been reduced (more or less) proportionally 
-
--Every 20th freemen (Middle tier) pop will also produce 1 base resource - 5% each
 
 -A 5-year truce is automatically applied each year between elf realms and the realms of the elf-friend humans, or at least the humans who respect elves such as the Rohirrim, woodsmen, etc. The effect can be broken via a decision, "The old alliances are dead" - but it comes with consequences for the rest of the game in the form of internal unrest.
 
@@ -27,7 +26,7 @@
 -Sauron mechanics are driven via character interactions
 	-To attempt to convert a ruler, right click on their portrait and take the convert decision
 	-Converted rulers will take a decision to convert their nobles - some may not like it and lose loyalty, depending on religion/traits
-	-When a country is 50% melkor religion among its pops, it will become a minion of Sauron and the country will gain the "Servants of Sauron" modifier which makes them highly productive and loyal under the watchful eye of Sauron's black priests. AI countries will also surrender all of their holdings outside of the capital area, while players get to keep everything and be a loyal vassal.
+	-When a country is 50% melkor religion among its pops, it will get a huge relations boost towards Mordor which may allow making them a subject
 
 MAGIC:
 	-Mostly driven through character interactions (right click on a caster's portrait)
@@ -35,7 +34,6 @@ MAGIC:
 	-Witch King and Sauron can cast Dark Wards on their capital, making it extreeeemely hard to conquer
 	-Rest of magic is still very WIP - elves and Dunedain have no spells as of yet
 	
-*For a flavour event, the first winter of TA 1300 will see the entirety of northern Eriador covered in a 4-month winter storm
 
 For anyone who still needs help with locators. Run your game in -develop mode, and then input these commands into the console 
 mapobjects.generategamelocators fort

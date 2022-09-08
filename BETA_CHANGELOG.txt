@@ -95,6 +95,7 @@ Immersion changes:
 - Sceptre of Annuminas now moved from Imladris to Arnor on creation of Arnor
 - Made sure there are no orc repubics possible
 - Eastern countries and cultures renamed (by Pureon)
+- New Icon for lower Tier without chains (by Pureon)
 	
 
 Balance changes:
