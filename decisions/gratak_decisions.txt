@@ -25,6 +25,7 @@
 	moveMinorities = {
 		potential = {
 			is_ai = no
+			always = no
 		}
 		allow = {
 			any_owned_province = {

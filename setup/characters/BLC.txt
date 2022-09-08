@@ -22,7 +22,7 @@
 		}
 	}
 	80={
-		first_name="Óin"
+		first_name="Oin"
 		family = c:BLC.fam:Durin_2
 		birth_date=2774.8.25
 		culture="longbeard"
