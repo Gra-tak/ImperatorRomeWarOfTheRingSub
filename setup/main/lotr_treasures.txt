@@ -381,9 +381,7 @@ provinces = {
 	}
 	1621 = {
 		 # Elbereth Shrine - Magic Diamond Studs - Sting - Shire
-		treasure_slots = {
-			treasures = { 726 }
-		}
+		treasure_slots = { treasures = { 726 } }
 	}
 	3699 = {
 		 # Altar to Azog - Durin's Axe - Moria
@@ -397,9 +395,7 @@ provinces = {
 	}
 	3674 = {
 		 # Sculpture of Durin Statue of Grór Raven Crown - Iron Hills
-		treasure_slots = {
-			treasures = { 731 }
-		}
+		treasure_slots = { treasures = { 731 } }
 	}
 	115 = {
 		 # Kine of Araw Statue - Rhûn
