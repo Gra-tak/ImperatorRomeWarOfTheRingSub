@@ -19,6 +19,14 @@ Features:
 	- Cameth brin tower (3D model now only visible after this decision)
 - Evil wonders can now be torn down on conquest. The alternative is turning evil yourself
 	- Barad Dur, Black Gate, Dol Guldur, Minas Morgul
+- Pops now sometimes move away from wrong cultured countries towards countries of their cultures
+	- Any non-orc may flee being eaten by orcs from provinces which are owned by orcs but don't have orc majority (yet): About 5-10% per year
+		- This is offset by a much faster conversion, see below
+	- Orcs/Goblins/Uruks always move to a country of their culture at the start of each year (replacing moving them to carn dum only)
+	- Elves and dwarfs have a general tendency to do this: About 5-10% per year. Not applied on provinces with more than 75% elves/dwarfs
+	- Others do the same but much more rarely (less than 1% per year)
+	- Cultural decision to entice people to move towards one of your subjects where they are an accepted culture. Costs 5 gold per pop and is only applied as long as you own at least 100 gold. About 5-10% per year.
+	- Cultural decision to entice people to move to your country from one of your subjects where they are a non-accepted culture. Costs 10 gold per pop and is only applied as long as you own at least 100 gold. 5 of these 10 gold go to the subject. About 5-10% per year.
 - Orc and Corsair raid events now actually have reasonable triggers and mtth modifiers
 	- Orc raids happen if you unfortified border provinces in region or directly neighboring a region that has goblin/orc/uruk provinces (one event for each). The event tells you this (including naming the region that is the issue)
 	- Corsair raids happen on unfortified coastal provinces in range of the Corsair. The close you are and the more provinces are effected the more ships are needed to prevent them
@@ -28,14 +36,6 @@ Features:
 	- AE reduction goes both ways though
 - Decision for Aragon and Arwen to promise themselves to each other. Actual marriage can be done on re-founding Arnor or turning Imladris to be your subject
 - Can now accept same culture group cultures via cultural decision (though, you can decide which one to accept, rather than having to accept all current cultures of your group)
-- Pops now sometimes move away from wrong cultured countries towards countries of their cultures
-	- Any non-orc may flee being eaten by orcs from provinces which are owned by orcs but don't have orc majority (yet): About 5-10% per year
-		- This is offset by a much faster conversion, see below
-	- Orcs/Goblins/Uruks always move to a country of their culture at the start of each year (replacing moving them to carn dum only)
-	- Elves and dwarfs have a general tendency to do this: About 5-10% per year. Not applied on provinces with more than 75% elves/dwarfs
-	- Others do the same but much more rarely (less than 1% per year)
-	- Cultural decision to entice people to move towards one of your subjects where they are an accepted culture. Costs 5 gold per pop and is only applied as long as you own at least 100 gold. About 5-10% per year.
-	- Cultural decision to entice people to move to your country from one of your subjects where they are a non-accepted culture. Costs 10 gold per pop and is only applied as long as you own at least 100 gold. 5 of these 10 gold go to the subject. About 5-10% per year.
 - Gondors large vassals as well as Ranger protectorates that previously were "do not join wars" but had decisions to join wars are now instead permanetly "disloyal" but do join wars.
 	- This is needed since there is a vanilla bug which makes countries joining by event into a defensive war always take over war leadership, even over their overlord
 	- They now join and fight normally in defensive war but never join offensive ones
@@ -55,7 +55,18 @@ Features:
 
 Immersion changes:
 - Saruman's Isengard now actually turns Uruk when he falls for Sauron. Pops of initially owned provinces are converted to uruks.
-- Renamed many provinces to actually known ones, especially Shire (more of a bugfix, as they were already in but didn't work)
+- Renamed many provinces to actually known ones, especially Shire (more of a bugfix, as they were already in but didn't work, others were leftovers from previous versions of the mod being at a different date)
+- Gondor, Dol Amroth and Leme now has Gondorian as integrated culture. As only similar levy cultures can reasonable be integrated due to the vanilla levy bug, this requires some major changes:
+	- Gondorian levy is now the same as Lesser Dunedain, making them much stronger and thus needed a nerf, see below
+	- Andrast is now a tribal vassal of andrast culture. Sourced say Gondor claimed it, but never forced any control or taxes except for keeping a single castle
+	- Reduced population numbers in gondor vassals
+	- Added strong debuffs on levy percentages on the major vassals
+		- Corsair attacks preventing the southern vassals from sending their troops to help the King
+		- Saruman influence weakening Rohan
+		- These can be removed by defeating the Corsairs/Isengard
+	- According to my tests, Gondor in AI hands is now about as strong as before the changes, thus still slowly losing to Mordor and Umbar
+	- Gondor mission slightly changed to work with the changes
+- Corsairs and Dark Numenorian now accept Banaduim culture (analog to Gondor accepting Gondorian). These mixed edain now also use the edain levies. No balance changes needed here as both were pretty weak anyway imho and got their needed boost.
 - Removed enslavements on occupation for non-orcs.
 	- I know it would be realistic for melkor countries but wrong cultured pops are pretty useless except for orcs.
 - Removed some events that created light infantry units for armies even for countries who don't use those.
@@ -75,18 +86,6 @@ Immersion changes:
 	- Lorien and Imladris now got perfect climate (as controlled by the elven rings)
 	- No more climate in caves and underground halls
 	- Made frigid climate less severe and alpine climate more severe. Also renaming the latter to arctic
-- Renamed some provinces that still had the names from thousands of years ago (previous version of this mod)
-- Gondor, Dol Amroth and Leme now has Gondorian as integrated culture. As only similar levy cultures can reasonable be integrated due to the vanilla levy bug, this requires some major changes:
-	- Gondorian levy is now the same as Lesser Dunedain, making them much stronger and thus needed a nerf, see below
-	- Andrast is now a tribal vassal of andrast culture. Sourced say Gondor claimed it, but never forced any control or taxes except for keeping a single castle
-	- Reduced population numbers in gondor vassals
-	- Added strong debuffs on levy percentages on the major vassals
-		- Corsair attacks preventing the southern vassals from sending their troops to help the King
-		- Saruman influence weakening Rohan
-		- These can be removed by defeating the Corsairs/Isengard
-	- According to my tests, Gondor in AI hands is now about as strong as before the changes, thus still slowly losing to Mordor and Umbar
-	- Gondor mission slightly changed to work with the changes
-- Corsairs and Dark Numenorian now accept Banaduim culture (analog to Gondor accepting Gondorian). These mixed edain now also use the edain levies. No balance changes needed here as both were pretty weak anyway imho and got their needed boost.
 - Replaced many more mentionings of the lowest pop tier to be called slaves. Freemen and citizens now also actually renamed to Middle and Upper tier (the latter is a bugfix as this was already intended before)
 - Elvenking's Halls and Erebor are now Underground halls rather than Deep forest/Mountain
 - Singe province north of Isengard uninhabitable now to prevent Saruman from going into the Misty Mountains instantly
