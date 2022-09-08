@@ -5442,7 +5442,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-513 = { #Tûr Kîrimar (YOP) (muran_area) (harshandatt_region)
+513 = { #Tûr Kîrimar (unowned) (muran_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -5453,7 +5453,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-514 = { #Rusht (YOP) (muran_area) (harshandatt_region)
+514 = { #Rusht (unowned) (muran_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -5920,7 +5920,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-559 = { #Naephys (YOP) (nuar_area) (harshandatt_region)
+559 = { #Naephys (unowned) (nuar_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -5931,7 +5931,7 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-560 = { #Murghyr (YOP) (nuar_area) (harshandatt_region)
+560 = { #Murghyr (unowned) (nuar_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -5942,7 +5942,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-561 = { #Kóser (YOP) (nuar_area) (harshandatt_region)
+561 = { #Kóser (unowned) (nuar_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -5953,7 +5953,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-562 = { #Báhri (YOP) (nuar_area) (harshandatt_region)
+562 = { #Báhri (unowned) (nuar_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -5982,7 +5982,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-565 = { #Ujarath (YOP) (nuar_area) (harshandatt_region)
+565 = { #Ujarath (unowned) (nuar_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -5993,7 +5993,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-566 = { #Ganashôshyn (YOP) (nuar_area) (harshandatt_region)
+566 = { #Ganashôshyn (unowned) (nuar_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -6004,7 +6004,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-567 = { #Mazharath (YOP) (nuar_area) (harshandatt_region)
+567 = { #Mazharath (unowned) (nuar_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -6015,7 +6015,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-568 = { #Asubuhl (YOP) (naishan_area) (harshandatt_region)
+568 = { #Asubuhl (unowned) (naishan_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -6026,7 +6026,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-569 = { #Xyunaï (YOP) (naishan_area) (harshandatt_region)
+569 = { #Xyunaï (unowned) (naishan_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -6037,7 +6037,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-570 = { #Arthaar (YOP) (naishan_area) (harshandatt_region)
+570 = { #Arthaar (unowned) (naishan_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -6048,7 +6048,7 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-571 = { #Shand Tûlaim (YOP) (naishan_area) (harshandatt_region)
+571 = { #Shand Tûlaim (unowned) (naishan_area) (harshandatt_region)
 	terrain = "desert"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -6059,7 +6059,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-572 = { #Horvâdhan (YOP) (naishan_area) (harshandatt_region)
+572 = { #Horvâdhan (unowned) (naishan_area) (harshandatt_region)
 	terrain = "desert"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -6070,7 +6070,7 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-573 = { #Suda Cull (YOP) (naishan_area) (harshandatt_region)
+573 = { #Suda Cull (unowned) (naishan_area) (harshandatt_region)
 	terrain = "desert"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -6081,7 +6081,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-574 = { #Farêdun (YOP) (naishan_area) (harshandatt_region)
+574 = { #Farêdun (unowned) (naishan_area) (harshandatt_region)
 	terrain = "desert"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -6405,7 +6405,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-609 = { #Rhagai (YOP) (naishan_area) (harshandatt_region)
+609 = { #Rhagai (unowned) (naishan_area) (harshandatt_region)
 	terrain = "desert"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -7551,7 +7551,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-713 = { #Krûk Azhanna (unowned) (arysis_area) (nafarat_region)
+713 = { #Nosharud (unowned) (klyan_area) (khailuza_region)
 	terrain = "mountain"
 	culture = "blacklock"
 	religion = "iluvatarism"
@@ -7665,7 +7665,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-724 = { #Lavaralda-minassë (unowned) (forod_engrin_area) (forrhun_region)
+724 = { #Alduov Gárvtë (unowned) (forod_engrin_area) (forrhun_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -7674,7 +7674,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-725 = { #Tundowailë Opelë (unowned) (forod_engrin_area) (forrhun_region)
+725 = { #Ambailas (unowned) (forod_engrin_area) (forrhun_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8447,7 +8447,7 @@
 	tribesmen = { amount = 10 }
 	slaves = { amount = 1 }
 }
-801 = { #Mindo Fanya (unowned) (forovirkain_area) (forodwaith_region)
+801 = { #Balvdo Droindë (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8456,7 +8456,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-802 = { #Ampamorë (unowned) (forovirkain_area) (forodwaith_region)
+802 = { #Feskk-scahmorë Ir (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8465,7 +8465,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-803 = { #Art Vailima (unowned) (forovirkain_area) (forodwaith_region)
+803 = { #Gárvtë Bailas (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8474,7 +8474,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-804 = { #Mindon Ilma (unowned) (forovirkain_area) (forodwaith_region)
+804 = { #Droindë Nilst (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8483,7 +8483,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-805 = { #Raumquín (unowned) (talath_oiohelka_area) (forodwaith_region)
+805 = { #Quie-lúris (unowned) (talath_oiohelka_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8492,7 +8492,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-806 = { #Noirëmurmëa (unowned) (talath_oiohelka_area) (forodwaith_region)
+806 = { #Hoivdënorhk (unowned) (talath_oiohelka_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8501,7 +8501,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-807 = { #Minassë Nando (unowned) (talath_oiohelka_area) (forodwaith_region)
+807 = { #Droindë Leagis (unowned) (talath_oiohelka_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8510,7 +8510,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-808 = { #Tarmatalantëa (unowned) (talath_oiohelka_area) (forodwaith_region)
+808 = { #Cav'tar (unowned) (talath_oiohelka_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8546,7 +8546,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-812 = { #Yanwë Seron (unowned) (talath_uichel_area) (forodwaith_region)
+812 = { #Scelin Tabwë (unowned) (talath_uichel_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8582,7 +8582,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-816 = { #Númenyasara (unowned) (sarch_nia_linquelie_area) (ered_mithrin_region)
+816 = { #Ma Oarsuoiquë (unowned) (sarch_nia_linquelie_area) (ered_mithrin_region)
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8591,7 +8591,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-817 = { #Sánëtáva (XXQ) (talath_uichel_area) (forodwaith_region)
+817 = { #Alduov Baanë (XXQ) (talath_uichel_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "goblins"
 	religion = "melkorism"
@@ -8611,7 +8611,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-819 = { #Carassënandë (unowned) (talath_oiohelka_area) (forodwaith_region)
+819 = { #Gárvtë-leagis (unowned) (talath_oiohelka_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8620,7 +8620,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-820 = { #Linyahaira (unowned) (forovirkain_area) (forodwaith_region)
+820 = { #Nánvgahka (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8669,7 +8669,7 @@
 	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
-825 = { #Tirion Laurënár (unowned) (nimbrith_forochel_area) (forochel_region)
+825 = { #N'ráki Guultrondë (unowned) (nimbrith_forochel_area) (forochel_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8678,7 +8678,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-826 = { #Sulcalumbë (unowned) (everdalf_area) (forochel_region)
+826 = { #Sogjide Gaddi (unowned) (everdalf_area) (forochel_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8687,7 +8687,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-827 = { #Moilë Lámárë (unowned) (goldladwen_area) (forodwaith_region)
+827 = { #Littis Návrid (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8705,7 +8705,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-829 = { #Verwá (unowned) (goldladwen_area) (forodwaith_region)
+829 = { #Walë Ruohkta (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8723,7 +8723,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-831 = { #Rúsë-nia-turúvanís (unowned) (goldladwen_area) (forodwaith_region)
+831 = { #Rúmoniscu (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8732,7 +8732,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-832 = { #Aldírima (unowned) (goldladwen_area) (forodwaith_region)
+832 = { #Alduov Ustilwa (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8741,7 +8741,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-833 = { #Artahest (unowned) (jarvimaa_area) (forochel_region)
+833 = { #Hagárvtë (unowned) (jarvimaa_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8750,7 +8750,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-834 = { #Talmanamba (unowned) (goldladwen_area) (forodwaith_region)
+834 = { #Lazhik (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8759,7 +8759,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-835 = { #Mindonossë (XXQ) (talath_uichel_area) (forodwaith_region)
+835 = { #Rondël'ki (XXQ) (talath_uichel_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "goblins"
 	religion = "melkorism"
@@ -8770,7 +8770,7 @@
 	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
-836 = { #Ehtë-aicassë (unowned) (goldladwen_area) (forodwaith_region)
+836 = { #Vorahkki (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8779,7 +8779,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-837 = { #Rávatirios (unowned) (goldladwen_area) (forodwaith_region)
+837 = { #Milisjor (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8788,7 +8788,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-838 = { #Laurëa (unowned) (talath_uichel_area) (forodwaith_region)
+838 = { #Guulta (unowned) (talath_uichel_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8797,7 +8797,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-839 = { #Hyarmeldo (unowned) (goldladwen_area) (forodwaith_region)
+839 = { #Hytabwë (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8806,7 +8806,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-840 = { #Tundosalquë (unowned) (everdalf_area) (forochel_region)
+840 = { #Am Sooquë (unowned) (everdalf_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8815,7 +8815,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-841 = { #Ringwë Yór (unowned) (goldladwen_area) (forodwaith_region)
+841 = { #Nánv'yór (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8824,7 +8824,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-842 = { #Lantalcarda (unowned) (talath_uichel_area) (forodwaith_region)
+842 = { #Tikkë Latass (unowned) (talath_uichel_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8833,7 +8833,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-843 = { #Telimbelcë (unowned) (forovirkain_area) (forodwaith_region)
+843 = { #Almmë Helcëkna (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8842,7 +8842,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-844 = { #Cassavanwa (unowned) (goldladwen_area) (forodwaith_region)
+844 = { #Jeass'láwán (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8851,7 +8851,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-845 = { #Aryarma (unowned) (forod_engrin_area) (forrhun_region)
+845 = { #Árruinabbia (unowned) (forod_engrin_area) (forrhun_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8887,7 +8887,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-849 = { #Axëmardë (unowned) (forod_engrin_area) (forrhun_region)
+849 = { #Feskk'quie (unowned) (forod_engrin_area) (forrhun_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8896,7 +8896,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-850 = { #Nellë Sinda (unowned) (forod_engrin_area) (forrhun_region)
+850 = { #Ohr Mástis (unowned) (forod_engrin_area) (forrhun_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8905,7 +8905,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-851 = { #Tirin-cormen (unowned) (sarch_nia_linquelie_area) (ered_mithrin_region)
+851 = { #Amdrondë (unowned) (sarch_nia_linquelie_area) (ered_mithrin_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -8974,7 +8974,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-858 = { #Luxo (unowned) (goldladwen_area) (forodwaith_region)
+858 = { #Duxoscis (unowned) (goldladwen_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9071,7 +9071,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-868 = { #Hlónayondë (XXQ) (carn_dum_area) (angmar_region)
+868 = { #Johrond (XXQ) (carn_dum_area) (angmar_region)
 	terrain = "plains"
 	culture = "angmarim"
 	religion = "eastern_animism"
@@ -9082,7 +9082,7 @@
 	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
-869 = { #Nossë Alaturmen (XXQ) (nimbrith_forochel_area) (forochel_region)
+869 = { #Elkiond (XXQ) (nimbrith_forochel_area) (forochel_region)
 	terrain = "forest"
 	culture = "angmarim"
 	religion = "eastern_animism"
@@ -9111,7 +9111,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-872 = { #Fairëtaurë (unowned) (rammas_forod_area) (forochel_region)
+872 = { #Varrejarvi (unowned) (rammas_forod_area) (forochel_region)
 	terrain = "forest"
 	culture = "angmarim"
 	religion = "eastern_animism"
@@ -9139,7 +9139,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-875 = { #Gram (unowned) (ram_duath_area) (angmar_region)
+875 = { #Barûk-Zigil (unowned) (ram_duath_area) (angmar_region)
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9406,7 +9406,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-901 = { #Alatilin Orofarnë (unowned) (forovirkain_area) (forodwaith_region)
+901 = { #Vorin Iscit Visë (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9437,7 +9437,7 @@
 	freemen = { amount = 8 }
 	slaves = { amount = 1 }
 }
-904 = { #Quiltavanwa (unowned) (carn_dum_area) (angmar_region)
+904 = { #Lessahp (unowned) (carn_dum_area) (angmar_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9489,7 +9489,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-909 = { #Turúva Ostapolca (unowned) (dyr_uvadan_area) (dyr_erib_region)
+909 = { #Polcinald Visë (unowned) (dyr_uvadan_area) (dyr_erib_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9544,7 +9544,7 @@
 	tribesmen = { amount = 20 }
 	slaves = { amount = 5 }
 }
-914 = { #Telarmarda (unowned) (rammas_forod_area) (forochel_region)
+914 = { #Diilavisë (unowned) (rammas_forod_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9553,7 +9553,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-915 = { #Orrónavaiwa (unowned) (rammas_forod_area) (forochel_region)
+915 = { #Walë Nuortë (unowned) (rammas_forod_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9573,7 +9573,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-917 = { #Ostarhrissë (unowned) (rammas_forod_area) (forochel_region)
+917 = { #Lossilsto (unowned) (rammas_forod_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9593,7 +9593,7 @@
 	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
-919 = { #Firiëlócë (unowned) (rammas_forod_area) (forochel_region)
+919 = { #Falisluokta (unowned) (rammas_forod_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9620,7 +9620,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-922 = { #Indilambo (unowned) (forovirkain_area) (forodwaith_region)
+922 = { #Am Rásn (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9629,7 +9629,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-923 = { #Fortëlaco (XXQ) (carn_dum_area) (angmar_region)
+923 = { #Fornvie (XXQ) (carn_dum_area) (angmar_region)
 	terrain = "mountain"
 	culture = "goblins"
 	religion = "melkorism"
@@ -9640,7 +9640,7 @@
 	tribesmen = { amount = 8 }
 	slaves = { amount = 4 }
 }
-924 = { #Minassë Lumba (unowned) (rast_losnaeth_area) (forochel_region)
+924 = { #Droindë Caggart (unowned) (rast_losnaeth_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9658,7 +9658,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-926 = { #Aldanqua (unowned) (rast_losnaeth_area) (forochel_region)
+926 = { #Alduov Ráint (unowned) (rast_losnaeth_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9676,7 +9676,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-928 = { #Nicarda (unowned) (rast_losnaeth_area) (forochel_region)
+928 = { #Tikkë Nbuol (unowned) (rast_losnaeth_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9685,7 +9685,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-929 = { #Ehtëhelca (unowned) (lindalf_area) (forochel_region)
+929 = { #Helcëkna Ahkki (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "melkorism"
@@ -9694,7 +9694,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-930 = { #Namminassë (unowned) (lindalf_area) (forochel_region)
+930 = { #Droindë Gampa (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "melkorism"
@@ -9703,7 +9703,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-931 = { #Nén Nalta (unowned) (lindalf_area) (forochel_region)
+931 = { #Nán-scuilyiin (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "melkorism"
@@ -9712,7 +9712,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-932 = { #Elenalcin (unowned) (rast_losnaeth_area) (forochel_region)
+932 = { #Nás-galciin (unowned) (rast_losnaeth_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9721,7 +9721,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-933 = { #Helcoialëa (unowned) (lindalf_area) (forochel_region)
+933 = { #Í Helcëkna (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "melkorism"
@@ -9757,7 +9757,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-937 = { #Nén Mirili (unowned) (lindalf_area) (forochel_region)
+937 = { #Nán Sciral (unowned) (lindalf_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "melkorism"
@@ -9766,7 +9766,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-938 = { #Nieninquë (unowned) (rast_losnaeth_area) (forochel_region)
+938 = { #Loss'scalis (unowned) (rast_losnaeth_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9775,7 +9775,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-939 = { #Isilmalwi (unowned) (everdalf_area) (forochel_region)
+939 = { #Másilthis (unowned) (everdalf_area) (forochel_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9784,7 +9784,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-940 = { #Felcoring (unowned) (everdalf_area) (forochel_region)
+940 = { #Fráilya Nbuol (unowned) (everdalf_area) (forochel_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9793,7 +9793,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-941 = { #Tarmondo (unowned) (linladwen_area) (forochel_region)
+941 = { #Geth'tar (unowned) (linladwen_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9802,7 +9802,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-942 = { #Opelëliantë (XXN) (lodalf_area) (forochel_region)
+942 = { #Milsto Livnë (XXN) (lodalf_area) (forochel_region)
 	terrain = "plains"
 	culture = "lossoth"
 	religion = "iluvatarism"
@@ -9813,7 +9813,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-943 = { #Hentaheri (XXN) (linladwen_area) (forochel_region)
+943 = { #Geagaddi (XXN) (linladwen_area) (forochel_region)
 	terrain = "plains"
 	culture = "lossoth"
 	religion = "iluvatarism"
@@ -9824,7 +9824,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-944 = { #Ruimen Rúnya (unowned) (linladwen_area) (forochel_region)
+944 = { #Árruin N'rárki-Cruoki (unowned) (linladwen_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9833,7 +9833,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-945 = { #Opelisil (XXN) (linladwen_area) (forochel_region)
+945 = { #Milsto Mánil (XXN) (linladwen_area) (forochel_region)
 	terrain = "plains"
 	culture = "lossoth"
 	religion = "iluvatarism"
@@ -9844,7 +9844,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-946 = { #Helinyetillë (unowned) (linladwen_area) (forochel_region)
+946 = { #Joganjálbmi (unowned) (linladwen_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9909,7 +9909,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-953 = { #Nandëhala (unowned) (rammas_forod_area) (forochel_region)
+953 = { #Leagis Caggart (unowned) (rammas_forod_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9918,7 +9918,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-954 = { #Hahtalaiquë (unowned) (rammas_forod_area) (forochel_region)
+954 = { #Am Lurtë (unowned) (rammas_forod_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9927,7 +9927,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-955 = { #Osta Ondo (unowned) (rammas_forod_area) (forochel_region)
+955 = { #Geth Visë (unowned) (rammas_forod_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9965,7 +9965,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-959 = { #Fárafalmar (XXN) (linladwen_area) (forochel_region)
+959 = { #Fárris Viaggeär (XXN) (linladwen_area) (forochel_region)
 	terrain = "plains"
 	culture = "lossoth"
 	religion = "iluvatarism"
@@ -9976,7 +9976,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-960 = { #Minassë Lócë (unowned) (lodalf_area) (forochel_region)
+960 = { #Droindë Geapócis (unowned) (lodalf_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9985,7 +9985,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-961 = { #Artaxa (unowned) (lodalf_area) (forochel_region)
+961 = { #Gárvtë Skaaxë (unowned) (lodalf_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -9994,7 +9994,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-962 = { #Vanyaurëména (unowned) (nimbrith_forochel_area) (forochel_region)
+962 = { #Anáekond (unowned) (nimbrith_forochel_area) (forochel_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10032,7 +10032,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-966 = { #Ringwë Lilótëa (unowned) (rammas_formen_area) (fortund_region)
+966 = { #Vorin Rananv (unowned) (rammas_formen_area) (fortund_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10041,7 +10041,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-967 = { #Taulëmarda (unowned) (forovirkain_area) (forodwaith_region)
+967 = { #Alduovisë (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10134,7 +10134,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-977 = { #Mintëondolócë (unowned) (rammas_formen_area) (fortund_region)
+977 = { #Geth'lócë (unowned) (rammas_formen_area) (fortund_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10161,7 +10161,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-980 = { #Narwapelë (unowned) (carn_dum_area) (angmar_region)
+980 = { #Milsto Cruoki (unowned) (carn_dum_area) (angmar_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10693,7 +10693,7 @@
 	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
-1032 = { #Tuialohtë (unowned) (rammas_forod_area) (forochel_region)
+1032 = { #Të Rásn (unowned) (rammas_forod_area) (forochel_region)
 	terrain = "forest"
 	culture = "angmarim"
 	religion = "eastern_animism"
@@ -10703,7 +10703,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 4 }
 }
-1033 = { #Rávasenda (XXQ) (nimbrith_forochel_area) (forochel_region)
+1033 = { #Johr-est (XXQ) (nimbrith_forochel_area) (forochel_region)
 	terrain = "forest"
 	culture = "angmarim"
 	religion = "eastern_animism"
@@ -10714,7 +10714,7 @@
 	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
-1034 = { #Tarastampë (XXQ) (carn_dum_area) (angmar_region)
+1034 = { #Gárvtë Teombë (XXQ) (carn_dum_area) (angmar_region)
 	terrain = "plains"
 	culture = "goblins"
 	religion = "melkorism"
@@ -10725,7 +10725,7 @@
 	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
-1035 = { #Paca-alatapairë (XXQ) (talath_uichel_area) (forodwaith_region)
+1035 = { #Sapahtë Pascju (XXQ) (talath_uichel_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "goblins"
 	religion = "melkorism"
@@ -10736,7 +10736,7 @@
 	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
-1036 = { #Hópa nia Marilli (XXN) (linladwen_area) (forochel_region)
+1036 = { #Londëk'tá Silälis (XXN) (linladwen_area) (forochel_region)
 	terrain = "plains"
 	culture = "lossoth"
 	religion = "iluvatarism"
@@ -10747,7 +10747,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-1037 = { #Palaravan (unowned) (nimbrith_forochel_area) (forochel_region)
+1037 = { #Eali'aarlma (unowned) (nimbrith_forochel_area) (forochel_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10756,7 +10756,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1038 = { #Saramarto (unowned) (linladwen_area) (forochel_region)
+1038 = { #Geth Drondë (unowned) (linladwen_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10765,7 +10765,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1039 = { #Váyahraicenë (unowned) (linladwen_area) (forochel_region)
+1039 = { #Vilges-bakti (unowned) (linladwen_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10774,7 +10774,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1040 = { #Nandomalta (unowned) (forovirkain_area) (forodwaith_region)
+1040 = { #Leagis Guulta (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10783,7 +10783,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1041 = { #Minassë Lossë (unowned) (talath_uichel_area) (forodwaith_region)
+1041 = { #Droindë Loss (unowned) (talath_uichel_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10792,7 +10792,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1042 = { #Artaharn (unowned) (talath_uichel_area) (forodwaith_region)
+1042 = { #Gárvtë Gunart (unowned) (talath_uichel_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10801,7 +10801,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1043 = { #Tumbasto (unowned) (talath_uichel_area) (forodwaith_region)
+1043 = { #Leagis Gasjo (unowned) (talath_uichel_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10810,7 +10810,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1044 = { #Artaurëlima (unowned) (talath_uichel_area) (forodwaith_region)
+1044 = { #Tikkë Aborië (unowned) (talath_uichel_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -10980,7 +10980,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1060 = { #Fautapel (XXN) (lodalf_area) (forochel_region)
+1060 = { #Loss'aarlma (XXN) (lodalf_area) (forochel_region)
 	terrain = "plains"
 	culture = "lossoth"
 	religion = "iluvatarism"
@@ -10992,7 +10992,7 @@
 	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
-1061 = { #Márammalë (unowned) (lodalf_area) (forochel_region)
+1061 = { #Visë Littis-Miskada (unowned) (lodalf_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -11001,7 +11001,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1062 = { #Palalumbo (unowned) (linladwen_area) (forochel_region)
+1062 = { #Bavvai-aarlma (unowned) (linladwen_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -11052,7 +11052,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-1067 = { #Moilë-sára (unowned) (forovirkain_area) (forodwaith_region)
+1067 = { #Návrid Scorka (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -11322,7 +11322,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1094 = { #Ondohelca (unowned) (everdalf_area) (forochel_region)
+1094 = { #Helcëkna Geth (unowned) (everdalf_area) (forochel_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -11331,7 +11331,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1095 = { #Opeváya (unowned) (everdalf_area) (forochel_region)
+1095 = { #Milsto Eär (unowned) (everdalf_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -11340,7 +11340,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1096 = { #Quínanarórë (unowned) (everdalf_area) (forochel_region)
+1096 = { #Quie-lónrë (unowned) (everdalf_area) (forochel_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -11349,7 +11349,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1097 = { #Rúcinahelcë (unowned) (everdalf_area) (forochel_region)
+1097 = { #Helcëkna Racusce (unowned) (everdalf_area) (forochel_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -11367,7 +11367,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1099 = { #Arterë (unowned) (lodalf_area) (forochel_region)
+1099 = { #Gárvtë Ruavn (unowned) (lodalf_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -13321,7 +13321,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-1283 = { #Úrwilya (unowned) (forovirkain_area) (forodwaith_region)
+1283 = { #N'rárki-Alommë (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -16608,7 +16608,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 3 }
 }
-1583 = { #Rhas Drúath (unowned) (emyn_iaur_area) (druwaith_region)
+1583 = { #Pûkelhyrne (unowned) (emyn_iaur_area) (druwaith_region)
 	terrain = "plains"
 	culture = "daoine"
 	religion = "iluvatarism"
@@ -16703,7 +16703,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-1592 = { #Cûm Arelaidh (unowned) (imlad_arheledh_area) (hairaverkien_region)
+1592 = { #Umb Dolen (unowned) (imlad_arheledh_area) (hairaverkien_region)
 	terrain = "hills"
 	culture = "eredrim"
 	religion = "iluvatarism"
@@ -16799,7 +16799,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1601 = { #Estuir Brerinor (BRE) (breriondor_area) (arthedain_region)
+1601 = { #Bree (BRE) (breriondor_area) (arthedain_region)
 	terrain = "plains"
 	culture = "breelander"
 	religion = "iluvatarism"
@@ -16915,7 +16915,7 @@
 	province_rank = "settlement"
 	freemen = { amount = 6 }
 }
-1613 = { #Sairinan (SHI) (sarnladen_area) (siragale_region)
+1613 = { #Sackville (SHI) (sarnladen_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -16924,7 +16924,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1614 = { #Belsen Sarn (SHI) (formensiril_area) (siragale_region)
+1614 = { #Oatbarton (SHI) (formensiril_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -16935,7 +16935,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 4 }
 }
-1615 = { #Taure Vinyalindale (SHI) (formensiril_area) (siragale_region)
+1615 = { #Bindbale (SHI) (formensiril_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -16964,7 +16964,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1618 = { #Galabas (SHI) (tyrn_haen_area) (siragale_region)
+1618 = { #Gamwich (SHI) (tyrn_haen_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -16993,7 +16993,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1621 = { #Michinnec (SHI) (tyrn_haen_area) (siragale_region)
+1621 = { #Michel Delving (SHI) (tyrn_haen_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	holy_site = "omen_elbereth"
@@ -17005,7 +17005,7 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 4 }
 }
-1622 = { #Rivernayve (SHI) (formensiril_area) (siragale_region)
+1622 = { #Frogmorton (SHI) (formensiril_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -17016,7 +17016,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 5 }
 }
-1623 = { #Nimeithel Sarn (SHI) (tyrn_haen_area) (siragale_region)
+1623 = { #Hardbottle (SHI) (tyrn_haen_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -17027,7 +17027,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 5 }
 }
-1624 = { #Aelinhith (SHI) (tyrn_haen_area) (siragale_region)
+1624 = { #Long Cleeve (SHI) (tyrn_haen_area) (siragale_region)
 	terrain = "plains"
 	culture = "stoor"
 	religion = "iluvatarism"
@@ -17038,7 +17038,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 5 }
 }
-1625 = { #Tumdathar (SHI) (sarnladen_area) (siragale_region)
+1625 = { #Willowbottom (SHI) (sarnladen_area) (siragale_region)
 	terrain = "plains"
 	culture = "stoor"
 	religion = "iluvatarism"
@@ -17796,7 +17796,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1703 = { #Tawarsant (unowned) (baranduin_area) (siragale_region)
+1703 = { #Stock (unowned) (baranduin_area) (siragale_region)
 	terrain = "forest"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -20210,7 +20210,7 @@
 	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
-1951 = { #Calembar (SHI) (tyrn_haen_area) (siragale_region)
+1951 = { #Greenholm (SHI) (tyrn_haen_area) (siragale_region)
 	terrain = "plains"
 	culture = "stoor"
 	religion = "iluvatarism"
@@ -20221,7 +20221,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 4 }
 }
-1952 = { #Glânbar (SHI) (tyrn_haen_area) (siragale_region)
+1952 = { #Cottonbottom (SHI) (tyrn_haen_area) (siragale_region)
 	terrain = "plains"
 	culture = "stoor"
 	religion = "iluvatarism"
@@ -21915,7 +21915,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 8 }
 }
-2111 = { #Forsúriquildë (unowned) (sarch_nia_linquelie_area) (ered_mithrin_region)
+2111 = { #Forn'vatjë (unowned) (sarch_nia_linquelie_area) (ered_mithrin_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -22257,7 +22257,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 4 }
 }
-2144 = { #Celebrond (unowned) (enedhir_area) (enedhwaith_region)
+2144 = { #Zigil-Dûm (unowned) (enedhir_area) (enedhwaith_region)
 	terrain = "plains"
 	culture = "druwaithing"
 	religion = "iluvatarism"
@@ -22506,7 +22506,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2168 = { #Nirmolean (SHI) (formensiril_area) (siragale_region)
+2168 = { #Scary (SHI) (formensiril_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -22517,7 +22517,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 4 }
 }
-2169 = { #Perianobel (SHI) (formensiril_area) (siragale_region)
+2169 = { #Hobbiton (SHI) (formensiril_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -22528,7 +22528,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 4 }
 }
-2170 = { #Emyn Galen (SHI) (formensiril_area) (siragale_region)
+2170 = { #Tuckburrow (SHI) (formensiril_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -22539,7 +22539,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 5 }
 }
-2171 = { #Fayne (SHI) (sarnladen_area) (siragale_region)
+2171 = { #Wibbleham (SHI) (sarnladen_area) (siragale_region)
 	terrain = "plains"
 	culture = "stoor"
 	religion = "iluvatarism"
@@ -22550,7 +22550,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 3 }
 }
-2172 = { #Mengovad (SHI) (formensiril_area) (siragale_region)
+2172 = { #Waymoot (SHI) (formensiril_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -22561,7 +22561,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 5 }
 }
-2173 = { #Tithingroth (SHI) (tyrn_haen_area) (siragale_region)
+2173 = { #Little Delving (SHI) (tyrn_haen_area) (siragale_region)
 	terrain = "plains"
 	culture = "stoor"
 	religion = "iluvatarism"
@@ -22572,7 +22572,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 4 }
 }
-2174 = { #Taurhast (SHI) (formensiril_area) (siragale_region)
+2174 = { #Nobottle (SHI) (formensiril_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -23024,7 +23024,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2220 = { #Tobas Caran (unowned) (siremyn_iaur_area) (tawar_norndor_region)
+2220 = { #Undertowers (unowned) (siremyn_iaur_area) (tawar_norndor_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -24086,7 +24086,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2319 = { #Peler Salquësercë (unowned) (lodalf_area) (forochel_region)
+2319 = { #Soo'aarlma (unowned) (lodalf_area) (forochel_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -24469,7 +24469,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2360 = { #Taur Bereg (BRE) (breriondor_area) (arthedain_region)
+2360 = { #Archet (BRE) (breriondor_area) (arthedain_region)
 	terrain = "plains"
 	culture = "breelander"
 	religion = "iluvatarism"
@@ -26506,7 +26506,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-2562 = { #Gelna (YOP) (mejhanir_area) (harshandatt_region)
+2562 = { #Gelna (unowned) (mejhanir_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26517,7 +26517,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2563 = { #Arâna (YOP) (mejhanir_area) (harshandatt_region)
+2563 = { #Arâna (unowned) (mejhanir_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26528,7 +26528,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2564 = { #Kana (YOP) (mejhanir_area) (harshandatt_region)
+2564 = { #Kana (unowned) (mejhanir_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26649,16 +26649,16 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-2575 = { #Azô (YOP) (nuar_area) (harshandatt_region)
+2575 = { #Azô (unowned) (nuar_area) (harshandatt_region)
 	terrain = "plains"
-	culture = "yopi"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
 	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2576 = { #Hilathêpha (YOP) (nuar_area) (harshandatt_region)
+2576 = { #Hilathêpha (unowned) (nuar_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26669,7 +26669,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2577 = { #Miyôra (YOP) (naishan_area) (harshandatt_region)
+2577 = { #Miyôra (unowned) (naishan_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26680,7 +26680,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-2578 = { #Azûlmuth (YOP) (naishan_area) (harshandatt_region)
+2578 = { #Azûlmuth (unowned) (naishan_area) (harshandatt_region)
 	terrain = "desert"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26757,7 +26757,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2585 = { #Nhordad (XRX) (lodenuly_area) (khailuza_region)
+2585 = { #Nhordad (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27105,7 +27105,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2618 = { #Ekhalshar (YOP) (nuar_area) (harshandatt_region)
+2618 = { #Ekhalshar (unowned) (nuar_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -27138,7 +27138,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2621 = { #Dûrî (YOP) (muran_area) (harshandatt_region)
+2621 = { #Dûrî (unowned) (muran_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -27149,7 +27149,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2622 = { #Tyarett (YOP) (muran_area) (harshandatt_region)
+2622 = { #Tyarett (unowned) (muran_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -27171,7 +27171,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2624 = { #Valganal (YOP) (muran_area) (harshandatt_region)
+2624 = { #Valganal (unowned) (muran_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -27204,7 +27204,7 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 2 }
 }
-2627 = { #Helwailini (unowned) (jarvimaa_area) (forochel_region)
+2627 = { #Alui Návrid (unowned) (jarvimaa_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27453,7 +27453,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2652 = { #Palarcotto (unowned) (jarvimaa_area) (forochel_region)
+2652 = { #Votaarlma (unowned) (jarvimaa_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27462,7 +27462,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2653 = { #Halcinaira Ringwë (unowned) (jarvimaa_area) (forochel_region)
+2653 = { #Vornánv (unowned) (jarvimaa_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27471,7 +27471,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2654 = { #Vórëamindo (unowned) (jarvimaa_area) (forochel_region)
+2654 = { #Bórndë (unowned) (jarvimaa_area) (forochel_region)
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27779,7 +27779,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2684 = { #Heldaxëhelca (unowned) (durganla_area) (forodwaith_region)
+2684 = { #Quie-Helcëkna (unowned) (durganla_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27788,7 +27788,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2685 = { #Sindayaru (unowned) (durganla_area) (forodwaith_region)
+2685 = { #Mástis Lev'djat (unowned) (durganla_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27815,7 +27815,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2688 = { #Mardënossë (unowned) (forovirkain_area) (forodwaith_region)
+2688 = { #Feskkilki (unowned) (forovirkain_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27824,7 +27824,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2689 = { #Ampano (unowned) (durganla_area) (forodwaith_region)
+2689 = { #Feskkald (unowned) (durganla_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27833,7 +27833,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2690 = { #Celussë Aira (unowned) (durganla_area) (forodwaith_region)
+2690 = { #Cruokohr (unowned) (durganla_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27842,7 +27842,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2691 = { #Quínsára (unowned) (durganla_area) (forodwaith_region)
+2691 = { #Quie-Scorka (unowned) (durganla_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27851,7 +27851,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2692 = { #Nicuména (unowned) (durganla_area) (forodwaith_region)
+2692 = { #Nbuolond (unowned) (durganla_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27860,7 +27860,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2693 = { #Palar Nieninquë (unowned) (durganla_area) (forodwaith_region)
+2693 = { #Ma Loss'scalis (unowned) (durganla_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -27869,7 +27869,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2694 = { #Úrcilin (unowned) (durganla_area) (forodwaith_region)
+2694 = { #N'rárkispalja (unowned) (durganla_area) (forodwaith_region)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -28269,7 +28269,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2734 = { #Harj Ornad (YOP) (naishan_area) (harshandatt_region)
+2734 = { #Harj Ornad (unowned) (naishan_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -28289,7 +28289,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2736 = { #Memphêt (YOP) (lomeanor_area) (yopi_region)
+2736 = { #Memphêt (unowned) (lomeanor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -28487,7 +28487,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-2757 = { #Kyarian (YOP) (muran_area) (harshandatt_region)
+2757 = { #Kyarian (unowned) (muran_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -29615,7 +29615,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2868 = { #Veva (YOP) (mejhanir_area) (harshandatt_region)
+2868 = { #Veva (unowned) (mejhanir_area) (harshandatt_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -31001,7 +31001,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2999 = { #Nanduhirion (XJX) (khazad_dum_area) (hadhondrond_region)
+2999 = { #Azanulbizar (XJX) (khazad_dum_area) (hadhondrond_region)
 	terrain = "halls"
 	culture = "goblins"
 	religion = "melkorism"
@@ -32302,7 +32302,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3120 = { #Kyanalpûn (XUX) (y_lusturanysur_area) (lu_tyr_su_region)
+3120 = { #Kyanalpûn (unowned) (y_lusturanysur_area) (lu_tyr_su_region)
 	terrain = "steppe"
 	culture = "lutyr"
 	religion = "eastern_animism"
@@ -32474,7 +32474,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3136 = { #Arev (XUX) (y_lusturanysur_area) (lu_tyr_su_region)
+3136 = { #Arev (unowned) (y_lusturanysur_area) (lu_tyr_su_region)
 	terrain = "steppe"
 	culture = "lutyr"
 	religion = "eastern_animism"
@@ -32485,7 +32485,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3137 = { #Gurhi (XUX) (y_lusturanysur_area) (lu_tyr_su_region)
+3137 = { #Gurhi (unowned) (y_lusturanysur_area) (lu_tyr_su_region)
 	terrain = "steppe"
 	culture = "lutyr"
 	religion = "eastern_animism"
@@ -32496,7 +32496,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3138 = { #Nuzar (XUX) (y_lusturanysur_area) (lu_tyr_su_region)
+3138 = { #Nuzar (unowned) (y_lusturanysur_area) (lu_tyr_su_region)
 	terrain = "steppe"
 	culture = "lutyr"
 	religion = "eastern_animism"
@@ -32507,7 +32507,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3139 = { #Gashey (XUX) (y_lusturanysur_area) (lu_tyr_su_region)
+3139 = { #Gashey (unowned) (y_lusturanysur_area) (lu_tyr_su_region)
 	terrain = "steppe"
 	culture = "lutyr"
 	religion = "eastern_animism"
@@ -32518,7 +32518,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3140 = { #Kirabolar (XUX) (y_lusturanysur_area) (lu_tyr_su_region)
+3140 = { #Kirabolar (unowned) (y_lusturanysur_area) (lu_tyr_su_region)
 	terrain = "steppe"
 	culture = "lutyr"
 	religion = "eastern_animism"
@@ -33575,7 +33575,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3238 = { #Ishel (YOP) (lomeanor_area) (yopi_region)
+3238 = { #Ishel (unowned) (lomeanor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33586,7 +33586,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3239 = { #Lôd (YOP) (lomeanor_area) (yopi_region)
+3239 = { #Lôd (unowned) (lomeanor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33597,7 +33597,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3240 = { #Ôario Nayîn (YOP) (lomeanor_area) (yopi_region)
+3240 = { #Ôario Nayîn (unowned) (lomeanor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33608,7 +33608,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3241 = { #Sems (YOP) (lomeanor_area) (yopi_region)
+3241 = { #Sems (unowned) (lomeanor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33698,7 +33698,7 @@
 }
 3249 = { #Femen (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "forest"
-	culture = "stiffbeard"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "fur"
 	civilization_value = 10
@@ -33707,7 +33707,7 @@
 }
 3250 = { #Kharari (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
-	culture = "stiffbeard"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 10
@@ -33716,7 +33716,7 @@
 }
 3251 = { #Gêndrur (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
-	culture = "stiffbeard"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "amber"
 	civilization_value = 10
@@ -33725,7 +33725,7 @@
 }
 3252 = { #Tharir (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
-	culture = "stiffbeard"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wood"
 	civilization_value = 10
@@ -33734,7 +33734,7 @@
 }
 3253 = { #Tîrdam (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
-	culture = "stiffbeard"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "fish"
 	civilization_value = 10
@@ -33773,7 +33773,7 @@
 }
 3257 = { #Mathak (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
-	culture = "stiffbeard"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
 	civilization_value = 10
@@ -33782,7 +33782,7 @@
 }
 3258 = { #Kole (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "forest"
-	culture = "stiffbeard"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 10
@@ -33791,14 +33791,14 @@
 }
 3259 = { #Kanth (unowned) (desdursyton_area) (lu_tyr_su_region)
 	terrain = "arctic"
-	culture = "stiffbeard"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3260 = { #Rênakanah (XUX) (y_lusturanysur_area) (lu_tyr_su_region)
+3260 = { #Rênakanah (unowned) (y_lusturanysur_area) (lu_tyr_su_region)
 	terrain = "steppe"
 	culture = "lutyr"
 	religion = "eastern_animism"
@@ -34040,7 +34040,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3282 = { #Zâinas (YOP) (yoyoyopo_area) (yopi_region)
+3282 = { #Zâinas (unowned) (yoyoyopo_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34051,7 +34051,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3283 = { #Sô-Fala (YOP) (yoyoyopo_area) (yopi_region)
+3283 = { #Sô-Fala (unowned) (yoyoyopo_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34062,7 +34062,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3284 = { #Tharan (YOP) (yoyoyopo_area) (yopi_region)
+3284 = { #Tharan (unowned) (yoyoyopo_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34073,7 +34073,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3285 = { #Shenn (YOP) (yoyoyopo_area) (yopi_region)
+3285 = { #Shenn (unowned) (yoyoyopo_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34084,7 +34084,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3286 = { #Pânakhat (YOP) (yoyoyopo_area) (yopi_region)
+3286 = { #Pânakhat (unowned) (yoyoyopo_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34095,7 +34095,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3287 = { #Tudyu (YOP) (yoyoyopo_area) (yopi_region)
+3287 = { #Tudyu (unowned) (yoyoyopo_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34106,7 +34106,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3288 = { #Kâthuk (YOP) (lomeanor_area) (yopi_region)
+3288 = { #Kâthuk (unowned) (lomeanor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34128,7 +34128,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3290 = { #Banar (YOP) (yoyoyopo_area) (yopi_region)
+3290 = { #Banar (unowned) (yoyoyopo_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34458,7 +34458,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3320 = { #Muathaya (YOP) (lomeanor_area) (yopi_region)
+3320 = { #Muathaya (unowned) (lomeanor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34469,7 +34469,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3321 = { #Yangakar (YOP) (lomeanor_area) (yopi_region)
+3321 = { #Yangakar (unowned) (lomeanor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34843,7 +34843,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3355 = { #Gênathur (YOP) (lomeanor_area) (yopi_region)
+3355 = { #Gênathur (unowned) (lomeanor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -35239,7 +35239,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3391 = { #Záyalak (YOP) (lomeanor_area) (yopi_region)
+3391 = { #Záyalak (unowned) (lomeanor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -37647,7 +37647,7 @@
 	freemen = { amount = 3 }
 	slaves = { amount = 2 }
 }
-3635 = { #Kelarik (unowned) (arysis_area) (nafarat_region)
+3635 = { #Azagarbhun (AON) (klyan_area) (khailuza_region)
 	terrain = "mountain"
 	culture = "blacklock"
 	religion = "iluvatarism"
@@ -38564,7 +38564,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3724 = { #Urulócë (unowned) (ered_mithrin_area) (ered_mithrin_region)
+3724 = { #N'rárki-Lócë (unowned) (ered_mithrin_area) (ered_mithrin_region)
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -39417,7 +39417,7 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 2 }
 }
-3809 = { #Conatha (SHI) (sarnladen_area) (siragale_region)
+3809 = { #Longbottom (SHI) (sarnladen_area) (siragale_region)
 	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
@@ -40471,7 +40471,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-3914 = { #Beldwin (HEB) (iren_area) (dunendor_region)
+3914 = { #Fréaham (HEB) (iren_area) (dunendor_region)
 	terrain = "plains"
 	culture = "dunlending"
 	religion = "iluvatarism"
@@ -40493,7 +40493,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-3916 = { #Carath Olúi (ROH) (garth_annui_area) (calenardhon_region)
+3916 = { #Swefnic (ROH) (garth_annui_area) (calenardhon_region)
 	terrain = "plains"
 	culture = "rohirrim"
 	religion = "iluvatarism"
@@ -53669,7 +53669,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5301 = { #Forodwaith (uninhabitable)
+5301 = { #Guulonán (uninhabitable)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -53887,7 +53887,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5325 = { #Rûmepana (XUX) (y_lusturanysur_area) (lu_tyr_su_region)
+5325 = { #Rûmepana (unowned) (y_lusturanysur_area) (lu_tyr_su_region)
 	terrain = "plains"
 	culture = "lutyr"
 	religion = "eastern_animism"
@@ -54769,7 +54769,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5414 = { #Kadalôkway (XUX) (y_lusturanysur_area) (lu_tyr_su_region)
+5414 = { #Kadalôkway (unowned) (y_lusturanysur_area) (lu_tyr_su_region)
 	terrain = "plains"
 	culture = "lutyr"
 	religion = "eastern_animism"

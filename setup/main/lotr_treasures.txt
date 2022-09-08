@@ -324,10 +324,7 @@ provinces = {
 	1936 = {
 		 # Elfstone Sceptre of Annúminas Star of Elendil - Rivendell
 		treasure_slots = {
-			treasures = {
-				701
-				709
-			}
+			treasures = { 701 709 }
 		}
 	}
 	1060 = {
@@ -385,10 +382,7 @@ provinces = {
 	1621 = {
 		 # Elbereth Shrine - Magic Diamond Studs - Sting - Shire
 		treasure_slots = {
-			treasures = {
-				726
-				746
-			}
+			treasures = { 726 }
 		}
 	}
 	3699 = {
@@ -404,10 +398,7 @@ provinces = {
 	3674 = {
 		 # Sculpture of Durin Statue of Grór Raven Crown - Iron Hills
 		treasure_slots = {
-			treasures = {
-				731
-				732
-			}
+			treasures = { 731 }
 		}
 	}
 	115 = {
