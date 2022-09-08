@@ -1,24 +1,4 @@
-﻿province_suited_for_migration = {
-	modifier = {
-		add = {
-			value = population_cap
-			subtract = total_population
-			multiply = 2
-			min = 0
-		}
-	}
-	modifier = {
-		factor = 4
-		NOT = {
-			any_neighbor_province = {
-				is_inhabitable = yes
-				has_owner = no
-			}
-		}
-	}
-}
-
-province_has_space_for_migration_modifer = {
+﻿province_has_space_for_migration_modifer = {
 	modifier = {
 		add = {
 			value = population_cap
@@ -35,8 +15,10 @@ province_is_safe_modifier = {
 		NOT = {
 			any_neighbor_province = {
 				is_inhabitable = yes
-				has_owner = no
-				owner = { country_culture_group = orcs_group }
+				OR = {
+					has_owner = no
+					owner = { country_culture_group = orcs_group }
+				}
 			}
 		}
 	}
