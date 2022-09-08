@@ -161,7 +161,7 @@ Bug fixes:
 - Fixed some relics being lost as being stored in provinces that have no holy site (or not enough space in the holy site)
 - Removed many error messages that probably didn't do anything bad but spammed the error log
 - Fixed the bloodline events. No more bloodlines lost and no more being able to combine bloodlines on bastards
-- Removed lower events for infertile characters like Sauron, redcued likelyhood for long lived characters
+- Removed lover events for infertile characters like Sauron, redcued likelyhood for long lived characters
 - Removed murder events for immortal characters, reduced likelyhood for long lived characters
 - Sauron is no longer numenorian
 - Sauron and nazghul no longer getting old trait and terminal diseases

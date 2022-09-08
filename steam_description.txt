@@ -1,0 +1,93 @@
+[b]Year 2985 of the Third Age[/b]. Middle-Earth is in turmoil, disastrous plagues and invasions have caused many great realms to fall. Many believe Gondor's defeat by Mordor is inevitable. Sauron has been preparing for his final war, breeding immense armies of Orcs and allying with the easily corrupted nations of Men. The Corsairs of Umbar threaten to attack Gondor's southern coastal subjects, while Orc raids begin to trouble the borders of Rohan. The White Wizard Saruman has taken the fortress of Isengard as his own, causing some to question his intentions.
+
+[b]This is an official update to the [url=https://steamcommunity.com/workshop/filedetails/?id=2842065162]original War of the Ring mod[/url][/b]. Make sure that mod is enabled at a higher position (i.e. lower priority) in your mod list.
+
+[hr][/hr] 
+[h1]Remark[/h1]
+Levy calculations in versions 2+ of Imperator are completely broken. Having integrated a dwarven culture that is 5% of a region, your levies in this region will be 95% dwarven or thereabouts. To address this, we had to disable cultural assimilation to citizen and noble levels entirely, except for cultures in the same culture group which have the same or very similar levies. Too offset this a bit, vassals don't take diplomatic slots anymore and can be used to handle conquered provinces and to unlock other tradition groups. With those tradition groups, foreign units can then be unlocked for your legions. We also added country modifiers to increase the levy percentage depending on number of non-integrated cultures to make sure they are not fully useless for your wars if you decide not to create vassals from them.
+
+Furthermore, as assimilion doesn't make sense in this scenario ("How long does an elf have to live in a dwarfen country to turn into a dwarf?), it is disabled. However, Orcs have an religious law called "Age of the Orc" where non-integrated pops do get "assimilated" (read: eaten and replaced by orcish settlers) over time.
+
+
+[hr][/hr] 
+Bug reports and suggestions can be made on our [url=https://steamcommunity.com/linkfilter/?url=https://discord.gg/hCu8XCC8dA]War of the Ring discord[/url]
+We hope to get feedback from you on the many changes done, so feel free to comment on what you like and what you don't.
+
+[hr][/hr] 
+[h1]New in War of the Ring version 1.06:[/h1] (Incomplete due to character limit. Full changelog in the mod files)
+[h1]Features:[/h1]
+- Mission to protect Frodo on his way to destroy the Ring.
+	- You need to keep the way of Frodo and the Fellowship cleared of Orcs and other followers of Melkor while more and more countries will attack you as well as Eru countries that neighbor them.
+	- Should lead to an actual "War of the Ring"
+	- On completion of the mission, Sauron and the Nazghul will die, Barad-Dur and the Black Gate will be destroyed and Orcs and followers of Melkor will get major debuffs for 40 years, the latter being given the option to convert away instead
+	- Many events and characters included of which I don't want to spoil too much here ;)
+	- Previous ring decision on conquest of Shire is still there and was updated and improved. It is now the mostly evil version of handling the ring (though if you are quick or very good against corruption you might still use it for good)
+- Tradition trees are now unlocked if you have enough of the according pops in your subjects (only counts client states, ranger fief (not protectorates), mordor and saruman thralls: 200 for Elves and Edain, 400 for Dwarfs and Rohirim, 1000 for others. All pops of the culture group are added, it doesn't require to be a single culture.
+- New known character:
+	- Legolas, Thranduil, Gimli, Gloin, Celeborn, Haldir (+family), Halbarad (+ Grey company), Cirdan the Shipwright, Galdor of the Havens, Oin and Ori (Balin)
+- Foreign units for legions can now be unlocked in their tradition trees
+- Decisions to rebuild some of the wonders of middle earth (can be done in vassals as well)
+- Evil wonders can now be torn down on conquest. The alternative is turning evil yourself
+- Pops now sometimes move away from wrong cultured countries towards countries of their cultures (flee from orcs, elves and dwarfs going home, towards/from vassals for specific cultures)
+- Orc and Corsair raid events now actually have reasonable triggers and mtth modifiers
+- Decision for non-ai Eru countries to declare war without claim and with reduced AE creation on any orc country that neighbors you or one of you vassals
+- Gondors large vassals as well as Ranger protectorates that previously were "do not join wars" but had decisions to join wars are now instead permanetly "disloyal" but do join wars.
+- Elves, Dwarfs and Numenorians can now get children later in life
+- New Eastern Dwarfs that should fit the lore better (by Pureon)
+- New mountain range in the east (by Pureon)
+
+
+[h1]Immersion changes:[/h1]
+- Saruman's Isengard now actually turns Uruk when he falls for Sauron.
+- Renamed many provinces to actually known ones
+- Gondor, Dol Amroth and Leme now has Gondorian as integrated culture.
+- Corsairs and Dark Numenorian now accept Banaduim culture
+- Removed enslavements on occupation for non-orcs.
+- Elves are now generally more loyal
+- Renamed satrapies to Feudal Principalities (Gondor subjects)
+- Sauron thralls no longer intgratable to make sure Sauron actually has Balchot and Variags "allies"
+- Restricted who can create what subjects
+- Changed the climate to better represent what we know of middle earth
+- AI dwarfs and elves no longer fight each other. While they don't like each other, open warfare at the end of the Third age are not realistic.
+- Eastern countries and cultures renamed (by Pureon)
+- New Icon for lower Tier without chains (by Pureon)
+	
+
+[h1]Balance changes:[/h1]
+- Overhauled racial country properties
+- Overhauled all units:
+- Discipline modifiers on trade goods and inventions now include lotr specific units
+- Changed difficulty modifiers:
+	- Hard now only makes the AI much more stable: Higher civil war threshold and province loyalty boost
+	- Very hard keeps it's vanilla bonuses with added AI stability
+- Removed province loyality boost after province rebellion for AI
+- Newly turned majority melkor states now get large relations bonus towards mordor and mortal enemies relations malus to non-melkor states
+- Reduced some fort levels a bit
+- Reduced fort capacity to vanilla
+- Underground halls got their terrain modifiers vastly improved, caves slightly
+- Strengthened Carn Dum
+- Reduced some insane bonuses
+- AI countries will accept same culture group cultures if their pops number at least 20% of their integrated pops.
+- Doubled pig stab and devotio duration
+- Ahead of time reserach penalty halved
+- Maximum court size without childbirth penalties doubled
+- Reduced expected jobs for great families from 70% to 60%
+- Overhauled pop numbers and cililization values in the east (by Pureon)
+
+[h1]Bug fixes:[/h1]
+- Sauron and Saruman now actually Maia cultured
+- No more diseases for immortals, reduced disease likelyhood for numenorians
+- Fixed some relics being lost as being stored in provinces that have no holy site (or not enough space in the holy site)
+- Sauron is no longer numenorian
+- Sauron and nazghul no longer getting old trait and terminal diseases
+- Fixed cave "crossings" in the misty mountains
+- Straits to make unreachable provinces in sea of Rhun reachable
+- Hopefully fixed (please give feedback): No more children for Saruman and Sauron
+
+
+[h1]Vanilla bug fixes:[/h1]
+- Fixed Hunt Pirates objective
+- Fixed inheritance event possibly giving your ruler tens of thousands of personal treasury
+- Tributaries will no longer break because they have "more cohorts", while all your levies are disbanded...
+- No longer removing the strongest family but the weakest if one neeeds to be removed
+- Fixed conversion policy being applied despite nobody to convert
