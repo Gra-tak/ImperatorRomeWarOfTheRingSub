@@ -117,6 +117,10 @@ lotr_migration_events.1 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+								province_is_safe_modifier = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -165,6 +169,10 @@ lotr_migration_events.1 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+								province_is_safe_modifier = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -290,6 +298,9 @@ lotr_migration_events.2 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -315,6 +326,9 @@ lotr_migration_events.2 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -444,6 +458,9 @@ lotr_migration_events.3 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -471,6 +488,9 @@ lotr_migration_events.3 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -596,6 +616,9 @@ lotr_migration_events.4 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -621,6 +644,9 @@ lotr_migration_events.4 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -675,6 +701,9 @@ lotr_migration_events.5 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -700,6 +729,9 @@ lotr_migration_events.5 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -847,6 +879,9 @@ lotr_migration_events.6 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -872,6 +907,9 @@ lotr_migration_events.6 = {
 						}
 						random_owned_province = {
 							limit = { total_population < population_cap }
+							weight = {
+								province_has_space_for_migration_modifer = yes
+							}
 							save_scope_as = target
 						}
 					}
@@ -1006,6 +1044,9 @@ lotr_migration_events.7 = {
 							}
 							random_owned_province = {
 								limit = { total_population < population_cap }
+								weight = {
+									province_has_space_for_migration_modifer = yes
+								}
 								save_scope_as = target
 							}
 						}
@@ -1034,6 +1075,9 @@ lotr_migration_events.7 = {
 							}
 							random_owned_province = {
 								limit = { total_population < population_cap }
+								weight = {
+									province_has_space_for_migration_modifer = yes
+								}
 								save_scope_as = target
 							}
 						}
@@ -1173,6 +1217,9 @@ lotr_migration_events.8 = {
 		        	total_population < population_cap 
 		        	dominant_province_culture = scope:pop_from_list.culture
 		        }
+						weight = {
+							province_has_space_for_migration_modifer = yes
+						}
 						save_scope_as = popTarget
 					}
 				}
