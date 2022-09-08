@@ -4969,7 +4969,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 7 }
+	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
 469 = { #Tûl Isra (XLX) (bru_isra_area) (cennacatt_region)
@@ -4980,7 +4980,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 470 = { #Tûr Aylra (XLX) (cennacatt_area) (cennacatt_region)
@@ -5002,7 +5002,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 472 = { #Baud Selen (XLX) (cennacatt_area) (cennacatt_region)
@@ -5013,7 +5013,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 473 = { #Eveselen (XLX) (cennacatt_area) (cennacatt_region)
@@ -5024,7 +5024,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 8 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 474 = { #Bampóa (XLX) (cennacatt_area) (cennacatt_region)
@@ -5035,7 +5035,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 8 }
+	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
 475 = { #Emek Kum Firyinir (uninhabitable)
@@ -5064,7 +5064,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 478 = { #Yól Cénnacatt (uninhabitable)
@@ -5102,7 +5102,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 482 = { #Kelen (XLX) (bosiri_area) (cennacatt_region)
@@ -5113,7 +5113,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 483 = { #Tartaust (XLX) (bosiri_area) (cennacatt_region)
@@ -5124,7 +5124,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 484 = { #Fhûl (XLX) (bosiri_area) (cennacatt_region)
@@ -5135,7 +5135,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 485 = { #Balyava (XLX) (cennacatt_area) (cennacatt_region)
@@ -5146,7 +5146,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 7 }
+	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
 486 = { #Evefalin (XLX) (cennacatt_area) (cennacatt_region)
@@ -5157,7 +5157,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 7 }
+	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
 487 = { #Mara Gaib (XLX) (cennacatt_area) (cennacatt_region)
@@ -5178,7 +5178,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 8 }
+	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
 489 = { #Kuyu Akrep (XLX) (bru_isra_area) (cennacatt_region)
@@ -5189,7 +5189,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 490 = { #Bóas Isra (XLX) (bru_isra_area) (cennacatt_region)
@@ -5200,7 +5200,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 491 = { #Akhúlsu (XLX) (bru_isra_area) (cennacatt_region)
@@ -5211,7 +5211,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 4 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 492 = { #Kuyu Altin (XLX) (bru_isra_area) (cennacatt_region)
@@ -5222,7 +5222,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 493 = { #Till Isra (XLX) (bru_isra_area) (cennacatt_region)
@@ -5233,7 +5233,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 494 = { #Yatali Kîrgan (SIR) (dalad_kirn_area) (sirayn_region)
@@ -5669,7 +5669,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 534 = { #Isrut (SIR) (erim_poa_area) (sirayn_region)
@@ -7652,7 +7652,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 723 = { #Kyga (unowned) (logathavuld_area) (logathavuld_region)
@@ -27978,7 +27978,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 2705 = { #Ghabaras (XLX) (bru_isra_area) (cennacatt_region)
@@ -27989,7 +27989,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 7 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 2706 = { #Bóasîri (XLX) (bosiri_area) (cennacatt_region)
@@ -28000,7 +28000,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 2707 = { #Narad-Dûm (unowned) (isra_area) (sirayn_region)
@@ -30450,7 +30450,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 6 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 2946 = { #Bânzi (MUM) (zajantak_area) (an_balkumagan_region)
@@ -30567,7 +30567,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 10 }
+	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
 2957 = { #Póara (XLX) (bosiri_area) (cennacatt_region)
@@ -30578,7 +30578,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 8 }
+	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
 2958 = { #Akhzamazâr (XLX) (bosiri_area) (cennacatt_region)
@@ -30589,7 +30589,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 10 }
+	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
 2959 = { #2959 (uninhabitable)
@@ -40841,7 +40841,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3949 = { #Agrisia (XPX) (lenian_area) (ralian_region)
@@ -40852,7 +40852,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
 3950 = { #Femani (XPX) (lenian_area) (ralian_region)
@@ -40863,7 +40863,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3951 = { #Clêashan (XPX) (lenian_area) (ralian_region)
@@ -40874,7 +40874,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3952 = { #Rúdurs (XPX) (lenian_area) (ralian_region)
@@ -40885,7 +40885,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3953 = { #Rálón (XPX) (lenian_area) (ralian_region)
@@ -40896,7 +40896,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3954 = { #K'zanar (XPX) (lenian_area) (ralian_region)
@@ -40907,7 +40907,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3955 = { #Hême (XPX) (lenian_area) (ralian_region)
@@ -40918,7 +40918,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3956 = { #Kasana (XPX) (lenian_area) (ralian_region)
@@ -40929,7 +40929,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3957 = { #Kolr (XPX) (lenian_area) (ralian_region)
@@ -40940,7 +40940,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3958 = { #Kaldr (XPX) (lenian_area) (ralian_region)
@@ -40951,7 +40951,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3959 = { #K'zan (XPX) (lenian_area) (ralian_region)
@@ -40962,7 +40962,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3960 = { #Tâl (XPX) (ruartar_area) (ralian_region)
@@ -40973,7 +40973,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
 3961 = { #Hoharma (XPX) (ruartar_area) (ralian_region)
@@ -40984,7 +40984,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3962 = { #Rúdge (XPX) (ruartar_area) (ralian_region)
@@ -40995,7 +40995,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3963 = { #Shashalô (XPX) (kankanian_area) (ralian_region)
@@ -41006,7 +41006,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
 3964 = { #Poabias (XPX) (kankanian_area) (ralian_region)
@@ -41017,7 +41017,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3965 = { #Rálkhag (XSX) (kuiwian_area) (ralian_region)
@@ -41050,7 +41050,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3968 = { #Kanan (XPX) (kankanian_area) (ralian_region)
@@ -41061,7 +41061,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3969 = { #Hakh (XPX) (kankanian_area) (ralian_region)
@@ -41072,7 +41072,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3970 = { #Unkanin (XPX) (kankanian_area) (ralian_region)
@@ -41083,7 +41083,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3971 = { #Búrsian (XPX) (kankanian_area) (ralian_region)
@@ -41094,7 +41094,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3972 = { #Ima (XPX) (kankanian_area) (ralian_region)
@@ -41105,7 +41105,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 3973 = { #Kankanan (XPX) (kankanian_area) (ralian_region)
@@ -41116,7 +41116,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3974 = { #Aranar (XPX) (kankanian_area) (ralian_region)
@@ -41127,7 +41127,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3975 = { #K'zarra (XPX) (kankanian_area) (ralian_region)
@@ -41138,7 +41138,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 3976 = { #Rursh (XSX) (kabian_area) (ralian_region)
@@ -50600,7 +50600,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
 5016 = { #Mang (XPX) (horl_area) (ralian_region)
@@ -50611,7 +50611,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5017 = { #Hôrlan (XPX) (horl_area) (ralian_region)
@@ -50622,7 +50622,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5018 = { #Wasia Tris (XPX) (horl_area) (ralian_region)
@@ -50633,7 +50633,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5019 = { #Kaenakh (XPX) (horl_area) (ralian_region)
@@ -50644,7 +50644,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5020 = { #Hôrlshektûriak (XPX) (horl_area) (ralian_region)
@@ -50655,7 +50655,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5021 = { #Âlivir (XPX) (horl_area) (ralian_region)
@@ -50666,7 +50666,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5022 = { #Rua (XPX) (horl_area) (ralian_region)
@@ -50677,7 +50677,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5023 = { #5023 (uninhabitable)
@@ -50717,7 +50717,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5027 = { #Canariay (XPX) (faelan_area) (wer_falin_region)
@@ -50728,7 +50728,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5028 = { #Kark (XPX) (faelan_area) (wer_falin_region)
@@ -50739,7 +50739,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5029 = { #Sûrl (XPX) (faelan_area) (wer_falin_region)
@@ -50750,7 +50750,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5030 = { #Minadr (XPX) (faelan_area) (wer_falin_region)
@@ -50761,7 +50761,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5031 = { #Kraword (XPX) (faelan_area) (wer_falin_region)
@@ -50772,7 +50772,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5032 = { #Busaer (XPX) (faelan_area) (wer_falin_region)
@@ -50783,7 +50783,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5033 = { #Âlythagia (XPX) (faelan_area) (wer_falin_region)
@@ -50794,7 +50794,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5034 = { #Falebu (XPX) (faelan_area) (wer_falin_region)
@@ -50805,7 +50805,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5035 = { #Hogax (XPX) (faelan_area) (wer_falin_region)
@@ -50816,7 +50816,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5036 = { #Arkyonkhan (XPX) (faelan_area) (wer_falin_region)
@@ -50827,7 +50827,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5037 = { #Kanal (unowned) (arg_simorig_area) (wer_falin_region)
@@ -51100,7 +51100,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5062 = { #Hodreharl (XQX) (kaish_area) (wer_falin_region)
@@ -51178,7 +51178,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5069 = { #Arag-Rúrô (XSX) (kuiwian_area) (ralian_region)
@@ -51200,7 +51200,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5071 = { #Gorsheha (XPX) (ruartar_area) (ralian_region)
@@ -51211,7 +51211,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5072 = { #Prundo (XPX) (ruartar_area) (ralian_region)
@@ -51222,7 +51222,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5073 = { #Kúrian (XPX) (ruartar_area) (ralian_region)
@@ -51233,7 +51233,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5074 = { #Nífe (XPX) (ruartar_area) (ralian_region)
@@ -51244,7 +51244,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5075 = { #Rurind (XPX) (ruartar_area) (ralian_region)
@@ -51255,7 +51255,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5076 = { #Mohayris (XSX) (kendarka_area) (ralian_region)
@@ -51379,7 +51379,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 5087 = { #Fasenana (XSX) (kendarka_area) (ralian_region)
@@ -51401,7 +51401,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5089 = { #Rukh (XPX) (kankanian_area) (ralian_region)
@@ -51412,7 +51412,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5090 = { #Caní Bûrtepe (XSX) (kuiwian_area) (ralian_region)
@@ -54959,7 +54959,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 12 }
+	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
 5432 = { #Tenôlkakhyn (XLX) (bosiri_area) (cennacatt_region)
@@ -54970,7 +54970,7 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 9 }
+	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
 5433 = { #5433 (uninhabitable)
@@ -55072,7 +55072,7 @@
 	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5443 = { #Núrn (uninhabitable)
