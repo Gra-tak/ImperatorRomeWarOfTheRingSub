@@ -2,9 +2,9 @@
 
 	levy_template = levy_dwarf
 	
-	primary = dwarven_goat_riders
-	second =  dwarven_infantry
-	flank = dwarven_archers
+	primary = dwarven_infantry
+	second =  dwarven_archers
+	flank = dwarven_goat_riders
 
 	primary_navy = galley
 	secondary_navy = galley

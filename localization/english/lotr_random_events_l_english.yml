@@ -58,7 +58,7 @@
  orc_raid_events.3.c:0 "Send money to help rebuild"
  orc_raid_events.3.c.tt:0 "Money will fix this"
  orc_raid_events.4.t:0 "Refugees cross border"
- orc_raid_events.4.desc:0 "Refugees fleeing an Orc raid in [SCOPE.sP('orc_raid_flee_source_province').GetName] have crossed over into our border province [SCOPE.sP('orc_raid_target_province').GetName]. They seem to have originated from the region of [SCOPE.sP('orc_raid_target_province_start').GetArea.GetRegion.GetName].\n\nWhilst it may cause a period of instability among the locals, letting them settle would be the humanitarian thing to do."
+ orc_raid_events.4.desc:0 "Refugees fleeing an Orc raid in [SCOPE.sP('orc_raid_flee_source_province').GetName] have crossed over into our border province [SCOPE.sP('orc_raid_target_province').GetName]. They seem to have attacked by orcs originated from the region of [SCOPE.sP('orc_raid_target_province_start').GetArea.GetRegion.GetName].\n\nWhilst it may cause a period of instability among the locals, letting them settle would be the humanitarian thing to do."
  orc_raid_events.4.a:0 "Welcome them!"
  orc_raid_events.4.a.tt:0 "The refugees settle in our nation."
  orc_raid_events.4.b:0 "Demand that they return."

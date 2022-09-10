@@ -31,6 +31,13 @@
 	}
 
 	on_potential = {
+	}
+
+	abort = {
+		ai_mission_back_out_trigger = yes
+	}
+
+	on_start = {
 		random_owned_province = {
 			limit = {
 				any_neighbor_province = {
@@ -69,13 +76,6 @@
 				save_scope_as = lotr_generic_border_province_scope
 			} 
 		}
-	}
-
-	abort = {
-		ai_mission_back_out_trigger = yes
-	}
-
-	on_start = {
 		add_stability = 5
 		start_mission_ai_effect = yes
 	}

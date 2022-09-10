@@ -16,13 +16,6 @@
 	}
 
 	on_potential = {
-		random_owned_province = {
-			limit = {
-                owner = root
-                is_capital = yes
-			} 
-			save_scope_as = lotr_actual_capital
-		}
 	}
 
 	abort = {
@@ -30,6 +23,13 @@
 	}
 
 	on_start = {
+		random_owned_province = {
+			limit = {
+                owner = root
+                is_capital = yes
+			} 
+			save_scope_as = lotr_actual_capital
+		}
 		if = {
 			limit = {
 				root = { is_tribal = yes }

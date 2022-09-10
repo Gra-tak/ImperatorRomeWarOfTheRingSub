@@ -411,7 +411,7 @@ br_sauron.10 = { #players are told this ruler has turned to Melkor
 	title = "br_sauron.10.t"
 	desc = "br_sauron.10.desc"
 	picture = dol_guldur
-	right_portrait = char:3
+	left_portrait = char:3
 	right_portrait = scope:convert
 	goto_location = root
 	
@@ -445,6 +445,7 @@ br_sauron.12 = { #players are a nation has turned to Melkor worship
 	title = "br_sauron.12.t"
 	desc = "br_sauron.12.desc"
 	picture = dol_guldur
+	left_portrait = char:3
 	right_portrait = scope:convert
 	goto_location = root
 	

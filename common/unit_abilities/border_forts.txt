@@ -156,5 +156,13 @@
 				value = 234
 			}
 		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_neighbor_province = {
+					has_owner = yes
+					OWNER = ROOT
+				}
+			}
 	}
 }
