@@ -194,3 +194,14 @@ Vanilla bug fixes:
 - Tributaries will no longer break because they have "more cohorts", while all your levies are disbanded...
 - No longer removing the strongest family but the weakest if one neeeds to be removed
 - Fixed conversion policy being applied despite nobody to convert
+
+
+1.06.1 Update:
+Fixes:
+- Updating mission target on mission start to avoid them being outdated (previously created on mission become valid for the first time, even while another mission was still active)
+- Rebuild decisions now allowed for dwarves and elves (except annuminas and osgiliath)
+- Fixed khazad dum potential to actually disappear after you formed it
+- AI no longer building border forts (i.e. taking provinces) on the other side of middle earth when their units are return from wars (vanilla fix)
+- Treasure no longer getting lost on annexation.
+	- Should also work when orc nations are destroyed via orc purge. Here they go to the warleader, if there are multiple wars, random with stronger player preference.
+- Fixed default dwarven battle order
