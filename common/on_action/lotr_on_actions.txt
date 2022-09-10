@@ -1,15 +1,4 @@
-﻿on_game_initialized = {
-	events = {
-		lotr_startup.1
-		lotr_startup.2
-		lotr_startup.3
-		lotr_startup.4
-		lotr_startup.5
-		lotr_startup.6
-		lotr_startup.7
-		lotr_maintenance.5
-	}
-}
+﻿#DON'T use this for on action stuff from vanilla, instead add to 00_specific_from_code.txt. If you open up a new one here you sometimes (?) overwrite the vanilla one fully
 
 corsair_raid_events_pulse = {
 	random_events = {
@@ -46,56 +35,5 @@ lotr_character_events_pulse = {
 		8 = lotr_character_events.32
 		12 = lotr_character_events.33
 		13 = lotr_character_events.34
-	}
-}
-
-on_province_colonized = {
-	# events = {
-	# 	lotr_teardown_events.1
-	# }
-}
-
-on_ownership_change = { #province scope
-	events = {
-		lotr_teardown_events.1
-	}
-	effect = {
-		trigger_event = {
-			id = lotr_migration_events.100
-			days = 1
-		}
-	}
-}
-
-
-on_military_annex = {
-  effect = {
-		if = {
-			limit = { has_global_variable = frodo_protector_country_global }
-			every_character = {
-				limit = { has_trait = olympic_competitor }
-				move_country = global_var:frodo_protector_country_global
-			}
-		}
-	}
-}
-on_diplomatic_annex = {
-  effect = {
-		if = {
-			limit = { has_global_variable = frodo_protector_country_global }
-			every_character = {
-				limit = { has_trait = olympic_competitor }
-				move_country = global_var:frodo_protector_country_global
-			}
-		}
-	}
-}
-
-on_ending_war = {
-	effect = {
-		trigger_event = {
-			id = lotr_maintenance.1
-			days = 1 #the war is not yet ended when the on_action fires. We want to make sure it is actually ended to be able to check for war = no if this was the last war.
-		}
 	}
 }

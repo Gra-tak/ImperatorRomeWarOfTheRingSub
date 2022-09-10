@@ -32,8 +32,11 @@
 		is_exiled = no
 		unit_size >= 5
 		unit_location = {
-			NOT = {
-				has_building = fortress_building
+			OR = {
+				has_owner = no
+				NOT = {
+					has_building = fortress_building
+				}
 			}
 			custom_tooltip = {
 				text = "neighboring_tribal_province_tt"
@@ -162,7 +165,7 @@
 				unit_location = {
 					any_neighbor_province = {
 						has_owner = yes
-						OWNER = ROOT
+						OWNER = ROOT.unit_owner
 					}
 				}
 			}
