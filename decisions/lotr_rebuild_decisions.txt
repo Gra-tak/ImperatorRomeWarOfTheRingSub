@@ -47,9 +47,6 @@
 		potential = {
 			NOR = {
 				country_culture_group = orcs_group
-				country_culture_group = dwarf_group
-				country_culture_group = teleri_group
-				country_culture_group = noldor_group
 			}
 			OR = {
 				any_subject = {
@@ -99,9 +96,6 @@
 		potential = {
 			NOR = {
 				country_culture_group = orcs_group
-				country_culture_group = dwarf_group
-				country_culture_group = teleri_group
-				country_culture_group = noldor_group
 			}
 			OR = {
 				any_subject = {
@@ -148,9 +142,6 @@
 		potential = {
 			NOR = {
 				country_culture_group = orcs_group
-				country_culture_group = dwarf_group
-				country_culture_group = teleri_group
-				country_culture_group = noldor_group
 			}
 			OR = {
 				any_subject = {
@@ -200,9 +191,6 @@
 		potential = {
 			NOR = {
 				country_culture_group = orcs_group
-				country_culture_group = dwarf_group
-				country_culture_group = teleri_group
-				country_culture_group = noldor_group
 			}
 			OR = {
 				any_subject = {
@@ -251,9 +239,6 @@
 		potential = {
 			NOR = {
 				country_culture_group = orcs_group
-				country_culture_group = dwarf_group
-				country_culture_group = teleri_group
-				country_culture_group = noldor_group
 			}
 			OR = {
 				any_subject = {
@@ -370,9 +355,6 @@
 			is_ai = no
 			NOR = {
 				country_culture_group = orcs_group
-				country_culture_group = dwarf_group
-				country_culture_group = teleri_group
-				country_culture_group = noldor_group
 			}
 			any_subject = {
 				owns = 1632			
@@ -414,9 +396,6 @@
 			is_ai = no
 			NOR = {
 				country_culture_group = orcs_group
-				country_culture_group = dwarf_group
-				country_culture_group = teleri_group
-				country_culture_group = noldor_group
 			}
 			any_subject = {
 				owns = 1605			
@@ -458,9 +437,6 @@
 			is_ai = no
 			NOR = {
 				country_culture_group = orcs_group
-				country_culture_group = dwarf_group
-				country_culture_group = teleri_group
-				country_culture_group = noldor_group
 			}
 			any_subject = {
 				owns = 1612			
@@ -502,9 +478,6 @@
 			is_ai = no
 			NOR = {
 				country_culture_group = orcs_group
-				country_culture_group = dwarf_group
-				country_culture_group = teleri_group
-				country_culture_group = noldor_group
 			}
 			any_subject = {
 				owns = 1631			
