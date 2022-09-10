@@ -159,9 +159,11 @@
 		modifier = {
 			factor = 0
 			NOT = {
-				any_neighbor_province = {
-					has_owner = yes
-					OWNER = ROOT
+				unit_location = {
+					any_neighbor_province = {
+						has_owner = yes
+						OWNER = ROOT
+					}
 				}
 			}
 	}
