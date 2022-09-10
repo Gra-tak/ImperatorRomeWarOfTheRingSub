@@ -86,6 +86,45 @@ orc_purge_spawn = {
 	}
 }
 
+save_treasures_from_orcs = {
+	owner = {
+		save_scope_as = orc_country
+		if = {
+			limit = {
+				num_of_provinces = 1
+			}
+			every_country_treasure = {
+				add_to_list = saved_treasures
+			}
+	    random_active_war = {
+	      weight = {
+	        modifier = {
+	          factor = 100
+	          any_war_participant = {
+	            NOT = { THIS = scope:orc_country }
+	            is_ai = no
+	            PREV = { is_war_leader = PREV }
+	          }
+	        }
+	      }
+	      random_war_participant = {
+	        limit = {
+	          NOT = { THIS = scope:orc_country }
+	          PREV = { is_war_leader = PREV }
+	        }
+       #    every_in_list = {
+			    #   list = saved_treasures
+			    #   transfer_treasure_to_country = PREV
+			    # }
+	        trigger_event = {
+	        	id = lotr_other_country_events.1
+	        }
+	      }
+	    }
+		}
+	}
+}
+
 orc_purge_effect = {
 	$LOC$ = {
 		if = {
@@ -101,6 +140,7 @@ orc_purge_effect = {
 		limit = {
 			$LOC$ = { has_owner = yes }
 		}
+		save_treasures_from_orcs = yes
 		if = {
 			limit = { 
 				$LOC$ = {
@@ -209,6 +249,7 @@ orc_purge_local_effect = {
 				has_siege = no
 			}
 		}
+		$LOC$ = { save_treasures_from_orcs = yes }
 		if = {
 			limit = { 
 				$LOC$ = {

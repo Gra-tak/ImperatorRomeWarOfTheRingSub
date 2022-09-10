@@ -1,0 +1,18 @@
+﻿namespace = lotr_other_country_events
+
+#treasures found in orc country
+lotr_other_country_events.1 = {
+  type = country_event
+  title = "lotr_other_country_events.1.t"
+  desc = "lotr_other_country_events.1.desc"
+  picture = dunedain_patrol
+  immediate = {
+    every_in_list = {
+      list = saved_treasures
+      transfer_treasure_to_country = ROOT
+    }
+  }
+  option = {
+    name = OK
+  }
+}

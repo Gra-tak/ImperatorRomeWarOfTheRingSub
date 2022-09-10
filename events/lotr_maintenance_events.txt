@@ -1007,3 +1007,111 @@ lotr_maintenance.8 = {
     }
   }
 }
+
+
+# lotr_maintenance.9 = {
+#   type = country_event
+#   title = OK
+#   desc = OK
+#   hidden = yes
+#   trigger = {
+#     country_culture_group = orcs_group
+#     has_land = yes
+#   }
+#   immediate = {
+#     every_country = {
+#       limit = {
+#         is_ai = no
+#       }
+#       add_to_variable_list = {
+#         name = orcs_with_treasures
+#         target = ROOT
+#       }
+#       ROOT = {
+#         set_variable = {
+#           name = treasure_secured_storage_last_enemy
+#           value = PREV
+#         }
+#       }
+#       trigger_event = {
+#         id = lotr_maintenance.10
+#         days = 30
+#       }
+#     }
+#     clear_variable_list = treasure_secured_storage
+#     every_country_treasure = {
+#       ROOT = {
+#         add_to_variable_list = {
+#           name = treasure_secured_storage
+#           target = PREV
+#         }
+#       }
+#     }
+#     if = {
+#       limit = {
+#         war = yes
+#       }
+#       random_active_war = {
+#         weight = {
+#           modifier = {
+#             factor = 100
+#             any_war_participant = {
+#               NOT = { THIS = ROOT }
+#               is_ai = no
+#               PREV = { is_war_leader = PREV }
+#             }
+#           }
+#         }
+#         random_war_participant = {
+#           limit = {
+#             NOT = { THIS = ROOT }
+#             PREV = { is_war_leader = PREV }
+#           }
+#           ROOT = {
+#             set_variable = {
+#               name = treasure_secured_storage_last_enemy
+#               value = PREV
+#             }
+#           }
+#         }
+#       }
+#     }
+#   }
+# }
+
+# lotr_maintenance.10 = {
+#   type = country_event
+#   title = OK
+#   desc = OK
+#   # hidden = yes
+#   trigger = {
+#     # any_in_list = {
+#     #   variable = orcs_with_treasures
+#     #   has_land = no
+#     # }
+#   }
+#   immediate = {
+#     # every_in_list = {
+#     #   variable = orcs_with_treasures
+#     #   limit = {
+#     #     has_land = no
+#     #     var:treasure_secured_storage_last_enemy = ROOT
+#     #   }
+#     #   every_in_list = {
+#     #     variable = treasure_secured_storage
+#     #     # ROOT = {
+#     #     #   create_country_treasure = PREV
+#     #     # }
+#     #     transfer_treasure_to_country = ROOT
+#     #   }
+#     # }
+#     # clear_variable_list = orcs_with_treasures
+#     every_in_list = {
+#       list = saved_treasures
+#       transfer_treasure_to_country = ROOT
+#     }
+#   }
+#   option = {
+#     name = OK
+#   }
+# }
