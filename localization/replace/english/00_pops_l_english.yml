@@ -78,3 +78,6 @@
  TRADE_GOODS_CATEGORY_4:1 "@freemen! Middle Tier"
  TRADE_GOODS_CATEGORY_5:0 "@tribesmen! Lower Tier & Tribesmen"
  TRADE_GOODS_CATEGORY_6:0 "Other"
+ create_2_slaves_effect_tooltip:0 "2 #Y Lower Tiers#! will appear in [THIS.GetProvince.GetName]."
+ create_3_slaves_effect_tooltip:0 "3 #Y Lower Tiers#! will appear in [THIS.GetProvince.GetName]."
+ create_5_citizen_effect_tooltip:0 "5 #Y Upper tiers#! will appear in [THIS.GetProvince.GetName]."

@@ -844,6 +844,10 @@
 				government = theocratic_republic
 				government = oligarchic_republic
 			}
+			trigger_if = {
+				limit = { has_dlc = "Magna Graecia" }
+				NOT = { religion = iluvatarism } #does not allow deify
+			}
 		}
 		allow = {
 			is_monotheist_religion = no
