@@ -364,20 +364,20 @@
 			}
 			NOT = { tag = ANG }
 		}
-	}
-	highlight = {
-		scope:province = {
-			OR = {
-#				province_id = 1111
+		highlight = {
+			scope:province = {
+				OR = {
+	#				province_id = 1111
+				}
 			}
 		}
-	}
-	allow = {
-		custom_tooltip = {
-			text = formable_not_angmar_exists
-			NOT = {
-				any_country = {
-					tag = RHO
+		allow = {
+			custom_tooltip = {
+				text = formable_not_angmar_exists
+				NOT = {
+					any_country = {
+						tag = RHO
+					}
 				}
 			}
 	#		owns = 1
@@ -396,6 +396,12 @@
 				duration = 7600
 			}
 			add_3_free_province_investments = yes
+			char:8 = {
+				save_scope_as = target
+			}
+			trigger_event = {
+				id = lotr_other_country_events.2
+			}
 		}
 	}
 } 

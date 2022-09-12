@@ -10,6 +10,10 @@ sauron_worship_modifier = {
 	value = 400
 }
 
+sauron_loyal_servant = {
+	value = 400
+}
+
 helped_after_corsairs = {
 	value = 25
 	yearly_decay = 1
