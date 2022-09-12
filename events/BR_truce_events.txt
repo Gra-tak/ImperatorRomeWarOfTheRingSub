@@ -42,6 +42,13 @@ br_truce.1 = { #prevents the goodie humans from going to war with elves and dwar
     every_country = {
       limit = {
         NOT = { ROOT = THIS }
+        NOT = { #remove subjects from the list to avoid massive spam for the player with many subjects
+          AND = {
+            ROOT = { is_ai = no }
+            is_subject = yes
+            is_subject_of = ROOT
+          }
+        }
         OR = { #the group of countries they will not go to war with
           # primary_culture = dunedain
           # primary_culture = lesser_dunedain
@@ -118,6 +125,13 @@ br_truce.2 = { #prevents the goodie elves and AI dwarfs from going to war with g
     every_country = {
       limit = {
         NOT = { ROOT = THIS }
+        NOT = { #remove subjects from the list to avoid massive spam for the player with many subjects
+          AND = {
+            ROOT = { is_ai = no }
+            is_subject = yes
+            is_subject_of = ROOT
+          }
+        }
         OR = { #the group of countries they will not go to war with
           primary_culture = dunedain
           primary_culture = lesser_dunedain
