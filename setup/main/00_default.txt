@@ -1847,6 +1847,9 @@ country = {
 				{ deity = 140 }
 				{ deity = 161 }
 			}
+			poptype_rights = {
+				{ culture = angmarim type = citizen }
+			}
 			is_antagonist = yes
 			own_control_core = { 1034 913 1035 923 817 835 868 918 1033 869 }
 		}

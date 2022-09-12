@@ -34,7 +34,14 @@ lotr_migration_events.1 = {
 					}
 				}
 				if = {
-					limit = { NOT = { this.culture.culture_group = root.culture.culture_group } }
+					limit = { 
+						NOR = { 
+							this.culture.culture_group = root.culture.culture_group
+							country_culture = {
+								is_integrated = yes
+							}
+						} 
+					}
 					PREV = {
 						change_variable = {
 							name = refugee
@@ -57,7 +64,12 @@ lotr_migration_events.1 = {
 					limit = { var:refugeePerc > 0.2 } #if there's less than 20% non orcs, we assume that orcs won't allow anyone to flee
 					every_pops_in_province = {
 						limit = {
-							NOT = { this.culture.culture_group = root.culture.culture_group }
+							NOR = { 
+								this.culture.culture_group = root.culture.culture_group
+								country_culture = {
+									is_integrated = yes
+								}
+							}
 						}
 						add_to_list = trying_to_flee_list
 					}
