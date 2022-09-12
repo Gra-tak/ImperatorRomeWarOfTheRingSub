@@ -27,6 +27,6 @@ yearly_character_pulse =
 		10 = lovers.1
 		80 = health.8
 		80 = health.9
-		40 = br_sauron.9#Was disabled, but let's test it for balance!
+		10 = br_sauron.9
 	}
 }
