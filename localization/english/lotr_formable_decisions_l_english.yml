@@ -30,4 +30,12 @@
  form_rhovanion:0 "Form the Kingdom of Rhovanion"
  form_rhovanion_desc:0 "For millennia the 'Free Men of the North' have lived as hunters, loggers, trappers, and fishermen. The Great Plague and invasions by the Easterling Wainriders have depopulated and scorched the land. It is time to assert our rightful leadership over the Wilderlands, and lead our people to greater glory!"
  lotr_formable_rhovanion_modifier:0 "Rhovanion Created"
- desc_lotr_formable_rhovanion_modifier:2 "The Kingdom of Rhovanion created"
+ desc_lotr_formable_rhovanion_modifier:2 "The Kingdom of Rhovanion created" 
+ #angmar
+ ANGMAR_NAME:0 "Angmar"
+ ANGMAR_ADJECTIVE:0 "Angmarim"
+ formable_not_angmar_exists:0 "#Y Angmar#! must NOT exist."
+ form_angmar:0 "Form the Kingdom of Rhovanion"
+ form_angmar_desc:0 ""
+ lotr_formable_angmar_modifier:0 "Angmar Created"
+ desc_lotr_formable_angmar_modifier:2 "The Kingdom of Angmar created"

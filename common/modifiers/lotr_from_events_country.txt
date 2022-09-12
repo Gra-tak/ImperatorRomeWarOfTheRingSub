@@ -13,3 +13,9 @@ lotr_formable_rhovanion_modifier = {
     character_loyalty = 10
 	global_pop_conversion_speed_modifier = 0.25
 }
+lotr_formable_angmar_modifier = {
+	land_morale_modifier = 0.1
+  character_loyalty = 10
+	global_pop_assimilation_speed_modifier = 0.5
+	global_pop_conversion_speed_modifier = 0.25
+}

@@ -30,4 +30,5 @@ colors = {
 	khazad_dum				= rgb {18 44 89}
 	harad_red				= rgb {246 0 0}
 	rhovanion_green			= rgb {25 75 25}
+	angmar_black			= rgb {10 10 10}
 }

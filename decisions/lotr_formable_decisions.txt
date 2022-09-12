@@ -1,0 +1,401 @@
+﻿country_decisions = {
+	
+	# Form Arnor
+	form_arnor = {
+		
+		potential = {
+			num_of_cities >= 1
+			tag = CAR
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = formable_not_arnor_exists
+				NOT = {
+					any_country = {
+						tag = ARN
+					}
+				}
+			}
+			custom_tooltip = {
+				text = rise_of_the_dunedain_completed
+				NOT = { has_variable = arnor_delay }
+				has_country_modifier = rise_of_the_dunedain
+			}
+			war = no
+			AND = {
+				#owns = 1612  #Tharbad
+				owns = 1609  #Annuminas
+				#owns = 1631  #Cameth Brin
+				owns = 1605  #Fornost
+				#owns = 1641  #Lond Daer
+				owns = 1632  #Amon Sûl
+				#owns = 1642  #Andrath
+				owns = 1629
+				owns = 1702
+				owns = 1828
+				owns = 1608
+				owns = 1815
+				owns = 1814
+				owns = 1877
+				owns = 1701
+				p:1609 = { has_city_status = yes }
+				p:1605 = { has_city_status = yes }
+			}
+			OR = {
+				rank = major_power
+				rank = great_power
+			}
+			can_form_nation_trigger = yes
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 1609
+					province_id = 1605
+					province_id = 1632
+					province_id = 1629
+					province_id = 1702
+					province_id = 1828
+					province_id = 1608
+					province_id = 1815
+					province_id = 1814
+					province_id = 1877
+					province_id = 1701
+				}
+			}
+		}
+		
+		ai_allow = {
+		}
+		
+		effect = {
+			change_country_name = "ARNOR_NAME"
+			set_country_heritage = arnor_heritage
+			hidden_effect = {
+				change_country_adjective = "ARNOR_ADJECTIVE"
+				change_country_color =  arthedain_grey
+				change_country_tag = ARN
+				change_country_flag = ARNOR_FLAG
+				trigger_event = {
+					id = lotr_storyline_events.13
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 1609
+						}
+					}
+				}
+				set_capital = 1609
+			}
+			if = {
+				limit = {
+					exists = treasure:lotr_treasure_sceptre_annuminas
+					exists = c:IML
+					c:IML = {
+						owns = 1936
+						OR = {
+							any_allied_country = {
+								this = ROOT
+							}
+							AND = {
+								is_subject = yes
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				treasure:lotr_treasure_sceptre_annuminas = {
+					transfer_treasure_to_country = ROOT
+				}
+				hidden_effect = {
+					treasure:lotr_treasure_sceptre_annuminas = { destroy_treasure = yes }
+					create_country_treasure = {
+						key = "lotr_treasure_sceptre_annuminas_copy"
+						icon = "lotr_treasure_sceptre_annuminas"
+						modifier = {
+			 				local_happiness_for_same_culture_modifier = 0.05
+							local_nobles_output = 0.1 
+						}
+					}
+				}
+			}
+			#p:1609 = {
+			#	capital_formable_large_effect = yes
+			#	formable_capital_modifier_large_effect = yes
+			#}
+			#custom_tooltip = "form_arnor_claims_tooltip"
+			add_country_modifier = {
+				name = formable_country_huge_modifier
+				duration = 7600
+			}
+			add_3_free_province_investments = yes
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	# Form Harad
+	form_harad = {
+		
+		potential = {
+			primary_culture = haradrim
+			NOT = {
+				is_endgame_tag_trigger = yes
+			}
+			NOT = { tag = HAR }
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 1
+					province_id = 2064
+					province_id = 2057
+					province_id = 68
+					province_id = 97
+					province_id = 616
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = formable_not_harad_exists
+				NOT = {
+					any_country = {
+						tag = HAR
+					}
+				}
+			}
+			AND = {
+				owns = 1
+				owns = 2064
+				owns = 2057
+				owns = 68
+				owns = 97
+				owns = 616
+			}
+			can_form_nation_trigger = yes
+		}
+		
+		effect = {
+			change_country_name = "HARAD_NAME"
+			hidden_effect = {
+				change_country_adjective = "HARAD_ADJECTIVE"
+				change_country_color =  "harad_red"
+				change_country_tag = HAR
+				change_country_flag = HARAD_FLAG
+			}
+			add_country_modifier = {
+				name = lotr_formable_harad_modifier
+				duration = 7600
+			}
+			add_3_free_province_investments = yes
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	# Form Khazad-dûm 
+	form_khazad_dum = {
+		
+		potential = {
+			num_of_cities >= 1
+			any_country_culture = {
+				is_integrated = yes
+				is_culture = longbeard
+			}
+			NOR = {
+				is_endgame_tag_trigger = yes
+				tag = KZD
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 3699
+					province_id = 2999
+					province_id = 3695
+					province_id = 3696
+					province_id = 3697
+					province_id = 3698
+					province_id = 3727
+					province_id = 3668
+					province_id = 3752
+					province_id = 3753
+					province_id = 3754
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = formable_not_khazad_dum_exists
+				NOT = {
+					any_country = {
+						tag = KZD
+					}
+				}
+			}
+			AND = {
+				owns = 3699
+				owns = 2999
+				owns = 3695
+				owns = 3696
+				owns = 3697
+				owns = 3698
+				owns = 3727
+				owns = 3668
+				owns = 3752
+				owns = 3753
+				owns = 3754
+			}
+			can_form_nation_trigger = yes
+		}
+		
+		effect = {
+			change_country_name = "KHAZAD_DUM_NAME"
+			hidden_effect = {
+				change_country_adjective = "KHAZAD_DUM_ADJECTIVE"
+				change_country_color =  "khazad_dum"
+				change_country_tag = KZD
+				change_country_flag = KHAZADDUM
+			}
+			add_country_modifier = {
+				name = formable_country_huge_modifier
+				duration = 7600
+			}
+			add_3_free_province_investments = yes
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	# Form Rhovanion
+	form_rhovanion = {
+		
+		potential = {
+			OR = {
+				primary_culture = northmen
+				primary_culture = woodsmen
+				primary_culture = dorwinrim
+				primary_culture = lakemen
+				primary_culture = beorning
+				primary_culture = eotheod
+				primary_culture = rohirrim
+			}
+			NOT = {
+				is_endgame_tag_trigger = yes
+			}
+			NOT = { tag = RHO }
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 1111
+					province_id = 1052
+					province_id = 1276
+					province_id = 886
+					province_id = 885
+					province_id = 1105
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = formable_not_rhovanion_exists
+				NOT = {
+					any_country = {
+						tag = RHO
+					}
+				}
+			}
+			AND = {
+				owns = 1111
+				owns = 1052
+				owns = 1276
+				owns = 886
+				owns = 885
+				owns = 1105
+			}
+			can_form_nation_trigger = yes
+		}
+		
+		effect = {
+			change_country_name = "RHOVANION_NAME"
+			hidden_effect = {
+				change_country_adjective = "RHOVANION_ADJECTIVE"
+				change_country_color =  "rhovanion_green"
+				change_country_tag = RHO
+				change_country_flag = RHOVANION_FLAG
+			}
+			add_country_modifier = {
+				name = lotr_formable_rhovanion_modifier
+				duration = 7600
+			}
+			add_3_free_province_investments = yes
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	# form angmar
+	form_angmar = {
+		potential = {
+			OR = {
+				tag = XXQ
+				primary_culture = angmarim
+			}
+			NOT = { tag = ANG }
+		}
+	}
+	highlight = {
+		scope:province = {
+			OR = {
+#				province_id = 1111
+			}
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			text = formable_not_angmar_exists
+			NOT = {
+				any_country = {
+					tag = RHO
+				}
+			}
+	#		owns = 1
+			can_form_nation_trigger = yes
+		}
+		effect = {
+			change_country_name = "ANGMAR_NAME"
+			hidden_effect = {
+				change_country_adjective = "ANGMAR_ADJECTIVE"
+				change_country_color =  "angmar_black"
+				change_country_tag = ANG
+				change_country_flag = ANG
+			}
+			add_country_modifier = {
+				name = lotr_formable_angmar_modifier
+				duration = 7600
+			}
+			add_3_free_province_investments = yes
+		}
+	}
+} 
