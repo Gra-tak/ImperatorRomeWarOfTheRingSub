@@ -49,9 +49,22 @@ religious_conversion = {
 		}
 		modifier = { # Won't do if all state territories follow country religion
 			factor = 0
-			any_state_province = {
-				count = all
-				dominant_province_religion = governor_or_ruler.religion
+			OR = {
+				NOT = {
+					any_state_province = {
+						any_pops_in_province = {
+							OR = {
+								governor_or_ruler.has_culture = orcs_group
+								NOT = { pop_culture_group = orcs_group }
+							}
+							NOT = { dominant_province_religion = governor_or_ruler.religion }
+						}
+					}	
+				}
+				any_state_province = {
+					count = all
+					dominant_province_religion = governor_or_ruler.religion
+				}
 			}
 		}
 	}
@@ -112,6 +125,12 @@ cultural_assimilation = {
 						}
 					}
 				}
+			}
+		}
+		modifier = { # Won't do if all state territories already have governor's culture or the dominant culture of the owner
+			factor = 0
+			NOT = {
+				governor_or_ruler.has_culture = orcs_group
 			}
 		}
 	}
