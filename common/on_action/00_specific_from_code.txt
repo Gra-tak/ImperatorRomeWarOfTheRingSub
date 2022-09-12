@@ -1577,6 +1577,21 @@ on_ownership_change = { #province scope
 				remove_holding = root
 			}
 		}
+		if = {
+			limit = {
+				has_variable = orcs_purged_flag
+				exists = owner
+				NOT = {
+					OWNER = {
+						country_culture_group = orcs_group
+					}
+				}
+			}
+			add_province_modifier = {
+				modifier = reconquered_from_orcs
+				duration = 2920 # 8 years, almost 100 months
+			}
+		}
 	}
 	events = {
 		comet.2

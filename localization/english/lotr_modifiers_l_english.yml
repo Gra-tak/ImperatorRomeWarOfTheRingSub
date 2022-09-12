@@ -2078,3 +2078,5 @@
  orc_war_ae_modifier:0 "We are fighting a war to free a people form the orc. People are not going to object to us freeing them."
  war_goal_orc_wargoal:0 "Defending the free people"
  war_goal_orc_wargoal_desc:2 "War Goal is to show superiority. Participants will get more war score from winning battles.\nAccumulating more than $THRESHOLD|Y%$ warscore from won battles will grant you a ticking war score."
+ reconquered_from_orcs:0 "Reconquered from the orcs"
+ desc_reconquered_from_orcs:0 "This province was recently conquered from orcs. They game doesn't allow control over what pops are growing and it is likey that there is still an orc growing despite them having been removed. This modifier should help clear this out."

@@ -125,6 +125,22 @@ save_treasures_from_orcs = {
 	}
 }
 
+set_reconquered_from_orcs_variable = {
+	if = {
+		limit = {
+			NOT = {
+				any_pops_in_province = {
+					NOT = { pop_culture_group = orcs_group }
+				}
+			}
+		}
+		set_variable = {
+			name = orcs_purged_flag
+			days = 1000 
+		}
+	}
+}
+
 orc_purge_effect = {
 	$LOC$ = {
 		if = {
@@ -141,6 +157,7 @@ orc_purge_effect = {
 			$LOC$ = { has_owner = yes }
 		}
 		save_treasures_from_orcs = yes
+		set_reconquered_from_orcs_variable = yes
 		if = {
 			limit = { 
 				$LOC$ = {
@@ -249,7 +266,10 @@ orc_purge_local_effect = {
 				has_siege = no
 			}
 		}
-		$LOC$ = { save_treasures_from_orcs = yes }
+		$LOC$ = {
+			set_reconquered_from_orcs_variable = yes
+			save_treasures_from_orcs = yes
+		}
 		if = {
 			limit = { 
 				$LOC$ = {

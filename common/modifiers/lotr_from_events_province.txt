@@ -255,7 +255,9 @@ fleeing_movements = {
 	local_population_happiness = -0.05
 }
 
-
+reconquered_from_orcs = {
+	local_population_growth = 1
+}
 
 
 
