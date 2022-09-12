@@ -1251,6 +1251,31 @@ lotr_migration_events.8 = {
 }
 
 
+# Enable migration to vassals for all foreign cultures regularly
+lotr_migration_events.18 = {
+	type = country_event
+	hidden = yes
+	trigger = {
+		has_variable = lotr_move_all_foreign_pops
+	}
+	immediate = {
+		every_country_culture = {
+			limit = {
+				is_integrated = no
+				NOT = { culture.culture_group = ROOT.culture.culture_group }
+				NOT = { has_country_culture_modifier = encourage_migration }
+			}
+			add_country_culture_modifier = {
+				modifier = encourage_migration
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
 # Orcs removal directly after owner change (not occupied, really owner)
 lotr_migration_events.100 = {
 	type = province_event

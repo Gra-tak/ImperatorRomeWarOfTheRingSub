@@ -28,6 +28,7 @@ monthly_country_pulse = {
 		br_pops.7
 		lotr_pops.1
 		lotr_maintenance.2
+		lotr_migration_events.18
 	}
 	
 	random_events = {

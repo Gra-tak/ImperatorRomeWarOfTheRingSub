@@ -272,4 +272,17 @@
 		}
 	}
 
+	lotr_settings_decision = {
+		potential = {
+			is_ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			trigger_event = {
+				id = lotr_config_events.1
+			}
+		}
+	}
 }

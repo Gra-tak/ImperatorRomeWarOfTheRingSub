@@ -7,6 +7,7 @@
 				government = tribal_federation
 				government = tribal_kingdom
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			centralization < -25
@@ -60,6 +61,7 @@
 		potential = {
 			num_of_cities >= 1
 			government = tribal_chiefdom
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			custom_tooltip = {
@@ -209,6 +211,7 @@
 			NOT = {
 				has_variable = can_tribal_reform
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			stability >= 40
@@ -250,6 +253,7 @@
 				government = theocratic_monarchy
 				government = aristocratic_monarchy
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			stability >= 40
@@ -303,6 +307,7 @@
 				government = theocratic_monarchy
 				government = plutocratic_monarchy
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			stability >= 40
@@ -356,6 +361,7 @@
 				government = theocratic_monarchy
 				government = plutocratic_monarchy
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			stability >= 40
@@ -411,6 +417,7 @@
 				government = stratocratic_monarchy
 				government = plutocratic_monarchy
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			stability >= 40
@@ -466,6 +473,7 @@
 				government = theocratic_republic
 				government = oligarchic_republic
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			stability >= 40
@@ -532,6 +540,7 @@
 				government = theocratic_republic
 				government = plutocratic_republic
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			stability >= 40
@@ -603,6 +612,7 @@
 				government = theocratic_republic
 				government = plutocratic_republic
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			stability >= 40
@@ -668,6 +678,7 @@
 				government = aristocratic_republic
 				government = plutocratic_republic
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 		allow = {
 			stability >= 40

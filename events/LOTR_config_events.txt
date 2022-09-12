@@ -1,0 +1,98 @@
+﻿namespace = lotr_config_events
+
+lotr_config_events.1 = {
+  type = country_event
+  title = "lotr_settings_decision"
+  desc = "lotr_settings_decision_desc"
+  picture = throneroom
+	
+	left_portrait = root.current_ruler
+	
+	
+
+	option = {
+		name = "lotr_config_events.1.max_conv_messages"
+		trigger = {
+			NOR = {
+				has_variable = disabled_sauron_conversion_notifications
+				has_variable = enabled_full_sauron_conversion_notifications
+			}
+		}
+		set_variable = {
+			name = enabled_full_sauron_conversion_notifications
+		}
+	}
+	option = {
+		name = "lotr_config_events.1.no_conv_messages"
+		trigger = {
+			NOR = {
+				has_variable = disabled_sauron_conversion_notifications
+				has_variable = enabled_full_sauron_conversion_notifications
+			}
+		}
+		set_variable = {
+			name = disabled_sauron_conversion_notifications
+		}
+	}
+	option = {
+		name = "lotr_config_events.1.imp_conv_messages"
+		trigger = {
+			OR = {
+				has_variable = enabled_full_sauron_conversion_notifications
+				has_variable = disabled_sauron_conversion_notifications
+			}
+		}
+		remove_variable = enabled_full_sauron_conversion_notifications
+		remove_variable = disabled_sauron_conversion_notifications
+	}
+
+	option = {
+		name = "lotr_config_events.1.disable_government_convert"
+		trigger = {
+			NOT = {
+				has_variable = lotr_disable_government_convert
+			}
+		}
+		set_variable = {
+			name = lotr_disable_government_convert
+		}
+	}
+
+	option = {
+		name = "lotr_config_events.1.enable_government_convert"
+		trigger = {
+			has_variable = lotr_disable_government_convert
+		}
+		remove_variable = lotr_disable_government_convert
+	}
+
+	option = {
+		name = "lotr_config_events.1.move_all_foreign_pops"
+		trigger = {
+			NOT = {
+				has_variable = lotr_move_all_foreign_pops
+			}
+		}
+		custom_tooltip = "lotr_config_events.1.move_all_foreign_pops.tt"
+		set_variable = {
+			name = lotr_move_all_foreign_pops
+		}
+		trigger_event = {
+			id = lotr_migration_events.18
+		}
+	}
+
+	option = {
+		name = "lotr_config_events.1.move_all_foreign_pops_disable"
+		trigger = {
+			has_variable = lotr_move_all_foreign_pops
+		}
+		custom_tooltip = "lotr_config_events.1.move_all_foreign_pops_disable.tt"
+		remove_variable = lotr_move_all_foreign_pops
+	}
+
+	option = {
+		name = OK
+	}
+
+}
