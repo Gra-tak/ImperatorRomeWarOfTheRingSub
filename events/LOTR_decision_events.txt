@@ -309,7 +309,7 @@ lotr_ruler_decisions.7 = {
       limit = { 
         list_size = {
           name = potential_targets
-          value > 3
+          value >= 4
         }
       }
       list = previous_targets

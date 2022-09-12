@@ -97,7 +97,7 @@ br_rangers.3 = { #Gobins informed that they must attack the rangers
 	picture = event_barad_dur_eye
 	
 	trigger = {
-		always = yes
+		NOT = { has_truce_with = c:CAR }
 	}
 	
 	immediate = {
@@ -107,6 +107,7 @@ br_rangers.3 = { #Gobins informed that they must attack the rangers
 		name = "br_rangers.3.a"
 		if = {
 			limit = {
+				#attack war on Rhaudarum if they are a subject of ranger to avoid getting Shire and Bree into the war as well
 				exists = c:XXO
 				c:XXO = {
 					is_subject = yes

@@ -123,11 +123,14 @@
 			num_of_cities >= 1
 			NOT = { religion = melkorism }
 			is_subject = no
+			any_subject = {
+				religion = melkorism
+			}
 		}
 		allow = {
 			war = no
 			any_subject = {
-				religion = melkorism
+				ROOT = { NOT = { has_truce_with PREV } }
 			}
 		}
 		effect = {
@@ -135,6 +138,7 @@
 				every_subject = {
 					limit = {
 						religion = melkorism
+						ROOT = { NOT = { has_truce_with PREV } }
 					}
 					add_to_list = melkor_subjects
 					ROOT = { release_subject = PREV }
