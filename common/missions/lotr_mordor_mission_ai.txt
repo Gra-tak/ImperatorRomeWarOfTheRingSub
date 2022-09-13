@@ -75,7 +75,7 @@
 					}
 					add_claim = root
 				}
-			}		
+			}	
 		} 
 	}
 
@@ -84,13 +84,24 @@
 
 		requires = { lotr_ai_mordor_mission_1 } 
 		allow = {
-			region:ithilien_region = {
-				NOT = {
-					any_region_province = {
-						exists = owner
-						NOT = { OWNER = ROOT }
-						NOT = { owner = { religion = melkorism } }
-					}
+			# region:ithilien_region = {
+			# 	NOT = {
+			# 		any_region_province = {
+			# 			exists = owner
+			# 			NOT = { OWNER = ROOT }
+			# 			NOT = { owner = { religion = melkorism } }
+			# 		}
+			# 	}
+			# }
+			owns = 1200
+			owns = 1196
+			OR = {
+				owns = 1122
+				p:1122 = {
+					has_owner = no
+				}
+				p:1122 = {
+					owner = { religion = melkorism }
 				}
 			}
 		}
@@ -104,7 +115,7 @@
 					}
 					add_claim = root
 				}
-			}		
+			}
 		} 
 	}
 	lotr_ai_mordor_mission_3 = {
@@ -113,15 +124,17 @@
 		
 		requires = { lotr_ai_mordor_mission_2 } 
 		allow = {
-			area:anorien_area = {
-				NOT = {
-					any_area_province = {
-						exists = owner
-						NOT = { OWNER = ROOT }
-						NOT = { owner = { religion = melkorism } }
-					}
-				}
-			}
+			# area:anorien_area = {
+			# 	NOT = {
+			# 		any_area_province = {
+			# 			exists = owner
+			# 			NOT = { OWNER = ROOT }
+			# 			NOT = { owner = { religion = melkorism } }
+			# 		}
+			# 	}
+			# }
+			owns = 1300
+			owns = 1302
 		}
 
 		on_completion = {
@@ -130,25 +143,75 @@
 					limit = {
 						exists = owner
 						NOT = { owner = root }
+						NOT = { is_in_area = entyn_i_onodlo_area }
+					}
+					add_claim = root
+				}
+			}
+		} 
+	}
+	lotr_ai_mordor_mission_4 = {
+		icon = "task_conquest"
+
+
+		requires = { lotr_ai_mordor_mission_3 } 
+		allow = {
+			# region:anorien_region = {
+			# 	NOT = {
+			# 		any_region_province = {
+			# 			exists = owner
+			# 			NOT = { OWNER = ROOT }
+			# 			NOT = { owner = { religion = melkorism } }
+			# 			NOT = { is_in_area = entyn_i_onodlo_area }
+			# 		}
+			# 	}
+			# }
+			owns = 1313
+			owns = 1201
+		}
+
+		on_completion = {
+			region:lebennin_region = {
+				every_region_province = {
+					limit = {
+						exists = owner
+						NOT = { owner = root }
+					}
+					add_claim = root
+				}
+			}		
+			region:calenardhon_region = {
+				every_region_province = {
+					limit = {
+						exists = owner
+						NOT = { owner = root }
+						NOT = { owner = { religion = melkorism } }
 					}
 					add_claim = root
 				}
 			}		
 		} 
 	}
-	lotr_ai_mordor_mission_4 = {
+
+	lotr_ai_mordor_mission_5 = {
 		icon = "task_conquest"
 
-		final = yes
-		
-		requires = { lotr_ai_mordor_mission_3 } 
+
+		requires = { lotr_ai_mordor_mission_4 } 
 		allow = {
-			region:anorien_region = {
-				NOT = {
-					any_region_province = {
-						exists = owner
-						NOT = { OWNER = ROOT }
-						NOT = { owner = { religion = melkorism } }
+			owns = 1303
+			owns = 1322
+			owns = 1330
+			owns = 1341
+			OR = {
+				AND = {
+					owns = 1556
+					owns = 1561
+				}
+				c:XVX = {
+					AND = {
+						owns = 1556
+						owns = 1561
 					}
 				}
 			}
@@ -164,6 +227,23 @@
 					add_claim = root
 				}
 			}		
+		} 
+	}
+
+	lotr_ai_mordor_mission_6 = {
+		icon = "task_conquest"
+
+		final = yes
+
+		requires = { lotr_ai_mordor_mission_5 } 
+		allow = {
+			owns = 1403
+			owns = 1377
+			owns = 1409
+			owns = 1391
+		}
+
+		on_completion = {	
 		} 
 	}
 	

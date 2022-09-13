@@ -37778,7 +37778,7 @@
 	religion = "iluvatarism"
 	trade_goods = "cloth"
 	civilization_value = 35
-	barbarian_power = -
+	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 8 }
 	slaves = { amount = 9 }

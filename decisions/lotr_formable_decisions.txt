@@ -367,7 +367,12 @@
 		highlight = {
 			scope:province = {
 				OR = {
-	#				province_id = 1111
+					province_id = 1605
+					province_id = 1820
+					province_id = 1632
+					province_id = 1747
+					province_id = 1648
+					province_id = 1631
 				}
 			}
 		}
@@ -380,7 +385,15 @@
 					}
 				}
 			}
-	#		owns = 1
+			owns = 1605
+			owns = 1820
+			owns = 1632
+			owns = 1747
+			owns = 1648
+			owns = 1631
+			c:XXO = {
+				has_land = no
+			}
 			can_form_nation_trigger = yes
 		}
 		effect = {
