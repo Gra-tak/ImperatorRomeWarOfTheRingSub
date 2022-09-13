@@ -972,6 +972,17 @@ on_becoming_adult = {
 				}
 			}
 		}
+		if = {
+      limit = {
+        employer = {
+          is_ai = no
+        }
+      }
+      save_scope_as = gratak_grow_up_character
+      employer = {
+        trigger_event = { id = gratak_grow_up_event.1 }
+      }
+    }
 	}
 }
 
