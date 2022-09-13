@@ -205,3 +205,23 @@ Fixes:
 - Treasure no longer getting lost on annexation.
 	- Should also work when orc nations are destroyed via orc purge. Here they go to the warleader, if there are multiple wars, random with stronger player preference.
 - Fixed default dwarven battle order
+
+1.06.2 Update:
+- One will now get a "conquered from orcs" buff on provinces that were fully purged of orcs (and nobody else was there) and afterwards colonzised with 1000 days. This gives about a pop worth of growth within the next 8 years and should offset the fact that there will still be orcs growing to an extend a bit. Should make playing Balin a lit less annoying and a bit easier.
+- Angmar formable decision for Carn Dum (or Angmar cultures countries, which don't exist at start)
+- Carn Dum now has Angmar culture accepted (Levy bug shouldn't be too bad here as both levies are similar in strength)
+- Added a decision for mod options:
+	- Melkor conversion message settings
+	- Automatically setting all foreign cultures to "move to vassal"
+	- Remove government change decision to clear up the decision tab
+- Reduced likelyhood of AI melkor conversions, especially if no neighbor province is melkor majority
+- Star of Elendil now given to Aragon when he reaches Imladris with Frodo
+- Original Star of Eledil added to Saruman's treasury
+Fixes:
+- Durins Axe now moved into Balins treasury even in case Balin is played by the (single) player
+- Added some truce checks to wars declared by event
+- No longer applying "goodie" truces towards your vassals to keep the truce list a bit smaller
+- Tried to improve the auto selection of conversion policies a bit better still: No longer selecting religious conversion for orcs as non-orc and no longer selecting assimilation as non-orc
+- disable divine sanction decision as long as deified is disabled (eru with dlc)
+- Removed beast barbarians as well as "never spawn" barbarian provinces
+- Mordor should now be more aggressive towards Gondor
