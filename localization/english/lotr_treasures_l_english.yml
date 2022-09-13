@@ -52,6 +52,8 @@
  lotr_treasure_shrine_osse_desc:0 "Ossë was a spirit of the sea in the service of Ulmo. He is valued highly by the Elf clans."
  lotr_treasure_star_elendil:0 "Star of Elendil"
  lotr_treasure_star_elendil_desc:0 "Arnor's Royal Gemstone, mounted on a slender chain of mithril."
+ lotr_treasure_star_elendil_original:0 "Original Star of Elendil"
+ lotr_treasure_star_elendil_original_desc:0 "Arnor's Royal Gemstone, mounted on a slender chain of mithril. It was lost when Elendil died in the Anduin and the arnorians created a copy instead. Saruman found the original when he was searching for the One Ring."
  lotr_treasure_elbereth_shrine:0 "Elbereth Shrine"
  lotr_treasure_elbereth_shrine_desc:0 "A Shrine dedicated to the Goddess Elbereth, Queen of the Stars, where hobbits sing songs in her praise."
  lotr_treasure_altar_azog:0 "Altar to Azog"

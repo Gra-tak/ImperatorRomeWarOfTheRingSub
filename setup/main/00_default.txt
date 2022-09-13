@@ -2575,7 +2575,7 @@ country = {
 			capital = 1546
 			is_antagonist = yes
 			own_control_core = { 1546 1545 3896 3825 1544 }
-			treasures = { 751 }
+			treasures = { 751 754 }
 		}
 		FEL = {
 			 #Felaya
