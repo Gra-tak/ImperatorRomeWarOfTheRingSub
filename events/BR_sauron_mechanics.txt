@@ -349,8 +349,12 @@ br_sauron.9 = { #AI Sauron version of event triggered for ruler that sauron has 
 	weight_multiplier = {
 		modifier = {
 			factor = 2
-			any_neighbor_province = {
-				dominant_province_religion = melkorism
+			employer = {
+				any_owned_province = {
+					any_neighbor_province = {
+						dominant_province_religion = melkorism
+					}
+				}
 			}
 		}
 	}

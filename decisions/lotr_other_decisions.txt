@@ -130,7 +130,7 @@
 		allow = {
 			war = no
 			any_subject = {
-				ROOT = { NOT = { has_truce_with PREV } }
+				ROOT = { NOT = { has_truce_with = PREV } }
 			}
 		}
 		effect = {
@@ -138,7 +138,7 @@
 				every_subject = {
 					limit = {
 						religion = melkorism
-						ROOT = { NOT = { has_truce_with PREV } }
+						ROOT = { NOT = { has_truce_with = PREV } }
 					}
 					add_to_list = melkor_subjects
 					ROOT = { release_subject = PREV }

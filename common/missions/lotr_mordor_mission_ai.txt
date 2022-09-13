@@ -30,16 +30,16 @@
 	on_start = {
 		set_variable = {
 			name = lotr_mordor_mission_activated_variable
-			region:ithilien_region = {
-				every_region_province = {
-					limit = {
-						exists = owner
-						NOT = { owner = root }
-					}
-					add_claim = root
-				}
-			}		
 		}
+		region:ithilien_region = {
+			every_region_province = {
+				limit = {
+					exists = owner
+					NOT = { owner = root }
+				}
+				add_claim = root
+			}
+		}		
 	}
 
 	on_abort = {
@@ -139,6 +139,7 @@
 	lotr_ai_mordor_mission_4 = {
 		icon = "task_conquest"
 
+		final = yes
 		
 		requires = { lotr_ai_mordor_mission_3 } 
 		allow = {

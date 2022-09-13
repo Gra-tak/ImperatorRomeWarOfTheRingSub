@@ -1294,7 +1294,7 @@ lotr_migration_events.18 = {
 				NOT = { has_country_culture_modifier = encourage_migration }
 			}
 			add_country_culture_modifier = {
-				modifier = encourage_migration
+				name = encourage_migration
 				duration = -1
 			}
 		}
@@ -1327,7 +1327,7 @@ lotr_migration_events.100 = {
 #count average free space
 lotr_migration_events.1000 = {
 	type = country_event
-	hidden = yes`
+	hidden = yes
 	immediate = {
 		set_local_variable = {
 			name = freeSpace

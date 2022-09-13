@@ -321,7 +321,7 @@ treasure_manager = {
 		754 = {
 			 #
 			key = "lotr_treasure_star_elendil_original"
-			icon = "lotr_treasure_star_elendil_original"
+			icon = "lotr_treasure_star_elendil"
 			state_modifier = { local_nobles_output = 0.1 }
 		}
 

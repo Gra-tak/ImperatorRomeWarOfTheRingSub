@@ -10056,7 +10056,7 @@
 	religion = "iluvatarism"
 	trade_goods = "wood"
 	civilization_value = 0
-	barbarian_power = 10
+	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
@@ -18504,7 +18504,7 @@
 	religion = "iluvatarism"
 	trade_goods = "cattle"
 	civilization_value = 0
-	barbarian_power = 10
+	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
@@ -18541,7 +18541,7 @@
 	religion = "iluvatarism"
 	trade_goods = "amber"
 	civilization_value = 0
-	barbarian_power = 10
+	barbarian_power = 0
 	province_rank = "settlement"
 }
 1782 = { #Ost Cyrn (unowned) (rhudaur_area) (rhudaur_region)
@@ -37778,7 +37778,7 @@
 	religion = "iluvatarism"
 	trade_goods = "cloth"
 	civilization_value = 35
-	barbarian_power = 1
+	barbarian_power = -
 	province_rank = "settlement"
 	freemen = { amount = 8 }
 	slaves = { amount = 9 }
@@ -37789,7 +37789,7 @@
 	religion = "iluvatarism"
 	trade_goods = "grain"
 	civilization_value = 35
-	barbarian_power = 1
+	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
 	slaves = { amount = 4 }
@@ -39194,7 +39194,7 @@
 	religion = "iluvatarism"
 	trade_goods = "papyrus"
 	civilization_value = 20
-	barbarian_power = 1
+	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
@@ -42325,8 +42325,8 @@
 }
 4102 = { #Ered Luin (unowned)
 	terrain = "impassable_terrain"
-	culture = "beasts"
-	religion = "eastern_animism"
+	culture = "orcish" #barbarian spawner
+	religion = "melkorism"
 	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0

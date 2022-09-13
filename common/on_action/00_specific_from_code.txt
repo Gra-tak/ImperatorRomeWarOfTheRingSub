@@ -1554,6 +1554,7 @@ on_game_initialized = {
 		lotr_startup.6
 		lotr_startup.7
 		lotr_maintenance.5
+		lotr_migration_events.1000
 	}
 }
 
@@ -1588,7 +1589,7 @@ on_ownership_change = { #province scope
 				}
 			}
 			add_province_modifier = {
-				modifier = reconquered_from_orcs
+				name = reconquered_from_orcs
 				duration = 2920 # 8 years, almost 100 months
 			}
 		}

@@ -104,5 +104,5 @@
  lotr_config_events.1.move_all_foreign_pops:0 "Enable movement to vassals for all foreign cultures"
  lotr_config_events.1.move_all_foreign_pops_disable:0 "Stop auto enabling movement to vassals"
  lotr_config_events.1.move_all_foreign_pops.tt:0 "Enable movement to vassals for all different culture group non-integrated cultures (see culture descisions). Repeated monthly in case of new cultures."
- lotr_config_events.1.move_all_foreign_pops_disable:0 "Stop enabling movement to vassals for all different culture group non-integrated cultures (see culture descisions). Cultures that are already enabled to be moved stay and would need to be disabled via culture descisions."
+ lotr_config_events.1.move_all_foreign_pops_disable.tt:0 "Stop enabling movement to vassals for all different culture group non-integrated cultures (see culture descisions). Cultures that are already enabled to be moved stay and would need to be disabled via culture descisions."
 
