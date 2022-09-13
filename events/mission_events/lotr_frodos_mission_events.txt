@@ -134,6 +134,19 @@ lotr_frodos_mission_events.30 = {
   trigger = {
    
   }
+  immediate = {
+    if = {
+      limit = {
+        OR = {
+          scope:frodo_protector_country = c:CAR
+          scope:frodo_protector_country = c:ARN
+        }
+      }
+      treasure:lotr_treasure_star_elendil = { #aragorn is given the star of Elendil (the copy that was kept save in Imladris) as in the book
+        transfer_treasure_to_country = scope:frodo_protector_country
+      }
+    }
+  }
   option = {
     name = lotr_frodos_mission_events.30.a
   }
