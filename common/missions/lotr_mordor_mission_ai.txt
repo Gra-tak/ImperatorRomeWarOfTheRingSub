@@ -1,0 +1,172 @@
+﻿lotr_ai_mordor_mission = {
+	header = "lotr_mordor_mission_header"
+	icon = "lotr_mordor_army_mission_icon"
+
+	repeatable = no
+
+	chance = {
+		factor = 100
+	}
+
+	ai_chance = {
+		factor = 100
+	}
+
+	potential = {
+		NOT = { has_variable = lotr_mordor_mission_activated_variable }
+		is_ai = yes
+		has_civil_war = no
+		is_subject = no
+		tag = MOR
+	}
+
+	on_potential = {
+	}
+
+	abort = {
+		always = no
+	}
+
+	on_start = {
+		set_variable = {
+			name = lotr_mordor_mission_activated_variable
+			region:ithilien_region = {
+				every_region_province = {
+					limit = {
+						exists = owner
+						NOT = { owner = root }
+					}
+					add_claim = root
+				}
+			}		
+		}
+	}
+
+	on_abort = {
+	}
+
+	on_completion = {
+		complete_mission_effect = yes
+	}
+	
+	
+	
+	lotr_ai_mordor_mission_1 = {
+		icon = "task_conquest"
+
+		
+		allow = {
+			region:nurn_region = {
+				NOT = {
+					any_region_province = {
+						exists = owner
+						NOT = { OWNER = ROOT }
+					}
+				}
+			}
+		}
+
+		on_completion = {
+			region:ithilien_region = {
+				every_region_province = {
+					limit = {
+						exists = owner
+						NOT = { owner = root }
+					}
+					add_claim = root
+				}
+			}		
+		} 
+	}
+
+	lotr_ai_mordor_mission_2 = {
+		icon = "task_conquest"
+
+		requires = { lotr_ai_mordor_mission_1 } 
+		allow = {
+			region:ithilien_region = {
+				NOT = {
+					any_region_province = {
+						exists = owner
+						NOT = { OWNER = ROOT }
+						NOT = { owner = { religion = melkorism } }
+					}
+				}
+			}
+		}
+
+		on_completion = {
+			area:anorien_area = {
+				every_area_province = {
+					limit = {
+						exists = owner
+						NOT = { owner = root }
+					}
+					add_claim = root
+				}
+			}		
+		} 
+	}
+	lotr_ai_mordor_mission_3 = {
+		icon = "task_conquest"
+
+		
+		requires = { lotr_ai_mordor_mission_2 } 
+		allow = {
+			area:anorien_area = {
+				NOT = {
+					any_area_province = {
+						exists = owner
+						NOT = { OWNER = ROOT }
+						NOT = { owner = { religion = melkorism } }
+					}
+				}
+			}
+		}
+
+		on_completion = {
+			region:anorien_region = {
+				every_region_province = {
+					limit = {
+						exists = owner
+						NOT = { owner = root }
+					}
+					add_claim = root
+				}
+			}		
+		} 
+	}
+	lotr_ai_mordor_mission_4 = {
+		icon = "task_conquest"
+
+		
+		requires = { lotr_ai_mordor_mission_3 } 
+		allow = {
+			region:anorien_region = {
+				NOT = {
+					any_region_province = {
+						exists = owner
+						NOT = { OWNER = ROOT }
+						NOT = { owner = { religion = melkorism } }
+					}
+				}
+			}
+		}
+
+		on_completion = {
+			region:belfalas_region = {
+				every_region_province = {
+					limit = {
+						exists = owner
+						NOT = { owner = root }
+					}
+					add_claim = root
+				}
+			}		
+		} 
+	}
+	
+	
+	
+	
+}
