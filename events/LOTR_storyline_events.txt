@@ -410,6 +410,16 @@ lotr_storyline_events.6 = {
 				every_area_province = { add_claim = ROOT }
 			}
 		}
+		if = {
+			limit = {
+				exists = treasure:lotr_treasure_durins_axe
+				exists = scope:lotr_balins_colony_scope
+				is_ai = no
+			}
+			treasure:lotr_treasure_durins_axe = {
+				transfer_treasure_to_country = scope:lotr_balins_colony_scope
+			}
+		}
 		every_country = {
 			trigger_event = {
 				id = lotr_storyline_events.7
@@ -464,10 +474,6 @@ lotr_storyline_events.7 = {
 	fire_only_once = yes
 	
 	immediate = {
-	}
-	
-	option = { #Generic response
-		name = lotr_storyline_events.7.a
 		if = {
 			limit = {
 				exists = treasure:lotr_treasure_durins_axe
@@ -477,6 +483,10 @@ lotr_storyline_events.7 = {
 				transfer_treasure_to_country = scope:lotr_balins_colony_scope
 			}
 		}
+	}
+	
+	option = { #Generic response
+		name = lotr_storyline_events.7.a
 	}
 	option = { #
 		name = lotr_storyline_events.7.b
@@ -492,15 +502,6 @@ lotr_storyline_events.7 = {
 		make_subject = { 
 			target = scope:lotr_balins_colony_scope
 			type = client_state 
-		}
-		if = {
-			limit = {
-				exists = treasure:lotr_treasure_durins_axe
-				exists = scope:lotr_balins_colony_scope
-			}
-			treasure:lotr_treasure_durins_axe = {
-				transfer_treasure_to_country = scope:lotr_balins_colony_scope
-			}
 		}
 	}
 }

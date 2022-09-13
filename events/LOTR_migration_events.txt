@@ -118,6 +118,8 @@ lotr_migration_events.1 = {
 							any_owned_province = { total_population < population_cap }
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = PREV.religion
@@ -161,6 +163,8 @@ lotr_migration_events.1 = {
 							}
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = PREV.religion
@@ -303,6 +307,8 @@ lotr_migration_events.2 = {
 							culture = PREV.culture
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = PREV.religion
@@ -331,6 +337,8 @@ lotr_migration_events.2 = {
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = PREV.religion
@@ -463,6 +471,8 @@ lotr_migration_events.3 = {
 							culture = PREV.culture
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = PREV.religion
@@ -493,6 +503,8 @@ lotr_migration_events.3 = {
 							NOT = { primary_culture = nandor }
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = PREV.religion
@@ -621,6 +633,8 @@ lotr_migration_events.4 = {
 							culture = PREV.culture
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = PREV.religion
@@ -649,6 +663,8 @@ lotr_migration_events.4 = {
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = PREV.religion
@@ -706,6 +722,8 @@ lotr_migration_events.5 = {
 							culture = PREV.culture
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = melkorism
@@ -734,6 +752,8 @@ lotr_migration_events.5 = {
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = melkorism
@@ -884,6 +904,8 @@ lotr_migration_events.6 = {
 							culture = PREV.culture
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = PREV.religion
@@ -912,6 +934,8 @@ lotr_migration_events.6 = {
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
+							base = 10
+							country_has_space_for_migration_modifer = yes
 							modifier = {
 								factor = 5
 								religion = PREV.religion
@@ -1049,6 +1073,8 @@ lotr_migration_events.7 = {
 								culture = scope:pop_from_list.culture
 							}
 							weight = {
+								base = 10
+								country_has_space_for_migration_modifer = yes
 								modifier = {
 									factor = 5
 									religion = scope:pop_from_list.religion
@@ -1080,6 +1106,8 @@ lotr_migration_events.7 = {
 								culture.culture_group = scope:pop_from_list.culture.culture_group
 							}
 							weight = {
+								base = 10
+								country_has_space_for_migration_modifer = yes
 								modifier = {
 									factor = 5
 									religion = scope:pop_from_list.religion
@@ -1293,5 +1321,41 @@ lotr_migration_events.100 = {
 	}
 	option = {
 		name = "OK"
+	}
+}
+
+#count average free space
+lotr_migration_events.1000 = {
+	type = country_event
+	hidden = yes`
+	immediate = {
+		set_local_variable = {
+			name = freeSpace
+			value = 0
+		}
+		set_local_variable = {
+			name = total_provinces
+			value = 0
+		}
+		every_owned_province = {
+			change_local_variable = {
+				name = total_provinces
+				add = 1
+			}
+			change_local_variable = {
+				name = freeSpace
+				add = population_cap
+				subtract = total_population
+
+			}
+		}
+		change_local_variable = {
+			name = freeSpace
+			divide = local_var:total_provinces
+		}
+		set_variable = {
+			name = relative_free_space
+			value = local_var:freeSpace
+		}
 	}
 }

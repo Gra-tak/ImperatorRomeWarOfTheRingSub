@@ -64,6 +64,7 @@ yearly_country_pulse =
 		gw_effects.2	# Great Works finesse training
 		gw_effects.3	# Great Works charisma training
 		gw_effects.4	# Great Works zeal training			
+		lotr_migration_events.1000 #counting free space
 		lotr_migration_events.1 #fleeing from being eaten by orcs	  
 		#migration:
 		lotr_migration_events.2 

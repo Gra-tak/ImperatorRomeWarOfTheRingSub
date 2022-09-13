@@ -9,6 +9,15 @@
 	}
 }
 
+country_has_space_for_migration_modifer = {
+	modifier = {
+		add = {
+			value = var:relative_free_space
+			min = 0
+		}
+	}
+}
+
 province_is_safe_modifier = {
 	modifier = {
 		factor = 4
