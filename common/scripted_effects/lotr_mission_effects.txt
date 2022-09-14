@@ -687,6 +687,120 @@ return_provinces_to_shire = {
   }
 }
 
+release_gondor = {
+  return_provinces_to_gondor = yes
+  make_subject = {
+    target = c:GON
+    type = client_state
+  }
+
+  c:GON = {
+    revive_country = yes
+  }
+}
+
+return_provinces_to_gondor = {
+  if = {
+    limit = {
+      p:1300 = { #Minas Tirith
+        exists = owner
+        owner = ROOT
+      }
+    }
+    p:1300 = { set_conquered_by = c:GON }
+  }
+  every_owned_province = {
+    limit = {
+      OR = {
+        province_dominant_culture = lesser_dunedain
+        province_dominant_culture = gondorian
+      }
+      OR = {
+        is_in_region = ithilien_region
+        is_in_region = anorien_region
+      }
+    }
+    set_conquered_by = c:GON
+  }
+}
+
+release_dol_amorth = {
+  return_provinces_to_dol_amroth = yes
+  make_subject = {
+    target = c:DOR
+    type = client_state
+  }
+
+  c:DOR = {
+    revive_country = yes
+  }
+}
+
+return_provinces_to_dol_amroth = {
+  if = {
+    limit = {
+      p:1403 = { #Mdol amroth
+        exists = owner
+        owner = ROOT
+      }
+    }
+    p:1403 = { set_conquered_by = c:DOR }
+  }
+  every_owned_province = {
+    limit = {
+      OR = {
+        province_dominant_culture = amrothian
+        province_dominant_culture = gondorian
+      }
+      is_in_region = belfalas_region
+    }
+    set_conquered_by = c:DOR
+  }
+  c:DOR = {
+    if = {
+      limit = { has_country_modifier = harassed_by_corsairs }
+      remove_country_modifier = harassed_by_corsairs
+    }
+  }
+}
+
+release_rohan = {
+  return_provinces_to_rohan = yes
+  make_subject = {
+    target = c:ROH
+    type = client_state
+  }
+
+  c:ROH = {
+    revive_country = yes
+  }
+}
+
+return_provinces_to_rohan = {
+  if = {
+    limit = {
+      p:1556 = { #Edoras
+        exists = owner
+        owner = ROOT
+      }
+    }
+    p:1556 = { set_conquered_by = c:ROH }
+  }
+  every_owned_province = {
+    limit = {
+      province_dominant_culture = rohirrim
+      is_in_region = calenardhon_region
+    }
+    set_conquered_by = c:ROH
+  }
+  c:DOR = {
+    if = {
+      limit = { has_country_modifier = influenced_by_saruman }
+      remove_country_modifier = influenced_by_saruman
+    }
+  }
+}
+
 ring_to_shire_effect = {
   if = {
     limit = {
