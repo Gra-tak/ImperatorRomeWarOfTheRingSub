@@ -79,6 +79,30 @@ lotr_config_events.1 = {
 	}
 
 	option = {
+		name = "lotr_config_events.1.disable_culture_accept"
+		trigger = {
+			NOT = {
+				has_variable = lotr_disable_culture_accept
+			}
+		}
+		custom_tooltip = "lotr_config_events.1.disable_culture_accept.tt"
+		trigger_event = {
+			id = lotr_config_events.1
+		}
+		set_variable = {
+			name = lotr_disable_culture_accept
+		}
+	}
+
+	option = {
+		name = "lotr_config_events.1.enable_culture_accept"
+		trigger = {
+			has_variable = lotr_disable_culture_accept
+		}
+		remove_variable = lotr_disable_culture_accept
+	}
+
+	option = {
 		name = "lotr_config_events.1.move_all_foreign_pops"
 		trigger = {
 			NOT = {

@@ -48,6 +48,7 @@
 		
 integrate_same_culture = {
 		potential = {
+			NOT = { has_variable = lotr_disable_culture_accept }
 		}
 		
 		
