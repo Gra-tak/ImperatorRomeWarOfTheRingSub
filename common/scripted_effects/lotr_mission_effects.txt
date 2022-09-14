@@ -636,8 +636,16 @@ revive_country = {
   hidden_effect = {
     add_stability = 50
     add_treasury = 100
+    set_local_variable = {
+      name = freeFam
+      value = num_allowed_families
+    }
+    change_local_variable = {
+      name = freeFam
+      subtract = num_of_families
+    }
     while = {
-      count = num_allowed_families
+      count = local_var:freeFam
       create_character = { save_scope_as = target }
       create_family = scope:target
     }
@@ -694,7 +702,52 @@ release_gondor = {
     type = client_state
   }
 
+  if = {
+    limit = {
+      current_date <= 3100.1.1
+    }
+    create_character = {
+      first_name="Faramir"
+      family = c:GON.fam:Hurionath
+      birth_date=2983.1.1
+      culture="lesser_dunedain"
+      religion="iluvatarism"
+      no_stats=yes
+      add_martial=14
+      add_charisma=10
+      add_finesse=11
+      add_zeal=8
+      no_traits=yes
+      force_add_trait="just"
+      force_add_trait="steadfast"
+      force_add_trait="daring"
+      force_add_trait="house_of_hurin"
+      force_add_trait="blood_of_numenor"
+      force_add_trait="confident"
+      add_gold=200
+      add_popularity=60
+      dna="WtBa0Jdwl3B0cnRyAqYCpgJ4AngCgAKAAmoCagKXApcCewJ7AlsCWwJwAnACiQKJAp4CngKQApACgwKDAo8CjwKLAosCVgJWAnMCcwKrAqsCcgJyAkwCTAJSAlIClwKXAnoCegKeAp4CkwKTAnQCdAKSApICgwKDAmgCaAKRApECawJrAowCjAKVApUCjgKOAq4CrgJ7AnsCbwJvAnsCewJ3AncCfAJ8AnQCdAKJAokCiAKIAlwCXAKEAoQCdwJ3ApYClgJvAm8CdQJ1AkgCSAJcAlwCZQJlAmcCZwKDAoMCnQKdAr4CvgKfAp8BUgFSAXYBdgEDAQMBiwGLAT0BPQCdAJ0A9gD2ATUBNQBYAFgAvwC/AuwC7ABbAFsAPwA/As4CzgCvAK8CjwKPALUAtQFZAVkBkgGSARgBGADNAM0A+gD6ApECkQEkASQA2wDbACgAKACQAJABEQERAKUApQEMAQwBNwE3AG0AbQNrA2sHkAdPAG4AfwLUAtQWmBbaANgA2AxhDGEQVxChEbEROgAAAAAAAAAAAAAAAAAAAAA="
+      save_scope_as = famamir
+    }
+    if = {
+      limit = {
+        current_date > 3070.1.1
+      }
+      create_character = {
+        family = c:GON.fam:Hurionath
+        culture="lesser_dunedain"
+        religion="iluvatarism"
+        age = 0
+        father = scope:famamir
+        no_traits=yes
+        no_stats=yes
+        force_add_trait="house_of_hurin"
+        force_add_trait="blood_of_numenor"
+      }
+    }
+  }
   c:GON = {
+    set_as_ruler = scope:famamir
     revive_country = yes
   }
 }
@@ -731,7 +784,49 @@ release_dol_amorth = {
     type = client_state
   }
 
+  if = {
+    limit = {
+      current_date <= 3070.1.1
+    }
+    create_character = {
+      first_name="Imrahil" #Son of current king
+      family = c:DOR.fam:HouseofDolAmroth
+      birth_date=2955.3.6
+      culture="dolamroth"
+      religion="iluvatarism"
+      father="char:39"
+      mother="char:40"
+      no_stats=yes
+      add_martial=12
+      add_charisma=9
+      add_finesse=5
+      add_zeal=8
+      no_traits=yes
+      add_trait="daring"
+      add_trait="confident"
+      add_gold=140
+      add_popularity=80
+      save_scope_as = Imrahil
+    }
+    if = {
+      limit = {
+        current_date > 3040.1.1
+      }
+      create_character = {
+        family = c:GON.fam:Hurionath
+        age = 0
+        father = scope:Imrahil
+        culture="dolamroth"
+        religion="iluvatarism"
+        no_traits=yes
+        no_stats=yes
+        force_add_trait="house_of_hurin"
+        force_add_trait="blood_of_numenor"
+      }
+    }
+  }
   c:DOR = {
+    set_as_ruler = scope:Imrahil
     revive_country = yes
   }
 }
@@ -749,7 +844,7 @@ return_provinces_to_dol_amroth = {
   every_owned_province = {
     limit = {
       OR = {
-        province_dominant_culture = amrothian
+        province_dominant_culture = dolamroth
         province_dominant_culture = gondorian
       }
       is_in_region = belfalas_region
@@ -771,6 +866,51 @@ release_rohan = {
     type = client_state
   }
 
+  if = {
+    limit = {
+      current_date <= 3070.1.1
+    }
+    create_character = {
+      first_name="Eomer"
+      family = c:DOR.fam:HouseofDolAmroth
+      birth_date=2955.3.6
+      culture="dolamroth"
+      religion="iluvatarism"
+      father="char:39"
+      mother="char:40"
+      no_stats=yes
+      add_martial=12
+      add_charisma=9
+      add_finesse=5
+      add_zeal=8
+      no_traits=yes
+      add_trait="daring"
+      add_trait="confident"
+      add_gold=140
+      add_popularity=80
+      save_scope_as = Imrahil
+    }
+    if = {
+      limit = {
+        current_date > 3040.1.1
+      }
+      create_character = {
+        family = c:GON.fam:Hurionath
+        age = 0
+        father = scope:Imrahil
+        culture="dolamroth"
+        religion="iluvatarism"
+        no_traits=yes
+        no_stats=yes
+        force_add_trait="house_of_hurin"
+        force_add_trait="blood_of_numenor"
+      }
+    }
+  }
+  c:DOR = {
+    set_as_ruler = scope:Imrahil
+    revive_country = yes
+  }
   c:ROH = {
     revive_country = yes
   }
