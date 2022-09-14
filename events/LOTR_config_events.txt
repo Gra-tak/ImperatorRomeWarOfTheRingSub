@@ -18,6 +18,9 @@ lotr_config_events.1 = {
 				has_variable = enabled_full_sauron_conversion_notifications
 			}
 		}
+		trigger_event = {
+			id = lotr_config_events.1
+		}
 		set_variable = {
 			name = enabled_full_sauron_conversion_notifications
 		}
@@ -29,6 +32,9 @@ lotr_config_events.1 = {
 				has_variable = disabled_sauron_conversion_notifications
 				has_variable = enabled_full_sauron_conversion_notifications
 			}
+		}
+		trigger_event = {
+			id = lotr_config_events.1
 		}
 		set_variable = {
 			name = disabled_sauron_conversion_notifications
@@ -42,6 +48,9 @@ lotr_config_events.1 = {
 				has_variable = disabled_sauron_conversion_notifications
 			}
 		}
+		trigger_event = {
+			id = lotr_config_events.1
+		}
 		remove_variable = enabled_full_sauron_conversion_notifications
 		remove_variable = disabled_sauron_conversion_notifications
 	}
@@ -52,6 +61,9 @@ lotr_config_events.1 = {
 			NOT = {
 				has_variable = lotr_disable_government_convert
 			}
+		}
+		trigger_event = {
+			id = lotr_config_events.1
 		}
 		set_variable = {
 			name = lotr_disable_government_convert
@@ -73,6 +85,9 @@ lotr_config_events.1 = {
 				has_variable = lotr_move_all_foreign_pops
 			}
 		}
+		trigger_event = {
+			id = lotr_config_events.1
+		}
 		custom_tooltip = "lotr_config_events.1.move_all_foreign_pops.tt"
 		set_variable = {
 			name = lotr_move_all_foreign_pops
@@ -86,6 +101,9 @@ lotr_config_events.1 = {
 		name = "lotr_config_events.1.move_all_foreign_pops_disable"
 		trigger = {
 			has_variable = lotr_move_all_foreign_pops
+		}
+		trigger_event = {
+			id = lotr_config_events.1
 		}
 		custom_tooltip = "lotr_config_events.1.move_all_foreign_pops_disable.tt"
 		remove_variable = lotr_move_all_foreign_pops
