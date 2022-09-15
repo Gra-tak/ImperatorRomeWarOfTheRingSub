@@ -33,38 +33,38 @@
 
 }
 
-gratak_suicide = {
+# gratak_suicide = {
 
-	on_other_nation = no
-	on_own_nation = yes
-	message = no
+# 	on_other_nation = no
+# 	on_own_nation = yes
+# 	message = no
 	
-	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_give_free_hands"
+# 	sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_give_free_hands"
 	
-	potential_trigger = {
-		scope:target = {
-			employer = {
-				is_ai = no
-			}
-			is_ruler = yes
-			health < 10
-		}
-	}
+# 	potential_trigger = {
+# 		scope:target = {
+# 			employer = {
+# 				is_ai = no
+# 			}
+# 			is_ruler = yes
+# 			health < 10
+# 		}
+# 	}
 
-	allowed_trigger = {
-	}
+# 	allowed_trigger = {
+# 	}
 	
-	effect = {
-		scope:target = {
-			add_health = -10
-		}
-	}
+# 	effect = {
+# 		scope:target = {
+# 			add_health = -10
+# 		}
+# 	}
 	
-	ai_will_do = {
-		factor = 0 #Should use event instead.
-	}
+# 	ai_will_do = {
+# 		factor = 0 #Should use event instead.
+# 	}
 	
-}
+# }
 
 
 

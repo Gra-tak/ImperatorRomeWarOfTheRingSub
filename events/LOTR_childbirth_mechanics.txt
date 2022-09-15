@@ -1,11 +1,11 @@
-﻿namespace = br_childbirth
+﻿namespace = lotr_childbirth
 
 ###Human women loosing their ability for childbirth
-br_childbirth.1 = {
+lotr_childbirth.1 = {
 	
 	type = character_event
-	title = "br_childbirth.1.t"
-	desc = "br_childbirth.1.desc"
+	title = "lotr_childbirth.1.t"
+	desc = "lotr_childbirth.1.desc"
 	picture = dunedain_patrol
 	hidden = yes
 	
@@ -33,7 +33,7 @@ br_childbirth.1 = {
 	}
 	
 	option = {
-		name = "br_childbirth.1.a"
+		name = "lotr_childbirth.1.a"
 		add_trait = barren
 	}
 }
@@ -43,23 +43,23 @@ br_childbirth.1 = {
 # 		father = {
 # 			random_events = {
 # 				90 = 0
-# 				10 = br_childbirth.2
+# 				10 = lotr_childbirth.2
 # 			}
 # 		}
 # 		mother = {
 # 			random_events = {
 # 				90 = 0
-# 				10 = br_childbirth.2
+# 				10 = lotr_childbirth.2
 # 			}
 # 		}
 # 	}
 
 ###Elves and dwarfs stopping to have children
-br_childbirth.2 = {
+lotr_childbirth.2 = {
 	
 	type = character_event
-	title = "br_childbirth.1.t"
-	desc = "br_childbirth.1.desc"
+	title = "lotr_childbirth.1.t"
+	desc = "lotr_childbirth.1.desc"
 	picture = dunedain_patrol
 	hidden = yes
 	
@@ -152,7 +152,7 @@ br_childbirth.2 = {
 	}
 	
 	option = {
-		name = "br_childbirth.1.a"
+		name = "lotr_childbirth.1.a"
 		add_trait = asexual
 		scope:newborn = {
 			father = { 

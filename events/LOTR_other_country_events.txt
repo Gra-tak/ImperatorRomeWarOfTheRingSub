@@ -2,78 +2,78 @@
 
 #treasures found in orc country
 lotr_other_country_events.1 = {
-  type = country_event
-  title = "lotr_other_country_events.1.t"
-  desc = "lotr_other_country_events.1.desc"
-  picture = dunedain_patrol
-  trigger = {
-  	any_in_list = {
-  		list = saved_treasures
-  	}
-  }
-  immediate = {
-    every_in_list = {
-      list = saved_treasures
-      transfer_treasure_to_country = ROOT
-    }
-  }
-  option = {
-    name = OK
-  }
+	type = country_event
+	title = "lotr_other_country_events.1.t"
+	desc = "lotr_other_country_events.1.desc"
+	picture = dunedain_patrol
+	trigger = {
+		any_in_list = {
+			list = saved_treasures
+		}
+	}
+	immediate = {
+		every_in_list = {
+			list = saved_treasures
+			transfer_treasure_to_country = ROOT
+		}
+	}
+	option = {
+		name = OK
+	}
 }
 
 #Mordor rewards country (used for Angmar so far)
 lotr_other_country_events.2 = {
-  type = country_event
-  title = "lotr_other_country_events.2.t"
-  desc = "lotr_other_country_events.2.desc"
-  picture = event_barad_dur_eye
-  trigger = {
-  }
-  immediate = {
-    add_opinion = {
-      modifier = sauron_worship_modifier
-      target = c:MOR
-    }
-    c:MOR = {
-      add_opinion = {
-        modifier = sauron_loyal_servant
-        target = ROOT
-      }
-    }
-  }
-  option = {
-    name = "lotr_other_country_events.2.a"
-    trigger = {
-      scope:target = {
-        is_alive = yes
-      }
-    }
-    scope:target = {
-      move_country = ROOT
-    }
-    set_as_ruler = scope:target
-    ai_chance = {
-      base = 100
-    }
-  }
-  option = {
-    name = "lotr_other_country_events.2.b"
-    trigger = {
-      is_ai = no
-      scope:target = {
-        is_alive = yes
-      }
-    }
-    scope:target = {
-      move_country = ROOT
-    }
-  }
-  option = {
-    name = "lotr_other_country_events.2.c"
-    ai_chance = {
-      base = 1
-    }
-    add_treasury = capped_gain_6
-  }
+	type = country_event
+	title = "lotr_other_country_events.2.t"
+	desc = "lotr_other_country_events.2.desc"
+	picture = event_barad_dur_eye
+	trigger = {
+	}
+	immediate = {
+		add_opinion = {
+			modifier = sauron_worship_modifier
+			target = c:MOR
+		}
+		c:MOR = {
+			add_opinion = {
+				modifier = sauron_loyal_servant
+				target = ROOT
+			}
+		}
+	}
+	option = {
+		name = "lotr_other_country_events.2.a"
+		trigger = {
+			scope:target = {
+				is_alive = yes
+			}
+		}
+		scope:target = {
+			move_country = ROOT
+		}
+		set_as_ruler = scope:target
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = "lotr_other_country_events.2.b"
+		trigger = {
+			is_ai = no
+			scope:target = {
+				is_alive = yes
+			}
+		}
+		scope:target = {
+			move_country = ROOT
+		}
+	}
+	option = {
+		name = "lotr_other_country_events.2.c"
+		ai_chance = {
+			base = 1
+		}
+		add_treasury = capped_gain_6
+	}
 }

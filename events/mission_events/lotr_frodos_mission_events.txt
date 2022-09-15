@@ -16,814 +16,814 @@
 
 #hobbits start
 lotr_frodos_mission_events.10 = {
-  type = country_event
-  title = lotr_frodos_mission_events.10.t
-  desc = lotr_frodos_mission_events.10.desc
-  picture = event_bree_pipeweed
+	type = country_event
+	title = lotr_frodos_mission_events.10.t
+	desc = lotr_frodos_mission_events.10.desc
+	picture = event_bree_pipeweed
 
-  left_portrait = scope:frodo
-  left_portrait = scope:sam
-  right_portrait = scope:gandalf
-  trigger = {
-   
-  }
-  immediate = {
-    if = {
-      limit = { this = scope:frodo_protector_country }
-      every_in_list = {
-        list = fellowship
-        if = {
-          limit = {
-            exists = c:CAR
-            c:CAR = { has_land = yes }
-          }
-          move_country = c:CAR
-        }
-        else = {
-          move_country = scope:frodo_protector_country
-        }
-      }
-      scope:gandalf = {
-        if = {
-          limit = {
-            exists = c:XVX
-            c:XVX = { has_land = yes }
-          }
-          move_country = c:XVX
-          c:XVX = {
-            imprison = {
-              target = scope:gandalf
-            }
-          }
-        }
-        else = {
-          move_country = scope:frodo_protector_country
-        }
-      }
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.10.a
-  }
+	left_portrait = scope:frodo
+	left_portrait = scope:sam
+	right_portrait = scope:gandalf
+	trigger = {
+	 
+	}
+	immediate = {
+		if = {
+			limit = { this = scope:frodo_protector_country }
+			every_in_list = {
+				list = fellowship
+				if = {
+					limit = {
+						exists = c:CAR
+						c:CAR = { has_land = yes }
+					}
+					move_country = c:CAR
+				}
+				else = {
+					move_country = scope:frodo_protector_country
+				}
+			}
+			scope:gandalf = {
+				if = {
+					limit = {
+						exists = c:XVX
+						c:XVX = { has_land = yes }
+					}
+					move_country = c:XVX
+					c:XVX = {
+						imprison = {
+							target = scope:gandalf
+						}
+					}
+				}
+				else = {
+					move_country = scope:frodo_protector_country
+				}
+			}
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.10.a
+	}
 }
 
 #player told that hobbits may now reach imladris (soon)
 lotr_frodos_mission_events.11 = {
-  type = country_event
-  title = lotr_frodos_mission_events.11.t
-  desc = lotr_frodos_mission_events.11.desc
-  picture = event_nazgul_riders
-  left_portrait = scope:frodo
-  left_portrait = scope:sam
-  right_portrait = scope:pippin
-  right_portrait = scope:merry
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.11.a
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.11.t
+	desc = lotr_frodos_mission_events.11.desc
+	picture = event_nazgul_riders
+	left_portrait = scope:frodo
+	left_portrait = scope:sam
+	right_portrait = scope:pippin
+	right_portrait = scope:merry
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.11.a
+	}
 }
 
 #reaching imladris
 lotr_frodos_mission_events.20 = {
-  type = country_event
-  title = lotr_frodos_mission_events.20.t
-  desc = lotr_frodos_mission_events.20.desc
-  picture = event_imladris
-  left_portrait = scope:frodo
-  left_portrait = scope:sam
-  right_portrait = char:15
-  right_portrait = scope:gandalf
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.20.a
-    c:XVX = {
-      release_prisoner = {
-        target = scope:gandalf
-      }
-    }
-    every_in_list = {
-      list = fellowship
-      if = {
-        limit = {
-          exists = c:IML
-          c:IML = { has_land = yes }
-        }
-        move_country = c:IML
-      }
-      else = {
-        move_country = scope:frodo_protector_country
-      }
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.20.t
+	desc = lotr_frodos_mission_events.20.desc
+	picture = event_imladris
+	left_portrait = scope:frodo
+	left_portrait = scope:sam
+	right_portrait = char:15
+	right_portrait = scope:gandalf
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.20.a
+		c:XVX = {
+			release_prisoner = {
+				target = scope:gandalf
+			}
+		}
+		every_in_list = {
+			list = fellowship
+			if = {
+				limit = {
+					exists = c:IML
+					c:IML = { has_land = yes }
+				}
+				move_country = c:IML
+			}
+			else = {
+				move_country = scope:frodo_protector_country
+			}
+		}
+	}
 }
 
 #council of elrond
 lotr_frodos_mission_events.30 = {
-  type = country_event
-  title = lotr_frodos_mission_events.30.t
-  desc = lotr_frodos_mission_events.30.desc
-  picture = event_council_of_elrond
-  left_portrait = scope:frodo
-  left_portrait = char:57
-  right_portrait = char:15
-  right_portrait = scope:gandalf
-  trigger = {
-   
-  }
-  immediate = {
-    if = {
-      limit = {
-        OR = {
-          scope:frodo_protector_country = c:CAR
-          scope:frodo_protector_country = c:ARN
-        }
-      }
-      treasure:lotr_treasure_star_elendil = { #aragorn is given the star of Elendil (the copy that was kept save in Imladris) as in the book
-        transfer_treasure_to_country = scope:frodo_protector_country
-      }
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.30.a
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.30.t
+	desc = lotr_frodos_mission_events.30.desc
+	picture = event_council_of_elrond
+	left_portrait = scope:frodo
+	left_portrait = char:57
+	right_portrait = char:15
+	right_portrait = scope:gandalf
+	trigger = {
+	 
+	}
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					scope:frodo_protector_country = c:CAR
+					scope:frodo_protector_country = c:ARN
+				}
+			}
+			treasure:lotr_treasure_star_elendil = { #aragorn is given the star of Elendil (the copy that was kept save in Imladris) as in the book
+				transfer_treasure_to_country = scope:frodo_protector_country
+			}
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.30.a
+	}
 }
 
 #on the way south
 lotr_frodos_mission_events.31 = {
-  type = country_event
-  title = lotr_frodos_mission_events.31.t
-  desc = lotr_frodos_mission_events.31.desc
-  picture = event_travel_ruin
-  left_portrait = scope:frodo
-  left_portrait = scope:sam
-  right_portrait = char:15
-  right_portrait = scope:gandalf
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.31.a
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.31.t
+	desc = lotr_frodos_mission_events.31.desc
+	picture = event_travel_ruin
+	left_portrait = scope:frodo
+	left_portrait = scope:sam
+	right_portrait = char:15
+	right_portrait = scope:gandalf
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.31.a
+	}
 }
 
 
 #moria
 lotr_frodos_mission_events.40 = {
-  type = country_event
-  title = lotr_frodos_mission_events.40.t
-  desc = lotr_frodos_mission_events.40.desc
-  picture = event_moria_entrance
-  left_portrait = scope:frodo
-  left_portrait = char:63
-  right_portrait = char:15
-  right_portrait = scope:gandalf
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.40.a
-    scope:gandalf = {
-      remove_from_list = fellowship
-      death = {
-        death_reason = death_claimed_by_the_underworld
-      }
-    }
-    every_in_list = {
-      list = fellowship
-      if = {
-        limit = {
-          exists = c:LOR
-          c:LOR = { has_land = yes }
-        }
-        move_country = c:LOR
-      }
-      else = {
-        move_country = scope:frodo_protector_country
-      }
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.40.t
+	desc = lotr_frodos_mission_events.40.desc
+	picture = event_moria_entrance
+	left_portrait = scope:frodo
+	left_portrait = char:63
+	right_portrait = char:15
+	right_portrait = scope:gandalf
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.40.a
+		scope:gandalf = {
+			remove_from_list = fellowship
+			death = {
+				death_reason = death_claimed_by_the_underworld
+			}
+		}
+		every_in_list = {
+			list = fellowship
+			if = {
+				limit = {
+					exists = c:LOR
+					c:LOR = { has_land = yes }
+				}
+				move_country = c:LOR
+			}
+			else = {
+				move_country = scope:frodo_protector_country
+			}
+		}
+	}
 }
 
 #rohan
 lotr_frodos_mission_events.45 = {
-  type = country_event
-  title = lotr_frodos_mission_events.45.t
-  desc = lotr_frodos_mission_events.45.desc
-  picture = event_orc_wargriders
-  left_portrait = scope:frodo
-  left_portrait = char:76
-  right_portrait = char:15
-  right_portrait = scope:gandalf
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.45.a
-    scope:gandalf = {
-      remove_from_list = fellowship
-      death = {
-        death_reason = death_claimed_by_the_underworld
-      }
-    }
-    every_in_list = {
-      list = fellowship
-      if = {
-        limit = {
-          exists = c:ROH
-          c:ROH = { has_land = yes }
-        }
-        move_country = c:ROH
-      }
-      else = {
-        move_country = scope:frodo_protector_country
-      }
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.45.t
+	desc = lotr_frodos_mission_events.45.desc
+	picture = event_orc_wargriders
+	left_portrait = scope:frodo
+	left_portrait = char:76
+	right_portrait = char:15
+	right_portrait = scope:gandalf
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.45.a
+		scope:gandalf = {
+			remove_from_list = fellowship
+			death = {
+				death_reason = death_claimed_by_the_underworld
+			}
+		}
+		every_in_list = {
+			list = fellowship
+			if = {
+				limit = {
+					exists = c:ROH
+					c:ROH = { has_land = yes }
+				}
+				move_country = c:ROH
+			}
+			else = {
+				move_country = scope:frodo_protector_country
+			}
+		}
+	}
 }
 
 #leaving lorien
 lotr_frodos_mission_events.50 = {
-  type = country_event
-  title = lotr_frodos_mission_events.50.t
-  desc = lotr_frodos_mission_events.50.desc
-  picture = event_light_of_earendil
-  left_portrait = scope:frodo
-  left_portrait = char:15
-  right_portrait = char:76
-  right_portrait = char:63
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.50.a
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.50.t
+	desc = lotr_frodos_mission_events.50.desc
+	picture = event_light_of_earendil
+	left_portrait = scope:frodo
+	left_portrait = char:15
+	right_portrait = char:76
+	right_portrait = char:63
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.50.a
+	}
 }
 
 #leaving lorien done
 lotr_frodos_mission_events.51 = {
-  type = country_event
-  title = lotr_frodos_mission_events.51.t
-  desc = lotr_frodos_mission_events.51.desc
-  picture = city_siege
-  left_portrait = scope:frodo
-  left_portrait = char:15
-  right_portrait = char:76
-  right_portrait = char:63
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.51.a
-    if = {
-      limit = {
-        c:XVX = { has_land = yes } #isengard
-      }
-      char:29 = {
-        death = {
-          death_reason = death_battle
-        }
-      }
-    }
-    frodo_to_ithilien = yes
-    other_to_rohan = yes
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.51.t
+	desc = lotr_frodos_mission_events.51.desc
+	picture = city_siege
+	left_portrait = scope:frodo
+	left_portrait = char:15
+	right_portrait = char:76
+	right_portrait = char:63
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.51.a
+		if = {
+			limit = {
+				c:XVX = { has_land = yes } #isengard
+			}
+			char:29 = {
+				death = {
+					death_reason = death_battle
+				}
+			}
+		}
+		frodo_to_ithilien = yes
+		other_to_rohan = yes
+	}
 }
 
 #leaving rohan
 lotr_frodos_mission_events.55 = {
-  type = country_event
-  title = lotr_frodos_mission_events.55.t
-  desc = lotr_frodos_mission_events.55.desc
-  picture = event_rohan_riders
-  left_portrait = scope:frodo
-  left_portrait = char:15
-  right_portrait = char:76
-  right_portrait = char:63
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.55.a
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.55.t
+	desc = lotr_frodos_mission_events.55.desc
+	picture = event_rohan_riders
+	left_portrait = scope:frodo
+	left_portrait = char:15
+	right_portrait = char:76
+	right_portrait = char:63
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.55.a
+	}
 }
 
 #leaving rohan done
 lotr_frodos_mission_events.56 = {
-  type = country_event
-  title = lotr_frodos_mission_events.56.t
-  desc = lotr_frodos_mission_events.56.desc
-  picture = city_siege
-  left_portrait = scope:frodo
-  left_portrait = char:15
-  right_portrait = char:76
-  right_portrait = char:63
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.56.a
-    frodo_to_ithilien = yes
-    gandalf_to_gondor = yes
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.56.t
+	desc = lotr_frodos_mission_events.56.desc
+	picture = city_siege
+	left_portrait = scope:frodo
+	left_portrait = char:15
+	right_portrait = char:76
+	right_portrait = char:63
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.56.a
+		frodo_to_ithilien = yes
+		gandalf_to_gondor = yes
+	}
 }
 
 #defended gondor
 lotr_frodos_mission_events.60 = {
-  type = country_event
-  title = lotr_frodos_mission_events.60.t
-  desc = lotr_frodos_mission_events.60.desc
-  picture = event_hobbit_after_battle
-  left_portrait = scope:frodo
-  left_portrait = char:15
-  right_portrait = scope:gandalf
-  right_portrait = char:27
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.60.a
-    if = {
-      limit = {
-        has_completed_mission_task = lotr_depart_from_lorien
-      }
-      gandalf_to_gondor = yes
-    }
-    every_in_list = {
-      list = fellowshipStayRohan
-      if = {
-        limit = {
-          exists = c:GON
-          c:GON = { has_land = yes }
-        }
-        move_country = c:GON
-      }
-      else = {
-        move_country = scope:frodo_protector_country
-      }
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.60.t
+	desc = lotr_frodos_mission_events.60.desc
+	picture = event_hobbit_after_battle
+	left_portrait = scope:frodo
+	left_portrait = char:15
+	right_portrait = scope:gandalf
+	right_portrait = char:27
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.60.a
+		if = {
+			limit = {
+				has_completed_mission_task = lotr_depart_from_lorien
+			}
+			gandalf_to_gondor = yes
+		}
+		every_in_list = {
+			list = fellowshipStayRohan
+			if = {
+				limit = {
+					exists = c:GON
+					c:GON = { has_land = yes }
+				}
+				move_country = c:GON
+			}
+			else = {
+				move_country = scope:frodo_protector_country
+			}
+		}
+	}
 }
 
 #distract sauron
 lotr_frodos_mission_events.70 = {
-  type = country_event
-  title = lotr_frodos_mission_events.70.t
-  desc = lotr_frodos_mission_events.70.desc
-  picture = throneroom
-  left_portrait = scope:frodo
-  left_portrait = scope:gandalf
-  right_portrait = char:15
-  right_portrait = char:76
-  right_portrait = char:63
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.70.a
-    every_in_list = {
-      list = frodoSam
-      if = {
-        limit = {
-          exists = c:MOR
-          c:MOR = { has_land = yes }
-        }
-        move_country = c:MOR
-      }
-      else = {
-        move_country = scope:frodo_protector_country
-      }
-    }
-    set_variable = {
-      name = sauron_distracted_counter
-      value = 0
-    }
-    trigger_event = {
-      id = lotr_frodos_mission_events.71
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.70.t
+	desc = lotr_frodos_mission_events.70.desc
+	picture = throneroom
+	left_portrait = scope:frodo
+	left_portrait = scope:gandalf
+	right_portrait = char:15
+	right_portrait = char:76
+	right_portrait = char:63
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.70.a
+		every_in_list = {
+			list = frodoSam
+			if = {
+				limit = {
+					exists = c:MOR
+					c:MOR = { has_land = yes }
+				}
+				move_country = c:MOR
+			}
+			else = {
+				move_country = scope:frodo_protector_country
+			}
+		}
+		set_variable = {
+			name = sauron_distracted_counter
+			value = 0
+		}
+		trigger_event = {
+			id = lotr_frodos_mission_events.71
+		}
+	}
 }
 
 #distract sauron
 lotr_frodos_mission_events.71 = {
-  type = country_event
-  hidden = yes
-  trigger = {
-    NOT = { has_variable = lotr_frodos_mission_activated_variable } #mission cancelled
-  }
-  immediate = {
-    if = {
-      limit = {
-        var:sauron_distracted_counter > 600
-      }
-      trigger_event = {
-        id = lotr_frodos_mission_events.72
-      }
-    }
-    else = {
-      trigger_event = {
-        id = lotr_frodos_mission_events.71
-        days = 30
-      }
-      if = {
-        limit = { distracting_sauron_black_gate = yes }
-        change_variable = {
-          name = sauron_distracted_counter
-          add = 30
-        }
-      }
-      else = {
-        set_variable = {
-          name = sauron_distracted_counter
-          value = 0
-        }
-      }
-    }
-  }
-  option = {
-    name = "OK"
-  }
+	type = country_event
+	hidden = yes
+	trigger = {
+		NOT = { has_variable = lotr_frodos_mission_activated_variable } #mission cancelled
+	}
+	immediate = {
+		if = {
+			limit = {
+				var:sauron_distracted_counter > 600
+			}
+			trigger_event = {
+				id = lotr_frodos_mission_events.72
+			}
+		}
+		else = {
+			trigger_event = {
+				id = lotr_frodos_mission_events.71
+				days = 30
+			}
+			if = {
+				limit = { distracting_sauron_black_gate = yes }
+				change_variable = {
+					name = sauron_distracted_counter
+					add = 30
+				}
+			}
+			else = {
+				set_variable = {
+					name = sauron_distracted_counter
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
 }
 
 #sauron distracted
 lotr_frodos_mission_events.72 = {
-  type = country_event
-  title = lotr_frodos_mission_events.72.t
-  desc = lotr_frodos_mission_events.72.desc
-  picture = event_battle_black_gate
-  left_portrait = scope:frodo
-  left_portrait = scope:gandalf
-  right_portrait = char:15
-  right_portrait = char:76
-  right_portrait = char:63
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.72.a
-    set_variable = {
-      name = sauron_fully_distracted
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.72.t
+	desc = lotr_frodos_mission_events.72.desc
+	picture = event_battle_black_gate
+	left_portrait = scope:frodo
+	left_portrait = scope:gandalf
+	right_portrait = char:15
+	right_portrait = char:76
+	right_portrait = char:63
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.72.a
+		set_variable = {
+			name = sauron_fully_distracted
+		}
+	}
 }
 
 #keep sieging
 lotr_frodos_mission_events.73 = {
-  type = country_event
-  title = lotr_frodos_mission_events.73.t
-  desc = lotr_frodos_mission_events.73.desc
-  picture = event_battle_black_gate
-  left_portrait = scope:frodo
-  left_portrait = scope:gandalf
-  right_portrait = char:15
-  right_portrait = char:76
-  right_portrait = char:63
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.73.a
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.73.t
+	desc = lotr_frodos_mission_events.73.desc
+	picture = event_battle_black_gate
+	left_portrait = scope:frodo
+	left_portrait = scope:gandalf
+	right_portrait = char:15
+	right_portrait = char:76
+	right_portrait = char:63
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.73.a
+	}
 }
 
 #you need to start sieging
 lotr_frodos_mission_events.74 = {
-  type = country_event
-  title = lotr_frodos_mission_events.74.t
-  desc = lotr_frodos_mission_events.74.desc
-  picture = event_battle_black_gate
-  left_portrait = scope:frodo
-  left_portrait = scope:gandalf
-  right_portrait = char:15
-  right_portrait = char:76
-  right_portrait = char:63
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.74.a
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.74.t
+	desc = lotr_frodos_mission_events.74.desc
+	picture = event_battle_black_gate
+	left_portrait = scope:frodo
+	left_portrait = scope:gandalf
+	right_portrait = char:15
+	right_portrait = char:76
+	right_portrait = char:63
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.74.a
+	}
 }
 
 #ring destroyed
 lotr_frodos_mission_events.80 = {
-  type = country_event
-  title = lotr_frodos_mission_events.80.t
-  desc = lotr_frodos_mission_events.80.desc
-  picture = event_one_ring_lava
-  left_portrait = scope:frodo
-  left_portrait = scope:sam
-  right_portrait = scope:merry
-  right_portrait = scope:pippin
-  trigger = {
-   
-  }
-  immediate = {
-    scope:gandalf = {
-      add_to_list = fellowship
-    }
-    every_in_list = {
-      list = fellowship
-      move_country = scope:frodo_protector_country
-    } #todo: return home, travel to valinor. remove olympic from the remaining hobbits
-    if = {
-      limit = {
-        c:SHI = { has_land = yes }
-      }
-      c:SHI = {
-        set_variable = {
-          name = samScopeVar
-          value = scope:sam
-        }
-        hidden_effect = {
-          create_character = {
-            first_name="Rose 'Rosie'"
-            family_name="Cotton"
-            female = yes
-            age=22
-            culture="harfoot"
-            religion="iluvatarism"
-            no_stats=yes
-            add_martial=1
-            add_charisma=16
-            add_finesse=16
-            add_zeal=8
-            force_add_trait="halfling"
-            force_add_trait="olympic_competitor"
-            save_scope_as = rosie
-          }
-        }
-      }
-      trigger_event = {
-        id = lotr_frodos_mission_events.81
-        # days = 1
-        days = 365
-      }
-    }
-    ring_destroyed_effect = yes
-  }
-  #keep fighting
-  option = {
-    name = lotr_frodos_mission_events.80.a
-  }
-  #peace out non-orcs
-  option = {
-    name = lotr_frodos_mission_events.80.b
-    every_country = {
-      limit = { 
-        war = yes
-        religion = melkorism
-        NOT = { country_culture_group = orcs_group }
-        in_range_of_saurons_call = yes
-      }
-      every_current_war = {
-        if = {
-          limit = { 
-            is_war_leader = PREV
-            any_war_defender = { religion = iluvatarism }
-          }
-          force_white_peace = THIS
-        }
-      }
-    }
-  }
-  #peace out all
-  option = {
-    name = lotr_frodos_mission_events.80.c
-    every_country = {
-      limit = { 
-        war = yes
-        OR = {
-          religion = melkorism
-          country_culture_group = orcs_group
-        }
-        in_range_of_saurons_call = yes
-      }
-      every_current_war = {
-        if = {
-          limit = { 
-            is_war_leader = PREV
-            any_war_defender = { religion = iluvatarism }
-          }
-          force_white_peace = THIS
-        }
-      }
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.80.t
+	desc = lotr_frodos_mission_events.80.desc
+	picture = event_one_ring_lava
+	left_portrait = scope:frodo
+	left_portrait = scope:sam
+	right_portrait = scope:merry
+	right_portrait = scope:pippin
+	trigger = {
+	 
+	}
+	immediate = {
+		scope:gandalf = {
+			add_to_list = fellowship
+		}
+		every_in_list = {
+			list = fellowship
+			move_country = scope:frodo_protector_country
+		} #todo: return home, travel to valinor. remove olympic from the remaining hobbits
+		if = {
+			limit = {
+				c:SHI = { has_land = yes }
+			}
+			c:SHI = {
+				set_variable = {
+					name = samScopeVar
+					value = scope:sam
+				}
+				hidden_effect = {
+					create_character = {
+						first_name="Rose 'Rosie'"
+						family_name="Cotton"
+						female = yes
+						age=22
+						culture="harfoot"
+						religion="iluvatarism"
+						no_stats=yes
+						add_martial=1
+						add_charisma=16
+						add_finesse=16
+						add_zeal=8
+						force_add_trait="halfling"
+						force_add_trait="olympic_competitor"
+						save_scope_as = rosie
+					}
+				}
+			}
+			trigger_event = {
+				id = lotr_frodos_mission_events.81
+				# days = 1
+				days = 365
+			}
+		}
+		ring_destroyed_effect = yes
+	}
+	#keep fighting
+	option = {
+		name = lotr_frodos_mission_events.80.a
+	}
+	#peace out non-orcs
+	option = {
+		name = lotr_frodos_mission_events.80.b
+		every_country = {
+			limit = { 
+				war = yes
+				religion = melkorism
+				NOT = { country_culture_group = orcs_group }
+				in_range_of_saurons_call = yes
+			}
+			every_current_war = {
+				if = {
+					limit = { 
+						is_war_leader = PREV
+						any_war_defender = { religion = iluvatarism }
+					}
+					force_white_peace = THIS
+				}
+			}
+		}
+	}
+	#peace out all
+	option = {
+		name = lotr_frodos_mission_events.80.c
+		every_country = {
+			limit = { 
+				war = yes
+				OR = {
+					religion = melkorism
+					country_culture_group = orcs_group
+				}
+				in_range_of_saurons_call = yes
+			}
+			every_current_war = {
+				if = {
+					limit = { 
+						is_war_leader = PREV
+						any_war_defender = { religion = iluvatarism }
+					}
+					force_white_peace = THIS
+				}
+			}
+		}
+	}
 }
 
 #hobbits return home
 lotr_frodos_mission_events.81 = {
-  type = country_event
-  title = lotr_frodos_mission_events.81.t
-  desc = lotr_frodos_mission_events.81.desc
-  picture = event_hobbit_marriage
-  left_portrait = scope:frodo
-  left_portrait = scope:sam
-  left_portrait = scope:rosie
-  right_portrait = scope:merry
-  right_portrait = scope:pippin
+	type = country_event
+	title = lotr_frodos_mission_events.81.t
+	desc = lotr_frodos_mission_events.81.desc
+	picture = event_hobbit_marriage
+	left_portrait = scope:frodo
+	left_portrait = scope:sam
+	left_portrait = scope:rosie
+	right_portrait = scope:merry
+	right_portrait = scope:pippin
 
-  immediate = {
-    scope:sam = { 
-      add_martial = 5
-      add_charisma = 3
-      add_finesse = 3
-    }
-    scope:merry = { 
-      add_martial = 2
-      add_charisma = 3
-      add_finesse = 3
-      add_zeal = 3
-    }
-    scope:pippin = { 
-      add_martial = 2
-      add_charisma = 3
-      add_finesse = 3
-      add_zeal = 3
-    }
-    scope:frodo = { 
-      add_martial = 5
-      add_charisma = 3
-      add_finesse = 3
-    }
-    every_in_list = {
-      list = fellowship
-      if = {
-        limit = {
-          NOT = { has_variable = gandalf_flag }
-        }
-        move_country = c:SHI
-        remove_trait = olympic_competitor
-      }
-    }
-    scope:rosie = {
-      remove_trait = olympic_competitor
-      marry_character = scope:sam
-    }
-    c:SHI = {
-      set_as_ruler = scope:frodo
-    }
-    trigger_event = {
-      id = lotr_frodos_mission_events.82
-      # days = 1
-      days = 365
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.81.a
-  }
+	immediate = {
+		scope:sam = { 
+			add_martial = 5
+			add_charisma = 3
+			add_finesse = 3
+		}
+		scope:merry = { 
+			add_martial = 2
+			add_charisma = 3
+			add_finesse = 3
+			add_zeal = 3
+		}
+		scope:pippin = { 
+			add_martial = 2
+			add_charisma = 3
+			add_finesse = 3
+			add_zeal = 3
+		}
+		scope:frodo = { 
+			add_martial = 5
+			add_charisma = 3
+			add_finesse = 3
+		}
+		every_in_list = {
+			list = fellowship
+			if = {
+				limit = {
+					NOT = { has_variable = gandalf_flag }
+				}
+				move_country = c:SHI
+				remove_trait = olympic_competitor
+			}
+		}
+		scope:rosie = {
+			remove_trait = olympic_competitor
+			marry_character = scope:sam
+		}
+		c:SHI = {
+			set_as_ruler = scope:frodo
+		}
+		trigger_event = {
+			id = lotr_frodos_mission_events.82
+			# days = 1
+			days = 365
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.81.a
+	}
 }
 
 #to valinor
 lotr_frodos_mission_events.82 = {
-  type = country_event
-  title = lotr_frodos_mission_events.82.t
-  desc = lotr_frodos_mission_events.82.desc
-  picture = great_city
-  left_portrait = scope:frodo
-  left_portrait = scope:gandalf
-  right_portrait = char:57
-  right_portrait = char:17
-  right_portrait = char:18
+	type = country_event
+	title = lotr_frodos_mission_events.82.t
+	desc = lotr_frodos_mission_events.82.desc
+	picture = great_city
+	left_portrait = scope:frodo
+	left_portrait = scope:gandalf
+	right_portrait = char:57
+	right_portrait = char:17
+	right_portrait = char:18
 
-  immediate = {
-    trigger_event = {
-      id = lotr_frodos_mission_events.83
-      # days = 1
-      days = 365
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.82.a
-    custom_tooltip = lotr_frodos_mission_events.82.a.tt
-    hidden_effect = {
-      scope:frodo = { add_to_list = depart }
-      scope:gandalf = { add_to_list = depart }
-      char:57 = { #elrond
-        if = { 
-          limit = {
-            is_alive = yes
-            country = {
-              is_ai = yes
-            }
-          }
-          add_to_list = depart
-        }
-      }
-      char:17 = { #galadriel
-        if = { 
-          limit = {
-            is_alive = yes
-            country = {
-              is_ai = yes
-            }
-          }
-          add_to_list = depart
-        }
-      }
-      char:18 = { #celeborn
-        if = { 
-          limit = {
-            is_alive = yes
-            country = {
-              is_ai = yes
-            }
-          }
-          add_to_list = depart
-        }
-      }
-      every_in_list = {
-        list = depart
-        death = {
-          death_reason = departed_for_valinor
-        }
-      }
-    }
-  }
+	immediate = {
+		trigger_event = {
+			id = lotr_frodos_mission_events.83
+			# days = 1
+			days = 365
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.82.a
+		custom_tooltip = lotr_frodos_mission_events.82.a.tt
+		hidden_effect = {
+			scope:frodo = { add_to_list = depart }
+			scope:gandalf = { add_to_list = depart }
+			char:57 = { #elrond
+				if = { 
+					limit = {
+						is_alive = yes
+						country = {
+							is_ai = yes
+						}
+					}
+					add_to_list = depart
+				}
+			}
+			char:17 = { #galadriel
+				if = { 
+					limit = {
+						is_alive = yes
+						country = {
+							is_ai = yes
+						}
+					}
+					add_to_list = depart
+				}
+			}
+			char:18 = { #celeborn
+				if = { 
+					limit = {
+						is_alive = yes
+						country = {
+							is_ai = yes
+						}
+					}
+					add_to_list = depart
+				}
+			}
+			every_in_list = {
+				list = depart
+				death = {
+					death_reason = departed_for_valinor
+				}
+			}
+		}
+	}
 }
 
 #sam becomes major
 lotr_frodos_mission_events.83 = {
-  type = country_event
-  title = lotr_frodos_mission_events.83.t
-  desc = lotr_frodos_mission_events.83.desc
-  picture = event_sam
+	type = country_event
+	title = lotr_frodos_mission_events.83.t
+	desc = lotr_frodos_mission_events.83.desc
+	picture = event_sam
 
 
-  left_portrait = current_ruler
-  right_portrait = scope:sam
+	left_portrait = current_ruler
+	right_portrait = scope:sam
 
-  trigger = {
-    scope:sam = {
-      is_alive = yes
-    }
-  }
+	trigger = {
+		scope:sam = {
+			is_alive = yes
+		}
+	}
 
-  immediate = {
-    c:SHI = {
-      set_as_ruler = scope:sam
-      set_variable = {
-        name = sam_stays_ruler
-        days = 17880
-        # days = 2
-      }
-      set_variable = {
-        name = sam_in_shire
-      }
-      var:samScopeVar = {
-        set_variable = {
-          name = long_lived_flag
-        }
-      }
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.83.a
-  }
+	immediate = {
+		c:SHI = {
+			set_as_ruler = scope:sam
+			set_variable = {
+				name = sam_stays_ruler
+				days = 17880
+				# days = 2
+			}
+			set_variable = {
+				name = sam_in_shire
+			}
+			var:samScopeVar = {
+				set_variable = {
+					name = long_lived_flag
+				}
+			}
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.83.a
+	}
 }
 
 #sam stays major
 lotr_frodos_mission_events.84 = {
-  type = country_event
-  hidden = yes
+	type = country_event
+	hidden = yes
 
-  trigger = {
-    tag = SHI
-    has_variable = sam_in_shire
-    current_ruler = {
-      NOT = { has_variable = samScopeVar }
-    }
-    var:samScopeVar = {
-      is_alive = yes
-    }
-  }
+	trigger = {
+		tag = SHI
+		has_variable = sam_in_shire
+		current_ruler = {
+			NOT = { has_variable = samScopeVar }
+		}
+		var:samScopeVar = {
+			is_alive = yes
+		}
+	}
 
-  immediate = {
-    if = {
-      limit = {
-        has_variable = sam_stays_ruler
-      }
-      set_as_ruler = var:samScopeVar
-    }
-    else = {
-      remove_variable = sam_in_shire
-      every_country = {
-        limit = {
-          is_ai = no
-          religion = iluvatarism
-        }
-        trigger_event = {
-          id = lotr_frodos_mission_events.85
-          days = { 2000 2200 }
-          # days = 2
-        }
-      }
-    }
-  }
+	immediate = {
+		if = {
+			limit = {
+				has_variable = sam_stays_ruler
+			}
+			set_as_ruler = var:samScopeVar
+		}
+		else = {
+			remove_variable = sam_in_shire
+			every_country = {
+				limit = {
+					is_ai = no
+					religion = iluvatarism
+				}
+				trigger_event = {
+					id = lotr_frodos_mission_events.85
+					days = { 2000 2200 }
+					# days = 2
+				}
+			}
+		}
+	}
 }
 
 # #test
@@ -846,654 +846,654 @@ lotr_frodos_mission_events.84 = {
 
 #to valinor sam
 lotr_frodos_mission_events.85 = {
-  type = country_event
-  title = lotr_frodos_mission_events.85.t
-  desc = lotr_frodos_mission_events.85.desc
-  picture = great_city
-  left_portrait = current_ruler
-  right_portrait = c:SHI.var:samScopeVar
+	type = country_event
+	title = lotr_frodos_mission_events.85.t
+	desc = lotr_frodos_mission_events.85.desc
+	picture = great_city
+	left_portrait = current_ruler
+	right_portrait = c:SHI.var:samScopeVar
 
-  trigger = {
-    c:SHI = {
-      var:samScopeVar = {
-        is_alive = yes
-      }
-    }
-  }
+	trigger = {
+		c:SHI = {
+			var:samScopeVar = {
+				is_alive = yes
+			}
+		}
+	}
 
-  option = {
-    name = lotr_frodos_mission_events.85.a
-    custom_tooltip = lotr_frodos_mission_events.85.a.tt
-    hidden_effect = {
-      c:SHI.var:samScopeVar = { 
-        death = {
-          death_reason = departed_for_valinor
-        }
-      }
-    }
-  }
+	option = {
+		name = lotr_frodos_mission_events.85.a
+		custom_tooltip = lotr_frodos_mission_events.85.a.tt
+		hidden_effect = {
+			c:SHI.var:samScopeVar = { 
+				death = {
+					death_reason = departed_for_valinor
+				}
+			}
+		}
+	}
 }
 
 #back to ritualism
 lotr_frodos_mission_events.87 = {
-  type = country_event
-  title = lotr_frodos_mission_events.87.t
-  desc = lotr_frodos_mission_events.87.desc
-  picture = event_desert_coast
-  left_portrait = current_ruler
-  right_portrait = scope:target.current_ruler
+	type = country_event
+	title = lotr_frodos_mission_events.87.t
+	desc = lotr_frodos_mission_events.87.desc
+	picture = event_desert_coast
+	left_portrait = current_ruler
+	right_portrait = scope:target.current_ruler
 
 
-  option = {
-    name = "OK"
-  }
+	option = {
+		name = "OK"
+	}
 }
 
 #back to iluvatarism
 lotr_frodos_mission_events.88 = {
-  type = country_event
-  title = lotr_frodos_mission_events.88.t
-  desc = lotr_frodos_mission_events.88.desc
-  picture = city_construction
-  left_portrait = current_ruler
-  right_portrait = scope:target.current_ruler
+	type = country_event
+	title = lotr_frodos_mission_events.88.t
+	desc = lotr_frodos_mission_events.88.desc
+	picture = city_construction
+	left_portrait = current_ruler
+	right_portrait = scope:target.current_ruler
 
 
-  option = {
-    name = "OK"
-  }
+	option = {
+		name = "OK"
+	}
 }
 
 ###destruction events
 #barad dur
 lotr_frodos_mission_events.90 = {
-  type = province_event
-  title = lotr_frodos_mission_events.90.t
-  desc = lotr_frodos_mission_events.90.desc
-  picture = event_barad_dur_destroyed
+	type = province_event
+	title = lotr_frodos_mission_events.90.t
+	desc = lotr_frodos_mission_events.90.desc
+	picture = event_barad_dur_destroyed
 
-  trigger = {}
+	trigger = {}
 
-  option = {
-    name = lotr_frodos_mission_events.90.a
-    destroy_barad_dur_effect = yes
-    kill_sauron_nazgul = yes
-    every_country = {
-      limit = {
-        NOT = { THIS = PREV.OWNER }
-      }
-      trigger_event = { id = lotr_frodos_mission_events.95 days = { 6 10 }  } #players are told
-    }
-  }
+	option = {
+		name = lotr_frodos_mission_events.90.a
+		destroy_barad_dur_effect = yes
+		kill_sauron_nazgul = yes
+		every_country = {
+			limit = {
+				NOT = { THIS = PREV.OWNER }
+			}
+			trigger_event = { id = lotr_frodos_mission_events.95 days = { 6 10 }  } #players are told
+		}
+	}
 }
 #black gate 
 lotr_frodos_mission_events.91 = {
-  type = province_event
-  title = lotr_frodos_mission_events.91.t
-  desc = lotr_frodos_mission_events.91.desc
-  picture = event_black_gate_destroyed
+	type = province_event
+	title = lotr_frodos_mission_events.91.t
+	desc = lotr_frodos_mission_events.91.desc
+	picture = event_black_gate_destroyed
 
-  trigger = {}
+	trigger = {}
 
-  option = {
-    name = lotr_frodos_mission_events.90.a
-    destroy_black_gate_effect = yes
-    every_country = {
-      limit = {
-        NOT = { THIS = PREV.OWNER }
-      }
-      trigger_event = { id = lotr_frodos_mission_events.96 days = { 1 5 }  } #players are told
-    }
-  }
+	option = {
+		name = lotr_frodos_mission_events.90.a
+		destroy_black_gate_effect = yes
+		every_country = {
+			limit = {
+				NOT = { THIS = PREV.OWNER }
+			}
+			trigger_event = { id = lotr_frodos_mission_events.96 days = { 1 5 }  } #players are told
+		}
+	}
 }
 #mount doom
 lotr_frodos_mission_events.92 = {
-  type = province_event
-  title = lotr_frodos_mission_events.92.t
-  desc = lotr_frodos_mission_events.92.desc
-  picture = volcanic_disaster
+	type = province_event
+	title = lotr_frodos_mission_events.92.t
+	desc = lotr_frodos_mission_events.92.desc
+	picture = volcanic_disaster
 
-  trigger = {}
+	trigger = {}
 
-  option = {
-    name = lotr_frodos_mission_events.90.a
-    every_pops_in_province = {
-      kill_pop = yes
-    }
-    every_country = {
-      limit = {
-        NOT = { THIS = PREV.OWNER }
-      }
-      trigger_event = { id = lotr_frodos_mission_events.97 } #players are told
-    }
-  }
+	option = {
+		name = lotr_frodos_mission_events.90.a
+		every_pops_in_province = {
+			kill_pop = yes
+		}
+		every_country = {
+			limit = {
+				NOT = { THIS = PREV.OWNER }
+			}
+			trigger_event = { id = lotr_frodos_mission_events.97 } #players are told
+		}
+	}
 }
 #barad dur destroyed info
 lotr_frodos_mission_events.95 = {
-  type = country_event
-  title = lotr_frodos_mission_events.90.t
-  desc = lotr_frodos_mission_events.90.desc
-  picture = event_barad_dur_destroyed
+	type = country_event
+	title = lotr_frodos_mission_events.90.t
+	desc = lotr_frodos_mission_events.90.desc
+	picture = event_barad_dur_destroyed
 
-  trigger = {}
+	trigger = {}
 
-  option = {
-    name = lotr_frodos_mission_events.90.a
-  }
+	option = {
+		name = lotr_frodos_mission_events.90.a
+	}
 }
 #black gate destroyed info
 lotr_frodos_mission_events.96 = {
-  type = country_event
-  title = lotr_frodos_mission_events.91.t
-  desc = lotr_frodos_mission_events.91.desc
-  picture = event_black_gate_destroyed
+	type = country_event
+	title = lotr_frodos_mission_events.91.t
+	desc = lotr_frodos_mission_events.91.desc
+	picture = event_black_gate_destroyed
 
-  trigger = {}
+	trigger = {}
 
-  option = {
-    name = lotr_frodos_mission_events.90.a
-  }
+	option = {
+		name = lotr_frodos_mission_events.90.a
+	}
 }
 #mount doom destroyed info
 lotr_frodos_mission_events.97 = {
-  type = country_event
-  title = lotr_frodos_mission_events.92.t
-  desc = lotr_frodos_mission_events.92.desc
-  picture = volcanic_disaster
+	type = country_event
+	title = lotr_frodos_mission_events.92.t
+	desc = lotr_frodos_mission_events.92.desc
+	picture = volcanic_disaster
 
-  trigger = {}
+	trigger = {}
 
-  option = {
-    name = lotr_frodos_mission_events.90.a
-  }
+	option = {
+		name = lotr_frodos_mission_events.90.a
+	}
 }
 
 #sauron war events
 lotr_frodos_mission_events.100 = {
-  type = country_event
-  title = lotr_frodos_mission_events.100.t
-  desc = lotr_frodos_mission_events.100.desc
-  picture = event_one_ring_held
-  trigger = {
-   
-  }
-  immediate = {
-  }
-  option = {
-    name = lotr_frodos_mission_events.100.a
-    if = {
-      limit = { NOT = { war_with = scope:frodo_protector_country } }
-      declare_war_with_potential_truce = {
-        TARGET = scope:frodo_protector_country
-      }
-    }
-    #this event might be called again later if the war alrady ended for some reason. That won't spawn another legion though
-    if = {
-      limit = { 
-        NOT = { has_variable = ring_war_started } 
-        is_ai = yes
-      }
-      set_variable = {
-        name = ring_war_started
-      }
-      add_country_modifier = {
-        name = whips_of_sauron
-        duration = 365
-      }
-      set_variable = {
-        name = number_of_orcs
-        value = 0
-      }
-      every_owned_province = {
-        every_pops_in_province = {
-          if = {
-            limit = { pop_culture_group = orcs_group }
-            ROOT = {
-              change_variable = {
-                name = number_of_orcs
-                add = 1
-              }
-            }
-          }
-        }
-      }
-      create_character = {
-        first_name="Nazgûls"
-        family_name="The Nine"
-        birth_date=1.1.5
-        culture="black_numenorean"
-        religion="melkorism"
-        no_stats=yes
-        add_martial=20
-        add_charisma=11
-        add_finesse=5
-        add_zeal=8
-        no_traits=yes
-        force_add_trait="orom"
-        force_add_trait="nazgul"
-        force_add_trait="legendary_magic_user"
-        force_add_trait="intelligent"
-        force_add_trait="proud"
-        force_add_trait="prince_of_numenor"
-        dna="E/sT+xUNFQ260brRAowCjAKXApcCvwK/AjUCNQKPAo8CkQKRAnQCdAKNAo0CjAKMAlsCWwLsAuwCUwJTAoECgQKWApYCcwJzAm4CbgLWAtYCcQJxApYClgKKAooCkwKTArACsAKSApICZgJmAoICggKFAoUCmgKaApUClQJMAkwChAKEAokCiQJ3AncCcQJxAkoCSgFgAWADqAOoAnkCeQJwAnACegJ6AnkCeQKEAoQCfgJ+AoICggJ3AncCbQJtAncCdwS7BLsCbQJtAmACYAKUApQCZgJmAmkCaQJuAm4CdQJ1ApgCmAIAAgAADwAPAJcAlwCAAIAA9QD1AMgAyABNAE0A7wDvAR4BHgBNAE0A7gDuAKwArAB/AH8AEwATAMAAwAC4ALgAbQBtAFMAUwD8APwAgQCBAIYAhgB/AH8AhgCGADcANwD3APcBOQE5AGUAZQABAAEBVwFXACEAIQCcAJwBSgFKAAEAAQBCAEIMAQWsAH8AfwtzC3P/jf+N/yr/Kv8J/wkU9RT1/8X/xf8h/yH/1P/UAAAAAAAAAAA="
-        save_scope_as = witch_king
-      }
-      set_variable = {
-        name = ring_searching_witch_king
-        value = scope:witch_king
-      }
-      capital_scope.governorship = {
-        if = {
-          limit = { has_legion_trigger = yes }
-          disband_legion = yes
-        }
-        raise_legion = {
-          add_commander = scope:witch_king
-          create_unit = {
-            name = "Nazgûl searchers"
-            location = p:1599
-            sub_unit = supply_train
-            save_scope_as = legion_scope
-          }
-        }
-      }
-      # set_variable = {
-      #   name = ring_searching_legion
-      #   value = scope:legion_scope
-      # }
-      while = {
-        limit = {
-          var:number_of_orcs > 25
-        }
-        scope:legion_scope = {
-          add_subunit = orc_infantry
-          add_subunit = orc_infantry
-          add_subunit = orc_infantry
-          add_subunit = orc_infantry
-          add_subunit = uruk_infantry
-          add_subunit = uruk_infantry
-          add_subunit = uruk_infantry
-          add_subunit = troll_infantry
-        }
-        change_variable = {
-          name = number_of_orcs
-          subtract = 50
-        }
-      }
-    }
-    ai_chance = {
-      factor = 100
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.100.b
-    ai_chance = {
-      factor = 0
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.100.t
+	desc = lotr_frodos_mission_events.100.desc
+	picture = event_one_ring_held
+	trigger = {
+	 
+	}
+	immediate = {
+	}
+	option = {
+		name = lotr_frodos_mission_events.100.a
+		if = {
+			limit = { NOT = { war_with = scope:frodo_protector_country } }
+			declare_war_with_potential_truce = {
+				TARGET = scope:frodo_protector_country
+			}
+		}
+		#this event might be called again later if the war alrady ended for some reason. That won't spawn another legion though
+		if = {
+			limit = { 
+				NOT = { has_variable = ring_war_started } 
+				is_ai = yes
+			}
+			set_variable = {
+				name = ring_war_started
+			}
+			add_country_modifier = {
+				name = whips_of_sauron
+				duration = 365
+			}
+			set_variable = {
+				name = number_of_orcs
+				value = 0
+			}
+			every_owned_province = {
+				every_pops_in_province = {
+					if = {
+						limit = { pop_culture_group = orcs_group }
+						ROOT = {
+							change_variable = {
+								name = number_of_orcs
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			create_character = {
+				first_name="Nazgûls"
+				family_name="The Nine"
+				birth_date=1.1.5
+				culture="black_numenorean"
+				religion="melkorism"
+				no_stats=yes
+				add_martial=20
+				add_charisma=11
+				add_finesse=5
+				add_zeal=8
+				no_traits=yes
+				force_add_trait="orom"
+				force_add_trait="nazgul"
+				force_add_trait="legendary_magic_user"
+				force_add_trait="intelligent"
+				force_add_trait="proud"
+				force_add_trait="prince_of_numenor"
+				dna="E/sT+xUNFQ260brRAowCjAKXApcCvwK/AjUCNQKPAo8CkQKRAnQCdAKNAo0CjAKMAlsCWwLsAuwCUwJTAoECgQKWApYCcwJzAm4CbgLWAtYCcQJxApYClgKKAooCkwKTArACsAKSApICZgJmAoICggKFAoUCmgKaApUClQJMAkwChAKEAokCiQJ3AncCcQJxAkoCSgFgAWADqAOoAnkCeQJwAnACegJ6AnkCeQKEAoQCfgJ+AoICggJ3AncCbQJtAncCdwS7BLsCbQJtAmACYAKUApQCZgJmAmkCaQJuAm4CdQJ1ApgCmAIAAgAADwAPAJcAlwCAAIAA9QD1AMgAyABNAE0A7wDvAR4BHgBNAE0A7gDuAKwArAB/AH8AEwATAMAAwAC4ALgAbQBtAFMAUwD8APwAgQCBAIYAhgB/AH8AhgCGADcANwD3APcBOQE5AGUAZQABAAEBVwFXACEAIQCcAJwBSgFKAAEAAQBCAEIMAQWsAH8AfwtzC3P/jf+N/yr/Kv8J/wkU9RT1/8X/xf8h/yH/1P/UAAAAAAAAAAA="
+				save_scope_as = witch_king
+			}
+			set_variable = {
+				name = ring_searching_witch_king
+				value = scope:witch_king
+			}
+			capital_scope.governorship = {
+				if = {
+					limit = { has_legion_trigger = yes }
+					disband_legion = yes
+				}
+				raise_legion = {
+					add_commander = scope:witch_king
+					create_unit = {
+						name = "Nazgûl searchers"
+						location = p:1599
+						sub_unit = supply_train
+						save_scope_as = legion_scope
+					}
+				}
+			}
+			# set_variable = {
+			#   name = ring_searching_legion
+			#   value = scope:legion_scope
+			# }
+			while = {
+				limit = {
+					var:number_of_orcs > 25
+				}
+				scope:legion_scope = {
+					add_subunit = orc_infantry
+					add_subunit = orc_infantry
+					add_subunit = orc_infantry
+					add_subunit = orc_infantry
+					add_subunit = uruk_infantry
+					add_subunit = uruk_infantry
+					add_subunit = uruk_infantry
+					add_subunit = troll_infantry
+				}
+				change_variable = {
+					name = number_of_orcs
+					subtract = 50
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.100.b
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
 lotr_frodos_mission_events.101 = {
-  type = country_event
-  title = lotr_frodos_mission_events.101.t
-  desc = lotr_frodos_mission_events.101.desc
-  picture = event_nazgul_riders
-  trigger = {
-   
-  }
-  immediate = {
-    if = {
-      limit = { is_ai = yes }
-      var:ring_searching_witch_king = {
-        death = { death_reason = death_freak_accident }
-      }
-      capital_scope.governorship = {
-        if = {
-          limit = { has_legion_trigger = yes }
-          disband_legion = yes
-        }
-      }
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.101.a
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.101.t
+	desc = lotr_frodos_mission_events.101.desc
+	picture = event_nazgul_riders
+	trigger = {
+	 
+	}
+	immediate = {
+		if = {
+			limit = { is_ai = yes }
+			var:ring_searching_witch_king = {
+				death = { death_reason = death_freak_accident }
+			}
+			capital_scope.governorship = {
+				if = {
+					limit = { has_legion_trigger = yes }
+					disband_legion = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.101.a
+	}
 }
 
 lotr_frodos_mission_events.102 = {
-  type = country_event
-  title = lotr_frodos_mission_events.102.t
-  desc = lotr_frodos_mission_events.102.desc
-  picture = event_orcs_orcs
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.102.a
-    every_country = {
-      limit = {
-        countries_sauron_wants_attacked = yes
-      }
-      ROOT = {
-        declare_war_with_potential_truce = {
-          TARGET = PREV
-        }
-      }
-    }
-    ai_chance = {
-      factor = 100
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.102.b
-    ai_chance = {
-      factor = 0
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.102.t
+	desc = lotr_frodos_mission_events.102.desc
+	picture = event_orcs_orcs
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.102.a
+		every_country = {
+			limit = {
+				countries_sauron_wants_attacked = yes
+			}
+			ROOT = {
+				declare_war_with_potential_truce = {
+					TARGET = PREV
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.102.b
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
 #orc war events
 lotr_frodos_mission_events.110 = {
-  type = country_event
-  title = lotr_frodos_mission_events.110.t
-  desc = lotr_frodos_mission_events.110.desc
-  picture = event_barad_dur_eye
-  trigger = {
-   
-  }
-  immediate = {
-  }
-  option = {
-    name = lotr_frodos_mission_events.110.a
-    if = {
-      limit = { NOT = { war_with = scope:frodo_protector_country } }
-      declare_war_with_potential_truce = {
-        TARGET = scope:frodo_protector_country
-      }
-    }
-    #this event might be called again later if the war alrady ended for some reason.
-    if = {
-      limit = { 
-        NOT = { has_variable = ring_war_started } 
-        is_ai = yes
-      }
-      set_variable = {
-        name = ring_war_started
-      }
+	type = country_event
+	title = lotr_frodos_mission_events.110.t
+	desc = lotr_frodos_mission_events.110.desc
+	picture = event_barad_dur_eye
+	trigger = {
+	 
+	}
+	immediate = {
+	}
+	option = {
+		name = lotr_frodos_mission_events.110.a
+		if = {
+			limit = { NOT = { war_with = scope:frodo_protector_country } }
+			declare_war_with_potential_truce = {
+				TARGET = scope:frodo_protector_country
+			}
+		}
+		#this event might be called again later if the war alrady ended for some reason.
+		if = {
+			limit = { 
+				NOT = { has_variable = ring_war_started } 
+				is_ai = yes
+			}
+			set_variable = {
+				name = ring_war_started
+			}
 
-      add_country_modifier = {
-        name = whips_of_saruman
-        duration = 365
-      }
-    }
-    ai_chance = {
-      factor = 100
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.110.b
-    mordor_mortal_enemies = yes
-    ai_chance = {
-      factor = 0
-    }
-  }
+			add_country_modifier = {
+				name = whips_of_saruman
+				duration = 365
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.110.b
+		mordor_mortal_enemies = yes
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
 
 lotr_frodos_mission_events.112 = {
-  type = country_event
-  title = lotr_frodos_mission_events.112.t
-  desc = lotr_frodos_mission_events.112.desc
-  picture = event_barad_dur_eye
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.112.a
-    every_country = {
-      limit = {
-        countries_sauron_wants_attacked = yes
-      }
-      ROOT = {
-        declare_war_with_potential_truce = {
-          TARGET = PREV
-        }
-      }
-    }
-    ai_chance = {
-      factor = 100
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.112.b
-    mordor_mortal_enemies = yes
-    ai_chance = {
-      factor = 0
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.112.t
+	desc = lotr_frodos_mission_events.112.desc
+	picture = event_barad_dur_eye
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.112.a
+		every_country = {
+			limit = {
+				countries_sauron_wants_attacked = yes
+			}
+			ROOT = {
+				declare_war_with_potential_truce = {
+					TARGET = PREV
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.112.b
+		mordor_mortal_enemies = yes
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
 #saruman war events
 lotr_frodos_mission_events.120 = {
-  type = country_event
-  title = lotr_frodos_mission_events.120.t
-  desc = lotr_frodos_mission_events.120.desc
-  picture = event_saruman_palantir
-  trigger = {
-   
-  }
-  immediate = {
-  }
-  option = {
-    name = lotr_frodos_mission_events.120.a
-    if = {
-      limit = { NOT = { war_with = scope:frodo_protector_country } }
-      declare_war_with_potential_truce = {
-        TARGET = scope:frodo_protector_country
-      }
-      # declare_war_with_wargoal = {
-      #   war_goal = imperial_conquest_wargoal
-      #   target = scope:frodo_protector_country
-      # }
-    }
-    #this event might be called again later if the war alrady ended for some reason.
-    if = {
-      limit = { 
-        NOT = { has_variable = ring_war_started } 
-        is_ai = yes
-      }
+	type = country_event
+	title = lotr_frodos_mission_events.120.t
+	desc = lotr_frodos_mission_events.120.desc
+	picture = event_saruman_palantir
+	trigger = {
+	 
+	}
+	immediate = {
+	}
+	option = {
+		name = lotr_frodos_mission_events.120.a
+		if = {
+			limit = { NOT = { war_with = scope:frodo_protector_country } }
+			declare_war_with_potential_truce = {
+				TARGET = scope:frodo_protector_country
+			}
+			# declare_war_with_wargoal = {
+			#   war_goal = imperial_conquest_wargoal
+			#   target = scope:frodo_protector_country
+			# }
+		}
+		#this event might be called again later if the war alrady ended for some reason.
+		if = {
+			limit = { 
+				NOT = { has_variable = ring_war_started } 
+				is_ai = yes
+			}
 
-      set_variable = {
-        name = ring_war_started
-      }
-    }
-    ai_chance = {
-      base = 100
-      modifier = {
-        factor = 0
-        NOT = { religion = melkorism }
-      }
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.120.b
-    mordor_mortal_enemies = yes
-    ai_chance = {
-      base = 0
-      modifier = {
-        add = 100
-        NOT = { religion = melkorism }
-      }
-    }
-  }
+			set_variable = {
+				name = ring_war_started
+			}
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				NOT = { religion = melkorism }
+			}
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.120.b
+		mordor_mortal_enemies = yes
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				NOT = { religion = melkorism }
+			}
+		}
+	}
 }
 
 
 lotr_frodos_mission_events.122 = {
-  type = country_event
-  title = lotr_frodos_mission_events.122.t
-  desc = lotr_frodos_mission_events.122.desc
-  picture = event_saruman_palantir
-  trigger = {
-   
-  }
-  option = {
-    name = lotr_frodos_mission_events.122.a
-    every_country = {
-      limit = {
-        countries_sauron_wants_attacked = yes
-      }
-      ROOT = {
-        declare_war_with_potential_truce = {
-          TARGET = PREV
-        }
-      }
-    }
-    ai_chance = {
-      base = 100
-      modifier = {
-        factor = 0
-        NOT = { religion = melkorism }
-      }
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.122.b
-    mordor_mortal_enemies = yes
-    ai_chance = {
-      base = 0
-      modifier = {
-        add = 100
-        NOT = { religion = melkorism }
-      }
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.122.t
+	desc = lotr_frodos_mission_events.122.desc
+	picture = event_saruman_palantir
+	trigger = {
+	 
+	}
+	option = {
+		name = lotr_frodos_mission_events.122.a
+		every_country = {
+			limit = {
+				countries_sauron_wants_attacked = yes
+			}
+			ROOT = {
+				declare_war_with_potential_truce = {
+					TARGET = PREV
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				NOT = { religion = melkorism }
+			}
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.122.b
+		mordor_mortal_enemies = yes
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				NOT = { religion = melkorism }
+			}
+		}
+	}
 }
 
 #fury of sauron events 
 
 lotr_frodos_mission_events.200 = {
-  type = country_event
-  title = lotr_frodos_mission_events.200.t
-  desc = lotr_frodos_mission_events.200.desc
-  picture = event_barad_dur_eye
-  trigger = {
-    not_mortal_enemy_with_sauron = yes
-    NOT = {
-      has_global_variable = ring_destroyed
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.200.a
-    remove_existing_sauron_fury = yes
-    add_country_modifier = {
-      name = fury_of_sauron_5
-      duration = 365
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.200.t
+	desc = lotr_frodos_mission_events.200.desc
+	picture = event_barad_dur_eye
+	trigger = {
+		not_mortal_enemy_with_sauron = yes
+		NOT = {
+			has_global_variable = ring_destroyed
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.200.a
+		remove_existing_sauron_fury = yes
+		add_country_modifier = {
+			name = fury_of_sauron_5
+			duration = 365
+		}
+	}
 }
 
 lotr_frodos_mission_events.201 = {
-  type = country_event
-  title = lotr_frodos_mission_events.200.t
-  desc = lotr_frodos_mission_events.200.desc
-  picture = event_barad_dur_eye
-  trigger = {
-    not_mortal_enemy_with_sauron = yes
-    NOT = {
-      has_global_variable = ring_destroyed
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.200.a
-    remove_existing_sauron_fury = yes
-    add_country_modifier = {
-      name = fury_of_sauron_4
-      duration = 365
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.200.t
+	desc = lotr_frodos_mission_events.200.desc
+	picture = event_barad_dur_eye
+	trigger = {
+		not_mortal_enemy_with_sauron = yes
+		NOT = {
+			has_global_variable = ring_destroyed
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.200.a
+		remove_existing_sauron_fury = yes
+		add_country_modifier = {
+			name = fury_of_sauron_4
+			duration = 365
+		}
+	}
 }
 
 lotr_frodos_mission_events.202 = {
-  type = country_event
-  title = lotr_frodos_mission_events.202.t
-  desc = lotr_frodos_mission_events.202.desc
-  picture = event_barad_dur_eye
-  trigger = {
-    not_mortal_enemy_with_sauron = yes
-    NOT = {
-      has_global_variable = ring_destroyed
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.202.a
-    remove_existing_sauron_fury = yes
-    add_country_modifier = {
-      name = fury_of_sauron_3
-      duration = 365
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.202.t
+	desc = lotr_frodos_mission_events.202.desc
+	picture = event_barad_dur_eye
+	trigger = {
+		not_mortal_enemy_with_sauron = yes
+		NOT = {
+			has_global_variable = ring_destroyed
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.202.a
+		remove_existing_sauron_fury = yes
+		add_country_modifier = {
+			name = fury_of_sauron_3
+			duration = 365
+		}
+	}
 }
 
 lotr_frodos_mission_events.203 = {
-  type = country_event
-  title = lotr_frodos_mission_events.202.t
-  desc = lotr_frodos_mission_events.202.desc
-  picture = event_barad_dur_eye
-  trigger = {
-    not_mortal_enemy_with_sauron = yes
-    NOT = {
-      has_global_variable = ring_destroyed
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.202.a
-    remove_existing_sauron_fury = yes
-    add_country_modifier = {
-      name = fury_of_sauron_2
-      duration = 365
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.202.t
+	desc = lotr_frodos_mission_events.202.desc
+	picture = event_barad_dur_eye
+	trigger = {
+		not_mortal_enemy_with_sauron = yes
+		NOT = {
+			has_global_variable = ring_destroyed
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.202.a
+		remove_existing_sauron_fury = yes
+		add_country_modifier = {
+			name = fury_of_sauron_2
+			duration = 365
+		}
+	}
 }
 
 lotr_frodos_mission_events.204 = {
-  type = country_event
-  title = lotr_frodos_mission_events.202.t
-  desc = lotr_frodos_mission_events.202.desc
-  picture = event_barad_dur_eye
-  trigger = {
-    not_mortal_enemy_with_sauron = yes
-    NOT = {
-      has_global_variable = ring_destroyed
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.202.a
-    remove_existing_sauron_fury = yes
-    add_country_modifier = {
-      name = fury_of_sauron_1
-      duration = 365
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.202.t
+	desc = lotr_frodos_mission_events.202.desc
+	picture = event_barad_dur_eye
+	trigger = {
+		not_mortal_enemy_with_sauron = yes
+		NOT = {
+			has_global_variable = ring_destroyed
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.202.a
+		remove_existing_sauron_fury = yes
+		add_country_modifier = {
+			name = fury_of_sauron_1
+			duration = 365
+		}
+	}
 }
 
 lotr_frodos_mission_events.205 = {
-  type = country_event
-  title = lotr_frodos_mission_events.205.t
-  desc = lotr_frodos_mission_events.205.desc
-  picture = event_orcs_fleeing
-  trigger = {
-    not_mortal_enemy_with_sauron = yes
-    NOT = {
-      has_global_variable = ring_destroyed
-    }
-  }
-  option = {
-    name = lotr_frodos_mission_events.205.a
-    remove_existing_sauron_fury = yes
-    add_country_modifier = {
-      name = fury_of_sauron_0
-      duration = 1825
-    }
-  }
+	type = country_event
+	title = lotr_frodos_mission_events.205.t
+	desc = lotr_frodos_mission_events.205.desc
+	picture = event_orcs_fleeing
+	trigger = {
+		not_mortal_enemy_with_sauron = yes
+		NOT = {
+			has_global_variable = ring_destroyed
+		}
+	}
+	option = {
+		name = lotr_frodos_mission_events.205.a
+		remove_existing_sauron_fury = yes
+		add_country_modifier = {
+			name = fury_of_sauron_0
+			duration = 1825
+		}
+	}
 }

@@ -1,21 +1,21 @@
 ﻿countries_sauron_wants_attacked = {
-  religion = iluvatarism
-  is_subject = no
-  has_land = yes
-  NOT = { war_with = ROOT }
-  OR = {
-    tag = GON
-    tag = ROH
-    tag = LOR
-    tag = BLC
-    
-    #neighbors
-    any_owned_province = {
-      any_neighbor_province = {
-        owner = ROOT
-      }
-    }
-  }
+	religion = iluvatarism
+	is_subject = no
+	has_land = yes
+	NOT = { war_with = ROOT }
+	OR = {
+		tag = GON
+		tag = ROH
+		tag = LOR
+		tag = BLC
+		
+		#neighbors
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = ROOT
+			}
+		}
+	}
 }
 
 in_range_of_saurons_call = {
@@ -67,15 +67,15 @@ melkor_countryies_that_hear_saurons_call = {
 
 distracting_sauron_black_gate = {
 	p:1021 = {
-    OR = {
-      NOT = {
-        exists = owner
-        controller = {
-          country_culture_group = orcs_group
-        }
-      }
-      has_siege = yes
-    }
+		OR = {
+			NOT = {
+				exists = owner
+				controller = {
+					country_culture_group = orcs_group
+				}
+			}
+			has_siege = yes
+		}
 	}
 }
 
@@ -95,11 +95,11 @@ sauron_rules = {
 not_mortal_enemy_with_sauron = {
 	OR = {
 		this = c:MOR
-    NOT = {
-      has_opinion = {
-        modifier = mortal_enemies
-        target = c:MOR
-      }
-    }
+		NOT = {
+			has_opinion = {
+				modifier = mortal_enemies
+				target = c:MOR
+			}
+		}
 	}
 }

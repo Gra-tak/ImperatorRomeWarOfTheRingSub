@@ -1,16 +1,16 @@
 ﻿mordor_mortal_enemies = {
 	if = {
 		limit = { NOT = { THIS = c:MOR } }
-    add_opinion = {
-      target = c:MOR
-      modifier = mortal_enemies
-    }
-    c:MOR = {
-      add_opinion = {
-        target = PREV
-        modifier = mortal_enemies
-      }
-    }
+		add_opinion = {
+			target = c:MOR
+			modifier = mortal_enemies
+		}
+		c:MOR = {
+			add_opinion = {
+				target = PREV
+				modifier = mortal_enemies
+			}
+		}
 	}
 }
 
@@ -51,171 +51,171 @@ remove_existing_sauron_fury = {
 
 
 frodo_to_ithilien = {
-  every_in_list = {
-    list = frodoSam
-    if = {
-      limit = {
-        exists = c:ROI
-        c:ROI = { has_land = yes }
-      }
-      move_country = c:ROI
-    }
-    else = { #todo: possibly already move to mordor here
-      move_country = scope:frodo_protector_country
-    }
-  }
+	every_in_list = {
+		list = frodoSam
+		if = {
+			limit = {
+				exists = c:ROI
+				c:ROI = { has_land = yes }
+			}
+			move_country = c:ROI
+		}
+		else = { #todo: possibly already move to mordor here
+			move_country = scope:frodo_protector_country
+		}
+	}
 }
 
 other_to_rohan = {
-  every_in_list = {
-    list = fellowshipToGondor
-    if = {
-      limit = {
-        exists = c:ROH
-        c:ROH = { has_land = yes }
-      }
-      move_country = c:ROH
-    }
-    else = {
-      move_country = scope:frodo_protector_country
-    }
-  }
-  every_in_list = {
-    list = fellowshipStayRohan
-    if = {
-      limit = {
-        exists = c:ROH
-        c:ROH = { has_land = yes }
-      }
-      move_country = c:ROH
-    }
-    else = {
-      move_country = scope:frodo_protector_country
-    }
-  }
+	every_in_list = {
+		list = fellowshipToGondor
+		if = {
+			limit = {
+				exists = c:ROH
+				c:ROH = { has_land = yes }
+			}
+			move_country = c:ROH
+		}
+		else = {
+			move_country = scope:frodo_protector_country
+		}
+	}
+	every_in_list = {
+		list = fellowshipStayRohan
+		if = {
+			limit = {
+				exists = c:ROH
+				c:ROH = { has_land = yes }
+			}
+			move_country = c:ROH
+		}
+		else = {
+			move_country = scope:frodo_protector_country
+		}
+	}
 }
 
 gandalf_to_gondor = {
-  every_in_list = {
-    list = fellowshipToGondor
-    if = {
-      limit = {
-        exists = c:GON
-        c:GON = { has_land = yes }
-      }
-      move_country = c:GON
-    }
-    else = {
-      move_country = scope:frodo_protector_country
-    }
-  }
+	every_in_list = {
+		list = fellowshipToGondor
+		if = {
+			limit = {
+				exists = c:GON
+				c:GON = { has_land = yes }
+			}
+			move_country = c:GON
+		}
+		else = {
+			move_country = scope:frodo_protector_country
+		}
+	}
 }
 
 ring_destroyed_effect = {
-  p:1030 = { #minas morgul
-    remove_province_modifier = supplied_from_the_rear
-  }
-  p:1141 = {
-    trigger_event = {
-      id = lotr_frodos_mission_events.90
-    }
-  }
-  p:1021 = {
-    trigger_event = {
-      id = lotr_frodos_mission_events.91
-    }
-  }
-  p:1140 = {
-    trigger_event = {
-      id = lotr_frodos_mission_events.92
-    }
-  }
-  hidden_effect = {
-    set_global_variable = ring_destroyed
-    every_country = {
-      remove_existing_sauron_fury = yes
-    }
-    every_country = {
-      limit = { country_culture_group = orcs_group }
-      add_country_modifier = {
-        name = sauron_is_defeated_orcs
-        duration = 14600
-      }
-    }
-    every_country = {
-      limit = { 
-        NOT = { country_culture_group = orcs_group }
-        religion = melkorism
-      }
-      add_country_modifier = {
-        name = sauron_is_defeated_melkor
-        duration = 14600
-      }
-      count_religions = yes
-    }
-    every_country = {
-      limit = { 
-        NOT = { country_culture_group = orcs_group }
-        religion = iluvatarism
-      }
-      add_country_modifier = {
-        name = sauron_is_defeated_eru
-        duration = 14600
-      }
-    }
-  }
+	p:1030 = { #minas morgul
+		remove_province_modifier = supplied_from_the_rear
+	}
+	p:1141 = {
+		trigger_event = {
+			id = lotr_frodos_mission_events.90
+		}
+	}
+	p:1021 = {
+		trigger_event = {
+			id = lotr_frodos_mission_events.91
+		}
+	}
+	p:1140 = {
+		trigger_event = {
+			id = lotr_frodos_mission_events.92
+		}
+	}
+	hidden_effect = {
+		set_global_variable = ring_destroyed
+		every_country = {
+			remove_existing_sauron_fury = yes
+		}
+		every_country = {
+			limit = { country_culture_group = orcs_group }
+			add_country_modifier = {
+				name = sauron_is_defeated_orcs
+				duration = 14600
+			}
+		}
+		every_country = {
+			limit = { 
+				NOT = { country_culture_group = orcs_group }
+				religion = melkorism
+			}
+			add_country_modifier = {
+				name = sauron_is_defeated_melkor
+				duration = 14600
+			}
+			count_religions = yes
+		}
+		every_country = {
+			limit = { 
+				NOT = { country_culture_group = orcs_group }
+				religion = iluvatarism
+			}
+			add_country_modifier = {
+				name = sauron_is_defeated_eru
+				duration = 14600
+			}
+		}
+	}
 }
 
 destroy_barad_dur_effect = {
-  remove_province_modifier = barad_dur_modifier
-  while = {
-    count = num_of_fortress_building
-    remove_building_level = fortress_building
-  }
-  state = {
-    remove_state_modifier = barad_dur_state_modifier
-  }
-  if = {
-    limit = { has_city_status = yes }
-    set_city_status = settlement
-  }
-  hidden_effect = {
-    if = {
-      limit = {
-        is_model_shown = "wonder_barad_dur"
-      }
-      hide_model = "wonder_barad_dur"
-    }
-    add_city_fire_effect = yes
-    p:1140 = {
-      show_model = "wonder_barad_dur_rubble"
-    }
-  }
+	remove_province_modifier = barad_dur_modifier
+	while = {
+		count = num_of_fortress_building
+		remove_building_level = fortress_building
+	}
+	state = {
+		remove_state_modifier = barad_dur_state_modifier
+	}
+	if = {
+		limit = { has_city_status = yes }
+		set_city_status = settlement
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				is_model_shown = "wonder_barad_dur"
+			}
+			hide_model = "wonder_barad_dur"
+		}
+		add_city_fire_effect = yes
+		p:1140 = {
+			show_model = "wonder_barad_dur_rubble"
+		}
+	}
 }
 
 destroy_black_gate_effect = {
-  remove_province_modifier = black_gate_modifier
-  remove_province_modifier = supplied_from_the_rear
-  while = {
-    count = num_of_fortress_building
-    remove_building_level = fortress_building
-  }
-  state = {
-    remove_state_modifier = black_gate_state_modifier
-  }
-  if = {
-    limit = { has_city_status = yes }
-    set_city_status = settlement
-  }
-  hidden_effect = {
-    if = {
-      limit = {
-        is_model_shown = "the_black_gate"
-      }
-      hide_model = "the_black_gate"
-    }
-    add_city_fire_effect = yes
-  }
+	remove_province_modifier = black_gate_modifier
+	remove_province_modifier = supplied_from_the_rear
+	while = {
+		count = num_of_fortress_building
+		remove_building_level = fortress_building
+	}
+	state = {
+		remove_state_modifier = black_gate_state_modifier
+	}
+	if = {
+		limit = { has_city_status = yes }
+		set_city_status = settlement
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				is_model_shown = "the_black_gate"
+			}
+			hide_model = "the_black_gate"
+		}
+		add_city_fire_effect = yes
+	}
 }
 
 kill_sauron_nazgul = {
@@ -272,33 +272,33 @@ kill_sauron_nazgul = {
 }
 
 declare_war_with_potential_truce = {
-  save_scope_as = attacker
-  if = {
-    limit = {
-      has_truce_with =  $TARGET$
-    }
-    set_local_variable = {
-      name = had_truce
-    }
-    add_stability = 25
-  }
-  declare_war_with_wargoal = {
-    war_goal = imperial_conquest_wargoal
-    target = $TARGET$
-  }
-  if = {
-    limit = {
-      has_local_variable = had_truce
-    }
-    add_stability = 25
-    add_war_exhaustion = -1
-    add_aggressive_expansion = -25
-  }
-  every_current_war = {
-    save_scope_as = targetWar
-    PREV = {
-		  every_subject = {
-		    limit = {
+	save_scope_as = attacker
+	if = {
+		limit = {
+			has_truce_with =  $TARGET$
+		}
+		set_local_variable = {
+			name = had_truce
+		}
+		add_stability = 25
+	}
+	declare_war_with_wargoal = {
+		war_goal = imperial_conquest_wargoal
+		target = $TARGET$
+	}
+	if = {
+		limit = {
+			has_local_variable = had_truce
+		}
+		add_stability = 25
+		add_war_exhaustion = -1
+		add_aggressive_expansion = -25
+	}
+	every_current_war = {
+		save_scope_as = targetWar
+		PREV = {
+			every_subject = {
+				limit = {
 					save_temporary_scope_as = temp_subject_war_scope
 					scope:targetWar = {
 						NOR = {
@@ -306,660 +306,660 @@ declare_war_with_potential_truce = {
 							any_war_defender = { this = scope:temp_subject_war_scope }
 						}
 					}
-		      NOR = {
-		        is_subject_type = tributary
-		        is_subject_type = vassal_tribe
-		      }
-		      has_subject_loyalty >= 33
-		    }
-		    add_to_war = {
-		      target = scope:targetWar
-		      attacker = yes
-		    }
-		  }
-    }
-  }
+					NOR = {
+						is_subject_type = tributary
+						is_subject_type = vassal_tribe
+					}
+					has_subject_loyalty >= 33
+				}
+				add_to_war = {
+					target = scope:targetWar
+					attacker = yes
+				}
+			}
+		}
+	}
 }
 
 declare_war_against_orcs = {
-  declare_war_with_wargoal = {
-    war_goal = orc_wargoal
-    target = $TARGET$
-  }
-  hidden_effect = {
-    random_current_war = {
-      # limit = { #this somehow fails, but since condition for this war is being at peace before, random war will always be the right one
-      #   any_war_defender = { this = $TARGET$ }
-      # }
-      save_scope_as = targetWar
-    }
-    if = { 
-      limit = { exists = scope:targetWar }
-      every_subject = {
-        limit = {
-          NOR = {
-            is_subject_type = tributary
-            is_subject_type = vassal_tribe
-          }
-          has_subject_loyalty >= 33
-        }
-        add_to_war = {
-          target = scope:targetWar
-          attacker = yes
-        }
-      }
-    }
-  }
+	declare_war_with_wargoal = {
+		war_goal = orc_wargoal
+		target = $TARGET$
+	}
+	hidden_effect = {
+		random_current_war = {
+			# limit = { #this somehow fails, but since condition for this war is being at peace before, random war will always be the right one
+			#   any_war_defender = { this = $TARGET$ }
+			# }
+			save_scope_as = targetWar
+		}
+		if = { 
+			limit = { exists = scope:targetWar }
+			every_subject = {
+				limit = {
+					NOR = {
+						is_subject_type = tributary
+						is_subject_type = vassal_tribe
+					}
+					has_subject_loyalty >= 33
+				}
+				add_to_war = {
+					target = scope:targetWar
+					attacker = yes
+				}
+			}
+		}
+	}
 }
 
 gandalf_the_white = {
-  hidden_effect = {
-    c:SHI = {
-      create_character = {
-        first_name="Gandalf"
-        family_name="the White"
-        age=2800
-        culture="maia"
-        religion="iluvatarism"
-        no_stats=yes
-        add_martial=20
-        add_charisma=25
-        add_finesse=25
-        add_zeal=25
-        no_traits=yes
-        force_add_trait="maia"
-        force_add_trait="olympic_competitor"
-        save_scope_as = gandalf
-        dna="AAAH7oppimkAAAAAAp0CnQJ4AngCfwJ/AnYCdgKYApgCiwKLAlYCVgJ3AncCkwKTApcClwKXApcCiwKLAoECgQKLAosCTgJOAm0CbQKTApMCXgJeAmcCZwJWAlYCfwJ/AowCjAKaApoCdgJ2ApICkgKRApECkAKQAmwCbAKJAokCdQJ1ApUClQKeAp4CdAJ0ArACsAKUApQCcwJzAnYCdgKLAosCjAKMAn0CfQKTApMCjAKMAmECYQKMAowClQKVAo8CjwKLAosChgKGAnkCeQJRAlECbQJtAlkCWQKYApgCkwKTAsICwgQEBAQBZQFlATMBMwFhAWEATwBPAVABUAC2ALYALwAvAIcAhwCpAKkEnAScArYCtgFzAXMABwAHAN0A3QFpAWkAPwA/Aq8CrwCxALEDtwO3ARsBGwD5APkCngKeAQMBAwKVApUAOgA6AHwAfABIAEgAwwDDACYAJgD5APkCiAKIA3ADcAD0APQH6QDEAH8AfwQ3BDcWXhZeAPAA8Az+DP4QgxAXEf8R0AAAAAAAAAAAAAAAAAAAAAA="
-        add_to_list = fellowshipToGondor
-        add_to_list = fellowship
-      }
-      scope:gandalf = {
-        set_variable = {
-          name = gandalf_flag
-        }
-      }
-    }
-  }
+	hidden_effect = {
+		c:SHI = {
+			create_character = {
+				first_name="Gandalf"
+				family_name="the White"
+				age=2800
+				culture="maia"
+				religion="iluvatarism"
+				no_stats=yes
+				add_martial=20
+				add_charisma=25
+				add_finesse=25
+				add_zeal=25
+				no_traits=yes
+				force_add_trait="maia"
+				force_add_trait="olympic_competitor"
+				save_scope_as = gandalf
+				dna="AAAH7oppimkAAAAAAp0CnQJ4AngCfwJ/AnYCdgKYApgCiwKLAlYCVgJ3AncCkwKTApcClwKXApcCiwKLAoECgQKLAosCTgJOAm0CbQKTApMCXgJeAmcCZwJWAlYCfwJ/AowCjAKaApoCdgJ2ApICkgKRApECkAKQAmwCbAKJAokCdQJ1ApUClQKeAp4CdAJ0ArACsAKUApQCcwJzAnYCdgKLAosCjAKMAn0CfQKTApMCjAKMAmECYQKMAowClQKVAo8CjwKLAosChgKGAnkCeQJRAlECbQJtAlkCWQKYApgCkwKTAsICwgQEBAQBZQFlATMBMwFhAWEATwBPAVABUAC2ALYALwAvAIcAhwCpAKkEnAScArYCtgFzAXMABwAHAN0A3QFpAWkAPwA/Aq8CrwCxALEDtwO3ARsBGwD5APkCngKeAQMBAwKVApUAOgA6AHwAfABIAEgAwwDDACYAJgD5APkCiAKIA3ADcAD0APQH6QDEAH8AfwQ3BDcWXhZeAPAA8Az+DP4QgxAXEf8R0AAAAAAAAAAAAAAAAAAAAAA="
+				add_to_list = fellowshipToGondor
+				add_to_list = fellowship
+			}
+			scope:gandalf = {
+				set_variable = {
+					name = gandalf_flag
+				}
+			}
+		}
+	}
 }
 
 count_religions = {
-  set_local_variable = { name = melkor_pops value = 0 }
-  set_local_variable = { name = eru_pops value = 0 }
-  set_local_variable = { name = ritual_pops value = 0 }
-  set_local_variable = { name = total_pops value = 0 }
-  every_owned_province = {
-    change_local_variable = {
-      name = total_pops
-      add = total_population
-    }
-    every_pops_in_province = {
-      if = {
-        limit = {
-          pop_religion = melkorism
-          }
-        change_local_variable = { 
-          name = melkor_pops
-          add = 1
-        }
-      }
-      else_if = {
-        limit = {
-          pop_religion = iluvatarism
-          }
-        change_local_variable = { 
-          name = eru_pops
-          add = 1
-        }
-      }
-      else
-      {
-        change_local_variable = { 
-          name = ritual_pops
-          add = 1
-        }
-      }
-    }
-  }
-  set_variable = {
-    name = melkor_pop_fraction
-    value = local_var:melkor_pops
-  }
-  change_variable = {
-    name = melkor_pop_fraction
-    divide = local_var:total_pops
-  }
-  set_variable = {
-    name = eru_pop_fraction
-    value = local_var:eru_pops
-  }
-  change_variable = {
-    name = eru_pop_fraction
-    divide = local_var:total_pops
-  }
-  set_variable = {
-    name = ritual_pop_fraction
-    value = local_var:ritual_pops
-  }
-  change_variable = {
-    name = ritual_pop_fraction
-    divide = local_var:total_pops
-  }
-  set_variable = {
-    name = eru_vs_melkor_pop_chance
-    value = local_var:eru_pops
-  }
-  if = {
-    limit = {
-      local_var:melkor_pops > 0
-    }
-    change_variable = {
-      name = eru_vs_melkor_pop_chance
-      divide = local_var:melkor_pops
-    }
-  }
-  set_variable = {
-    name = ritual_vs_melkor_pop_chance
-    value = local_var:ritual_pops
-  }
-  change_variable = {
-    name = ritual_vs_melkor_pop_chance
-    divide = local_var:melkor_pops
-  }
-  if = {
-    limit = {
-      local_var:melkor_pops > 0
-    }
-    change_variable = {
-      name = ritual_vs_melkor_pop_chance
-      divide = local_var:melkor_pops
-    }
-  }
+	set_local_variable = { name = melkor_pops value = 0 }
+	set_local_variable = { name = eru_pops value = 0 }
+	set_local_variable = { name = ritual_pops value = 0 }
+	set_local_variable = { name = total_pops value = 0 }
+	every_owned_province = {
+		change_local_variable = {
+			name = total_pops
+			add = total_population
+		}
+		every_pops_in_province = {
+			if = {
+				limit = {
+					pop_religion = melkorism
+					}
+				change_local_variable = { 
+					name = melkor_pops
+					add = 1
+				}
+			}
+			else_if = {
+				limit = {
+					pop_religion = iluvatarism
+					}
+				change_local_variable = { 
+					name = eru_pops
+					add = 1
+				}
+			}
+			else
+			{
+				change_local_variable = { 
+					name = ritual_pops
+					add = 1
+				}
+			}
+		}
+	}
+	set_variable = {
+		name = melkor_pop_fraction
+		value = local_var:melkor_pops
+	}
+	change_variable = {
+		name = melkor_pop_fraction
+		divide = local_var:total_pops
+	}
+	set_variable = {
+		name = eru_pop_fraction
+		value = local_var:eru_pops
+	}
+	change_variable = {
+		name = eru_pop_fraction
+		divide = local_var:total_pops
+	}
+	set_variable = {
+		name = ritual_pop_fraction
+		value = local_var:ritual_pops
+	}
+	change_variable = {
+		name = ritual_pop_fraction
+		divide = local_var:total_pops
+	}
+	set_variable = {
+		name = eru_vs_melkor_pop_chance
+		value = local_var:eru_pops
+	}
+	if = {
+		limit = {
+			local_var:melkor_pops > 0
+		}
+		change_variable = {
+			name = eru_vs_melkor_pop_chance
+			divide = local_var:melkor_pops
+		}
+	}
+	set_variable = {
+		name = ritual_vs_melkor_pop_chance
+		value = local_var:ritual_pops
+	}
+	change_variable = {
+		name = ritual_vs_melkor_pop_chance
+		divide = local_var:melkor_pops
+	}
+	if = {
+		limit = {
+			local_var:melkor_pops > 0
+		}
+		change_variable = {
+			name = ritual_vs_melkor_pop_chance
+			divide = local_var:melkor_pops
+		}
+	}
 }
 
 
 change_religion_effect_lotr = {
-  custom_tooltip = religion_conversion_tooltip
-  custom_tooltip = religion_conversion_family_tooltip
-  if = {
-    limit = { 
-      is_republic = yes
-      has_party_type = traditionalist_party
-    }
-    add_party_approval = {
-      party_type = traditionalist_party
-      value = -10
-    }
-  }
-  if = {
-    limit = { 
-      is_republic = yes
-      has_party_type = boni_party
-    }
-    add_party_approval = {
-      party_type = boni_party
-      value = -10
-    }
-  }
-  add_political_influence = -200
-  add_stability = -30
-  add_country_modifier = {
-    name = "recent_convert_modifier"
-    duration = 3650
-  }
-  set_country_religion = $RELIGION$
-  current_ruler = {
-    if = {
-      limit = {
-        NOT = { has_religion = $RELIGION$ }
-      }
-      set_character_religion = $RELIGION$
-    }
-  }
-  hidden_effect = {
-    current_ruler.family = {
-      every_family_member = {
-        limit = {
-          employer = ROOT
-          loyalty >= 40
-          NOT = { has_religion = $RELIGION$ }
-        }
-        set_character_religion = $RELIGION$
-      }
-    }
-  }
-  every_character = {
-    limit = {
-      loyalty >= 50
-      NOT = { has_religion = $RELIGION$ }
-      is_ruler = no
-      from_ruler_family = no
-    }
-    set_character_religion = $RELIGION$
-  }
-  hidden_effect = {
-    every_character = {
-      limit = { NOT = { has_same_religion_as = employer.current_ruler } }
-      add_loyalty = national_conversion_l
-    }
-  }
-  if = {
-    limit = {
-      has_senate_approval < 60
-      is_republic = yes
-      NOT = { has_variable = dictatorship_enabled }
-    }
-    add_tyranny = {
-      # Calculates the percentage of disapproval
-      value = 0.6 # -- SENATE_REQUIRED_APPROVAL_WITHOUT_PENALTIES
-      subtract = has_senate_approval
-      divide = 0.3 # -- SENATE_REQUIRED_APPROVAL
-      
-      # This is the real value that you want for 100% of the effect
-      multiply = 20
-    }
-  }
+	custom_tooltip = religion_conversion_tooltip
+	custom_tooltip = religion_conversion_family_tooltip
+	if = {
+		limit = { 
+			is_republic = yes
+			has_party_type = traditionalist_party
+		}
+		add_party_approval = {
+			party_type = traditionalist_party
+			value = -10
+		}
+	}
+	if = {
+		limit = { 
+			is_republic = yes
+			has_party_type = boni_party
+		}
+		add_party_approval = {
+			party_type = boni_party
+			value = -10
+		}
+	}
+	add_political_influence = -200
+	add_stability = -30
+	add_country_modifier = {
+		name = "recent_convert_modifier"
+		duration = 3650
+	}
+	set_country_religion = $RELIGION$
+	current_ruler = {
+		if = {
+			limit = {
+				NOT = { has_religion = $RELIGION$ }
+			}
+			set_character_religion = $RELIGION$
+		}
+	}
+	hidden_effect = {
+		current_ruler.family = {
+			every_family_member = {
+				limit = {
+					employer = ROOT
+					loyalty >= 40
+					NOT = { has_religion = $RELIGION$ }
+				}
+				set_character_religion = $RELIGION$
+			}
+		}
+	}
+	every_character = {
+		limit = {
+			loyalty >= 50
+			NOT = { has_religion = $RELIGION$ }
+			is_ruler = no
+			from_ruler_family = no
+		}
+		set_character_religion = $RELIGION$
+	}
+	hidden_effect = {
+		every_character = {
+			limit = { NOT = { has_same_religion_as = employer.current_ruler } }
+			add_loyalty = national_conversion_l
+		}
+	}
+	if = {
+		limit = {
+			has_senate_approval < 60
+			is_republic = yes
+			NOT = { has_variable = dictatorship_enabled }
+		}
+		add_tyranny = {
+			# Calculates the percentage of disapproval
+			value = 0.6 # -- SENATE_REQUIRED_APPROVAL_WITHOUT_PENALTIES
+			subtract = has_senate_approval
+			divide = 0.3 # -- SENATE_REQUIRED_APPROVAL
+			
+			# This is the real value that you want for 100% of the effect
+			multiply = 20
+		}
+	}
 }
 
 clear_melkor_opinions = {
-  every_country = {
-    limit = { 
-      NOT = { this = ROOT }
-      has_opinion = { 
-        modifier = mortal_enemies
-        target = ROOT
-      }
-    }
-    remove_opinion = { 
-      modifier = mortal_enemies
-      target = ROOT
-    }
-  }
-  every_country = {
-    limit = {
-      NOT = { this = ROOT }
-      PREV = {
-        has_opinion = { 
-          modifier = mortal_enemies
-          target = PREV
-        }
-      }
-    }
-    PREV = {
-      remove_opinion = { 
-        modifier = mortal_enemies
-        target = PREV
-      }
-    }
-  }
-  if = {
-    limit = {
-      has_opinion = { 
-        modifier = sauron_worship_modifier
-        target = c:MOR
-      }
-    }
-    remove_opinion = { 
-      modifier = sauron_worship_modifier
-      target = c:MOR
-    }
-  }
+	every_country = {
+		limit = { 
+			NOT = { this = ROOT }
+			has_opinion = { 
+				modifier = mortal_enemies
+				target = ROOT
+			}
+		}
+		remove_opinion = { 
+			modifier = mortal_enemies
+			target = ROOT
+		}
+	}
+	every_country = {
+		limit = {
+			NOT = { this = ROOT }
+			PREV = {
+				has_opinion = { 
+					modifier = mortal_enemies
+					target = PREV
+				}
+			}
+		}
+		PREV = {
+			remove_opinion = { 
+				modifier = mortal_enemies
+				target = PREV
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_opinion = { 
+				modifier = sauron_worship_modifier
+				target = c:MOR
+			}
+		}
+		remove_opinion = { 
+			modifier = sauron_worship_modifier
+			target = c:MOR
+		}
+	}
 }
 
 apply_one_ring_to_ruler = {
-  current_ruler = {
-    add_martial = 20
-    add_finesse = 14
-    add_charisma = 18
-    add_zeal = 16
-    add_character_modifier = {
-      name = owns_one_ring_modifier
-      duration = -1
-    }
-  }
+	current_ruler = {
+		add_martial = 20
+		add_finesse = 14
+		add_charisma = 18
+		add_zeal = 16
+		add_character_modifier = {
+			name = owns_one_ring_modifier
+			duration = -1
+		}
+	}
 }
 
 remove_one_ring_from_previous_owner = {
-  every_living_character = {
-    limit = {
-      has_character_modifier = owns_one_ring_modifier
-    }
-    remove_character_modifier = owns_one_ring_modifier
-    add_martial = -18
-    add_finesse = -12
-    add_charisma = -16
-    add_zeal = -14
-  }
+	every_living_character = {
+		limit = {
+			has_character_modifier = owns_one_ring_modifier
+		}
+		remove_character_modifier = owns_one_ring_modifier
+		add_martial = -18
+		add_finesse = -12
+		add_charisma = -16
+		add_zeal = -14
+	}
 }
 
 revive_country = {
-  hidden_effect = {
-    add_stability = 50
-    add_treasury = 100
-    set_local_variable = {
-      name = freeFam
-      value = num_allowed_families
-    }
-    change_local_variable = {
-      name = freeFam
-      subtract = num_of_families
-    }
-    while = {
-      count = local_var:freeFam
-      create_character = { save_scope_as = target }
-      create_family = scope:target
-    }
-    while = {
-      count = 30
-      create_character = { save_scope_as = target }
-      random_family = {
-        save_scope_as = fam
-      }
-      scope:target = { set_family = scope:fam }
-    }
-    while = {
-      count = 10
-      create_character = { }
-    }
-  }
+	hidden_effect = {
+		add_stability = 50
+		add_treasury = 100
+		set_local_variable = {
+			name = freeFam
+			value = num_allowed_families
+		}
+		change_local_variable = {
+			name = freeFam
+			subtract = num_of_families
+		}
+		while = {
+			count = local_var:freeFam
+			create_character = { save_scope_as = target }
+			create_family = scope:target
+		}
+		while = {
+			count = 30
+			create_character = { save_scope_as = target }
+			random_family = {
+				save_scope_as = fam
+			}
+			scope:target = { set_family = scope:fam }
+		}
+		while = {
+			count = 10
+			create_character = { }
+		}
+	}
 }
 
 release_shire = {
-  return_provinces_to_shire = yes
-  make_subject = {
-    target = c:SHI
-    type = client_state
-  }
+	return_provinces_to_shire = yes
+	make_subject = {
+		target = c:SHI
+		type = client_state
+	}
 
-  c:SHI = {
-    revive_country = yes
-  }
+	c:SHI = {
+		revive_country = yes
+	}
 }
 
 return_provinces_to_shire = {
-  if = {
-    limit = {
-      p:1621 = { #michel delving
-        exists = owner
-        owner = ROOT
-      }
-    }
-    p:1621 = { set_conquered_by = c:SHI }
-  }
-  every_owned_province = {
-    limit = { 
-      province_dominant_culture_group = halfling_group 
-      is_in_region = siragale_region
-    }
-    set_conquered_by = c:SHI
-  }
+	if = {
+		limit = {
+			p:1621 = { #michel delving
+				exists = owner
+				owner = ROOT
+			}
+		}
+		p:1621 = { set_conquered_by = c:SHI }
+	}
+	every_owned_province = {
+		limit = { 
+			province_dominant_culture_group = halfling_group 
+			is_in_region = siragale_region
+		}
+		set_conquered_by = c:SHI
+	}
 }
 
 release_gondor = {
-  return_provinces_to_gondor = yes
-  make_subject = {
-    target = c:GON
-    type = client_state
-  }
+	return_provinces_to_gondor = yes
+	make_subject = {
+		target = c:GON
+		type = client_state
+	}
 
-  if = {
-    limit = {
-      current_date <= 3100.1.1
-    }
-    create_character = {
-      first_name="Faramir"
-      family = c:GON.fam:Hurionath
-      birth_date=2983.1.1
-      culture="lesser_dunedain"
-      religion="iluvatarism"
-      no_stats=yes
-      add_martial=14
-      add_charisma=10
-      add_finesse=11
-      add_zeal=8
-      no_traits=yes
-      force_add_trait="just"
-      force_add_trait="steadfast"
-      force_add_trait="daring"
-      force_add_trait="house_of_hurin"
-      force_add_trait="blood_of_numenor"
-      force_add_trait="confident"
-      add_gold=200
-      add_popularity=60
-      dna="WtBa0Jdwl3B0cnRyAqYCpgJ4AngCgAKAAmoCagKXApcCewJ7AlsCWwJwAnACiQKJAp4CngKQApACgwKDAo8CjwKLAosCVgJWAnMCcwKrAqsCcgJyAkwCTAJSAlIClwKXAnoCegKeAp4CkwKTAnQCdAKSApICgwKDAmgCaAKRApECawJrAowCjAKVApUCjgKOAq4CrgJ7AnsCbwJvAnsCewJ3AncCfAJ8AnQCdAKJAokCiAKIAlwCXAKEAoQCdwJ3ApYClgJvAm8CdQJ1AkgCSAJcAlwCZQJlAmcCZwKDAoMCnQKdAr4CvgKfAp8BUgFSAXYBdgEDAQMBiwGLAT0BPQCdAJ0A9gD2ATUBNQBYAFgAvwC/AuwC7ABbAFsAPwA/As4CzgCvAK8CjwKPALUAtQFZAVkBkgGSARgBGADNAM0A+gD6ApECkQEkASQA2wDbACgAKACQAJABEQERAKUApQEMAQwBNwE3AG0AbQNrA2sHkAdPAG4AfwLUAtQWmBbaANgA2AxhDGEQVxChEbEROgAAAAAAAAAAAAAAAAAAAAA="
-      save_scope_as = famamir
-    }
-    if = {
-      limit = {
-        current_date > 3070.1.1
-      }
-      create_character = {
-        family = c:GON.fam:Hurionath
-        culture="lesser_dunedain"
-        religion="iluvatarism"
-        age = 0
-        father = scope:famamir
-        no_traits=yes
-        no_stats=yes
-        force_add_trait="house_of_hurin"
-        force_add_trait="blood_of_numenor"
-      }
-    }
-  }
-  c:GON = {
-    set_as_ruler = scope:famamir
-    revive_country = yes
-  }
+	if = {
+		limit = {
+			current_date <= 3100.1.1
+		}
+		create_character = {
+			first_name="Faramir"
+			family = c:GON.fam:Hurionath
+			birth_date=2983.1.1
+			culture="lesser_dunedain"
+			religion="iluvatarism"
+			no_stats=yes
+			add_martial=14
+			add_charisma=10
+			add_finesse=11
+			add_zeal=8
+			no_traits=yes
+			force_add_trait="just"
+			force_add_trait="steadfast"
+			force_add_trait="daring"
+			force_add_trait="house_of_hurin"
+			force_add_trait="blood_of_numenor"
+			force_add_trait="confident"
+			add_gold=200
+			add_popularity=60
+			dna="WtBa0Jdwl3B0cnRyAqYCpgJ4AngCgAKAAmoCagKXApcCewJ7AlsCWwJwAnACiQKJAp4CngKQApACgwKDAo8CjwKLAosCVgJWAnMCcwKrAqsCcgJyAkwCTAJSAlIClwKXAnoCegKeAp4CkwKTAnQCdAKSApICgwKDAmgCaAKRApECawJrAowCjAKVApUCjgKOAq4CrgJ7AnsCbwJvAnsCewJ3AncCfAJ8AnQCdAKJAokCiAKIAlwCXAKEAoQCdwJ3ApYClgJvAm8CdQJ1AkgCSAJcAlwCZQJlAmcCZwKDAoMCnQKdAr4CvgKfAp8BUgFSAXYBdgEDAQMBiwGLAT0BPQCdAJ0A9gD2ATUBNQBYAFgAvwC/AuwC7ABbAFsAPwA/As4CzgCvAK8CjwKPALUAtQFZAVkBkgGSARgBGADNAM0A+gD6ApECkQEkASQA2wDbACgAKACQAJABEQERAKUApQEMAQwBNwE3AG0AbQNrA2sHkAdPAG4AfwLUAtQWmBbaANgA2AxhDGEQVxChEbEROgAAAAAAAAAAAAAAAAAAAAA="
+			save_scope_as = famamir
+		}
+		if = {
+			limit = {
+				current_date > 3070.1.1
+			}
+			create_character = {
+				family = c:GON.fam:Hurionath
+				culture="lesser_dunedain"
+				religion="iluvatarism"
+				age = 0
+				father = scope:famamir
+				no_traits=yes
+				no_stats=yes
+				force_add_trait="house_of_hurin"
+				force_add_trait="blood_of_numenor"
+			}
+		}
+	}
+	c:GON = {
+		set_as_ruler = scope:famamir
+		revive_country = yes
+	}
 }
 
 return_provinces_to_gondor = {
-  if = {
-    limit = {
-      p:1300 = { #Minas Tirith
-        exists = owner
-        owner = ROOT
-      }
-    }
-    p:1300 = { set_conquered_by = c:GON }
-  }
-  every_owned_province = {
-    limit = {
-      OR = {
-        province_dominant_culture = lesser_dunedain
-        province_dominant_culture = gondorian
-      }
-      OR = {
-        is_in_region = ithilien_region
-        is_in_region = anorien_region
-      }
-    }
-    set_conquered_by = c:GON
-  }
+	if = {
+		limit = {
+			p:1300 = { #Minas Tirith
+				exists = owner
+				owner = ROOT
+			}
+		}
+		p:1300 = { set_conquered_by = c:GON }
+	}
+	every_owned_province = {
+		limit = {
+			OR = {
+				province_dominant_culture = lesser_dunedain
+				province_dominant_culture = gondorian
+			}
+			OR = {
+				is_in_region = ithilien_region
+				is_in_region = anorien_region
+			}
+		}
+		set_conquered_by = c:GON
+	}
 }
 
 release_dol_amorth = {
-  return_provinces_to_dol_amroth = yes
-  make_subject = {
-    target = c:DOR
-    type = client_state
-  }
+	return_provinces_to_dol_amroth = yes
+	make_subject = {
+		target = c:DOR
+		type = client_state
+	}
 
-  if = {
-    limit = {
-      current_date <= 3070.1.1
-    }
-    create_character = {
-      first_name="Imrahil" #Son of current king
-      family = c:DOR.fam:HouseofDolAmroth
-      birth_date=2955.3.6
-      culture="dolamroth"
-      religion="iluvatarism"
-      father="char:39"
-      mother="char:40"
-      no_stats=yes
-      add_martial=12
-      add_charisma=9
-      add_finesse=5
-      add_zeal=8
-      no_traits=yes
-      add_trait="daring"
-      add_trait="confident"
-      add_gold=140
-      add_popularity=80
-      save_scope_as = Imrahil
-    }
-    if = {
-      limit = {
-        current_date > 3040.1.1
-      }
-      create_character = {
-        family = c:GON.fam:Hurionath
-        age = 0
-        father = scope:Imrahil
-        culture="dolamroth"
-        religion="iluvatarism"
-        no_traits=yes
-        no_stats=yes
-        force_add_trait="house_of_hurin"
-        force_add_trait="blood_of_numenor"
-      }
-    }
-  }
-  c:DOR = {
-    set_as_ruler = scope:Imrahil
-    revive_country = yes
-  }
+	if = {
+		limit = {
+			current_date <= 3070.1.1
+		}
+		create_character = {
+			first_name="Imrahil" #Son of current king
+			family = c:DOR.fam:HouseofDolAmroth
+			birth_date=2955.3.6
+			culture="dolamroth"
+			religion="iluvatarism"
+			father="char:39"
+			mother="char:40"
+			no_stats=yes
+			add_martial=12
+			add_charisma=9
+			add_finesse=5
+			add_zeal=8
+			no_traits=yes
+			add_trait="daring"
+			add_trait="confident"
+			add_gold=140
+			add_popularity=80
+			save_scope_as = Imrahil
+		}
+		if = {
+			limit = {
+				current_date > 3040.1.1
+			}
+			create_character = {
+				family = c:GON.fam:Hurionath
+				age = 0
+				father = scope:Imrahil
+				culture="dolamroth"
+				religion="iluvatarism"
+				no_traits=yes
+				no_stats=yes
+				force_add_trait="house_of_hurin"
+				force_add_trait="blood_of_numenor"
+			}
+		}
+	}
+	c:DOR = {
+		set_as_ruler = scope:Imrahil
+		revive_country = yes
+	}
 }
 
 return_provinces_to_dol_amroth = {
-  if = {
-    limit = {
-      p:1403 = { #Mdol amroth
-        exists = owner
-        owner = ROOT
-      }
-    }
-    p:1403 = { set_conquered_by = c:DOR }
-  }
-  every_owned_province = {
-    limit = {
-      OR = {
-        province_dominant_culture = dolamroth
-        province_dominant_culture = gondorian
-      }
-      is_in_region = belfalas_region
-    }
-    set_conquered_by = c:DOR
-  }
-  c:DOR = {
-    if = {
-      limit = { has_country_modifier = harassed_by_corsairs }
-      remove_country_modifier = harassed_by_corsairs
-    }
-  }
+	if = {
+		limit = {
+			p:1403 = { #Mdol amroth
+				exists = owner
+				owner = ROOT
+			}
+		}
+		p:1403 = { set_conquered_by = c:DOR }
+	}
+	every_owned_province = {
+		limit = {
+			OR = {
+				province_dominant_culture = dolamroth
+				province_dominant_culture = gondorian
+			}
+			is_in_region = belfalas_region
+		}
+		set_conquered_by = c:DOR
+	}
+	c:DOR = {
+		if = {
+			limit = { has_country_modifier = harassed_by_corsairs }
+			remove_country_modifier = harassed_by_corsairs
+		}
+	}
 }
 
 release_rohan = {
-  return_provinces_to_rohan = yes
-  make_subject = {
-    target = c:ROH
-    type = client_state
-  }
+	return_provinces_to_rohan = yes
+	make_subject = {
+		target = c:ROH
+		type = client_state
+	}
 
-  if = {
-    limit = {
-      current_date <= 3070.1.1
-    }
-    create_character = {
-      first_name="Eomer"
-      family = c:DOR.fam:HouseofDolAmroth
-      birth_date=2955.3.6
-      culture="dolamroth"
-      religion="iluvatarism"
-      father="char:39"
-      mother="char:40"
-      no_stats=yes
-      add_martial=12
-      add_charisma=9
-      add_finesse=5
-      add_zeal=8
-      no_traits=yes
-      add_trait="daring"
-      add_trait="confident"
-      add_gold=140
-      add_popularity=80
-      save_scope_as = Imrahil
-    }
-    if = {
-      limit = {
-        current_date > 3040.1.1
-      }
-      create_character = {
-        family = c:GON.fam:Hurionath
-        age = 0
-        father = scope:Imrahil
-        culture="dolamroth"
-        religion="iluvatarism"
-        no_traits=yes
-        no_stats=yes
-        force_add_trait="house_of_hurin"
-        force_add_trait="blood_of_numenor"
-      }
-    }
-  }
-  c:DOR = {
-    set_as_ruler = scope:Imrahil
-    revive_country = yes
-  }
-  c:ROH = {
-    revive_country = yes
-  }
+	if = {
+		limit = {
+			current_date <= 3070.1.1
+		}
+		create_character = {
+			first_name="Eomer"
+			family = c:DOR.fam:HouseofDolAmroth
+			birth_date=2955.3.6
+			culture="dolamroth"
+			religion="iluvatarism"
+			father="char:39"
+			mother="char:40"
+			no_stats=yes
+			add_martial=12
+			add_charisma=9
+			add_finesse=5
+			add_zeal=8
+			no_traits=yes
+			add_trait="daring"
+			add_trait="confident"
+			add_gold=140
+			add_popularity=80
+			save_scope_as = Imrahil
+		}
+		if = {
+			limit = {
+				current_date > 3040.1.1
+			}
+			create_character = {
+				family = c:GON.fam:Hurionath
+				age = 0
+				father = scope:Imrahil
+				culture="dolamroth"
+				religion="iluvatarism"
+				no_traits=yes
+				no_stats=yes
+				force_add_trait="house_of_hurin"
+				force_add_trait="blood_of_numenor"
+			}
+		}
+	}
+	c:DOR = {
+		set_as_ruler = scope:Imrahil
+		revive_country = yes
+	}
+	c:ROH = {
+		revive_country = yes
+	}
 }
 
 return_provinces_to_rohan = {
-  if = {
-    limit = {
-      p:1556 = { #Edoras
-        exists = owner
-        owner = ROOT
-      }
-    }
-    p:1556 = { set_conquered_by = c:ROH }
-  }
-  every_owned_province = {
-    limit = {
-      province_dominant_culture = rohirrim
-      is_in_region = calenardhon_region
-    }
-    set_conquered_by = c:ROH
-  }
-  c:DOR = {
-    if = {
-      limit = { has_country_modifier = influenced_by_saruman }
-      remove_country_modifier = influenced_by_saruman
-    }
-  }
+	if = {
+		limit = {
+			p:1556 = { #Edoras
+				exists = owner
+				owner = ROOT
+			}
+		}
+		p:1556 = { set_conquered_by = c:ROH }
+	}
+	every_owned_province = {
+		limit = {
+			province_dominant_culture = rohirrim
+			is_in_region = calenardhon_region
+		}
+		set_conquered_by = c:ROH
+	}
+	c:DOR = {
+		if = {
+			limit = { has_country_modifier = influenced_by_saruman }
+			remove_country_modifier = influenced_by_saruman
+		}
+	}
 }
 
 ring_to_shire_effect = {
-  if = {
-    limit = {
-      c:SHI = {
-        has_land = no
-      }
-    }
-    release_shire = yes
-  }
-  else_if = {
-    limit = {
-      p:1621 = { #michel delving
-        exists = owner
-        owner = ROOT
-      }
-    }
-    return_provinces_to_shire = yes
-  }
-  treasure:lotr_treasure_one_ring = {
-    transfer_treasure_to_country = c:SHI
-  }
+	if = {
+		limit = {
+			c:SHI = {
+				has_land = no
+			}
+		}
+		release_shire = yes
+	}
+	else_if = {
+		limit = {
+			p:1621 = { #michel delving
+				exists = owner
+				owner = ROOT
+			}
+		}
+		return_provinces_to_shire = yes
+	}
+	treasure:lotr_treasure_one_ring = {
+		transfer_treasure_to_country = c:SHI
+	}
 }

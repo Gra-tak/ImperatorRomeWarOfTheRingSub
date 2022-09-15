@@ -51,6 +51,7 @@ Features:
 	- Dwarfs and Numenorian simply low fertility
 - New Eastern Dwarfs that should fit the lore better (by Pureon)
 - New mountain range in the east (by Pureon)
+- Character interaction to give a message when a child is grown up.
 
 
 Immersion changes:

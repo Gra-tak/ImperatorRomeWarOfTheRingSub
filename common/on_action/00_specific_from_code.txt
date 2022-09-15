@@ -919,7 +919,7 @@ on_giving_birth = {
 		1 = health.4
 		30 = 0
 		30 = health.5
-		7 = br_childbirth.2 #stop elves and dwarves having children if they already have many
+		7 = lotr_childbirth.2 #stop elves and dwarves having children if they already have many
 	}
 }
 

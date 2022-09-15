@@ -16,8 +16,8 @@
 						is_subject_type = tributary
 					 }
 				 }
-			  every_owned_province = {
-			 		remove_claim = root
+				every_owned_province = {
+					remove_claim = root
 				}
 			}
 		}
@@ -110,14 +110,14 @@
 				 }
 				 save_scope_as = gratak_country_at_war
 				 every_country = {
-				 	limit = {
+					limit = {
 						is_ai = yes
 						is_subject = no
 						war = yes
 						war_with = scope:gratak_country_at_war
 						num_of_cities < scope:gratak_country_at_war.num_of_cities
 					 }
-				  every_owned_province = {
+					every_owned_province = {
 							set_conquered_by = scope:gratak_country_at_war
 					}
 				 }
@@ -132,9 +132,9 @@
 		allow = {
 		}
 		effect = {
-	    p:1030 = { #minas morgul
-	      remove_province_modifier = supplied_from_the_rear
-	    }
+			p:1030 = { #minas morgul
+				remove_province_modifier = supplied_from_the_rear
+			}
 		}
 	}
 	

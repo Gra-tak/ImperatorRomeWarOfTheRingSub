@@ -1,16 +1,9 @@
 ﻿harassed_by_corsairs = {
 	levy_size_multiplier = -0.45
-  loyalty_to_overlord = -200
+	loyalty_to_overlord = -200
 }
 
 influenced_by_saruman = {
 	levy_size_multiplier = -0.45
-  loyalty_to_overlord = -200
+	loyalty_to_overlord = -200
 }
-
-# restored_principality = {
-#   loyalty_to_overlord = 200
-# }
-
-# unable_to_help = {
-# }
