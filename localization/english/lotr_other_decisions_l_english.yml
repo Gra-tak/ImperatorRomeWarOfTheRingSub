@@ -81,7 +81,7 @@
  accept_culture:0 "Accept culture"
  accept_culture_desc:0 "Same culture group cultures can be accepted to allow contributing to your levies. Normal way disabled as integrating other cultures seems to break levies."
  encourage_migration_decision:0 "Encourage migration to subject countries"
- encourage_migration_decision_desc:0 "We encourage this non-integrated culture to migrate to a subject of their culture, of at least their culture group. As we are certain they would be more happy their, we offer them 5 gold per pop if they do this. Only active, as long as treasury is above 100 gold. Cultural integration disabled for these cultures (i.e. not eaten by Orcs)."
+ encourage_migration_decision_desc:0 "We encourage this non-integrated culture to migrate to a subject of their culture, of at least their culture group. As we are certain they would be more happy their, we offer them 5 gold per pop if they do this. Only active, as long as treasury is above 100 gold."
  stop_encourage_migration_decision:0 "Stop encouraging migration"
  stop_encourage_migration_decision_desc:0 "Just an undo."
  encourage_migration_to_overlord_decision:0 "Encourage migration from subject countries"

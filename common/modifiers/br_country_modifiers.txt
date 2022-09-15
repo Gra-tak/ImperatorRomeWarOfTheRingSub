@@ -33,7 +33,7 @@ orc_war_ae_modifier = {
 }
 
 encourage_migration = {
-	cultural_integration_speed_modifier = -4
+	cultural_integration_speed_modifier = -0.001
 }
 
 encourage_migration_to_overlord = {
