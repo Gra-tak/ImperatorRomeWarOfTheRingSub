@@ -49,6 +49,16 @@ object={
 # 	transform="4219.854492 0.122656 2242.697998 -0.000000 -1.000000 -0.000000 1.000000 0.300000 0.300000 0.300000
 # "}
 object={
+	name="wonder_minas_morgul"
+	clamp_to_water_level=yes
+	render_under_water=no
+	generated_content=no
+	layer="monument_layer"
+	entity="wonder_minas_morgul_entity"
+	count=1
+	transform="4213 0.7 2241.2 -0.000000 0.900000 -0.000000 1.000000 0.400000 0.400000 0.400000
+"}
+object={
 	name="Dol_Amroth_extra01"
 	clamp_to_water_level=yes
 	render_under_water=no

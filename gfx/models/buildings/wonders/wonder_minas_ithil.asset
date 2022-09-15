@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "wonder_minas_ithil_mesh"
+	file = "wonder_minas_ithil.mesh"
+
+	meshsettings = {
+		name = "wonder_minas_ithil"
+		index = 0
+		texture_diffuse = "dunedain_buildings_02_diffuse.dds"
+		texture_normal = "dunedain_buildings_02_normal.dds"
+		texture_specular = "dunedain_buildings_02_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "wonder_minas_ithil_entity"
+	pdxmesh = "wonder_minas_ithil_mesh"
+}
