@@ -963,3 +963,60 @@ ring_to_shire_effect = {
 		transfer_treasure_to_country = c:SHI
 	}
 }
+
+
+prepare_legion_unit_to_add_subunits = {
+	if = {
+		limit = {
+			any_legion = { any_legion_unit = {} }
+		}
+		random_legion = {
+			limit = { any_legion_unit = {} }
+			random_legion_unit = {
+				save_scope_as = unitScope
+			}
+		}
+		set_local_variable = {
+			name = exisitng_legion_flag
+		}
+	}
+	else_if = {
+		limit = {
+			any_legion = { }
+		}
+		random_legion = {
+			create_unit = {
+				location = ROOT.capital_scope
+				save_scope_as = unitScope
+			}
+		}
+	}
+	else = {
+		capital_scope.governorship = {
+			raise_legion = {
+				create_unit = {
+					location = ROOT.capital_scope
+					save_scope_as = unitScope
+				}
+			}
+		}
+	}
+}
+
+finish_legion_unit_after_adding_subunits = {
+	scope:unitScope = {
+		if = {
+			limit = {
+				NOT = {
+					has_local_variable = exisitng_legion_flag
+				}
+			}
+			every_sub_unit = {
+				limit = {
+					sub_unit_type = archers
+				}
+				destroy_subunit = yes
+			}
+		}
+	}
+}

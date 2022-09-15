@@ -691,17 +691,13 @@
 		on_completion = {
 			custom_tooltip = lotr_mordor_build_army_mission_3_olog_hai
 			hidden_effect = {
-				capital_scope.governorship = {
-					raise_legion = {
-						save_scope_as = olog_hai_legion
-						create_unit = {
-							location = ROOT.capital_scope
-							add_subunit = troll_infantry
-							add_subunit = troll_infantry
-							add_subunit = troll_infantry
-						}
-					}
+				prepare_legion_unit_to_add_subunits = yes
+				scope:unitScope = {
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
 				}
+				finish_legion_unit_after_adding_subunits = yes
 			}
 		}
 	}

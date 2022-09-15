@@ -4,7 +4,7 @@
 engineer_cohort = {
 	army = yes
 	support = yes
-	merc_cohorts_required = 8
+	merc_cohorts_required = 4
 	reduces_road_building_cost = yes
 	watercrossing_negation = 1.0
 	siege_impact = 1.0

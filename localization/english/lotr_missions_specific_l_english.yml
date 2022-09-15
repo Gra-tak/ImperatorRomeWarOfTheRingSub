@@ -67,7 +67,7 @@
  lotr_mordor_build_army_mission_2_DESC:0 "Orcs were originally created and bred by the Dark Lord Morgoth, removing the weaknesses of other races."
  lotr_mordor_build_army_mission_3:0 "Olog-hai trolls"
  lotr_mordor_build_army_mission_3_DESC:0 "The Olog-hai are a large and monstrous breed of troll that do not turn into stone in sunlight."
- lotr_mordor_build_army_mission_3_olog_hai:0 "A Legion of Olog-hai #Y Troll Infantry#! units is created in our capital [GetCountry('MOR').GetCapital.GetName]."
+ lotr_mordor_build_army_mission_3_olog_hai:0 "Olog-hai #Y Troll Infantry#! are added to one of our legions or a new legion of Olog-hai #Y Troll Infantry#! units is created in our capital if we do not have any legion yet [GetCountry('MOR').GetCapital.GetName]."
  lotr_mordor_build_army_mission_4:0 "Breeding vast hordes"
  lotr_mordor_build_army_mission_4_DESC:0 "Orc footsoldiers ready to wage war against the Free peoples of Middle-earth."
  lotr_mordor_saruman_mission_1:0 "Saruman's Palantír"
