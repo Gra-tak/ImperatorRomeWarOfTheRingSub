@@ -317,14 +317,13 @@ treasure_manager = {
 			key = "lotr_treasure_windlord_statue"
 			icon = "treasure_architecture"
 			state_modifier = { local_happiness_for_same_religion_modifier = 0.1 }
-		}		
+		}
 		754 = {
 			 #
 			key = "lotr_treasure_star_elendil_original"
 			icon = "lotr_treasure_star_elendil"
 			state_modifier = { local_nobles_output = 0.1 }
 		}
-
 	}
 }
 provinces = {
