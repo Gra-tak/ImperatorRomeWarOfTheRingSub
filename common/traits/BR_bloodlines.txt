@@ -30,7 +30,7 @@ house_of_elrond = { #
 		subject_loyalty = 15
 		monthly_legitimacy = 1.0
 		global_defensive = 0.2
-	happiness_for_wrong_culture_group_modifier = 0.15
+		happiness_for_wrong_culture_group_modifier = 0.15
 	}
 	unit = {
 		discipline = 0.3

@@ -15,10 +15,10 @@ orc_raid_events.1 = {
 		is_ai = no
 		NOT = { religion = melkorism }
 		any_owned_province = {
-      NOR = { 
-        has_building = fortress_building
-        has_variable = protected_against_raids
-      }
+			NOR = { 
+				has_building = fortress_building
+				has_variable = protected_against_raids
+			}
 			any_neighbor_province = {
 				OR = { #check for this again here, see weight multiplier comment
 					has_owner = no
@@ -59,10 +59,10 @@ orc_raid_events.1 = {
 	immediate = {
 		random_owned_province = {
 			limit = {
-	      NOR = { 
-	        has_building = fortress_building
-	        has_variable = protected_against_raids
-	      }
+				NOR = { 
+					has_building = fortress_building
+					has_variable = protected_against_raids
+				}
 				any_neighbor_province = {
 					OR = {
 						has_owner = no
@@ -148,10 +148,10 @@ orc_raid_events.2 = {
 		is_ai = no
 		NOT = { religion = melkorism }
 		any_owned_province = {
-      NOR = { 
-        has_building = fortress_building
-        has_variable = protected_against_raids
-      }
+			NOR = { 
+				has_building = fortress_building
+				has_variable = protected_against_raids
+			}
 			any_neighbor_province = {
 				OR = {
 					has_owner = no
@@ -191,10 +191,10 @@ orc_raid_events.2 = {
 	immediate = {
 		random_owned_province = {
 			limit = {
-	      NOR = { 
-	        has_building = fortress_building
-	        has_variable = protected_against_raids
-	      }
+				NOR = { 
+					has_building = fortress_building
+					has_variable = protected_against_raids
+				}
 				any_neighbor_province = {
 					OR = {
 						has_owner = no
@@ -281,10 +281,10 @@ orc_raid_events.3 = {
 		is_ai = no
 		NOT = { religion = melkorism }
 		any_owned_province = {
-      NOR = { 
-        has_building = fortress_building
-        has_variable = protected_against_raids
-      }
+			NOR = { 
+				has_building = fortress_building
+				has_variable = protected_against_raids
+			}
 			any_neighbor_province = {
 				OR = {
 					has_owner = no
@@ -324,10 +324,10 @@ orc_raid_events.3 = {
 	immediate = {
 		random_owned_province = {
 			limit = {
-	      NOR = { 
-	        has_building = fortress_building
-	        has_variable = protected_against_raids
-	      }
+				NOR = { 
+					has_building = fortress_building
+					has_variable = protected_against_raids
+				}
 				any_neighbor_province = {
 					OR = {
 						has_owner = no

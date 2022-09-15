@@ -893,7 +893,7 @@ on_giving_birth = {
 		}
 		scope:newborn = {
 			if = {
-				limit  = {
+				limit = {
 					NOT = {
 						has_trait = lisp
 					}
@@ -903,7 +903,7 @@ on_giving_birth = {
 					1 = {
 						add_trait = lisp
 					}
-					99 = {  }
+					99 = { }
 				}
 			}
 		}
@@ -919,17 +919,18 @@ on_giving_birth = {
 		1 = health.4
 		30 = 0
 		30 = health.5
+		7 = br_childbirth.2 #stop elves and dwarves having children if they already have many
 	}
 }
 
 on_being_born = {
-    effect = {
-        inbreeding_effect = yes
-        trigger_event = {
-            id = character_events.35
-            days = 1
-        }
-    }
+		effect = {
+				inbreeding_effect = yes
+				trigger_event = {
+						id = character_events.35
+						days = 1
+				}
+		}
 }
 
 on_zero_health = {
@@ -973,16 +974,16 @@ on_becoming_adult = {
 			}
 		}
 		if = {
-      limit = {
-        employer = {
-          is_ai = no
-        }
-      }
-      save_scope_as = gratak_grow_up_character
-      employer = {
-        trigger_event = { id = gratak_grow_up_event.1 }
-      }
-    }
+			limit = {
+				employer = {
+					is_ai = no
+				}
+			}
+			save_scope_as = gratak_grow_up_character
+			employer = {
+				trigger_event = { id = gratak_grow_up_event.1 }
+			}
+		}
 	}
 }
 
@@ -1082,7 +1083,7 @@ on_move_country = { #scope:old_country is the origin country
 			}
 		}
 		if = {
-			limit  = {
+			limit = {
 				has_character_modifier = inspire_disloyalty_modifier
 			}
 			remove_character_modifier = inspire_disloyalty_modifier
@@ -1207,14 +1208,6 @@ on_move_country = { #scope:old_country is the origin country
 
 on_game_initialized = {
 	effect = {
-		# ### Unique Mechanics ###
-		# startup_variables_unique_mechanics_effect = yes
-		# ### Unique Deities ###
-		# startup_variables_unique_deities_effect = yes
-		# ### Achievement Checks ###
-		# startup_variables_achievement_effect = yes
-		# ### Cultural Minority Rights ###
-		# startup_cultural_decisions_effect = yes
 		### Other ###
 		au_basic_setup = yes
 		if = {
@@ -2072,7 +2065,7 @@ yearly_financial_support_pulse = {
 	}
 }
 
-on_subject_defect = { #scope:future_overlord = country that stole vassal, scope:target_subject  = vassal being stolen
+on_subject_defect = { #scope:future_overlord = country that stole vassal, scope:target_subject = vassal being stolen
 	effect = {
 		add_opinion = {
 			modifier = stole_a_vassal_from_us
@@ -2096,7 +2089,7 @@ on_great_work_completed = {
 		trigger_event = {
 			id = "gw_existing.2"
 			days = 1825
-        }
+				}
 		
 		if = {
 			limit = {

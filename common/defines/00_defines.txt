@@ -613,7 +613,7 @@ NCharacter = {
 }
 
 NFamily = {
-	EXPECTED_JOB_PERCENTAGE = 0.6 #(TOTAL_JOBS / NUM_FAMILIES) * EXPECTED_JOBS_PERCENTAGE
+	EXPECTED_JOB_PERCENTAGE = 0.65 #(TOTAL_JOBS / NUM_FAMILIES) * EXPECTED_JOBS_PERCENTAGE
 	GRATEFUL_JOB_PERCENTAGE = 2 #current jobs > (expected jobs * GRATEFUL_JOBS_PERCENTAGE)
 
 	MIN_SIZE = 4; #below this size the family will look desperately into adopting minor characters

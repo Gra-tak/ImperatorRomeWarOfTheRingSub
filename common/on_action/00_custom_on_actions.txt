@@ -1255,11 +1255,3 @@ espionage_character_pulse = {
 		country_diplomacy.47
 	}
 }
-
-on_giving_birth = { #stop elves and dwarves having children if they already have many
-	random_events = {
-		90 = 0
-		10 = br_childbirth.2
-	}
-}
-

@@ -206,10 +206,10 @@ lotr_startup.6 = {
 	}
 	
 	immediate = {
-    make_subject = {
-        target = c:DLE
-        type = feudatory
-    }
+		make_subject = {
+				target = c:DLE
+				type = feudatory
+		}
 	}
 }
 
@@ -225,7 +225,7 @@ lotr_startup.7 = {
 	}
 	
 	immediate = {
-    change_law = age_of_the_orc
+		change_law = age_of_the_orc
 	}
 }
 

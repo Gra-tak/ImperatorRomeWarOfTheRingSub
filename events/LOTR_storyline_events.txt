@@ -26,8 +26,8 @@ lotr_storyline_events.1 = {
 				}
 			}
 		}
-    every_country = {
-      limit = {
+		every_country = {
+			limit = {
 				OR = { #the group of countries that hate Melkor realms
 				primary_culture = dunedain
 				primary_culture = lesser_dunedain
@@ -42,12 +42,12 @@ lotr_storyline_events.1 = {
 				country_culture_group = teleri_group
 				country_culture_group = vanyar_group
 				}
-      }					
-      add_to_list = event_list_1
-    }
-    every_in_list = {
-      list = event_list_1
-      save_scope_as = event_list_1_target
+			}					
+			add_to_list = event_list_1
+		}
+		every_in_list = {
+			list = event_list_1
+			save_scope_as = event_list_1_target
 			add_opinion = {
 				target = c:XVX
 				modifier = mortal_enemies
@@ -101,7 +101,7 @@ lotr_storyline_events.1 = {
 		}
 		set_primary_culture = urukhai
 		change_law = age_of_the_orc
-    
+		
 	}
 }
 
@@ -858,8 +858,8 @@ lotr_storyline_events.14 = {
 	picture = event_marriage
 
 	left_portrait = current_ruler
-  right_portrait = char:60
-  right_portrait = char:57
+	right_portrait = char:60
+	right_portrait = char:57
 
 	trigger = {
 	}
@@ -896,8 +896,8 @@ lotr_storyline_events.15 = {
 	picture = event_imladris
 
 	left_portrait = current_ruler
-  right_portrait = char:60
-  right_portrait = char:57
+	right_portrait = char:60
+	right_portrait = char:57
 
 	trigger = {
 	}

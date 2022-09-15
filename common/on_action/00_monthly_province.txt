@@ -4,21 +4,21 @@
 	events = {
 		
 	}
-  effect = {
-    if = {
-      limit = {
-        exists = owner
-        owner = {
-          country_culture_group = orcs_group
-        }
-        controller = {
-          NOT = { country_culture_group = orcs_group }
-        }
-        province_has_orcs = yes
-      }
-      orc_purge_local_effect = { 
-        LOC = ROOT
-      }
-    }
-  }
+	effect = {
+		if = {
+			limit = {
+				exists = owner
+				owner = {
+					country_culture_group = orcs_group
+				}
+				controller = {
+					NOT = { country_culture_group = orcs_group }
+				}
+				province_has_orcs = yes
+			}
+			orc_purge_local_effect = { 
+				LOC = ROOT
+			}
+		}
+	}
 }

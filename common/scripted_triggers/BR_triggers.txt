@@ -6,7 +6,7 @@
 		has_trait = strong_blood_of_numenor
 		has_trait = blood_of_numenor
 		has_trait = nazgul
-    has_variable = long_lived_flag
+		has_variable = long_lived_flag
 	}
 }
 

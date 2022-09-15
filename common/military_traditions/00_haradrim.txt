@@ -41,7 +41,7 @@
 		}
 		icon = persian_bactrian_path_5
 		requires = {}
-		on_activate = { #Uruk infantry
+		on_activate = {
 			custom_tooltip = "tradition_allow_warelephant"
 			hidden_effect = {
 				allow_warelephant = yes

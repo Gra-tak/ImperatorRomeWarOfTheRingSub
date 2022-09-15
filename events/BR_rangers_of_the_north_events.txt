@@ -115,15 +115,15 @@ br_rangers.3 = { #Gobins informed that they must attack the rangers
 				}
 			}
 			declare_war_with_wargoal = {
-          war_goal = raiding_wargoal
-          target = XXO
-      }
+				war_goal = raiding_wargoal
+				target = XXO
+			}
 		}
 		else = {
 			declare_war_with_wargoal = {
-	            war_goal = raiding_wargoal
-	            target = CAR
-	        }
+				war_goal = raiding_wargoal
+				target = CAR
+			}
 		}
 		C:CAR = {
 			trigger_event = { id = br_rangers.4 days = 5 }
