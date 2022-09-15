@@ -11,7 +11,7 @@
 	}
 
 	potential = {
-    	NOT = { has_variable = lotr_mordor_mission_activated_variable }
+		NOT = { has_variable = lotr_mordor_mission_activated_variable }
 		has_civil_war = no
 		is_subject = no
 		tag = MOR
@@ -37,9 +37,9 @@
 
 	on_abort = {
 		add_stability = -5
-        set_variable = {
-            name = lotr_mordor_mission_activated_variable
-        }
+		set_variable = {
+			name = lotr_mordor_mission_activated_variable
+		}
 	}
 
 	on_completion = {
@@ -52,40 +52,40 @@
 	lotr_mordor_saruman_mission_1 = {		# Saruman 1
 		icon = "task_conquest"
 
-    	duration = 365
+		duration = 365
 		
-        highlight = {
+		highlight = {
 			scope:province = {
 				exists = c:XVX
 				exists = owner
 				owner = c:XVX
 			}
-        }
+		}
 
-        potential = {
-            exists = c:XVX
-            c:XVX = {
-                is_ai = yes
-            }
-        }
+		potential = {
+			exists = c:XVX
+			c:XVX = {
+				is_ai = yes
+			}
+		}
 
-        bypass = {
+		bypass = {
 			c:XVX = { has_land = no }
 			NOT = {
 				c:XVX = {
 					current_ruler = char:16 # Saruman
 				}
 			}
-        }
+		}
 
 		allow = {
-        	not = { war_with = c:XVX }
-        	custom_tooltip = {
-        		text = lotr_mordor_saruman_mission_1_tt
+			not = { war_with = c:XVX }
+			custom_tooltip = {
+				text = lotr_mordor_saruman_mission_1_tt
 				c:XVX = {
 					current_ruler = char:16 # Saruman
 				}
-        	}
+			}
 			political_influence >= 80
 		}
 
@@ -94,12 +94,12 @@
 		}
 
 		on_completion = {
-        	c:XVX = {
-        		add_opinion = {
-        			target = root
-        			modifier = athenian_mission_01_foreign_rulership_subservient_subject_opinion
-        		}
-        	}
+			c:XVX = {
+				add_opinion = {
+					target = root
+					modifier = athenian_mission_01_foreign_rulership_subservient_subject_opinion
+				}
+			}
 			c:XVX.current_ruler = { 
 				add_corruption = 2
 			}
@@ -111,39 +111,39 @@
 		
 		requires = { lotr_mordor_saruman_mission_1 } 
 
-    	duration = 365
+		duration = 365
 		
-        highlight = {
+		highlight = {
 			scope:province = {
 				exists = c:XVX
 				exists = owner
 				owner = c:XVX
 			}
-        }
+		}
 
-        potential = {
-            exists = c:XVX
-        }
+		potential = {
+			exists = c:XVX
+		}
 
-        bypass = {
+		bypass = {
 			c:XVX = { has_land = no }
 			NOT = {
 				c:XVX = {
 					current_ruler = char:16 # Saruman
 				}
 			}
-        }
+		}
 
 		allow = {
 			treasury >= 150
-        	not = { war_with = c:XVX }
+			not = { war_with = c:XVX }
 			c:XVX.current_ruler = { 
 				is_friend = root.current_ruler
 			}
 		}
 
 		on_start = {
-            add_treasury = -150
+			add_treasury = -150
 		}
 
 		on_completion = {
@@ -162,39 +162,39 @@
 
 		requires = { lotr_mordor_saruman_mission_2 } 
 
-    	duration = 365
+		duration = 365
 		
-        highlight = {
+		highlight = {
 			scope:province = {
 				exists = c:XVX
 				exists = owner
 				owner = c:XVX
 			}
-        }
+		}
 
-        potential = {
-            exists = c:XVX
-        }
+		potential = {
+			exists = c:XVX
+		}
 
-        bypass = {
+		bypass = {
 			c:XVX = { has_land = no }
 			NOT = {
 				c:XVX = {
 					current_ruler = char:16 # Saruman
 				}
 			}
-        }
+		}
 
 		allow = {
 			treasury >= 150
-        	not = { war_with = c:XVX }
+			not = { war_with = c:XVX }
 			c:XVX.current_ruler = { 
 				is_friend = root.current_ruler
 			}
 		}
 
 		on_start = {
-            add_treasury = -150
+			add_treasury = -150
 		}
 
 		on_completion = {
@@ -215,62 +215,62 @@
 
 		requires = { lotr_mordor_saruman_mission_3 } 
 
-    	duration = 365
+		duration = 365
 		
-        highlight = {
+		highlight = {
 			scope:province = {
 				exists = c:XVX
 				exists = owner
 				owner = c:XVX
 			}
-        }
+		}
 
-        potential = {
-            exists = c:XVX
-        }
+		potential = {
+			exists = c:XVX
+		}
 
-        bypass = {
+		bypass = {
 			c:XVX = { has_land = no }
 			NOT = {
 				c:XVX = {
 					current_ruler = char:16 # Saruman
 				}
 			}
-        }
+		}
 
 		allow = {
 			treasury >= 150
-        	not = { war_with = c:XVX }
+			not = { war_with = c:XVX }
 			c:XVX.current_ruler = { 
 				is_friend = root.current_ruler
 			}
 		}
 
 		on_start = {
-            add_treasury = -150
+			add_treasury = -150
 		}
 
 		on_completion = {
-            if = {
-                limit = {
-                    exists = c:XVX
-                    c:XVX = {
-                        is_ai = yes
-                    }
-                }
-                make_subject = {
-                    target = c:XVX
-                    type = tributary
-                }
+			if = {
+				limit = {
+					exists = c:XVX
+					c:XVX = {
+						is_ai = yes
+					}
+				}
+				make_subject = {
+					target = c:XVX
+					type = tributary
+				}
 				current_ruler = {
 					add_popularity = popularity_small
 				}
-            }
-            else = {
+			}
+			else = {
 				current_ruler = {
 					add_popularity = popularity_large
 				}
-            }
+			}
 		} 
 	}
 
@@ -280,54 +280,54 @@
 	lotr_mordor_theoden_mission_1 = {		# Theoden 1 Gríma Wormtongue
 		icon = "task_expansion"
 
-    	duration = 365
+		duration = 365
 		
-        highlight = {
+		highlight = {
 			scope:province = {
 				exists = c:ROH
 				exists = owner
 				owner = c:ROH
 			}
-        }
+		}
 
-        potential = {
-            exists = c:ROH
-            c:ROH = {
-                is_ai = yes
-            }
-        }
+		potential = {
+			exists = c:ROH
+			c:ROH = {
+				is_ai = yes
+			}
+		}
 
-        bypass = {
-            OR = {
-                c:ROH = { has_land = no }
+		bypass = {
+			OR = {
+				c:ROH = { has_land = no }
 				war_with = c:ROH
-            }
-        }
+			}
+		}
 
 		allow = {
 			treasury >= 150
-        	not = { war_with = c:ROH }
+			not = { war_with = c:ROH }
 		}
 
 		on_start = {
-            add_treasury = -150
+			add_treasury = -150
 		}
 
 		on_completion = {
-        	custom_tooltip = lotr_mordor_theoden_mission_1_character_tt
-        	hidden_effect = {
-        		create_character = {
-        			culture = rohirrim
-        			religion = melkorism
-        			age = 28
-        			no_stats = yes
-        			bad_martial_effect = yes
-        			amazing_charisma_effect = yes
-        			good_finesse_effect = yes
-        			good_zeal_effect = yes
+			custom_tooltip = lotr_mordor_theoden_mission_1_character_tt
+			hidden_effect = {
+				create_character = {
+					culture = rohirrim
+					religion = melkorism
+					age = 28
+					no_stats = yes
+					bad_martial_effect = yes
+					amazing_charisma_effect = yes
+					good_finesse_effect = yes
+					good_zeal_effect = yes
 					save_scope_as = grima_wormtongue
-        		}
-        	}
+				}
+			}
 		} 
 	}
 	
@@ -336,30 +336,30 @@
 
 		requires = { lotr_mordor_theoden_mission_1 } 
 
-    	duration = 1095
+		duration = 1095
 		
-        highlight = {
+		highlight = {
 			scope:province = {
 				exists = c:ROH
 				exists = owner
 				owner = c:ROH
 			}
-        }
+		}
 
-        potential = {
-            exists = c:ROH
-        }
+		potential = {
+			exists = c:ROH
+		}
 
-        bypass = {
-            OR = {
-                c:ROH = { has_land = no }
+		bypass = {
+			OR = {
+				c:ROH = { has_land = no }
 				war_with = c:ROH
-            }
-        }
+			}
+		}
 
 		allow = {
 			political_influence >= 80
-        	not = { war_with = c:ROH }
+			not = { war_with = c:ROH }
 		}
 
 		on_start = {
@@ -367,7 +367,7 @@
 		}
 
 		on_completion = {
-        	custom_tooltip = lotr_mordor_theoden_mission_2_character_tt
+			custom_tooltip = lotr_mordor_theoden_mission_2_character_tt
 			c:ROH.current_ruler = { 
 				add_corruption = 2
 			}
@@ -379,37 +379,37 @@
 
 		requires = { lotr_mordor_theoden_mission_2 } 
 
-    	duration = 365
+		duration = 365
 		
-        highlight = {
+		highlight = {
 			scope:province = {
 				exists = c:ROH
 				exists = owner
 				owner = c:ROH
 			}
-        }
+		}
 
-        potential = {
-            exists = c:ROH
-        }
+		potential = {
+			exists = c:ROH
+		}
 
-        bypass = {
-            OR = {
-                c:ROH = { has_land = no }
+		bypass = {
+			OR = {
+				c:ROH = { has_land = no }
 				war_with = c:ROH
-            }
-        }
+			}
+		}
 
 		allow = {
 			treasury >= 150
-        	not = { war_with = c:ROH }
+			not = { war_with = c:ROH }
 			c:ROH.current_ruler = { 
 				is_friend = root.current_ruler
 			}
 		}
 
 		on_start = {
-            add_treasury = -150
+			add_treasury = -150
 		}
 
 		on_completion = {
@@ -429,70 +429,70 @@
 
 		requires = { lotr_mordor_theoden_mission_3 } 
 
-    	duration = 365
+		duration = 365
 		
-        highlight = {
+		highlight = {
 			scope:province = {
 				exists = c:ROH
 				exists = owner
 				owner = c:ROH
 			}
-        }
+		}
 
-        potential = {
-            exists = c:ROH
-        }
+		potential = {
+			exists = c:ROH
+		}
 
-        bypass = {
-            OR = {
-                c:ROH = { has_land = no }
+		bypass = {
+			OR = {
+				c:ROH = { has_land = no }
 				war_with = c:ROH
-            }
-        }
+			}
+		}
 
 		allow = {
 			treasury >= 150
-        	not = { war_with = c:ROH }
+			not = { war_with = c:ROH }
 			c:ROH.current_ruler = { 
 				is_friend = root.current_ruler
 			}
 		}
 
 		on_start = {
-            add_treasury = -150
+			add_treasury = -150
 		}
 
 		on_completion = {
-            if = {
-                limit = {
-                    exists = c:ROH
-                    c:ROH = {
-                        is_ai = yes
-                    }
-                }
-                if = {
-                    limit = {
-                        c:ROH = {
+			if = {
+				limit = {
+					exists = c:ROH
+					c:ROH = {
+						is_ai = yes
+					}
+				}
+				if = {
+					limit = {
+						c:ROH = {
 							is_subject_of = GON
-                        }
-                    }
-                    c:GON = {
+						}
+					}
+					c:GON = {
 						release_subject = c:ROH
-                    }
-                    make_subject = {
-                        target = c:ROH
-                        type = tributary
-                    }
-                }
+					}
+					make_subject = {
+						target = c:ROH
+						type = tributary
+					}
+				}
 				current_ruler = {
 					add_popularity = popularity_large
 				}
-            }
-            else = {
+			}
+			else = {
 				current_ruler = {
 					add_popularity = popularity_large
 				}
-            }
+			}
 		} 
 	}
 
@@ -504,18 +504,18 @@
 
 		requires = { lotr_mordor_build_army_mission_1 } 
 
-    	duration = 730
+		duration = 730
 
-        potential = {
-            exists = treasure:lotr_treasure_one_ring
-        }
+		potential = {
+			exists = treasure:lotr_treasure_one_ring
+		}
 
 		allow = {
-        	treasury >= 150
-        	manpower >= 10
+			treasury >= 150
+			manpower >= 10
 		}
 		
-        bypass = {
+		bypass = {
 			trigger_if = {
 				limit = {
 					exists = treasure:lotr_treasure_one_ring
@@ -531,14 +531,14 @@
 					}
 				}
 			}
-        }
+		}
 		
-        highlight = {
-        }
+		highlight = {
+		}
 
 		on_start = {
-        	add_treasury = -150
-        	add_manpower = -10
+			add_treasury = -150
+			add_manpower = -10
 		}
 
 		on_completion = {
@@ -552,9 +552,9 @@
 
 		final = yes
 
-        potential = {
-            exists = treasure:lotr_treasure_one_ring
-        }
+		potential = {
+			exists = treasure:lotr_treasure_one_ring
+		}
 
 		allow = {
 			owns = 1141
@@ -575,11 +575,11 @@
 			}
 		}
 		
-        highlight = {
-        	scope:province = {
-        		this = root.capital_scope
-        	}
-        }
+		highlight = {
+			scope:province = {
+				this = root.capital_scope
+			}
+		}
 
 		on_start = {
 		}
@@ -599,7 +599,7 @@
 	lotr_mordor_build_army_mission_1 = {		# Orcs of Mordor
 		icon = "task_diplomatic"
 
-    	duration = 220
+		duration = 220
 
 		allow = {
 			manpower_percentage > 0.85
@@ -609,11 +609,11 @@
 			}
 		}
 		
-        highlight = {
-        	scope:province = {
-        		this = root.capital_scope
-        	}
-        }
+		highlight = {
+			scope:province = {
+				this = root.capital_scope
+			}
+		}
 
 		on_start = {
 		}
@@ -632,7 +632,7 @@
 
 		requires = { lotr_mordor_build_army_mission_1 } 
 
-    	duration = 220
+		duration = 220
 
 		allow = {
 			invention = buy_military_tradition_inv
@@ -646,20 +646,20 @@
 
 		on_completion = {
 			add_stability = 10
-        	create_character = {
-        		age = 32
-        		no_traits = yes
-        		no_stats = yes
-        		hidden_effect = {
-        			amazing_martial_effect = yes
-        			great_charisma_effect = yes
-        			good_finesse_effect = yes
-        			average_zeal_effect = yes
-        			positive_martial_trait_effect = yes
-        			positive_martial_trait_effect = yes
-        			random_trait_effect = yes
-        		}
-        	}
+			create_character = {
+				age = 32
+				no_traits = yes
+				no_stats = yes
+				hidden_effect = {
+					amazing_martial_effect = yes
+					great_charisma_effect = yes
+					good_finesse_effect = yes
+					average_zeal_effect = yes
+					positive_martial_trait_effect = yes
+					positive_martial_trait_effect = yes
+					random_trait_effect = yes
+				}
+			}
 			current_ruler = {
 				add_martial = 1
 			}
@@ -669,20 +669,23 @@
 	lotr_mordor_build_army_mission_3 = {		# Olog-hai trolls
 		icon = "task_expansion"
 
-    	duration = 220
+		duration = 220
 
 		requires = { lotr_mordor_build_army_mission_2 } 
 
 		allow = {
-			has_law = standing_army_law
-        	treasury >= 200
+			OR = {
+				has_law = work_for_the_best
+				has_law = standing_army_law
+			}
+			treasury >= 200
 		}
 		
 		highlight = {
 		}
 
 		on_start = {
-        	add_treasury = -200
+			add_treasury = -200
 		}
 
 		on_completion = {
@@ -693,9 +696,9 @@
 						save_scope_as = olog_hai_legion
 						create_unit = {
 							location = ROOT.capital_scope
-		                    add_subunit = troll_infantry
-                    		add_subunit = troll_infantry
-		                    add_subunit = troll_infantry
+							add_subunit = troll_infantry
+							add_subunit = troll_infantry
+							add_subunit = troll_infantry
 						}
 					}
 				}
@@ -706,7 +709,7 @@
 	lotr_mordor_build_army_mission_4 = {		# Breeding vast hordes
 		icon = "task_conquest"
 
-    	duration = 220
+		duration = 220
 
 		requires = { lotr_mordor_build_army_mission_3 } 
 
