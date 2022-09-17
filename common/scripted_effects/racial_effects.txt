@@ -133,6 +133,7 @@ set_reconquered_from_orcs_variable = {
 					NOT = { pop_culture_group = orcs_group }
 				}
 			}
+			any_pops_in_province = {}
 		}
 		set_variable = {
 			name = orcs_purged_flag

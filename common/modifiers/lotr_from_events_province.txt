@@ -146,8 +146,8 @@ mithlond_harbour_modifier = {
 	local_cohort_recruit_speed = -0.1
 }
 imladris_modifier = {
-	happiness_for_wrong_culture_modifier = 0.3
-	happiness_for_same_culture_modifier = 0.5
+	local_happiness_for_same_culture_modifier = 0.2
+	local_happiness_for_same_religion_modifier = 0.1
 	fort_level = 3
 }
 elostirion_modifier = {

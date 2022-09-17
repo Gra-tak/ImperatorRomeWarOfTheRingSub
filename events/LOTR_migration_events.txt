@@ -1315,6 +1315,7 @@ lotr_migration_events.100 = {
 				country_culture_group = orcs_group
 			}
 		}
+		province_has_orcs = yes
 	}
 	immediate = {
 		orc_purge_effect = { LOC = ROOT }
