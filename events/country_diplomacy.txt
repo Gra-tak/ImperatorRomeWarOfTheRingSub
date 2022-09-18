@@ -2863,7 +2863,7 @@ country_diplomacy.39 = {
 			is_subject_type = tributary
 			has_land = yes
 			is_ai = yes
-			NOT = { has_truce_with = overlord }
+			# NOT = { has_truce_with = overlord }
 			war = no
 			has_subject_loyalty >= 60
 			NOT = { has_variable = subject_wants_more_cooldown }
