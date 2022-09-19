@@ -813,7 +813,7 @@ release_dol_amorth = {
 				current_date > 3040.1.1
 			}
 			create_character = {
-				family = c:GON.fam:Hurionath
+				family = c:DOR.fam:HouseofDolAmroth
 				age = 0
 				father = scope:Imrahil
 				culture="dolamroth"
@@ -872,9 +872,9 @@ release_rohan = {
 		}
 		create_character = {
 			first_name="Eomer"
-			family = c:DOR.fam:HouseofDolAmroth
+			family = c:ROH.fam.Eorling
 			birth_date=2955.3.6
-			culture="dolamroth"
+			culture="rohirrim"
 			religion="iluvatarism"
 			father="char:39"
 			mother="char:40"
@@ -888,27 +888,25 @@ release_rohan = {
 			add_trait="confident"
 			add_gold=140
 			add_popularity=80
-			save_scope_as = Imrahil
+			save_scope_as = Eomer
 		}
 		if = {
 			limit = {
 				current_date > 3040.1.1
 			}
 			create_character = {
-				family = c:GON.fam:Hurionath
+				family = c:ROH.fam.Eorling
 				age = 0
-				father = scope:Imrahil
-				culture="dolamroth"
+				father = scope:Eomer
+				culture="rohirrim"
 				religion="iluvatarism"
 				no_traits=yes
 				no_stats=yes
-				force_add_trait="house_of_hurin"
-				force_add_trait="blood_of_numenor"
 			}
 		}
 	}
-	c:DOR = {
-		set_as_ruler = scope:Imrahil
+	c:ROH = {
+		set_as_ruler = scope:Eomer
 		revive_country = yes
 	}
 	c:ROH = {
@@ -938,6 +936,114 @@ return_provinces_to_rohan = {
 			limit = { has_country_modifier = influenced_by_saruman }
 			remove_country_modifier = influenced_by_saruman
 		}
+	}
+}
+
+release_dale = {
+	return_provinces_to_dale = yes
+	make_subject = {
+		target = c:DLE
+		type = client_state
+	}
+
+	if = {
+		limit = {
+			current_date <= 3070.1.1
+		}
+		create_character = {
+			first_name="Bard II"
+			family = c:DLE.fam:Barding
+			birth_date=3010.1.1
+			culture="lakemen"
+			religion="iluvatarism"
+			no_stats=yes
+			add_martial=14
+			add_charisma=10
+			add_finesse=11
+			add_zeal=8
+			no_traits=yes
+			force_add_trait="just"
+			force_add_trait="steadfast"
+			force_add_trait="daring"
+			force_add_trait="confident"
+			add_gold=200
+			add_popularity=60
+			save_scope_as = bard
+		}
+		if = {
+			limit = {
+				current_date > 3050.1.1
+			}
+			create_character = {
+				family = c:DLE.fam:Barding
+				culture=lakemen
+				religion="iluvatarism"
+				age = 0
+				father = scope:bard
+				no_traits=yes
+				no_stats=yes
+			}
+		}
+	}
+	c:DLE = {
+		set_as_ruler = scope:bard
+		revive_country = yes
+	}
+}
+
+return_provinces_to_dale = {
+	if = {
+		limit = {
+			p:2720 = { #Dale
+				exists = owner
+				owner = ROOT
+			}
+		}
+		p:2720 = { set_conquered_by = c:DLE }
+	}
+	every_owned_province = {
+		limit = {
+			province_dominant_culture = lakemen
+			OR = {
+				is_in_region = rhovanion_region
+				#is_in_region = anorien_region
+			}
+		}
+		set_conquered_by = c:DLE
+	}
+}
+
+release_dorw = {
+	return_provinces_to_dorw = yes
+	make_subject = {
+		target = c:DWN
+		type = client_state
+	}
+
+	c:DWN = {
+		revive_country = yes
+	}
+}
+
+return_provinces_to_dorw = {
+	if = {
+		limit = {
+			p:200 = {
+				exists = owner
+				owner = ROOT
+			}
+		}
+		p:200 = { set_conquered_by = c:DWN }
+	}
+	every_owned_province = {
+		limit = {
+			province_dominant_culture = dorwinrim
+			OR = {
+				is_in_region = dorwinion_region
+				#is_in_region = anorien_region
+			}
+		}
+		set_conquered_by = c:DWN
 	}
 }
 
