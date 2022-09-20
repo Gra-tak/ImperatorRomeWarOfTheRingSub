@@ -11,6 +11,7 @@
 
 country_has_space_for_migration_modifer = {
 	modifier = {
+		has_variable = relative_free_space
 		add = {
 			value = var:relative_free_space
 			min = 0

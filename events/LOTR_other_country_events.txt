@@ -77,3 +77,216 @@ lotr_other_country_events.2 = {
 		add_treasury = capped_gain_6
 	}
 }
+
+#Sauron attack Gondor
+lotr_other_country_events.3 = {
+	type = country_event
+	hidden = yes
+	picture = dunedain_patrol
+	fire_only_once = yes
+	trigger = {
+		# tag = GON
+		OR = {
+			AND = {
+				current_date > 3019.1.1
+				c:GON = { owns = 1200 } #Eastern Osgiliath
+			}
+			AND = {
+				current_date > 3050.1.1
+				c:GON = { owns = 1300 } #Minas Tirith
+			}
+		}
+		c:MOR = {
+			is_ai = yes
+			religion = melkorism
+			war = no
+			NOT = { has_truce_with = c:GON }
+		}
+		c:XVX = {
+			is_ai = yes
+			religion = melkorism
+			war = no
+			NOT = { has_truce_with = c:GON }
+		}
+		c:UMB = {
+			is_ai = yes
+			religion = melkorism
+			war = no
+			NOT = { has_truce_with = c:GON }
+		}
+	}	
+	weight_multiplier = {
+		modifier = {
+			factor = 5
+			current_date > 3050.1.1
+			c:GON = { owns = 1200 } #Eastern Osgiliath
+		}
+	}
+	immediate = {
+		c:MOR = {
+			if = {
+				limit = {
+					area:forithilien_area = {
+						any_area_province = {
+							exists = owner
+							owner = c:GON
+						}
+					}
+				}
+				area:forithilien_area = {
+					random_area_province = {
+						limit = {
+							exists = owner
+							owner = c:GON
+						}
+						save_scope_as = target
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					area:ithilien_area = {
+						any_area_province = {
+							exists = owner
+							owner = c:GON
+						}
+					}
+				}
+				area:ithilien_area = {
+					random_area_province = {
+						limit = {
+							exists = owner
+							owner = c:GON
+						}
+						save_scope_as = target
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					area:anorien_area = {
+						any_area_province = {
+							exists = owner
+							owner = c:GON
+						}
+					}
+				}
+				area:anorien_area = {
+					random_area_province = {
+						limit = {
+							exists = owner
+							owner = c:GON
+						}
+						save_scope_as = target
+					}
+				}
+			}
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = scope:target
+				target = c:GON
+			}
+			loyal_subjects_join_wars_effect = yes
+		}
+		c:XVX = {
+			if = {
+				limit = {
+					c:ROH = { has_land = yes }
+				}
+				declare_war_with_wargoal = {
+					war_goal = conquer_wargoal
+					province = c:ROH.capital_scope
+					target = c:ROH
+				}
+			}
+			else = {
+				declare_war_with_wargoal = {
+					war_goal = conquer_wargoal
+					province = c:GON.capital_scope
+					target = c:GON
+				}
+			}
+			loyal_subjects_join_wars_effect = yes
+		}
+		c:UMB = {
+			if = {
+				limit = {
+					region:harondor_region = {
+						any_region_province = {
+							exists = owner
+							owner = c:GON
+						}
+					}
+				}
+				region:harondor_region = {
+					random_region_province = {
+						limit = {
+							exists = owner
+							owner = c:GON
+						}
+						save_scope_as = target
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					region:ithilien_region = {
+						any_region_province = {
+							exists = owner
+							owner = c:GON
+						}
+					}
+				}
+				region:ithilien_region = {
+					random_region_province = {
+						limit = {
+							exists = owner
+							owner = c:GON
+						}
+						save_scope_as = target
+					}
+				}
+			}
+			declare_war_with_wargoal = {
+				war_goal = conquer_wargoal
+				province = scope:target
+				target = c:GON
+			}
+			loyal_subjects_join_wars_effect = yes
+		}
+	}
+	option = {
+		name = OK
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			trigger_event = {
+				id = lotr_other_country_events.4
+			}
+		}
+	}
+}
+
+#treasures found in orc country
+lotr_other_country_events.4 = {
+	type = country_event
+	title = "lotr_other_country_events.4.t"
+	desc = "lotr_other_country_events.4.desc"
+	picture = event_minas_tirith_attacked
+	option = {
+		trigger = {
+			religion = melkorism
+		}
+		name = lotr_storyline_events.1.a
+	}
+	option = {
+		name = lotr_storyline_events.2.a
+	}
+	option = {
+		trigger = {
+			religion = iluvatarism
+		}
+		name = lotr_storyline_events.11.a
+	}
+}

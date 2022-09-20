@@ -37,3 +37,10 @@ lotr_character_events_pulse = {
 		13 = lotr_character_events.34
 	}
 }
+
+forced_attack_events_pulse = {
+	random_events = {
+		100 = 0
+		10 = lotr_other_country_events.3
+	}
+}

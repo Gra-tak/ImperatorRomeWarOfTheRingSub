@@ -263,3 +263,5 @@
  lotr_other_country_events.2.a:0 "He will become our ruler!"
  lotr_other_country_events.2.b:0 "He will lead our armies!"
  lotr_other_country_events.2.c:0 "We will be rewarded in gold"
+ lotr_other_country_events.4.t:0 "Gondor under attack"
+ lotr_other_country_events.4.desc:0 "The forces of Sauron have started a concentrated attack on Gondor and Rohan. The Corsairs of Umbar are attacking from the south, while the Witch king marches towards Osgiliath and Saruman is attacking the Horse-Lords of Rohan."

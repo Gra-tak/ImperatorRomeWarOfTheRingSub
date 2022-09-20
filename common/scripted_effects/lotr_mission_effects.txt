@@ -294,6 +294,10 @@ declare_war_with_potential_truce = {
 		add_war_exhaustion = -1
 		add_aggressive_expansion = -25
 	}
+	loyal_subjects_join_wars_effect = yes
+}
+
+loyal_subjects_join_wars_effect = {
 	every_current_war = {
 		save_scope_as = targetWar
 		PREV = {
