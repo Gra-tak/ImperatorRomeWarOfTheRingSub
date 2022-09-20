@@ -1064,6 +1064,8 @@ lotr_migration_events.7 = {
 						ROOT = {
 							any_subject = {
 								culture = scope:pop_from_list.culture
+								has_variable = relative_free_space
+								var:relative_free_space > 0
 							}
 						}
 					}
@@ -1071,6 +1073,8 @@ lotr_migration_events.7 = {
 						random_subject = {
 							limit = {
 								culture = scope:pop_from_list.culture
+								has_variable = relative_free_space
+								var:relative_free_space > 0
 							}
 							weight = {
 								base = 10
@@ -1088,15 +1092,21 @@ lotr_migration_events.7 = {
 								save_scope_as = target
 							}
 						}
-						add_treasury = -5
 					}
-					move_pop = scope:target
+					if = {
+						limit = { exists = scope:target }
+						ROOT = { add_treasury = -5 }
+						move_pop = scope:target
+						clear_saved_scope = target
+					}
 				}
 				else_if = {
 					limit = {
 						ROOT = {
 							any_subject = {
 								culture.culture_group = scope:pop_from_list.culture.culture_group
+								has_variable = relative_free_space
+								var:relative_free_space > 0
 							}
 						}
 					}
@@ -1104,6 +1114,8 @@ lotr_migration_events.7 = {
 						random_subject = {
 							limit = {
 								culture.culture_group = scope:pop_from_list.culture.culture_group
+								has_variable = relative_free_space
+								var:relative_free_space > 0
 							}
 							weight = {
 								base = 10
@@ -1121,9 +1133,13 @@ lotr_migration_events.7 = {
 								save_scope_as = target
 							}
 						}
-						add_treasury = -5
 					}
-					move_pop = scope:target
+					if = {
+						limit = { exists = scope:target }
+						ROOT = { add_treasury = -5 }
+						move_pop = scope:target
+						clear_saved_scope = target
+					}
 				}
 			}
 		}
