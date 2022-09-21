@@ -289,4 +289,38 @@
 			}
 		}
 	}
+
+	release_dorw_decision = {
+		potential = {
+			c:DWN = { has_land = no }
+			religion = iluvatarism
+			owns = 200
+		}
+		allow = {
+			any_owned_province = {
+				is_in_region = dorwinion_region
+				province_dominant_culture = dorwinrim
+			}
+		}
+		effect = {
+			release_dorw = yes
+		}
+	}
+
+	release_dale_decision = {
+		potential = {
+			c:DLE = { has_land = no }
+			religion = iluvatarism
+			owns = 2720
+		}
+		allow = {
+			any_owned_province = {
+				is_in_region = rhovanion_region
+				province_dominant_culture = lakemen
+			}
+		}
+		effect = {
+			release_dale = yes
+		}
+	}
 }
