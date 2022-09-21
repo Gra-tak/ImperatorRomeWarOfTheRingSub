@@ -96,6 +96,7 @@ lotr_migration_events.1 = {
 			name = fleeSuccess
 			divide = 100
 		}
+		round_actual_moved_effect = yes
 	}
 	option = {
 		name = "OK"
@@ -276,7 +277,7 @@ lotr_migration_events.2 = {
 
 		set_variable = {
 			name = actualMover
-			value = { integer_range = { min = 0 max = 20 } }
+			value = { integer_range = { min = -35 max = 55 } }
 		}
 		change_variable = {
 			name = actualMover
@@ -286,6 +287,7 @@ lotr_migration_events.2 = {
 			name = actualMover
 			divide = 100
 		}
+		round_actual_moved_effect = yes
 	}
 	option = {
 		name = "OK"
@@ -440,7 +442,7 @@ lotr_migration_events.3 = {
 
 		set_variable = {
 			name = actualMover
-			value = { integer_range = { min = 0 max = 20 } }
+			value = { integer_range = { min = -35 max = 55 } }
 		}
 		change_variable = {
 			name = actualMover
@@ -450,6 +452,7 @@ lotr_migration_events.3 = {
 			name = actualMover
 			divide = 100
 		}
+		round_actual_moved_effect = yes
 	}
 	option = {
 		name = "OK"
@@ -602,7 +605,7 @@ lotr_migration_events.4 = {
 
 		set_variable = {
 			name = actualMover
-			value = { integer_range = { min = 0 max = 20 } }
+			value = { integer_range = { min = -35 max = 55 } }
 		}
 		change_variable = {
 			name = actualMover
@@ -612,6 +615,7 @@ lotr_migration_events.4 = {
 			name = actualMover
 			divide = 100
 		}
+		round_actual_moved_effect = yes
 	}
 	option = {
 		name = "OK"
@@ -862,7 +866,7 @@ lotr_migration_events.6 = {
 			}
 		}
 
-		#just setting a low percentate would mean that we never have migration from small countries. Using the multiple of three percentages, we get a non-uniform random number that gives a maximum migraton of 6.4%, though this happens very rarely. In averege we have 0.8% migration.
+		#just setting a low percentate would mean that we never have migration from small countries. Using the multiple of three percentages, we get a non-uniform random number that gives a maximum migraton of 6.4%, though this happens very rarely. In average we have 0.8% migration.
 		set_variable = {
 			name = actualMover
 			value = { integer_range = { min = 0 max = 40 } }
@@ -883,6 +887,7 @@ lotr_migration_events.6 = {
 			name = actualMover
 			divide = 1000000
 		}
+		round_actual_moved_effect = yes
 	}
 	option = {
 		name = "OK"
@@ -1039,7 +1044,7 @@ lotr_migration_events.7 = {
 
 		set_variable = {
 			name = actualMover
-			value = { integer_range = { min = 0 max = 20 } }
+			value = { integer_range = { min = -20 max = 50 } }
 		}
 		change_variable = {
 			name = actualMover
@@ -1049,6 +1054,7 @@ lotr_migration_events.7 = {
 			name = actualMover
 			divide = 100
 		}
+		round_actual_moved_effect = yes
 	}
 	option = {
 		name = "OK"
@@ -1247,7 +1253,7 @@ lotr_migration_events.8 = {
 		set_variable = {
 			name = actualMover
 			# value = { integer_range = { min = 100 max = 100 } }
-			value = { integer_range = { min = 0 max = 20 } }
+			value = { integer_range = { min = -100 max = 100 } }
 		}
 		change_variable = {
 			name = actualMover
@@ -1257,6 +1263,7 @@ lotr_migration_events.8 = {
 			name = actualMover
 			divide = 100
 		}
+		round_actual_moved_effect = yes
 	}
 	option = {
 		name = "OK"

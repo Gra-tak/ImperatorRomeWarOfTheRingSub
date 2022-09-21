@@ -1130,3 +1130,26 @@ finish_legion_unit_after_adding_subunits = {
 		}
 	}
 }
+
+round_actual_moved_effect = {
+	#fake rounding (the real rounding doesn't seem to work). Only for <1 where it may happen that stuff never happens as it is rounded down all the time
+	if = {
+		limit = {
+			var:actualMover >= 0.5
+			var:actualMover < 1
+		}
+		set_variable = {
+			name = actualMover
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			var:actualMover < 0
+		}
+		set_variable = {
+			name = actualMover
+			value = 0
+		}
+	}
+}
