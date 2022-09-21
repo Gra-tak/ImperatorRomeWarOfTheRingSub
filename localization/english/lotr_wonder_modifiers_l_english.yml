@@ -11,9 +11,11 @@
   #minas_anor_desolate_modifier: 0 "Ruins of Minas Anor"
   #minas_anor_reunited_modifier: 0 "Minas Anor: Gates of Mithril"
  minas_ithil_modifier:0 "Minas Morgul"
-  desc_minas_ithil_modifier:0 "Minas Morgul, once theTower of the Moon, was a city-fortress of Gondor. It was the eastern counterpart to Minas Anor: guarding the eastern flank of the capital city of Osgiliath. Now it is the captial of the witch king."
+ desc_minas_ithil_modifier:0 "Minas Morgul, once the Tower of the Moon, was a city-fortress of Gondor. It was the counterpart to Minas Anor, guarding the eastern flank of the capital city of Osgiliath. Now it is the captial of the witch king."
+ minas_ithil_rebuild_modifier:0 "Minas Ithil"
+ desc_minas_ithil_rebuild_modifier:0 "Minas Ithil, the rebuild Tower of the Moon. It is once more the counterpart to Minas Anor, guarding the eastern flank of the valley around Osgiliath."
  minas_ithil_state_modifier:0 "Mountain Defenses"
-  desc_minas_ithil_state_modifier:0 "Minas Morgul state defenses."
+  desc_minas_ithil_state_modifier:0 ""
  minas_ithil_tower_modifier:0 "Minas Ithil: Palantír"
   desc_minas_ithil_tower_modifier:0 "Minas Ithil was home to Isildur's House, therefore when the seven palantíri were divided amongst the Realms in Exile one was placed in Minas Anor."
   #minas_ithil_archive_modifier: 0 "Minas Ithil: Archives of Islildur"
@@ -55,6 +57,8 @@
   desc_annuminas_palace_modifier:0 "Annúminas was the city of the Kings of Arnor. The city lay on the south-east shore of Lake Nenuial, near the source of the Baranduin river. To the south and west of Annúminas rose the Hills of Evendim."
   rebuild_annuminas:0 "Rebuild the palace of Annúminas"
   rebuild_annuminas_desc:0 "The city of Annúminas has lain in ruins for more than two millennia. Yet we have managed to rebuild some of it's former glory. Let us rebuild the palace and make sure the Sceptre of Annúminas is returned to it's rightful place."
+  rebuild_minas_ithil:0 "Rebuild Minas Ithil"
+  rebuild_minas_ithil_desc:0 "Not only have we conquered Minas Morgul from the witch king and torn it down to remove it's corruption, we also have managed to rebuild some of it's former glory. People are once more living in what was once Minas Ithil. Let us rebuild the city in its old glory."
   #annuminas_kings_hall_modifier
   #annuminas_desolate_modifier
   #annuminas_reunited_modifier

@@ -962,6 +962,12 @@ lotr_maintenance.7 = {
 				p:1030.state = {
 					NOT = { has_state_modifier = minas_ithil_state_modifier }
 				}
+				p:1030 = {
+					OR = {	
+						has_province_modifier = minas_ithil_modifier
+						has_province_modifier = minas_ithil_rebuild_modifier
+					}
+				}
 			}
 			p:1030.state = {
 				add_state_modifier = {

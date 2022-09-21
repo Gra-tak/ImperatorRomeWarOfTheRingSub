@@ -43,6 +43,60 @@
 		}
 	}
 
+	rebuild_minas_ithil = {
+		potential = {
+			NOR = {
+				country_culture_group = orcs_group
+				country_culture_group = dwarf_group
+				country_culture_group = teleri_group
+				country_culture_group = noldor_group
+			}
+			religion = iluvatarism
+			owns = 1030 #minas morgul
+			p:1030 = {
+				NOR = {	
+					has_province_modifier = minas_ithil_modifier
+					has_province_modifier = minas_ithil_rebuild_modifier
+				}
+			}
+		}
+		allow = {
+			p:1030 = {
+				has_province_rank = city_metropolis
+			}
+			treasury > 800
+		}
+		effect = {
+			p:1030 = {
+				change_province_name = "Minas Ithil"
+				add_province_modifier = {
+					name = minas_ithil_rebuild_modifier
+					duration = -1
+				}
+			}
+			add_treasury = -800
+			current_ruler = {
+				add_popularity = popularity_large
+			}
+			hidden_effect = {
+				p:1223 = {
+					show_model = "wonder_minas_ithil"
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 5
+				treasury > 1000
+			}
+		}
+	}
+
 	rebuild_amon_sul = {
 		potential = {
 			NOR = {
@@ -71,6 +125,14 @@
 					duration = -1
 				}
 				hidden_effect = {
+					p:4137 = {
+						if = {
+							limit = {
+								is_model_shown = "wonder_amon_sul_ruins"
+							}
+							hide_model = "wonder_amon_sul_ruins"
+						}
+					}
 					show_model = "wonder_amon_sul"
 				}
 			}

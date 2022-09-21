@@ -189,6 +189,14 @@ lotr_teardown_events.4 = {
 				}
 				hide_model = "black_wall"
 			}
+			p:1031 = {
+				if = {
+					limit = {
+						is_model_shown = "wonder_minas_morgul"
+					}
+					hide_model = "wonder_minas_morgul"
+				}
+			}
 			add_city_fire_effect = yes
 		}
 		ai_chance = { factor = 95 }

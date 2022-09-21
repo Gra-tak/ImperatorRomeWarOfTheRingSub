@@ -11,6 +11,12 @@ dynamic_game_object = {
 }
 
 dynamic_game_object = {
+	name = "wonder_amon_sul_ruins"
+	entity_name = "wonder_amon_sul_ruins_entity"
+	map_id = { 4137 }
+}
+
+dynamic_game_object = {
 	name = "wonder_amon_sul"
 	entity_name = "wonder_amon_sul_entity"
 	map_id = { 1632 }
@@ -38,4 +44,16 @@ dynamic_game_object = {
 	name = "black_wall"
 	entity_name = "black_wall_entity"
 	map_id = { 1030 }
+}
+
+dynamic_game_object = {
+	name = "wonder_minas_morgul"
+	entity_name = "wonder_minas_morgul_entity"
+	map_id = { 1031 }
+}
+
+dynamic_game_object = {
+	name = "wonder_minas_ithil"
+	entity_name = "wonder_minas_ithil_entity"
+	map_id = { 1223 }
 }

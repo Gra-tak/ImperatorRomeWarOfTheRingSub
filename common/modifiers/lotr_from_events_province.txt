@@ -22,6 +22,12 @@ minas_ithil_modifier = {
 	local_population_capacity = 50
 	local_monthly_food_modifier = 1.0
 }
+minas_ithil_rebuild_modifier = {
+	fort_level = 3
+	local_defensive = 0.3
+	local_population_capacity = 30
+	local_monthly_food_modifier = 0.5
+}
 minas_ithil_state_modifier = {
 	local_fort_limit = 6
 	local_defensive = 0.5
@@ -46,7 +52,6 @@ orthanc_modifier = {
 	supply_limit_modifier = 0.2
 	fort_level = 5
 	local_defensive = 0.05
-	monthly_local_governor_wage = 0.1
 }
 orthanc_state_modifier = {
 	local_fort_limit = 6
@@ -173,7 +178,7 @@ dale_modifier = {
 	fort_level = 3
 }
 esgaroth_modifier = {
-	local_commerce_modifier = 0.4
+	local_commerce_value_modifier = 0.4
 	local_defensive = 0.10
 	local_unrest = 0.1
 }
