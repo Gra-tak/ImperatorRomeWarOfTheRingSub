@@ -85,15 +85,15 @@ lotr_migration_events.1 = {
 
 
 		set_variable = {
-			name = fleeSuccess
+			name = actualMover
 			value = { integer_range = { min = 0 max = 5 } }
 		}
 		change_variable = {
-			name = fleeSuccess
+			name = actualMover
 			multiply = var:trying_to_flee_num
 		}
 		change_variable = {
-			name = fleeSuccess
+			name = actualMover
 			divide = 100
 		}
 		round_actual_moved_effect = yes
@@ -101,7 +101,7 @@ lotr_migration_events.1 = {
 	option = {
 		name = "OK"
 		while = {
-			count = var:fleeSuccess
+			count = var:actualMover
 			random_in_list = {
 				list = trying_to_flee_list
 				remove_from_list = trying_to_move_list
@@ -1055,6 +1055,7 @@ lotr_migration_events.7 = {
 			divide = 100
 		}
 		round_actual_moved_effect = yes
+		# debug_log = "[SCOPE.GetRootScope.GetCountry.MakeScope.GetVariable('actualMover').GetValue|0Y]"
 	}
 	option = {
 		name = "OK"
@@ -1369,8 +1370,10 @@ lotr_migration_events.1000 = {
 			change_local_variable = {
 				name = freeSpace
 				add = population_cap
+			}
+			change_local_variable = {
+				name = freeSpace
 				subtract = total_population
-
 			}
 		}
 		change_local_variable = {
@@ -1380,6 +1383,18 @@ lotr_migration_events.1000 = {
 		set_variable = {
 			name = relative_free_space
 			value = local_var:freeSpace
+		}
+	}
+}
+
+lotr_migration_events.1001 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		every_country = {
+			trigger_event = {
+				id = lotr_migration_events.1000
+			}
 		}
 	}
 }
