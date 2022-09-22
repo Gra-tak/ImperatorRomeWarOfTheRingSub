@@ -33,6 +33,7 @@ lotr_tradition_events.1 = {
 					OR = {
 						is_subject_type = client_state
 						is_subject_type = ranger_fief
+						is_subject_type = subject_league_city_state
 						is_subject_type = saruman_thrall_tribe
 						is_subject_type = thrall_tribe
 					}
@@ -70,6 +71,7 @@ lotr_tradition_events.1 = {
 					OR = {
 						is_subject_type = client_state
 						is_subject_type = ranger_fief
+						is_subject_type = subject_league_city_state
 						is_subject_type = saruman_thrall_tribe
 						is_subject_type = thrall_tribe
 					}
@@ -122,6 +124,7 @@ lotr_tradition_events.1 = {
 					OR = {
 						is_subject_type = client_state
 						is_subject_type = ranger_fief
+						is_subject_type = subject_league_city_state
 						is_subject_type = saruman_thrall_tribe
 						is_subject_type = thrall_tribe
 					}
@@ -165,6 +168,7 @@ lotr_tradition_events.1 = {
 					OR = {
 						is_subject_type = client_state
 						is_subject_type = ranger_fief
+						is_subject_type = subject_league_city_state
 						is_subject_type = saruman_thrall_tribe
 						is_subject_type = thrall_tribe
 					}
@@ -208,6 +212,7 @@ lotr_tradition_events.1 = {
 					OR = {
 						is_subject_type = client_state
 						is_subject_type = ranger_fief
+						is_subject_type = subject_league_city_state
 						is_subject_type = saruman_thrall_tribe
 						is_subject_type = thrall_tribe
 					}
@@ -251,6 +256,7 @@ lotr_tradition_events.1 = {
 					OR = {
 						is_subject_type = client_state
 						is_subject_type = ranger_fief
+						is_subject_type = subject_league_city_state
 						is_subject_type = saruman_thrall_tribe
 						is_subject_type = thrall_tribe
 					}
@@ -294,6 +300,7 @@ lotr_tradition_events.1 = {
 					OR = {
 						is_subject_type = client_state
 						is_subject_type = ranger_fief
+						is_subject_type = subject_league_city_state
 						is_subject_type = saruman_thrall_tribe
 						is_subject_type = thrall_tribe
 					}
@@ -337,6 +344,7 @@ lotr_tradition_events.1 = {
 					OR = {
 						is_subject_type = client_state
 						is_subject_type = ranger_fief
+						is_subject_type = subject_league_city_state
 						is_subject_type = saruman_thrall_tribe
 						is_subject_type = thrall_tribe
 						#allow satrapy for rohan? I'd say no, but others might disagree. Will be hard to get currently
@@ -372,6 +380,7 @@ lotr_tradition_events.1 = {
 					OR = {
 						is_subject_type = client_state
 						is_subject_type = ranger_fief
+						is_subject_type = subject_league_city_state
 						is_subject_type = saruman_thrall_tribe
 						is_subject_type = thrall_tribe
 					}
