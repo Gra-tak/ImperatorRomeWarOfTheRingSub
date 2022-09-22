@@ -1050,68 +1050,68 @@ character_events.21 = {
 	}
 }
 
-character_events.22 = {
-	type = character_event
-	hidden = yes
+# character_events.22 = {
+# 	type = character_event
+# 	hidden = yes
 	
-	trigger = {
-		is_governor = yes
-		is_ruler = no
-		is_primary_heir = no
-		NOT = {
-			has_character_modifier = switched_char_culture
-		}
-		location = {
-			NOR = {
-				dominant_province_culture = root.culture
-				governor_policy = cultural_assimilation
-			}
-		}
-	}
+# 	trigger = {
+# 		is_governor = yes
+# 		is_ruler = no
+# 		is_primary_heir = no
+# 		NOT = {
+# 			has_character_modifier = switched_char_culture
+# 		}
+# 		location = {
+# 			NOR = {
+# 				dominant_province_culture = root.culture
+# 				governor_policy = cultural_assimilation
+# 			}
+# 		}
+# 	}
 	
-	weight_multiplier = {
-		modifier = {
-			factor = 1.5
-			has_trait = tolerant
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = lapsed
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = devout
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = sceptical
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = abrasive
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = pious
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = zealous
-		}
+# 	weight_multiplier = {
+# 		modifier = {
+# 			factor = 1.5
+# 			has_trait = tolerant
+# 		}
+# 		modifier = {
+# 			factor = 1.5
+# 			has_trait = lapsed
+# 		}
+# 		modifier = {
+# 			factor = 0.75
+# 			has_trait = devout
+# 		}
+# 		modifier = {
+# 			factor = 0.75
+# 			has_trait = sceptical
+# 		}
+# 		modifier = {
+# 			factor = 0.75
+# 			has_trait = abrasive
+# 		}
+# 		modifier = {
+# 			factor = 0.75
+# 			has_trait = pious
+# 		}
+# 		modifier = {
+# 			factor = 0.75
+# 			has_trait = zealous
+# 		}
 		
-	}
+# 	}
 	
-	immediate = {
-		location = {
-			save_scope_as = culture_switch_province
-		}
-		set_culture = scope:culture_switch_province.culture
-		add_character_modifier = {
-			name = switched_char_culture
-			duration = 1825
-		}
-	}
-}
+# 	immediate = {
+# 		location = {
+# 			save_scope_as = culture_switch_province
+# 		}
+# 		set_culture = scope:culture_switch_province.culture
+# 		add_character_modifier = {
+# 			name = switched_char_culture
+# 			duration = 1825
+# 		}
+# 	}
+# }
 
 character_events.23 = {
 	type = character_event
@@ -1174,58 +1174,58 @@ character_events.23 = {
 	
 }
 
-character_events.24 = {
-	type = character_event
-	hidden = yes
+# character_events.24 = {
+# 	type = character_event
+# 	hidden = yes
 	
-	trigger = {
-		has_any_office = yes
-		is_ruler = no
-		is_primary_heir = no
-		NOT = {
-			has_character_modifier = switched_char_culture
-		}
-		NOT = {
-			has_culture = root.employer.culture
-		}
-	}
+# 	trigger = {
+# 		has_any_office = yes
+# 		is_ruler = no
+# 		is_primary_heir = no
+# 		NOT = {
+# 			has_character_modifier = switched_char_culture
+# 		}
+# 		NOT = {
+# 			has_culture = root.employer.culture
+# 		}
+# 	}
 	
-	weight_multiplier = {
-		modifier = {
-			factor = 2
-			has_trait = ambitious
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = devout
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = sceptical
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = pious
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = abrasive
-		}
-		modifier = {
-			factor = 0.75
-			has_trait = zealous
-		}
-	}
+# 	weight_multiplier = {
+# 		modifier = {
+# 			factor = 2
+# 			has_trait = ambitious
+# 		}
+# 		modifier = {
+# 			factor = 0.75
+# 			has_trait = devout
+# 		}
+# 		modifier = {
+# 			factor = 0.75
+# 			has_trait = sceptical
+# 		}
+# 		modifier = {
+# 			factor = 0.75
+# 			has_trait = pious
+# 		}
+# 		modifier = {
+# 			factor = 0.75
+# 			has_trait = abrasive
+# 		}
+# 		modifier = {
+# 			factor = 0.75
+# 			has_trait = zealous
+# 		}
+# 	}
 	
-	immediate = {
-		set_culture = root.employer.culture
-		add_character_modifier = {
-			name = switched_char_culture
-			duration = 1825
-		}
-	}
+# 	immediate = {
+# 		set_culture = root.employer.culture
+# 		add_character_modifier = {
+# 			name = switched_char_culture
+# 			duration = 1825
+# 		}
+# 	}
 	
-}
+# }
 
 character_events.25 = { #Switch heir religion to tutor
 	type = country_event
@@ -1320,97 +1320,97 @@ character_events.25 = { #Switch heir religion to tutor
 	
 }
 
-character_events.26 = { #Switch heir culture to tutor
-	type = country_event
-	title = "character_events.26.t"
-	desc = {
-		first_valid = {
-			triggered_desc = {		# Tutor is foreign
-				trigger = {
-					NOT = { scope:royal_tutor.culture = root.culture }
-				}
-				desc = "character_events.26.desc_1"
-			}
-			triggered_desc = {		# Child is foreign
-				trigger = { scope:royal_tutor.culture = root.culture }
-				desc = "character_events.26.desc_2"
-			}
-		}
-	}
-	picture = greek_court
+# character_events.26 = { #Switch heir culture to tutor
+# 	type = country_event
+# 	title = "character_events.26.t"
+# 	desc = {
+# 		first_valid = {
+# 			triggered_desc = {		# Tutor is foreign
+# 				trigger = {
+# 					NOT = { scope:royal_tutor.culture = root.culture }
+# 				}
+# 				desc = "character_events.26.desc_1"
+# 			}
+# 			triggered_desc = {		# Child is foreign
+# 				trigger = { scope:royal_tutor.culture = root.culture }
+# 				desc = "character_events.26.desc_2"
+# 			}
+# 		}
+# 	}
+# 	picture = greek_court
 	
-	left_portrait = scope:culture_switch_heir
-	right_portrait = scope:royal_tutor
+# 	left_portrait = scope:culture_switch_heir
+# 	right_portrait = scope:royal_tutor
 	
-	trigger = {
-		is_monarchy = yes
-		any_character = {
-			has_office = office_royal_tutor
-			save_temporary_scope_as = royal_tutor
-		}
-		has_primary_heir = yes
-		any_character = {
-			is_primary_heir = yes
-			is_adult = no
-			NOT = {
-				has_same_culture_as = scope:royal_tutor 
-			}
-			NOT = {
-				has_character_modifier = switched_char_culture
-			}
-		}
-	}
+# 	trigger = {
+# 		is_monarchy = yes
+# 		any_character = {
+# 			has_office = office_royal_tutor
+# 			save_temporary_scope_as = royal_tutor
+# 		}
+# 		has_primary_heir = yes
+# 		any_character = {
+# 			is_primary_heir = yes
+# 			is_adult = no
+# 			NOT = {
+# 				has_same_culture_as = scope:royal_tutor 
+# 			}
+# 			NOT = {
+# 				has_character_modifier = switched_char_culture
+# 			}
+# 		}
+# 	}
 	
-	immediate = {
-		random_character = {
-			limit = {
-				is_primary_heir = yes
-			}
-			save_scope_as = culture_switch_heir
-		}
-		random_character = {
-			limit = {
-				has_office = office_royal_tutor
-			}
-			save_scope_as = royal_tutor
-		}
-	}
+# 	immediate = {
+# 		random_character = {
+# 			limit = {
+# 				is_primary_heir = yes
+# 			}
+# 			save_scope_as = culture_switch_heir
+# 		}
+# 		random_character = {
+# 			limit = {
+# 				has_office = office_royal_tutor
+# 			}
+# 			save_scope_as = royal_tutor
+# 		}
+# 	}
 	
-	option = {
-		name = "character_events.26.a"
-		trigger = {
-			NOT = { scope:royal_tutor.culture = root.culture }
-		}
-		scope:culture_switch_heir = {
-			set_culture = scope:royal_tutor.culture
-			add_character_modifier = {
-				name = switched_char_culture
-				duration = 1825
-			}
-		}
-	}
+# 	option = {
+# 		name = "character_events.26.a"
+# 		trigger = {
+# 			NOT = { scope:royal_tutor.culture = root.culture }
+# 		}
+# 		scope:culture_switch_heir = {
+# 			set_culture = scope:royal_tutor.culture
+# 			add_character_modifier = {
+# 				name = switched_char_culture
+# 				duration = 1825
+# 			}
+# 		}
+# 	}
 	
-	option = {
-		name = "character_events.26.b"
-		trigger = { scope:royal_tutor.culture = root.culture }
-		scope:culture_switch_heir = {
-			set_culture = scope:royal_tutor.culture
-			add_character_modifier = {
-				name = switched_char_culture
-				duration = 1825
-			}
-		}
-	}
+# 	option = {
+# 		name = "character_events.26.b"
+# 		trigger = { scope:royal_tutor.culture = root.culture }
+# 		scope:culture_switch_heir = {
+# 			set_culture = scope:royal_tutor.culture
+# 			add_character_modifier = {
+# 				name = switched_char_culture
+# 				duration = 1825
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = "character_events.26.c"
-		scope:royal_tutor = {
-			remove_office = office_royal_tutor
-			hidden_effect = { remove_all_positions = yes }
-		}
-	}
+# 	option = {
+# 		name = "character_events.26.c"
+# 		scope:royal_tutor = {
+# 			remove_office = office_royal_tutor
+# 			hidden_effect = { remove_all_positions = yes }
+# 		}
+# 	}
 	
-}
+# }
 
 character_events.27 = { #Switch Ruler religion to country
 	type = country_event

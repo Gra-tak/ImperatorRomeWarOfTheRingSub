@@ -2030,9 +2030,9 @@ yearly_culture_religion_switch_pulse = {
 	random_events = {
 		98 = 0
 		1 = character_events.21
-		1 = character_events.22
+		# 1 = character_events.22 #culture change for chars shouldn't be allowed!
 		2 = character_events.23
-		2 = character_events.24
+		2 = character_events.24 #culture change for chars shouldn't be allowed!
 	}
 }
 
