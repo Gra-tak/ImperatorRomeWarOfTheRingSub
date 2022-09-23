@@ -97,6 +97,123 @@
 		}
 	}
 
+	rebuild_minas_tirith = {
+		potential = {
+			NOR = {
+				country_culture_group = orcs_group
+			}
+			religion = iluvatarism
+			owns = 1300
+			p:1300 = {
+				NOR = {	
+					has_province_modifier = minas_anor_modifier
+					has_province_modifier = minas_anor_corrupted_modifier
+				}
+			}
+		}
+		allow = {
+			p:1300 = {
+				has_province_rank = city_metropolis
+				total_population >= 40
+			}
+			treasury > 800
+		}
+		effect = {
+			p:1300 = {
+				change_province_name = "Minas Tirith"
+				add_permanent_province_modifier = {
+					name = minas_anor_modifier
+					duration = -1
+				}
+			}
+			add_treasury = -800
+			current_ruler = {
+				add_popularity = popularity_large
+			}
+			hidden_effect = {
+				p:4126 = {
+					if = {
+						limit = {
+							is_model_shown = "wonder_minas_dur"
+						}
+						hide_model = "wonder_minas_dur"
+					}
+				}
+				p:1300 = {
+					show_model = "wonder_minas_tirith"
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 5
+				treasury > 1000
+			}
+		}
+	}
+
+	rebuild_minas_tirith_corrupted = {
+		potential = {
+			country_culture_group = orcs_group
+			owns = 1300
+			p:1300 = {
+				NOR = {	
+					has_province_modifier = minas_anor_modifier
+					has_province_modifier = minas_anor_corrupted_modifier
+				}
+			}
+		}
+		allow = {
+			p:1300 = {
+				has_province_rank = city_metropolis
+				province_dominant_culture_group = orcs_group
+			}
+			treasury > 800
+		}
+		effect = {
+			p:1300 = {
+				change_province_name = "Minas-dûr"
+				add_permanent_province_modifier = {
+					name = minas_anor_corrupted_modifier
+					duration = -1
+				}
+			}
+			add_treasury = -800
+			current_ruler = {
+				add_popularity = popularity_large
+			}
+			hidden_effect = {
+				p:1300 = {
+					if = {
+						limit = {
+							is_model_shown = "wonder_minas_tirith"
+						}
+						hide_model = "wonder_minas_tirith"
+					}
+				}
+				p:4126 = {
+					show_model = "wonder_minas_dur"
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 5
+				treasury > 1000
+			}
+		}
+	}
+
 	rebuild_amon_sul = {
 		potential = {
 			NOR = {

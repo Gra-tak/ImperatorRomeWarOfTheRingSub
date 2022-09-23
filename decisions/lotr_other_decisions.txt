@@ -299,7 +299,7 @@
 		allow = {
 			any_owned_province = {
 				is_in_region = dorwinion_region
-				province_dominant_culture = dorwinrim
+				dominant_province_culture = dorwinrim
 			}
 		}
 		effect = {
@@ -316,7 +316,7 @@
 		allow = {
 			any_owned_province = {
 				is_in_region = rhovanion_region
-				province_dominant_culture = lakemen
+				dominant_province_culture = lakemen
 			}
 		}
 		effect = {

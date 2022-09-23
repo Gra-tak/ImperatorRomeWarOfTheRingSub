@@ -1,7 +1,9 @@
 ﻿l_english:
 ### Dunedain Wonders ###
  minas_anor_modifier:0 "Minas Tirith"
-  desc_minas_anor_modifier:0 "Minas Tirith, Tower of the Sun, was a city-fortress of Gondor. It was the western counterpart to Minas Ithil: guarding the western flank of the capital city of Osgiliath."
+  desc_minas_anor_modifier:0 "Minas Tirith, the Tower of the Guard, originally called Minas Anor, Tower of the Sun, was a city-fortress of Gondor. It was the counterpart to Minas Ithil, guarding the western flank of the capital city of Osgiliath."
+ minas_anor_corrupted_modifier:0 "Minas-dûr"
+  desc_minas_anor_corrupted_modifier:0 "Minas-dûr, the Dark Tower, previously the White city of Gondor. It is now once again the counterpart to Minas Morgul."
  minas_anor_state_modifier:0 "Anorien Defenses"
   desc_minas_anor_state_modifier:0 "Anorien state defenses."
  minas_anor_tower_modifier:0 "Minas Anor: Palantír"
@@ -59,6 +61,10 @@
   rebuild_annuminas_desc:0 "The city of Annúminas has lain in ruins for more than two millennia. Yet we have managed to rebuild some of it's former glory. Let us rebuild the palace and make sure the Sceptre of Annúminas is returned to it's rightful place."
   rebuild_minas_ithil:0 "Rebuild Minas Ithil"
   rebuild_minas_ithil_desc:0 "Not only have we conquered Minas Morgul from the witch king and torn it down to remove it's corruption, we also have managed to rebuild some of it's former glory. People are once more living in what was once Minas Ithil. Let us rebuild the city in its old glory."
+  rebuild_minas_tirith:0 "Rebuild Minas Tirith"
+  rebuild_minas_tirith_desc:0 "It is our duty to clean the White City of the darkness that has corrupted it recently!"
+  rebuild_minas_tirith_corrupted:0 "Corrupt Minas Tirith"
+  rebuild_minas_tirith_corrupted_desc:0 "We have conquered the capital of Gondor. It's brightness is an offense to our eyes. We need to corrupt is as was done with Minas Morgul!"
   #annuminas_kings_hall_modifier
   #annuminas_desolate_modifier
   #annuminas_reunited_modifier

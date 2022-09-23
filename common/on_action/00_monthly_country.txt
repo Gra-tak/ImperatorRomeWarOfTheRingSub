@@ -29,6 +29,7 @@ monthly_country_pulse = {
 		lotr_pops.1
 		lotr_maintenance.2
 		lotr_migration_events.18
+		lotr_startup.2 #adding wonders in old games
 	}
 	
 	random_events = {

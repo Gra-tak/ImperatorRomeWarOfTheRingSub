@@ -1601,6 +1601,7 @@ on_ownership_change = { #province scope
 	events = {
 		comet.2
 		lotr_teardown_events.1
+		lotr_teardown_events.10
 	}
 }
 
@@ -2032,7 +2033,7 @@ yearly_culture_religion_switch_pulse = {
 		1 = character_events.21
 		# 1 = character_events.22 #culture change for chars shouldn't be allowed!
 		2 = character_events.23
-		2 = character_events.24 #culture change for chars shouldn't be allowed!
+		# 2 = character_events.24 #culture change for chars shouldn't be allowed!
 	}
 }
 

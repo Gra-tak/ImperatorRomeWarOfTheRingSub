@@ -108,6 +108,7 @@ lotr_startup.2 = { #Adds dynamic wonder models
 		OR = {
 			NOT = { has_variable = shown_lotr_wonders }
 			NOT = { has_variable = shown_lotr_wonders_2 } #new wonders that should be added to ongoing games
+			# NOT = { has_variable = shown_lotr_wonders_3 } #new wonders that should be added to ongoing games
 		}
 	}
 	
@@ -141,8 +142,19 @@ lotr_startup.2 = { #Adds dynamic wonder models
 				p:1031 = {
 					show_model = "wonder_minas_morgul"
 				}
+				p:1300 = {
+					show_model = "wonder_minas_tirith"
+				}
 			}
 		}
+		# if = {
+		# 	limit = {
+		# 		NOT = { has_variable = shown_lotr_wonders_3 }
+		# 	}
+		# 	set_variable = { name = shown_lotr_wonders_3 }
+		# 	hidden_effect = {
+		# 	}
+		# }
 	}	
 }
 

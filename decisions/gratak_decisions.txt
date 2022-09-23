@@ -132,8 +132,22 @@
 		allow = {
 		}
 		effect = {
-			p:1030 = { #minas morgul
-				remove_province_modifier = supplied_from_the_rear
+			every_country = {
+				limit = {
+					NOR = {
+						has_law = standing_army_law
+						has_law = work_for_the_best
+					}
+				}
+				every_governorships = {
+					limit = { has_legion_trigger = yes }
+					disband_legion = yes
+				}
+			}
+			p:1300 = {
+				trigger_event = {
+					id = lotr_teardown_events.11
+				}
 			}
 		}
 	}

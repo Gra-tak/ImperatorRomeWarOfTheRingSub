@@ -5,6 +5,14 @@ minas_anor_modifier = {
 	local_population_capacity = 30
 	local_research_points_modifier = -0.1
 }
+minas_anor_corrupted_modifier = {
+	fort_level = 2
+	local_defensive = 0.5
+	local_research_points_modifier = -0.2
+	local_hostile_attrition = 2.0
+	local_population_capacity = 50
+	local_monthly_food_modifier = 1.0
+}
 minas_anor_state_modifier = {
 	local_fort_limit = 5
 	local_defensive = 1.0

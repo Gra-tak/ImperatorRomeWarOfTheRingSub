@@ -12,6 +12,7 @@ lotr_teardown_events.1 = {
 			this = p:1021
 			this = p:1030
 			this = p:1105
+			this = p:1300
 		}
 		# owns = 1141
 		OWNER = {
@@ -45,6 +46,11 @@ lotr_teardown_events.1 = {
 					id = lotr_teardown_events.5
 				}
 			}
+			p:1300 = { #minas dur
+				trigger_event = {
+					id = lotr_teardown_events.6
+				}
+			}
 		}
 	}
 }
@@ -58,6 +64,7 @@ lotr_teardown_events.2 = {
 
 	trigger = {
 		NOT = { has_global_variable = ring_destroyed }
+		has_province_modifier = barad_dur_modifier
 	}
 
 	option = {
@@ -112,6 +119,7 @@ lotr_teardown_events.3 = {
 
 	trigger = {
 		NOT = { has_global_variable = ring_destroyed }
+		has_province_modifier = black_gate_modifier
 	}
 
 	option = {
@@ -164,7 +172,9 @@ lotr_teardown_events.4 = {
 	desc = lotr_teardown_events.4.desc
 	picture = event_minasMorgul
 
-	trigger = {}
+	trigger = {
+		has_province_modifier = minas_ithil_modifier
+	}
 
 	option = {
 		name = lotr_teardown_events.2.a
@@ -235,7 +245,9 @@ lotr_teardown_events.5 = {
 	desc = lotr_teardown_events.5.desc
 	picture = event_destruction_dol_guldur
 
-	trigger = {}
+	trigger = {
+		has_province_modifier = dol_guldur_modifier
+	}
 
 	option = {
 		name = lotr_teardown_events.2.a
@@ -245,7 +257,7 @@ lotr_teardown_events.5 = {
 			remove_building_level = fortress_building
 		}
 		state = {
-			remove_state_modifier = minas_ithil_state_modifier
+			remove_state_modifier = dol_guldur_state_modifier
 		}
 		if = {
 			limit = { has_city_status = yes }
@@ -284,6 +296,185 @@ lotr_teardown_events.5 = {
 					religion = eastern_animism
 				}
 			}
+		}
+	}
+}
+
+#minas dur (tirith corrupted)
+lotr_teardown_events.6 = {
+	type = province_event
+	title = lotr_teardown_events.6.t
+	desc = lotr_teardown_events.6.desc
+	picture = event_minas_tirith_attacked
+
+	trigger = {
+		has_province_modifier = minas_anor_corrupted_modifier
+	}
+
+	immediate = {
+		remove_province_modifier = minas_anor_corrupted_modifier
+	}
+
+	option = {
+		name = lotr_teardown_events.2.a
+		while = {
+			count = num_of_fortress_building
+			remove_building_level = fortress_building
+		}
+		state = {
+			remove_state_modifier = minas_anor_state_modifier
+		}
+		if = {
+			limit = { has_city_status = yes }
+			set_city_status = settlement
+		}
+		OWNER = {
+			current_ruler = { add_popularity = popularity_medium }
+			add_stability = 5
+		}
+		hidden_effect = {
+			add_city_fire_effect = yes
+			p:4126 = {
+				if = {
+					limit = {
+						is_model_shown = "wonder_minas_dur"
+					}
+					hide_model = "wonder_minas_dur"
+				}
+			}
+		}
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = lotr_teardown_events.6.b
+		custom_tooltip = lotr_teardown_events.6.b.tt
+		ai_chance = { 
+			factor = 0
+		}
+	}
+	option = {
+		name = lotr_teardown_events.6.c
+		trigger = { owner = { is_ai = yes } }
+		add_permanent_province_modifier = {
+			name = minas_anor_modifier
+			duration = -1
+		}
+		p:4126 = {
+			if = {
+				limit = {
+					is_model_shown = "wonder_minas_dur"
+				}
+				hide_model = "wonder_minas_dur"
+			}
+		}
+		change_province_name = "Minas Tirith"
+		show_model = "wonder_minas_tirith"
+		ai_chance = { 
+			factor = 50
+		}
+	}
+}
+
+
+lotr_teardown_events.10 = {
+	type = province_event
+	title = "OK"
+	desc = "OK"
+	hidden = yes
+	trigger = {
+		exists = owner 
+		OR = {
+			this = p:1300
+		}
+		# owns = 1141
+		OWNER = {
+			country_culture_group  = orcs_group
+		}
+	}
+	immediate = {
+	}
+	option = {
+		name = "OK"
+		switch = {
+			trigger = this
+			p:1300 = { #minas tirith
+				trigger_event = {
+					id = lotr_teardown_events.11
+				}
+			}
+		}
+	}
+}
+
+#minas tirith
+lotr_teardown_events.11 = {
+	type = province_event
+	title = lotr_teardown_events.11.t
+	desc = lotr_teardown_events.11.desc
+	picture = event_minas_tirith_attacked
+
+	trigger = {
+ 		has_province_modifier = minas_anor_modifier
+	}
+
+	immediate = {
+		remove_province_modifier = minas_anor_modifier
+	}
+
+	option = {
+		name = lotr_teardown_events.2.a
+		while = {
+			count = num_of_fortress_building
+			remove_building_level = fortress_building
+		}
+		state = {
+			remove_state_modifier = minas_anor_state_modifier
+		}
+		if = {
+			limit = { has_city_status = yes }
+			set_city_status = settlement
+		}
+		OWNER = {
+			current_ruler = { add_popularity = popularity_medium }
+			add_stability = 5
+		}
+		hidden_effect = {
+			add_city_fire_effect = yes
+			if = {
+				limit = {
+					is_model_shown = "wonder_minas_tirith"
+				}
+				hide_model = "wonder_minas_tirith"
+			}
+		}
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = lotr_teardown_events.11.b
+		custom_tooltip = lotr_teardown_events.11.b.tt
+		ai_chance = { 
+			factor = 0
+		}
+	}
+	option = {
+		name = lotr_teardown_events.11.c
+		trigger = { owner = { is_ai = yes } }
+		add_permanent_province_modifier = {
+			name = minas_anor_corrupted_modifier
+			duration = -1
+		}
+		if = {
+			limit = {
+				is_model_shown = "wonder_minas_tirith"
+			}
+			hide_model = "wonder_minas_tirith"
+		}
+		change_province_name = "Minas-dûr"
+		p:4126 = {
+			show_model = "wonder_minas_dur"
+		}
+		ai_chance = { 
+			factor = 50
 		}
 	}
 }
