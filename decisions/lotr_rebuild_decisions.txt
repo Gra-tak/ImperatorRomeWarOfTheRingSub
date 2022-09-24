@@ -20,7 +20,7 @@
 		}
 		effect = {
 			p:1609 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = annuminas_palace_modifier
 					duration = -1
 				}
@@ -69,7 +69,7 @@
 		effect = {
 			p:1030 = {
 				change_province_name = "Minas Ithil"
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = minas_ithil_rebuild_modifier
 					duration = -1
 				}
@@ -237,7 +237,7 @@
 		}
 		effect = {
 			p:1632 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = amon_sul_modifier
 					duration = -1
 				}
@@ -294,7 +294,7 @@
 		}
 		effect = {
 			p:1605 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = fornost_modifier
 					duration = -1
 				}
@@ -340,7 +340,7 @@
 		}
 		effect = {
 			p:1612 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = tharbad_citadel_modifier
 					duration = -1
 				}
@@ -389,7 +389,7 @@
 		}
 		effect = {
 			p:1612 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = tharbad_bridge_modifier
 					duration = -1
 				}
@@ -437,7 +437,7 @@
 		}
 		effect = {
 			p:1631 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = cameth_brin_modifier
 					duration = -1
 				}
@@ -499,13 +499,13 @@
 		}
 		effect = {
 			p:1200 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = osgiliath_palace_modifier
 					duration = -1
 				}
 			}
 			p:1302 = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = osgiliath_palace_modifier
 					duration = -1
 				}
