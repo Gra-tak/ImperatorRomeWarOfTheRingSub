@@ -931,7 +931,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-85 = { #85 (uninhabitable)
+85 = { #Suul-Nor (uninhabitable)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -951,7 +951,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-87 = { #87 (uninhabitable)
+87 = { #Bela Azar (uninhabitable)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -998,7 +998,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-92 = { #92 (uninhabitable)
+92 = { #Gratac (uninhabitable)
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -5681,7 +5681,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-535 = { #535 (uninhabitable)
+535 = { #Isruwast (uninhabitable)
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -5690,7 +5690,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-536 = { #536 (uninhabitable)
+536 = { #Isrufar (uninhabitable)
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -5699,7 +5699,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-537 = { #537 (uninhabitable)
+537 = { #Isrudist (uninhabitable)
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -28133,7 +28133,7 @@
 	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
-2720 = { #Dalur (DLE) (annendor_area) (rhovanion_region)
+2720 = { #Dale (DLE) (annendor_area) (rhovanion_region)
 	terrain = "hills"
 	culture = "lakemen"
 	religion = "iluvatarism"
@@ -35958,7 +35958,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3464 = { #3464 (unowned)
+3464 = { #Sar (unowned)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -35967,7 +35967,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3465 = { #3465 (unowned)
+3465 = { #Lindalf (unowned)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -35976,7 +35976,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3466 = { #3466 (unowned)
+3466 = { #Lindalf (unowned)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -35985,7 +35985,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3467 = { #3467 (unowned)
+3467 = { #Forodle (unowned)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -36003,7 +36003,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3469 = { #3469 (unowned)
+3469 = { #Galibur (unowned)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -36012,7 +36012,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3470 = { #3470 (unowned)
+3470 = { #Surjaza (unowned)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -36634,7 +36634,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3536 = { #3536 (unowned)
+3536 = { #Lindalf (unowned)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -36688,7 +36688,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3542 = { #3542 (unowned)
+3542 = { #Lindalf (unowned)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46184,7 +46184,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4531 = { #4531 (unowned)
+4531 = { #Amon Boli (unowned)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47453,7 +47453,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4672 = { #4672 (unowned)
+4672 = { #Khey Fârt (unowned)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47480,7 +47480,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4675 = { #4675 (unowned)
+4675 = { #Atha (unowned)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47507,7 +47507,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4678 = { #4678 (unowned)
+4678 = { #Ered Harmol (unowned)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47516,7 +47516,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4679 = { #4679 (unowned)
+4679 = { #Ered Harmol (unowned)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47525,7 +47525,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4680 = { #4680 (unowned)
+4680 = { #Ered Harmol (unowned)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47534,7 +47534,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4681 = { #4681 (unowned)
+4681 = { #Ered Harmol (unowned)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -53579,7 +53579,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-5291 = { #Kâfa Kykurian (uninhabitable) (khirar_area) (kykurian_kyn_region)
+5291 = { #Kâfa Kykurian (uninhabitable)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -54580,7 +54580,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 }
-5395 = { #5395 (uninhabitable) (ez_duzia_area) (lygar_kraw_region)
+5395 = { #5395 (uninhabitable)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -54589,7 +54589,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-5396 = { #5396 (uninhabitable) (ez_duzia_area) (lygar_kraw_region)
+5396 = { #5396 (uninhabitable)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
