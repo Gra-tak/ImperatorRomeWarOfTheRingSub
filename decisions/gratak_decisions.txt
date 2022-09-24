@@ -127,26 +127,66 @@
 	debug_gratak = {
 		potential = {
 			is_ai = no
-			always = no
+			# always = no
 		}
 		allow = {
 		}
 		effect = {
+			# every_country = {
+			# 	limit = {
+			# 		NOR = {
+			# 			has_law = standing_army_law
+			# 			has_law = work_for_the_best
+			# 		}
+			# 	}
+			# 	every_governorships = {
+			# 		limit = { has_legion_trigger = yes }
+			# 		disband_legion = yes
+			# 	}
+			# }
+			# p:1300 = {
+			# 	trigger_event = {
+			# 		id = lotr_teardown_events.11
+			# 	}
+			# }
+			# every_country = {
+			# 	every_owned_province = {
+			# 		limit = {
+			# 			has_province_modifier = severe_winter
+			# 		}
+			# 		add_province_modifier = {
+			# 			name = barad_dur_modifier
+			# 			duration = -1
+			# 		}
+			# 	}
+			# 	every_owned_province = {
+			# 		limit = {
+			# 			has_province_modifier = alpine_climate
+			# 		}
+			# 		add_province_modifier = {
+			# 			name = minas_ithil_modifier
+			# 			duration = -1
+			# 		}
+			# 	}
+			# 	every_owned_province = {
+			# 		limit = {
+			# 			terrain = farmland
+			# 		}
+			# 		add_province_modifier = {
+			# 			name = minas_anor_modifier
+			# 			duration = -1
+			# 		}
+			# 	}
+			# }
+			# p:5025 = {
+			# 	while = {
+			# 		count = 50
+			# 		create_pop = freemen 
+			# 	}
+			# }
 			every_country = {
-				limit = {
-					NOR = {
-						has_law = standing_army_law
-						has_law = work_for_the_best
-					}
-				}
-				every_governorships = {
-					limit = { has_legion_trigger = yes }
-					disband_legion = yes
-				}
-			}
-			p:1300 = {
-				trigger_event = {
-					id = lotr_teardown_events.11
+				every_owned_province = {
+					set_racial_terrain_modifiers = yes
 				}
 			}
 		}

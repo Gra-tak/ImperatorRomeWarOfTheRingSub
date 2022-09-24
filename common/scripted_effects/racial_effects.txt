@@ -478,3 +478,174 @@ move_all_orcs_home_effect = {
 		}
 	}
 }
+
+#provice scope
+set_racial_terrain_modifiers = {
+	if = {
+		limit = {
+			exists = owner
+		}
+		if = {
+			limit = {
+				OR = {
+					province_dominant_culture_group = teleri_group
+					province_dominant_culture_group = noldor_group
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						terrain = deep_forest
+						terrain = forest
+					}
+				}
+				add_province_modifier = {
+					name = elven_forests_modifier
+					duration = 365
+				}
+			}
+			else_if = {
+				limit = {
+					terrain = steppe
+				}
+				add_province_modifier = {
+					name = elven_steppes_modifier
+					duration = 365
+				}
+			}
+			else_if = {
+				limit = {
+					terrain = dessert
+				}
+				add_province_modifier = {
+					name = elven_dessert_modifier
+					duration = 365
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				province_dominant_culture_group = orcs_group
+			}
+			if = {
+				limit = {
+					terrain = wasteland
+					OR = {
+						dominant_province_culture = orcish
+						dominant_province_culture = urukhai
+					}
+					sauron_rules = yes
+				}
+				add_province_modifier = {
+					name = uruk_orc_vulcanic_modifier
+					duration = 365
+				}
+			}
+			if = {
+				limit = {
+					dominant_province_culture = goblins
+					OR = {
+						terrain = caverns
+						terrain = mountain
+						terrain = hills
+					}
+				}
+				add_province_modifier = {
+					name = goblin_hills_mountain_caves_modifier
+					duration = 365
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					terrain = steppe
+					terrain = dessert
+				}
+			}
+			if = {
+				limit = {
+					NOR = {
+						province_dominant_culture_group = easterling_group
+						province_dominant_culture_group = amrun_group
+						province_dominant_culture_group = haradrim_group
+						province_dominant_culture_group = harondorian_group
+					}
+				}
+				if = {
+					limit = {
+						terrain = steppe
+					}
+					add_province_modifier = {
+						name = other_steppes_modifier
+						duration = 365
+					}
+				}
+				else = {
+					add_province_modifier = {
+						name = other_dessert_modifier
+						duration = 365
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				province_dominant_culture_group = dwarf_group
+			}
+			if = {
+				limit = {
+					OR = {
+						terrain = mountain
+						terrain = caverns
+					}
+				}
+				add_province_modifier = {
+					name = dwarven_mountain_modifier
+					duration = 365
+				}
+			}
+			else_if = {
+				limit = {
+					terrain = hills
+				}
+				add_province_modifier = {
+					name = dwarven_hills_modifier
+					duration = 365
+				}
+			}
+			else_if = {
+				limit = {
+					terrain = halls
+				}
+				add_province_modifier = {
+					name = dwarven_halls_modifier
+					duration = 365
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				dominant_province_culture = woodsmen
+				OR = {
+					terrain = forest
+					terrain = deep_forest
+				}
+			}
+			add_province_modifier = {
+				name = woodmen_forests_modifier
+				duration = 365
+			}
+		}
+		else_if = {
+			limit = {
+				province_dominant_culture_group = forodwaith_group
+				terrain = arctic
+			}
+			add_province_modifier = {
+				name = forodwaith_arctic_modifier
+				duration = 365
+			}
+		}
+	}
+}

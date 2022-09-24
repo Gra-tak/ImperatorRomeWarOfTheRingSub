@@ -1208,6 +1208,9 @@ on_move_country = { #scope:old_country is the origin country
 
 on_game_initialized = {
 	effect = {
+		every_owned_province = {
+			set_racial_terrain_modifiers = yes
+		}
 		### Other ###
 		au_basic_setup = yes
 		if = {
@@ -1563,6 +1566,9 @@ on_game_initialized = {
 }
 
 on_province_colonized = {
+	effect = {
+		set_racial_terrain_modifiers = yes
+	}
 	events = {
 
 	}

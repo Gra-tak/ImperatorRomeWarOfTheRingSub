@@ -3,4 +3,7 @@
 		90 = 0
 		10 = slave_revolts.1
 	}
+  effect = {
+    set_racial_terrain_modifiers = yes
+  }
 }
