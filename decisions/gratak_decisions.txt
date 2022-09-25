@@ -127,7 +127,7 @@
 	debug_gratak = {
 		potential = {
 			is_ai = no
-			# always = no
+			always = no
 		}
 		allow = {
 		}
