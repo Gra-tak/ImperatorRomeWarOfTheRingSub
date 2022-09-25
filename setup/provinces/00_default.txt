@@ -406,7 +406,7 @@
 	slaves = { amount = 1 }
 }
 37 = { #Phurutêth (UMB) (asni_dat_area) (umbar_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "haradrim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -569,7 +569,7 @@
 	province_rank = ""
 }
 52 = { #Pinnath Gelin (uninhabitable)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -578,7 +578,7 @@
 	province_rank = ""
 }
 53 = { #Dolgu (UMB) (umbar_area) (umbar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "dates"
@@ -839,7 +839,7 @@
 	tribesmen = { amount = 4 }
 }
 76 = { #Izindi (TED) (dusador_area) (mardruak_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "haradrim"
 	religion = "eastern_animism"
 	trade_goods = "grain"
@@ -941,7 +941,7 @@
 	province_rank = ""
 }
 86 = { #Nîn-Zâyan (DAN) (calenfalas_area) (umbar_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "haradrim"
 	religion = "eastern_animism"
 	trade_goods = "cattle"
@@ -1081,7 +1081,7 @@
 	slaves = { amount = 4 }
 }
 100 = { #Szrel-Kain (unowned) (szrelavuld_area) (duirrogwin_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "rachoth"
 	religion = "eastern_animism"
 	trade_goods = "grain"
@@ -1170,7 +1170,7 @@
 	tribesmen = { amount = 2 }
 }
 109 = { #Scarakikot (unowned) (pinnon_rhun_area) (dorwinion_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "balchoth"
 	religion = "eastern_animism"
 	trade_goods = "dye"
@@ -1613,7 +1613,7 @@
 	freemen = { amount = 8 }
 }
 151 = { #Androdiv (XOX) (gazar_ibar_area) (duirrogwin_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "fur"
@@ -2164,7 +2164,7 @@
 	tribesmen = { amount = 2 }
 }
 205 = { #Althrith (unowned) (durannon_area) (duirrogwin_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "rachoth"
 	religion = "eastern_animism"
 	trade_goods = "cloth"
@@ -3958,7 +3958,7 @@
 	slaves = { amount = 5 }
 }
 373 = { #Burh Thurasig (unowned) (gonnland_area) (ered_mithrin_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "stone"
@@ -5368,7 +5368,7 @@
 	slaves = { amount = 1 }
 }
 506 = { #Kûyu Mavi (SIR) (kirm_lesra_area) (sirayn_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "siranian"
 	religion = "eastern_animism"
 	trade_goods = "iron"
@@ -6511,7 +6511,7 @@
 	slaves = { amount = 5 }
 }
 618 = { #An Pharaz (XXH) (sakal_an_khar_area) (umbar_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "haradrim"
 	religion = "eastern_animism"
 	trade_goods = "base_metals"
@@ -6792,7 +6792,7 @@
 	slaves = { amount = 1 }
 }
 643 = { #Rhungardh (VAR) (khelkar_area) (khand_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "variag"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -7477,7 +7477,7 @@
 	tribesmen = { amount = 2 }
 }
 706 = { #Mardu-hash (unowned) (talath_narchsul_area) (saerwaith_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "jangovar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -7742,7 +7742,7 @@
 	tribesmen = { amount = 2 }
 }
 732 = { #Gestharer (unowned) (forkug_area) (taur_romen_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "khundolar"
 	religion = "eastern_animism"
 	trade_goods = "base_metals"
@@ -8304,7 +8304,7 @@
 	slaves = { amount = 7 }
 }
 787 = { #Ufum-mau (unowned) (nan_lothanduin_area) (uvanwaith_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "marble"
@@ -8529,7 +8529,7 @@
 	province_rank = "settlement"
 }
 810 = { #Udûnanca (unowned) (talath_oiohelka_area) (forodwaith_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "cattle"
@@ -8547,7 +8547,7 @@
 	province_rank = "settlement"
 }
 812 = { #Scelin Tabwë (unowned) (talath_uichel_area) (forodwaith_region)
-	terrain = "mountain"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "iron"
@@ -9479,7 +9479,7 @@
 	province_rank = "settlement"
 }
 908 = { #Vutar Fshat (XXP) (ram_duath_area) (angmar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "goblins"
 	religion = "melkorism"
 	trade_goods = "amber"
@@ -9530,7 +9530,7 @@
 	slaves = { amount = 1 }
 }
 913 = { #Carn Dûm (XXQ) (carn_dum_area) (angmar_region)
-	terrain = "mountain"
+	terrain = "hills"
 	culture = "goblins"
 	religion = "melkorism"
 	holy_site = "omen_angmar"
@@ -9554,7 +9554,7 @@
 	province_rank = "settlement"
 }
 915 = { #Walë Nuortë (unowned) (rammas_forod_area) (forochel_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "stone"
@@ -9574,7 +9574,7 @@
 	slaves = { amount = 1 }
 }
 917 = { #Lossilsto (unowned) (rammas_forod_area) (forochel_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "fish"
@@ -11359,7 +11359,7 @@
 	province_rank = "settlement"
 }
 1098 = { #Mulkan Kaupunki (unowned) (lodalf_area) (forochel_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "fish"
@@ -12275,7 +12275,7 @@
 	slaves = { amount = 4 }
 }
 1185 = { #Carn Telloth (NUR) (ghurzun_area) (nurn_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "nurnim"
 	religion = "eastern_animism"
 	trade_goods = "cattle"
@@ -12965,7 +12965,7 @@
 	slaves = { amount = 1 }
 }
 1250 = { #Gimidud (XXF) (carnentir_area) (harondor_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
 	trade_goods = "wood"
@@ -13148,7 +13148,7 @@
 	slaves = { amount = 1 }
 }
 1267 = { #Lugulbanda (MOR) (lithlad_area) (gorgoroth_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "orcish"
 	religion = "melkorism"
 	trade_goods = "iron"
@@ -13278,7 +13278,7 @@
 	slaves = { amount = 1 }
 }
 1279 = { #Visorga (BEO) (lothduin_area) (anduin_region)
-	terrain = "mountain"
+	terrain = "hills"
 	culture = "woodsmen"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -13613,7 +13613,7 @@
 	slaves = { amount = 4 }
 }
 1310 = { #Malbarth (LBN) (arnach_area) (lebennin_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -14113,7 +14113,7 @@
 	slaves = { amount = 2 }
 }
 1355 = { #Nimrond (LAM) (nan_ringlo_area) (lamedon_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "iron"
@@ -14334,7 +14334,7 @@
 	slaves = { amount = 3 }
 }
 1375 = { #Dol Brannor (DOR) (lond_ernil_area) (belfalas_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
@@ -14465,7 +14465,7 @@
 	slaves = { amount = 4 }
 }
 1387 = { #Bar-crib (DOR) (rosuldrie_area) (belfalas_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "leather"
@@ -14879,7 +14879,7 @@
 	slaves = { amount = 3 }
 }
 1424 = { #Palomirë (LAM) (mornan_area) (lamedon_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
@@ -15790,7 +15790,7 @@
 	slaves = { amount = 3 }
 }
 1509 = { #Sarnen (DOR) (anghabar_area) (belfalas_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
@@ -16050,7 +16050,7 @@
 	slaves = { amount = 1 }
 }
 1532 = { #Marr-Hu (unowned) (emyn_iaur_area) (druwaith_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "daoine"
 	religion = "iluvatarism"
 	trade_goods = "stone"
@@ -16090,7 +16090,7 @@
 	tribesmen = { amount = 3 }
 }
 1536 = { #Geann-a-Lish (unowned) (emyn_iaur_area) (druwaith_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "daoine"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -17028,7 +17028,7 @@
 	slaves = { amount = 5 }
 }
 1624 = { #Long Cleeve (SHI) (tyrn_haen_area) (siragale_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "stoor"
 	religion = "iluvatarism"
 	trade_goods = "grain"
@@ -18454,7 +18454,7 @@
 	province_rank = "settlement"
 }
 1772 = { #Carandor (unowned) (caranduin_area) (rhudaur_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -18946,7 +18946,7 @@
 	freemen = { amount = 1 }
 }
 1823 = { #Pendle (CAR) (oiomiril_area) (arthedain_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "rangers"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -20857,7 +20857,7 @@
 	tribesmen = { amount = 2 }
 }
 2013 = { #Nuirugae (unowned) (gazar_gord_area) (logathavuld_region)
-	terrain = "mountain"
+	terrain = "hills"
 	culture = "rachoth"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -20907,7 +20907,7 @@
 	tribesmen = { amount = 2 }
 }
 2018 = { #Aladi (unowned) (gazar_gord_area) (logathavuld_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "rachoth"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -21040,7 +21040,7 @@
 	slaves = { amount = 1 }
 }
 2031 = { #Visisil (BEO) (lothduin_area) (anduin_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "woodsmen"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -21352,7 +21352,7 @@
 	slaves = { amount = 6 }
 }
 2061 = { #Zimrenzil (ZIM) (arazain_area) (felaya_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "haradrim"
 	religion = "eastern_animism"
 	trade_goods = "camel"
@@ -22330,7 +22330,7 @@
 	tribesmen = { amount = 3 }
 }
 2151 = { #Tilmendir (TUR) (emyn_dunendor_area) (dunendor_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "dunlending"
 	religion = "iluvatarism"
 	trade_goods = "stone"
@@ -22709,7 +22709,7 @@
 	slaves = { amount = 1 }
 }
 2188 = { #Echad Sûl (XYX) (faerdor_area) (mintyrnath_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "druwaithing"
 	religion = "iluvatarism"
 	trade_goods = "leather"
@@ -22987,7 +22987,7 @@
 	tribesmen = { amount = 3 }
 }
 2216 = { #Therdaru (SHI) (tyrn_haen_area) (siragale_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "grain"
@@ -23330,7 +23330,7 @@
 	slaves = { amount = 1 }
 }
 2248 = { #Umb Estelwain (EHI) (udul_area) (hairaverkien_region)
-	terrain = "mountain"
+	terrain = "hills"
 	culture = "eredrim"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
@@ -23795,7 +23795,7 @@
 	slaves = { amount = 1 }
 }
 2291 = { #Lindabad (FOR) (forlefnui_area) (hairaverkien_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "eredrim"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
@@ -23872,7 +23872,7 @@
 	slaves = { amount = 3 }
 }
 2298 = { #Bar Mandos (FOR) (forlefnui_area) (hairaverkien_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "eredrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -24051,7 +24051,7 @@
 	province_rank = "settlement"
 }
 2315 = { #Nandelu (unowned) (talath_muil_area) (fortund_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -24087,7 +24087,7 @@
 	province_rank = "settlement"
 }
 2319 = { #Soo'aarlma (unowned) (lodalf_area) (forochel_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -24353,7 +24353,7 @@
 	province_rank = "settlement"
 }
 2347 = { #Minas Eriol (unowned) (uilad_rhunen_area) (dyr_erib_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "horses"
@@ -24371,7 +24371,7 @@
 	province_rank = "settlement"
 }
 2349 = { #Barad Dhorn (unowned) (annui_uilad_area) (dyr_erib_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "wood"
@@ -26038,7 +26038,7 @@
 	slaves = { amount = 2 }
 }
 2514 = { #Dôl Dolen (unowned) (helchambenn_area) (numeriador_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -26056,7 +26056,7 @@
 	province_rank = "settlement"
 }
 2516 = { #Tawarobel (MIL) (dor_lelvin_area) (mithlond_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -26282,7 +26282,7 @@
 	slaves = { amount = 4 }
 }
 2539 = { #Imthurin (NAN) (nan_i_naugrim_area) (numeriador_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
@@ -28196,7 +28196,7 @@
 	province_rank = "settlement"
 }
 2726 = { #Cirith Celeglin (DBK) (ramluin_area) (numeriador_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "broadbeam"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
@@ -28207,7 +28207,7 @@
 	slaves = { amount = 2 }
 }
 2727 = { #Gorarat (unowned) (uilad_rhunen_area) (dyr_erib_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -28400,7 +28400,7 @@
 	province_rank = "settlement"
 }
 2748 = { #Ciryatandor (uninhabitable)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -29721,7 +29721,7 @@
 	slaves = { amount = 1 }
 }
 2878 = { #Aha (XRX) (vag_area) (khailuza_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "stone"
@@ -30443,7 +30443,7 @@
 	tribesmen = { amount = 2 }
 }
 2945 = { #Saru (XLX) (bru_isra_area) (cennacatt_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "goblins"
 	religion = "melkorism"
 	trade_goods = "base_metals"
@@ -30520,7 +30520,7 @@
 	slaves = { amount = 1 }
 }
 2952 = { #Agûn (MUM) (seznebab_area) (an_balkumagan_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "mumakanim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -31242,7 +31242,7 @@
 	slaves = { amount = 1 }
 }
 3022 = { #Kharndal (XTX) (shor_area) (kargagis_ahar_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -34789,7 +34789,7 @@
 	slaves = { amount = 1 }
 }
 3350 = { #Fendaka (XNX) (shayakau_area) (shay_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -35461,7 +35461,7 @@
 	tribesmen = { amount = 2 }
 }
 3412 = { #Azagarbhûn (unowned) (klyan_area) (khailuza_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "dates"
@@ -35654,7 +35654,7 @@
 	slaves = { amount = 5 }
 }
 3431 = { #Mar Sel (BEL) (lokhurush_area) (bellakar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "haradrim"
 	religion = "eastern_animism"
 	trade_goods = "hemp"
@@ -35665,7 +35665,7 @@
 	slaves = { amount = 3 }
 }
 3432 = { #Noth-a-gond (BEL) (lokhurush_area) (bellakar_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "haradrim"
 	religion = "eastern_animism"
 	trade_goods = "dates"
@@ -35707,7 +35707,7 @@
 	province_rank = "settlement"
 }
 3436 = { #3436 (unowned)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -35734,7 +35734,7 @@
 	province_rank = "settlement"
 }
 3439 = { #3439 (unowned)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -35752,7 +35752,7 @@
 	province_rank = "settlement"
 }
 3441 = { #3441 (unowned)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -35887,7 +35887,7 @@
 	province_rank = "settlement"
 }
 3456 = { #Heb Ârân (unowned)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -36004,7 +36004,7 @@
 	province_rank = "settlement"
 }
 3469 = { #Galibur (unowned)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -36247,7 +36247,7 @@
 	province_rank = "settlement"
 }
 3496 = { #3496 (unowned)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -36265,7 +36265,7 @@
 	province_rank = "settlement"
 }
 3498 = { #Rhim Cîl  (unowned)
-	terrain = "mountain"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -36725,7 +36725,7 @@
 	province_rank = "settlement"
 }
 3546 = { #3546 (unowned)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -37084,7 +37084,7 @@
 	slaves = { amount = 2 }
 }
 3580 = { #Drôd (uninhabitable)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "stone"
@@ -37111,7 +37111,7 @@
 	province_rank = "settlement"
 }
 3583 = { #Âlk Rûnk (XNX) (brod_area) (lokhas_drus_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "stone"
@@ -37795,7 +37795,7 @@
 	slaves = { amount = 4 }
 }
 3649 = { #Pend Ecthel (XXG) (amrun_area) (harnendor_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
@@ -37839,7 +37839,7 @@
 	slaves = { amount = 8 }
 }
 3653 = { #Men Dirnen (uninhabitable)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "harondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -37849,7 +37849,7 @@
 	tribesmen = { amount = 2 }
 }
 3654 = { #Men Dirnen (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -37859,7 +37859,7 @@
 	tribesmen = { amount = 2 }
 }
 3655 = { #Tir Forcarnen (XXF) (carnentir_area) (harondor_region)
-	terrain = "mountain"
+	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
 	trade_goods = "wood"
@@ -38763,7 +38763,7 @@
 	province_rank = "settlement"
 }
 3744 = { #Pinnath Gelin (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "eredrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -38790,7 +38790,7 @@
 	province_rank = "settlement"
 }
 3747 = { #3747 (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -39051,7 +39051,7 @@
 	slaves = { amount = 1 }
 }
 3771 = { #Emyn Laer (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -39111,7 +39111,7 @@
 	province_rank = "settlement"
 }
 3777 = { #Emyn Gonngaran (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -39758,7 +39758,7 @@
 	slaves = { amount = 1 }
 }
 3843 = { #Bar Mitha (ANF) (anfalas_area) (anfalas_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -39862,7 +39862,7 @@
 	province_rank = "settlement"
 }
 3853 = { #Loarol (BAL) (duil_rewinion_area) (dor_rhunen_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "balchoth"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -40224,7 +40224,7 @@
 	tribesmen = { amount = 3 }
 }
 3890 = { #Tal Coora (unowned) (ram_duath_area) (angmar_region)
-	terrain = "mountain"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -40461,7 +40461,7 @@
 	slaves = { amount = 1 }
 }
 3913 = { #Asirac (TUR) (emyn_dunendor_area) (dunendor_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "dunlending"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -40728,7 +40728,7 @@
 	province_rank = "settlement"
 }
 3938 = { #3938 (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -40737,7 +40737,7 @@
 	province_rank = "settlement"
 }
 3939 = { #3939 (uninhabitable)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "siranian"
 	religion = "eastern_animism"
 	trade_goods = "base_metals"
@@ -50604,7 +50604,7 @@
 	slaves = { amount = 1 }
 }
 5016 = { #Mang (XPX) (horl_area) (ralian_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -50690,7 +50690,7 @@
 	province_rank = ""
 }
 5024 = { #5024 (uninhabitable)
-	terrain = "mountain"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -51966,7 +51966,7 @@
 	slaves = { amount = 1 }
 }
 5140 = { #Lôar (XTX) (alduryaknar_area) (alduryaknar_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -52710,7 +52710,7 @@
 	slaves = { amount = 1 }
 }
 5208 = { #Khar (XTX) (odifariz_ur_area) (kargagis_ahar_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -52878,7 +52878,7 @@
 	slaves = { amount = 1 }
 }
 5224 = { #Felôrod (XTX) (odifariz_ur_area) (kargagis_ahar_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -52911,7 +52911,7 @@
 	slaves = { amount = 1 }
 }
 5227 = { #Rábarrka (XTX) (odifariz_ur_area) (kargagis_ahar_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -53926,7 +53926,7 @@
 	province_rank = ""
 }
 5329 = { #Kâfa Kykurian (uninhabitable)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -55130,7 +55130,7 @@
 	province_rank = ""
 }
 5449 = { #Kâfa Dalpygis (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
