@@ -323,4 +323,55 @@
 			release_dale = yes
 		}
 	}
+
+	release_gondor_decision = {
+		potential = {
+			c:GON = { has_land = no }
+			religion = iluvatarism
+			owns = 1300
+		}
+		allow = {
+			any_owned_province = {
+				is_in_region = anorien_region
+				dominant_province_culture = lesser_dunedain
+			}
+		}
+		effect = {
+			release_gondor = yes
+		}
+	}
+
+	release_dol_amorth_decision = {
+		potential = {
+			c:DOR = { has_land = no }
+			religion = iluvatarism
+			owns = 1403
+		}
+		allow = {
+			any_owned_province = {
+				is_in_region = belfalas_region
+				dominant_province_culture = dolamroth
+			}
+		}
+		effect = {
+			release_dol_amorth = yes
+		}
+	}
+
+	release_rohan_decision = {
+		potential = {
+			c:ROH = { has_land = no }
+			religion = iluvatarism
+			owns = 1556
+		}
+		allow = {
+			any_owned_province = {
+				is_in_region = calenardhon_region
+				dominant_province_culture = rohirrim
+			}
+		}
+		effect = {
+			release_rohan = yes
+		}
+	}
 }

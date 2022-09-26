@@ -700,67 +700,76 @@ release_gondor = {
 		type = client_state
 	}
 
-	if = {
-		limit = {
-			current_date <= 3100.1.1
-		}
-		create_character = {
-			first_name="Faramir"
-			family = c:GON.fam:Hurionath
-			birth_date=2983.1.1
-			culture="lesser_dunedain"
-			religion="iluvatarism"
-			no_stats=yes
-			add_martial=14
-			add_charisma=10
-			add_finesse=11
-			add_zeal=8
-			no_traits=yes
-			force_add_trait="just"
-			force_add_trait="steadfast"
-			force_add_trait="daring"
-			force_add_trait="house_of_hurin"
-			force_add_trait="blood_of_numenor"
-			force_add_trait="confident"
-			add_gold=200
-			add_popularity=60
-			dna="WtBa0Jdwl3B0cnRyAqYCpgJ4AngCgAKAAmoCagKXApcCewJ7AlsCWwJwAnACiQKJAp4CngKQApACgwKDAo8CjwKLAosCVgJWAnMCcwKrAqsCcgJyAkwCTAJSAlIClwKXAnoCegKeAp4CkwKTAnQCdAKSApICgwKDAmgCaAKRApECawJrAowCjAKVApUCjgKOAq4CrgJ7AnsCbwJvAnsCewJ3AncCfAJ8AnQCdAKJAokCiAKIAlwCXAKEAoQCdwJ3ApYClgJvAm8CdQJ1AkgCSAJcAlwCZQJlAmcCZwKDAoMCnQKdAr4CvgKfAp8BUgFSAXYBdgEDAQMBiwGLAT0BPQCdAJ0A9gD2ATUBNQBYAFgAvwC/AuwC7ABbAFsAPwA/As4CzgCvAK8CjwKPALUAtQFZAVkBkgGSARgBGADNAM0A+gD6ApECkQEkASQA2wDbACgAKACQAJABEQERAKUApQEMAQwBNwE3AG0AbQNrA2sHkAdPAG4AfwLUAtQWmBbaANgA2AxhDGEQVxChEbEROgAAAAAAAAAAAAAAAAAAAAA="
-			save_scope_as = famamir
-		}
-		if = {
-			limit = {
-				current_date > 3070.1.1
-			}
-			create_character = {
-				family = c:GON.fam:Hurionath
-				culture="lesser_dunedain"
-				religion="iluvatarism"
-				age = 0
-				father = scope:famamir
-				no_traits=yes
-				no_stats=yes
-				force_add_trait="house_of_hurin"
-				force_add_trait="blood_of_numenor"
-			}
-		}
-	}
-	else = {
-		create_character = {
-			first_name="Faramir"
-			family = c:GON.fam:Hurionath
-			age = 20
-			culture="lesser_dunedain"
-			religion="iluvatarism"
-			force_add_trait="house_of_hurin"
-			force_add_trait="blood_of_numenor"
-			add_gold=200
-			add_popularity=60
-			save_scope_as = famamir
-		}
-	}
 	c:GON = {
-		set_as_ruler = scope:famamir
-		revive_country = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					current_date <= 3100.1.1
+				}
+				create_character = {
+					first_name="Faramir"
+					family_name="Hurionath"
+					birth_date=2983.1.1
+					culture="lesser_dunedain"
+					religion="iluvatarism"
+					no_stats=yes
+					add_martial=14
+					add_charisma=10
+					add_finesse=11
+					add_zeal=8
+					no_traits=yes
+					force_add_trait="just"
+					force_add_trait="steadfast"
+					force_add_trait="daring"
+					force_add_trait="house_of_hurin"
+					force_add_trait="blood_of_numenor"
+					force_add_trait="confident"
+					add_gold=200
+					add_popularity=60
+					dna="WtBa0Jdwl3B0cnRyAqYCpgJ4AngCgAKAAmoCagKXApcCewJ7AlsCWwJwAnACiQKJAp4CngKQApACgwKDAo8CjwKLAosCVgJWAnMCcwKrAqsCcgJyAkwCTAJSAlIClwKXAnoCegKeAp4CkwKTAnQCdAKSApICgwKDAmgCaAKRApECawJrAowCjAKVApUCjgKOAq4CrgJ7AnsCbwJvAnsCewJ3AncCfAJ8AnQCdAKJAokCiAKIAlwCXAKEAoQCdwJ3ApYClgJvAm8CdQJ1AkgCSAJcAlwCZQJlAmcCZwKDAoMCnQKdAr4CvgKfAp8BUgFSAXYBdgEDAQMBiwGLAT0BPQCdAJ0A9gD2ATUBNQBYAFgAvwC/AuwC7ABbAFsAPwA/As4CzgCvAK8CjwKPALUAtQFZAVkBkgGSARgBGADNAM0A+gD6ApECkQEkASQA2wDbACgAKACQAJABEQERAKUApQEMAQwBNwE3AG0AbQNrA2sHkAdPAG4AfwLUAtQWmBbaANgA2AxhDGEQVxChEbEROgAAAAAAAAAAAAAAAAAAAAA="
+					save_scope_as = ruler
+				}
+			 	create_family = scope:ruler
+				if = {
+					limit = {
+						current_date > 3070.1.1
+					}
+					create_character = {
+						family_name="Hurionath"
+						culture="lesser_dunedain"
+						religion="iluvatarism"
+						age = 0
+						father = scope:ruler
+						no_traits=yes
+						no_stats=yes
+						force_add_trait="house_of_hurin"
+						force_add_trait="blood_of_numenor"
+						save_scope_as = child
+					}
+					random_family = {
+						save_scope_as = fam
+					}
+					scope:child = { set_family = scope:fam }
+				}
+			}
+			else = {
+				create_character = {
+					first_name="Faramir II"
+					family_name="Hurionath"
+					age = 20
+					culture="lesser_dunedain"
+					religion="iluvatarism"
+					force_add_trait="house_of_hurin"
+					force_add_trait="blood_of_numenor"
+					add_gold=200
+					add_popularity=60
+					save_scope_as = ruler
+				}
+				create_family = scope:ruler
+			}
+			set_as_ruler = scope:ruler
+			revive_country = yes
+		}
 	}
 }
 
@@ -795,70 +804,78 @@ release_dol_amorth = {
 		target = c:DOR
 		type = client_state
 	}
-
-	if = {
-		limit = {
-			current_date <= 3070.1.1
-		}
-		create_character = {
-			first_name="Imrahil" #Son of current king
-			family = c:DOR.fam:HouseofDolAmroth
-			birth_date=2955.3.6
-			culture="dolamroth"
-			religion="iluvatarism"
-			father="char:39"
-			mother="char:40"
-			no_stats=yes
-			add_martial=12
-			add_charisma=9
-			add_finesse=5
-			add_zeal=8
-			no_traits=yes
-			add_trait="daring"
-			add_trait="confident"
-			add_gold=140
-			add_popularity=80
-			save_scope_as = Imrahil
-		}
-		if = {
-			limit = {
-				current_date > 3040.1.1
-			}
-			create_character = {
-				family = c:DOR.fam:HouseofDolAmroth
-				age = 0
-				father = scope:Imrahil
-				culture="dolamroth"
-				religion="iluvatarism"
-				no_traits=yes
-				no_stats=yes
-				force_add_trait="house_of_hurin"
-				force_add_trait="blood_of_numenor"
-			}
-		}
-	}
-	else = {
-		create_character = {
-			first_name="Imrahil" #Son of current king
-			family = c:DOR.fam:HouseofDolAmroth
-			age = 20
-			culture="dolamroth"
-			religion="iluvatarism"
-			add_gold=140
-			add_popularity=80
-			save_scope_as = Imrahil
-		}
-	}
 	c:DOR = {
-		set_as_ruler = scope:Imrahil
-		revive_country = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					current_date <= 3070.1.1
+				}
+				create_character = {
+					first_name="Imrahil" #Son of current king
+					family_name = "HouseofDolAmroth"
+					birth_date=2955.3.6
+					culture="dolamroth"
+					religion="iluvatarism"
+					father="char:39"
+					mother="char:40"
+					no_stats=yes
+					add_martial=12
+					add_charisma=9
+					add_finesse=5
+					add_zeal=8
+					no_traits=yes
+					add_trait="daring"
+					add_trait="confident"
+					add_gold=140
+					add_popularity=80
+					save_scope_as = ruler
+				}
+			 create_family = scope:ruler
+				if = {
+					limit = {
+						current_date > 3040.1.1
+					}
+					create_character = {
+						family_name = "HouseofDolAmroth"
+						age = 0
+						father = scope:ruler
+						culture="dolamroth"
+						religion="iluvatarism"
+						no_traits=yes
+						no_stats=yes
+						force_add_trait="house_of_hurin"
+						force_add_trait="blood_of_numenor"
+						save_scope_as = child
+					}
+					random_family = {
+						save_scope_as = fam
+					}
+					scope:child = { set_family = scope:fam }
+				}
+			}
+			else = {
+				create_character = {
+					first_name="Imrahil II" #Son of current king
+					family_name = "HouseofDolAmroth"
+					age = 20
+					culture="dolamroth"
+					religion="iluvatarism"
+					add_gold=140
+					add_popularity=80
+					save_scope_as = ruler
+				}
+			 create_family = scope:ruler
+			}
+			set_as_ruler = scope:ruler
+			revive_country = yes
+		}
 	}
 }
 
 return_provinces_to_dol_amroth = {
 	if = {
 		limit = {
-			p:1403 = { #Mdol amroth
+			p:1403 = { #dol amroth
 				exists = owner
 				owner = ROOT
 			}
@@ -889,62 +906,68 @@ release_rohan = {
 		target = c:ROH
 		type = client_state
 	}
-
-	if = {
-		limit = {
-			current_date <= 3070.1.1
-		}
-		create_character = {
-			first_name="Eomer"
-			family = c:ROH.fam.Eorling
-			birth_date=2955.3.6
-			culture="rohirrim"
-			religion="iluvatarism"
-			no_stats=yes
-			add_martial=12
-			add_charisma=9
-			add_finesse=5
-			add_zeal=8
-			no_traits=yes
-			add_trait="daring"
-			add_trait="confident"
-			add_gold=140
-			add_popularity=80
-			save_scope_as = Eomer
-		}
-		if = {
-			limit = {
-				current_date > 3040.1.1
-			}
-			create_character = {
-				family = c:ROH.fam.Eorling
-				age = 0
-				father = scope:Eomer
-				culture="rohirrim"
-				religion="iluvatarism"
-				no_traits=yes
-				no_stats=yes
-			}
-		}
-	}
-	else = {
-		create_character = {
-			first_name="Eomer"
-			family = c:ROH.fam.Eorling
-			age = 20
-			culture="rohirrim"
-			religion="iluvatarism"
-			add_gold=140
-			add_popularity=80
-			save_scope_as = Eomer
-		}
-	}
 	c:ROH = {
-		set_as_ruler = scope:Eomer
-		revive_country = yes
-	}
-	c:ROH = {
-		revive_country = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					current_date <= 3070.1.1
+					current_date >= 3015.1.1
+				}
+				create_character = {
+					first_name="Eomer"
+					family_name="Eorling"
+					birth_date=2991.3.6
+					culture="rohirrim"
+					religion="iluvatarism"
+					no_stats=yes
+					add_martial=12
+					add_charisma=9
+					add_finesse=5
+					add_zeal=8
+					no_traits=yes
+					add_trait="daring"
+					add_trait="confident"
+					add_gold=140
+					add_popularity=80
+					save_scope_as = ruler
+				}
+				create_family = scope:ruler
+				if = {
+					limit = {
+						current_date > 3050.1.1
+					}
+					create_character = {
+						family_name="Eorling"
+						age = 0
+						father = scope:ruler
+						culture="rohirrim"
+						religion="iluvatarism"
+						no_traits=yes
+						no_stats=yes
+						save_scope_as = child
+					}
+					random_family = {
+						save_scope_as = fam
+					}
+					scope:child = { set_family = scope:fam }
+				}
+			}
+			else = {
+				create_character = {
+					first_name="Eomer II"
+					family_name="Eorling"
+					age = 20
+					culture="rohirrim"
+					religion="iluvatarism"
+					add_gold=140
+					add_popularity=80
+					save_scope_as = ruler
+				}
+				create_family = scope:ruler
+			}
+			set_as_ruler = scope:ruler
+			revive_country = yes
+		}
 	}
 }
 
@@ -984,6 +1007,7 @@ release_dale = {
 			if = {
 				limit = {
 					current_date <= 3070.1.1
+					current_date >= 3015.1.1
 				}
 				create_character = {
 					first_name="Bard II"
@@ -1005,9 +1029,9 @@ release_dale = {
 					add_gold=200
 					add_popularity=60
 					add_prominence=100
-					save_scope_as = bard
+					save_scope_as = ruler
 				}
-			 create_family = scope:bard
+			 	create_family = scope:ruler
 				if = {
 					limit = {
 						current_date > 3050.1.1
@@ -1017,10 +1041,15 @@ release_dale = {
 						culture=lakemen
 						religion="iluvatarism"
 						age = 0
-						father = scope:bard
+						father = scope:ruler
 						no_traits=yes
 						no_stats=yes
+						save_scope_as = child
 					}
+					random_family = {
+						save_scope_as = fam
+					}
+					scope:child = { set_family = scope:fam }
 				}
 			}
 			else = {
@@ -1034,11 +1063,11 @@ release_dale = {
 					add_gold=200
 					add_popularity=60
 					add_prominence=100
-					save_scope_as = bard
+					save_scope_as = ruler
 				}
-				create_family = scope:bard
+				create_family = scope:ruler
 			}
-			set_as_ruler = scope:bard
+			set_as_ruler = scope:ruler
 			revive_country = yes
 		}
 	}
