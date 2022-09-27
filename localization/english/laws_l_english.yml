@@ -1,6 +1,6 @@
 ﻿l_english:
- ###A few LOTR changes are labeled LOTR below
- ###Roman Republican Laws
+ ### A few LOTR changes are labeled LOTR below
+ ### Roman Republican Laws
  corruption_laws_rom:1 "Assembly Endorsement"
  no_laws_on_corruption:1 "Curiate Assembly"
  no_laws_on_corruption_desc:2 "The Curiate assembly was a legislative body open to all those of patrician status within Roman society. Whilst it lost much power to the establishment of other assemblies, the symbolic votes it cast could carry much weight on matters of state."
@@ -154,7 +154,7 @@
  republican_election_3_desc:0 "It has become clear that power promotes the worst aspects of mankind. In an effort to combat this creeping corruption, we should reduce the electoral term, ensuring that no one man wields power for too long."
  republican_election_4:0 "Lifetime Elections"
  republican_election_4_desc:0 "Our noble leader has proven a success at every turn. By the will of the people, we should safeguard our very future by rewarding this titan of politics with lifetime dictatorship!"
- ###Tribal Laws
+ ### Tribal Laws
  corruption_laws_impact:0 "Enact Corruption Law"
  republican_religious_laws_impact:0 "Enact Religious Law"
  republican_mediterranean_laws_impact:0 "Enact Maritime Law"

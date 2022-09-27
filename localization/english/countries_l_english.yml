@@ -1,16 +1,11 @@
 ﻿l_english:
- ######COUNTRIES######:0 ""
+ ###### COUNTRIES ######:0 ""
  REB:0 "Rebels"
  REB_ADJ:0 "Rebel"
  BAR:0 "Barbarians"
  BAR_ADJ:0 "Barbarian"
  MER:0 "Mercenaries"
  MER_ADJ:0 "Mercenary"
- #:0 ""
- # Barbarian Names below..:0 ""
- #:0 ""
- # GERMANIC:0 ""
- #:0 ""
  ATE:0 "Arthedain"
  ARN:0 "Arnor"
  CAR:0 "Rangers of the North"
@@ -154,7 +149,7 @@
  XYX:0 "Gwathlo Riverfolk"
  XZX:0 "XZX"
  MMO:0 "Minas Morgul"
-######SOUTHERN EXPANSION######
+###### SOUTHERN EXPANSION ######
  TED:0 "Tedjin"
  MAR:0 "Mardruak"
  FEL:0 "Felaya"

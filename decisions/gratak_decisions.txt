@@ -184,10 +184,21 @@
 			# 		create_pop = freemen 
 			# 	}
 			# }
-			every_country = {
-				every_owned_province = {
-					set_racial_terrain_modifiers = yes
+			# every_country = {
+			# 	every_owned_province = {
+			# 		set_racial_terrain_modifiers = yes
+			# 	}
+			# }
+			every_owned_province = {
+				limit = {
+					NOR = {
+						has_province_rank = city_metropolis
+						has_province_rank = city
+						has_province_rank = settlement
+					}
 				}
+				set_city_status = settlement
+				set_trade_goods = wild_game
 			}
 		}
 	}

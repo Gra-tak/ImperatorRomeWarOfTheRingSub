@@ -8705,8 +8705,8 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-829 = { #Walë Ruohkta (unowned) (goldladwen_area) (forodwaith_region)
-	terrain = "forest"
+829 = { #Rhudol Noroth (unowned) (lothren_baul_area) (forodwaith_region)
+	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "fur"
@@ -8723,8 +8723,8 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-831 = { #Rúmoniscu (unowned) (goldladwen_area) (forodwaith_region)
-	terrain = "plains"
+831 = { #Heleg Cofn (unowned) (lothren_baul_area) (forodwaith_region)
+	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "stone"
@@ -11350,7 +11350,7 @@
 	province_rank = "settlement"
 }
 1097 = { #Helcëkna Racusce (unowned) (everdalf_area) (forochel_region)
-	terrain = "forest"
+	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "woad"
@@ -53660,59 +53660,59 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5300 = { #Forodwaith (uninhabitable)
-	terrain = "plains"
+5300 = { #Dîn Talag (unowned) (lothren_baul_area) (forodwaith_region)
+	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = ""
+	trade_goods = "herbs"
 	civilization_value = 0
 	barbarian_power = 0
-	province_rank = ""
+	province_rank = "settlement"
 }
-5301 = { #Guulonán (uninhabitable)
-	terrain = "plains"
+5301 = { #Dîn Teag (unowned) (lothren_baul_area) (forodwaith_region)
+	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = ""
+	trade_goods = "base_metals"
 	civilization_value = 0
 	barbarian_power = 0
-	province_rank = ""
+	province_rank = "settlement"
 }
-5302 = { #Forodwaith (uninhabitable)
-	terrain = "plains"
+5302 = { #Paran Noroth (unowned) (lothren_baul_area) (forodwaith_region)
+	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = ""
+	trade_goods = "stone"
 	civilization_value = 0
 	barbarian_power = 0
-	province_rank = ""
+	province_rank = "settlement"
 }
-5303 = { #Forodwaith (uninhabitable)
-	terrain = "plains"
+5303 = { #Balch Cofn (unowned) (lothren_baul_area) (forodwaith_region)
+	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = ""
+	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
-	province_rank = ""
+	province_rank = "settlement"
 }
-5304 = { #Forodwaith (uninhabitable)
-	terrain = "plains"
+5304 = { #Narch Mesg (unowned) (lothren_baul_area) (forodwaith_region)
+	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = ""
+	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
-	province_rank = ""
+	province_rank = "settlement"
 }
-5305 = { #Forodwaith (uninhabitable)
-	terrain = "plains"
+5305 = { #Mael Manadh (unowned) (lothren_baul_area) (forodwaith_region)
+	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = ""
+	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
-	province_rank = ""
+	province_rank = "settlement"
 }
 5306 = { #Forodwaith (uninhabitable)
 	terrain = "plains"

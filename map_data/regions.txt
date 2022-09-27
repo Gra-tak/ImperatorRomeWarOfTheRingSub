@@ -14,6 +14,7 @@ forodwaith_region = {
 		talath_oiohelka_area
 		forovirkain_area
 		goldladwen_area
+		lothren_baul_area
 		talath_uichel_area
 		durganla_area
 	}

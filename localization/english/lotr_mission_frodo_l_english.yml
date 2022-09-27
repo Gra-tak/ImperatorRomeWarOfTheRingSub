@@ -52,7 +52,6 @@
  lotr_frodos_mission_events.74.a:0 "For Frodo!"
  lotr_frodos_mission_events.80.t:0 "The ring is destroyed"
  lotr_frodos_mission_events.80.desc:0 "'It's gone. It's done.' - 'Yes Frodo, it's over now.'\n\nHe has succeded! Mount Doom is exploding. The dark lord is no more! The morale of the orcs and followers of melkor is failing. "
- #I can see the shire
  lotr_frodos_mission_events.80.a:0 "Keep fighting while the followers of Melkor are weak."
  lotr_frodos_mission_events.80.b:0 "Make peace with the humans that fell to Sauron, but drive out the orcs from Middle-earth."
  lotr_frodos_mission_events.80.c:0 "We need to recover from our losses. Pull back all our armies while the enemies are disarranged."
@@ -75,7 +74,7 @@
  lotr_frodos_mission_events.88.t:0 "Worship of Eru"
  lotr_frodos_mission_events.88.desc:0 "In the light of the recent defeat of Sauron, a country has converted to the worship of Eru Iluvatar and the Valar."
 
-###destruction events (both for owner and rest of the world)
+### destruction events (both for owner and rest of the world)
  lotr_frodos_mission_events.90.t:0 "Barad-dûr has been destroyed"
  lotr_frodos_mission_events.90.desc:0 "The dark fortress of Barad-dûr has collapsed."
  lotr_frodos_mission_events.90.a:0 "How is that even possible?"
@@ -86,8 +85,8 @@
  lotr_frodos_mission_events.92.desc:0 "The huge volcano in mordor has had a huge erruption. It has utterly destroyed anything nearby."
  lotr_frodos_mission_events.92.a:0 "Such destruction..."
 
-###war starting events
-##mordor:
+### war starting events
+## mordor:
  lotr_frodos_mission_events.100.t:0 "The ring has been located."
  lotr_frodos_mission_events.100.desc:0 "The creature of Gollum has told us about 'Baggins' and 'the Shire'. We need to mobilize our forces to get hold of the ring."
  lotr_frodos_mission_events.100.a:0 "It will be our's once more!"
@@ -99,7 +98,7 @@
  lotr_frodos_mission_events.102.desc:0 "The ring is no longer hidden from our sight. We will not fail again!"
  lotr_frodos_mission_events.102.a:0 "It will be our's once more!"
  lotr_frodos_mission_events.102.b:0 "This does not concern us yet."
-##orcs/melkor
+## orcs/melkor
  lotr_frodos_mission_events.110.t:0 "Sauron orders us to attack the elves and humans"
  lotr_frodos_mission_events.110.desc:0 "Rumors of the One Ring having reappeared have led to Sauron ordering us to start war. We should follow his orders, or his wrath will be upon us after he regains all his power."
  lotr_frodos_mission_events.110.a:0 "We need to move!"
@@ -108,7 +107,7 @@
  lotr_frodos_mission_events.112.desc:0 "Rumors of the One Ring having reappeared have led to Sauron ordering us to start war. We should follow his orders, or his wrath will be upon us after he regains all his power."
  lotr_frodos_mission_events.112.a:0 "We need to move!"
  lotr_frodos_mission_events.112.b:0 "We do not fear Sauron!"
-##saruman
+## saruman
  lotr_frodos_mission_events.120.t:0 "Sauron orders us to attack the elves and humans"
  lotr_frodos_mission_events.120.desc:0 "Rumors of the One Ring having reappeared have led to Sauron ordering us to start war. We should follow his orders, or his wrath will be upon us after he regains all his power."
  lotr_frodos_mission_events.120.a:0 "Maybe we can find the ring first."
@@ -117,7 +116,7 @@
  lotr_frodos_mission_events.122.desc:0 "Rumors of the One Ring having reappeared have led to Sauron ordering us to start war. We should follow his orders, or his wrath will be upon us after he regains all his power."
  lotr_frodos_mission_events.122.a:0 "Maybe we can find the ring first."
  lotr_frodos_mission_events.122.b:0 "We do not fear Sauron!"
-###Fury of sauron buff/debugg
+### Fury of sauron buff/debugg
  lotr_frodos_mission_events.200.t:0 "The fury of Sauron darkens the sky"
  lotr_frodos_mission_events.200.desc:0 "Sauron is ordering all orcs in Middle-earth to hunt for the One Ring. They are feeling his wrath."
  lotr_frodos_mission_events.200.a:0 "Finally some discipline" 
@@ -128,7 +127,7 @@
  lotr_frodos_mission_events.205.desc:0 "The orcs have run and fought beyond their normal capacity for too long."
  lotr_frodos_mission_events.205.a:0 "How is this possible?"
 
-###mission locs
+### mission locs
  lotr_frodos_mission:0 "Frodo's Quest"
  lotr_frodos_mission_BUTTON_TOOLTIP:0 "Protect frodo on his way to Mount Doom to destroy the ring. In this mission, the war of the ring will break out all over Middle-earth.\n\nMake sure you are ready for this."
  lotr_frodos_mission_BUTTON_DETAILS:0 ""
@@ -156,7 +155,7 @@
  lotr_frodo_destroys_ring:0 "Destroy the ring"
  lotr_frodo_destroys_ring_DESC:1 "Frodo is on the way to Mount Doom and will destroy the ring if we keep Sauron busy.\n\nWe need to keep Sauron out of Gondor and siege the Black Gate for at least 600 days, or alternatively control it (uncolonized is fine, as it occupied. Still need to wait for the 600 days)."
 
-###modifiers
+### modifiers
  whips_of_sauron:0 "Whips of sauron"
  desc_whips_of_sauron:0 "Sauron is forcing his subjects to speed."
  whips_of_saruman:0 "Whips of Saruman"
@@ -180,7 +179,7 @@
  sauron_is_defeated_eru:0 "Sauron defeated"
  desc_sauron_is_defeated_eru:0 "The free people are celebrating."
 
- ###custom tooltips
+ ### custom tooltips
  frodo_mission_no_orcs_tt:0 "No orcs must control any province in the marked areas.\n   Hover over this mission to see all territories that violate this.\n   Hover over the previous mission to see all territories that need protection."
  frodo_mission_no_melkor_tt:0 "No followers of Melkor must control any province in the marked areas.\n   Hover over this mission to see all territories that violate this.\n   Hover over the previous mission to see all territories that need protection."
  frodo_mission_black_gate_tt:0 "The Black Gate, i.e. [GetProvince('(int32)1021').GetName], must be under siege or no longer in control of orcs."

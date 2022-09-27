@@ -32,7 +32,11 @@ talath_uichel_area = {
 }
 
 goldladwen_area = {
-	provinces = { 827 828 829 831 832 834 836 837 839 841 844 858 }
+	provinces = { 827 828 832 834 836 837 839 841 844 858 }
+}
+
+lothren_baul_area = {
+	provinces = { 829 831 5300 5301 5302 5303 5304 5305 }
 }
 
 durganla_area = {

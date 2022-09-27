@@ -1,5 +1,5 @@
 ﻿l_english:
- #Military Ideas
+ # Military Ideas
  idea_martial_ethos:0 "Martial Ethos"
  idea_martial_ethos_desc:0 "Ensuring that our soldiers and veterans hold a prestigious place in the social hierarchy, is key to their contentment and loyalty."
  idea_thalassocracy:0 "Thalassocracy"
@@ -18,7 +18,7 @@
  idea_siege_training_desc:0 "From oppida to forts, to walled cities, the world is full of fortified settlements. Adequately training our warriors to penetrate enemy walls will doubtlessly pay dividends."
  idea_triumph:0 "Support of the People"
  idea_triumph_desc:0 "Convincing our citizens of our national prowess is just as important as a victory itself."
- #Civic Ideas
+ # Civic Ideas
  idea_standard_construction:0 "Standardized Construction"
  idea_standard_construction_desc:0 "As our nation begins to require more and more civic buildings, it has become apparent that a standardized method of planning and construction would greatly reduce the cost and time invested."
  idea_city_plan:0 "City Planning"
@@ -37,7 +37,7 @@
  idea_land_appropriation_desc:0 "Private ownership of land is a necessity. However, it is clear that where the state requires the use of certain territories, it must have the power to relocate those inhabiting them."
  idea_grain_admin:0 "Grain Stockpile"
  idea_grain_admin_desc:0 "Nobody can predict a bad harvest. We could, however, prepare for it. By always saving a surplus of grain, we would avoid starvation during particularly unfortunate seasons."
- #Oratory Ideas
+ # Oratory Ideas
  idea_bribery:0 "Sanctioned Privileges"
  idea_bribery_desc:0 "By agreeing to look the other way from time to time, we can lessen our reliance on using currency as a tool for bribery."
  idea_smear:0 "Strategic Propaganda"
@@ -56,7 +56,7 @@
  idea_casus_belli_desc:0 "Whatever our true intent, foreign tolerance for our wars is always greater if we have a legitimate reason for conquest. Being seen as protectors of liberty is often reason enough."
  idea_hospitality:0 "Hospitium"
  idea_hospitality_desc:0 "The duty of the host should be extended to all those who visit our nation. Especially those whom we wish to persuade..."
- #Religious Ideas
+ # Religious Ideas
  idea_state_religion:0 "State Religion"
  idea_state_religion_desc:0 "Incorporating our faith as a state entity will have significant political advantages."
  idea_calendar:0 "Religious Calendar"

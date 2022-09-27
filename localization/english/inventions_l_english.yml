@@ -121,7 +121,7 @@
  freemen_promotion_cost_modifier_inv_desc:0 "Enabling slave owners to release their slaves with genuine legal status, is vital to the continued co-existence of owner and slave."
  enact_law_cost_modifier_inv:0 "Ius Honorarium"
  enact_law_cost_modifier_inv_desc:0 "Yielding to the magistrates, the right to amend, supplement and correct existing laws, lessens the need for our government to pass judgment on iterations of the same law, numerous times."
- #Religious Inventions
+ # Religious Inventions
  stability_inv_1:0 "Contractual Obligation"
  stability_inv_1_desc:0 "Religion in many ancient cultures involved a particularly personal and contractual obeisance. The large number of aspects or gods gave each individual the ability to choose how to pray, and to customize the manner in which they did so."
  stability_inv_2:0 "Tolerated Cults"
@@ -322,7 +322,7 @@
  endorse_party_inv_desc:0 "Institution of formal senate hours, on a daily basis, gives us much more opportunity to sway dissenting voices to our way of thinking."
  fabricate_claim_cost_modifier_inv:0 "Aggressive Protection"
  fabricate_claim_cost_modifier_inv_desc:0 "Sometimes, the only excuse we need, is that we are the only ones who can truly offer security."
- ###Mil
+ ### Mil
  discipline_inv_1:0 "Boeotian Helmet"
  discipline_inv_1_desc:0 "The Boeotian helmet, favored by Alexander himself, allowed good vantage of one's surroundings, while still providing protection to the cranium."
  discipline_inv_2:0 "Manipular Legion"
@@ -623,8 +623,6 @@
  greek_pyoulkos_inv:0 "Pyoulkos"
  greek_pyoulkos_inv_desc:0 "The pyoulkos was a medical instrument, crafted out of a chamber and a hollow needle, resembling modern day syringes. The pyoulkos was used to suck out substances such as pus, or to inject liquids into the body."
  
- #greek_heating_inv:0 "Central Heating"
- #greek_heating_inv_desc:0 "By leading hot air - generated from fires - through flues in the ground, whole buildings could be heated and made more comfortable during the chillier parts of the year."
  greek_advanced_astronomy_inv_1:0 "Astrolabe"
  greek_advanced_astronomy_inv_1_desc:0 "The astrolabe was an astronomical device depicting a model of the universe, having a variety of functions such as measuring celestial bodies altitude over the horizon, or determining the local latitude; it was a practical tool for both astronomer's and sailors."
  greek_advanced_astronomy_inv_2:0 "Advanced Astronomy"
@@ -671,7 +669,7 @@
  indian_trigonometric_functions_inv_desc:0 "The trigonometric functions of sine and cosine originated in Indian astronomy, furthering our understanding of the world around us and found practical applocations in navigation and construction projects."
  indian_hindu_number_system_inv:0 "Hindu Number System"
  indian_hindu_number_system_inv_desc:0 "Inventing the concept of decimals, the Hindu number system created a foundation for the later and widely used Arabic numeral system."
- #Great Works
+ # Great Works
  gw_effect_martial_education_inv:0 "Strategic Academy"
  gw_effect_martial_education_inv_desc:0 "Our youth must be inducted into the most noble profession of warfare in a manner befitting our ancestors. The construction of great halls devoted to such an education must be forever in the mind's eye of our people."
  allow_gw_effect_martial_education:0 "Allows selection of #Y Military Education#! Great Wonder effect."

@@ -1,6 +1,6 @@
 ﻿l_english:
  game_concept_date:0 "Date"
- game_concept_date_desc:0 "The game date counts from the overthrow of Sauron by the Last Alliance." #LOTR edit
+ game_concept_date_desc:0 "The game date counts from the overthrow of Sauron by the Last Alliance."
  game_concept_country:0 "Country"
  game_concept_countries:0 "Countries"
  COUNTRY_CONCEPT_TOOLTIP:0 "The [Country.GetGovernment.GetName] of [Country.GetNameWithNoTooltip] is located in the region of [Country.GetCapital.GetArea.GetRegion.GetName]. It is ruled by [Country.GetRuler.GetName], and is considered to be a [Country.GetRankName].\n\nTheir opinion of us is [Country.GetOpinionOf( Player.GetCountry )|+=]"

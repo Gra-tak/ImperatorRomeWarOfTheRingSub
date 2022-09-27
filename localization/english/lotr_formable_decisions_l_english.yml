@@ -1,21 +1,21 @@
 ﻿l_english:
  
- #Arnor
+ # Arnor
  ARNOR_NAME:0 "Arnor"
  ARNOR_ADJECTIVE:0 "Arnorian"
  formable_not_arnor_exists:0 "#Y Arnor#! must NOT exist."
  rise_of_the_dunedain_completed:0 "The Dunedain must have proclaimed themselves as heirs of Arnor and must have handled the consequences."
  form_arnor:0 "Proclaim that Arnor has risen again"
  form_arnor_desc:0 "The ancient Kingdom of Arnor is no more, and its capital of Annunimas and the province of Nan Arnen are now abandoned. If you were to resettle these lands and begin rebuilding the cities of Annunimas and Fornost, you could rightfuly claim that Arnor has risen once again."
- form_arnor_claims_tooltip:0 "Arnor will gain claims upon the regions of #Y Arthedain#, #Y Fortund#, #Y Uilad#, #Y Rhudaur#, #Y Mintyrnath# and #Y Minhiriath#."
+ form_arnor_claims_tooltip:0 "Arnor will gain claims upon the regions of #Y Arthedain#, #Y Fortund#, #Y Uilad#, #Y Rhudaur#, #Y Mintyrnath# and #Y Minhiriath#!."
  arnor_ruler_blood:0 "The King must carry the blood of Anarion, Isildur, Thorondur or Aldarion"
- #Khazad-dûm 
+ # Khazad-dûm 
  KHAZAD_DUM_NAME:0 "Khazad-dûm"
  KHAZAD_DUM_ADJECTIVE:0 "Khazad-dûmian"
  formable_not_khazad_dum_exists:0 "#Y Khazad-dûm#! must NOT exist."
  form_khazad_dum:0 "Form the Dwarven Kingdom of Khazad-dûm"
  form_khazad_dum_desc:0 "The grandest and most famous of the mansions of the Dwarves. A Balrog demon, which had been corrupted by Melkor, drove the Dwarves out of the Misty Mountains in TA 1980 and slew King Durin VI. It is now time for Dwarves to reclaim the ancient underground kingdom of Khazad-dûm."
- #Harad
+ # Harad
  HARAD_NAME:0 "Harad"
  HARAD_ADJECTIVE:0 "Haradian"
  formable_not_harad_exists:0 "#Y Harad#! must NOT exist."
@@ -23,7 +23,7 @@
  form_harad_desc:0 "For millennia the Haradwaith have been dominated by tyrannical Black Númenóreans who had established colonies in Middle-earth after leaving Númenor. We must aim to assert our rightful leadership over Haradrim lands, and lead our people to greater glory! It is time to put an end to our petty squabbles, and unite the Haradrim under one banner as Harad."
  lotr_formable_harad_modifier:0 "Haradrim United"
  desc_lotr_formable_harad_modifier:2 "Haradrim country created"
- #Rhovanion
+ # Rhovanion
  RHOVANION_NAME:0 "Rhovanion"
  RHOVANION_ADJECTIVE:0 "Rhovanion"
  formable_not_rhovanion_exists:0 "#Y Rhovanion#! must NOT exist."
@@ -31,7 +31,7 @@
  form_rhovanion_desc:0 "For millennia the 'Free Men of the North' have lived as hunters, loggers, trappers, and fishermen. The Great Plague and invasions by the Easterling Wainriders have depopulated and scorched the land. It is time to assert our rightful leadership over the Wilderlands, and lead our people to greater glory!"
  lotr_formable_rhovanion_modifier:0 "Rhovanion Created"
  desc_lotr_formable_rhovanion_modifier:2 "The Kingdom of Rhovanion created" 
- #angmar
+ # angmar
  ANGMAR_NAME:0 "Angmar"
  ANGMAR_ADJECTIVE:0 "Angmarim"
  formable_not_angmar_exists:0 "#Y Angmar#! must NOT exist."
