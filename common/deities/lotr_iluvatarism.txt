@@ -324,7 +324,7 @@ deity_uinen = {
 		}
 	}
 	icon = deity_uinen
-	passive_modifier = { global_pop_assimilation_speed_modifier = deity_global_pop_assimilation_speed_modifier_svalue }
+	passive_modifier = { global_pop_conversion_speed_modifier = 0.1 }
 	omen = { global_commerce_modifier = omen_global_commerce_modifier_svalue } #Bonus from Omen
 	religion = iluvatarism
 	deity_category = economy #This Deity uses an Economy Slot

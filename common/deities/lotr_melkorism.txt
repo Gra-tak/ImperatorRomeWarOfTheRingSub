@@ -435,6 +435,7 @@ deity_glaurung = {
 deity_thuringwethil = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		country_culture_group = orcs_group
 		OR = {
 			common_deity_trigger = {
 				RELIGION = melkorism

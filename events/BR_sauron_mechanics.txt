@@ -128,6 +128,10 @@ br_sauron.4 = { #when a country becomes 50% melkor among its pops, it will have 
 	hidden = yes
 	
 	trigger = {
+		OR = {
+			is_subject = no
+			is_subject_of = c:MOR
+		}
 		NOT = { primary_culture = orcish }
 		NOT = { primary_culture = black_numenorean }
 		NOT = { primary_culture = corsair }
@@ -357,6 +361,15 @@ br_sauron.9 = { #AI Sauron version of event triggered for ruler that sauron has 
 				}
 			}
 		}
+		modifier = {
+			factor = 4
+			employer = {
+				is_subject = yes
+				overlord = {
+					religion = melkorism
+				}
+			}
+		}
 	}
 	
 	immediate = {
@@ -500,6 +513,7 @@ br_sauron.12 = { #players are a nation has turned to Melkor worship
 				}
 			}
 		}
+		is_subject = no
 	}
 	
 	

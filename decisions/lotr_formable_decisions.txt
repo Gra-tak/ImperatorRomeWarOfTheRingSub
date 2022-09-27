@@ -361,12 +361,15 @@
 			OR = {
 				tag = XXQ
 				primary_culture = angmarim
+				tag = XXY
+				tag = MMO
 			}
 			NOT = { tag = ANG }
 		}
 		highlight = {
 			scope:province = {
 				OR = {
+					province_id = 913
 					province_id = 1605
 					province_id = 1820
 					province_id = 1632
@@ -385,6 +388,7 @@
 					}
 				}
 			}
+			owns = 913
 			owns = 1605
 			owns = 1820
 			owns = 1632
@@ -398,6 +402,17 @@
 		}
 		effect = {
 			change_country_name = "ANGMAR_NAME"
+			if = {
+				limt = {
+					OR = {
+						government = tribal_kingdom
+						government = tribal_federation
+						government = tribal_chiefdom
+					}
+				}
+				change_government = despotic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
 			hidden_effect = {
 				change_country_adjective = "ANGMAR_ADJECTIVE"
 				change_country_color =  "angmar_black"
@@ -412,8 +427,23 @@
 			char:8 = {
 				save_scope_as = target
 			}
-			trigger_event = {
-				id = lotr_other_country_events.2
+			every_country_culture = {
+				limit = {
+					is_culture = angmarim
+					NOR = {
+						has_pop_type_right = citizen
+						has_pop_type_right = nobles
+					}
+				}
+				change_pop_type_right = citizen
+			}
+			if = {
+				limit = {
+					NOT = { tag = MMO }
+				}
+				trigger_event = {
+					id = lotr_other_country_events.2
+				}
 			}
 		}
 	}

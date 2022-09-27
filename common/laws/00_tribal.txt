@@ -191,7 +191,7 @@ tribal_decentralized_laws = {
 			centralization <= -50
 		}
 		modifier = {
-			global_pop_assimilation_speed_modifier = 0.30
+			global_pop_conversion_speed_modifier = 0.30
 			monthly_centralization = -0.05
 		}
 	}

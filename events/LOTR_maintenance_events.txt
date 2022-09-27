@@ -808,6 +808,10 @@ lotr_maintenance.7 = {
 						OR = {
 							NOT = { owns = 1300 } #minas tirith
 							NOT = { owns = 1302 } #west osgiliath (same area)
+							NOR = {
+								p:1300 = { has_province_modifier = minas_anor_modifier }
+								p:1300 = { has_province_modifier = minas_anor_corrupted_modifier }
+							}
 						}
 					}
 					scope:p.state = { remove_state_modifier = minas_anor_state_modifier }
@@ -821,6 +825,10 @@ lotr_maintenance.7 = {
 					limit = {
 						owns = 1300
 						owns = 1302
+						OR = {
+							p:1300 = { has_province_modifier = minas_anor_modifier }
+							p:1300 = { has_province_modifier = minas_anor_corrupted_modifier }
+						}
 					}
 					scope:p.state = { 
 						add_state_modifier = {
@@ -836,6 +844,7 @@ lotr_maintenance.7 = {
 				owns = 1141 #barad dur
 				p:1141.state = {
 					NOT = { has_state_modifier = barad_dur_state_modifier }
+					p:1141 = { has_province_modifier = barad_dur_modifier }
 				}
 			}
 			p:1141.state = {
@@ -844,16 +853,19 @@ lotr_maintenance.7 = {
 					duration = -1
 				}
 			}
-			every_country = {
+		}
+		area:barad_dur_area = {
+			every_area_province = {
 				limit = {
-					any_province = {
-						is_in_area = barad_dur_area
+					state = { has_state_modifier = barad_dur_state_modifier }
+					OWNER = {
+						NAND = {
+							owns = 1141
+							p:1141 = { has_province_modifier = barad_dur_modifier }
+						}
 					}
 				}
-				random_province = {
-					limit = { is_in_area = barad_dur_area }
-					state = { remove_state_modifier = barad_dur_state_modifier }
-				}
+				state = { remove_state_modifier = barad_dur_state_modifier }
 			}
 		}
 		if = {
@@ -861,6 +873,7 @@ lotr_maintenance.7 = {
 				owns = 1021 #black gate
 				p:1021.state = {
 					NOT = { has_state_modifier = black_gate_state_modifier }
+					p:1021 = { has_province_modifier = black_gate_modifier }
 				}
 			}
 			p:1021.state = {
@@ -869,16 +882,19 @@ lotr_maintenance.7 = {
 					duration = -1
 				}
 			}
-			every_country = {
+		}
+		area:udun_area = {
+			every_area_province = {
 				limit = {
-					any_province = {
-						is_in_area = udun_area
+					state = { has_state_modifier = black_gate_state_modifier }
+					OWNER = {
+						NAND = {
+							owns = 1021
+							p:1021 = { has_province_modifier = black_gate_modifier }
+						}
 					}
 				}
-				random_province = {
-					limit = { is_in_area = udun_area }
-					state = { remove_state_modifier = black_gate_state_modifier }
-				}
+				state = { remove_state_modifier = black_gate_state_modifier }
 			}
 		}
 		if = {
@@ -894,16 +910,14 @@ lotr_maintenance.7 = {
 					duration = -1
 				}
 			}
-			every_country = {
+		}
+		area:calenhardin_area = {
+			every_area_province = {
 				limit = {
-					any_province = {
-						is_in_area = calenhardin_area
-					}
+					OWNER = { NOT = { owns = 1546 }
+					state = { has_state_modifier = orthanc_state_modifier }
 				}
-				random_province = {
-					limit = { is_in_area = calenhardin_area }
-					state = { remove_state_modifier = orthanc_state_modifier }
-				}
+				state = { remove_state_modifier = orthanc_state_modifier }
 			}
 		}
 		if = {
@@ -911,6 +925,7 @@ lotr_maintenance.7 = {
 				owns = 1105 #dol guldur
 				p:1105.state = {
 					NOT = { has_state_modifier = dol_guldur_state_modifier }
+					p:1105 = { has_province_modifier = dol_guldur_modifier }
 				}
 			}
 			p:1105.state = {
@@ -919,16 +934,19 @@ lotr_maintenance.7 = {
 					duration = -1
 				}
 			}
-			every_country = {
+		}
+		area:emyn_guldur_area = {
+			every_area_province = {
 				limit = {
-					any_province = {
-						is_in_area = emyn_guldur_area
+					state = { has_state_modifier = dol_guldur_state_modifier }
+					OWNER = {
+						NAND = {
+							owns = 1105
+							p:1105 = { has_province_modifier = dol_guldur_modifier }
+						}
 					}
 				}
-				random_province = {
-					limit = { is_in_area = emyn_guldur_area }
-					state = { remove_state_modifier = dol_guldur_state_modifier }
-				}
+				state = { remove_state_modifier = dol_guldur_state_modifier }
 			}
 		}
 		if = {
@@ -944,16 +962,14 @@ lotr_maintenance.7 = {
 					duration = -1
 				}
 			}
-			every_country = {
+		}
+		area:umbar_area = {
+			every_area_province = {
 				limit = {
-					any_province = {
-						is_in_area = umbar_area
-					}
+					OWNER = { NOT = { owns = 1 }
+					state = { has_state_modifier = umbar_state_modifier }
 				}
-				random_province = {
-					limit = { is_in_area = umbar_area }
-					state = { remove_state_modifier = umbar_state_modifier }
-				}
+				state = { remove_state_modifier = umbar_state_modifier }
 			}
 		}
 		if = {
@@ -961,11 +977,11 @@ lotr_maintenance.7 = {
 				owns = 1030 #Minas Morgul
 				p:1030.state = {
 					NOT = { has_state_modifier = minas_ithil_state_modifier }
-				}
-				p:1030 = {
-					OR = {	
-						has_province_modifier = minas_ithil_modifier
-						has_province_modifier = minas_ithil_rebuild_modifier
+					p:1030 = { 
+						OR = {
+							has_province_modifier = minas_ithil_modifier 
+							has_province_modifier = minas_ithil_rebuild_modifier 
+						}
 					}
 				}
 			}
@@ -975,16 +991,24 @@ lotr_maintenance.7 = {
 					duration = -1
 				}
 			}
-			every_country = {
+		}
+		area:ephel_duath_area = {
+			every_area_province = {
 				limit = {
-					any_province = {
-						is_in_area = ephel_duath_area
+					state = { has_state_modifier = minas_ithil_state_modifier }
+					OWNER = {
+						NAND = {
+							owns = 1030
+							p:1030 = { 
+								OR = {
+									has_province_modifier = minas_ithil_modifier 
+									has_province_modifier = minas_ithil_rebuild_modifier 
+								}
+						 	}
+						}
 					}
 				}
-				random_province = {
-					limit = { is_in_area = ephel_duath_area }
-					state = { remove_state_modifier = minas_ithil_state_modifier }
-				}
+				state = { remove_state_modifier = minas_ithil_state_modifier }
 			}
 		}
 	}
