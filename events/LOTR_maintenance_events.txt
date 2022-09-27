@@ -914,7 +914,7 @@ lotr_maintenance.7 = {
 		area:calenhardin_area = {
 			every_area_province = {
 				limit = {
-					OWNER = { NOT = { owns = 1546 }
+					OWNER = { NOT = { owns = 1546 } }
 					state = { has_state_modifier = orthanc_state_modifier }
 				}
 				state = { remove_state_modifier = orthanc_state_modifier }
@@ -966,7 +966,7 @@ lotr_maintenance.7 = {
 		area:umbar_area = {
 			every_area_province = {
 				limit = {
-					OWNER = { NOT = { owns = 1 }
+					OWNER = { NOT = { owns = 1 } }
 					state = { has_state_modifier = umbar_state_modifier }
 				}
 				state = { remove_state_modifier = umbar_state_modifier }

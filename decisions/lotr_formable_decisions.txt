@@ -403,7 +403,7 @@
 		effect = {
 			change_country_name = "ANGMAR_NAME"
 			if = {
-				limt = {
+				limit = {
 					OR = {
 						government = tribal_kingdom
 						government = tribal_federation
@@ -435,7 +435,7 @@
 						has_pop_type_right = nobles
 					}
 				}
-				change_pop_type_right = citizen
+				set_country_culture_right = citizen
 			}
 			if = {
 				limit = {
