@@ -23,6 +23,34 @@
 	allow = {
 		#is_tribal = yes
 		NOT = { religion = iluvatarism }
+		OR = { #prevent from AI locking itself in with vassals
+			scope:future_overlord = { is_ai = no }
+			AND = {
+				NOT = { tag = NUR }
+				OR = {
+					NOT = { tag =  JAN }
+					NOT = {
+						any_owned_province = {
+							OR = {
+								is_in_area = pustrava_area
+								is_in_area = surubeki_morad_area
+							}
+						}
+					}
+				}
+				OR = {
+					NOT = { tag =  KHU }
+					NOT = {
+						any_owned_province = {
+							OR = {
+								is_in_area = ciranthir_area
+								is_in_area = boli_area
+							}
+						}
+					}
+				}
+			}
+		}
 		exists = scope:future_overlord
 		scope:future_overlord = {
 			religion = melkorism
