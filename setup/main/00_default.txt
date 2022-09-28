@@ -1484,7 +1484,7 @@ country = {
 			centralization = 50
 			capital = 115
 			is_antagonist = no
-			own_control_core = { 269 270 275 279 280 284 285 286 292 2719 111 112 113 114 115 116 117 118 120 239 722 2040 122 123 124 125 126 128 240 241 263 264 229 271 272 273 274 276 277 278 282 3912 119 121 261 262 265 266 267 268 323 320 321 322 361 314 765 981 255 257 258 259 260 330 331 334 338 795 333 335 337 340 342 792 797 1277 690 691 129 130 166 326 327 332 360 359 729 249 250 251 252 253 254 440 }
+			own_control_core = { 2110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 127 228 238 239 240 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 281 283 284 285 291 313 319 320 321 322 360 764 980 2039 2718 3911 }
 		}
 		KHU = {
 			 #khundolar
@@ -1501,25 +1501,25 @@ country = {
 			centralization = 50
 			capital = 2028
 			is_antagonist = no
-			own_control_core = { 2028 762 }
+			own_control_core = { 2028 128 129 165 248 249 250 251 252 253 254 256 257 258 259 325 326 329 330 331 332 333 334 336 337 339 341 358 359 439 689 690 721 728 791 794 796 1276 }
 		}
-		# RHN = {
-		# 	 #testing
-		# 	government = tribal_federation
-		# 	diplomatic_stance = trading_stance
-		# 	primary_culture = khundolar
-		# 	religion = eastern_animism
-		# 	technology = {
-		# 		military_tech = { level = 1 progress = 0 }
-		# 		civic_tech = { level = 1 progress = 0 }
-		# 		oratory_tech = { level = 1 progress = 0 }
-		# 		religious_tech = { level = 1 progress = 0 }
-		# 	}
-		# 	centralization = 50
-		# 	capital = 762
-		# 	is_antagonist = no
-		# 	own_control_core = {  }
-		# }
+		 # RHN = {
+		 # 	 #testing
+		 # 	government = tribal_federation
+		 # 	diplomatic_stance = trading_stance
+		 # 	primary_culture = khundolar
+		 # 	religion = eastern_animism
+		 # 	technology = {
+		 # 		military_tech = { level = 1 progress = 0 }
+		 # 		civic_tech = { level = 1 progress = 0 }
+		 # 		oratory_tech = { level = 1 progress = 0 }
+		 # 		religious_tech = { level = 1 progress = 0 }
+		 # 	}
+		 # 	centralization = 50
+		 # 	capital = 762
+		 # 	is_antagonist = no
+		 # 	own_control_core = {  }
+		 # }
 		RAC = {
 			 #Rachoth
 			government = tribal_federation
