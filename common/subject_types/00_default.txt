@@ -571,7 +571,7 @@ subject_league_city_state = {
 		global_capital_trade_routes = 2
 		global_goods_from_slaves = -4
 		country_civilization_value = 5
-		global_monthly_food_modifier = 0.5 #ai too stupid to trade food
+		global_monthly_food_modifier = 1 #ai too stupid to trade food
 	}
 	
 	allow = {

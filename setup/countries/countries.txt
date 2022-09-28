@@ -105,7 +105,9 @@ NUR = setup/countries/easterling/nurn.txt
 VAR = setup/countries/easterling/variag.txt
 BAL = setup/countries/easterling/balchoth.txt
 KHU = setup/countries/easterling/khundolar.txt
-WAI = setup/countries/easterling/wainriders.txt
+RAC = setup/countries/easterling/rachoth.txt
+RHN = setup/countries/easterling/rhun.txt
+JAN = setup/countries/easterling/jangovar.txt
 
 #Northmen
 ETD = setup/countries/northmen/eotheod.txt
@@ -166,9 +168,7 @@ XXX = setup/countries/X/xxx.txt
 XXY = setup/countries/X/xxy.txt
 XXZ = setup/countries/X/xxz.txt
 XAX = setup/countries/X/xax.txt
-XBX = setup/countries/X/xbx.txt
 XCX = setup/countries/X/xcx.txt
-XDX = setup/countries/X/xdx.txt
 XEX = setup/countries/X/xex.txt
 XFX = setup/countries/X/xfx.txt
 XGX = setup/countries/X/xgx.txt

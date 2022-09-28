@@ -295,6 +295,7 @@
 			c:DWN = { has_land = no }
 			religion = iluvatarism
 			owns = 200
+			is_ai = no
 		}
 		allow = {
 			any_owned_province = {
@@ -312,6 +313,7 @@
 			c:DLE = { has_land = no }
 			religion = iluvatarism
 			owns = 2720
+			is_ai = no
 		}
 		allow = {
 			any_owned_province = {
@@ -329,6 +331,7 @@
 			c:GON = { has_land = no }
 			religion = iluvatarism
 			owns = 1300
+			is_ai = no
 		}
 		allow = {
 			any_owned_province = {
@@ -346,6 +349,7 @@
 			c:DOR = { has_land = no }
 			religion = iluvatarism
 			owns = 1403
+			is_ai = no
 		}
 		allow = {
 			any_owned_province = {
@@ -363,6 +367,7 @@
 			c:ROH = { has_land = no }
 			religion = iluvatarism
 			owns = 1556
+			is_ai = no
 		}
 		allow = {
 			any_owned_province = {

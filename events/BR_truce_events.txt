@@ -389,10 +389,11 @@ br_truce.4 = { #prevents Sauron from just focusing on the east before Gondor is 
           religion = eastern_animism
         }
         NOR = {
-          tag = XBX #rhun
-          tag = XDX #rachot
-          tag = NUR #nurn
-          tag = MOR #nurn
+          tag = JAN
+          tag = KHU
+          tag = RAC
+          tag = NUR
+          tag = MOR
         }
       }         
       add_to_list = event_list_1

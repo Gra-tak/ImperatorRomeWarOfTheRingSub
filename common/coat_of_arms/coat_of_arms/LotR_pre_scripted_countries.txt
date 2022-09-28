@@ -268,17 +268,86 @@ HARAD_FLAG = {
 	}
 }
 
-XBX = {
+BAL = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 130 14 15}
+	color2 = rgb { 130 14 15}
+	
+	colored_emblem = {
+		texture = "ce_easterling_sun_01.dds"
+		color1 = rgb { 0 0 0}
+	}
+}
+
+JAN = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 204 186 131 }
+	color2 = rgb { 0 0 0}
+
+	colored_emblem = {
+		texture = "ce_rhun.dds"
+		color1 = rgb { 150 24 34}
+		color2 = rgb { 0 0 0}
+	}
+}
+
+KHU = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 150 24 34}
+	color2 = rgb { 0 0 0}
+
+	colored_emblem = {
+		texture = "ce_easterling_sun_01.dds"
+		color1 = rgb { 204 186 131 }
+	}
+}
+
+NUR = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 150 24 34}
+	color2 = rgb { 0 0 0}
+
+	colored_emblem = {
+		texture = "ce_nurn.dds"
+		color1 = rgb { 0 0 0}
+		color2 = rgb { 224 183 66 }
+	}
+}
+
+RAC = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 156 29 51}
+	color2 = rgb { 156 29 51}
+	
+	textured_emblem = {
+		texture = "mea_rachoth.dds"
+	}
+}
+
+RHN = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb { 150 24 34}
 	color2 = rgb { 0 0 0}
 
 	colored_emblem = {
 		texture = "ce_rhun.dds"
-		color1 = rgb { 0 0 0}
-		color2 = rgb { 107 14 34}
+		color1 = rgb { 204 186 131 }
+		color2 = rgb { 224 183 66 }
 	}
 }
+
+VAR = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 153 76 0 }
+	color2 = rgb { 0 0 0}
+
+	colored_emblem = {
+		texture = "ce_nurn.dds"
+		color1 = rgb { 0 0 0}
+		color2 = rgb { 255 41 58}
+	}
+}
+#todo variag
 
 ##################### New End ####################
 
@@ -652,15 +721,6 @@ KHZ = {
 	}
 }
 
-WAI = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 156 29 51}
-	color2 = rgb { 156 29 51}
-	
-	textured_emblem = {
-		texture = "mea_rachoth.dds"
-	}
-}
 
 DUN = {
 	pattern = "pattern_solid.tga"
@@ -733,16 +793,6 @@ SHI = {
 	}
 }
 
-BAL = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb { 130 14 15}
-	color2 = rgb { 130 14 15}
-	
-	colored_emblem = {
-		texture = "ce_easterling_sun_01.dds"
-		color1 = rgb { 0 0 0}
-	}
-}
 
 DWN = {
 	pattern = "pattern_solid.tga"

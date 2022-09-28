@@ -191,11 +191,9 @@ diplomacy = {
 	 # dependency = { first = ERB second = DLE subject_type = feudatory }
 	dependency = { first = ERB second = BLC subject_type = feudatory }  #to allow players to choose Balin at start. Will move to moria.
 	 # dependency = { first = ERB second = IRO subject_type = feudatory } #iron hills is part of ERB
-	 #Mordor - starts with Rhun and Variags as client states
-	 #dependency = { first = MOR second = XBX subject_type = thrall_tribe } #Rhun
+	 #Mordor
 	dependency = { first = MOR second = VAR subject_type = thrall_tribe }  #Variags
 	dependency = { first = MOR second = BAL subject_type = thrall_tribe }  #Balchoth
-	 #dependency = { first = MOR second = NUR subject_type = thrall_tribe } #Nurn
 	dependency = { first = MOR second = MMO subject_type = feudatory }  #Minas Morgul
 	 #Imladris - Lorien - Rangers alliance
 	alliance = { first = IML second = LOR }
@@ -1471,8 +1469,8 @@ country = {
 			is_antagonist = no
 			own_control_core = { 2761 2762 2763 2764 2768 2770 2771 3026 3047 2754 2755 2766 2818 2819 2820 2821 2822 3056 2767 2765 2814 2783 2784 2805 2806 2807 2815 2816 2817 3164 }
 		}
-		XBX = {
-			 #Rhun
+		JAN = {
+			 #Jangovar
 			government = tribal_federation
 			diplomatic_stance = trading_stance
 			primary_culture = jangovar
@@ -1485,10 +1483,44 @@ country = {
 			}
 			centralization = 50
 			capital = 115
-			is_antagonist = yes
-			own_control_core = { 269 270 275 279 280 284 285 286 292 2719 111 112 113 114 115 116 117 118 120 239 722 2040 122 123 124 125 126 128 240 241 263 264 229 271 272 273 274 276 277 278 282 3912 119 121 261 262 265 266 267 268 323 320 321 322 361 314 765 981 255 257 258 259 260 330 331 334 338 795 333 335 337 340 342 792 797 1277 690 691 129 130 166 326 327 332 360 359 729 249 250 251 252 253 254 440 762 2028 }
+			is_antagonist = no
+			own_control_core = { 269 270 275 279 280 284 285 286 292 2719 111 112 113 114 115 116 117 118 120 239 722 2040 122 123 124 125 126 128 240 241 263 264 229 271 272 273 274 276 277 278 282 3912 119 121 261 262 265 266 267 268 323 320 321 322 361 314 765 981 255 257 258 259 260 330 331 334 338 795 333 335 337 340 342 792 797 1277 690 691 129 130 166 326 327 332 360 359 729 249 250 251 252 253 254 440 }
 		}
-		XDX = {
+		KHU = {
+			 #khundolar
+			government = tribal_federation
+			diplomatic_stance = trading_stance
+			primary_culture = khundolar
+			religion = eastern_animism
+			technology = {
+				military_tech = { level = 1 progress = 0 }
+				civic_tech = { level = 1 progress = 0 }
+				oratory_tech = { level = 1 progress = 0 }
+				religious_tech = { level = 1 progress = 0 }
+			}
+			centralization = 50
+			capital = 2028
+			is_antagonist = no
+			own_control_core = { 2028 762 }
+		}
+		# RHN = {
+		# 	 #testing
+		# 	government = tribal_federation
+		# 	diplomatic_stance = trading_stance
+		# 	primary_culture = khundolar
+		# 	religion = eastern_animism
+		# 	technology = {
+		# 		military_tech = { level = 1 progress = 0 }
+		# 		civic_tech = { level = 1 progress = 0 }
+		# 		oratory_tech = { level = 1 progress = 0 }
+		# 		religious_tech = { level = 1 progress = 0 }
+		# 	}
+		# 	centralization = 50
+		# 	capital = 762
+		# 	is_antagonist = no
+		# 	own_control_core = {  }
+		# }
+		RAC = {
 			 #Rachoth
 			government = tribal_federation
 			diplomatic_stance = trading_stance

@@ -1,6 +1,6 @@
 ﻿color = rgb { 153 76 0}
 
-gender_equality = yes
+gender_equality = no
 
 ship_names = {
 	#

@@ -53664,7 +53664,7 @@
 	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "herbs"
+	trade_goods = "woad"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
