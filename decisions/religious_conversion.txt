@@ -702,6 +702,7 @@ country_decisions = {
 			potential_change_religion_trigger = {
 				RELIGION = eastern_animism
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 		}
 
 		allow = {

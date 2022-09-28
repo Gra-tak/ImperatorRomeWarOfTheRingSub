@@ -62,6 +62,7 @@ lotr_config_events.1 = {
 				has_variable = lotr_disable_government_convert
 			}
 		}
+		custom_tooltip = "lotr_config_events.1.enable_government_convert.tt"
 		trigger_event = {
 			id = lotr_config_events.1
 		}
@@ -75,6 +76,7 @@ lotr_config_events.1 = {
 		trigger = {
 			has_variable = lotr_disable_government_convert
 		}
+		custom_tooltip = "lotr_config_events.1.enable_government_convert.tt"
 		remove_variable = lotr_disable_government_convert
 	}
 
