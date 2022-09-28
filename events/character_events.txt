@@ -524,7 +524,7 @@ character_events.7 = {
 		name = "character_events.7.a"
 		add_treasury = capped_loss_6
 		scope:angry_ex_general = {
-			add_gold = capped_gain_6
+			add_gold = root.capped_gain_6
 		}
 	}
 	

@@ -1,6 +1,6 @@
 ﻿capped_gain_half =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 0.5
     max = 25
     min = 3
@@ -8,14 +8,14 @@
 
 capped_gain_1 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     max = 50
     min = 5
 }
 
 capped_gain_2 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 2
     max = 100
     min = 10
@@ -23,7 +23,7 @@ capped_gain_2 =
 
 capped_gain_3 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 3
     max = 150
     min = 15
@@ -31,7 +31,7 @@ capped_gain_3 =
 
 capped_gain_4 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 4
     max = 200
     min = 20
@@ -39,7 +39,7 @@ capped_gain_4 =
 
 capped_gain_5 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 5
     max = 250
     min = 25
@@ -47,7 +47,7 @@ capped_gain_5 =
 
 capped_gain_6 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 6
     max = 300
     min = 30
@@ -55,7 +55,7 @@ capped_gain_6 =
 
 capped_gain_7 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 7
     max = 350
     min = 35
@@ -63,7 +63,7 @@ capped_gain_7 =
 
 capped_gain_8 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 8
     max = 400
     min = 40
@@ -71,7 +71,7 @@ capped_gain_8 =
 
 capped_gain_10 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 10
     max = 500
     min = 50
@@ -79,7 +79,7 @@ capped_gain_10 =
 
 capped_gain_12 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 12
     max = 600
     min = 60
@@ -87,7 +87,7 @@ capped_gain_12 =
 
 capped_gain_14 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 14
     max = 700
     min = 70
@@ -95,7 +95,7 @@ capped_gain_14 =
 
 capped_gain_16 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 16
     max = 800
     min = 80
@@ -103,7 +103,7 @@ capped_gain_16 =
 
 capped_gain_18 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = 18
     max = 900
     min = 80
@@ -111,7 +111,7 @@ capped_gain_18 =
 
 capped_loss_half =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -0.5
     min = -25
     max = -3
@@ -119,7 +119,7 @@ capped_loss_half =
 
 capped_loss_1 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -1
     min = -50
     max = -5
@@ -127,7 +127,7 @@ capped_loss_1 =
 
 capped_loss_2 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -2
     min = -100
     max = -10
@@ -135,7 +135,7 @@ capped_loss_2 =
 
 capped_loss_3 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -3
     min = -150
     max = -15
@@ -143,7 +143,7 @@ capped_loss_3 =
 
 capped_loss_4 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -4
     min = -200
     max = -20
@@ -151,7 +151,7 @@ capped_loss_4 =
 
 capped_loss_5 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -5
     min = -250
     max = -25
@@ -159,14 +159,14 @@ capped_loss_5 =
 
 capped_loss_6 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -6
     min = -300
     max = -30
 }
 capped_loss_8 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -8
     min = -400
     max = -40
@@ -174,7 +174,7 @@ capped_loss_8 =
 
 capped_loss_10 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -10
     min = -500
     max = -50
@@ -182,7 +182,7 @@ capped_loss_10 =
 
 capped_loss_12 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -12
     min = -600
     max = -60
@@ -190,7 +190,7 @@ capped_loss_12 =
 
 capped_loss_14 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -14
     min = -700
     max = -70
@@ -198,7 +198,7 @@ capped_loss_14 =
 
 capped_loss_16 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -16
     min = -800
     max = -80
@@ -206,7 +206,7 @@ capped_loss_16 =
 
 capped_loss_18 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -18
     min = -900
     max = -80
@@ -214,7 +214,7 @@ capped_loss_18 =
 
 capped_loss_24 =
 {
-    value = root.has_monthly_income
+    value = has_monthly_income
     multiply = -24
     min = -1200
     max = -120

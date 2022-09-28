@@ -122,7 +122,7 @@ country_diplomacy.1 = {
 			}
 		}
 		scope:friendly_character_foreign = {
-			add_gold = capped_gain_3
+			add_gold = root.capped_gain_3
 		}
 	}
 
@@ -590,7 +590,7 @@ country_diplomacy.10 = {
 				target = root
 			}
 			show_as_tooltip = {
-				add_treasury = capped_gain_6
+				add_treasury = root.capped_gain_6
 			}
 			trigger_event = {
 				id = country_diplomacy.11

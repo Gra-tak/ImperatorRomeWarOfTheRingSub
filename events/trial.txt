@@ -316,7 +316,7 @@ trial.3 = {
 		name = "trial.3.b" 
 		add_treasury = capped_loss_6
 		scope:powerful_ally = {
-			add_gold = capped_gain_6
+			add_gold = root.capped_gain_6
 		}
 		custom_tooltip = newline_tt
 		custom_tooltip = no_trial_progress
@@ -954,7 +954,7 @@ trial.8 = {
 		}
 		highlight = yes
 		scope:target = {
-			add_gold = capped_gain_18
+			add_gold = root.capped_gain_18
 			add_popularity = popularity_huge
 			hidden_effect = {
 				remove_trial_items_effect = yes
@@ -975,7 +975,7 @@ trial.8 = {
 			}
 		}
 		scope:target = {
-			add_gold = capped_gain_18
+			add_gold = root.capped_gain_18
 			add_popularity = popularity_huge
 			hidden_effect = {
 				remove_trial_items_effect = yes

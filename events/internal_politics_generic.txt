@@ -184,11 +184,7 @@ ip_generic.3 = {
 	option = {
 		name = "ip_generic.3.b"
 		employer = {
-			add_treasury  = {
-				value = root.employer.has_monthly_income
-				multiply = subtract_monthly_income_small
-			}
-
+			add_treasury  = capped_loss_3
 		}
 		add_corruption = corruption_medium
 		hidden_effect = {

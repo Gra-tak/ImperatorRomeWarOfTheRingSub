@@ -785,7 +785,7 @@ tribal_pol.10 = { # Trying to fix a broken relationship with a Clan Chief
 		add_treasury = capped_loss_3
 		scope:disloyal_clan_chief = {
 			add_loyalty = loyalty_gift_bribe_1
-			add_gold = capped_gain_3
+			add_gold = root.capped_gain_3
 		}
 	}
 

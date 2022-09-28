@@ -115,7 +115,7 @@ pbc_event.1 = {
 		add_treasury = capped_gain_1
 		scope:power_character = {
 			add_loyalty = loyalty_appropriated_wealth
-			add_gold = capped_loss_1
+			add_gold = root.capped_loss_1
 		}
 	}
 
@@ -153,7 +153,7 @@ pbc_event.1 = {
 		scope:power_character = {
 			add_corruption = corruption_small
 			add_loyalty = loyalty_gift_bribe_1
-			add_gold = capped_gain_2
+			add_gold = root.capped_gain_2
 		}
 	}
 }
@@ -548,7 +548,7 @@ pbc_event.5 = {
 			}
 		}
 		scope:power_character = {
-			add_gold = capped_gain_1
+			add_gold = root.capped_gain_1
 		}
 	}
 
@@ -570,7 +570,7 @@ pbc_event.5 = {
 		add_political_influence = -15
 		scope:power_character = {
 			add_loyalty = loyalty_governor_intervention
-			add_gold = capped_loss_1
+			add_gold = root.capped_loss_1
 		}
 	}
 
@@ -585,7 +585,7 @@ pbc_event.5 = {
 		custom_tooltip = "benefactor_tooltip"
 		add_treasury = capped_loss_2
 		scope:power_character = {
-			add_gold = capped_gain_1
+			add_gold = root.capped_gain_1
 		}
 	}
 
@@ -600,7 +600,7 @@ pbc_event.5 = {
 		custom_tooltip = "greedy_tooltip"
 		add_treasury = capped_gain_half
 		scope:power_character = {
-			add_gold = capped_loss_half
+			add_gold = root.capped_loss_half
 		}
 		scope:affected_province = {
 			random_state_province = {
@@ -1456,7 +1456,7 @@ pbc_event.12 = {
 			current_ruler = { add_corruption = corruption_medium }
 		}
 		scope:power_character = {
-			add_gold = capped_gain_2
+			add_gold = root.capped_gain_2
 			add_loyalty = loyalty_granted_funds
 			if = {
 				limit = { corruption < 100 }

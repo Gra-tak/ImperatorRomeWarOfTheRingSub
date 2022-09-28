@@ -1871,7 +1871,7 @@ monarchy_events.30 = {
 	immediate = {
 		hidden_effect = {
 			scope:primary_heir = {
-				add_gold = capped_loss_6
+				add_gold = root.capped_loss_6
 			}
 		}
 	}
@@ -2266,7 +2266,7 @@ monarchy_events.40 = {
 		}
 		hidden_effect = {
 			scope:character_master_guard = {
-				add_gold = capped_gain_6
+				add_gold = root.capped_gain_6
 			}
 		}
 	}

@@ -393,12 +393,12 @@ royal_marriage.6 = { #Normal marriage proposed
 				exists = scope:negotiator
 			}
 			scope:negotiator = {
-				add_gold = capped_gain_3
+				add_gold = root.capped_gain_3
 			}
 		}
 		else = {
 			scope:love_target = {
-				add_gold = capped_gain_3
+				add_gold = root.capped_gain_3
 			}
 		}
 		add_treasury = capped_loss_3
@@ -464,12 +464,12 @@ royal_marriage.6 = { #Normal marriage proposed
 				exists = scope:negotiator
 			}
 			scope:negotiator = {
-				add_gold = capped_gain_6
+				add_gold = root.capped_gain_6
 			}
 		}
 		else = {
 			scope:love_target = {
-				add_gold = capped_gain_6
+				add_gold = root.capped_gain_6
 			}
 		}
 		add_treasury = capped_loss_6
