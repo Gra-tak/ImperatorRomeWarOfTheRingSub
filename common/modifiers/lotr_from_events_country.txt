@@ -4,14 +4,21 @@
 
 lotr_formable_harad_modifier = {
 	land_morale_modifier = 0.1
-    character_loyalty = 10
+	character_loyalty = 10
 	global_pop_conversion_speed_modifier = 0.25
-    global_tribesmen_happyness = happiness_huge_svalue
+	happiness_for_same_culture_modifier = happiness_huge_svalue
+}
+lotr_formable_rhun_modifier = {
+	land_morale_modifier = 0.1
+	character_loyalty = 10
+	global_pop_conversion_speed_modifier = 0.25
+	happiness_for_same_culture_modifier = happiness_huge_svalue
 }
 lotr_formable_rhovanion_modifier = {
 	land_morale_modifier = 0.1
-    character_loyalty = 10
+	character_loyalty = 10
 	global_pop_conversion_speed_modifier = 0.25
+	happiness_for_same_culture_modifier = happiness_huge_svalue
 }
 lotr_formable_angmar_modifier = {
 	land_morale_modifier = 0.1

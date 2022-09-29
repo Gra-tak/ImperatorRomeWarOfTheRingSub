@@ -193,6 +193,17 @@
 				change_country_tag = HAR
 				change_country_flag = HARAD_FLAG
 			}
+			if = {
+				limit = {
+					OR = {
+						government = tribal_kingdom
+						government = tribal_federation
+						government = tribal_chiefdom
+					}
+				}
+				change_government = despotic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
 			add_country_modifier = {
 				name = lotr_formable_harad_modifier
 				duration = 7600
@@ -343,6 +354,17 @@
 				change_country_tag = RHO
 				change_country_flag = RHOVANION_FLAG
 			}
+			if = {
+				limit = {
+					OR = {
+						government = tribal_kingdom
+						government = tribal_federation
+						government = tribal_chiefdom
+					}
+				}
+				change_government = despotic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
 			add_country_modifier = {
 				name = lotr_formable_rhovanion_modifier
 				duration = 7600
@@ -445,6 +467,71 @@
 					id = lotr_other_country_events.2
 				}
 			}
+		}
+	}
+	# Form Rhun
+	form_rhun = {
+		
+		potential = {
+			country_culture_group = easterling_group
+			NOT = {
+				is_endgame_tag_trigger = yes
+			}
+			NOT = { tag = RHN }
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					#province_id = 1
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = formable_not_rhun_exists
+				NOT = {
+					any_country = {
+						tag = RHN
+					}
+				}
+			}
+			num_of_provinces > 100
+			AND = {
+				#owns = 1
+			}
+			can_form_nation_trigger = yes
+		}
+		
+		effect = {
+			change_country_name = "RHN"
+			hidden_effect = {
+				change_country_adjective = "RHUN_ADJECTIVE"
+				#change_country_color =  "harad_red"
+				change_country_tag = RHN
+				change_country_flag = RHN
+			}
+			if = {
+				limit = {
+					OR = {
+						government = tribal_kingdom
+						government = tribal_federation
+						government = tribal_chiefdom
+					}
+				}
+				change_government = despotic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
+			add_country_modifier = {
+				name = lotr_formable_rhun_modifier
+				duration = 7600
+			}
+			add_3_free_province_investments = yes
+		}
+		
+		ai_will_do = {
+			base = 1
 		}
 	}
 } 

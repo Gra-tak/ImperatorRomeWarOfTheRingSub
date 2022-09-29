@@ -23,6 +23,14 @@
  form_harad_desc:0 "For millennia the Haradwaith have been dominated by tyrannical Black Númenóreans who had established colonies in Middle-earth after leaving Númenor. We must aim to assert our rightful leadership over Haradrim lands, and lead our people to greater glory! It is time to put an end to our petty squabbles, and unite the Haradrim under one banner as Harad."
  lotr_formable_harad_modifier:0 "Haradrim United"
  desc_lotr_formable_harad_modifier:2 "Haradrim country created"
+ # Harad
+ RHUN_NAME:0 "Rhûn"
+ RHUN_ADJECTIVE:0 "Rhûnian"
+ formable_not_rhun_exists:0 "#Y Rhûn#! must NOT exist."
+ form_rhun:0 "Form the Kingdom of Rhûn"
+ form_rhun_desc:0 "Since the time of the Wainriders, nobody has been able to unite any large number of easterlings under him. It is time for us to take this place and bring our people to new glory."
+ lotr_formable_rhun_modifier:0 "Rhûn United"
+ desc_lotr_formable_rhun_modifier:2 "Rhûn country created"
  # Rhovanion
  RHOVANION_NAME:0 "Rhovanion"
  RHOVANION_ADJECTIVE:0 "Rhovanion"
