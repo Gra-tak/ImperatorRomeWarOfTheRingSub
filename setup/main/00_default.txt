@@ -1448,7 +1448,7 @@ country = {
 				religious_tech = { level = 1 progress = 0 }
 			}
 			centralization = 50
-			capital = 2772
+			capital = 3048
 			is_antagonist = no
 			own_control_core = { 2772 2773 2774 2778 2780 2781 2782 3030 3048 3163 791 2531 2775 2776 2777 2779 2929 2930 3039 3182 2931 2932 2933 2934 2935 3027 3028 3029 3055 3069 3073 }
 		}
@@ -1465,7 +1465,7 @@ country = {
 				religious_tech = { level = 1 progress = 0 }
 			}
 			centralization = 50
-			capital = 2761
+			capital = 2806
 			is_antagonist = no
 			own_control_core = { 2761 2762 2763 2764 2768 2770 2771 3026 3047 2754 2755 2766 2818 2819 2820 2821 2822 3056 2767 2765 2814 2783 2784 2805 2806 2807 2815 2816 2817 3164 }
 		}
@@ -1499,7 +1499,7 @@ country = {
 				religious_tech = { level = 1 progress = 0 }
 			}
 			centralization = 50
-			capital = 2028
+			capital = 130
 			is_antagonist = no
 			own_control_core = { 2028 129 130 166 249 250 251 252 253 254 255 257 258 259 260 326 327 330 331 332 333 334 335 337 338 340 342 359 360 440 690 691 722 729 792 795 797 1277 }
 		}
@@ -1568,7 +1568,7 @@ country = {
 				religious_tech = { level = 1 progress = 0 }
 			}
 			centralization = 50
-			capital = 2424
+			capital = 3020
 			is_antagonist = no
 			own_control_core = { 2424 2896 2918 2919 2922 3016 3019 3020 689 1970 2925 2926 2641 3015 3018 3040 3049 680 683 684 692 790 793 794 984 1347 1385 1503 2029 2861 2923 2924 2927 2928 3017 3061 3062 3063 3066 }
 		}

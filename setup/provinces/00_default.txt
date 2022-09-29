@@ -1402,7 +1402,7 @@
 	culture = "khundolar"
 	religion = "eastern_animism"
 	trade_goods = "papyrus"
-	civilization_value = 0
+	civilization_value = 25
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 9 }
@@ -29017,11 +29017,11 @@
 	culture = "rachoth"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 5
+	civilization_value = 20
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 5 }
-	slaves = { amount = 1 }
+	tribesmen = { amount = 7 }
+	slaves = { amount = 2 }
 }
 2807 = { #Tug (XGX) (rethu_area) (kykurian_kyn_region)
 	terrain = "steppe"
@@ -31533,7 +31533,7 @@
 	culture = "rachoth"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 5
+	civilization_value = 20
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 9 }

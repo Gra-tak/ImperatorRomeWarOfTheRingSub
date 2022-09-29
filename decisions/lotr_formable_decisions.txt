@@ -484,8 +484,15 @@
 			scope:province = {
 				OR = {
 					province_id = 115 #Jangovar capital
-					province_id = 138 #rachot capital
-					#province_id = 138 #khundolar capital (to be set)
+					province_id = 183 #rachot capital
+					province_id = 130 #khundolar capital
+					province_id = 3020 #Nurad capital
+					province_id = 3048 #khurgunim capital
+					province_id = 2806 #kykurian_kyn capital
+					province_id = 2891 #khey sart capital
+					province_id = 745 #balchot capital
+					province_id = 641 #variag capital
+					province_id = 1148 #nurn metropolis
 				}
 			}
 		}
@@ -499,11 +506,20 @@
 					}
 				}
 			}
-			num_of_provinces > 100
-			AND = {
+			num_of_cities > 300
+			# AND = { #todo: 6 or 7 out of 10 ?
+			calc_true_if = {
+				amount >= 7
 				owns = 115
-				owns = 138
-				#owns = 1
+				owns = 183
+				owns = 130
+				owns = 3020
+				owns = 3048
+				owns = 2806
+				owns = 2891
+				owns = 745
+				owns = 641
+				owns = 1148
 			}
 			can_form_nation_trigger = yes
 		}
@@ -512,7 +528,7 @@
 			change_country_name = "RHN"
 			hidden_effect = {
 				change_country_adjective = "RHUN_ADJECTIVE"
-				#change_country_color =  "harad_red"
+				#change_country_color =  ""
 				change_country_tag = RHN
 				change_country_flag = RHN
 			}

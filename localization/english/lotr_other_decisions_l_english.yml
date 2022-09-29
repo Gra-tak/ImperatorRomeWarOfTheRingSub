@@ -111,7 +111,7 @@
  lotr_config_events.1.imp_conv_messages:0 "Show important conversion messages"
  lotr_config_events.1.disable_government_convert:0 "Stop showing conversion descisions"
  lotr_config_events.1.enable_government_convert:0 "Start showing conversion descisions"
- lotr_config_events.1.disable_government_convert.tt:0 "This includes government conversion (except for Empire), religious conversions and the 'Abandon old Alliances' descision."
+ lotr_config_events.1.enable_government_convert.tt:0 "This includes government conversion (except for Empire), religious conversions and the 'Abandon old Alliances' descision."
  lotr_config_events.1.disable_culture_accept:0 "Disable the accept all cultures decision"
  lotr_config_events.1.disable_culture_accept.tt:0 "You can still use the culture specific cultural decision"
  lotr_config_events.1.enable_culture_accept:0 "Enable the accept all cultures decision"
