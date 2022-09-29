@@ -483,7 +483,9 @@
 		highlight = {
 			scope:province = {
 				OR = {
-					#province_id = 1
+					province_id = 115 #Jangovar capital
+					province_id = 138 #rachot capital
+					#province_id = 138 #khundolar capital (to be set)
 				}
 			}
 		}
@@ -499,6 +501,8 @@
 			}
 			num_of_provinces > 100
 			AND = {
+				owns = 115
+				owns = 138
 				#owns = 1
 			}
 			can_form_nation_trigger = yes
