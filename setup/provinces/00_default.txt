@@ -1355,7 +1355,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-126 = { #Kelepar (unowned) (telaith_lyst_area) (dacranamel_region)
+126 = { #Kelepar (JAN) (telaith_lyst_area) (dacranamel_region)
 	terrain = "farmland"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -1366,7 +1366,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-127 = { #Eryn-doll (JAN) (fangorn_area) (lorien_region)
+127 = { #Eryn-doll (unowned) (fangorn_area) (lorien_region)
 	terrain = "deep_forest"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -1375,7 +1375,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-128 = { #Vendisarogana (KHU) (telaith_lyst_area) (dacranamel_region)
+128 = { #Vendisarogana (JAN) (telaith_lyst_area) (dacranamel_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -1397,7 +1397,7 @@
 	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
-130 = { #Thinedaman (unowned) (kolomok_area) (haerhun_region)
+130 = { #Thinedaman (KHU) (kolomok_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -1750,7 +1750,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-165 = { #Brimble (KHU) (nagadar_area) (duirrogwin_region)
+165 = { #Brimble (unowned) (nagadar_area) (duirrogwin_region)
 	terrain = "plains"
 	culture = "rachoth"
 	religion = "eastern_animism"
@@ -1761,7 +1761,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-166 = { #Khazh (unowned) (kolomok_area) (haerhun_region)
+166 = { #Khazh (KHU) (kolomok_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -2406,7 +2406,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-228 = { #Tund (JAN) (pinnon_rhun_area) (dorwinion_region)
+228 = { #Tund (unowned) (pinnon_rhun_area) (dorwinion_region)
 	terrain = "mountain"
 	culture = "balchoth"
 	religion = "eastern_animism"
@@ -2417,7 +2417,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-229 = { #Alesthla (unowned) (morad_area) (dacranamel_region)
+229 = { #Alesthla (JAN) (morad_area) (dacranamel_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -2518,7 +2518,7 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 4 }
 }
-238 = { #Bolarkan (JAN) (dobok_bron_area) (dorwinion_region)
+238 = { #Bolarkan (DWN) (dobok_bron_area) (dorwinion_region)
 	terrain = "plains"
 	culture = "dorwinrim"
 	religion = "iluvatarism"
@@ -2551,7 +2551,7 @@
 	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
-241 = { #Burh Dorarsa (unowned) (telaith_lyst_area) (dacranamel_region)
+241 = { #Burh Dorarsa (JAN) (telaith_lyst_area) (dacranamel_region)
 	terrain = "forest"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -2622,7 +2622,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-248 = { #Tálkharâr (KHU) (vol_kug_area) (taur_romen_region)
+248 = { #Tálkharâr (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "plains"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -2699,7 +2699,7 @@
 	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
-255 = { #Uzalkar (unowned) (ciranthir_area) (haerhun_region)
+255 = { #Uzalkar (KHU) (ciranthir_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -2710,7 +2710,7 @@
 	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
-256 = { #Kraltane (KHU) (aiatar_area) (forrhun_region)
+256 = { #Kraltane (unowned) (aiatar_area) (forrhun_region)
 	terrain = "plains"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -2752,7 +2752,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-260 = { #Dôa (JAN) (ciranthir_area) (haerhun_region)
+260 = { #Dôa (KHU) (ciranthir_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -2972,7 +2972,7 @@
 	tribesmen = { amount = 8 }
 	slaves = { amount = 1 }
 }
-280 = { #Tserkind (unowned) (gathod_area) (dacranamel_region)
+280 = { #Tserkind (JAN) (gathod_area) (dacranamel_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -2983,7 +2983,7 @@
 	tribesmen = { amount = 9 }
 	slaves = { amount = 1 }
 }
-281 = { #Liknekar (JAN) (velirinda_area) (menelothriand_region)
+281 = { #Liknekar (unowned) (velirinda_area) (menelothriand_region)
 	terrain = "steppe"
 	culture = "rachoth"
 	religion = "eastern_animism"
@@ -2994,7 +2994,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-282 = { #Uthisth (unowned) (morad_area) (dacranamel_region)
+282 = { #Uthisth (JAN) (morad_area) (dacranamel_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3005,7 +3005,7 @@
 	tribesmen = { amount = 9 }
 	slaves = { amount = 1 }
 }
-283 = { #Sareld (JAN) (sagathavuld_area) (dor_rhunen_region)
+283 = { #Sareld (BAL) (sagathavuld_area) (dor_rhunen_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3038,7 +3038,7 @@
 	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
-286 = { #Galendane (unowned) (gathod_area) (dacranamel_region)
+286 = { #Galendane (JAN) (gathod_area) (dacranamel_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3093,7 +3093,7 @@
 	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
-291 = { #Burh Padareiks (JAN) (sagathavuld_area) (dor_rhunen_region)
+291 = { #Burh Padareiks (BAL) (sagathavuld_area) (dor_rhunen_region)
 	terrain = "steppe"
 	culture = "balchoth"
 	religion = "eastern_animism"
@@ -3104,7 +3104,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-292 = { #Voraghû (unowned) (gathod_area) (dacranamel_region)
+292 = { #Voraghû (JAN) (gathod_area) (dacranamel_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3329,7 +3329,7 @@
 	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
-313 = { #Khúsheskûna (JAN) (ardhallad_area) (saerwaith_region)
+313 = { #Khúsheskûna (unowned) (ardhallad_area) (saerwaith_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3340,7 +3340,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-314 = { #Kherâs (unowned) (pustrava_area) (saerwaith_region)
+314 = { #Kherâs (JAN) (pustrava_area) (saerwaith_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3390,7 +3390,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-319 = { #Nartok (JAN) (emyn_engrin_area) (ered_mithrin_region)
+319 = { #Nartok (unowned) (emyn_engrin_area) (ered_mithrin_region)
 	terrain = "plains"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3432,7 +3432,7 @@
 	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
-323 = { #Bamath (unowned) (surubeki_morad_area) (dacranamel_region)
+323 = { #Bamath (JAN) (surubeki_morad_area) (dacranamel_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3453,7 +3453,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-325 = { #Khuba (KHU) (forkug_area) (taur_romen_region)
+325 = { #Khuba (unowned) (forkug_area) (taur_romen_region)
 	terrain = "plains"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -3475,7 +3475,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-327 = { #Rubagub (unowned) (kolomok_area) (haerhun_region)
+327 = { #Rubagub (KHU) (kolomok_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -3496,7 +3496,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-329 = { #Klófnakot (KHU) (medvos_verar_area) (rhovanion_region)
+329 = { #Klófnakot (DLE) (medvos_verar_area) (rhovanion_region)
 	terrain = "plains"
 	culture = "lakemen"
 	religion = "iluvatarism"
@@ -3562,7 +3562,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-335 = { #Raza (unowned) (muldin_area) (haerhun_region)
+335 = { #Raza (KHU) (muldin_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -3573,7 +3573,7 @@
 	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
-336 = { #Arâla (KHU) (ardhallad_area) (saerwaith_region)
+336 = { #Arâla (unowned) (ardhallad_area) (saerwaith_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3595,7 +3595,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-338 = { #Iynilt (unowned) (ciranthir_area) (haerhun_region)
+338 = { #Iynilt (KHU) (ciranthir_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -3606,7 +3606,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-339 = { #Cüch (KHU) (ardhallad_area) (saerwaith_region)
+339 = { #Cüch (unowned) (ardhallad_area) (saerwaith_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3617,7 +3617,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-340 = { #Alax (unowned) (muldin_area) (haerhun_region)
+340 = { #Alax (KHU) (muldin_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -3628,7 +3628,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-341 = { #Bal (KHU) (ardhallad_area) (saerwaith_region)
+341 = { #Bal (unowned) (ardhallad_area) (saerwaith_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -3639,7 +3639,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-342 = { #Nar (unowned) (muldin_area) (haerhun_region)
+342 = { #Nar (KHU) (muldin_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -3808,7 +3808,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-358 = { #Sêntadû (KHU) (nan_carnen_area) (rhovanion_region)
+358 = { #Sêntadû (unowned) (nan_carnen_area) (rhovanion_region)
 	terrain = "plains"
 	culture = "rachoth"
 	religion = "eastern_animism"
@@ -3830,7 +3830,7 @@
 	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
-360 = { #Khai (JAN) (kolomok_area) (haerhun_region)
+360 = { #Khai (KHU) (kolomok_area) (haerhun_region)
 	terrain = "plains"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -3841,7 +3841,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-361 = { #Amparq (unowned) (pustrava_area) (saerwaith_region)
+361 = { #Amparq (JAN) (pustrava_area) (saerwaith_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -4674,7 +4674,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 3 }
 }
-440 = { #Jamart (unowned) (nildorien_area) (haerhun_region)
+440 = { #Jamart (KHU) (nildorien_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -7319,7 +7319,7 @@
 	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
-691 = { #Amad (unowned) (muldin_area) (haerhun_region)
+691 = { #Amad (KHU) (muldin_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -7643,7 +7643,7 @@
 	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
-721 = { #Azîr (KHU) (khand_amu_area) (khand_region)
+721 = { #Azîr (VAR) (khand_amu_area) (khand_region)
 	terrain = "steppe"
 	culture = "variag"
 	religion = "eastern_animism"
@@ -7654,7 +7654,7 @@
 	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
-722 = { #Nobal Mayzri (unowned) (dacranamel_area) (dacranamel_region)
+722 = { #Nobal Mayzri (KHU) (dacranamel_area) (dacranamel_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -7711,7 +7711,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-728 = { #Palana (KHU) (forod_engrin_area) (forrhun_region)
+728 = { #Palana (unowned) (forod_engrin_area) (forrhun_region)
 	terrain = "plains"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -7720,7 +7720,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-729 = { #Tyngi (unowned) (kolomok_area) (haerhun_region)
+729 = { #Tyngi (KHU) (kolomok_area) (haerhun_region)
 	terrain = "plains"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -8085,7 +8085,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-764 = { #Marndi (JAN) (forod_engrin_area) (forrhun_region)
+764 = { #Marndi (unowned) (forod_engrin_area) (forrhun_region)
 	terrain = "plains"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -8094,7 +8094,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-765 = { #Lomish (unowned) (pustrava_area) (saerwaith_region)
+765 = { #Lomish (JAN) (pustrava_area) (saerwaith_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -8352,7 +8352,7 @@
 	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
-791 = { #Nûgand (KHU) (atha_area) (khurgunin_region)
+791 = { #Nûgand (XFX) (atha_area) (khurgunin_region)
 	terrain = "steppe"
 	culture = "variag"
 	religion = "eastern_animism"
@@ -8363,7 +8363,7 @@
 	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
-792 = { #Iskbralu (unowned) (muldin_area) (haerhun_region)
+792 = { #Iskbralu (KHU) (muldin_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -8396,7 +8396,7 @@
 	tribesmen = { amount = 7 }
 	slaves = { amount = 1 }
 }
-795 = { #Gên (unowned) (ciranthir_area) (haerhun_region)
+795 = { #Gên (KHU) (ciranthir_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -8407,7 +8407,7 @@
 	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
-796 = { #Lomark (KHU) (boli_area) (menelothriand_region)
+796 = { #Lomark (unowned) (boli_area) (menelothriand_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -8418,7 +8418,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-797 = { #Khaldaza (unowned) (muldin_area) (haerhun_region)
+797 = { #Khaldaza (KHU) (muldin_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -10172,7 +10172,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-980 = { #Milsto Cruoki (JAN) (carn_dum_area) (angmar_region)
+980 = { #Milsto Cruoki (unowned) (carn_dum_area) (angmar_region)
 	terrain = "plains"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -10181,7 +10181,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-981 = { #Nâran (unowned) (pustrava_area) (saerwaith_region)
+981 = { #Nâran (JAN) (pustrava_area) (saerwaith_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -13251,7 +13251,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-1276 = { #Melidur (KHU) (lothduin_area) (anduin_region)
+1276 = { #Melidur (BEO) (lothduin_area) (anduin_region)
 	terrain = "plains"
 	culture = "beorning"
 	religion = "iluvatarism"
@@ -13266,7 +13266,7 @@
 	slaves = { amount = 1 }
 	tribesmen = { amount = 1 }
 }
-1277 = { #Harirând (unowned) (muldin_area) (haerhun_region)
+1277 = { #Harirând (KHU) (muldin_area) (haerhun_region)
 	terrain = "steppe"
 	culture = "khundolar"
 	religion = "eastern_animism"
@@ -21135,7 +21135,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 3 }
 }
-2039 = { #Durthang (JAN) (udun_area) (gorgoroth_region)
+2039 = { #Durthang (MOR) (udun_area) (gorgoroth_region)
 	terrain = "wasteland"
 	culture = "orcish"
 	religion = "melkorism"
@@ -21146,7 +21146,7 @@
 	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
-2040 = { #Gwegûnok (unowned) (dacranamel_area) (dacranamel_region)
+2040 = { #Gwegûnok (JAN) (dacranamel_area) (dacranamel_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -21915,7 +21915,7 @@
 	tribesmen = { amount = 4 }
 	slaves = { amount = 1 }
 }
-2110 = { #Aldena Toron (JAN) (folyavuld_area) (dorwinion_region)
+2110 = { #Aldena Toron (DWN) (folyavuld_area) (dorwinion_region)
 	terrain = "hills"
 	culture = "dorwinrim"
 	religion = "iluvatarism"
@@ -28122,7 +28122,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-2718 = { #Tonthôn (JAN) (eryn_arador_area) (eryn_galen_region)
+2718 = { #Tonthôn (ERY) (eryn_arador_area) (eryn_galen_region)
 	terrain = "deep_forest"
 	culture = "silvan"
 	religion = "iluvatarism"
@@ -28133,7 +28133,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 3 }
 }
-2719 = { #Tashog (unowned) (gathod_area) (dacranamel_region)
+2719 = { #Tashog (JAN) (gathod_area) (dacranamel_region)
 	terrain = "steppe"
 	culture = "jangovar"
 	religion = "eastern_animism"
@@ -40449,7 +40449,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3911 = { #Zimra-Zadan (JAN) (sirezain_area) (bellakar_region)
+3911 = { #Zimra-Zadan (BEL) (sirezain_area) (bellakar_region)
 	terrain = "plains"
 	culture = "haradrim"
 	religion = "eastern_animism"
@@ -40460,7 +40460,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 5 }
 }
-3912 = { #Dón Duharid (unowned) (morad_area) (dacranamel_region)
+3912 = { #Dón Duharid (JAN) (morad_area) (dacranamel_region)
 	terrain = "hills"
 	culture = "jangovar"
 	religion = "eastern_animism"
