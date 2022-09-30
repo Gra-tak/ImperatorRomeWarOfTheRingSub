@@ -25,13 +25,10 @@ country_count_possibly_raided_provinces_goblins = {
 				has_variable = protected_against_raids
 			}
 			any_neighbor_province = {
-				# OR = {
-				#   has_owner = no
-				#   owner = { religion = melkorism }
-				# }
 				has_variable = hasGoblinsRaidsFlag
 			}
 		}
+		add = 1
 	}
 }
 country_count_possibly_raided_provinces_orcs = {
@@ -43,13 +40,10 @@ country_count_possibly_raided_provinces_orcs = {
 				has_variable = protected_against_raids
 			}
 			any_neighbor_province = {
-				# OR = {
-				#   has_owner = no
-				#   owner = { religion = melkorism }
-				# }
 				has_variable = hasOrcRaidsFlag
 			}
 		}
+		add = 1
 	}
 }
 country_count_possibly_raided_provinces_uruk = {
@@ -61,13 +55,10 @@ country_count_possibly_raided_provinces_uruk = {
 				has_variable = protected_against_raids
 			}
 			any_neighbor_province = {
-				# OR = {
-				#   has_owner = no
-				#   owner = { religion = melkorism }
-				# }
 				has_variable = hasUrukRaidsFlag
 			}
 		}
+		add = 1
 	}
 }
 

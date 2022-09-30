@@ -15,7 +15,7 @@ orc_raid_events_pulse = {
 		10 = orc_raid_events.1
 		10 = orc_raid_events.2
 		10 = orc_raid_events.3
-		10 = orc_raid_events.4
+		5 = orc_raid_events.4
 	}
 }
 
