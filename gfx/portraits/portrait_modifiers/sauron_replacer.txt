@@ -29,11 +29,17 @@ clothes = {
 	}
 	gandalf_clothing_replace = {
 		dna_modifiers = {
-			accessory = {
-				mode = replace_template				
-				gene = clothes_layer2
-				template = gandalf_hat_top_layer
-			}	
+			# accessory = {
+			# 	mode = replace_template				
+			# 	gene = clothes_layer2
+			# 	template = gandalf_hat_top_layer
+			# }	
+			morph = {
+					mode = add    #add a new gene in the dna with the specified template and value
+					gene = gene_tags
+					template = gandalf
+					value = 1
+			}  
 		}
 		weight = {
 			base = 0

@@ -7,3 +7,7 @@
 male_pointed_hat_1 = {
 	entity = { required_tags = ""					node = shared_pose_entity		entity = "male_pointed_hat_1_entity" }
 }
+
+gandalfGreyRobe = {
+  entity = { required_tags = ""         node = shared_pose_entity   entity = "gandalfGreyRobe_entity" }
+}

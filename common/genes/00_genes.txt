@@ -9279,7 +9279,6 @@ accessory_genes = {
                 1 = male_clothes_bactrian_1_color4
                 1 = male_clothes_bactrian_2
                 1 = male_clothes_bactrian_2_color2
-				
             }
             female = {
                 1 = female_clothes_roman_1			
@@ -9335,6 +9334,20 @@ accessory_genes = {
                 1 = girl_clothes_1_color4
             }
         }
+
+        
+#####################################
+#                                   #
+#           Gandalf           #
+#                                   #
+#####################################   
+
+        gandalfGreyRobe_template = {
+            index = 23
+            male = {
+                1 = gandalfGreyRobe
+            }
+        }   
 		
         no_clothes = {
             index = 30
@@ -9607,7 +9620,6 @@ accessory_genes = {
 				1 = elf_clothes_soldier_purple
 			}
 		}
-		
     } 		
 	
  
@@ -10762,7 +10774,16 @@ special_genes = {
 						{ 0.8   { 0.0 0.1 -0.02 } }
 					}
 				}
-				
+			}
+			gandalf = {
+				index = 2
+				male = {
+					setting = { attribute = "bs_nose_tipWide"    value = { min = 0.7 max = 0.7 }    } 
+					setting = { attribute = "bs_nose_ridgeSoft"    value = { min = 0.7 max = 0.7 }    } 
+					setting = { attribute = "bs_nose_convex"    value = { min = 0.7 max = 0.7 }    } 
+					setting = { attribute = "bs_nose_tipLong"    value = { min = 0.4 max = 0.4 }    } 
+					setting = { attribute = "bs_old4"    value = { min = 1 max = 1 }    } 
+				}
 			}
             # full_hair = { index = 1 set_tags = "full_hair" }
 		}	
