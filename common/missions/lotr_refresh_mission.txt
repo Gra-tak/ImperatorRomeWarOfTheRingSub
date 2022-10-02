@@ -1,0 +1,45 @@
+﻿lotr_refresh_mission = {
+	header = "lotr_generic_mission_landscape_headers"
+	icon = "lotr_generic_capital_mission_icon"
+
+	repeatable = yes
+
+	chance = {}
+
+	ai_chance = {
+		factor = 0
+	}
+
+	potential = {
+	}
+
+	on_potential = {
+	}
+
+	abort = {
+	}
+
+	on_start = {
+	}
+
+	on_abort = {
+	}
+	
+	
+	
+	lotr_refresh_start = {	
+		icon = "task_conquest"
+		final = yes
+
+		allow = {
+		}
+
+		on_start = {
+		}
+
+		on_completion = {
+		}
+	}
+	
+	
+}

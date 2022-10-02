@@ -94,6 +94,13 @@
  lotr_generic_navy_expansion_mission_3_DESC:0 "."
  lotr_generic_navy_expansion_mission_4:0 "Expansion"
  lotr_generic_navy_expansion_mission_4_DESC:0 "."
+  # ------------------- LOTR refresh Missions --------------------
+ lotr_refresh_mission:0 "Refresh missions"
+ lotr_refresh_mission_BUTTON_TOOLTIP:0 "Due to the lack of repeatable missions, it can easily happen that a new mission like the tribal reform can't be started, as the game only updates missions when another one is finished or aborted. This mission does nothing but allows a refresh of the avaiable missions."
+ lotr_refresh_mission_DESCRIPTION:0 "Due to the lack of repeatable missions, it can easily happen that a new mission like the tribal reform can't be started, as the game only updates missions when another one is finished or aborted. This mission does nothing but allows a refresh of the avaiable missions."
+ lotr_refresh_mission_CRITERIA_DESCRIPTION:0 "None"
+ lotr_refresh_start:0 "Do nothing."
+ lotr_refresh_start_DESC:0 "Do nothing."
  # ------------------- LOTR Generic Army Missions --------------------
  lotr_generic_army_mission:0 "Onward to glory"
  lotr_generic_army_mission_BUTTON_TOOLTIP:0 "Build army infrastructure."
