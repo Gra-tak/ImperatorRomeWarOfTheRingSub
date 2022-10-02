@@ -1,9 +1,13 @@
 ﻿yearly_province_pulse = {
+	on_actions = {
+		delay = { days = { 1 364 } }
+		lotr_assimilation_pulse
+	}
 	random_events = {
 		90 = 0
 		10 = slave_revolts.1
 	}
-  effect = {
-    set_racial_terrain_modifiers = yes
-  }
+	effect = {
+		set_racial_terrain_modifiers = yes
+	}
 }

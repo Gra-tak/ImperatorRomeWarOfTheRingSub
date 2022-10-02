@@ -1,0 +1,390 @@
+﻿namespace = lotr_assimilation_events
+
+# low human assimilation
+lotr_assimilation_events.1 = {
+	type = province_event
+	title = "OK"
+	desc = "OK"
+	picture = event_gondor
+	hidden = yes
+
+	trigger = {
+		exists = owner
+		OWNER = {
+			OR = {
+				country_culture_group =  amrun_group
+				country_culture_group =  barangil_group
+				country_culture_group =  easterling_group
+				country_culture_group =  forodwaith_group
+				country_culture_group =  haradrim_group
+				country_culture_group =  harondorian_group
+				country_culture_group =  yopi_group
+			}
+		}
+		any_pops_in_province = {
+			country_culture = { is_integrated = no }
+			OR = {
+				pop_culture_group =  amrun_group
+				pop_culture_group =  barangil_group
+				pop_culture_group =  easterling_group
+				pop_culture_group =  forodwaith_group
+				pop_culture_group =  haradrim_group
+				pop_culture_group =  harondorian_group
+				pop_culture_group =  yopi_group
+			}
+		}
+	}
+	weight_multiplier = {
+		modifier = {
+			factor = 2
+			has_building = temple_building
+		}
+		modifier = {
+			factor = 2
+			has_building = theathre_building
+		}
+		modifier = {
+			factor = 2
+			OWNER = {
+				any_integrated_culture = {
+					this = ROOT.dominant_province_culture
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { religion = owner.religion }
+		}
+	}
+	immediate = {
+		random_pops_in_province = {
+			limit = {
+				country_culture = { is_integrated = no }
+				OR = {
+					pop_culture_group =  amrun_group
+					pop_culture_group =  barangil_group
+					pop_culture_group =  easterling_group
+					pop_culture_group =  forodwaith_group
+					pop_culture_group =  haradrim_group
+					pop_culture_group =  harondorian_group
+					pop_culture_group =  yopi_group
+				}
+			}
+			save_scope_as = assimilated_pop
+			if = {
+				limit = { 
+					ROOT.owner = {
+						is_ai = no
+						NOT = { has_variable = lotr_told_about_assimilation }
+					}
+				}
+				ROOT = {
+					trigger_event = {
+						id = lotr_assimilation_events.11
+					}
+				}
+				ROOT.owner = {
+					set_variable = {
+						name = lotr_told_about_assimilation
+					}
+				}
+			}
+			else = {
+				set_pop_culture = root.owner.culture
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+# middle human assimilation
+lotr_assimilation_events.2 = {
+	type = province_event
+	title = "OK"
+	desc = "OK"
+	picture = event_gondor
+	hidden = yes
+
+	trigger = {
+		exists = owner
+		OWNER = {
+			OR = {
+				country_culture_group =  breelander_group
+				country_culture_group =  eotheod_group
+				country_culture_group =  haldadian_group
+				country_culture_group =  mirkwoodmen_group
+			}
+		}
+		any_pops_in_province = {
+			country_culture = { is_integrated = no }
+			OR = {
+				pop_culture_group =  breelander_group
+				pop_culture_group =  eotheod_group
+				pop_culture_group =  haldadian_group
+				pop_culture_group =  mirkwoodmen_group
+			}
+		}
+	}
+
+	weight_multiplier = {
+		modifier = {
+			factor = 2
+			has_building = temple_building
+		}
+		modifier = {
+			factor = 2
+			has_building = theathre_building
+		}
+		modifier = {
+			factor = 2
+			OWNER = {
+				any_integrated_culture = {
+					this = ROOT.dominant_province_culture
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { religion = owner.religion }
+		}
+	}
+
+	immediate = {
+		random_pops_in_province = {
+			limit = {
+				country_culture = { is_integrated = no }
+				OR = {
+					pop_culture_group =  breelander_group
+					pop_culture_group =  eotheod_group
+					pop_culture_group =  haldadian_group
+					pop_culture_group =  mirkwoodmen_group
+				}
+			}
+			save_scope_as = assimilated_pop
+			if = {
+				limit = { 
+					ROOT.owner = {
+						is_ai = no
+						NOT = { has_variable = lotr_told_about_assimilation }
+					}
+				}
+				ROOT = {
+					trigger_event = {
+						id = lotr_assimilation_events.11
+					}
+				}
+				ROOT.owner = {
+					set_variable = {
+						name = lotr_told_about_assimilation
+					}
+				}
+			}
+			else = {
+				set_pop_culture = root.owner.culture
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+# mixed edain assimilation
+lotr_assimilation_events.3 = {
+	type = province_event
+	title = "OK"
+	desc = "OK"
+	picture = event_gondor
+	hidden = yes
+
+	trigger = {
+		exists = owner
+		OWNER = {
+			OR = {
+				AND = {
+					OR = {
+						country_culture_group =  banadunaim_group
+						primary_culture = corsair
+						primary_culture = black_numenorean
+					}
+					ROOT = {
+						OR = {
+							province_dominant_culture_group =  banadunaim_group
+							dominant_province_culture = corsair
+							dominant_province_culture = black_numenorean
+						}
+					}
+				}
+				AND = {
+					OR = {
+						country_culture_group =  edain_mixed_group
+						primary_culture = lesser_dunedain
+						primary_culture = dolamroth
+					}
+					ROOT = {
+						OR = {
+							province_dominant_culture_group =  edain_mixed_group
+							dominant_province_culture = lesser_dunedain
+							dominant_province_culture = dolamroth
+						}
+					}
+				}
+			}
+		}
+		any_pops_in_province = {
+			country_culture = { is_integrated = no }
+			OR = {
+				pop_culture_group =  amrun_group
+				pop_culture_group =  barangil_group
+				pop_culture_group =  easterling_group
+				pop_culture_group =  forodwaith_group
+				pop_culture_group =  haradrim_group
+				pop_culture_group =  harondorian_group
+				pop_culture_group =  yopi_group
+				pop_culture_group =  breelander_group
+				pop_culture_group =  eotheod_group
+				pop_culture_group =  haldadian_group
+				pop_culture_group =  mirkwoodmen_group
+			}
+		}
+	}
+	weight_multiplier = {
+		modifier = {
+			factor = 2
+			has_building = temple_building
+		}
+		modifier = {
+			factor = 2
+			has_building = theathre_building
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { religion = owner.religion }
+		}
+	}
+	immediate = {
+		random_pops_in_province = {
+			limit = {
+				country_culture = { is_integrated = no }
+				OR = {
+					pop_culture_group =  amrun_group
+					pop_culture_group =  barangil_group
+					pop_culture_group =  easterling_group
+					pop_culture_group =  forodwaith_group
+					pop_culture_group =  haradrim_group
+					pop_culture_group =  harondorian_group
+					pop_culture_group =  yopi_group
+					pop_culture_group =  breelander_group
+					pop_culture_group =  eotheod_group
+					pop_culture_group =  haldadian_group
+					pop_culture_group =  mirkwoodmen_group
+				}
+			}
+			save_scope_as = assimilated_pop
+			if = {
+				limit = {
+					ROOT.OWNER = {
+						OR = {
+							country_culture_group =  banadunaim_group
+							primary_culture = corsair
+							primary_culture = black_numenorean
+						}
+					}
+				}
+				if = {
+					limit = { 
+						ROOT.owner = {
+							is_ai = no
+							NOT = { has_variable = lotr_told_about_assimilation }
+						}
+					}
+					ROOT = {
+						trigger_event = {
+							id = lotr_assimilation_events.13
+						}
+					}
+					ROOT.owner = {
+						set_variable = {
+							name = lotr_told_about_assimilation
+						}
+					}
+				}
+				else = {
+					set_pop_culture = banadunaim
+				}
+			}
+			else = {
+				if = {
+					limit = { 
+						ROOT.owner = {
+							is_ai = no
+							NOT = { has_variable = lotr_told_about_assimilation }
+						}
+					}
+					ROOT = {
+						trigger_event = {
+							id = lotr_assimilation_events.14
+						}
+					}
+					ROOT.owner = {
+						set_variable = {
+							name = lotr_told_about_assimilation
+						}
+					}
+				}
+				else = {
+					set_pop_culture = gondorian
+				}
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+#telling player about assimilation
+lotr_assimilation_events.11 = {
+	type = province_event
+	title = "lotr_assimilation_events.11.t"
+	desc = "lotr_assimilation_events.11.desc"
+	picture = event_gondor_citizens
+	option = {
+		name = "OK"
+		scope:assimilated_pop = {
+			set_pop_culture = root.owner.culture
+		}
+	}
+}
+
+#telling player about assimilation banadunaim
+lotr_assimilation_events.13 = {
+	type = province_event
+	title = "lotr_assimilation_events.11.t"
+	desc = "lotr_assimilation_events.13.desc"
+	picture = event_gondor_citizens
+	immediate = {
+	}
+	option = {
+		name = "OK"
+		scope:assimilated_pop = {
+			set_pop_culture = banadunaim
+		}
+	}
+}
+
+#telling player about assimilation gondorian
+lotr_assimilation_events.14 = {
+	type = province_event
+	title = "lotr_assimilation_events.11.t"
+	desc = "lotr_assimilation_events.14.desc"
+	picture = event_gondor_citizens
+	option = {
+		name = "OK"
+		scope:assimilated_pop = {
+			set_pop_culture = gondorian
+		}
+	}
+}
