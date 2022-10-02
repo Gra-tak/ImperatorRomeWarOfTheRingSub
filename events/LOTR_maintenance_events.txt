@@ -857,6 +857,7 @@ lotr_maintenance.7 = {
 		area:barad_dur_area = {
 			every_area_province = {
 				limit = {
+					exists = owner
 					state = { has_state_modifier = barad_dur_state_modifier }
 					OWNER = {
 						NAND = {
@@ -886,6 +887,7 @@ lotr_maintenance.7 = {
 		area:udun_area = {
 			every_area_province = {
 				limit = {
+					exists = owner
 					state = { has_state_modifier = black_gate_state_modifier }
 					OWNER = {
 						NAND = {
@@ -914,6 +916,7 @@ lotr_maintenance.7 = {
 		area:calenhardin_area = {
 			every_area_province = {
 				limit = {
+					exists = owner
 					OWNER = { NOT = { owns = 1546 } }
 					state = { has_state_modifier = orthanc_state_modifier }
 				}
@@ -938,6 +941,7 @@ lotr_maintenance.7 = {
 		area:emyn_guldur_area = {
 			every_area_province = {
 				limit = {
+					exists = owner
 					state = { has_state_modifier = dol_guldur_state_modifier }
 					OWNER = {
 						NAND = {
@@ -966,6 +970,7 @@ lotr_maintenance.7 = {
 		area:umbar_area = {
 			every_area_province = {
 				limit = {
+					exists = owner
 					OWNER = { NOT = { owns = 1 } }
 					state = { has_state_modifier = umbar_state_modifier }
 				}
@@ -995,6 +1000,7 @@ lotr_maintenance.7 = {
 		area:ephel_duath_area = {
 			every_area_province = {
 				limit = {
+					exists = owner
 					state = { has_state_modifier = minas_ithil_state_modifier }
 					OWNER = {
 						NAND = {

@@ -47,13 +47,13 @@ lotr_assimilation_events.1 = {
 			factor = 2
 			OWNER = {
 				any_integrated_culture = {
-					this = ROOT.dominant_province_culture
+					this.culture =  ROOT.dominant_province_culture
 				}
 			}
 		}
 		modifier = {
 			factor = 0.25
-			NOT = { religion = owner.religion }
+			NOT = { dominant_province_religion = owner.religion }
 		}
 	}
 	immediate = {
@@ -141,13 +141,13 @@ lotr_assimilation_events.2 = {
 			factor = 2
 			OWNER = {
 				any_integrated_culture = {
-					this = ROOT.dominant_province_culture
+					this.culture = ROOT.dominant_province_culture
 				}
 			}
 		}
 		modifier = {
 			factor = 0.25
-			NOT = { religion = owner.religion }
+			NOT = { dominant_province_religion = owner.religion }
 		}
 	}
 
@@ -261,7 +261,7 @@ lotr_assimilation_events.3 = {
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { religion = owner.religion }
+			NOT = { dominant_province_religion = owner.religion }
 		}
 	}
 	immediate = {
