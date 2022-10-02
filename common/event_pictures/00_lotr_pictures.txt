@@ -118,6 +118,11 @@ event_gondor = {
 	picture = "gfx/interface/event_window/event_gondor.dds"
 }
 
+event_gondor_citizens = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_gondor_citizens_01.dds"
+}
+
 event_eryn_galen = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/event_eryn_galen.dds"
@@ -260,4 +265,9 @@ event_hobbit_marriage = {
 event_sam = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/sam.dds"
+}
+
+event_swamp = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_swamp.dds"
 }
