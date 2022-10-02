@@ -271,3 +271,8 @@ event_swamp = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/event_swamp.dds"
 }
+
+event_angmar = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/angmar_startup.dds"
+}

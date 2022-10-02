@@ -52,6 +52,7 @@ lotr_assimilation_pulse = {
 		10 = lotr_assimilation_events.2 #middle humans to middle humans
 		5 = lotr_assimilation_events.3 #low and middle humans to mixed edain
 		#edain themselves, elves and dwarfs too proud to culture shift
+		10 = lotr_sacrifice_events.1
 	}
 }
 

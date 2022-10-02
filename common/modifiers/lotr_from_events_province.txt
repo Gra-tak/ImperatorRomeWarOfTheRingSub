@@ -336,4 +336,8 @@ forodwaith_arctic_modifier = {
 	local_monthly_food = 1
 }
 
+lotr_human_sacrifice_modifier = {
+	local_happiness_for_same_religion_modifier = 0.05
+}
+
 

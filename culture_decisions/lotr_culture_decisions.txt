@@ -111,4 +111,44 @@
 		ai_will_do = {
 		}
 	}
+
+	lotr_human_sacrifice_decision = {
+		potential = {
+			is_ai = no
+			OR = {
+				religion = melkorism
+				religion = eastern_animism
+			}
+			scope:target_culture = {
+				NOT = { has_pop_type_right = citizen }
+				NOT = { has_pop_type_right = nobles }
+				NOT = { has_country_culture_modifier = lotr_being_sacrificed_modifier }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			scope:target_culture = {
+				lotr_make_sacrifice_culture = yes
+			}
+		}
+		ai_will_do = {
+		}
+	}
+
+	lotr_stop_human_sacrifice_decision = {
+		potential = {
+			scope:target_culture = {
+				has_country_culture_modifier = lotr_being_sacrificed_modifier
+			}
+		}
+		allow = {
+		}
+		effect = {
+			lotr_stop_sacrifice_culture = yes
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 }

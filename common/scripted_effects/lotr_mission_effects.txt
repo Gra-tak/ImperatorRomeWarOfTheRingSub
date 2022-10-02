@@ -1231,3 +1231,32 @@ round_actual_moved_effect = {
 		}
 	}
 }
+
+lotr_make_sacrifice_culture = {
+	add_country_culture_modifier = {
+		name = lotr_being_sacrificed_modifier
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = { has_pop_type_right = slaves }
+		}
+		set_country_culture_right = slaves
+		hidden_effect = {
+			remove_country_culture_modifier = rights_revoked
+			remove_country_culture_modifier = slave_rights_imposed
+		}
+	}
+}
+lotr_stop_sacrifice_culture = {
+	remove_country_culture_modifier = lotr_being_sacrificed_modifier
+	if = {
+		limit = {
+			has_pop_type_right = slaves
+		}
+		set_country_culture_right = freemen
+		hidden_effect = {
+			remove_country_culture_modifier = rights_increased
+		}
+	}
+}

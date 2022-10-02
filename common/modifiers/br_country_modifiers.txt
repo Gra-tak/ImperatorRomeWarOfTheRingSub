@@ -43,3 +43,14 @@ encourage_migration_to_overlord = {
 devoted_vassal = {
 	loyalty_to_overlord = 50
 }
+
+lotr_being_sacrificed_modifier = {
+	# culture_slaves_happiness = -1
+	# culture_slaves_happiness = -1
+	# culture_freemen_happiness = -1
+	culture_happiness_modifier = -1
+}
+
+lotr_stopped_sacrifices_modifier = {
+	happiness_for_same_religion_modifier = -0.1
+}

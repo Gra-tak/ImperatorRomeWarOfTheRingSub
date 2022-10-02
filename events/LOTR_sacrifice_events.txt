@@ -1,0 +1,137 @@
+﻿namespace = lotr_sacrifice_events
+
+# sacrifice to the gods
+lotr_sacrifice_events.1 = {
+	type = province_event
+	title = "OK"
+	desc = "OK"
+	picture = event_gondor
+	hidden = yes
+
+	trigger = {
+		exists = owner
+		OWNER = {
+			OR = {
+				religion = melkorism
+				religion = eastern_animism
+			}
+			OR = {
+				country_culture_group =  amrun_group
+				country_culture_group =  barangil_group
+				country_culture_group =  easterling_group
+				country_culture_group =  forodwaith_group
+				country_culture_group =  haradrim_group
+				country_culture_group =  harondorian_group
+				country_culture_group =  yopi_group
+				country_culture_group =  banadunaim_group
+				primary_culture = corsair
+				primary_culture = black_numenorean
+			}
+		}
+		any_pops_in_province = {
+			country_culture = { 
+				is_integrated = no
+				has_country_culture_modifier = lotr_being_sacrificed_modifier
+			}
+		}
+	}
+	weight_multiplier = {
+		modifier = {
+			factor = 2
+			has_building = temple_building
+		}
+		modifier = {
+			factor = 2
+			has_building = theathre_building
+		}
+		modifier = {
+			factor = 2
+			OWNER = {
+				any_integrated_culture = {
+					this = ROOT.dominant_province_culture
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { religion = owner.religion }
+		}
+	}
+	immediate = {
+		random_pops_in_province = {
+			limit = {
+				country_culture = { 
+					is_integrated = no
+					has_country_culture_modifier = lotr_being_sacrificed_modifier
+				}
+			}
+			save_scope_as = sacrificed_pop
+			if = {
+				limit = { 
+					ROOT.owner = {
+						is_ai = no
+						NOT = { has_variable = lotr_told_about_sacrifice }
+					}
+				}
+				ROOT.owner = {
+					set_variable = {
+						name = lotr_told_about_sacrifice
+					}
+				}
+				ROOT = {
+					trigger_event = {
+						id = lotr_sacrifice_events.11
+					}
+				}
+			}
+			else = {
+				ROOT = {
+					add_province_modifier = {
+						name = lotr_human_sacrifice_modifier
+						duration = 3650
+						mode = add
+					}
+				}
+				kill_pop = yes
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+
+
+#telling player about sacrifice
+lotr_sacrifice_events.11 = {
+	type = province_event
+	title = "lotr_sacrifice_events.11.t"
+	desc = "lotr_sacrifice_events.11.desc"
+	picture = event_angmar
+	option = {
+		name = "lotr_sacrifice_events.11.a"
+		add_province_modifier = {
+			name = lotr_human_sacrifice_modifier
+			duration = 3650
+			mode = add
+		}
+		scope:sacrificed_pop = {
+			kill_pop = yes
+		}
+	}
+	option = {
+		name = "lotr_sacrifice_events.11.b"
+		OWNER = {
+			add_country_modifier = {
+				name = lotr_stopped_sacrifices_modifier
+				duration = 365
+			}
+			remove_variable = lotr_told_about_sacrifice
+			every_country_culture = {
+				limit = { has_country_culture_modifier = lotr_being_sacrificed_modifier }
+				lotr_stop_sacrifice_culture = yes
+			}
+		}
+	}
+}
