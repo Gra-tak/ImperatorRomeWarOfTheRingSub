@@ -125,9 +125,9 @@ lotr_startup.2 = { #Adds dynamic wonder models
 				p:1021 = {
 					show_model = "the_black_gate"
 				}
-				p:1030 = {
-					show_model = "black_wall"
-				}
+				# p:1030 = {
+				# 	show_model = "black_wall"
+				# }
 			}
 		}
 		if = {

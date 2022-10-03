@@ -40,11 +40,11 @@ dynamic_game_object = {
 	map_id = { 1021 }
 }
 
-dynamic_game_object = {
-	name = "black_wall"
-	entity_name = "black_wall_entity"
-	map_id = { 1030 }
-}
+# dynamic_game_object = {
+# 	name = "black_wall"
+# 	entity_name = "black_wall_entity"
+# 	map_id = { 1030 }
+# }
 
 dynamic_game_object = {
 	name = "wonder_minas_morgul"
