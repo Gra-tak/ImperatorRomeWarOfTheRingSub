@@ -513,7 +513,7 @@
  port_building:0 "Port"
  port_building_desc:1 "Quickly and reliably docking and launching ships was best attempted in naturally sheltered harbors, the presence of which spelled the success of many ancient cities along the Mediterranean coast. However, man-made harbors were also constructed when the need arose, utilizing moles and seawalls to tame the waves. Perhaps the most famous of these is the great Portus of Ostia which supplied Rome with grain despite the strong winds at the Tiber's mouth, though they became increasingly common throughout the empire."
 
- #settlement buildings
+ # settlement buildings
  latifundia_building:0 "Slave Estate"
  latifundia_building_desc:1 "In the ancient world, citizenship and military service was tied to land ownership. Only land owners had the privilege of suffrage, and a duty to perform military service. Over time, more and more land was bought by the more affluent classes, and gathered farmland into larger estates, in Latin called Latifundia. These estates were worked by slaves, and grew primarily cash crops, which were more valuable than food."
  slave_mine_building:0 "Mine"

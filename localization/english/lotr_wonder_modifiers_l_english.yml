@@ -108,7 +108,7 @@
   desc_umbar_harbour_modifier:0 "Umbar was a great haven to the far south of Gondor, a great cape and land-locked firth formed the port."
 umbar_state_modifier:0 "Umbar defenses"
 desc_umbar_state_modifier:0 "Umbar state defenses"
-#stone_of_erech_modifier
+# stone_of_erech_modifier
 #warning_beacons_modifier
 #henneth_annun_modifier
  great_tower_modifier:0 "Great Tower"
