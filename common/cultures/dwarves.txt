@@ -58,7 +58,7 @@
 	
 	
 	
-	graphical_culture = celtic_gfx	
+	graphical_culture = dwarves_gfx
 	ethnicities = {
 		10 = dwarves
 	}

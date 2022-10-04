@@ -130,7 +130,7 @@ NCamera = {
 
 NMapColors = {
 	# Colors are HSV with the Hue expressed as degree value / 360
-	DEFAULT_COLOR = 					{ 0.0 0.0 0.7 }
+	DEFAULT_COLOR = 					{ 0.0 0.0 0.45 }
 
 	WATER_MAP_COLOR = 					{ 0.58 0.35 0.45 }
 	OCEAN_MAP_COLOR = 					{ 0.58 0.35 0.35 }
