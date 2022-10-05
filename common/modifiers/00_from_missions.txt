@@ -55,7 +55,6 @@ capital_secured = {
 
 colonia_underway = {
 	local_migration_attraction = 2
-	local_pop_assimilation_speed = 1
 	local_pop_conversion_speed = 1
 }
 
@@ -78,13 +77,11 @@ migrants_stopped = {
 
 military_colony_mission_modifier = { #10 year reward
 	local_manpower_modifier = 0.25 #2.5 Camps
-	local_pop_assimilation_speed = 1
 	city_monthly_state_loyalty = 0.1
 }
 
-trade_city_mission_modifier = { #10 year reward
-	local_tax_modifier = 0.3 #3 markets
-	local_pop_assimilation_speed = 1
+trade_city_mission_modifier = {
+	local_tax_modifier = 0.2
 	city_monthly_state_loyalty = 0.1
 }
 
@@ -177,10 +174,6 @@ temples_built = {
 	omen_power = 0.1
 }
 
-cultural_assimilation_trend = {
-	local_pop_assimilation_speed = 0.02
-}
-
 fortified_stronghold = {
 	local_defensive = 0.25
 }
@@ -247,7 +240,6 @@ spartan_mission_spartan_glory_modifier = {
 }
 
 spartan_mission_spartan_garrison_modifier = {
-	local_pop_assimilation_speed = 1
 	local_slaves_output = negative_output_huge_svalue
 	local_cohort_start_experience = 5
 }
@@ -339,12 +331,10 @@ sparta_mission_peloponnesus_argos_rebuilt_modifier = {
 sparta_mission_peloponnesus_achaea_modifier = {
 	local_population_happiness = 0.05
 	local_tax_modifier = 0.15
-	local_pop_assimilation_speed = 2
 }
 
 sparta_mission_peloponnesus_arcadia_center_modifier = {
 	local_tax_modifier = 0.1
-	local_pop_assimilation_speed = 2
 }
 
 sparta_mission_peloponnesus_corinth_expanded_acropolis_modifier = {
@@ -384,7 +374,6 @@ me_syr_2_5_cmod = {
 }
 
 me_syr_2_11_smod = {
-	local_pop_assimilation_speed = 1
 	happiness_for_wrong_culture_group_modifier = negative_wrong_culture_group_large
 }
 
@@ -430,7 +419,6 @@ me_syr_3_5_2_cmod = {
 }
 
 me_syr_3_7_pmod = {
-	local_pop_assimilation_speed = 1
 	local_population_growth = 0.2
 }
 
@@ -460,7 +448,6 @@ me_syr_3_cmod = {
 
 sparta_mission_rivals_athens_subjugated_modifier = {
 	local_population_happiness = 0.1
-	local_pop_assimilation_speed = 2
 	local_output_modifier = -0.25
 }
 
@@ -472,7 +459,6 @@ sparta_mission_rivals_attican_infrastructure_modifier = {
 
 sparta_mission_rivals_athens_garrisoned_modifier = {
 	local_population_happiness = 0.1
-	local_pop_assimilation_speed = 2
 }
 
 sparta_mission_thessalian_cavalry = {
@@ -482,7 +468,6 @@ sparta_mission_thessalian_cavalry = {
 }
 
 sparta_mission_rivals_theban_occupation_modifier = {
-	local_pop_assimilation_speed = 2
 	local_population_happiness = 0.05
 }
 
@@ -515,7 +500,6 @@ sparta_mission_rivals_armies_of_sparta_modifier = {
 }
 
 me_syr_4_magna_sicilia_cmod = {
-	global_pop_assimilation_speed = 1
     happiness_for_same_culture_modifier = 0.10
 }
 
@@ -564,7 +548,6 @@ me_syr_4_united_cmod = {
 }
 
 me_syr_4_master_cmod = {
-	global_pop_assimilation_speed_modifier = 0.25
 	land_morale_modifier = 0.1
 }
 
@@ -692,7 +675,6 @@ me_gre_1_2_pmod_2 = {
 }
 
 me_gre_1_7_smod = {
-	local_pop_assimilation_speed_modifier = 0.2
 	local_tax_modifier = 0.1
 }
 
@@ -850,7 +832,6 @@ me_gre_1_13_pmod = {
 }
 
 me_gre_2_7_pmod = {
-	local_pop_assimilation_speed_modifier = 0.2
 	local_citizen_happyness = happiness_large_svalue
 }
 
@@ -1041,7 +1022,6 @@ greek_3_5_cmod = {
 
 greek_3_12_cmod = {
 	happiness_for_wrong_culture_group_modifier = negative_wrong_culture_group_large
-	global_pop_assimilation_speed_modifier = 0.1
 }
 
 greek_3_8_cmod = {
@@ -1091,7 +1071,6 @@ me_gre_4_2_pmod_1 = {
 
 me_gre_4_2_pmod_2 = {
 	local_population_growth = 0.25
-	local_pop_assimilation_speed_modifier = 0.15
 }
 
 me_gre_4_19_pmod = {
@@ -1101,16 +1080,13 @@ me_gre_4_19_pmod = {
 
 me_gre_4_12_pmod = {
 	happiness_for_same_culture_modifier = 0.1
-	local_pop_assimilation_speed_modifier = 0.15
 }
 
 me_gre_4_13_cmod = {
 	happiness_for_wrong_culture_group_modifier = negative_wrong_culture_group_large
-	global_pop_assimilation_speed_modifier = 0.15
 }
 
 me_gre_4_17_pmod = {
-	local_pop_assimilation_speed = 0.15
 	local_migration_attraction = 2
 }
 
@@ -1195,7 +1171,6 @@ ant_01_4_cmod = {
 
 ant_01_9_pmod = {
 	local_migration_attraction = 2
-	local_pop_assimilation_speed = 0.1
 	local_freemen_output = 0.2
 }
 
@@ -1458,7 +1433,6 @@ me_mac_2_5_cmod = {
 }
 
 me_mac_2_2_smod = {
-	local_pop_assimilation_speed_modifier = 0.1
 	local_tax_modifier = 0.1
 }
 
@@ -1694,7 +1668,6 @@ indian_capital_modifier = {
 	local_base_trade_routes_modifier = 0.05
 	local_tax_modifier = 0.15
 	local_migration_attraction = 2
-	local_pop_assimilation_speed = 1
 	local_pop_conversion_speed = 1
 }
 
@@ -1714,7 +1687,6 @@ indian_self_rule = {
 
 imperial_capital_mission_reward = {
 	local_migration_attraction = 3
-	local_pop_assimilation_speed_modifier = 0.1
 	base_resources = 3
 }
 
@@ -1729,7 +1701,6 @@ mesopotamian_integration = {
 
 mesopotamian_capital = {
 	local_migration_attraction = 2
-	local_pop_assimilation_speed = 1
 	local_pop_conversion_speed = 1 
 }
 
@@ -1740,7 +1711,6 @@ egyptian_autonomy = {
 
 egyptian_capital = {
 	local_migration_attraction = 2
-	local_pop_assimilation_speed = 1
 	local_pop_conversion_speed = 1
 }
 
@@ -1789,7 +1759,6 @@ agricultural_technological_progress = {
 }
 
 heirs_of_alexander = {
-	global_pop_assimilation_speed_modifier = 0.35
 	happiness_for_same_culture_modifier = 0.1
 }
 

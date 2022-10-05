@@ -26,20 +26,17 @@ gondor_osgiliath_mission_1_modifier = {
 
 gondor_minasithil_mission_1_modifier = {
 	local_manpower_modifier = 0.10
-	local_defensive = 0.15
-	local_pop_assimilation_speed = 2
-	local_pop_conversion_speed = 2
+	local_defensive = 0.1
 }
 
 gondor_umbar_mission_1_modifier = {
-	local_manpower_modifier = 0.10
-	local_pop_assimilation_speed = 2
+	local_tax_modifier = 0.10
 	local_pop_conversion_speed = 2
 }
 
 gondor_baraddur_mission_1_modifier = {
-	local_pop_assimilation_speed = 3
-	local_pop_conversion_speed = 3
+	local_population_capacity = 20
+	local_pop_conversion_speed = 4
 }
 
 gondor_cairandros_mission_1_modifier = {

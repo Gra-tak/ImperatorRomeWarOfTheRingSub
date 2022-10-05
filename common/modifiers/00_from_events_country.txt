@@ -1222,7 +1222,6 @@ civilized_tribe = { #Reward for changing from tribal government.
 parthia_formed = { #15 year Reward for forming Parthia as the Dahae, replaces "civilized_tribe" for this decision.
     global_monthly_civilization = 0.1
     global_pop_promotion_speed = 2
-    global_pop_assimilation_speed = 2
     happiness_for_same_culture_modifier = 0.1
     happiness_for_wrong_culture_group_modifier = wrong_culture_group_huge
 }
@@ -1240,7 +1239,6 @@ suebia_modifier = {
 
 aestuia_modifier = {
     manpower_recovery_speed = 0.1
-    global_pop_assimilation_speed = 2
     happiness_for_same_culture_modifier = 0.1
 }
 
@@ -1919,7 +1917,6 @@ carthage_mission_emporium_tripoli_modifier = {
 }
 
 carthage_mission_african_hegemon_modifier = {
-    global_pop_assimilation_speed = 0.10
     happiness_for_wrong_culture_group_modifier = wrong_culture_group_small
 }
 
@@ -2010,7 +2007,6 @@ rm_destroy_latins_cmod = {
 
 carthage_mission_iberian_investments_iberian_riches_modifier = {
     global_monthly_state_loyalty = 0.05
-    global_pop_assimilation_speed = 0.10
 }
 
 carthage_mission_rome_rival_modifier = {
@@ -2143,7 +2139,6 @@ dhe_heraclea_pontica_greek_modifier = {
 
 dhe_heraclea_pontica_assimilation_modifier = {
     happiness_for_wrong_culture_group_modifier = 0.05
-    global_pop_assimilation_speed_modifier = 0.1
 }
 
 roman_mission_eastern_strike_fleet_modifier = {
@@ -2446,7 +2441,6 @@ party_events_default_democratic_concession = {
     democratic_party_influence = 0.05
     oligarchic_party_influence = -0.05
     global_pop_assimilation_speed_modifier = -0.1
-}
 
 party_events_default_traditionalist_concession = {
     oligarchic_party_influence = -0.05

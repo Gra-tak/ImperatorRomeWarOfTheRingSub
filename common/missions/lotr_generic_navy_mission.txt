@@ -489,7 +489,7 @@
 			scope:lotr_navy_mission_scope = {
 				add_province_modifier = {
 					name = trade_city_mission_modifier
-					duration = 3650
+					duration = -1
 				}
 			}
 		}

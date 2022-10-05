@@ -761,7 +761,7 @@
 			p:1030 = {
 					add_province_modifier = {
 					name = gondor_minasithil_mission_1_modifier
-					duration = 3650
+					duration = -1
 				}
 			}
 			add_1_free_province_investments = yes
@@ -801,7 +801,7 @@
 			p:1 = {
 				add_province_modifier = {
 					name = gondor_umbar_mission_1_modifier
-					duration = 3650
+					duration = -1
 				}
 			}
 			current_ruler = {
@@ -845,7 +845,7 @@
 			p:1141 = {
 				add_province_modifier = {
 					name = gondor_baraddur_mission_1_modifier
-					duration = 3650
+					duration = -1
 				}
 			}
 			add_1_free_province_investments = yes
