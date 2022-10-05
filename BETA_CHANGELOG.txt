@@ -227,3 +227,50 @@ Fixes:
 - disable divine sanction decision as long as deified is disabled (eru with dlc)
 - Removed beast barbarians as well as "never spawn" barbarian provinces
 - Mordor should now be more aggressive towards Gondor
+
+1.06.3 Update (04.10.2022 atm)
+- Adding terrain dependent modifiers for different races, for example elves getting boost in forests and debuffs in desserts and steppes
+  - Increase growth penalty for elves a bit to offset that they get a growth bonus in forests (analog for dwarfs). They instead get a movement bonus
+- Added events for cultural assimilations within low humans, middle humans and both towards mixed edain (the latter much rarer)
+- Base growth rate increased to 10%, growth rate from food reserves reduced by 10%
+- Negativ growth rates in bad climates. Uninhabited bad climate provinces should now have no growth
+- Reduced "recovering" growth in provinces that had pops but no more from 50% to 10% (this could be exploited)
+- Can now release certain nations with the correct name and ruler family as client state
+  - Gondor, Dol Amroth, Rohan, Dale, Dorwinion
+- Enlarged the Gundabad province to actually block access a bit
+- Added Minas Morgul and Ithil model by MattTheLegoman
+- Added ruins of Amon Sul (that are replaced by rebuild Amon sul on decision)
+- Minas Tirith can now be corrupted after conquest
+- Create Empire decision is now also always available to despotic monarchy but costs 10 stability extra when the ruler doesn't satisfy the direct conversion criteria (QoL)
+- Added an event where Mordor, Isengard and Umbar will attack Gondor at the same time if Mordor fails to make any process until 3020 or hasn't conquered Minas Tirith until 3050
+- Added sacrificing foreign pops to your gods for a bit of happiness (and getting rid of them)
+- Can now re-enable slave taking on conquest via easterling traditions (more sacrifices to the gods)
+- Added snow to the northern wastes and high uninhabited mountains (dynamic and static)
+- Reassigned terrain types in many places to be more fitting to actual terrain and lore
+- Added an arctic area in the north with Sindarin province names
+- Arctic terrain type now has massive negative growth, Forodwaith cultures are less effected by this
+- Angmar can now be formed by Carn Dum, Gundabad and Minas Morgul
+- Rhun is now split into two nations. Rhun can now be formed by any easterling nation by conquering enough capitals of the easterling nations
+- Moving some easterling capitals to provinces that are actually above average in that country
+- Gandalf getting new portrait(s)
+- Dwarven unit models
+Bugfixes:
+- Trolls for mordor mission now actually appear correctly
+- Fixing remaining non-functional province modifiers
+- Fixed likelyhood of orc raid events
+- Cavalry archers now somewhat useful for elven defense tactic
+- Reenabled league cities and making sure there won't be orc republics
+  - Giving them large food bonuses as AI is too stupid to trade in food with their many trade slots...
+- Legion law is once again restricted by nation rank
+- Fixed migration events in case of overfilling
+- Improving migration event chances a bit to avoid extreme rounding down effects
+- Removing remaining assimilation bonuses for non-orcs
+- Fixed rebuilt wonder effect being removed on conquest
+- Making starting civilization outside of "old developed but declining" nations to a realistic level:
+  - Unowned to zero in almost all cases
+  - Haradrim and Horondorian to a level where it's not above the current maximum
+- Removed events that change character culture (now more elves turning dwarf)
+- Added empty repeatable mission to allow for mission refresh ( Otherwise, tribal reforms are near impossible as you need to complete another mission to be finished which takes forever without any notable tech as a tribe)
+- Tributaries can now turn into client states despite truces (permanent truces due to good guys previously blocked this conversion)
+Vanilla Changes:
+- Fertile nations great wonder effect now a bit weaker but nationwide (the old one means one pop every 60 years which is a bad joke)
