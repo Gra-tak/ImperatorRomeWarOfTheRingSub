@@ -538,6 +538,10 @@ orc_raid_events.4 = {
 				}
 			}
 		}
+		set_variable = {
+			name = orc_raid_event4_variable
+			days = 1825 #5 years no raids anywhere
+		}
 	}
 	
 	option = {
