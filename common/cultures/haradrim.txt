@@ -2,9 +2,9 @@
 	#
 	levy_template = levy_haradrim
 	
-	primary = light_infantry
+	primary = warelephant
 	second = heavy_infantry
-	flank = warelephant
+	flank = camels
 
 	primary_navy = corsair
 	secondary_navy = corsair

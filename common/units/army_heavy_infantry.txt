@@ -14,6 +14,8 @@ heavy_infantry = {
 	 #archers:
 	dwarven_archers = 0.8
 	elvish_archers = 0.89
+	 #camels:
+	camels = 0.9
 	 #chariots:
 	chariots = 1.25
 	 #heavyCavalry:

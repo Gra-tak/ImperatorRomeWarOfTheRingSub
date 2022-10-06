@@ -7654,7 +7654,7 @@
 	tribesmen = { amount = 6 }
 	slaves = { amount = 1 }
 }
-722 = { #Nobal Mayzri (KHU) (dacranamel_area) (dacranamel_region)
+722 = { #Nobal Mayzri (JAN) (dacranamel_area) (dacranamel_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -53726,7 +53726,7 @@
 	province_rank = "settlement"
 }
 5306 = { #Forodwaith (uninhabitable)
-	terrain = "plains"
+	terrain = "arctic"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""

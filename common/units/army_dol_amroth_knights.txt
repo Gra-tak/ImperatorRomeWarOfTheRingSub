@@ -17,6 +17,8 @@ dol_amroth_knights = {
 	dwarven_archers = 1.65
 	elvish_archers = 1.83
 	uruk_crossbows = 2.06
+	 #camels:
+	camels = 1.51
 	 #chariots:
 	chariots = 1.72
 	 #heavyCavalry:

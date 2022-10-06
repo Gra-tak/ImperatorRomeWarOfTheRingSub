@@ -14,6 +14,8 @@ halfling_infantry = {
 	dwarven_archers = 0.59
 	elvish_archers = 0.65
 	uruk_crossbows = 0.73
+	 #camels:
+	camels = 0.81
 	 #chariots:
 	chariots = 0.73
 	 #heavyCavalry:

@@ -67,7 +67,7 @@ levy_halfling = {
 
 levy_haradrim = {
 	default = no
-	light_infantry = 0.3
+	camels = 0.3
 	heavy_infantry = 0.5
 	warelephant = 0.2
 }

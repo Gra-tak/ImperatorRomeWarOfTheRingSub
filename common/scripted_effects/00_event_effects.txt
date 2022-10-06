@@ -2222,6 +2222,254 @@ create_2_nobles_effect = {
 	}
 }
 
+add_country_relevant_subunit_effect = {
+	if = {
+		limit = {
+			ROOT = {
+				primary_culture = rangers
+			}
+		}
+		add_subunit = rangers
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				primary_culture = dolamroth
+			}
+		}
+		random_list = {
+			50 = { add_subunit = dol_amroth_knights }
+			50 = { add_subunit = dunedain_infantry }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = edain_group
+			}
+		}
+		random_list = {
+			60 = { add_subunit = dunedain_infantry }
+			20 = { add_subunit = dunedain_archers }
+			20 = { add_subunit = dunedain_cavalry }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = haldadian_group
+			}
+		}
+		random_list = {
+			60 = { add_subunit = light_infantry }
+			20 = { add_subunit = archers }
+			20 = { add_subunit = heavy_infantry }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = eotheod_group
+			}
+		}
+		random_list = {
+			60 = { add_subunit = light_cavalry }
+			20 = { add_subunit = heavy_cavalry }
+			20 = { add_subunit = horse_archers }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				primary_culture = orcish
+			}
+		}
+		random_list = {
+			60 = { 
+				trigger = { root.var:au25 = flag:na }
+				add_subunit = orc_infantry 
+			}
+			60 = { 
+				trigger = { root.var:au25 = flag:uruk_infantry }
+				add_subunit = uruk_infantry 
+			}
+			20 = { 
+				trigger = { root.var:au24 = flag:uruk_heavy_infantry }
+				add_subunit = uruk_heavy_infantry 
+			}
+			20 = { 
+				trigger = { root.var:au23 = flag:uruk_crossbows }
+				add_subunit = uruk_crossbows 
+			}
+			5 = { 
+				trigger = { root.var:au22 = flag:troll_infantry }
+				add_subunit = troll_infantry 
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				primary_culture = goblins
+			}
+		}
+		random_list = {
+			80 = { add_subunit = orc_infantry }
+			20 = { add_subunit = warg_riders }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				primary_culture = urukhai
+			}
+		}
+		random_list = {
+			50 = { add_subunit = uruk_infantry }
+			30 = { add_subunit = uruk_heavy_infantry }
+			20 = { add_subunit = uruk_crossbows }
+			5 = { 
+				trigger = { root.var:au22 = flag:troll_infantry }
+				add_subunit = troll_infantry 
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = barangil_group
+			}
+		}
+		random_list = {
+			50 = { add_subunit = light_infantry }
+			30 = { add_subunit = archers }
+			20 = { add_subunit = warelephant }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = breelander_group
+			}
+		}
+		random_list = {
+			50 = { add_subunit = archers }
+			30 = { add_subunit = heavy_infantry }
+			20 = { add_subunit = light_cavalry }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = easterling_group
+			}
+		}
+		random_list = {
+			50 = { add_subunit = heavy_infantry }
+			25 = { add_subunit = chariots }
+			25 = { add_subunit = light_cavalry }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = forodwaith_group
+			}
+		}
+		random_list = {
+			40 = { add_subunit = archers }
+			60 = { add_subunit = light_infantry }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = halfling_group
+			}
+		}
+		add_subunit = halfling_infantry
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = haradrim_group
+			}
+		}
+		random_list = {
+			50 = { add_subunit = heavy_infantry }
+			30 = { add_subunit = camels }
+			20 = { add_subunit = warelephant }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = dwarf_group
+			}
+		}
+		random_list = {
+			50 = { add_subunit = dwarven_infantry }
+			30 = { add_subunit = dwarven_archers }
+			20 = { add_subunit = dwarven_goat_riders }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = harondorian_group
+			}
+		}
+		random_list = {
+			50 = { add_subunit = light_infantry }
+			25 = { add_subunit = heavy_infantry }
+			25 = { add_subunit = archers }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = mirkwoodmen_group
+			}
+		}
+		random_list = {
+			60 = { add_subunit = archers }
+			20 = { add_subunit = heavy_infantry }
+			20 = { add_subunit = light_cavalry }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				OR = {
+					country_culture_group = teleri_group
+					country_culture_group = noldor_group
+				}
+			}
+		}
+		random_list = {
+			50 = { add_subunit = elvish_archers }
+			25 = { add_subunit = elvish_infantry }
+			25 = { add_subunit = elvish_cavalry_archers }
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				country_culture_group = yopi_group
+			}
+		}
+		random_list = {
+			50 = { add_subunit = light_infantry }
+			30 = { add_subunit = heavy_infantry }
+			20 = { add_subunit = light_cavalry }
+		}
+	}
+	else = { #maia, possibly others?
+		add_subunit = light_infantry
+	}
+}
+
+
 add_relevant_subunit_effect = {
 	if = {
 		limit = {
@@ -2379,7 +2627,7 @@ add_relevant_subunit_effect = {
 			}
 			random_list = {
 				50 = { add_subunit = heavy_infantry }
-				30 = { add_subunit = light_infantry }
+				30 = { add_subunit = camels }
 				20 = { add_subunit = warelephant }
 			}
 		}
@@ -2609,7 +2857,7 @@ add_relevant_loyal_subunit_effect = {
 			}
 			random_list = {
 				50 = { add_loyal_subunit = heavy_infantry }
-				30 = { add_loyal_subunit = light_infantry }
+				30 = { add_loyal_subunit = camels }
 				20 = { add_loyal_subunit = warelephant }
 			}
 		}

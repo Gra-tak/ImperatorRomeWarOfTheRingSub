@@ -1043,3 +1043,143 @@ lotr_maintenance.8 = {
 		}
 	}
 }
+
+lotr_maintenance.9 = {
+	type = country_event
+	title = OK
+	desc = OK
+	hidden = yes
+	trigger = {
+		# is_ai = yes
+	}
+	immediate = {
+		every_legion = {
+			every_legion_unit = {
+				set_local_variable = {
+					name = num_deleted_units
+					value = 0
+				}
+				every_sub_unit = {
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									ROOT = { NOT = { country_culture_group = haradrim_group } }
+									sub_unit_type = camels
+								}
+								sub_unit_type = engineer_cohort
+							}
+						}
+						change_local_variable = {
+							name = num_deleted_units
+							add = 1
+						}
+						destroy_subunit = yes
+					}
+				}
+				while = {
+					count = local_var:num_deleted_units
+					add_country_relevant_subunit_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				primary_culture = rangers
+			}
+			every_legion = {
+				every_legion_unit = {
+					set_local_variable = {
+						name = num_deleted_units
+						value = 0
+					}
+					every_sub_unit = {
+						if = {
+							limit = {
+								OR = {
+									sub_unit_type = dunedain_infantry
+									sub_unit_type = dunedain_cavalry
+									sub_unit_type = dunedain_archers
+								}
+							}
+							change_local_variable = {
+								name = num_deleted_units
+								add = 1
+							}
+							destroy_subunit = yes
+						}
+					}
+					while = {
+						count = local_var:num_deleted_units
+						add_country_relevant_subunit_effect = yes
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					primary_culture = orcish
+					primary_culture = urukhai
+				}
+				var:au27 = flag:na #has no unlocked warg riders
+			}
+			every_legion = {
+				every_legion_unit = {
+					set_local_variable = {
+						name = num_deleted_units
+						value = 0
+					}
+					every_sub_unit = {
+						if = {
+							limit = {
+								sub_unit_type = warg_riders
+							}
+							change_local_variable = {
+								name = num_deleted_units
+								add = 1
+							}
+							destroy_subunit = yes
+						}
+					}
+					while = {
+						count = local_var:num_deleted_units
+						add_country_relevant_subunit_effect = yes
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				primary_culture = urukhai
+			}
+			every_legion = {
+				every_legion_unit = {
+					set_local_variable = {
+						name = num_deleted_units
+						value = 0
+					}
+					every_sub_unit = {
+						if = {
+							limit = {
+								sub_unit_type = orc_infantry
+							}
+							change_local_variable = {
+								name = num_deleted_units
+								add = 1
+							}
+							destroy_subunit = yes
+						}
+					}
+					while = {
+						count = local_var:num_deleted_units
+						add_country_relevant_subunit_effect = yes
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}

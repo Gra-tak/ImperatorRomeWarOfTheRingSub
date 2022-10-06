@@ -17,6 +17,8 @@ dwarven_infantry = {
 	dwarven_archers = 1.16
 	elvish_archers = 1.22
 	uruk_crossbows = 1.3
+	 #camels:
+	camels = 1.17
 	 #chariots:
 	chariots = 1.62
 	 #heavyCavalry:

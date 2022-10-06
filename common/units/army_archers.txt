@@ -11,6 +11,8 @@ archers = {
 	 #archers:
 	dwarven_archers = 0.8
 	elvish_archers = 0.89
+	 #camels:
+	camels = 0.9
 	 #heavyCavalry:
 	heavy_cavalry = 0.9
 	dol_amroth_knights = 0.6

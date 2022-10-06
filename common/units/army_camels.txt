@@ -1,61 +1,52 @@
-﻿camels = {
+﻿ # This file was created by script!
+ # Instead of editing it, you should change the python script.
+ # Changes to the file will be overwritten the next time the script is run.
+camels = {
 	army = yes
-
+	assault = no
 	levy_tier = basic
 	allow = {
-		always = no
+		trade_good_surplus = { target = camel value > 0 }
 	}
-
 	is_flank = yes
-	
 	maneuver = 4
 	movement_speed = 3.5
-
-	build_time = 40
-	legions = no
-	
-	light_infantry = 1.1
-	heavy_infantry = 0.9
-	heavy_cavalry = 0.8
-	light_cavalry = 1.0
-	chariots = 1.1
-	warelephant = 0.5
-	horse_archers = 1.1
+	build_time = 15
+	 #archers:
 	archers = 1.1
-	camels = 1.0
-	#light_infantry
+	dunedain_archers = 1.1
+	dwarven_archers = 0.88
+	elvish_archers = 0.98
+	uruk_crossbows = 1.1
+	 #chariots:
+	chariots = 1.1
+	 #heavyCavalry:
+	heavy_cavalry = 0.8
+	dol_amroth_knights = 0.53
+	dwarven_goat_riders = 0.53
+	warg_riders = 0.8
+	 #heavyInfantry:
+	heavy_infantry = 0.9
+	dunedain_infantry = 0.6
+	dwarven_infantry = 0.51
+	elvish_infantry = 0.55
+	uruk_heavy_infantry = 0.72
+	troll_infantry = 0.36
+	rangers = 0.6
+	 #horseArchers:
+	horse_archers = 1.1
+	elvish_cavalry_archers = 0.88
+	 #lightInfantry:
+	light_infantry = 1.1
 	halfling_infantry = 1.1
 	orc_infantry = 1.1
-	rangers = 1.1
-	#heavy_infantry
-	troll_infantry = 0.9
-	dwarven_infantry = 0.9
-	dunedain_infantry = 0.9
-	elvish_infantry = 0.9
-	uruk_heavy_infantry = 0.9
-	uruk_infantry = 0.9
-	#heavy cavalry
-	dol_amroth_knights = 0.8
-	dunedain_cavalry = 0.8
-	dwarven_goat_riders = 0.8
-	#horse archers
-	elvish_cavalry_archer = 1.1
-	#archers
-	elvish_archers = 1.1
-	dwarven_archers = 1.1
-	uruk_crossbows = 1.1
-	dunedain_archers = 1.1
-	
-	attrition_weight = 0.2
-	build_cost = {
-		gold = 13
-		manpower = 1
-	}
-	supply_train = 2.0
-	
-	
-	food_consumption = 0.02
-	food_storage = 0.36
-	
+	uruk_infantry = 0.98
+	 #elephants:
+	warelephant = 0.25
+	attrition_weight = 0.1
 	attrition_loss = 0.025
+	food_consumption = 0.2
+	food_storage = 3.6
+	build_cost = { gold = 5 manpower = 1 }
+	morale_damage_taken = 1.0
 }

@@ -715,7 +715,12 @@ br_pops.8 = { #Assign units
 			}
 			}
 			allow_archers = yes
-			# allow_camels = yes
+			if = {
+				limit = {
+					country_culture_group = haradrim_group
+				}
+				allow_camels = yes
+			}
 			allow_chariots = yes
 			allow_heavy_cavalry = yes
 			allow_heavy_infantry = yes

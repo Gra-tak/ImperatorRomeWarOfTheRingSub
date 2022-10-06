@@ -8,6 +8,7 @@ dunedain_cavalry = {
 	allow = {
 		trade_good_surplus = { target = horses value > 0 }
 	}
+	is_flank = yes
 	maneuver = 3
 	movement_speed = 4
 	build_time = 10
@@ -17,6 +18,8 @@ dunedain_cavalry = {
 	dwarven_archers = 2.12
 	elvish_archers = 2.36
 	uruk_crossbows = 2.66
+	 #camels:
+	camels = 2.12
 	 #chariots:
 	chariots = 2.66
 	 #heavyCavalry:

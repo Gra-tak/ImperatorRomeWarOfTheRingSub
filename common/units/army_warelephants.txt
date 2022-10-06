@@ -17,6 +17,8 @@ warelephant = {
 	dwarven_archers = 1.2
 	elvish_archers = 1.33
 	uruk_crossbows = 1.5
+	 #camels:
+	camels = 0.9
 	 #chariots:
 	chariots = 1.5
 	 #heavyCavalry:

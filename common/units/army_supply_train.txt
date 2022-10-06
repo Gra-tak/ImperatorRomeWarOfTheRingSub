@@ -16,6 +16,8 @@ supply_train = {
 	dwarven_archers = 0.08
 	elvish_archers = 0.09
 	uruk_crossbows = 0.1
+	 #camels:
+	camels = 0.1
 	 #chariots:
 	chariots = 0.1
 	 #heavyCavalry:

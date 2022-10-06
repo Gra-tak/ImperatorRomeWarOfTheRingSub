@@ -8,6 +8,7 @@ horse_archers = {
 	allow = {
 		trade_good_surplus = { target = steppe_horses value > 0 }
 	}
+	is_flank = yes
 	maneuver = 5
 	movement_speed = 4
 	build_time = 16
@@ -16,6 +17,8 @@ horse_archers = {
 	dunedain_archers = 1.25
 	elvish_archers = 1.11
 	uruk_crossbows = 1.25
+	 #camels:
+	camels = 0.9
 	 #chariots:
 	chariots = 1.25
 	 #heavyCavalry:

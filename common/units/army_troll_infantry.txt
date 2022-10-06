@@ -17,6 +17,8 @@ troll_infantry = {
 	dwarven_archers = 1.56
 	elvish_archers = 1.65
 	uruk_crossbows = 1.75
+	 #camels:
+	camels = 1.57
 	 #chariots:
 	chariots = 2.19
 	 #heavyCavalry:
