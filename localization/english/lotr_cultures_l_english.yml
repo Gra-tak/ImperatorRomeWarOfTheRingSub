@@ -122,6 +122,8 @@
  maia_group:0 "Maia"
  maia:0 "Maia"
  # Names
+ amrun_group_malename:1 "$NAME_MALE$ $FAMILY_MALE$ $NICKNAME$"
+ amrun_group_femalename:1 "$NAME_FEMALE$ $FAMILY_FEMALE$ $NICKNAME$"
  maia_group_malename:1 "$NAME_MALE$ $FAMILY_MALE$ $NICKNAME$"
  maia_group_femalename:1 "$NAME_FEMALE$ $FAMILY_FEMALE$ $NICKNAME$"
  banadunaim_group_malename:1 "$NAME_MALE$ $FAMILY_MALE$ $NICKNAME$"
