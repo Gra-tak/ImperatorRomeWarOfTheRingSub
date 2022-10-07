@@ -123,48 +123,7 @@ lotr_startup.2 = { #Adds dynamic wonder models
 	}
 	
 	immediate = {
-		if = {
-			limit = {
-				NOT = { has_variable = shown_lotr_wonders }
-			}
-			set_variable = { name = shown_lotr_wonders }
-			hidden_effect = {
-				p:1141 = {
-					show_model = "wonder_barad_dur"
-				}
-				p:1021 = {
-					show_model = "the_black_gate"
-				}
-				# p:1030 = {
-				# 	show_model = "black_wall"
-				# }
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_variable = shown_lotr_wonders_2 }
-			}
-			set_variable = { name = shown_lotr_wonders_2 }
-			hidden_effect = {
-				p:4137 = {
-					show_model = "wonder_amon_sul_ruins"
-				}
-				p:1031 = {
-					show_model = "wonder_minas_morgul"
-				}
-				p:1300 = {
-					show_model = "wonder_minas_tirith"
-				}
-			}
-		}
-		# if = {
-		# 	limit = {
-		# 		NOT = { has_variable = shown_lotr_wonders_3 }
-		# 	}
-		# 	set_variable = { name = shown_lotr_wonders_3 }
-		# 	hidden_effect = {
-		# 	}
-		# }
+		initialize_wonders_effect = yes
 	}	
 }
 
