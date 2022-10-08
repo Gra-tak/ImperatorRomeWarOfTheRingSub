@@ -425,11 +425,21 @@ move_home_effect = {
 		limit = {
 			any_country = {
 				culture = $CULTURE$
+				any_owned_province = {
+					total_population < population_cap
+					has_siege = no
+					controller = owner
+				}
 			}
 		}
 		random_country = {
 			limit = {
 				culture = $CULTURE$
+				any_owned_province = {
+					total_population < population_cap
+					has_siege = no
+					controller = owner
+				}
 			}
 			weight = {
 				modifier = {
@@ -438,6 +448,11 @@ move_home_effect = {
 				}
 			}
 			random_owned_province = {
+				limit = {
+					total_population < population_cap
+					has_siege = no
+					controller = owner
+				}
 				save_scope_as = target
 			}
 		}
@@ -447,11 +462,21 @@ move_home_effect = {
 		limit = {
 			any_country = {
 				culture.culture_group = $CULTURE_GROUP$
+				any_owned_province = {
+					total_population < population_cap
+					has_siege = no
+					controller = owner
+				}
 			}
 		}
 		random_country = {
 			limit = {
 				culture.culture_group = $CULTURE_GROUP$
+				any_owned_province = {
+					total_population < population_cap
+					has_siege = no
+					controller = owner
+				}
 			}
 			weight = {
 				modifier = {
@@ -460,6 +485,11 @@ move_home_effect = {
 				}
 			}
 			random_owned_province = {
+				limit = {
+					total_population < population_cap
+					has_siege = no
+					controller = owner
+				}
 				save_scope_as = target
 			}
 		}

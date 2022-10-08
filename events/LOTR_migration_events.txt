@@ -110,13 +110,21 @@ lotr_migration_events.1 = {
 					limit = {
 						any_country = {
 							culture = PREV.culture
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 						}
 					}
 					random_country = {
 						limit = {
 							culture = PREV.culture
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 						}
 						weight = {
 							base = 10
@@ -131,7 +139,11 @@ lotr_migration_events.1 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 								province_is_safe_modifier = yes
@@ -144,7 +156,11 @@ lotr_migration_events.1 = {
 				else_if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							OR = {
 								any_integrated_culture = {
 									this.culture = scope:pop.culture
@@ -155,7 +171,11 @@ lotr_migration_events.1 = {
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							OR = {
 								any_integrated_culture = {
 									this.culture = scope:pop.culture
@@ -185,7 +205,11 @@ lotr_migration_events.1 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 								province_is_safe_modifier = yes
@@ -299,13 +323,21 @@ lotr_migration_events.2 = {
 				if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture = PREV.culture
 						}
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture = PREV.culture
 						}
 						weight = {
@@ -317,7 +349,11 @@ lotr_migration_events.2 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 							}
@@ -329,13 +365,21 @@ lotr_migration_events.2 = {
 				else_if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture.culture_group = PREV.culture.culture_group
 						}
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
@@ -347,7 +391,11 @@ lotr_migration_events.2 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 							}
@@ -464,13 +512,21 @@ lotr_migration_events.3 = {
 				if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture = PREV.culture
 						}
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture = PREV.culture
 						}
 						weight = {
@@ -482,7 +538,11 @@ lotr_migration_events.3 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 							}
@@ -494,14 +554,22 @@ lotr_migration_events.3 = {
 				else_if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture.culture_group = PREV.culture.culture_group
 							NOT = { primary_culture = nandor }
 						}
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture.culture_group = PREV.culture.culture_group
 							NOT = { primary_culture = nandor }
 						}
@@ -514,7 +582,11 @@ lotr_migration_events.3 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 							}
@@ -627,13 +699,21 @@ lotr_migration_events.4 = {
 				if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture = PREV.culture
 						}
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture = PREV.culture
 						}
 						weight = {
@@ -645,7 +725,11 @@ lotr_migration_events.4 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 							}
@@ -657,13 +741,21 @@ lotr_migration_events.4 = {
 				else_if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture.culture_group = PREV.culture.culture_group
 						}
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
@@ -675,7 +767,11 @@ lotr_migration_events.4 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 							}
@@ -716,13 +812,21 @@ lotr_migration_events.5 = {
 				if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture = PREV.culture
 						}
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture = PREV.culture
 						}
 						weight = {
@@ -734,7 +838,11 @@ lotr_migration_events.5 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 							}
@@ -746,13 +854,21 @@ lotr_migration_events.5 = {
 				else_if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = { 
+								total_population < population_cap 
+								has_siege = no
+								controller = owner
+							}
 							culture.culture_group = PREV.culture.culture_group
 						}
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = { 
+								total_population < population_cap 
+								has_siege = no
+								controller = owner
+							}
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
@@ -764,7 +880,11 @@ lotr_migration_events.5 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = { 
+								total_population < population_cap 
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 							}
@@ -899,13 +1019,21 @@ lotr_migration_events.6 = {
 				if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture = PREV.culture
 						}
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture = PREV.culture
 						}
 						weight = {
@@ -917,7 +1045,11 @@ lotr_migration_events.6 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 							}
@@ -929,13 +1061,21 @@ lotr_migration_events.6 = {
 				else_if = {
 					limit = {
 						any_country = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture.culture_group = PREV.culture.culture_group
 						}
 					}
 					random_country = {
 						limit = {
-							any_owned_province = { total_population < population_cap }
+							any_owned_province = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							culture.culture_group = PREV.culture.culture_group
 						}
 						weight = {
@@ -947,7 +1087,11 @@ lotr_migration_events.6 = {
 							}
 						}
 						random_owned_province = {
-							limit = { total_population < population_cap }
+							limit = {
+								total_population < population_cap
+								has_siege = no
+								controller = owner
+							}
 							weight = {
 								province_has_space_for_migration_modifer = yes
 							}
@@ -1092,7 +1236,11 @@ lotr_migration_events.7 = {
 								}
 							}
 							random_owned_province = {
-								limit = { total_population < population_cap }
+								limit = {
+									total_population < population_cap
+									has_siege = no
+									controller = owner
+								}
 								weight = {
 									province_has_space_for_migration_modifer = yes
 								}
@@ -1133,7 +1281,11 @@ lotr_migration_events.7 = {
 								}
 							}
 							random_owned_province = {
-								limit = { total_population < population_cap }
+								limit = {
+									total_population < population_cap
+									has_siege = no
+									controller = owner
+								}
 								weight = {
 									province_has_space_for_migration_modifer = yes
 								}

@@ -76,8 +76,7 @@ lotr_teardown_events.2 = {
 		}
 		every_country = {
 			limit = {
-				NOT = { THIS = PREV.OWNER }
-				NOT = { THIS = ROOT }
+				NOT = { THIS = ROOT.OWNER }
 			}
 			trigger_event = { id = lotr_frodos_mission_events.95 days = 30 } #players are told
 		}
@@ -131,8 +130,7 @@ lotr_teardown_events.3 = {
 		}
 		every_country = {
 			limit = {
-				NOT = { THIS = PREV.OWNER }
-				NOT = { THIS = ROOT }
+				NOT = { THIS = ROOT.OWNER }
 			}
 			trigger_event = { id = lotr_frodos_mission_events.96 days = 30 } #players are told
 		}
