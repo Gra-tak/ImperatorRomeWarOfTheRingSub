@@ -78,7 +78,7 @@ pbc_event.1 = {
 				add_popularity = popularity_medium
 			}
 			add_corruption = corruption_medium
-			add_gold = 	capped_gain_5
+			add_gold = 	root.capped_gain_5
 		}
 	}
 
