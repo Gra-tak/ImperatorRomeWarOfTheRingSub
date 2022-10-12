@@ -1485,7 +1485,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 8 }
+	freemen = { amount = 7 }
+	slaves = { amount = 1 }
 }
 139 = { #Tundera Vau (XOX) (gazar_ibar_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1495,7 +1496,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 7 }
+	freemen = { amount = 6 }
+	slaves = { amount = 1 }
 }
 140 = { #Berestye (XOX) (gazar_ibar_area) (duirrogwin_region)
 	terrain = "hills"
@@ -1528,7 +1530,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 7 }
+	freemen = { amount = 6 }
+	slaves = { amount = 1 }
 }
 143 = { #Gaganí (XOX) (gazar_ibar_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1538,7 +1541,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 3 }
+	freemen = { amount = 2 }
+	slaves = { amount = 1 }
 }
 144 = { #Winterion Iaur (XOX) (fola_gach_area) (taur_romen_region)
 	terrain = "hills"
@@ -1577,7 +1581,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 8 }
+	freemen = { amount = 7 }
+	slaves = { amount = 1 }
 }
 148 = { #Forodim (XOX) (fola_gach_area) (taur_romen_region)
 	terrain = "plains"
@@ -1610,7 +1615,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 8 }
+	freemen = { amount = 7 }
+	slaves = { amount = 1 }
 }
 151 = { #Androdiv (XOX) (gazar_ibar_area) (duirrogwin_region)
 	terrain = "plains"
@@ -1620,7 +1626,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 8 }
+	freemen = { amount = 7 }
+	slaves = { amount = 1 }
 }
 152 = { #Burh Karirar (XOX) (fola_gach_area) (taur_romen_region)
 	terrain = "plains"
@@ -1640,7 +1647,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 10 }
+	freemen = { amount = 8 }
+	slaves = { amount = 1 }
 }
 154 = { #Nadaul (XOX) (fola_gach_area) (taur_romen_region)
 	terrain = "forest"
@@ -1650,7 +1658,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 6 }
+	freemen = { amount = 5 }
+	slaves = { amount = 1 }
 }
 155 = { #Saneninu (XOX) (fola_gach_area) (taur_romen_region)
 	terrain = "plains"
@@ -1670,7 +1679,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 8 }
+	freemen = { amount = 6 }
+	slaves = { amount = 1 }
 }
 157 = { #Doron-echor (unowned) (fangorn_area) (lorien_region)
 	terrain = "deep_forest"
@@ -1689,7 +1699,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 9 }
+	freemen = { amount = 7 }
+	slaves = { amount = 1 }
 }
 159 = { #Foris (XOX) (fola_gach_area) (taur_romen_region)
 	terrain = "plains"
@@ -1699,7 +1710,8 @@
 	civilization_value = 75
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 5 }
+	freemen = { amount = 4 }
+	slaves = { amount = 1 }
 }
 160 = { #Bulokim (unowned) (vol_kug_area) (taur_romen_region)
 	terrain = "hills"
@@ -3954,7 +3966,8 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 6 }
+	freemen = { amount = 5 }
+	slaves = { amount = 1 }
 }
 372 = { #Stath Thliuhande (DLE) (medvos_verar_area) (rhovanion_region)
 	terrain = "plains"
@@ -3975,7 +3988,8 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 6 }
+	freemen = { amount = 5 }
+	slaves = { amount = 1 }
 }
 374 = { #Pargurb (ERB) (gonnland_area) (ered_mithrin_region)
 	terrain = "plains"
@@ -4071,7 +4085,8 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 6 }
+	freemen = { amount = 5 }
+	slaves = { amount = 1 }
 }
 383 = { #Set a Biargi (ERB) (annendor_area) (rhovanion_region)
 	terrain = "hills"
@@ -4081,7 +4096,8 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 6 }
+	freemen = { amount = 5 }
+	slaves = { amount = 1 }
 }
 384 = { #Khrald (unowned) (emyn_engrin_area) (ered_mithrin_region)
 	terrain = "plains"
@@ -7569,7 +7585,8 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 714 = { #Imak Peh (unowned) (arysis_area) (nafarat_region)
 	terrain = "plains"
@@ -12456,7 +12473,8 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 6 }
+	freemen = { amount = 4 }
+	slaves = { amount = 2 }
 }
 1201 = { #Cair Andros (GON) (doranorien_area) (anorien_region)
 	terrain = "plains"
@@ -12771,7 +12789,8 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 3 }
+	freemen = { amount = 2 }
+	slaves = { amount = 1 }
 }
 1231 = { #Alôra (LBN) (tolfalas_area) (lebennin_region)
 	terrain = "plains"
@@ -12781,7 +12800,8 @@
 	civilization_value = 70
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 3 }
+	freemen = { amount = 1 }
+	slaves = { amount = 2 }
 }
 1232 = { #Uphar (LBN) (tolfalas_area) (lebennin_region)
 	terrain = "plains"
@@ -16861,6 +16881,7 @@
 	province_rank = "settlement"
 	fortress_building = 1
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1606 = { #Perilussi (unowned) (perilussi_area) (tawar_norndor_region)
 	terrain = "forest"
@@ -17124,6 +17145,7 @@
 	province_rank = "settlement"
 	fortress_building = 1
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1633 = { #Creb Durga (unowned) (pinnath_nimren_area) (cardolan_region)
 	terrain = "hills"
@@ -17143,6 +17165,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1635 = { #Mar Eketyaron (unowned) (formenyar_area) (fortund_region)
 	terrain = "plains"
@@ -17245,7 +17268,8 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 2 }
+	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1646 = { #Cillien (AVA) (fordirith_area) (dor_wathui_region)
 	terrain = "forest"
@@ -17281,7 +17305,7 @@
 	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 14 }
+	freemen = { amount = 12 }
 	slaves = { amount = 1 }
 }
 1649 = { #Talugdaeri (XXO) (rhudaur_area) (rhudaur_region)
@@ -17834,6 +17858,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1706 = { #Nilenel (BRE) (tyrn_hyarinen_area) (mintyrnath_region)
 	terrain = "plains"
@@ -17876,6 +17901,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1710 = { #Anglor (CAR) (nan_turnath_area) (arthedain_region)
 	terrain = "plains"
@@ -17886,6 +17912,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1711 = { #Aradhras (unowned) (tyrn_formen_area) (arthedain_region)
 	terrain = "plains"
@@ -18118,6 +18145,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1736 = { #Ningliras (BRE) (tyrn_hyarinen_area) (mintyrnath_region)
 	terrain = "mountain"
@@ -18238,6 +18266,7 @@
 	province_rank = "settlement"
 	fortress_building = 1
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1748 = { #Seroneldeon Tarma (BRE) (tyrn_hyarinen_area) (mintyrnath_region)
 	terrain = "plains"
@@ -18341,7 +18370,7 @@
 	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 2 }
+	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 1759 = { #Benhuis (unowned) (pinnath_tereg_area) (rhudaur_region)
@@ -18643,6 +18672,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1791 = { #Dernost (XXO) (rhudaur_area) (rhudaur_region)
 	terrain = "forest"
@@ -18934,7 +18964,8 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
-	freemen = { amount = 3 }
+	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1821 = { #Ornduirro (CAR) (nan_turnath_area) (arthedain_region)
 	terrain = "hills"
@@ -18945,6 +18976,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1822 = { #Beriodîn (CAR) (nan_turnath_area) (arthedain_region)
 	terrain = "plains"
@@ -18955,6 +18987,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1823 = { #Pendle (CAR) (oiomiril_area) (arthedain_region)
 	terrain = "plains"
@@ -18965,6 +18998,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1824 = { #Barad Narn (CAR) (oiomiril_area) (arthedain_region)
 	terrain = "plains"
@@ -18975,6 +19009,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1825 = { #Barad Emer (CAR) (oiomiril_area) (arthedain_region)
 	terrain = "plains"
@@ -18985,6 +19020,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1826 = { #Barad Thoron (CAR) (oiomiril_area) (arthedain_region)
 	terrain = "hills"
@@ -18994,7 +19030,7 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1827 = { #Minas Galanna (CAR) (oiomiril_area) (arthedain_region)
 	terrain = "hills"
@@ -19005,6 +19041,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1828 = { #Gistfell (unowned) (nan_arnen_area) (arthedain_region)
 	terrain = "plains"
@@ -19023,7 +19060,7 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1830 = { #Caras Nencar (CAR) (nan_turnath_area) (arthedain_region)
 	terrain = "forest"
@@ -19033,7 +19070,7 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1831 = { #Haeron Tirith (unowned) (emyn_foruial_area) (fortund_region)
 	terrain = "plains"
@@ -19466,6 +19503,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 1875 = { #Lin Gwathló (unowned) (ethir_gwathlo_area) (minhiriath_region)
 	terrain = "plains"
@@ -22716,7 +22754,7 @@
 	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 2 }
+	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
 2188 = { #Echad Sûl (XYX) (faerdor_area) (mintyrnath_region)
@@ -22747,7 +22785,7 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 2191 = { #Iaur Amdir (unowned) (pend_eregion_area) (pend_hithaeglir_region)
 	terrain = "forest"
@@ -25224,6 +25262,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
+	slaves = { amount = 1 }
 }
 2432 = { #Anarmeth (LIN) (ivrien_area) (forlindon_region)
 	terrain = "forest"
@@ -25895,6 +25934,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
+	slaves = { amount = 1 }
 }
 2498 = { #Haudh Lin (LIN) (ascariand_area) (forlindon_region)
 	terrain = "forest"
@@ -39535,7 +39575,8 @@
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 6 }
+	freemen = { amount = 5 }
+	slaves = { amount = 1 }
 }
 3820 = { #Tonarilar (DLE) (aur_esgalabar_area) (rhovanion_region)
 	terrain = "plains"
@@ -40357,6 +40398,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
+	slaves = { amount = 1 }
 }
 3902 = { #Minas Girithlin (unowned) (girithlin_area) (minhiriath_region)
 	terrain = "plains"
