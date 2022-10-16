@@ -110,7 +110,7 @@ NCamera = {
 	
 
     MAX_PAN_TO_ZOOM_STEP = 3							# The camera will lower to this height (but only if above it) when panning to characters/provinces etc.
-    START_LOOK_AT = { 1720.7 0 2385.5 }					# Initial look at (X/Y)
+    START_LOOK_AT = { 4132 0 2221 }					# Initial look at (X/Y)
     
     # Debug defines
     DEBUG_GAMEPAD_LOWSPEED 		= 25.0
@@ -122,8 +122,8 @@ NCamera = {
 	# The map projection is a bit freaky and there is no point that can make a good substitute for a north pole
 	# So what we do is that we decide two imaginary north poles, one that we use in europe, and one in india, roughly
 	# Then, we tell the camera to §face a point between the two poles, depending on the angle to the european pole.
-	NORTH_POLE_X = 1195.0
-	NORTH_POLE_Y_WEST = 8700	# european pole coordinate = ( X, Y_WEST )
+	NORTH_POLE_X = 3530.0
+	NORTH_POLE_Y_WEST = 13920	# european pole coordinate = ( X, Y_WEST )
 	NORTH_POLE_Y_EAST = 13920	# indean pole coordinate = ( X, Y_EAST )
 	NORTH_POLE_EAST_ANGLE = 0.64	#in radians. 0 when directly south of the european pole, roughly 0.65 in india. When the camera angle to the european pole is greater than this, the camera will face the indean pole
 }
