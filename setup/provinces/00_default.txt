@@ -15147,6 +15147,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 3 }
+	nobles = { amount = 2 }
 }
 1446 = { #Forlaw (unowned) (parth_celebrant_area) (lorien_region)
 	terrain = "forest"
@@ -26634,7 +26635,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2569 = { #Marzhan (YOP) (ammu_baj_area) (khailuza_region)
+2569 = { #Marzhan (YOP) (ammu_baj_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26645,7 +26646,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2570 = { #Apisêr (YOP) (ammu_baj_area) (khailuza_region)
+2570 = { #Apisêr (YOP) (ammu_baj_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26656,7 +26657,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2571 = { #Memphet (YOP) (ammu_baj_area) (khailuza_region)
+2571 = { #Memphet (YOP) (ammu_baj_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26667,7 +26668,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2572 = { #Labênaginu (YOP) (ammu_baj_area) (khailuza_region)
+2572 = { #Labênaginu (YOP) (ammu_baj_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26678,7 +26679,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2573 = { #Ahâdâr (YOP) (ammu_baj_area) (khailuza_region)
+2573 = { #Ahâdâr (YOP) (ammu_baj_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26742,7 +26743,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2579 = { #Tenolkarhyn (YOP) (ammu_baj_area) (khailuza_region)
+2579 = { #Tenolkarhyn (YOP) (ammu_baj_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26753,7 +26754,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2580 = { #Ganagan (YOP) (ammu_baj_area) (khailuza_region)
+2580 = { #Ganagan (YOP) (ammu_baj_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26764,7 +26765,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2581 = { #Samârth (YOP) (ammu_baj_area) (khailuza_region)
+2581 = { #Samârth (YOP) (ammu_baj_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26775,7 +26776,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2582 = { #Yôrash (YOP) (bulkhyades_area) (khailuza_region)
+2582 = { #Yôrash (YOP) (bulkhyades_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26786,7 +26787,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2583 = { #Anaoshak (YOP) (bulkhyades_area) (khailuza_region)
+2583 = { #Anaoshak (YOP) (bulkhyades_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26797,12 +26798,12 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2584 = { #Chalapûr (XRX) (lodenuly_area) (khailuza_region)
+2584 = { #Chalapûr (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 11
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -26817,7 +26818,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2586 = { #Nehayend (YOP) (ammu_baj_area) (khailuza_region)
+2586 = { #Nehayend (YOP) (ammu_baj_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -26828,67 +26829,67 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2587 = { #Zarinûsha (XRX) (lodenuly_area) (khailuza_region)
+2587 = { #Zarinûsha (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 13
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2588 = { #Kermanshad (XRX) (khy_area) (khailuza_region)
+2588 = { #Kermanshad (unowned) (khy_area) (khailuza_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2589 = { #Pelepelplû (XRX) (khy_area) (khailuza_region)
+2589 = { #Pelepelplû (unowned) (khy_area) (khailuza_region)
 	terrain = "hills"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "leather"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2590 = { #Rhagal (XRX) (khy_area) (khailuza_region)
+2590 = { #Rhagal (unowned) (khy_area) (khailuza_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "camel"
-	civilization_value = 12
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2591 = { #Roshan (XRX) (khy_area) (khailuza_region)
+2591 = { #Roshan (unowned) (khy_area) (khailuza_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "leather"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2592 = { #Hamadan (XRX) (khy_area) (khailuza_region)
+2592 = { #Hamadan (unowned) (khy_area) (khailuza_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "cattle"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -26982,29 +26983,29 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-2601 = { #Khayapûn (XRX) (lodenuly_area) (khailuza_region)
+2601 = { #Khayapûn (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2602 = { #Balyâna (XRX) (lodenuly_area) (khailuza_region)
+2602 = { #Balyâna (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 11
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2603 = { #Aziminîkh (YOP) (bulkhyades_area) (khailuza_region)
+2603 = { #Aziminîkh (YOP) (bulkhyades_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -27033,12 +27034,12 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2606 = { #Miyorê (XRX) (khy_area) (khailuza_region)
+2606 = { #Miyorê (unowned) (khy_area) (khailuza_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -27233,7 +27234,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2625 = { #Marubu (YOP) (bulkhyades_area) (khailuza_region)
+2625 = { #Marubu (YOP) (bulkhyades_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -27418,7 +27419,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-2644 = { #Ûshat (YOP) (bulkhyades_area) (khailuza_region)
+2644 = { #Ûshat (YOP) (bulkhyades_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -27429,12 +27430,12 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-2645 = { #Níkar (XRX) (lodenuly_area) (khailuza_region)
+2645 = { #Níkar (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
 	trade_goods = "incense"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -27473,7 +27474,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2649 = { #Kantilya (YOP) (bulkhyades_area) (khailuza_region)
+2649 = { #Kantilya (YOP) (bulkhyades_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -27977,7 +27978,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-2700 = { #Jorath (YOP) (bulkhyades_area) (khailuza_region)
+2700 = { #Jorath (YOP) (bulkhyades_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -27988,7 +27989,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2701 = { #Pâband (YOP) (bulkhyades_area) (khailuza_region)
+2701 = { #Pâband (YOP) (bulkhyades_area) (anarike_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -28340,7 +28341,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-2736 = { #Memphêt (unowned) (lomeanor_area) (yopi_region)
+2736 = { #Memphêt (unowned) (lomeanor_area) (nikkea_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -29836,23 +29837,23 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2884 = { #Cüce (XRX) (lodenuly_area) (khailuza_region)
+2884 = { #Cüce (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-2885 = { #Alirmarga (XRX) (lodenuly_area) (khailuza_region)
+2885 = { #Alirmarga (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
 	trade_goods = "gems"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -33549,7 +33550,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3231 = { #Pelbraric (YOP) (kythor_area) (anarike_region)
+3231 = { #Pelbraric (YOP) (kythor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33560,7 +33561,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3232 = { #Pûm (YOP) (kythor_area) (anarike_region)
+3232 = { #Pûm (YOP) (kythor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33582,7 +33583,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3234 = { #Shalnarê (YOP) (kythor_area) (anarike_region)
+3234 = { #Shalnarê (YOP) (kythor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33604,7 +33605,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3236 = { #Wûaz (unowned) (kythor_area) (anarike_region)
+3236 = { #Wûaz (unowned) (kythor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33615,7 +33616,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3237 = { #Nebadûr (unowned) (kythor_area) (anarike_region)
+3237 = { #Nebadûr (unowned) (kythor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33626,7 +33627,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3238 = { #Ishel (unowned) (lomeanor_area) (yopi_region)
+3238 = { #Ishel (unowned) (lomeanor_area) (nikkea_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33637,7 +33638,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3239 = { #Lôd (unowned) (lomeanor_area) (yopi_region)
+3239 = { #Lôd (unowned) (lomeanor_area) (nikkea_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33648,7 +33649,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3240 = { #Ôario Nayîn (unowned) (lomeanor_area) (yopi_region)
+3240 = { #Ôario Nayîn (unowned) (lomeanor_area) (nikkea_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -33659,7 +33660,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3241 = { #Sems (unowned) (lomeanor_area) (yopi_region)
+3241 = { #Sems (unowned) (lomeanor_area) (nikkea_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34036,34 +34037,34 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3277 = { #Kilwa Kisiwani (XNX) (kilwa_area) (nikkea_region)
+3277 = { #Kilwa Kisiwani (unowned) (kilwa_area) (nikkea_region)
 	terrain = "plains"
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "dye"
-	civilization_value = 14
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3278 = { #Ochan (XNX) (kilwa_area) (nikkea_region)
+3278 = { #Ochan (unowned) (kilwa_area) (nikkea_region)
 	terrain = "plains"
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "fish"
-	civilization_value = 19
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3279 = { #Aela (XNX) (kilwa_area) (nikkea_region)
+3279 = { #Aela (unowned) (kilwa_area) (nikkea_region)
 	terrain = "plains"
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "fish"
-	civilization_value = 22
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -34157,7 +34158,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3288 = { #Kâthuk (unowned) (lomeanor_area) (yopi_region)
+3288 = { #Kâthuk (unowned) (lomeanor_area) (nikkea_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34190,7 +34191,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3291 = { #Nodyin (unowned) (kythor_area) (anarike_region)
+3291 = { #Nodyin (unowned) (kythor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34333,67 +34334,67 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3304 = { #Min Tawûrk (XNX) (lokhas_area) (lokhas_drus_region)
+3304 = { #Min Tawûrk (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3305 = { #Âlk Breakhna (XNX) (lokhas_area) (lokhas_drus_region)
+3305 = { #Âlk Breakhna (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "hills"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3306 = { #Âlk Rualôkha (XNX) (lokhas_area) (lokhas_drus_region)
+3306 = { #Âlk Rualôkha (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3307 = { #Rûnâsac (XNX) (lokhas_area) (lokhas_drus_region)
+3307 = { #Rûnâsac (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "hills"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 22
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3308 = { #Brôd Lôkha (XNX) (lokhas_area) (lokhas_drus_region)
+3308 = { #Brôd Lôkha (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "hills"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "glass"
-	civilization_value = 23
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3309 = { #Âlkbrod (XNX) (lokhas_area) (lokhas_drus_region)
+3309 = { #Âlkbrod (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "hills"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 23
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -34509,7 +34510,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3320 = { #Muathaya (unowned) (lomeanor_area) (yopi_region)
+3320 = { #Muathaya (unowned) (lomeanor_area) (nikkea_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34520,7 +34521,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3321 = { #Yangakar (unowned) (lomeanor_area) (yopi_region)
+3321 = { #Yangakar (unowned) (lomeanor_area) (nikkea_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34674,73 +34675,73 @@
 	freemen = { amount = 5 }
 	slaves = { amount = 5 }
 }
-3335 = { #Âlk Lâth (XNX) (lokhas_area) (lokhas_drus_region)
+3335 = { #Âlk Lâth (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "whale"
-	civilization_value = 23
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3336 = { #Sûrk Bu (XNX) (lokhas_area) (lokhas_drus_region)
+3336 = { #Sûrk Bu (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 21
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3337 = { #Âlk Halôkha (XNX) (lokhas_area) (lokhas_drus_region)
+3337 = { #Âlk Halôkha (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "hills"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "silk"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3338 = { #Olyas (XNX) (lokhas_area) (lokhas_drus_region)
+3338 = { #Olyas (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3339 = { #Shômâlk (XNX) (lokhas_area) (lokhas_drus_region)
+3339 = { #Shômâlk (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3340 = { #Maralôkha (XNX) (wol_area) (lokhas_drus_region)
+3340 = { #Maralôkha (unowned) (wol_area) (lokhas_drus_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3341 = { #Bêlphal (YOP) (kythor_area) (anarike_region)
+3341 = { #Bêlphal (YOP) (kythor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34751,7 +34752,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3342 = { #Dâuran (YOP) (kythor_area) (anarike_region)
+3342 = { #Dâuran (YOP) (kythor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34894,7 +34895,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3355 = { #Gênathur (unowned) (lomeanor_area) (yopi_region)
+3355 = { #Gênathur (unowned) (lomeanor_area) (nikkea_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -34971,111 +34972,111 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3362 = { #Mâlthawun (XNX) (ibav_area) (ibav_region)
+3362 = { #Mâlthawun (unowned) (ibav_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3363 = { #Kanwalay (XNX) (ibav_area) (ibav_region)
+3363 = { #Kanwalay (unowned) (ibav_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3364 = { #Ganaythawun (XNX) (ibav_area) (ibav_region)
+3364 = { #Ganaythawun (unowned) (ibav_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3365 = { #Gurarbilar (XNX) (ibav_area) (ibav_region)
+3365 = { #Gurarbilar (unowned) (ibav_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3366 = { #Wugara (XNX) (ibav_area) (ibav_region)
+3366 = { #Wugara (unowned) (ibav_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "leather"
-	civilization_value = 14
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3367 = { #Thiwara (XNX) (ibav_area) (ibav_region)
+3367 = { #Thiwara (unowned) (ibav_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "elephants"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3368 = { #Wugaweg (XNX) (ibav_area) (ibav_region)
+3368 = { #Wugaweg (unowned) (ibav_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 14
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3369 = { #Berarbilar (XNX) (ibav_area) (ibav_region)
+3369 = { #Berarbilar (unowned) (ibav_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 12
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3370 = { #K'sian (XNX) (ibav_area) (ibav_region)
+3370 = { #K'sian (unowned) (ibav_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "leather"
-	civilization_value = 11
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3371 = { #Bûlmil (XNX) (ibav_area) (ibav_region)
+3371 = { #Bûlmil (unowned) (ibav_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "spices"
-	civilization_value = 11
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -35246,12 +35247,12 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3387 = { #Wárwugan (XNX) (thiwara_area) (ibav_region)
+3387 = { #Wárwugan (unowned) (thiwara_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 16
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -35290,7 +35291,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3391 = { #Záyalak (unowned) (lomeanor_area) (yopi_region)
+3391 = { #Záyalak (unowned) (lomeanor_area) (nikkea_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -35312,12 +35313,12 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3393 = { #Thun (XNX) (fenfenen_area) (ibav_region)
+3393 = { #Thun (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 11
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -35367,23 +35368,23 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3398 = { #Mâ (XNX) (unwirnay_area) (shay_region)
+3398 = { #Mâ (unowned) (unwirnay_area) (shay_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "elephants"
-	civilization_value = 12
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3399 = { #Ohild (XNX) (unwirnay_area) (shay_region)
+3399 = { #Ohild (unowned) (unwirnay_area) (shay_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 13
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -35449,7 +35450,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3406 = { #Hôlimâr (unowned) (kythor_area) (anarike_region)
+3406 = { #Hôlimâr (unowned) (kythor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -35671,12 +35672,12 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 }
-3428 = { #Hothac Smew (XNX) (wol_area) (lokhas_drus_region)
+3428 = { #Hothac Smew (unowned) (wol_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -36398,34 +36399,34 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3507 = { #Wôg (XNX) (monars_area) (lokhas_drus_region)
+3507 = { #Wôg (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3508 = { #Min Clytac (XNX) (monars_area) (lokhas_drus_region)
+3508 = { #Min Clytac (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 22
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3509 = { #Yelshey (XNX) (monars_area) (lokhas_drus_region)
+3509 = { #Yelshey (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 23
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -36453,45 +36454,45 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 3 }
 }
-3512 = { #Taiarin (XNX) (monars_area) (lokhas_drus_region)
+3512 = { #Taiarin (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3513 = { #Mag-Shal (XNX) (tarsa_area) (lokhas_drus_region)
+3513 = { #Mag-Shal (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3514 = { #H'ent (XNX) (monars_area) (lokhas_drus_region)
+3514 = { #H'ent (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "papyrus"
-	civilization_value = 26
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3515 = { #Bârsa (XNX) (tarsa_area) (lokhas_drus_region)
+3515 = { #Bârsa (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 26
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -36881,254 +36882,254 @@
 	province_rank = "settlement"
 	slaves = { amount = 2 }
 }
-3557 = { #Wôlac (XNX) (wol_area) (lokhas_drus_region)
+3557 = { #Wôlac (unowned) (wol_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3558 = { #Taknaemen (XNX) (wol_area) (lokhas_drus_region)
+3558 = { #Taknaemen (unowned) (wol_area) (lokhas_drus_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3559 = { #Khanakh (XNX) (wol_area) (lokhas_drus_region)
+3559 = { #Khanakh (unowned) (wol_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 22
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3560 = { #Âlk Wôl (XNX) (wol_area) (lokhas_drus_region)
+3560 = { #Âlk Wôl (unowned) (wol_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "silk"
-	civilization_value = 21
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3561 = { #Lôkhûon (XNX) (tarsa_area) (lokhas_drus_region)
+3561 = { #Lôkhûon (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 23
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3562 = { #Âlekh (XNX) (wol_area) (lokhas_drus_region)
+3562 = { #Âlekh (unowned) (wol_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 22
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3563 = { #Hothac Vûlm (XNX) (tarsa_area) (lokhas_drus_region)
+3563 = { #Hothac Vûlm (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "spices"
-	civilization_value = 22
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3564 = { #Rábe (XNX) (wol_area) (lokhas_drus_region)
+3564 = { #Rábe (unowned) (wol_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "dates"
-	civilization_value = 22
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3565 = { #Hôkha (XNX) (brod_area) (lokhas_drus_region)
+3565 = { #Hôkha (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 22
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3566 = { #Talshay (XNX) (brod_area) (lokhas_drus_region)
+3566 = { #Talshay (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 22
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3567 = { #Rûseva (XNX) (brod_area) (lokhas_drus_region)
+3567 = { #Rûseva (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3568 = { #Burlôkar (XNX) (brod_area) (lokhas_drus_region)
+3568 = { #Burlôkar (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "dates"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3569 = { #Târsûs (XNX) (tarsa_area) (lokhas_drus_region)
+3569 = { #Târsûs (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3570 = { #Âlk Brôd (XNX) (brod_area) (lokhas_drus_region)
+3570 = { #Âlk Brôd (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3571 = { #Menars (XNX) (brod_area) (lokhas_drus_region)
+3571 = { #Menars (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "hills"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 23
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3572 = { #Sôgôl (XNX) (brod_area) (lokhas_drus_region)
+3572 = { #Sôgôl (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "gems"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3573 = { #Kirmóas (XNX) (brod_area) (lokhas_drus_region)
+3573 = { #Kirmóas (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 26
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3574 = { #Monars (XNX) (monars_area) (lokhas_drus_region)
+3574 = { #Monars (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3575 = { #Alk Brêakna (XNX) (brod_area) (lokhas_drus_region)
+3575 = { #Alk Brêakna (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 26
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3576 = { #Taûrsa (XNX) (tarsa_area) (lokhas_drus_region)
+3576 = { #Taûrsa (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 12
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3577 = { #Âlk Târsa (XNX) (tarsa_area) (lokhas_drus_region)
+3577 = { #Âlk Târsa (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-3578 = { #Hêa (XNX) (tarsa_area) (lokhas_drus_region)
+3578 = { #Hêa (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 3 }
 }
-3579 = { #Fayth (XNX) (brod_area) (lokhas_drus_region)
+3579 = { #Fayth (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "dates"
-	civilization_value = 23
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -37161,12 +37162,12 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3583 = { #Âlk Rûnk (XNX) (brod_area) (lokhas_drus_region)
+3583 = { #Âlk Rûnk (unowned) (brod_area) (lokhas_drus_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -37332,12 +37333,12 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3600 = { #Cleâc (XNX) (lokhas_area) (lokhas_drus_region)
+3600 = { #Cleâc (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "hills"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 30
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -37387,7 +37388,7 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3605 = { #Kala-Ogurk (YOP) (kythor_area) (anarike_region)
+3605 = { #Kala-Ogurk (YOP) (kythor_area) (yopi_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
@@ -37436,12 +37437,12 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3610 = { #Chaw (XRX) (lodenuly_area) (khailuza_region)
+3610 = { #Chaw (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -38586,12 +38587,12 @@
 	freemen = { amount = 5 }
 	slaves = { amount = 5 }
 }
-3721 = { #Drôdawac (XNX) (lokhas_area) (lokhas_drus_region)
+3721 = { #Drôdawac (unowned) (lokhas_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 23
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -40429,12 +40430,12 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-3905 = { #Tsayark (XNX) (monars_area) (lokhas_drus_region)
+3905 = { #Tsayark (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -40451,12 +40452,12 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3907 = { #Nharôllas (XNX) (tarsa_area) (lokhas_drus_region)
+3907 = { #Nharôllas (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -40897,7 +40898,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3949 = { #Agrisia (XPX) (lenian_area) (ralian_region)
+3949 = { #Agrisia (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -40908,7 +40909,7 @@
 	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
-3950 = { #Femani (XPX) (lenian_area) (ralian_region)
+3950 = { #Femani (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -40919,7 +40920,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3951 = { #Clêashan (XPX) (lenian_area) (ralian_region)
+3951 = { #Clêashan (XPX) (kendarka_area) (ralian_region)
 	terrain = "hills"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -40930,7 +40931,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3952 = { #Rúdurs (XPX) (lenian_area) (ralian_region)
+3952 = { #Rúdurs (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -40941,7 +40942,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3953 = { #Rálón (XPX) (lenian_area) (ralian_region)
+3953 = { #Rálón (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -40952,7 +40953,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3954 = { #K'zanar (XPX) (lenian_area) (ralian_region)
+3954 = { #K'zanar (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -40963,7 +40964,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3955 = { #Hême (XPX) (lenian_area) (ralian_region)
+3955 = { #Hême (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -40974,7 +40975,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3956 = { #Kasana (XPX) (lenian_area) (ralian_region)
+3956 = { #Kasana (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -40985,7 +40986,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3957 = { #Kolr (XPX) (lenian_area) (ralian_region)
+3957 = { #Kolr (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -40996,7 +40997,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3958 = { #Kaldr (XPX) (lenian_area) (ralian_region)
+3958 = { #Kaldr (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -41007,7 +41008,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3959 = { #K'zan (XPX) (lenian_area) (ralian_region)
+3959 = { #K'zan (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -41073,7 +41074,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3965 = { #Rálkhag (XSX) (kuiwian_area) (ralian_region)
+3965 = { #Rálkhag (XSX) (kuiwian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41084,7 +41085,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3966 = { #Unfe (XSX) (kuiwian_area) (ralian_region)
+3966 = { #Unfe (XSX) (kuiwian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41194,7 +41195,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3976 = { #Rursh (XSX) (kabian_area) (ralian_region)
+3976 = { #Rursh (XSX) (kabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41205,7 +41206,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3977 = { #Klia (XSX) (kabian_area) (ralian_region)
+3977 = { #Klia (XSX) (kabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41216,7 +41217,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3978 = { #Tanirô (XSX) (kabian_area) (ralian_region)
+3978 = { #Tanirô (XSX) (kabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41227,7 +41228,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3979 = { #Ráler (XSX) (kabian_area) (ralian_region)
+3979 = { #Ráler (XSX) (kabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41238,7 +41239,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3980 = { #Mankayar (XSX) (kabian_area) (ralian_region)
+3980 = { #Mankayar (XSX) (kabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41249,7 +41250,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3981 = { #Kuranian (XSX) (kabian_area) (ralian_region)
+3981 = { #Kuranian (XSX) (kabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41260,7 +41261,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3982 = { #Mork (XSX) (kabian_area) (ralian_region)
+3982 = { #Mork (XSX) (kabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41271,7 +41272,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3983 = { #Logôguvi (XSX) (kabian_area) (ralian_region)
+3983 = { #Logôguvi (XSX) (kabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41282,7 +41283,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3984 = { #Tanakhae (XSX) (kabian_area) (ralian_region)
+3984 = { #Tanakhae (XSX) (kabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41293,7 +41294,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3985 = { #Porotûl (XSX) (kuiwian_area) (ralian_region)
+3985 = { #Porotûl (XSX) (kuiwian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41304,7 +41305,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3986 = { #Símani (XSX) (kuiwian_area) (ralian_region)
+3986 = { #Símani (XSX) (kuiwian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41315,7 +41316,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3987 = { #Diro (XSX) (kuiwian_area) (ralian_region)
+3987 = { #Diro (XSX) (kuiwian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41326,7 +41327,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3988 = { #Vaya (XSX) (klokabian_area) (ralian_region)
+3988 = { #Vaya (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41337,7 +41338,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3989 = { #Nífen (XSX) (klokabian_area) (ralian_region)
+3989 = { #Nífen (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41348,7 +41349,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3990 = { #Síenibit (XSX) (klokabian_area) (ralian_region)
+3990 = { #Síenibit (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41359,7 +41360,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3991 = { #Ohar (XSX) (klokabian_area) (ralian_region)
+3991 = { #Ohar (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41370,7 +41371,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3992 = { #K'zane (XSX) (klokabian_area) (ralian_region)
+3992 = { #K'zane (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41381,7 +41382,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3993 = { #Goris (XSX) (klokabian_area) (ralian_region)
+3993 = { #Goris (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41392,7 +41393,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3994 = { #Rûr (XSX) (klokabian_area) (ralian_region)
+3994 = { #Rûr (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41403,7 +41404,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3995 = { #Pantôlak (XSX) (klokabian_area) (ralian_region)
+3995 = { #Pantôlak (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41414,7 +41415,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3996 = { #Rûrilk (XSX) (klokabian_area) (ralian_region)
+3996 = { #Rûrilk (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41425,7 +41426,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3997 = { #Torolêal (XSX) (klokabian_area) (ralian_region)
+3997 = { #Torolêal (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41436,7 +41437,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-3998 = { #Pandor (XSX) (klokabian_area) (ralian_region)
+3998 = { #Pandor (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -41447,7 +41448,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-3999 = { #Molif (XSX) (bursian_area) (ralian_region)
+3999 = { #Molif (XSX) (bursian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -50359,117 +50360,194 @@
 	terrain = "coastal_terrain"
 	trade_goods = ""
 }
-4989 = { #Heren (XSX) (shen_area) (ubain_region)
+4989 = { #Heren (unowned) (shen_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-4990 = { #Ûsarg (XSX) (ubain_area) (ubain_region)
+4990 = { #Ûsarg (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-4991 = { #Nopa (XSX) (ubain_area) (ubain_region)
+4991 = { #Nopa (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-4992 = { #Búrse (XSX) (ubain_area) (ubain_region)
+4992 = { #Búrse (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-4993 = { #Wân (XSX) (shen_area) (ubain_region)
+4993 = { #Wân (unowned) (shen_area) (ubain_region)
 	terrain = "hills"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-4994 = { #Charkh (XSX) (ubain_area) (ubain_region)
+4994 = { #Charkh (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-4995 = { #Parkella (XSX) (shen_area) (ubain_region)
+4995 = { #Parkella (unowned) (shen_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-4996 = { #Drashuly (XSX) (ubain_area) (ubain_region)
+4996 = { #Drashuly (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-4997 = { #Ûshuppun (XSX) (shen_area) (ubain_region)
+4997 = { #Ûshuppun (unowned) (shen_area) (ubain_region)
 	terrain = "hills"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-4998 = { #Yuchan (XSX) (shen_area) (ubain_region)
+4998 = { #Yuchan (unowned) (shen_area) (ubain_region)
 	terrain = "mountain"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
+	civilization_value = 0
+	barbarian_power = 0
+	province_rank = "settlement"
+	tribesmen = { amount = 2 }
+	slaves = { amount = 1 }
+}
+4999 = { #Wânohain (unowned) (shen_area) (ubain_region)
+	terrain = "plains"
+	culture = "lenitani"
+	religion = "eastern_animism"
+	trade_goods = "wild_game"
+	civilization_value = 0
+	barbarian_power = 0
+	province_rank = "settlement"
+	tribesmen = { amount = 1 }
+	slaves = { amount = 1 }
+}
+5000 = { #Morsayr (XSX) (bursian_area) (lenitan_region)
+	terrain = "plains"
+	culture = "lenitani"
+	religion = "eastern_animism"
+	trade_goods = "wild_game"
+	civilization_value = 10
+	barbarian_power = 0
+	province_rank = "settlement"
+	tribesmen = { amount = 1 }
+	slaves = { amount = 1 }
+}
+5001 = { #Clitanta (XSX) (bursian_area) (lenitan_region)
+	terrain = "plains"
+	culture = "lenitani"
+	religion = "eastern_animism"
+	trade_goods = "wild_game"
+	civilization_value = 10
+	barbarian_power = 0
+	province_rank = "settlement"
+	tribesmen = { amount = 1 }
+	slaves = { amount = 1 }
+}
+5002 = { #Rúvianasi (XSX) (bursian_area) (lenitan_region)
+	terrain = "plains"
+	culture = "lenitani"
+	religion = "eastern_animism"
+	trade_goods = "wild_game"
+	civilization_value = 10
+	barbarian_power = 0
+	province_rank = "settlement"
+	tribesmen = { amount = 1 }
+	slaves = { amount = 1 }
+}
+5003 = { #Rúrsash (XSX) (bursian_area) (lenitan_region)
+	terrain = "plains"
+	culture = "lenitani"
+	religion = "eastern_animism"
+	trade_goods = "wild_game"
+	civilization_value = 10
+	barbarian_power = 0
+	province_rank = "settlement"
+	tribesmen = { amount = 1 }
+	slaves = { amount = 1 }
+}
+5004 = { #Buvianal (XSX) (bursian_area) (lenitan_region)
+	terrain = "plains"
+	culture = "lenitani"
+	religion = "eastern_animism"
+	trade_goods = "wild_game"
+	civilization_value = 10
+	barbarian_power = 0
+	province_rank = "settlement"
+	tribesmen = { amount = 1 }
+	slaves = { amount = 1 }
+}
+5005 = { #Sôka (XSX) (bursian_area) (lenitan_region)
+	terrain = "plains"
+	culture = "lenitani"
+	religion = "eastern_animism"
+	trade_goods = "wild_game"
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-4999 = { #Wânohain (XSX) (shen_area) (ubain_region)
+5006 = { #Kayaleâl (XSX) (bursian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -50480,7 +50558,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5000 = { #Morsayr (XSX) (bursian_area) (ralian_region)
+5007 = { #K'iar (XSX) (bursian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -50491,128 +50569,51 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5001 = { #Clitanta (XSX) (bursian_area) (ralian_region)
-	terrain = "plains"
-	culture = "lenitani"
-	religion = "eastern_animism"
-	trade_goods = "wild_game"
-	civilization_value = 10
-	barbarian_power = 0
-	province_rank = "settlement"
-	tribesmen = { amount = 1 }
-	slaves = { amount = 1 }
-}
-5002 = { #Rúvianasi (XSX) (bursian_area) (ralian_region)
-	terrain = "plains"
-	culture = "lenitani"
-	religion = "eastern_animism"
-	trade_goods = "wild_game"
-	civilization_value = 10
-	barbarian_power = 0
-	province_rank = "settlement"
-	tribesmen = { amount = 1 }
-	slaves = { amount = 1 }
-}
-5003 = { #Rúrsash (XSX) (bursian_area) (ralian_region)
-	terrain = "plains"
-	culture = "lenitani"
-	religion = "eastern_animism"
-	trade_goods = "wild_game"
-	civilization_value = 10
-	barbarian_power = 0
-	province_rank = "settlement"
-	tribesmen = { amount = 1 }
-	slaves = { amount = 1 }
-}
-5004 = { #Buvianal (XSX) (bursian_area) (ralian_region)
-	terrain = "plains"
-	culture = "lenitani"
-	religion = "eastern_animism"
-	trade_goods = "wild_game"
-	civilization_value = 10
-	barbarian_power = 0
-	province_rank = "settlement"
-	tribesmen = { amount = 1 }
-	slaves = { amount = 1 }
-}
-5005 = { #Sôka (XSX) (bursian_area) (ralian_region)
-	terrain = "plains"
-	culture = "lenitani"
-	religion = "eastern_animism"
-	trade_goods = "wild_game"
-	civilization_value = 10
-	barbarian_power = 0
-	province_rank = "settlement"
-	tribesmen = { amount = 2 }
-	slaves = { amount = 1 }
-}
-5006 = { #Kayaleâl (XSX) (bursian_area) (ralian_region)
-	terrain = "plains"
-	culture = "lenitani"
-	religion = "eastern_animism"
-	trade_goods = "wild_game"
-	civilization_value = 10
-	barbarian_power = 0
-	province_rank = "settlement"
-	tribesmen = { amount = 1 }
-	slaves = { amount = 1 }
-}
-5007 = { #K'iar (XSX) (bursian_area) (ralian_region)
-	terrain = "plains"
-	culture = "lenitani"
-	religion = "eastern_animism"
-	trade_goods = "wild_game"
-	civilization_value = 10
-	barbarian_power = 0
-	province_rank = "settlement"
-	tribesmen = { amount = 1 }
-	slaves = { amount = 1 }
-}
-5008 = { #Hogiae (XNX) (fenfenen_area) (ibav_region)
+5008 = { #Hogiae (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 12
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5009 = { #Kanae (XNX) (fenfenen_area) (ibav_region)
+5009 = { #Kanae (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 12
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5010 = { #Tífenalâ (XNX) (fenfenen_area) (ibav_region)
+5010 = { #Tífenalâ (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 11
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5011 = { #Rábenany (XNX) (fenfenen_area) (ibav_region)
+5011 = { #Rábenany (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-5012 = { #K'ian (XSX) (kabian_area) (ralian_region)
+5012 = { #K'ian (XSX) (kabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -50623,23 +50624,23 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5013 = { #Fenk (XNX) (fenfenen_area) (ibav_region)
+5013 = { #Fenk (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5014 = { #Káligôkh (XNX) (fenfenen_area) (ibav_region)
+5014 = { #Káligôkh (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -50993,62 +50994,62 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 3 }
 }
-5047 = { #Ruseva (XNX) (monars_area) (lokhas_drus_region)
+5047 = { #Ruseva (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 23
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5048 = { #Moag (XNX) (monars_area) (lokhas_drus_region)
+5048 = { #Moag (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5049 = { #Fullagrod (XNX) (monars_area) (lokhas_drus_region)
+5049 = { #Fullagrod (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5050 = { #Brûl Faliodukûm (XNX) (monars_area) (lokhas_drus_region)
+5050 = { #Brûl Faliodukûm (unowned) (monars_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5051 = { #Talk (XNX) (tarsa_area) (lokhas_drus_region)
+5051 = { #Talk (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5052 = { #Senal (XSX) (kuiwian_area) (ralian_region)
+5052 = { #Senal (XSX) (kuiwian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51059,12 +51060,12 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5053 = { #Ráb (XNX) (fenfenen_area) (ibav_region)
+5053 = { #Ráb (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -51081,45 +51082,45 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5055 = { #Ustad Bucol (XNX) (fenfenen_area) (ibav_region)
+5055 = { #Ustad Bucol (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5056 = { #Panyô (XNX) (fenfenen_area) (ibav_region)
+5056 = { #Panyô (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5057 = { #Nenyurrist (XNX) (fenfenen_area) (ibav_region)
+5057 = { #Nenyurrist (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5058 = { #Nenan (XNX) (fenfenen_area) (ibav_region)
+5058 = { #Nenan (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -51167,23 +51168,23 @@
 	freemen = { amount = 2 }
 	slaves = { amount = 3 }
 }
-5063 = { #Kohbehtô (XNX) (unwirnay_area) (shay_region)
+5063 = { #Kohbehtô (unowned) (unwirnay_area) (shay_region)
 	terrain = "mountain"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 12
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5064 = { #Klêa (XNX) (unwirnay_area) (shay_region)
+5064 = { #Klêa (unowned) (unwirnay_area) (shay_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 12
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -51234,7 +51235,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5069 = { #Arag-Rúrô (XSX) (kuiwian_area) (ralian_region)
+5069 = { #Arag-Rúrô (XSX) (kuiwian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51311,7 +51312,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5076 = { #Mohayris (XSX) (kendarka_area) (ralian_region)
+5076 = { #Mohayris (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51322,7 +51323,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5077 = { #Zyayarbi (XSX) (kendarka_area) (ralian_region)
+5077 = { #Zyayarbi (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	port_building = 1
@@ -51336,7 +51337,7 @@
 	tribesmen = { amount = 9 }
 	slaves = { amount = 3 }
 }
-5078 = { #Brakhayr (XSX) (kendarka_area) (ralian_region)
+5078 = { #Brakhayr (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51347,7 +51348,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5079 = { #Wallâwa (XSX) (klokabian_area) (ralian_region)
+5079 = { #Wallâwa (XSX) (klokabian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51358,7 +51359,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5080 = { #Dellôka (XSX) (kendarka_area) (ralian_region)
+5080 = { #Dellôka (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51369,7 +51370,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5081 = { #K'enekûl (XSX) (kendarka_area) (ralian_region)
+5081 = { #K'enekûl (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51380,7 +51381,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5082 = { #Cífe Humaya (XSX) (kendarka_area) (ralian_region)
+5082 = { #Cífe Humaya (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51391,7 +51392,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5083 = { #Hoisimanen (XSX) (kendarka_area) (ralian_region)
+5083 = { #Hoisimanen (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51402,7 +51403,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5084 = { #Buka (XSX) (kendarka_area) (ralian_region)
+5084 = { #Buka (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51413,7 +51414,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5085 = { #Eáyush (XSX) (kendarka_area) (ralian_region)
+5085 = { #Eáyush (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51435,7 +51436,7 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5087 = { #Fasenana (XSX) (kendarka_area) (ralian_region)
+5087 = { #Fasenana (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51468,7 +51469,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5090 = { #Caní Bûrtepe (XSX) (kuiwian_area) (ralian_region)
+5090 = { #Caní Bûrtepe (XSX) (kuiwian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -51688,210 +51689,210 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5110 = { #Sanâdû (XSX) (kuiburskad_area) (burskadekar_region)
+5110 = { #Sanâdû (unowned) (kuiburskad_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5111 = { #Bûrskadekdar (XSX) (kuiburskad_area) (burskadekar_region)
+5111 = { #Bûrskadekdar (unowned) (kuiburskad_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5112 = { #Nurilla (XSX) (kuiburskad_area) (burskadekar_region)
+5112 = { #Nurilla (unowned) (kuiburskad_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5113 = { #Alari (XSX) (kuiburskad_area) (burskadekar_region)
+5113 = { #Alari (unowned) (kuiburskad_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5114 = { #Gênik (XTX) (genan_area) (alduryaknar_region)
+5114 = { #Gênik (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5115 = { #Umar Âlliay (XTX) (genan_area) (alduryaknar_region)
+5115 = { #Umar Âlliay (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5116 = { #Odûbana (XTX) (genan_area) (alduryaknar_region)
+5116 = { #Odûbana (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5117 = { #Lûmar (XTX) (genan_area) (alduryaknar_region)
+5117 = { #Lûmar (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5118 = { #Kyndana (XTX) (genan_area) (alduryaknar_region)
+5118 = { #Kyndana (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5119 = { #Dôka Dait (XTX) (genan_area) (alduryaknar_region)
+5119 = { #Dôka Dait (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5120 = { #Alkannar (XTX) (genan_area) (alduryaknar_region)
+5120 = { #Alkannar (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5121 = { #Geres Thalia (XTX) (genan_area) (alduryaknar_region)
+5121 = { #Geres Thalia (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5122 = { #Lûrga (XTX) (genan_area) (alduryaknar_region)
+5122 = { #Lûrga (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5123 = { #Oril (XTX) (genan_area) (alduryaknar_region)
+5123 = { #Oril (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5124 = { #Denard (XTX) (genan_area) (alduryaknar_region)
+5124 = { #Denard (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5125 = { #Társya (XTX) (thirganay_area) (alduryaknar_region)
+5125 = { #Társya (unowned) (thirganay_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5126 = { #Neknarg (XTX) (genan_area) (alduryaknar_region)
+5126 = { #Neknarg (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5127 = { #Tádelargui (XTX) (thirganay_area) (alduryaknar_region)
+5127 = { #Tádelargui (unowned) (thirganay_area) (alduryaknar_region)
 	terrain = "hills"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5128 = { #Krarara (XTX) (thirganay_area) (alduryaknar_region)
+5128 = { #Krarara (unowned) (thirganay_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -51930,12 +51931,12 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5132 = { #Kharuirana (XTX) (thirganay_area) (alduryaknar_region)
+5132 = { #Kharuirana (unowned) (thirganay_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -51974,23 +51975,23 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5136 = { #Aenada Kuzhi (XNX) (fenfenen_area) (ibav_region)
+5136 = { #Aenada Kuzhi (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5137 = { #Bay Acha (XNX) (fenfenen_area) (ibav_region)
+5137 = { #Bay Acha (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -52062,12 +52063,12 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5144 = { #Barm (XTX) (thirganay_area) (alduryaknar_region)
+5144 = { #Barm (unowned) (thirganay_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -52084,23 +52085,23 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5146 = { #Bada (XTX) (genan_area) (alduryaknar_region)
+5146 = { #Bada (unowned) (genan_area) (alduryaknar_region)
 	terrain = "plains"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5147 = { #Lûr (XSX) (kuiburskad_area) (burskadekar_region)
+5147 = { #Lûr (unowned) (kuiburskad_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -52150,34 +52151,34 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5152 = { #Sênic (XNX) (orara_resu_area) (ibav_region)
+5152 = { #Sênic (unowned) (orara_resu_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5153 = { #Thaní (XNX) (orara_resu_area) (ibav_region)
+5153 = { #Thaní (unowned) (orara_resu_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5154 = { #Dûrgalada (XNX) (orara_resu_area) (ibav_region)
+5154 = { #Dûrgalada (unowned) (orara_resu_area) (ibav_region)
 	terrain = "hills"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -52205,34 +52206,34 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5157 = { #Aesy (XNX) (orara_resu_area) (ibav_region)
+5157 = { #Aesy (unowned) (orara_resu_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 12
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5158 = { #Tîfal (XNX) (orara_resu_area) (ibav_region)
+5158 = { #Tîfal (unowned) (orara_resu_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 11
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-5159 = { #Vaz-Ly (XNX) (orara_resu_area) (ibav_region)
+5159 = { #Vaz-Ly (unowned) (orara_resu_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -52249,12 +52250,12 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 2 }
 }
-5161 = { #Dedê (XNX) (orara_resu_area) (ibav_region)
+5161 = { #Dedê (unowned) (orara_resu_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -52304,23 +52305,23 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5166 = { #Sâdûrm (XSX) (kuiburskad_area) (burskadekar_region)
+5166 = { #Sâdûrm (unowned) (kuiburskad_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5167 = { #Vekingôr (XSX) (kuiburskad_area) (burskadekar_region)
+5167 = { #Vekingôr (unowned) (kuiburskad_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -52465,34 +52466,34 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5181 = { #Gorana (XSX) (kuiburskad_area) (burskadekar_region)
+5181 = { #Gorana (unowned) (kuiburskad_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5182 = { #Rábark (XSX) (kuiburskad_area) (burskadekar_region)
+5182 = { #Rábark (unowned) (kuiburskad_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5183 = { #Motayari (XSX) (kuiburskad_area) (burskadekar_region)
+5183 = { #Motayari (unowned) (kuiburskad_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -52520,12 +52521,12 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5186 = { #Nifemónd (XNX) (orara_resu_area) (ibav_region)
+5186 = { #Nifemónd (unowned) (orara_resu_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -53150,12 +53151,12 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5244 = { #Porodrî (XSX) (iendiar_area) (burskadekar_region)
+5244 = { #Porodrî (unowned) (iendiar_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -53172,12 +53173,12 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5246 = { #Warlkon (XSX) (iendiar_area) (burskadekar_region)
+5246 = { #Warlkon (unowned) (iendiar_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -53857,12 +53858,12 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5316 = { #Khoran (XNX) (tarsa_area) (lokhas_drus_region)
+5316 = { #Khoran (unowned) (tarsa_area) (lokhas_drus_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 24
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -54032,12 +54033,12 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5335 = { #Rálel (XNX) (orara_resu_area) (ibav_region)
+5335 = { #Rálel (unowned) (orara_resu_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -54144,12 +54145,12 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5347 = { #Nalronôrth (XRX) (lodenuly_area) (khailuza_region)
+5347 = { #Nalronôrth (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 15
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -54164,18 +54165,18 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5349 = { #Nehaved (XRX) (lodenuly_area) (khailuza_region)
+5349 = { #Nehaved (unowned) (lodenuly_area) (khailuza_region)
 	terrain = "plains"
 	culture = "yopi"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 11
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5350 = { #Leneníma (XSX) (bursian_area) (ralian_region)
+5350 = { #Leneníma (XSX) (bursian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -54186,7 +54187,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5351 = { #Tshash (XSX) (bursian_area) (ralian_region)
+5351 = { #Tshash (XSX) (bursian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -54197,45 +54198,45 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5352 = { #Awih (XSX) (aeda_area) (ubain_region)
+5352 = { #Awih (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5353 = { #Yeli (XSX) (aeda_area) (ubain_region)
+5353 = { #Yeli (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5354 = { #Modia (XSX) (iendiar_area) (burskadekar_region)
+5354 = { #Modia (unowned) (iendiar_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5355 = { #Tarlô (XSX) (aeda_area) (ubain_region)
+5355 = { #Tarlô (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -54337,12 +54338,12 @@
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5365 = { #Ohlkol (XSX) (aeda_area) (ubain_region)
+5365 = { #Ohlkol (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -54418,12 +54419,12 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 }
-5373 = { #Tanav (XSX) (aeda_area) (ubain_region)
+5373 = { #Tanav (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -54486,23 +54487,23 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5380 = { #Rutane'mu (XSX) (aeda_area) (ubain_region)
+5380 = { #Rutane'mu (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5381 = { #Kábena (XSX) (aeda_area) (ubain_region)
+5381 = { #Kábena (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -54711,34 +54712,34 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5403 = { #Hemor (XSX) (aeda_area) (ubain_region)
+5403 = { #Hemor (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5404 = { #Honorli (XSX) (aeda_area) (ubain_region)
+5404 = { #Honorli (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5405 = { #Yemash (XSX) (aeda_area) (ubain_region)
+5405 = { #Yemash (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -54753,7 +54754,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5407 = { #Kan (XSX) (kendarka_area) (ralian_region)
+5407 = { #Kan (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -54764,7 +54765,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5408 = { #Hêmoriakank (XSX) (kendarka_area) (ralian_region)
+5408 = { #Hêmoriakank (XSX) (lenian_area) (lenitan_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
@@ -54833,12 +54834,12 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5415 = { #Taco (XSX) (iendiar_area) (burskadekar_region)
+5415 = { #Taco (unowned) (iendiar_area) (burskadekar_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -54865,100 +54866,100 @@
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5418 = { #Gorok (XSX) (ubain_area) (ubain_region)
+5418 = { #Gorok (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5419 = { #Nonoro (XSX) (ubain_area) (ubain_region)
+5419 = { #Nonoro (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5420 = { #Karge (XSX) (ubain_area) (ubain_region)
+5420 = { #Karge (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5421 = { #Shutser (XSX) (ubain_area) (ubain_region)
+5421 = { #Shutser (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5422 = { #Warthuyal (XNX) (thiwara_area) (ibav_region)
+5422 = { #Warthuyal (unowned) (thiwara_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 12
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5423 = { #Thyamar (XNX) (thiwara_area) (ibav_region)
+5423 = { #Thyamar (unowned) (thiwara_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 13
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5424 = { #Sêda (XNX) (thiwara_area) (ibav_region)
+5424 = { #Sêda (unowned) (thiwara_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5425 = { #Dishagal (XNX) (thiwara_area) (ibav_region)
+5425 = { #Dishagal (unowned) (thiwara_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5426 = { #Bran (XNX) (thiwara_area) (ibav_region)
+5426 = { #Bran (unowned) (thiwara_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -54975,12 +54976,12 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5428 = { #Quasha (XSX) (aeda_area) (ubain_region)
+5428 = { #Quasha (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -55073,51 +55074,51 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5438 = { #Eratanth (XNX) (thiwara_area) (ibav_region)
+5438 = { #Eratanth (unowned) (thiwara_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5439 = { #Mod Niali (XNX) (thiwara_area) (ibav_region)
+5439 = { #Mod Niali (unowned) (thiwara_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5440 = { #Horlsan (XNX) (orara_resu_area) (ibav_region)
+5440 = { #Horlsan (unowned) (orara_resu_area) (ibav_region)
 	terrain = "plains"
 	culture = "shayna"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5441 = { #Claikoriyo (XSX) (aeda_area) (ubain_region)
+5441 = { #Claikoriyo (unowned) (aeda_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5442 = { #Arolôka (XPX) (lenian_area) (ralian_region)
+5442 = { #Arolôka (XPX) (kendarka_area) (ralian_region)
 	terrain = "plains"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -55353,111 +55354,111 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5468 = { #Wils (XSX) (shen_area) (ubain_region)
+5468 = { #Wils (unowned) (shen_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5469 = { #Kanyol (XSX) (shen_area) (ubain_region)
+5469 = { #Kanyol (unowned) (shen_area) (ubain_region)
 	terrain = "mountain"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5470 = { #Chumekil (XSX) (shen_area) (ubain_region)
+5470 = { #Chumekil (unowned) (shen_area) (ubain_region)
 	terrain = "hills"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5471 = { #Haianíms (XSX) (shen_area) (ubain_region)
+5471 = { #Haianíms (unowned) (shen_area) (ubain_region)
 	terrain = "mountain"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5472 = { #Shên-Ubatya (XSX) (shen_area) (ubain_region)
+5472 = { #Shên-Ubatya (unowned) (shen_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5473 = { #Wia (XSX) (ubain_area) (ubain_region)
+5473 = { #Wia (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5474 = { #Topara (XSX) (ubain_area) (ubain_region)
+5474 = { #Topara (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5475 = { #Siaindén (XSX) (ubain_area) (ubain_region)
+5475 = { #Siaindén (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5476 = { #Mutens (XSX) (ubain_area) (ubain_region)
+5476 = { #Mutens (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 	slaves = { amount = 1 }
 }
-5477 = { #Kajaumal (XSX) (ubain_area) (ubain_region)
+5477 = { #Kajaumal (unowned) (ubain_area) (ubain_region)
 	terrain = "plains"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 10
+	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }

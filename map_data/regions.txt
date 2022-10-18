@@ -652,8 +652,6 @@ khailuza_region = {
 	areas = {
 		khy_area
 		lodenuly_area
-		bulkhyades_area
-		ammu_baj_area
 		vag_area
 		klyan_area
 	}
@@ -664,7 +662,8 @@ anarike_region = {
 		ishto_area
 		ushnad_area
 		kris_area
-		kythor_area
+		bulkhyades_area
+		ammu_baj_area
 	}
 }
 
@@ -772,7 +771,7 @@ yopi_region = {
 		yoyoyopo_area
 		kodya_area
 		sunum_area
-		lomeanor_area
+		kythor_area
 	}
 }
 
@@ -781,6 +780,7 @@ nikkea_region = {
 		kilwa_area
 		balizar_area
 		lynir_area
+		lomeanor_area
 	}
 }
 
@@ -818,6 +818,11 @@ ralian_region = {
 		ruartar_area
 		kendarka_area
 		kankanian_area
+	}
+}
+
+lenitan_region = {
+	areas = {
 		kuiwian_area
 		bursian_area
 		kabian_area

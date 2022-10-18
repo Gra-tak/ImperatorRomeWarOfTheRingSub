@@ -18,3 +18,11 @@ protectorate_forced_into_fief = {
 protectorate_forced_into_fief_rangers = {
 	global_nobles_happyness = -0.2
 }
+
+lotr_civilized_colonization = {
+  #postive part of this effect will be done via on_effect
+  #nobles are alwats free, slave cannot colonize
+  citizen_move_cost_modifier = 3
+  freemen_move_cost_modifier = 3
+  tribesmen_move_cost_modifier = 3
+}
