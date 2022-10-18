@@ -2109,3 +2109,5 @@
  protectorate_forced_into_fief_opinion:0 "Former Protectorate forced into Fief"
  protectorate_forced_into_fief_rangers:0 "Forced former Protectorates into Fiefs"
  desc_protectorate_forced_into_fief_rangers:0 "We have forced our former protectorates to contribute to our wars directly. Our nobles are very unhappy about us having broken our promise of protection."
+ lotr_ancient_glory:0 "Ancient Glory"
+ desc_lotr_ancient_glory:0 "The golden eras of our species all lie long in the past. Our civilization is still considered unrivaled, but it becomes harder with every year to keep this up in a changing Middle-earth. This modifier will be reduced by 0.2% every year until it vanishes after a century."

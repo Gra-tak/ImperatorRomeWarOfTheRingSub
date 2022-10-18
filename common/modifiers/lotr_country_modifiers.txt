@@ -26,3 +26,7 @@ lotr_civilized_colonization = {
   freemen_move_cost_modifier = 3
   tribesmen_move_cost_modifier = 3
 }
+
+lotr_ancient_glory = {
+  country_civilization_value = 0.2
+}

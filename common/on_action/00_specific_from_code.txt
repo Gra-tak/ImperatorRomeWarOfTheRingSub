@@ -1211,6 +1211,24 @@ on_game_initialized = {
 		every_owned_province = {
 			set_racial_terrain_modifiers = yes
 		}
+		if = {
+			limit = {
+				OR = {
+					country_culture_group = teleri_group
+					country_culture_group = noldor_group
+					country_culture_group = dwarf_group
+				}
+			}
+			set_variable = {
+				name = lotr_ancient_glory_val
+				value = 100
+			}
+			add_country_modifier_stack = {
+				MOD = lotr_ancient_glory
+				DUR = 457
+				NUM = var:lotr_ancient_glory_val
+			}
+		}
 		### Other ###
 		au_basic_setup = yes
 		if = {
