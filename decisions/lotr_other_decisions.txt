@@ -95,6 +95,7 @@
 			}
 		}
 		allow = {
+			is_ai = no
 		}
 		effect = {
 			every_subject = {

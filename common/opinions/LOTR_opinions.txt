@@ -40,7 +40,7 @@ lotr_opinion_reinforced = {
 }
 
 protectorate_forced_into_fief_opinion = {
-	value = 200
+	value = -200
 	yearly_decay = 4
 }
 
