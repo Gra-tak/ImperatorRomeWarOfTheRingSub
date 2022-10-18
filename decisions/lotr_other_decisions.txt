@@ -84,6 +84,47 @@
 			}
 		}
 	}
+	lotr_force_ranger_subjects_decision = {
+		potential = {
+			OR = {
+				tag = ARN
+				tag = CAR
+			}
+			any_subject = {
+				is_subject_type = ranger_protectorate
+			}
+		}
+		allow = {
+		}
+		effect = {
+			every_subject = {
+				limit = {
+					is_subject_type = ranger_protectorate
+				}
+				ROOT = { 
+					hidden_effect = {
+						release_subject = PREV 
+					}
+					make_subject = {
+						target = PREV
+						type = ranger_fief
+					}
+				}
+				add_country_modifier = {
+					name = protectorate_forced_into_fief
+					duration = 7300
+				}
+				add_opinion = {
+					modifier = protectorate_forced_into_fief_opinion
+					target = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = protectorate_forced_into_fief_rangers
+				duration = 7300
+			}
+		}
+	}
 	lotr_satrapy_break_gondor_decision = {
 		potential = {
 			is_ai = no

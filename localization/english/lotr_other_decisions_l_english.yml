@@ -119,4 +119,6 @@
  lotr_config_events.1.move_all_foreign_pops_disable:0 "Stop auto enabling movement to vassals"
  lotr_config_events.1.move_all_foreign_pops.tt:0 "Enable movement to vassals for all different culture group non-integrated cultures (see culture descisions). Repeated monthly in case of new cultures."
  lotr_config_events.1.move_all_foreign_pops_disable.tt:0 "Stop enabling movement to vassals for all different culture group non-integrated cultures (see culture descisions). Cultures that are already enabled to be moved stay and would need to be disabled via culture descisions."
+ lotr_force_ranger_subjects_decision:0 "Force protectorates to participate in our wars"
+ lotr_force_ranger_subjects_decision_desc:0 "We have sworn to protect the people of what was Arnor in past times from any outside threads. It had been decided almost a millenia ago that this should be done without forcing them to participate in these fights, allowing them to prosper. Both our nobles and the people in these protectorates will be greatly upset if we break this promise, but it would greatly increase our numbers in future wars."
 

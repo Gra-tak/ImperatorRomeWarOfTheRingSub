@@ -39,6 +39,11 @@ lotr_opinion_reinforced = {
 	yearly_decay = 1
 }
 
+protectorate_forced_into_fief_opinion = {
+	value = 200
+	yearly_decay = 4
+}
+
 lotr_overlord_enemies_modifier = {
 	value = -120
 }

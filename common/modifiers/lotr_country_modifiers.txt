@@ -7,3 +7,14 @@ influenced_by_saruman = {
 	levy_size_multiplier = -0.45
 	loyalty_to_overlord = -200
 }
+
+protectorate_forced_into_fief = {
+	global_slaves_happyness = -0.1
+	global_tribesmen_happyness = -0.4
+	global_freemen_happyness = -0.4
+	global_citizen_happyness = -0.2
+}
+
+protectorate_forced_into_fief_rangers = {
+	global_nobles_happyness = -0.2
+}

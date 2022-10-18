@@ -2104,3 +2104,8 @@
  desc_other_dessert_modifier:0 "Our people is not very adapted to the live in these lands."
  forodwaith_arctic_modifier:0 "Forodwaith adaptation"
  desc_forodwaith_arctic_modifier:0 "Every single member of our people is well adapted in dealing with the coldness of these lands."
+ protectorate_forced_into_fief:0 "Former Protectorate forced into Fief"
+ desc_protectorate_forced_into_fief:0 "We have been forced to contribute to the wars of our overlord. Our people are very unhappy about this"
+ protectorate_forced_into_fief_opinion:0 "Former Protectorate forced into Fief"
+ protectorate_forced_into_fief_rangers:0 "Forced former Protectorates into Fiefs"
+ desc_protectorate_forced_into_fief_rangers:0 "We have forced our former protectorates to contribute to our wars directly. Our nobles are very unhappy about us having broken our promise of protection."
