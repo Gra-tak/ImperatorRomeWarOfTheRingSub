@@ -198,6 +198,7 @@ ranger_protectorate = { #Ranger of the north mechanics
 			country_culture_group = vanyar_group
 			country_culture_group = orcs_group
 		}
+		religion = iluvatarism
 		exists = scope:future_overlord
 		scope:future_overlord = {
 			religion = iluvatarism
@@ -307,6 +308,7 @@ ranger_fief = { #Ranger of the north mechanics
 			country_culture_group = vanyar_group
 			country_culture_group = orcs_group
 		}
+		religion = iluvatarism
 		exists = scope:future_overlord
 		scope:future_overlord = {
 			religion = iluvatarism
