@@ -33,7 +33,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "olive"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 8 }
@@ -52,7 +52,7 @@
 	culture = "corsair"
 	religion = "melkorism"
 	trade_goods = "cattle"
-	civilization_value = 75
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -63,7 +63,7 @@
 	culture = "corsair"
 	religion = "melkorism"
 	trade_goods = "papyrus"
-	civilization_value = 75
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -74,7 +74,7 @@
 	culture = "corsair"
 	religion = "melkorism"
 	trade_goods = "dates"
-	civilization_value = 75
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -107,7 +107,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "stone"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -118,7 +118,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "fish"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -129,7 +129,7 @@
 	culture = "corsair"
 	religion = "melkorism"
 	trade_goods = "papyrus"
-	civilization_value = 75
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -140,7 +140,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "dye"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -151,7 +151,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "spices"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -162,7 +162,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "wine"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -173,7 +173,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "horses"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -184,7 +184,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "hemp"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -204,7 +204,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "dates"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -226,7 +226,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "olive"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -237,7 +237,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "olive"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -248,7 +248,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "cloth"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -378,7 +378,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "wood"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -389,7 +389,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "iron"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 5 }
@@ -522,7 +522,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "wine"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -582,7 +582,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "dates"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -593,7 +593,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "wood"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -604,7 +604,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "olive"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -1012,7 +1012,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "incense"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -1482,7 +1482,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "dye"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 7 }
@@ -1493,7 +1493,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "papyrus"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 6 }
@@ -1504,7 +1504,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	citizen = { amount = 1 }
@@ -1527,7 +1527,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 6 }
@@ -1538,7 +1538,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -1549,7 +1549,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "fur"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -1578,7 +1578,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 7 }
@@ -1612,7 +1612,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 7 }
@@ -1623,7 +1623,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "fur"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 7 }
@@ -1634,7 +1634,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "silk"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 9 }
@@ -1644,7 +1644,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 8 }
@@ -1655,7 +1655,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -1666,7 +1666,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 7 }
@@ -1676,7 +1676,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 6 }
@@ -1696,7 +1696,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 7 }
@@ -1707,7 +1707,7 @@
 	culture = "blacklock"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -2018,7 +2018,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -2029,7 +2029,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -2040,7 +2040,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -2051,7 +2051,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -2062,7 +2062,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -2073,7 +2073,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -2084,7 +2084,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -2095,7 +2095,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -2107,7 +2107,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -2118,7 +2118,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -2140,7 +2140,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -2233,7 +2233,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -2254,7 +2254,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -2276,7 +2276,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -2287,7 +2287,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -2298,7 +2298,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -2501,7 +2501,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -2513,7 +2513,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -2524,7 +2524,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -2535,7 +2535,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -3513,7 +3513,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -3771,7 +3771,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -3793,7 +3793,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -3804,7 +3804,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -3898,7 +3898,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	citizen = { amount = 1 }
@@ -3910,7 +3910,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -3941,7 +3941,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -3952,7 +3952,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -3963,7 +3963,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 0
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -3974,7 +3974,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -3996,7 +3996,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -4007,7 +4007,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -4038,7 +4038,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -4071,7 +4071,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -4082,7 +4082,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "dye"
-	civilization_value = 0
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -4093,7 +4093,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 0
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -7676,7 +7676,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "dye"
-	civilization_value = 0
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -8324,7 +8324,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -9886,7 +9886,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -10374,7 +10374,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -10401,7 +10401,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -10421,7 +10421,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -10432,7 +10432,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -12428,7 +12428,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12470,7 +12470,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "papyrus"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -12481,7 +12481,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -12503,7 +12503,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12513,7 +12513,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12545,7 +12545,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12577,7 +12577,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12588,7 +12588,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12654,7 +12654,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12675,7 +12675,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12685,7 +12685,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 religion = "eastern_animism" }
@@ -12695,7 +12695,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -12708,7 +12708,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12718,7 +12718,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12776,7 +12776,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -12786,7 +12786,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -12797,7 +12797,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -12808,7 +12808,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "whale"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -12818,7 +12818,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -12828,7 +12828,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -12838,7 +12838,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13108,7 +13108,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13129,7 +13129,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13444,7 +13444,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "olive"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13455,7 +13455,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -13467,7 +13467,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13478,7 +13478,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -13489,7 +13489,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13500,7 +13500,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13511,7 +13511,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "olive"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13547,7 +13547,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -13558,7 +13558,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "glass"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 6 }
@@ -13582,7 +13582,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "papyrus"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13593,7 +13593,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13604,7 +13604,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13615,7 +13615,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13626,7 +13626,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -13637,7 +13637,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -13648,7 +13648,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13659,7 +13659,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13669,7 +13669,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "glass"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	port_building = 1
@@ -13694,7 +13694,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13760,7 +13760,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13771,7 +13771,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13795,7 +13795,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13805,7 +13805,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -13817,7 +13817,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13850,7 +13850,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -13862,7 +13862,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13873,7 +13873,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "leather"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13884,7 +13884,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13895,7 +13895,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13906,7 +13906,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13917,7 +13917,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13928,7 +13928,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -13939,7 +13939,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13950,7 +13950,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13961,7 +13961,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13972,7 +13972,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13983,7 +13983,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -13994,7 +13994,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "precious_metals"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14005,7 +14005,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14016,7 +14016,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14027,7 +14027,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14038,7 +14038,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14049,7 +14049,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14071,7 +14071,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14082,7 +14082,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14111,7 +14111,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -14148,7 +14148,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -14159,7 +14159,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "fur"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -14170,7 +14170,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -14181,7 +14181,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "gems"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -14192,7 +14192,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14203,7 +14203,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14214,7 +14214,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -14237,7 +14237,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -14258,7 +14258,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14269,7 +14269,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14280,7 +14280,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14291,7 +14291,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "marble"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -14303,7 +14303,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14314,7 +14314,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14325,7 +14325,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "precious_metals"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14336,7 +14336,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "leather"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14347,7 +14347,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14358,7 +14358,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14369,7 +14369,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14380,7 +14380,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -14403,7 +14403,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14414,7 +14414,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14425,7 +14425,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "whale"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 }
@@ -14434,7 +14434,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14445,7 +14445,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -14456,7 +14456,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "olive"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14467,7 +14467,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14489,7 +14489,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14500,7 +14500,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "leather"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14511,7 +14511,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14522,7 +14522,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14533,7 +14533,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14544,7 +14544,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14555,7 +14555,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14566,7 +14566,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14577,7 +14577,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14588,7 +14588,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 3 }
@@ -14598,7 +14598,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -14610,7 +14610,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14621,7 +14621,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14632,7 +14632,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14643,7 +14643,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14654,7 +14654,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14665,7 +14665,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14691,7 +14691,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 6 }
@@ -14702,7 +14702,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14713,7 +14713,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -14724,7 +14724,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14761,7 +14761,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -14772,7 +14772,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14783,7 +14783,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -14794,7 +14794,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 6 }
@@ -14805,7 +14805,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14816,7 +14816,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14827,7 +14827,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14838,7 +14838,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 5 }
@@ -14848,7 +14848,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14859,7 +14859,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14870,7 +14870,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -14881,7 +14881,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "marble"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14892,7 +14892,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14903,7 +14903,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14914,7 +14914,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -14926,7 +14926,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14937,7 +14937,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14948,7 +14948,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14959,7 +14959,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14970,7 +14970,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14981,7 +14981,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -14992,7 +14992,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15003,7 +15003,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15014,7 +15014,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "precious_metals"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	citizen = { amount = 2 }
@@ -15025,7 +15025,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -15036,7 +15036,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -15048,7 +15048,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -15059,7 +15059,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "incense"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15070,7 +15070,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15081,7 +15081,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15092,7 +15092,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -15103,7 +15103,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "dye"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -15114,7 +15114,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15143,7 +15143,7 @@
 	culture = "galadhrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 3 }
@@ -15172,7 +15172,7 @@
 	culture = "galadhrim"
 	religion = "iluvatarism"
 	trade_goods = "amber"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 3 }
@@ -15248,7 +15248,7 @@
 	culture = "galadhrim"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -15260,7 +15260,7 @@
 	culture = "galadhrim"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15271,7 +15271,7 @@
 	culture = "galadhrim"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -15283,7 +15283,7 @@
 	culture = "galadhrim"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15606,7 +15606,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15617,7 +15617,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15628,7 +15628,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15639,7 +15639,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15650,7 +15650,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15661,7 +15661,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15672,7 +15672,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15683,7 +15683,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15694,7 +15694,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15716,7 +15716,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "olive"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15727,7 +15727,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15738,7 +15738,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15749,7 +15749,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15771,7 +15771,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15826,7 +15826,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15837,7 +15837,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15848,7 +15848,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15859,7 +15859,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15870,7 +15870,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15881,7 +15881,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15892,7 +15892,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 4 }
@@ -15902,7 +15902,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -15914,7 +15914,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -15958,7 +15958,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15969,7 +15969,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15980,7 +15980,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -15991,7 +15991,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -16002,7 +16002,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -16866,7 +16866,7 @@
 	culture = "stoor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -16962,7 +16962,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -16973,7 +16973,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -17002,7 +17002,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -17032,7 +17032,7 @@
 	holy_site = "omen_elbereth"
 	religion = "iluvatarism"
 	trade_goods = "glass"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -17043,7 +17043,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -17054,7 +17054,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -17065,7 +17065,7 @@
 	culture = "stoor"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -17076,7 +17076,7 @@
 	culture = "stoor"
 	religion = "iluvatarism"
 	trade_goods = "pipeweed"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 }
@@ -17236,7 +17236,7 @@
 	culture = "breelander"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -17303,7 +17303,7 @@
 	culture = "rangers"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 12 }
@@ -17484,7 +17484,7 @@
 	culture = "rangers"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -17495,7 +17495,7 @@
 	culture = "rangers"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -17573,7 +17573,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 3 }
@@ -17866,7 +17866,7 @@
 	culture = "breelander"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -17877,7 +17877,7 @@
 	culture = "breelander"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -18142,7 +18142,7 @@
 	culture = "rangers"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -18163,7 +18163,7 @@
 	culture = "breelander"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -18368,7 +18368,7 @@
 	culture = "rangers"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -18434,7 +18434,7 @@
 	culture = "imladris"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -18453,7 +18453,7 @@
 	culture = "imladris"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -18619,7 +18619,7 @@
 	culture = "imladris"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -18629,7 +18629,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	citizen = { amount = 1 }
@@ -18746,7 +18746,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -18842,7 +18842,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -18862,7 +18862,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	nobles = { amount = 1 }
@@ -18875,7 +18875,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -18939,7 +18939,7 @@
 	culture = "breelander"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -18950,7 +18950,7 @@
 	culture = "breelander"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -19133,7 +19133,7 @@
 	religion = "iluvatarism"
 	holy_site = "omen_osse"
 	trade_goods = "stone"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	nobles = { amount = 1 }
@@ -19155,7 +19155,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -19165,7 +19165,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -19202,7 +19202,7 @@
 	culture = "breelander"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 4 }
@@ -19260,7 +19260,7 @@
 	culture = "stoor"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -19921,7 +19921,7 @@
 	culture = "imladris"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -20104,7 +20104,7 @@
 	culture = "imladris"
 	religion = "iluvatarism"
 	trade_goods = "marble"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -20265,7 +20265,7 @@
 	culture = "stoor"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -20276,7 +20276,7 @@
 	culture = "stoor"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -20287,7 +20287,7 @@
 	culture = "stoor"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -20307,7 +20307,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -20432,7 +20432,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -20474,7 +20474,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -20485,7 +20485,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "steppe_horses"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -20496,7 +20496,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -20507,7 +20507,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -20571,7 +20571,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 8 }
@@ -21147,7 +21147,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -21168,7 +21168,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -21959,7 +21959,7 @@
 	culture = "dorwinrim"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -21990,7 +21990,7 @@
 	culture = "imladris"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -22000,7 +22000,7 @@
 	culture = "imladris"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -22010,7 +22010,7 @@
 	culture = "imladris"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -22031,7 +22031,7 @@
 	culture = "lesser_dunedain"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -22042,7 +22042,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -22467,7 +22467,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -22477,7 +22477,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -22561,7 +22561,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -22572,7 +22572,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -22583,7 +22583,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -22594,7 +22594,7 @@
 	culture = "stoor"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -22605,7 +22605,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "leather"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -22616,7 +22616,7 @@
 	culture = "stoor"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -22627,7 +22627,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "pipeweed"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -22752,7 +22752,7 @@
 	culture = "rangers"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23041,7 +23041,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23115,7 +23115,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -23125,7 +23125,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "marble"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -23135,7 +23135,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -23145,7 +23145,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -23156,7 +23156,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -23167,7 +23167,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -23206,7 +23206,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -23216,7 +23216,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -23226,7 +23226,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23237,7 +23237,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23248,7 +23248,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23273,7 +23273,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "grain"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23284,7 +23284,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23295,7 +23295,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23328,7 +23328,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23339,7 +23339,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23915,7 +23915,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23937,7 +23937,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23959,7 +23959,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -23981,7 +23981,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -24524,7 +24524,7 @@
 	culture = "breelander"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 45
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -25096,7 +25096,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "amber"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25126,7 +25126,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "amber"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25136,7 +25136,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25164,7 +25164,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25221,7 +25221,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25249,7 +25249,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "dye"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25259,7 +25259,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25270,7 +25270,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25280,7 +25280,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25313,7 +25313,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "steppe_horses"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25323,7 +25323,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25352,7 +25352,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25362,7 +25362,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25372,7 +25372,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25383,7 +25383,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25429,7 +25429,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25439,7 +25439,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25449,7 +25449,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25468,7 +25468,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "silk"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25478,7 +25478,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25488,7 +25488,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25510,7 +25510,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25521,7 +25521,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25531,7 +25531,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25551,7 +25551,7 @@
 	culture = "firebeard"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	citizen = { amount = 1 }
@@ -25581,7 +25581,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "steppe_horses"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25592,7 +25592,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25602,7 +25602,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25612,7 +25612,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "earthware"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25622,7 +25622,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25633,7 +25633,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "leather"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25644,7 +25644,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25655,7 +25655,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25666,7 +25666,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25676,7 +25676,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25687,7 +25687,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25698,7 +25698,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "amber"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25708,7 +25708,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25718,7 +25718,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25728,7 +25728,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "dye"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25738,7 +25738,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	nobles = { amount = 1 }
@@ -25751,7 +25751,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25761,7 +25761,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25771,7 +25771,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25781,7 +25781,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25791,7 +25791,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -25802,7 +25802,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -25813,7 +25813,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "amber"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -25824,7 +25824,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25834,7 +25834,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25844,7 +25844,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25854,7 +25854,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "amber"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25864,7 +25864,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -25874,7 +25874,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 4 }
@@ -25893,7 +25893,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25903,7 +25903,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "leather"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25931,7 +25931,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25942,7 +25942,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25952,7 +25952,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "horses"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25962,7 +25962,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25972,7 +25972,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -25991,7 +25991,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -26064,7 +26064,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -26083,7 +26083,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "incense"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -26112,7 +26112,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -26123,7 +26123,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "salt"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -26152,7 +26152,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "vegetables"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -26184,7 +26184,7 @@
 	culture = "broadbeam"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -26249,7 +26249,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -26307,7 +26307,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -26327,7 +26327,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "iron"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -26338,7 +26338,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -26457,7 +26457,7 @@
 	culture = "sindar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
-	civilization_value = 0
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 }
@@ -26478,7 +26478,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -27250,7 +27250,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "hemp"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -27620,7 +27620,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "fur"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -27631,7 +27631,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "silk"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -27643,7 +27643,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 3 }
@@ -27681,7 +27681,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 3 }
@@ -27692,7 +27692,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "fur"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -27703,7 +27703,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -27715,7 +27715,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "amber"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -27728,7 +27728,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "fur"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
@@ -27741,7 +27741,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wood"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -27752,7 +27752,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 4 }
@@ -27763,7 +27763,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -27775,7 +27775,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "fur"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -27786,7 +27786,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "fur"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -27807,7 +27807,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -28157,7 +28157,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "amber"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 3 }
@@ -28168,7 +28168,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "honey"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -28252,7 +28252,7 @@
 	culture = "broadbeam"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -34614,7 +34614,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "wood"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -34625,7 +34625,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "fish"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -34636,7 +34636,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "wood"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -34647,7 +34647,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "elephants"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -34658,7 +34658,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "wood"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -34669,7 +34669,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "cloth"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -38040,7 +38040,7 @@
 	culture = "dolamroth"
 	religion = "iluvatarism"
 	trade_goods = "fish"
-	civilization_value = 70
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 }
@@ -38060,7 +38060,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -38071,7 +38071,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -38100,7 +38100,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 6 }
@@ -38112,7 +38112,7 @@
 	religion = "iluvatarism"
 	holy_site = "omen_aule"
 	trade_goods = "iron"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -38123,7 +38123,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -38749,7 +38749,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "woad"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	slaves = { amount = 2 }
@@ -38760,7 +38760,7 @@
 	religion = "iluvatarism"
 	holy_site = "omen_sevenfathers"
 	trade_goods = "iron"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	citizen = { amount = 1 }
@@ -39406,7 +39406,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "whale"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 }
@@ -39424,7 +39424,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -39434,7 +39434,7 @@
 	culture = "lindon"
 	religion = "iluvatarism"
 	trade_goods = "incense"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 }
@@ -39452,7 +39452,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "stone"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -39463,7 +39463,7 @@
 	culture = "sindar"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -39474,7 +39474,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "wine"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 }
@@ -39483,7 +39483,7 @@
 	culture = "harfoot"
 	religion = "iluvatarism"
 	trade_goods = "cloth"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -39562,7 +39562,7 @@
 	culture = "silvan"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 20
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -39573,7 +39573,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 0
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -39815,7 +39815,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -39846,7 +39846,7 @@
 	culture = "galadhrim"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 70
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -39970,7 +39970,7 @@
 	culture = "gondorian"
 	religion = "iluvatarism"
 	trade_goods = "papyrus"
-	civilization_value = 60
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 1 }
@@ -40606,7 +40606,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -40617,7 +40617,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 3 }
@@ -40648,7 +40648,7 @@
 	culture = "longbeard"
 	religion = "iluvatarism"
 	trade_goods = "cattle"
-	civilization_value = 75
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -40892,7 +40892,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -40903,7 +40903,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 3 }
@@ -40914,7 +40914,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -40925,7 +40925,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -40936,7 +40936,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -40947,7 +40947,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -40958,7 +40958,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -40969,7 +40969,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -40980,7 +40980,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -40991,7 +40991,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -41002,7 +41002,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -41013,7 +41013,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -41024,7 +41024,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 3 }
@@ -41035,7 +41035,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -41046,7 +41046,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -41057,7 +41057,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 3 }
@@ -41068,7 +41068,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -41101,7 +41101,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -41112,7 +41112,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -41123,7 +41123,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -41134,7 +41134,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -41145,7 +41145,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -41156,7 +41156,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -41167,7 +41167,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -41178,7 +41178,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -41189,7 +41189,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -50651,7 +50651,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 3 }
@@ -50662,7 +50662,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -50673,7 +50673,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -50684,7 +50684,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -50695,7 +50695,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -50706,7 +50706,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -50717,7 +50717,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -50728,7 +50728,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -50757,7 +50757,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 5 }
@@ -50768,7 +50768,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -50779,7 +50779,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -50790,7 +50790,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -50801,7 +50801,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -50812,7 +50812,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -50823,7 +50823,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -50834,7 +50834,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -50845,7 +50845,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -50856,7 +50856,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -50867,7 +50867,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -50878,7 +50878,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -51151,7 +51151,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -51209,7 +51209,7 @@
 	culture = "banadunaim"
 	religion = "melkorism"
 	trade_goods = "wild_game"
-	civilization_value = 50
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 5 }
@@ -51229,7 +51229,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -51251,7 +51251,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -51262,7 +51262,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -51273,7 +51273,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -51284,7 +51284,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -51295,7 +51295,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -51306,7 +51306,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -51430,7 +51430,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
@@ -51452,7 +51452,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -51463,7 +51463,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
@@ -53252,7 +53252,7 @@
 	culture = "lakemen"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 40
+	civilization_value = 35
 	barbarian_power = 0
 	province_rank = "settlement"
 	freemen = { amount = 2 }
@@ -55123,7 +55123,7 @@
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 25
+	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
