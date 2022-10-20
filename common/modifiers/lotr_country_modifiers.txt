@@ -21,10 +21,10 @@ protectorate_forced_into_fief_rangers = {
 
 lotr_civilized_colonization = {
   #postive part of this effect will be done via on_effect
-  #nobles are alwats free, slave cannot colonize
-  citizen_move_cost_modifier = 3
-  freemen_move_cost_modifier = 3
-  tribesmen_move_cost_modifier = 3
+  #colonization cost increased to 50 (freeman citizen) and 25 (tribesmen) nobles are alwats free, slave cannot colonize
+  citizen_move_cost_modifier = 4
+  freemen_move_cost_modifier = 4
+  tribesmen_move_cost_modifier = 4
 }
 
 lotr_ancient_glory = {

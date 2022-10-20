@@ -1228,6 +1228,10 @@ on_game_initialized = {
 				DUR = 457
 				NUM = var:lotr_ancient_glory_val
 			}
+			add_country_modifier = {
+				name = lotr_civilized_colonization
+				duration = -1
+			}
 		}
 		### Other ###
 		au_basic_setup = yes
@@ -1586,6 +1590,15 @@ on_game_initialized = {
 on_province_colonized = {
 	effect = {
 		set_racial_terrain_modifiers = yes
+		if = {
+			limit = {
+				owner = { has_country_modifier = lotr_civilized_colonization }
+			}
+			while = {
+				limit = { civilization_value < 40 }
+				add_civilization_value = 10
+			}
+		}
 	}
 	events = {
 
