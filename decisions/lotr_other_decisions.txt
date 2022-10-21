@@ -29,10 +29,9 @@
 	}
 	lotr_restore_rohan_decision = {
 		potential = {
-			tag = GON
 			c:ROH = {
 				is_subject = yes
-				is_subject_of = c:GON
+				is_subject_of = ROOT
 				has_country_modifier = influenced_by_saruman
 			}
 		}
@@ -42,23 +41,21 @@
 				c:XVX = {
 					has_land = no
 				}
+				AND = {
+					NOT = { tag = GON }
+					religion = melkorism
+				}
 			}
 		}
 		effect = {
 			c:ROH = {
-				# add_country_modifier = {
-				# 	name = restored_principality
-				# 	duration = -1
-				# }
 				remove_country_modifier = influenced_by_saruman
 			}
 		}
 	}
 	lotr_restore_gondor_decision = {
 		potential = {
-			tag = GON
 			any_subject = {
-				is_subject_type = satrapy
 				has_country_modifier = harassed_by_corsairs
 			}
 		}
@@ -68,18 +65,17 @@
 				c:UMB = {
 					has_land = no
 				}
+				AND = {
+					NOT = { tag = GON }
+					religion = melkorism
+				}
 			}
 		}
 		effect = {
 			every_subject = {
 				limit = {
-					is_subject_type = satrapy
 					has_country_modifier = harassed_by_corsairs
 				}
-				# add_country_modifier = {
-				# 	name = restored_principality
-				# 	duration = -1
-				# }
 				remove_country_modifier = harassed_by_corsairs
 			}
 		}
