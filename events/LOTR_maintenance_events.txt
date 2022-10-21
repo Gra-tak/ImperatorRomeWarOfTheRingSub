@@ -1183,3 +1183,84 @@ lotr_maintenance.9 = {
 		name = "OK"
 	}
 }
+
+lotr_maintenance.10 = {
+	type = country_event
+	title = "lotr_maintenance.10.t"
+	desc = "lotr_maintenance.10.desc"
+	picture = event_gondor
+	immediate = {
+		if = {
+			limit = {
+				scope:target_subject = {
+					is_subject_type = satrapy
+				}
+			}
+			set_local_variable = {
+				name = satrapy
+			}
+		}
+	}
+	option = {
+		name = "lotr_maintenance.10.a"
+		trigger = {
+			has_local_variable = satrapy
+			scope:old_overlord = { owns = 1300 } #minas tirith
+		}
+		scope:future_overlord = { release_subject = scope:target_subject }
+		scope:old_overlord = {
+			make_subject = {
+				target = scope:target_subject
+				type = satrapy
+			}
+		}
+	}
+	option = {
+		name = "lotr_maintenance.10.b"
+		trigger = {
+			NOT = { has_local_variable = satrapy }
+			scope:old_overlord = { current_ruler = { has_trait = blood_of_isildur } } 
+		}
+		scope:future_overlord = { release_subject = scope:target_subject }
+		scope:old_overlord = {
+			make_subject = {
+				target = scope:target_subject
+				type = ranger_protectorate
+			}
+		}
+	}
+	option = {
+		name = "lotr_maintenance.10.c"
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { has_local_variable = satrapy }
+					NOT = { scope:old_overlord = { current_ruler = { has_trait = blood_of_isildur } } }
+				}
+				AND = {
+					has_local_variable = satrapy
+					NOT = { scope:old_overlord = { owns = 1300 }  } #minas tirith
+				}
+			}
+		}
+		hidden_effect = {
+			scope:future_overlord = { release_subject = scope:target_subject }
+		}
+		scope:future_overlord = {
+			make_subject = {
+				target = scope:target_subject
+				type = client_state
+			}
+		}
+		scope:target_subject ={
+			if = {
+				limit = { has_country_modifier = harassed_by_corsairs }
+					remove_country_modifier = harassed_by_corsairs
+			}
+			if = {
+				limit = { has_country_modifier = influenced_by_saruman }
+					remove_country_modifier = influenced_by_saruman
+			}
+		}
+	}
+}

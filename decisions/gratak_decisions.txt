@@ -189,16 +189,25 @@
 			# 		set_racial_terrain_modifiers = yes
 			# 	}
 			# }
-			every_owned_province = {
+			# every_owned_province = {
+			# 	limit = {
+			# 		NOR = {
+			# 			has_province_rank = city_metropolis
+			# 			has_province_rank = city
+			# 			has_province_rank = settlement
+			# 		}
+			# 	}
+			# 	set_city_status = settlement
+			# 	set_trade_goods = wild_game
+			# }
+			every_country = {
 				limit = {
-					NOR = {
-						has_province_rank = city_metropolis
-						has_province_rank = city
-						has_province_rank = settlement
-					}
+					NOT = { THIS = PREV }
 				}
-				set_city_status = settlement
-				set_trade_goods = wild_game
+				add_opinion = {
+					modifier = sauron_loyal_servant
+					target = PREV
+				}
 			}
 		}
 	}

@@ -7,11 +7,11 @@ isengard_mordor_alliance_modifier = {
 }
 
 sauron_worship_modifier = {
-	value = 400
+	value = 200
 }
 
 sauron_loyal_servant = {
-	value = 400
+	value = 200
 }
 
 helped_after_corsairs = {

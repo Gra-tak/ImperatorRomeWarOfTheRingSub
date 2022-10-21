@@ -2105,14 +2105,32 @@ yearly_financial_support_pulse = {
 
 on_subject_defect = { #scope:future_overlord = country that stole vassal, scope:target_subject = vassal being stolen
 	effect = {
-		add_opinion = {
-			modifier = stole_a_vassal_from_us
-			target = scope:future_overlord
+		if = {
+			limit = {
+				scope:target_subject = {
+					OR = {
+						is_subject_type = satrapy
+						is_subject_type = ranger_protectorate
+					}
+				}
+			}
+			save_scope_as = old_overlord
+			scope:future_overlord = {
+				trigger_event = {
+					id = lotr_maintenance.10
+				}
+			}
 		}
-		
-		add_opinion = {
-			modifier = free_from_old_overlord
-			target = scope:target_subject
+		else = {
+			add_opinion = {
+				modifier = stole_a_vassal_from_us
+				target = scope:future_overlord
+			}
+			
+			add_opinion = {
+				modifier = free_from_old_overlord
+				target = scope:target_subject
+			}
 		}
 	}
 }
