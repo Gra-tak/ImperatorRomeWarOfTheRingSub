@@ -40899,7 +40899,7 @@
 	slaves = { amount = 1 }
 }
 3949 = { #Agrisia (XPX) (kendarka_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -40910,7 +40910,7 @@
 	slaves = { amount = 1 }
 }
 3950 = { #Femani (XPX) (kendarka_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -40932,7 +40932,7 @@
 	slaves = { amount = 1 }
 }
 3952 = { #Rúdurs (XPX) (kendarka_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -40943,7 +40943,7 @@
 	slaves = { amount = 1 }
 }
 3953 = { #Rálón (XPX) (kendarka_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -40954,7 +40954,7 @@
 	slaves = { amount = 1 }
 }
 3954 = { #K'zanar (XPX) (kendarka_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -40965,7 +40965,7 @@
 	slaves = { amount = 1 }
 }
 3955 = { #Hême (XPX) (kendarka_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -40976,7 +40976,7 @@
 	slaves = { amount = 1 }
 }
 3956 = { #Kasana (XPX) (kendarka_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -40987,18 +40987,18 @@
 	slaves = { amount = 1 }
 }
 3957 = { #Kolr (XPX) (kendarka_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
-	civilization_value = 40
+	civilization_value = 60
 	barbarian_power = 0
-	province_rank = "settlement"
-	tribesmen = { amount = 1 }
+	province_rank = "city"
+	tribesmen = { amount = 5 }
 	slaves = { amount = 1 }
 }
 3958 = { #Kaldr (XPX) (kendarka_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -41020,7 +41020,7 @@
 	slaves = { amount = 1 }
 }
 3960 = { #Tâl (XPX) (ruartar_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -41053,7 +41053,7 @@
 	slaves = { amount = 1 }
 }
 3963 = { #Shashalô (XPX) (kankanian_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -41064,7 +41064,7 @@
 	slaves = { amount = 1 }
 }
 3964 = { #Poabias (XPX) (kankanian_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -50654,7 +50654,7 @@
 	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 3 }
+	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
 5016 = { #Mang (XPX) (horl_area) (ralian_region)
@@ -50680,18 +50680,18 @@
 	slaves = { amount = 1 }
 }
 5018 = { #Wasia Tris (XPX) (horl_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 40
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
+	tribesmen = { amount = 3 }
 	slaves = { amount = 1 }
 }
 5019 = { #Kaenakh (XPX) (horl_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -50736,15 +50736,17 @@
 }
 5023 = { #5023 (uninhabitable)
 	terrain = "hills"
-	culture = "beasts"
-	religion = "eastern_animism"
-	trade_goods = ""
-	civilization_value = 0
+	culture = "nandor"
+	religion = "iluvatarism"
+	trade_goods = "wild_game"
+	civilization_value = 40
 	barbarian_power = 0
-	province_rank = ""
+	province_rank = "settlement"
+	tribesmen = { amount = 2 }
+	slaves = { amount = 1 }
 }
 5024 = { #5024 (uninhabitable)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -50753,15 +50755,13 @@
 	province_rank = ""
 }
 5025 = { #Shana (XPX) (faelan_area) (wer_falin_region)
-	terrain = "hills"
-	culture = "nandor"
-	religion = "iluvatarism"
-	trade_goods = "wild_game"
-	civilization_value = 40
+	terrain = "mountain"
+	culture = "beasts"
+	religion = "eastern_animism"
+	trade_goods = ""
+	civilization_value = 0
 	barbarian_power = 0
-	province_rank = "settlement"
-	tribesmen = { amount = 5 }
-	slaves = { amount = 1 }
+	province_rank = ""
 }
 5026 = { #Vanx (XPX) (faelan_area) (wer_falin_region)
 	terrain = "mountain"
@@ -50775,7 +50775,7 @@
 	slaves = { amount = 1 }
 }
 5027 = { #Canariay (XPX) (faelan_area) (wer_falin_region)
-	terrain = "mountain"
+	terrain = "hills"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -51225,7 +51225,7 @@
 	province_rank = ""
 }
 5068 = { #Tayali (XPX) (ruartar_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -51269,7 +51269,7 @@
 	slaves = { amount = 1 }
 }
 5072 = { #Prundo (XPX) (ruartar_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -51280,7 +51280,7 @@
 	slaves = { amount = 1 }
 }
 5073 = { #Kúrian (XPX) (ruartar_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
@@ -51291,7 +51291,7 @@
 	slaves = { amount = 1 }
 }
 5074 = { #Nífe (XPX) (ruartar_area) (ralian_region)
-	terrain = "plains"
+	terrain = "forest"
 	culture = "nandor"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"

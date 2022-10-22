@@ -60,6 +60,7 @@ From;To;Type;Through;x;y;x;y;
 5051;3574;river_large;4987;-1;-1;-1;-1;-1;Ams Breakna crossing
 5051;3575;river_large;4987;-1;-1;-1;-1;-1;Ams Breakna crossing
 5316;3575;river_large;4973;-1;-1;-1;-1;-1;Ams Breakna crossing
+3944;3946;river_large;4977;-1;-1;-1;-1;-1;crossing
 3666;42;sea;5562;-1;-1;-1;-1;-1;Shegga crossing
 3666;97;sea;5562;-1;-1;-1;-1;-1;Shegga crossing
 3666;96;sea;5562;-1;-1;-1;-1;-1;Shegga crossing
@@ -87,6 +88,7 @@ From;To;Type;Through;x;y;x;y;
 3697;3755;sea;2997;-1;-1;-1;-1;-1; crossing
 114;722;sea;3501;-1;-1;-1;-1;-1; crossing
 141;722;sea;3504;-1;-1;-1;-1;-1; crossing
+5061;3949;sea;4869;-1;-1;-1;-1;-1; crossing
 109;108;sea;3505;4818;2687;4794;2712;-1; crossing
 ;;;;-1;-1;-1;-1;-1;
 -1;-1;;-1;-1;-1;-1;-1;
