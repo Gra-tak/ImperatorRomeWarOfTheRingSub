@@ -568,7 +568,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-52 = { #Pinnath Gelin (uninhabitable)
+52 = { #Pinnath Gelin (unowned)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -7579,14 +7579,12 @@
 }
 713 = { #Nosharud (unowned) (klyan_area) (khailuza_region)
 	terrain = "mountain"
-	culture = "blacklock"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "base_metals"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 1 }
-	slaves = { amount = 1 }
 }
 714 = { #Imak Peh (unowned) (arysis_area) (nafarat_region)
 	terrain = "plains"
@@ -35392,14 +35390,12 @@
 }
 3400 = { #A'za (unowned) (thurl_ralian_fen_area) (ibav_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "gems"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 1 }
 }
 3401 = { #Khaden (YOP) (kris_area) (anarike_region)
 	terrain = "plains"
@@ -35474,53 +35470,48 @@
 }
 3408 = { #Bhantrîf (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
-	culture = "qarsag"
+	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "cattle"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 1 }
 }
 3409 = { #Rukht (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
-	culture = "kargarim"
+	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "marble"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 1 }
 }
 3410 = { #Isvat (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
-	culture = "kargarim"
+	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "base_metals"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 1 }
 }
 3411 = { #Ganshô (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
-	culture = "qarsag"
+	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "iron"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
 }
 3412 = { #Azagarbhûn (unowned) (klyan_area) (khailuza_region)
 	terrain = "hills"
-	culture = "kargarim"
+	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "dates"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
 }
 3413 = { #Tûrisar (unowned) (lu_tyr_su_area) (lu_tyr_su_region)
 	terrain = "steppe"
@@ -35634,33 +35625,30 @@
 }
 3424 = { #Shaûsar (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
-	culture = "qarsag"
+	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "cattle"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 2 }
 }
 3425 = { #Niyukha (unowned) (klyan_area) (khailuza_region)
 	terrain = "hills"
-	culture = "qarsag"
+	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "base_metals"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 1 }
 }
 3426 = { #Gashtahan (unowned) (klyan_area) (khailuza_region)
 	terrain = "plains"
-	culture = "qarsag"
+	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = "precious_metals"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	tribesmen = { amount = 1 }
 }
 3427 = { #Haxât (unowned) (othokav_area) (khey_sart_region)
 	terrain = "plains"
@@ -39039,7 +39027,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 1 }
 }
-3765 = { #Angnor (unowned)
+3765 = { #Angnor (uninhabitable)
 	terrain = "caverns"
 	culture = "beasts"
 	religion = "melkorism"
@@ -40823,69 +40811,57 @@
 }
 3942 = { #Buasi (unowned) (thurl_ralian_fen_area) (ibav_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 1 }
 }
 3943 = { #Níali (unowned) (thurl_ralian_fen_area) (ibav_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 1 }
 }
 3944 = { #Iaektrae (unowned) (thurl_ralian_fen_area) (ibav_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 1 }
 }
 3945 = { #Tankaw (unowned) (thurl_ralian_fen_area) (ibav_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 1 }
 }
 3946 = { #Oario (unowned) (thurl_ralian_fen_area) (ibav_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 1 }
 }
 3947 = { #Nay (unowned) (thurl_ralian_fen_area) (ibav_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 1 }
 }
 3948 = { #Klôkha (XPX) (kankanian_area) (ralian_region)
 	terrain = "plains"
@@ -50734,7 +50710,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-5023 = { #5023 (uninhabitable)
+5023 = { #Shana (XPX) (horl_area) (ralian_region)
 	terrain = "hills"
 	culture = "nandor"
 	religion = "iluvatarism"
@@ -50754,7 +50730,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5025 = { #Shana (XPX) (faelan_area) (wer_falin_region)
+5025 = { #5025 (uninhabitable)
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -50886,80 +50862,66 @@
 }
 5037 = { #Kanal (unowned) (arg_simorig_area) (wer_falin_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 7 }
 }
 5038 = { #Sîmor (unowned) (arg_simorig_area) (wer_falin_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 7 }
 }
 5039 = { #Akâk (unowned) (arg_simorig_area) (wer_falin_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 7 }
 }
 5040 = { #Nhâg (unowned) (arg_simorig_area) (wer_falin_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 7 }
 }
 5041 = { #Zyras (unowned) (arg_simorig_area) (wer_falin_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 7 }
 }
 5042 = { #Tôr (unowned) (arg_simorig_area) (wer_falin_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 7 }
 }
 5043 = { #Tanekal (unowned) (arg_simorig_area) (wer_falin_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 7 }
 }
 5044 = { #Ts'eml (XQX) (kaish_area) (wer_falin_region)
 	terrain = "plains"
@@ -51073,14 +51035,12 @@
 }
 5054 = { #Manx (unowned) (thurl_ralian_fen_area) (ibav_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 1 }
 }
 5055 = { #Ustad Bucol (unowned) (fenfenen_area) (ibav_region)
 	terrain = "plains"
@@ -51128,14 +51088,12 @@
 }
 5059 = { #Pana (unowned) (thurl_ralian_fen_area) (ibav_region)
 	terrain = "plains"
-	culture = "shayna"
+	culture = "beasts"
 	religion = "iluvatarism"
 	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 1 }
-	slaves = { amount = 2 }
 }
 5060 = { #5060 (uninhabitable)
 	terrain = "plains"
