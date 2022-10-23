@@ -41435,7 +41435,7 @@
 	tribesmen = { amount = 2 }
 	slaves = { amount = 1 }
 }
-4000 = { #Emyn Dornu (unowned)
+4000 = { #Emyn Dornu (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41444,7 +41444,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4001 = { #Eryn Galen (unowned)
+4001 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41453,7 +41453,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4002 = { #Emyn Arnen (unowned)
+4002 = { #Emyn Arnen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41462,7 +41462,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4003 = { #Taur Iaur (unowned)
+4003 = { #Taur Iaur (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41471,7 +41471,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4004 = { #Aelinann (unowned)
+4004 = { #Aelinann (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41480,7 +41480,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4005 = { #Emynen (unowned)
+4005 = { #Emynen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41489,7 +41489,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4006 = { #Eryn Galen (unowned)
+4006 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41498,7 +41498,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4007 = { #Eryn Galen (unowned)
+4007 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41507,7 +41507,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4008 = { #Emyn-nu-Fuin (unowned)
+4008 = { #Emyn-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41516,7 +41516,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4009 = { #Emyn-nu-Fuin (unowned)
+4009 = { #Emyn-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41525,7 +41525,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4010 = { #Emyn-nu-Fuin (unowned)
+4010 = { #Emyn-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41534,7 +41534,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4011 = { #Emyn-nu-Fuin (unowned)
+4011 = { #Emyn-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41543,7 +41543,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4012 = { #Emyn-nu-Fuin (unowned)
+4012 = { #Emyn-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41552,7 +41552,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4013 = { #Emyn-nu-Fuin (unowned)
+4013 = { #Emyn-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41561,7 +41561,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4014 = { #Emyn Guldur (unowned)
+4014 = { #Emyn Guldur (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41570,7 +41570,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4015 = { #Emyn Guldur (unowned)
+4015 = { #Emyn Guldur (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41579,7 +41579,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4016 = { #Eryn Galen (unowned)
+4016 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41588,7 +41588,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4017 = { #Eryn Galen (unowned)
+4017 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41597,7 +41597,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4018 = { #Emyn Guldur (unowned)
+4018 = { #Emyn Guldur (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41606,7 +41606,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4019 = { #Eryn Galen (unowned)
+4019 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41615,7 +41615,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4020 = { #Eryn Galen (unowned)
+4020 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41624,7 +41624,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4021 = { #Eryn Galen (unowned)
+4021 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41633,7 +41633,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4022 = { #Eryn Galen (unowned)
+4022 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41642,7 +41642,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4023 = { #Eryn Galen (unowned)
+4023 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41651,7 +41651,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4024 = { #Eryn Galen (unowned)
+4024 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41660,7 +41660,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4025 = { #Eryn Galen (unowned)
+4025 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41669,7 +41669,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4026 = { #Eryn Galen (unowned)
+4026 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41678,7 +41678,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4027 = { #Eryn Galen (unowned)
+4027 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41687,7 +41687,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4028 = { #Eryn Galen (unowned)
+4028 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41696,7 +41696,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4029 = { #Eryn Galen (unowned)
+4029 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41705,7 +41705,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4030 = { #Eryn Galen (unowned)
+4030 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41714,7 +41714,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4031 = { #Eryn Galen (unowned)
+4031 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41723,7 +41723,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4032 = { #4032 (unowned)
+4032 = { #4032 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41732,7 +41732,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4033 = { #4033 (unowned)
+4033 = { #4033 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41741,7 +41741,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4034 = { #4034 (unowned)
+4034 = { #4034 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41750,7 +41750,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4035 = { #4035 (unowned)
+4035 = { #4035 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41759,7 +41759,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4036 = { #4036 (unowned)
+4036 = { #4036 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41768,7 +41768,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4037 = { #Ered Nimrais (unowned)
+4037 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41777,7 +41777,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4038 = { #4038 (unowned)
+4038 = { #4038 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41786,7 +41786,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4039 = { #Eryn Galen (unowned)
+4039 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41795,7 +41795,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4040 = { #Eryn Galen (unowned)
+4040 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41804,7 +41804,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4041 = { #4041 (unowned)
+4041 = { #4041 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41813,7 +41813,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4042 = { #Tyrn Hyarinen (unowned)
+4042 = { #Tyrn Hyarinen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41822,7 +41822,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4043 = { #Tyrn Hyarinen (unowned)
+4043 = { #Tyrn Hyarinen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41831,7 +41831,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4044 = { #4044 (unowned)
+4044 = { #4044 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41840,7 +41840,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4045 = { #Ciryatandor (unowned)
+4045 = { #Ciryatandor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41849,7 +41849,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4046 = { #Khailûza (unowned)
+4046 = { #Khailûza (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41858,7 +41858,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4047 = { #Bûlkhyades (unowned)
+4047 = { #Bûlkhyades (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41867,7 +41867,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4048 = { #Urcheldor (unowned)
+4048 = { #Urcheldor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41876,7 +41876,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4049 = { #Morgai (unowned)
+4049 = { #Morgai (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41885,7 +41885,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4050 = { #Emyn Annun (unowned)
+4050 = { #Emyn Annun (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41894,7 +41894,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4051 = { #Emyn Imladrim (unowned)
+4051 = { #Emyn Imladrim (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41903,7 +41903,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4052 = { #Emyn Annûn (unowned)
+4052 = { #Emyn Annûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41912,7 +41912,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4053 = { #Emyn Laer (unowned)
+4053 = { #Emyn Laer (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41921,7 +41921,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4054 = { #Ered Glamhoth (unowned)
+4054 = { #Ered Glamhoth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41930,7 +41930,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4055 = { #Ered Lithui (unowned)
+4055 = { #Ered Lithui (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41939,7 +41939,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4056 = { #Ephel Dúath (unowned)
+4056 = { #Ephel Dúath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41948,7 +41948,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4057 = { #Ephel Dúath (unowned)
+4057 = { #Ephel Dúath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41957,7 +41957,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4058 = { #Eregwath (unowned)
+4058 = { #Eregwath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41966,7 +41966,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4059 = { #Ered Angurath (unowned)
+4059 = { #Ered Angurath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41975,7 +41975,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4060 = { #Ered Lithui (unowned)
+4060 = { #Ered Lithui (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41984,7 +41984,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4061 = { #Emyn Tolfalas (unowned)
+4061 = { #Emyn Tolfalas (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -41993,7 +41993,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4062 = { #Ethir Anduin (unowned)
+4062 = { #Ethir Anduin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42002,7 +42002,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4063 = { #Morgai (unowned)
+4063 = { #Morgai (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42011,7 +42011,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4064 = { #Morgai (unowned)
+4064 = { #Morgai (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42020,7 +42020,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4065 = { #Ered Lithui (unowned)
+4065 = { #Ered Lithui (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42029,7 +42029,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4066 = { #Orodruin (unowned)
+4066 = { #Orodruin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42038,7 +42038,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4067 = { #Baugatsor-i-Sauron (unowned)
+4067 = { #Baugatsor-i-Sauron (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42047,7 +42047,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4068 = { #Perth Ülmyn (unowned)
+4068 = { #Perth Ülmyn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42056,7 +42056,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4069 = { #Perth Ülmyn (unowned)
+4069 = { #Perth Ülmyn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42065,7 +42065,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4070 = { #Talath Úrui (unowned)
+4070 = { #Talath Úrui (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42074,7 +42074,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4071 = { #Gaer Dûrlith (unowned)
+4071 = { #Gaer Dûrlith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42083,7 +42083,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4072 = { #Lithlad (unowned)
+4072 = { #Lithlad (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42092,7 +42092,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4073 = { #Núrn (unowned)
+4073 = { #Núrn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42101,7 +42101,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4074 = { #Den Núrn (unowned)
+4074 = { #Den Núrn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42110,7 +42110,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4075 = { #Den Núrn (unowned)
+4075 = { #Den Núrn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42119,7 +42119,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4076 = { #Núrn (unowned)
+4076 = { #Núrn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42128,7 +42128,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4077 = { #Núrn (unowned)
+4077 = { #Núrn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42137,7 +42137,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4078 = { #Núrn (unowned)
+4078 = { #Núrn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42146,7 +42146,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4079 = { #Ered Luin (unowned)
+4079 = { #Ered Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42155,7 +42155,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4080 = { #Ered Luin (unowned)
+4080 = { #Ered Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42164,7 +42164,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4081 = { #Ered Gorgoroth (unowned)
+4081 = { #Ered Gorgoroth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42173,7 +42173,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4082 = { #Ered Nimrais (unowned)
+4082 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42182,7 +42182,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4083 = { #Ered Nimrais (unowned)
+4083 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42191,7 +42191,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4084 = { #Ered Nimrais (unowned)
+4084 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42200,7 +42200,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4085 = { #Ered Nimrais (unowned)
+4085 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42209,7 +42209,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4086 = { #Ered Nimrais (unowned)
+4086 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42218,7 +42218,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4087 = { #Ered Nimrais (unowned)
+4087 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42227,7 +42227,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4088 = { #Ered Nimrais (unowned)
+4088 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42236,7 +42236,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4089 = { #Ram Dúath (unowned)
+4089 = { #Ram Dúath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42245,7 +42245,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4090 = { #Ram Dúath (unowned)
+4090 = { #Ram Dúath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42254,7 +42254,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4091 = { #Ered Angmar (unowned)
+4091 = { #Ered Angmar (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42263,7 +42263,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4092 = { #Ered Angmar (unowned)
+4092 = { #Ered Angmar (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42272,7 +42272,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4093 = { #Ered Mithrin (unowned)
+4093 = { #Ered Mithrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42281,7 +42281,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4094 = { #Ered Mithrin (unowned)
+4094 = { #Ered Mithrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42290,7 +42290,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4095 = { #Ered Mithrin (unowned)
+4095 = { #Ered Mithrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42299,7 +42299,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4096 = { #Ered Mithrin (unowned)
+4096 = { #Ered Mithrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42308,7 +42308,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4097 = { #Ered Mithrin (unowned)
+4097 = { #Ered Mithrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42317,7 +42317,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4098 = { #Ered Nimrais (unowned)
+4098 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42326,7 +42326,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4099 = { #Ered Luin (unowned)
+4099 = { #Ered Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42335,7 +42335,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4100 = { #Ered Luin (unowned)
+4100 = { #Ered Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42344,7 +42344,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4101 = { #Ered Luin (unowned)
+4101 = { #Ered Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42353,7 +42353,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4102 = { #Ered Luin (unowned)
+4102 = { #Ered Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "orcish"
 	religion = "melkorism"
@@ -42362,7 +42362,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4103 = { #Ramluin (unowned)
+4103 = { #Ramluin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42371,7 +42371,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4104 = { #Emyn Nimbrith (unowned)
+4104 = { #Emyn Nimbrith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42380,7 +42380,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4105 = { #Pinnan Rhûn (unowned)
+4105 = { #Pinnan Rhûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42389,7 +42389,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4106 = { #Pinnan Rhûn (unowned)
+4106 = { #Pinnan Rhûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42398,7 +42398,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4107 = { #Ephel Dúath (unowned)
+4107 = { #Ephel Dúath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42407,7 +42407,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4108 = { #Ephel Dúath (unowned)
+4108 = { #Ephel Dúath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42416,7 +42416,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4109 = { #Ephel Dúath (unowned)
+4109 = { #Ephel Dúath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42425,7 +42425,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4110 = { #Ered Glamhoth (unowned)
+4110 = { #Ered Glamhoth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42434,7 +42434,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4111 = { #Ered Lithui (unowned)
+4111 = { #Ered Lithui (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42443,7 +42443,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4112 = { #Ered Lithui (unowned)
+4112 = { #Ered Lithui (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42452,7 +42452,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4113 = { #Ered Lithui (unowned)
+4113 = { #Ered Lithui (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42461,7 +42461,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4114 = { #Pûstrava (unowned)
+4114 = { #Pûstrava (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42470,7 +42470,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4115 = { #Ered Nimrais (unowned)
+4115 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42479,7 +42479,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4116 = { #Ered Nimrais (unowned)
+4116 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42488,7 +42488,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4117 = { #Ered Nimrais (unowned)
+4117 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42497,7 +42497,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4118 = { #Ras Morthil (unowned)
+4118 = { #Ras Morthil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42506,7 +42506,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4119 = { #Hithaeglir (unowned)
+4119 = { #Hithaeglir (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42515,7 +42515,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4120 = { #Hithaeglir (unowned)
+4120 = { #Hithaeglir (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42524,7 +42524,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4121 = { #Hithaeglir (unowned)
+4121 = { #Hithaeglir (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42533,7 +42533,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4122 = { #Hithaeglir (unowned)
+4122 = { #Hithaeglir (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42542,7 +42542,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4123 = { #Hithaeglir (unowned)
+4123 = { #Hithaeglir (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42551,7 +42551,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4124 = { #Hithaeglir (unowned)
+4124 = { #Hithaeglir (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42560,7 +42560,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4125 = { #Hithaeglir (unowned)
+4125 = { #Hithaeglir (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42569,7 +42569,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4126 = { #Mindolluin (unowned)
+4126 = { #Mindolluin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42578,7 +42578,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4127 = { #Ered Angmar (unowned)
+4127 = { #Ered Angmar (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42587,7 +42587,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4128 = { #Tyrn Haën (unowned)
+4128 = { #Tyrn Haën (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42596,7 +42596,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4129 = { #Tyrn Haën (unowned)
+4129 = { #Tyrn Haën (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42605,7 +42605,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4130 = { #Tyrn Haën (unowned)
+4130 = { #Tyrn Haën (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42614,7 +42614,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4131 = { #Tyrn Haën (unowned)
+4131 = { #Tyrn Haën (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42623,7 +42623,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4132 = { #Tyrn Nimrin (unowned)
+4132 = { #Tyrn Nimrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42632,7 +42632,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4133 = { #Tyrn Nimrin (unowned)
+4133 = { #Tyrn Nimrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42641,7 +42641,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4134 = { #Tyrn Nimrin (unowned)
+4134 = { #Tyrn Nimrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42650,7 +42650,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4135 = { #Emyn Torech (unowned)
+4135 = { #Emyn Torech (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42659,7 +42659,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4136 = { #Tyrn Gorthad (unowned)
+4136 = { #Tyrn Gorthad (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42668,7 +42668,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4137 = { #Emyn Sûl (unowned)
+4137 = { #Emyn Sûl (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42677,7 +42677,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4138 = { #Tyrn Formen (unowned)
+4138 = { #Tyrn Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42686,7 +42686,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4139 = { #Tyrn Formen (unowned)
+4139 = { #Tyrn Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42695,7 +42695,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4140 = { #Tyrn Formen (unowned)
+4140 = { #Tyrn Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42704,7 +42704,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4141 = { #Tyrn Formen (unowned)
+4141 = { #Tyrn Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42713,7 +42713,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4142 = { #Tyrn Forodren (unowned)
+4142 = { #Tyrn Forodren (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42722,7 +42722,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4143 = { #Tyrn Forodren (unowned)
+4143 = { #Tyrn Forodren (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42731,7 +42731,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4144 = { #Tyrn Formen (unowned)
+4144 = { #Tyrn Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42740,7 +42740,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4145 = { #Tyrn Formen (unowned)
+4145 = { #Tyrn Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42749,7 +42749,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4146 = { #Tyrn Formen (unowned)
+4146 = { #Tyrn Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42758,7 +42758,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4147 = { #Emyn Beraid (unowned)
+4147 = { #Emyn Beraid (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42767,7 +42767,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4148 = { #Emyn Beraid (unowned)
+4148 = { #Emyn Beraid (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42776,7 +42776,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4149 = { #Emyn Beraid (unowned)
+4149 = { #Emyn Beraid (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42785,7 +42785,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4150 = { #Emyn Beraid (unowned)
+4150 = { #Emyn Beraid (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42794,7 +42794,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4151 = { #Emyn Uial (unowned)
+4151 = { #Emyn Uial (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42803,7 +42803,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4152 = { #Emyn Uial (unowned)
+4152 = { #Emyn Uial (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42812,7 +42812,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4153 = { #Emyn Uial (unowned)
+4153 = { #Emyn Uial (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42821,7 +42821,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4154 = { #Emyn Uial (unowned)
+4154 = { #Emyn Uial (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42830,7 +42830,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4155 = { #Emyn Uial (unowned)
+4155 = { #Emyn Uial (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42839,7 +42839,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4156 = { #Emyn Uial (unowned)
+4156 = { #Emyn Uial (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42848,7 +42848,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4157 = { #Emyn Uial (unowned)
+4157 = { #Emyn Uial (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42857,7 +42857,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4158 = { #Emyn Uial (unowned)
+4158 = { #Emyn Uial (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42866,7 +42866,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4159 = { #Emyn Uial (unowned)
+4159 = { #Emyn Uial (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42875,7 +42875,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4160 = { #Tyrn Gorthad (unowned)
+4160 = { #Tyrn Gorthad (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42884,7 +42884,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4161 = { #Tyrn Hyarinen (unowned)
+4161 = { #Tyrn Hyarinen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42893,7 +42893,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4162 = { #Tyrn Hyarinen (unowned)
+4162 = { #Tyrn Hyarinen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42902,7 +42902,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4163 = { #Tyrn Hyarinen (unowned)
+4163 = { #Tyrn Hyarinen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42911,7 +42911,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4164 = { #Tyrn Hyarinen (unowned)
+4164 = { #Tyrn Hyarinen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42920,7 +42920,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4165 = { #Tyrn Hyarinen (unowned)
+4165 = { #Tyrn Hyarinen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42929,7 +42929,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4166 = { #Tyrn Hyarinen (unowned)
+4166 = { #Tyrn Hyarinen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42938,7 +42938,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4167 = { #Emyn Ernil (unowned)
+4167 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42947,7 +42947,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4168 = { #Emyn Ernil (unowned)
+4168 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42956,7 +42956,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4169 = { #Emyn Ernil (unowned)
+4169 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42965,7 +42965,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4170 = { #Emyn Ernil (unowned)
+4170 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42974,7 +42974,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4171 = { #Emyn Ernil (unowned)
+4171 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42983,7 +42983,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4172 = { #Emyn Ernil (unowned)
+4172 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -42992,7 +42992,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4173 = { #Emyn Ernil (unowned)
+4173 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43001,7 +43001,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4174 = { #Emyn Ernil (unowned)
+4174 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43010,7 +43010,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4175 = { #Emyn Ernil (unowned)
+4175 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43019,7 +43019,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4176 = { #Emyn Ernil (unowned)
+4176 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43028,7 +43028,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4177 = { #Emyn Ernil (unowned)
+4177 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43037,7 +43037,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4178 = { #Emyn Ernil (unowned)
+4178 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43046,7 +43046,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4179 = { #Emyn Ernil (unowned)
+4179 = { #Emyn Ernil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43055,7 +43055,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4180 = { #Emyn Tarlang (unowned)
+4180 = { #Emyn Tarlang (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43064,7 +43064,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4181 = { #4181 (unowned)
+4181 = { #4181 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43073,7 +43073,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4182 = { #4182 (unowned)
+4182 = { #4182 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43082,7 +43082,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4183 = { #Lú Tyr Sû (unowned)
+4183 = { #Lú Tyr Sû (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43091,7 +43091,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4184 = { #4184 (unowned)
+4184 = { #4184 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43100,7 +43100,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4185 = { #4185 (unowned)
+4185 = { #4185 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43109,7 +43109,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4186 = { #4186 (unowned)
+4186 = { #4186 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43118,7 +43118,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4187 = { #4187 (unowned)
+4187 = { #4187 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43127,7 +43127,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4188 = { #4188 (unowned)
+4188 = { #4188 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43136,7 +43136,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4189 = { #4189 (unowned)
+4189 = { #4189 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43145,7 +43145,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4190 = { #4190 (unowned)
+4190 = { #4190 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43154,7 +43154,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4191 = { #4191 (unowned)
+4191 = { #4191 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43163,7 +43163,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4192 = { #Pinnan Rhûn (unowned)
+4192 = { #Pinnan Rhûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43172,7 +43172,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4193 = { #Dobok Bron (unowned)
+4193 = { #Dobok Bron (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43181,7 +43181,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4194 = { #Dobok Rhín (unowned)
+4194 = { #Dobok Rhín (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43190,7 +43190,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4195 = { #4195 (unowned)
+4195 = { #4195 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43199,7 +43199,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4196 = { #Dobok Bron (unowned)
+4196 = { #Dobok Bron (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43208,7 +43208,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4197 = { #Tyrn Harroch (unowned)
+4197 = { #Tyrn Harroch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43217,7 +43217,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4198 = { #Tyrn Harroch (unowned)
+4198 = { #Tyrn Harroch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43226,7 +43226,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4199 = { #Tyrn Harroch (unowned)
+4199 = { #Tyrn Harroch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43235,7 +43235,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4200 = { #4200 (unowned)
+4200 = { #4200 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43244,7 +43244,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4201 = { #Emyn Muil (unowned)
+4201 = { #Emyn Muil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43253,7 +43253,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4202 = { #Tyrn Harroch (unowned)
+4202 = { #Tyrn Harroch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43262,7 +43262,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4203 = { #Tyrn Harroch (unowned)
+4203 = { #Tyrn Harroch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43271,7 +43271,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4204 = { #4204 (unowned)
+4204 = { #4204 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43280,7 +43280,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4205 = { #4205 (unowned)
+4205 = { #4205 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43289,7 +43289,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4206 = { #I-Laden (unowned)
+4206 = { #I-Laden (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43298,7 +43298,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4207 = { #Tyrn Harroch (unowned)
+4207 = { #Tyrn Harroch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43307,7 +43307,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4208 = { #Tyrn Harroch (unowned)
+4208 = { #Tyrn Harroch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43316,7 +43316,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4209 = { #Tyrn Harroch (unowned)
+4209 = { #Tyrn Harroch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43325,7 +43325,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4210 = { #Eryn Galen (unowned)
+4210 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43334,7 +43334,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4211 = { #4211 (unowned)
+4211 = { #4211 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43343,7 +43343,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4212 = { #Emyn Dornu (unowned)
+4212 = { #Emyn Dornu (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43352,7 +43352,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4213 = { #Emyn Carnen (unowned)
+4213 = { #Emyn Carnen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43361,7 +43361,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4214 = { #Emyn Engrin (unowned)
+4214 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43370,7 +43370,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4215 = { #Emyn Engrin (unowned)
+4215 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43379,7 +43379,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4216 = { #Emyn Engrin (unowned)
+4216 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43388,7 +43388,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4217 = { #Emyn Engrin (unowned)
+4217 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43397,7 +43397,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4218 = { #Emyn Engrin (unowned)
+4218 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43406,7 +43406,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4219 = { #4219 (unowned)
+4219 = { #4219 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43415,7 +43415,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4220 = { #4220 (unowned)
+4220 = { #4220 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43424,7 +43424,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4221 = { #Tol Firn-i-Guinar (unowned)
+4221 = { #Tol Firn-i-Guinar (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43433,7 +43433,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4222 = { #Emyn Engrin (unowned)
+4222 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43442,7 +43442,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4223 = { #Emyn Engrin (unowned)
+4223 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43451,7 +43451,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4224 = { #Emyn Engrin (unowned)
+4224 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43460,7 +43460,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4225 = { #Emyn Engrin (unowned)
+4225 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43469,7 +43469,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4226 = { #Emyn Engrin (unowned)
+4226 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43478,7 +43478,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4227 = { #4227 (unowned)
+4227 = { #4227 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43487,7 +43487,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4228 = { #4228 (unowned)
+4228 = { #4228 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43496,7 +43496,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4229 = { #4229 (unowned)
+4229 = { #4229 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43505,7 +43505,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4230 = { #4230 (unowned)
+4230 = { #4230 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43514,7 +43514,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4231 = { #4231 (unowned)
+4231 = { #4231 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43523,7 +43523,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4232 = { #4232 (unowned)
+4232 = { #4232 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43532,7 +43532,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4233 = { #4233 (unowned)
+4233 = { #4233 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43541,7 +43541,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4234 = { #4234 (unowned)
+4234 = { #4234 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43550,7 +43550,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4235 = { #4235 (unowned)
+4235 = { #4235 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43559,7 +43559,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4236 = { #Emyn Mithrin (unowned)
+4236 = { #Emyn Mithrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43568,7 +43568,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4237 = { #Minheldolath (unowned)
+4237 = { #Minheldolath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43577,7 +43577,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4238 = { #Minheldolath (unowned)
+4238 = { #Minheldolath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43586,7 +43586,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4239 = { #Gondalf (unowned)
+4239 = { #Gondalf (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43595,7 +43595,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4240 = { #Forodwaith (unowned)
+4240 = { #Forodwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43604,7 +43604,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4241 = { #Aiatar (unowned)
+4241 = { #Aiatar (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43613,7 +43613,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4242 = { #Barl Syrnac (unowned)
+4242 = { #Barl Syrnac (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43622,7 +43622,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4243 = { #Lú Tyr Sû (unowned)
+4243 = { #Lú Tyr Sû (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43631,7 +43631,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4244 = { #Palisor (unowned)
+4244 = { #Palisor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43640,7 +43640,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4245 = { #Khailûza (unowned)
+4245 = { #Khailûza (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43649,7 +43649,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4246 = { #Haradwaith (unowned)
+4246 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43658,7 +43658,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4247 = { #Khand (unowned)
+4247 = { #Khand (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43667,7 +43667,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4248 = { #Khand (unowned)
+4248 = { #Khand (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43676,7 +43676,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4249 = { #Khand (unowned)
+4249 = { #Khand (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43685,7 +43685,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4250 = { #Haradwaith (unowned)
+4250 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43694,7 +43694,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4251 = { #Haradwaith (unowned)
+4251 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43703,7 +43703,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4252 = { #Haradwaith (unowned)
+4252 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43712,7 +43712,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4253 = { #Haradwaith (unowned)
+4253 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43721,7 +43721,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4254 = { #Haradwaith (unowned)
+4254 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43730,7 +43730,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4255 = { #Haradwaith (unowned)
+4255 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43739,7 +43739,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4256 = { #Haradwaith (unowned)
+4256 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43748,7 +43748,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4257 = { #Kes Isarn (unowned)
+4257 = { #Kes Isarn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43757,7 +43757,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4258 = { #Kes Enbal (unowned)
+4258 = { #Kes Enbal (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43766,7 +43766,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4259 = { #Haradwaith (unowned)
+4259 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43775,7 +43775,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4260 = { #Tulwang (unowned)
+4260 = { #Tulwang (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43784,7 +43784,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4261 = { #Ciryatandor (unowned)
+4261 = { #Ciryatandor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43793,7 +43793,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4262 = { #Ciryatandor (unowned)
+4262 = { #Ciryatandor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43802,7 +43802,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4263 = { #Tûr Betark (unowned)
+4263 = { #Tûr Betark (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43811,7 +43811,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4264 = { #Jelhat Kurj (unowned)
+4264 = { #Jelhat Kurj (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43820,7 +43820,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4265 = { #Sâra Bâsk (unowned)
+4265 = { #Sâra Bâsk (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43829,7 +43829,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4266 = { #Erim Póa (unowned)
+4266 = { #Erim Póa (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43838,7 +43838,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4267 = { #Né Táva (unowned)
+4267 = { #Né Táva (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43847,7 +43847,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4268 = { #Erim Póa (unowned)
+4268 = { #Erim Póa (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43856,7 +43856,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4269 = { #Isra (unowned)
+4269 = { #Isra (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43865,7 +43865,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4270 = { #Isra (unowned)
+4270 = { #Isra (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43874,7 +43874,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4271 = { #Isra (unowned)
+4271 = { #Isra (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43883,7 +43883,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4272 = { #Isra (unowned)
+4272 = { #Isra (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43892,7 +43892,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4273 = { #Isra (unowned)
+4273 = { #Isra (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43901,7 +43901,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4274 = { #Sâra Bâsk (unowned)
+4274 = { #Sâra Bâsk (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43910,7 +43910,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4275 = { #Sâra Bâsk (unowned)
+4275 = { #Sâra Bâsk (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43919,7 +43919,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4276 = { #Sâra Bâsk (unowned)
+4276 = { #Sâra Bâsk (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43928,7 +43928,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4277 = { #Sâra Bâsk (unowned)
+4277 = { #Sâra Bâsk (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43937,7 +43937,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4278 = { #Sâra Bâsk (unowned)
+4278 = { #Sâra Bâsk (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43946,7 +43946,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4279 = { #Sâra Bâsk (unowned)
+4279 = { #Sâra Bâsk (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43955,7 +43955,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4280 = { #Kîrm Lesra (unowned)
+4280 = { #Kîrm Lesra (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43964,7 +43964,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4281 = { #Kîrm Lesra (unowned)
+4281 = { #Kîrm Lesra (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43973,7 +43973,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4282 = { #Brîy-Miyeséc (unowned)
+4282 = { #Brîy-Miyeséc (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43982,7 +43982,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4283 = { #Brîy-Miyeséc (unowned)
+4283 = { #Brîy-Miyeséc (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -43991,7 +43991,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4284 = { #Brîy-Miyeséc (unowned)
+4284 = { #Brîy-Miyeséc (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44000,7 +44000,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4285 = { #Brîy-Miyeséc (unowned)
+4285 = { #Brîy-Miyeséc (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44009,7 +44009,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4286 = { #Brîy-Miyeséc (unowned)
+4286 = { #Brîy-Miyeséc (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44018,7 +44018,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4287 = { #Brîy-Miyeséc (unowned)
+4287 = { #Brîy-Miyeséc (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44027,7 +44027,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4288 = { #Brîy-Miyeséc (unowned)
+4288 = { #Brîy-Miyeséc (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44036,7 +44036,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4289 = { #4289 (unowned)
+4289 = { #4289 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44045,7 +44045,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4290 = { #Auz Azunan (unowned)
+4290 = { #Auz Azunan (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44054,7 +44054,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4291 = { #Emyn Marös (unowned)
+4291 = { #Emyn Marös (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44063,7 +44063,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4292 = { #4292 (unowned)
+4292 = { #4292 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44072,7 +44072,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4293 = { #Emyn Glinfalas (unowned)
+4293 = { #Emyn Glinfalas (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44081,7 +44081,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4294 = { #Emyn Glinfalas (unowned)
+4294 = { #Emyn Glinfalas (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44090,7 +44090,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4295 = { #Pinnath Ethir (unowned)
+4295 = { #Pinnath Ethir (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44099,7 +44099,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4296 = { #Emyn Gonngaran (unowned)
+4296 = { #Emyn Gonngaran (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44108,7 +44108,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4297 = { #Emyn Gonngaran (unowned)
+4297 = { #Emyn Gonngaran (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44117,7 +44117,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4298 = { #Gundalok (unowned)
+4298 = { #Gundalok (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44126,7 +44126,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4299 = { #Gundalok (unowned)
+4299 = { #Gundalok (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44135,7 +44135,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4300 = { #Nîn-in-Eilph (unowned)
+4300 = { #Nîn-in-Eilph (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44144,7 +44144,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4301 = { #Pinnan Rhûn (unowned)
+4301 = { #Pinnan Rhûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44153,7 +44153,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4302 = { #Ered Nimrais (unowned)
+4302 = { #Ered Nimrais (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44162,7 +44162,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4303 = { #Pinnath Eregdos (unowned)
+4303 = { #Pinnath Eregdos (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44171,7 +44171,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4304 = { #Urîd an-Abâr (unowned)
+4304 = { #Urîd an-Abâr (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44180,7 +44180,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4305 = { #Ered Harmol (unowned)
+4305 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44189,7 +44189,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4306 = { #Egen-Onodló (unowned)
+4306 = { #Egen-Onodló (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44198,7 +44198,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4307 = { #Ciryatandor (unowned)
+4307 = { #Ciryatandor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44207,7 +44207,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4308 = { #Enryn-in-Onodló (unowned)
+4308 = { #Enryn-in-Onodló (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44216,7 +44216,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4309 = { #Ciryatandor (unowned)
+4309 = { #Ciryatandor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44225,7 +44225,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4310 = { #Dobok Bron (unowned)
+4310 = { #Dobok Bron (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44234,7 +44234,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4311 = { #Dobok Rhín (unowned)
+4311 = { #Dobok Rhín (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44243,7 +44243,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4312 = { #4312 (unowned)
+4312 = { #4312 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44252,7 +44252,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4313 = { #Lô-Liniath (unowned)
+4313 = { #Lô-Liniath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44261,7 +44261,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4314 = { #Ered Glamhoth (unowned)
+4314 = { #Ered Glamhoth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44270,7 +44270,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4315 = { #Pinnath Gelin (unowned)
+4315 = { #Pinnath Gelin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44279,7 +44279,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4316 = { #Pinnath Gelin (unowned)
+4316 = { #Pinnath Gelin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44288,7 +44288,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4317 = { #Pinnath Gelin (unowned)
+4317 = { #Pinnath Gelin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44297,7 +44297,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4318 = { #Pinnath Gelin (unowned)
+4318 = { #Pinnath Gelin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44306,7 +44306,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4319 = { #Pinnath Gelin (unowned)
+4319 = { #Pinnath Gelin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44315,7 +44315,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4320 = { #Pinnath Gelin (unowned)
+4320 = { #Pinnath Gelin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44324,7 +44324,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4321 = { #Pinnath Gelin (unowned)
+4321 = { #Pinnath Gelin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44333,7 +44333,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4322 = { #Haradwaith (unowned)
+4322 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44342,7 +44342,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4323 = { #Auz Marda (unowned)
+4323 = { #Auz Marda (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44351,7 +44351,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4324 = { #Haradwaith (unowned)
+4324 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44360,7 +44360,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4325 = { #Haradwaith (unowned)
+4325 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44369,7 +44369,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4326 = { #Haradwaith (unowned)
+4326 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44378,7 +44378,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4327 = { #Haradwaith (unowned)
+4327 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44387,7 +44387,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4328 = { #Haradwaith (unowned)
+4328 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44396,7 +44396,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4329 = { #Haradwaith (unowned)
+4329 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44405,7 +44405,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4330 = { #Haradwaith (unowned)
+4330 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44414,7 +44414,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4331 = { #Haradwaith (unowned)
+4331 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44423,7 +44423,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4332 = { #Haradwaith (unowned)
+4332 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44432,7 +44432,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4333 = { #Haradwaith (unowned)
+4333 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44441,7 +44441,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4334 = { #Haradwaith (unowned)
+4334 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44450,7 +44450,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4335 = { #Haradwaith (unowned)
+4335 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44459,7 +44459,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4336 = { #Haradwaith (unowned)
+4336 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44468,7 +44468,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4337 = { #Haradwaith (unowned)
+4337 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44477,7 +44477,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4338 = { #Haradwaith (unowned)
+4338 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44486,7 +44486,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4339 = { #Haradwaith (unowned)
+4339 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44495,7 +44495,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4340 = { #Haradwaith (unowned)
+4340 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44504,7 +44504,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4341 = { #Kes Ebb (unowned)
+4341 = { #Kes Ebb (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44513,7 +44513,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4342 = { #Saerwaith (unowned)
+4342 = { #Saerwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44522,7 +44522,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4343 = { #Saerwaith (unowned)
+4343 = { #Saerwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44531,7 +44531,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4344 = { #Saerwaith (unowned)
+4344 = { #Saerwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44540,7 +44540,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4345 = { #Saerwaith (unowned)
+4345 = { #Saerwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44549,7 +44549,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4346 = { #4346 (unowned)
+4346 = { #4346 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44558,7 +44558,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4347 = { #4347 (unowned)
+4347 = { #4347 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44567,7 +44567,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4348 = { #Torogmar (unowned)
+4348 = { #Torogmar (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44576,7 +44576,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4349 = { #Narthalf (unowned)
+4349 = { #Narthalf (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44585,7 +44585,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4350 = { #Jarvimaa (unowned)
+4350 = { #Jarvimaa (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44594,7 +44594,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4351 = { #Lindalf (unowned)
+4351 = { #Lindalf (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44603,7 +44603,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4352 = { #Everdalf (unowned)
+4352 = { #Everdalf (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44612,7 +44612,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4353 = { #Korelä (unowned)
+4353 = { #Korelä (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44621,7 +44621,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4354 = { #Sûla (unowned)
+4354 = { #Sûla (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44630,7 +44630,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4355 = { #Kômi (unowned)
+4355 = { #Kômi (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44639,7 +44639,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4356 = { #Heleqhlug (unowned)
+4356 = { #Heleqhlug (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44648,7 +44648,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4357 = { #Lhûgdalf (unowned)
+4357 = { #Lhûgdalf (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44657,7 +44657,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4358 = { #Latan-Uzg (unowned)
+4358 = { #Latan-Uzg (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44666,7 +44666,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4359 = { #4359 (unowned)
+4359 = { #4359 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44675,7 +44675,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4360 = { #Galath (unowned)
+4360 = { #Galath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44684,7 +44684,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4361 = { #4361 (unowned)
+4361 = { #4361 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44693,7 +44693,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4362 = { #Emyn Girithlin (unowned)
+4362 = { #Emyn Girithlin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44702,7 +44702,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4363 = { #4363 (unowned)
+4363 = { #4363 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44711,7 +44711,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4364 = { #Tyrn Hyarinen (unowned)
+4364 = { #Tyrn Hyarinen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44720,7 +44720,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4365 = { #Pinnath Eregdos (unowned)
+4365 = { #Pinnath Eregdos (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44729,7 +44729,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4366 = { #Pinnath Aegring (unowned)
+4366 = { #Pinnath Aegring (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44738,7 +44738,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4367 = { #Pinnath Aegring (unowned)
+4367 = { #Pinnath Aegring (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44747,7 +44747,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4368 = { #Pinnath Neryth (unowned)
+4368 = { #Pinnath Neryth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44756,7 +44756,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4369 = { #Pinnath Aegring (unowned)
+4369 = { #Pinnath Aegring (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44765,7 +44765,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4370 = { #Pinnath Neryth (unowned)
+4370 = { #Pinnath Neryth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44774,7 +44774,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4371 = { #Pinnath Aegring (unowned)
+4371 = { #Pinnath Aegring (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44783,7 +44783,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4372 = { #Pinnath Neryth (unowned)
+4372 = { #Pinnath Neryth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44792,7 +44792,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4373 = { #Pinnath Neryth (unowned)
+4373 = { #Pinnath Neryth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44801,7 +44801,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4374 = { #Uilad (unowned)
+4374 = { #Uilad (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44810,7 +44810,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4375 = { #Uilad (unowned)
+4375 = { #Uilad (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44819,7 +44819,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4376 = { #Rammas Formen (unowned)
+4376 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44828,7 +44828,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4377 = { #Rammas Formen (unowned)
+4377 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44837,7 +44837,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4378 = { #Rammas Formen (unowned)
+4378 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44846,7 +44846,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4379 = { #Rammas Formen (unowned)
+4379 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44855,7 +44855,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4380 = { #Rammas Formen (unowned)
+4380 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44864,7 +44864,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4381 = { #Rammas Formen (unowned)
+4381 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44873,7 +44873,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4382 = { #Rammas Formen (unowned)
+4382 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44882,7 +44882,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4383 = { #Rammas Formen (unowned)
+4383 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44891,7 +44891,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4384 = { #Rammas Formen (unowned)
+4384 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44900,7 +44900,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4385 = { #Rammas Formen (unowned)
+4385 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44909,7 +44909,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4386 = { #Rammas Formen (unowned)
+4386 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44918,7 +44918,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4387 = { #Gondpinnath (unowned)
+4387 = { #Gondpinnath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44927,7 +44927,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4388 = { #Emyn Beraid (unowned)
+4388 = { #Emyn Beraid (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44936,7 +44936,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4389 = { #Pinnath Nimrin (unowned)
+4389 = { #Pinnath Nimrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44945,7 +44945,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4390 = { #Emyn Beraid (unowned)
+4390 = { #Emyn Beraid (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44954,7 +44954,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4391 = { #Tyrn Nimrin (unowned)
+4391 = { #Tyrn Nimrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44963,7 +44963,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4392 = { #4392 (unowned)
+4392 = { #4392 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44972,7 +44972,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4393 = { #4393 (unowned)
+4393 = { #4393 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44981,7 +44981,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4394 = { #Eryn Galen (unowned)
+4394 = { #Taur-nu-Fuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44990,7 +44990,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4395 = { #Rammas Formen (unowned)
+4395 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -44999,7 +44999,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4396 = { #Emyn Luin (unowned)
+4396 = { #Emyn Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45008,7 +45008,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4397 = { #I-Laden (unowned)
+4397 = { #I-Laden (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45017,7 +45017,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4398 = { #I-Laden (unowned)
+4398 = { #I-Laden (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45026,7 +45026,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4399 = { #I-Laden (unowned)
+4399 = { #I-Laden (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45035,7 +45035,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4400 = { #I-Laden (unowned)
+4400 = { #I-Laden (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45044,7 +45044,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4401 = { #Mithe (unowned)
+4401 = { #Mithe (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45053,7 +45053,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4402 = { #4402 (unowned)
+4402 = { #4402 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45062,7 +45062,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4403 = { #Uilad (unowned)
+4403 = { #Uilad (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45071,7 +45071,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4404 = { #Uilad (unowned)
+4404 = { #Uilad (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45080,7 +45080,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4405 = { #Kûbor Sêd (unowned)
+4405 = { #Kûbor Sêd (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45089,7 +45089,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4406 = { #Pinnath Aegring (unowned)
+4406 = { #Pinnath Aegring (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45098,7 +45098,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4407 = { #Pinnath Neryth (unowned)
+4407 = { #Pinnath Neryth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45107,7 +45107,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4408 = { #Pinnath Gelin (unowned)
+4408 = { #Pinnath Gelin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45116,7 +45116,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4409 = { #Pinnath Gelin (unowned)
+4409 = { #Pinnath Gelin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45125,7 +45125,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4410 = { #4410 (unowned)
+4410 = { #4410 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45134,7 +45134,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4411 = { #I-Laden (unowned)
+4411 = { #I-Laden (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45143,7 +45143,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4412 = { #I-Laden (unowned)
+4412 = { #I-Laden (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45152,7 +45152,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4413 = { #I-Laden (unowned)
+4413 = { #I-Laden (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45161,7 +45161,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4414 = { #Emyn Muil (unowned)
+4414 = { #Emyn Muil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45170,7 +45170,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4415 = { #Auz Marda (unowned)
+4415 = { #Auz Marda (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45179,7 +45179,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4416 = { #Urîd an-Abâr (unowned)
+4416 = { #Urîd an-Abâr (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45188,7 +45188,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4417 = { #Urîd an-Abâr (unowned)
+4417 = { #Urîd an-Abâr (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45197,7 +45197,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4418 = { #Urîd an-Abâr (unowned)
+4418 = { #Urîd an-Abâr (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45206,7 +45206,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4419 = { #Auz Azunan (unowned)
+4419 = { #Auz Azunan (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45215,7 +45215,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4420 = { #Auz Azunan (unowned)
+4420 = { #Auz Azunan (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45224,7 +45224,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4421 = { #Auz Azunan (unowned)
+4421 = { #Auz Azunan (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45233,7 +45233,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4422 = { #Urîd an-Abâr (unowned)
+4422 = { #Urîd an-Abâr (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45242,7 +45242,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4423 = { #Urîd an-Abâr (unowned)
+4423 = { #Urîd an-Abâr (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45251,7 +45251,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4424 = { #Emyn Tulwang (unowned)
+4424 = { #Emyn Tulwang (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45260,7 +45260,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4425 = { #Auz Hulja (unowned)
+4425 = { #Auz Hulja (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45269,7 +45269,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4426 = { #Auz Hulja (unowned)
+4426 = { #Auz Hulja (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45278,7 +45278,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4427 = { #Emyn Cûn (unowned)
+4427 = { #Emyn Cûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45287,7 +45287,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4428 = { #4428 (unowned)
+4428 = { #4428 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45296,7 +45296,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4429 = { #Emyn Gleinlas (unowned)
+4429 = { #Emyn Gleinlas (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45305,7 +45305,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4430 = { #Emyn Gleinlas (unowned)
+4430 = { #Emyn Gleinlas (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45314,7 +45314,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4431 = { #Emyn Gleinlas (unowned)
+4431 = { #Emyn Gleinlas (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45323,7 +45323,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4432 = { #Emyn Thargelion (unowned)
+4432 = { #Emyn Thargelion (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45332,7 +45332,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4433 = { #Emyn Thargelion (unowned)
+4433 = { #Emyn Thargelion (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45341,7 +45341,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4434 = { #Emyn Thargelion (unowned)
+4434 = { #Emyn Thargelion (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45350,7 +45350,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4435 = { #Emyn Ivrien (unowned)
+4435 = { #Emyn Ivrien (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45359,7 +45359,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4436 = { #Emyn Ivrien (unowned)
+4436 = { #Emyn Ivrien (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45368,7 +45368,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4437 = { #Emyn Ivrien (unowned)
+4437 = { #Emyn Ivrien (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45377,7 +45377,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4438 = { #Emyn Cûn (unowned)
+4438 = { #Emyn Cûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45386,7 +45386,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4439 = { #Emyn Cûn (unowned)
+4439 = { #Emyn Cûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45395,7 +45395,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4440 = { #Emyn Ivrien (unowned)
+4440 = { #Emyn Ivrien (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45404,7 +45404,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4441 = { #Emyn Gwae (unowned)
+4441 = { #Emyn Gwae (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45413,7 +45413,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4442 = { #Emyn Gwae (unowned)
+4442 = { #Emyn Gwae (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45422,7 +45422,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4443 = { #Emyn Gwae (unowned)
+4443 = { #Emyn Gwae (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45431,7 +45431,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4444 = { #Emyn Gwae (unowned)
+4444 = { #Emyn Gwae (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45440,7 +45440,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4445 = { #Emyn Gwae (unowned)
+4445 = { #Emyn Gwae (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45449,7 +45449,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4446 = { #Emyn Luin (unowned)
+4446 = { #Emyn Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45458,7 +45458,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4447 = { #Ered Luin (unowned)
+4447 = { #Ered Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45467,7 +45467,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4448 = { #Rammas Formen (unowned)
+4448 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45476,7 +45476,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4449 = { #Emyn Gwae (unowned)
+4449 = { #Emyn Gwae (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45485,7 +45485,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4450 = { #Emyn Beraid (unowned)
+4450 = { #Emyn Beraid (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45494,7 +45494,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4451 = { #Rammas Formen (unowned)
+4451 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45503,7 +45503,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4452 = { #Ered Luin (unowned)
+4452 = { #Ered Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45512,7 +45512,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4453 = { #Tol Morwen (unowned)
+4453 = { #Tol Morwen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45521,7 +45521,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4454 = { #Jelhat Kurj (unowned)
+4454 = { #Jelhat Kurj (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45530,7 +45530,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4455 = { #4455 (unowned)
+4455 = { #4455 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45539,7 +45539,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4456 = { #Harshandatt (unowned)
+4456 = { #Harshandatt (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45548,7 +45548,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4457 = { #4457 (unowned)
+4457 = { #4457 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45557,7 +45557,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4458 = { #4458 (unowned)
+4458 = { #4458 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45566,7 +45566,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4459 = { #Ered Harmol (unowned)
+4459 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45575,7 +45575,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4460 = { #4460 (unowned)
+4460 = { #4460 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45584,7 +45584,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4461 = { #Haradwaith (unowned)
+4461 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45593,7 +45593,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4462 = { #4462 (unowned)
+4462 = { #4462 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45602,7 +45602,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4463 = { #4463 (unowned)
+4463 = { #4463 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45611,7 +45611,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4464 = { #Emyn Imladrim (unowned)
+4464 = { #Emyn Imladrim (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45620,7 +45620,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4465 = { #Harondor (unowned)
+4465 = { #Harondor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45629,7 +45629,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4466 = { #Harondor (unowned)
+4466 = { #Harondor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45638,7 +45638,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4467 = { #Emyn Laer (unowned)
+4467 = { #Emyn Laer (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45647,7 +45647,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4468 = { #Emyn Imladrim (unowned)
+4468 = { #Emyn Imladrim (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45656,7 +45656,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4469 = { #Emyn Laer (unowned)
+4469 = { #Emyn Laer (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45665,7 +45665,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4470 = { #Pin Hingren (unowned)
+4470 = { #Pin Hingren (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45674,7 +45674,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4471 = { #4471 (unowned)
+4471 = { #4471 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45683,7 +45683,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4472 = { #Haradwaith (unowned)
+4472 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45692,7 +45692,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4473 = { #Khailûza (unowned)
+4473 = { #Khailûza (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45701,7 +45701,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4474 = { #Rammas Formen (unowned)
+4474 = { #Rammas Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45710,7 +45710,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4475 = { #4475 (unowned)
+4475 = { #4475 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45719,7 +45719,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4476 = { #Sara Khargagis (unowned)
+4476 = { #Sara Khargagis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45728,7 +45728,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4477 = { #Ered Luin (unowned)
+4477 = { #Ered Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45737,7 +45737,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4478 = { #Tûr Betark (unowned)
+4478 = { #Tûr Betark (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45746,7 +45746,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4479 = { #Tûr Betark (unowned)
+4479 = { #Tûr Betark (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45755,7 +45755,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4480 = { #Tûr Betark (unowned)
+4480 = { #Tûr Betark (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45764,7 +45764,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4481 = { #Tûr Betark (unowned)
+4481 = { #Tûr Betark (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45773,7 +45773,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4482 = { #Sâra Bâsk (unowned)
+4482 = { #Sâra Bâsk (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45782,7 +45782,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4483 = { #Ciryatandor (unowned)
+4483 = { #Ciryatandor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45791,7 +45791,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4484 = { #4484 (unowned)
+4484 = { #4484 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45800,7 +45800,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4485 = { #Ered Harmol (unowned)
+4485 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45809,7 +45809,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4486 = { #Tûr Betark (unowned)
+4486 = { #Tûr Betark (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45818,7 +45818,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4487 = { #4487 (unowned)
+4487 = { #4487 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45827,7 +45827,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4488 = { #Khailûza (unowned)
+4488 = { #Khailûza (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45836,7 +45836,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4489 = { #4489 (unowned)
+4489 = { #4489 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45845,7 +45845,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4490 = { #Auz Marda (unowned)
+4490 = { #Auz Marda (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45854,7 +45854,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4491 = { #Khailûza (unowned)
+4491 = { #Khailûza (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45863,7 +45863,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4492 = { #Khand (unowned)
+4492 = { #Khand (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45872,7 +45872,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4493 = { #Emyn Engrin (unowned)
+4493 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45881,7 +45881,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4494 = { #Emyn Engrin (unowned)
+4494 = { #Emyn Engrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45890,7 +45890,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4495 = { #Ered Luin (unowned)
+4495 = { #Ered Luin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45899,7 +45899,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4496 = { #Ered Harmol (unowned)
+4496 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45908,7 +45908,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4497 = { #Ered Harmol (unowned)
+4497 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45917,7 +45917,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4498 = { #Ered Harmol (unowned)
+4498 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45926,7 +45926,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4499 = { #Ered Harmol (unowned)
+4499 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45935,7 +45935,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4500 = { #Ered Harmol (unowned)
+4500 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45944,7 +45944,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4501 = { #Ered Harmol (unowned)
+4501 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45953,7 +45953,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4502 = { #Ered Harmol (unowned)
+4502 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45962,7 +45962,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4503 = { #Né Táva (unowned)
+4503 = { #Né Táva (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45971,7 +45971,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4504 = { #Kes Isarn (unowned)
+4504 = { #Kes Isarn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45980,7 +45980,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4505 = { #Haradwaith (unowned)
+4505 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45989,7 +45989,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4506 = { #Haradwaith (unowned)
+4506 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -45998,7 +45998,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4507 = { #Haradwaith (unowned)
+4507 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46007,7 +46007,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4508 = { #Haradwaith (unowned)
+4508 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46016,7 +46016,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4509 = { #Khailûza (unowned)
+4509 = { #Khailûza (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46025,7 +46025,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4510 = { #Klyan (unowned)
+4510 = { #Klyan (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46034,7 +46034,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4511 = { #Rast Vorn (unowned)
+4511 = { #Rast Vorn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46043,7 +46043,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4512 = { #Rast Arnor (unowned)
+4512 = { #Rast Arnor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46052,7 +46052,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4513 = { #Rast Angrast (unowned)
+4513 = { #Rast Angrast (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46061,7 +46061,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4514 = { #Brîy-Miyeséc (unowned)
+4514 = { #Brîy-Miyeséc (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46070,7 +46070,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4515 = { #Chennacatt (unowned)
+4515 = { #Chennacatt (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46079,7 +46079,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4516 = { #Chennacatt (unowned)
+4516 = { #Chennacatt (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46088,7 +46088,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4517 = { #Caradhras (unowned)
+4517 = { #Caradhras (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46097,7 +46097,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4518 = { #Celebdil (unowned)
+4518 = { #Celebdil (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46106,7 +46106,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4519 = { #Fanuidhol (unowned)
+4519 = { #Fanuidhol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46115,7 +46115,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4520 = { #Ered Harmol (unowned)
+4520 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46124,7 +46124,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4521 = { #4521 (unowned)
+4521 = { #4521 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46133,7 +46133,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4522 = { #Rhûn (unowned)
+4522 = { #Rhûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46142,7 +46142,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4523 = { #4523 (unowned)
+4523 = { #4523 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46151,7 +46151,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4524 = { #4524 (unowned)
+4524 = { #4524 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46160,7 +46160,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4525 = { #4525 (unowned)
+4525 = { #4525 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46169,7 +46169,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4526 = { #4526 (unowned)
+4526 = { #4526 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46178,7 +46178,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4527 = { #4527 (unowned)
+4527 = { #4527 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46187,7 +46187,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4528 = { #Kâfa Khargagis (unowned)
+4528 = { #Kâfa Khargagis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46196,7 +46196,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4529 = { #Ibav (unowned)
+4529 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46205,7 +46205,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4530 = { #4530 (unowned)
+4530 = { #4530 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46214,7 +46214,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4531 = { #Amon Boli (unowned)
+4531 = { #Amon Boli (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46223,7 +46223,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4532 = { #4532 (unowned)
+4532 = { #4532 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46232,7 +46232,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4533 = { #4533 (unowned)
+4533 = { #4533 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46241,7 +46241,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4534 = { #Sara Khargagis (unowned)
+4534 = { #Sara Khargagis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46250,7 +46250,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4535 = { #4535 (unowned)
+4535 = { #4535 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46259,7 +46259,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4536 = { #Ered Harmol (unowned)
+4536 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46268,7 +46268,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4537 = { #Orocarni (unowned)
+4537 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46277,7 +46277,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4538 = { #4538 (unowned)
+4538 = { #4538 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46286,7 +46286,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4539 = { #Ered Harmol (unowned)
+4539 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46295,7 +46295,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4540 = { #Ered Harmol (unowned)
+4540 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46304,7 +46304,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4541 = { #4541 (unowned)
+4541 = { #4541 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46313,7 +46313,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4542 = { #4542 (unowned)
+4542 = { #4542 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46322,7 +46322,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4543 = { #4543 (unowned)
+4543 = { #4543 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46331,7 +46331,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4544 = { #Dhâth (unowned)
+4544 = { #Dhâth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46340,7 +46340,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4545 = { #Dhâth (unowned)
+4545 = { #Dhâth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46349,7 +46349,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4546 = { #Dhâth (unowned)
+4546 = { #Dhâth (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46358,7 +46358,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4547 = { #Gâthgykarkan (unowned)
+4547 = { #Gâthgykarkan (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46367,7 +46367,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4548 = { #Akhâna (unowned)
+4548 = { #Akhâna (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46376,7 +46376,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4549 = { #Ered Harmol (unowned)
+4549 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46385,7 +46385,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4550 = { #4550 (unowned)
+4550 = { #4550 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46394,7 +46394,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4551 = { #4551 (unowned)
+4551 = { #4551 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46403,7 +46403,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4552 = { #4552 (unowned)
+4552 = { #4552 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46412,7 +46412,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4553 = { #Ered Harmol (unowned)
+4553 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46421,7 +46421,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4554 = { #4554 (unowned)
+4554 = { #4554 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46430,7 +46430,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4555 = { #Ered Harmol (unowned)
+4555 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46439,7 +46439,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4556 = { #4556 (unowned)
+4556 = { #4556 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46448,7 +46448,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4557 = { #4557 (unowned)
+4557 = { #4557 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46457,7 +46457,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4558 = { #Rhûn (unowned)
+4558 = { #Rhûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46466,7 +46466,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4559 = { #Rhûn (unowned)
+4559 = { #Rhûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46475,7 +46475,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4560 = { #4560 (unowned)
+4560 = { #4560 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46484,7 +46484,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4561 = { #4561 (unowned)
+4561 = { #4561 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46493,7 +46493,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4562 = { #4562 (unowned)
+4562 = { #4562 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46502,7 +46502,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4563 = { #4563 (unowned)
+4563 = { #4563 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46511,7 +46511,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4564 = { #Kâfa Kykurian (unowned)
+4564 = { #Kâfa Kykurian (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46520,7 +46520,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4565 = { #Dyr (unowned)
+4565 = { #Dyr (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46529,7 +46529,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4566 = { #4566 (unowned)
+4566 = { #4566 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46538,7 +46538,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4567 = { #Sara Khargasis (unowned)
+4567 = { #Sara Khargasis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46547,7 +46547,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4568 = { #4568 (unowned)
+4568 = { #4568 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46556,7 +46556,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4569 = { #4569 (unowned)
+4569 = { #4569 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46565,7 +46565,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4570 = { #4570 (unowned)
+4570 = { #4570 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46574,7 +46574,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4571 = { #4571 (unowned)
+4571 = { #4571 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46583,7 +46583,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4572 = { #Klyan (unowned)
+4572 = { #Klyan (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46592,7 +46592,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4573 = { #Ûbain (unowned)
+4573 = { #Ûbain (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46601,7 +46601,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4574 = { #4574 (unowned)
+4574 = { #4574 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46610,7 +46610,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4575 = { #4575 (unowned)
+4575 = { #4575 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46619,7 +46619,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4576 = { #4576 (unowned)
+4576 = { #4576 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46628,7 +46628,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4577 = { #4577 (unowned)
+4577 = { #4577 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46637,7 +46637,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4578 = { #Fangorn Forest (unowned)
+4578 = { #Fangorn Forest (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46646,7 +46646,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4579 = { #Akhâna (unowned)
+4579 = { #Akhâna (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46655,7 +46655,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4580 = { #4580 (unowned)
+4580 = { #4580 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46664,7 +46664,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4581 = { #4581 (unowned)
+4581 = { #4581 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46673,7 +46673,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4582 = { #4582 (unowned)
+4582 = { #4582 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46682,7 +46682,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4583 = { #Dír (unowned)
+4583 = { #Dír (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46691,7 +46691,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4584 = { #Orocarni (unowned)
+4584 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46700,7 +46700,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4585 = { #Taur Illuin (unowned)
+4585 = { #Taur Illuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46709,7 +46709,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4586 = { #Pertol Formen (unowned)
+4586 = { #Pertol Formen (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46718,7 +46718,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4587 = { #Orocarni (unowned)
+4587 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46727,7 +46727,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4588 = { #Urtlagga (unowned)
+4588 = { #Urtlagga (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46736,7 +46736,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4589 = { #Celduin (unowned)
+4589 = { #Celduin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46745,7 +46745,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4590 = { #Lhûn (unowned)
+4590 = { #Lhûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46754,7 +46754,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4591 = { #Lhûn (unowned)
+4591 = { #Lhûn (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46763,7 +46763,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4592 = { #Gondpinnath (unowned)
+4592 = { #Gondpinnath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46772,7 +46772,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4593 = { #Gondpinnath (unowned)
+4593 = { #Gondpinnath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46781,7 +46781,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4594 = { #Gondpinnath (unowned)
+4594 = { #Gondpinnath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46790,7 +46790,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4595 = { #Gondpinnath (unowned)
+4595 = { #Gondpinnath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46799,7 +46799,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4596 = { #4596 (unowned)
+4596 = { #4596 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46808,7 +46808,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4597 = { #4597 (unowned)
+4597 = { #4597 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46817,7 +46817,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4598 = { #Pelondolin (unowned)
+4598 = { #Pelondolin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46826,7 +46826,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4599 = { #4599 (unowned)
+4599 = { #4599 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46835,7 +46835,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4600 = { #Tyl Wethrin (unowned)
+4600 = { #Tyl Wethrin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46844,7 +46844,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4601 = { #Tyl Anach (unowned)
+4601 = { #Tyl Anach (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46853,7 +46853,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4602 = { #Echoriath (unowned)
+4602 = { #Echoriath (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46862,7 +46862,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4603 = { #Crissaegrim (unowned)
+4603 = { #Crissaegrim (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46871,7 +46871,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4604 = { #Aihali Undulávë Hullakale (unowned)
+4604 = { #Aihali Undulávë Hullakale (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46880,7 +46880,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4605 = { #Ennyn-in-Sirion (unowned)
+4605 = { #Ennyn-in-Sirion (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46889,7 +46889,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4606 = { #Emyn Dornu (unowned)
+4606 = { #Emyn Dornu (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46898,7 +46898,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4607 = { #Meneltarma (unowned)
+4607 = { #Meneltarma (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46907,7 +46907,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4608 = { #Pinnath Gelin (unowned)
+4608 = { #Pinnath Gelin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46916,7 +46916,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4609 = { #Emyn Parch (unowned)
+4609 = { #Emyn Parch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46925,7 +46925,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4610 = { #Emyn Parch (unowned)
+4610 = { #Emyn Parch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46934,7 +46934,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4611 = { #Emyn Parch (unowned)
+4611 = { #Emyn Parch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46943,7 +46943,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4612 = { #Emyn Parch (unowned)
+4612 = { #Emyn Parch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46952,7 +46952,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4613 = { #Emyn Parch (unowned)
+4613 = { #Emyn Parch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46961,7 +46961,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4614 = { #Emyn Parch (unowned)
+4614 = { #Emyn Parch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46970,7 +46970,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4615 = { #Emyn Parch (unowned)
+4615 = { #Emyn Parch (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46979,7 +46979,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4616 = { #Harondor (unowned)
+4616 = { #Harondor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46988,7 +46988,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4617 = { #Harondor (unowned)
+4617 = { #Harondor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -46997,7 +46997,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4618 = { #Emyn Winion (unowned)
+4618 = { #Emyn Winion (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47006,7 +47006,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4619 = { #4619 (unowned)
+4619 = { #4619 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47015,7 +47015,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4620 = { #4620 (unowned)
+4620 = { #4620 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47024,7 +47024,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4621 = { #4621 (unowned)
+4621 = { #4621 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47033,7 +47033,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4622 = { #Harondor (unowned)
+4622 = { #Harondor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47042,7 +47042,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4623 = { #Harondor (unowned)
+4623 = { #Harondor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47051,7 +47051,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4624 = { #4624 (unowned)
+4624 = { #4624 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47060,7 +47060,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4625 = { #4625 (unowned)
+4625 = { #4625 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47069,7 +47069,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4626 = { #4626 (unowned)
+4626 = { #4626 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47078,7 +47078,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4627 = { #Haradwaith (unowned)
+4627 = { #Haradwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47087,7 +47087,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4628 = { #Angren (unowned)
+4628 = { #Angren (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47096,7 +47096,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4629 = { #Gwathló (unowned)
+4629 = { #Gwathló (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47105,7 +47105,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4630 = { #Angren (unowned)
+4630 = { #Angren (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47114,7 +47114,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4631 = { #4631 (unowned)
+4631 = { #4631 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47123,7 +47123,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4632 = { #River Baranduin (unowned)
+4632 = { #River Baranduin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47132,7 +47132,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4633 = { #River Baranduin (unowned)
+4633 = { #River Baranduin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47141,7 +47141,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4634 = { #4634 (unowned)
+4634 = { #4634 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47150,7 +47150,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4635 = { #4635 (unowned)
+4635 = { #4635 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47159,7 +47159,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4636 = { #4636 (unowned)
+4636 = { #4636 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47168,7 +47168,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4637 = { #4637 (unowned)
+4637 = { #4637 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47177,7 +47177,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4638 = { #4638 (unowned)
+4638 = { #4638 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47186,7 +47186,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4639 = { #4639 (unowned)
+4639 = { #4639 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47195,7 +47195,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4640 = { #4640 (unowned)
+4640 = { #4640 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47204,7 +47204,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4641 = { #4641 (unowned)
+4641 = { #4641 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47213,7 +47213,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4642 = { #Sara Khargasis (unowned)
+4642 = { #Sara Khargasis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47222,7 +47222,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4643 = { #Ka'ish (unowned)
+4643 = { #Ka'ish (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47231,7 +47231,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4644 = { #Arg-Sîmorîg (unowned)
+4644 = { #Arg-Sîmorîg (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47240,7 +47240,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4645 = { #Faelân (unowned)
+4645 = { #Faelân (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47249,7 +47249,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4646 = { #Lôkhas Drûs (unowned)
+4646 = { #Lôkhas Drûs (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47258,7 +47258,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4647 = { #Ibav (unowned)
+4647 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47267,7 +47267,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4648 = { #Sara Khargasis (unowned)
+4648 = { #Sara Khargasis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47276,7 +47276,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4649 = { #Sara Khargasis (unowned)
+4649 = { #Sara Khargasis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47285,7 +47285,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4650 = { #Sara Khargasis (unowned)
+4650 = { #Sara Khargasis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47294,7 +47294,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4651 = { #4651 (unowned)
+4651 = { #4651 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47303,7 +47303,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4652 = { #Orocarni (unowned)
+4652 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47312,7 +47312,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4653 = { #Orocarni (unowned)
+4653 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47321,7 +47321,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4654 = { #Orocarni (unowned)
+4654 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47330,7 +47330,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4655 = { #Ibav (unowned)
+4655 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47339,7 +47339,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4656 = { #Ibav (unowned)
+4656 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47348,7 +47348,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4657 = { #4657 (unowned)
+4657 = { #4657 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47357,7 +47357,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4658 = { #4658 (unowned)
+4658 = { #4658 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47366,7 +47366,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4659 = { #Aegân (unowned)
+4659 = { #Aegân (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47375,7 +47375,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4660 = { #4660 (unowned)
+4660 = { #4660 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47384,7 +47384,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4661 = { #Orocarni (unowned)
+4661 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47393,7 +47393,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4662 = { #4662 (unowned)
+4662 = { #4662 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47402,7 +47402,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4663 = { #4663 (unowned)
+4663 = { #4663 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47411,7 +47411,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4664 = { #Bûlkhyades (unowned)
+4664 = { #Bûlkhyades (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47420,7 +47420,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4665 = { #4665 (unowned)
+4665 = { #4665 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47429,7 +47429,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4666 = { #4666 (unowned)
+4666 = { #4666 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47438,7 +47438,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4667 = { #4667 (unowned)
+4667 = { #4667 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47447,7 +47447,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4668 = { #4668 (unowned)
+4668 = { #4668 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47456,7 +47456,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4669 = { #4669 (unowned)
+4669 = { #4669 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47465,7 +47465,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4670 = { #4670 (unowned)
+4670 = { #4670 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47474,7 +47474,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4671 = { #Kâfa Khey (unowned)
+4671 = { #Kâfa Khey (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47483,7 +47483,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4672 = { #Khey Fârt (unowned)
+4672 = { #Khey Fârt (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47492,7 +47492,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4673 = { #Kâfa Khey (unowned)
+4673 = { #Kâfa Khey (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47501,7 +47501,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4674 = { #Saerwaith (unowned)
+4674 = { #Saerwaith (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47510,7 +47510,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4675 = { #Atha (unowned)
+4675 = { #Atha (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47519,7 +47519,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4676 = { #Kâfa Khey (unowned)
+4676 = { #Kâfa Khey (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47528,7 +47528,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4677 = { #Kâfa Khey (unowned)
+4677 = { #Kâfa Khey (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47537,7 +47537,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4678 = { #Ered Harmol (unowned)
+4678 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47546,7 +47546,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4679 = { #Ered Harmol (unowned)
+4679 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47555,7 +47555,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4680 = { #Ered Harmol (unowned)
+4680 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47564,7 +47564,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4681 = { #Ered Harmol (unowned)
+4681 = { #Ered Harmol (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47573,7 +47573,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4682 = { #Aldûryaknar (unowned)
+4682 = { #Aldûryaknar (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47582,7 +47582,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4683 = { #Kâfa Khargagis (unowned)
+4683 = { #Kâfa Khargagis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47591,7 +47591,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4684 = { #Kâfa Kykurian (unowned)
+4684 = { #Kâfa Kykurian (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47600,7 +47600,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4685 = { #Barl Syrnac (unowned)
+4685 = { #Barl Syrnac (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47609,7 +47609,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4686 = { #Barl Syrnac (unowned)
+4686 = { #Barl Syrnac (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47618,7 +47618,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4687 = { #Táraparsa (unowned)
+4687 = { #Táraparsa (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47627,7 +47627,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4688 = { #Sara Khargasis (unowned)
+4688 = { #Sara Khargasis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47636,7 +47636,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4689 = { #Sara Khargagis (unowned)
+4689 = { #Sara Khargagis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47645,7 +47645,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4690 = { #4690 (unowned)
+4690 = { #4690 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47654,7 +47654,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4691 = { #4691 (unowned)
+4691 = { #4691 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47663,7 +47663,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4692 = { #4692 (unowned)
+4692 = { #4692 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47672,7 +47672,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4693 = { #4693 (unowned)
+4693 = { #4693 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47681,7 +47681,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4694 = { #Gâthgykarkan (unowned)
+4694 = { #Gâthgykarkan (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47690,7 +47690,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4695 = { #Ibav (unowned)
+4695 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47699,7 +47699,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4696 = { #4696 (unowned)
+4696 = { #4696 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47708,7 +47708,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4697 = { #4697 (unowned)
+4697 = { #4697 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47717,7 +47717,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4698 = { #4698 (unowned)
+4698 = { #4698 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47726,7 +47726,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4699 = { #4699 (unowned)
+4699 = { #4699 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47735,7 +47735,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4700 = { #Ibav (unowned)
+4700 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47744,7 +47744,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4701 = { #Ibav (unowned)
+4701 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47753,7 +47753,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4702 = { #Ibav (unowned)
+4702 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47762,7 +47762,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4703 = { #Ibav (unowned)
+4703 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47771,7 +47771,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4704 = { #4704 (unowned)
+4704 = { #4704 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47780,7 +47780,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4705 = { #Ibav (unowned)
+4705 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47789,7 +47789,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4706 = { #Orocarni (unowned)
+4706 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47798,7 +47798,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4707 = { #4707 (unowned)
+4707 = { #4707 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47807,7 +47807,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4708 = { #Orocarni (unowned)
+4708 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47816,7 +47816,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4709 = { #Ibav (unowned)
+4709 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47825,7 +47825,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4710 = { #4710 (unowned)
+4710 = { #4710 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47834,7 +47834,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4711 = { #Ibav (unowned)
+4711 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47843,7 +47843,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4712 = { #Ibav (unowned)
+4712 = { #Ibav (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47852,7 +47852,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4713 = { #4713 (unowned)
+4713 = { #4713 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47861,7 +47861,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4714 = { #4714 (unowned)
+4714 = { #4714 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47870,7 +47870,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4715 = { #Orocarni (unowned)
+4715 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47879,7 +47879,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4716 = { #4716 (unowned)
+4716 = { #4716 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47888,7 +47888,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4717 = { #4717 (unowned)
+4717 = { #4717 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47897,7 +47897,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4718 = { #4718 (unowned)
+4718 = { #4718 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47906,7 +47906,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4719 = { #4719 (unowned)
+4719 = { #4719 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47915,7 +47915,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4720 = { #4720 (unowned)
+4720 = { #4720 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47924,7 +47924,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4721 = { #4721 (unowned)
+4721 = { #4721 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47933,7 +47933,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4722 = { #4722 (unowned)
+4722 = { #4722 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47942,7 +47942,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4723 = { #Akhâna (unowned)
+4723 = { #Akhâna (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47951,7 +47951,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4724 = { #Sara Khargasis (unowned)
+4724 = { #Sara Khargasis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47960,7 +47960,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4725 = { #4725 (unowned)
+4725 = { #4725 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47969,7 +47969,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4726 = { #Kâfa Kykurian (unowned)
+4726 = { #Kâfa Kykurian (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47978,7 +47978,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4727 = { #Kâfa Khargagis (unowned)
+4727 = { #Kâfa Khargagis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47987,7 +47987,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4728 = { #Kâfa Dalpygis (unowned)
+4728 = { #Kâfa Dalpygis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -47996,7 +47996,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4729 = { #4729 (unowned)
+4729 = { #4729 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48005,7 +48005,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4730 = { #Kâfa Khargagis (unowned)
+4730 = { #Kâfa Khargagis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48014,7 +48014,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4731 = { #4731 (unowned)
+4731 = { #4731 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48023,7 +48023,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4732 = { #4732 (unowned)
+4732 = { #4732 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48032,7 +48032,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4733 = { #4733 (unowned)
+4733 = { #4733 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48041,7 +48041,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4734 = { #Sara Khargagis (unowned)
+4734 = { #Sara Khargagis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48050,7 +48050,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4735 = { #4735 (unowned)
+4735 = { #4735 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48059,7 +48059,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4736 = { #4736 (unowned)
+4736 = { #4736 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48068,7 +48068,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4737 = { #Sara Khargasis (unowned)
+4737 = { #Sara Khargasis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48077,7 +48077,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4738 = { #4738 (unowned)
+4738 = { #4738 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48086,7 +48086,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4739 = { #Taur Illuin (unowned)
+4739 = { #Taur Illuin (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48095,7 +48095,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4740 = { #Sharthax (unowned)
+4740 = { #Sharthax (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48104,7 +48104,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4741 = { #Orocarni (unowned)
+4741 = { #Orocarni (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48113,7 +48113,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4742 = { #4742 (unowned)
+4742 = { #4742 (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -48122,7 +48122,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-4743 = { #Rûbor (unowned)
+4743 = { #Rûbor (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -55240,7 +55240,7 @@
 	terrain = "coastal_terrain"
 	trade_goods = ""
 }
-5460 = { #Khelgardh (unowned)
+5460 = { #Khelgardh (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -55249,7 +55249,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5461 = { #Sara Khargasis (unowned)
+5461 = { #Sara Khargasis (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -55285,7 +55285,7 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 }
-5465 = { #Lûrs Vorganís (unowned)
+5465 = { #Lûrs Vorganís (impassable)
 	terrain = "impassable_terrain"
 	culture = "beasts"
 	religion = "eastern_animism"
