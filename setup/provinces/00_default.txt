@@ -568,7 +568,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-52 = { #Pinnath Gelin (unowned)
+52 = { #Pinnath Gelin (uninhabitable)
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -5068,7 +5068,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "melkorism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5077,7 +5077,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5097,7 +5097,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5106,7 +5106,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5711,7 +5711,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5720,7 +5720,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5729,7 +5729,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5738,7 +5738,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5747,7 +5747,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5756,7 +5756,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5774,7 +5774,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5783,7 +5783,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5792,7 +5792,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5801,7 +5801,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5810,7 +5810,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5819,7 +5819,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -5994,7 +5994,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6003,7 +6003,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6121,7 +6121,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6130,7 +6130,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6139,7 +6139,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6148,7 +6148,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6157,7 +6157,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6175,7 +6175,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6184,7 +6184,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6193,7 +6193,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6202,7 +6202,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6211,7 +6211,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6220,7 +6220,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6229,7 +6229,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6238,7 +6238,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6247,7 +6247,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6256,7 +6256,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6287,7 +6287,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6296,7 +6296,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6305,7 +6305,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6314,7 +6314,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6323,7 +6323,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6372,7 +6372,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6381,7 +6381,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6390,7 +6390,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6399,7 +6399,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6408,7 +6408,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6417,7 +6417,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -6426,7 +6426,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -20410,7 +20410,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -21231,7 +21231,7 @@
 	terrain = "desert"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -21241,7 +21241,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -21250,7 +21250,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "cattle"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -21270,7 +21270,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -21279,7 +21279,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -21288,7 +21288,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -21297,7 +21297,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -21306,7 +21306,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -21315,7 +21315,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -24685,7 +24685,7 @@
 	terrain = "plains"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -24694,7 +24694,7 @@
 	terrain = "plains"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -24703,7 +24703,7 @@
 	terrain = "desert"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -24712,7 +24712,7 @@
 	terrain = "desert"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -27018,7 +27018,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -27027,7 +27027,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "leather"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -27047,7 +27047,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -27141,7 +27141,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -27150,7 +27150,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -27942,7 +27942,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -27951,7 +27951,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -27960,7 +27960,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28269,7 +28269,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28278,7 +28278,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28287,7 +28287,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28296,7 +28296,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28305,7 +28305,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28314,7 +28314,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28334,7 +28334,7 @@
 	terrain = "desert"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28354,7 +28354,7 @@
 	terrain = "desert"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28363,7 +28363,7 @@
 	terrain = "plains"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28372,7 +28372,7 @@
 	terrain = "desert"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28381,7 +28381,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28390,7 +28390,7 @@
 	terrain = "desert"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28399,7 +28399,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28408,7 +28408,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28417,7 +28417,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28426,7 +28426,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28435,7 +28435,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28444,7 +28444,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28453,7 +28453,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28462,7 +28462,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28471,7 +28471,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28480,7 +28480,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -28670,7 +28670,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30595,7 +30595,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30604,7 +30604,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30646,7 +30646,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30655,7 +30655,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30664,7 +30664,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30918,7 +30918,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30927,7 +30927,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30936,7 +30936,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30956,7 +30956,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30965,7 +30965,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30974,7 +30974,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30983,7 +30983,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -30992,7 +30992,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -31001,7 +31001,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -31010,7 +31010,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -31019,7 +31019,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "marble"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -31028,7 +31028,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -31037,7 +31037,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -31046,7 +31046,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -31064,7 +31064,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -31073,7 +31073,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -31082,7 +31082,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -31091,7 +31091,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -32594,7 +32594,7 @@
 	terrain = "steppe"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "base_metals"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -32603,7 +32603,7 @@
 	terrain = "steppe"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -32612,7 +32612,7 @@
 	terrain = "steppe"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -32621,7 +32621,7 @@
 	terrain = "steppe"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -32630,7 +32630,7 @@
 	terrain = "steppe"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -32639,7 +32639,7 @@
 	terrain = "steppe"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -32648,7 +32648,7 @@
 	terrain = "steppe"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -32657,7 +32657,7 @@
 	terrain = "steppe"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -32666,7 +32666,7 @@
 	terrain = "steppe"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -35412,7 +35412,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -35421,7 +35421,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -35430,7 +35430,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -36826,7 +36826,7 @@
 	terrain = "desert"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -36835,7 +36835,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -36844,7 +36844,7 @@
 	terrain = "desert"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37127,7 +37127,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "stone"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37136,7 +37136,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "precious_metals"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37145,7 +37145,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37262,7 +37262,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37402,7 +37402,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37411,7 +37411,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37420,7 +37420,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37440,7 +37440,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37449,7 +37449,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37458,7 +37458,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37594,7 +37594,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37716,7 +37716,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37725,7 +37725,7 @@
 	terrain = "hills"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37734,7 +37734,7 @@
 	terrain = "plains"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37774,7 +37774,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37882,7 +37882,7 @@
 	terrain = "mountain"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37892,7 +37892,7 @@
 	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37913,7 +37913,7 @@
 	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37945,7 +37945,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -37954,7 +37954,7 @@
 	terrain = "plains"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38142,7 +38142,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38151,7 +38151,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38160,7 +38160,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38169,7 +38169,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38178,7 +38178,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38187,7 +38187,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38196,7 +38196,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38205,7 +38205,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38214,7 +38214,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38223,7 +38223,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38232,7 +38232,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38241,7 +38241,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38250,7 +38250,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38259,7 +38259,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38268,7 +38268,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38277,7 +38277,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38286,7 +38286,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38423,7 +38423,7 @@
 	terrain = "plains"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38454,7 +38454,7 @@
 	terrain = "plains"
 	culture = "variag"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38559,7 +38559,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38768,7 +38768,7 @@
 	terrain = "plains"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38778,7 +38778,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38787,7 +38787,7 @@
 	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38797,7 +38797,7 @@
 	terrain = "hills"
 	culture = "eredrim"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38806,7 +38806,7 @@
 	terrain = "hills"
 	culture = "eredrim"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38815,7 +38815,7 @@
 	terrain = "plains"
 	culture = "eredrim"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38824,7 +38824,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -38833,7 +38833,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39094,7 +39094,7 @@
 	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39136,7 +39136,7 @@
 	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39145,7 +39145,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39154,7 +39154,7 @@
 	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39163,7 +39163,7 @@
 	terrain = "plains"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39172,7 +39172,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39192,7 +39192,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39223,7 +39223,7 @@
 	terrain = "plains"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39254,7 +39254,7 @@
 	terrain = "hills"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "vegetables"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39272,7 +39272,7 @@
 	terrain = "desert"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39281,7 +39281,7 @@
 	terrain = "desert"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39290,7 +39290,7 @@
 	terrain = "plains"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39299,7 +39299,7 @@
 	terrain = "desert"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39308,7 +39308,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39317,7 +39317,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39326,7 +39326,7 @@
 	terrain = "desert"
 	culture = "harondorian"
 	religion = "iluvatarism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39346,7 +39346,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39979,7 +39979,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -39997,7 +39997,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40006,7 +40006,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40015,7 +40015,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40024,7 +40024,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40033,7 +40033,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40042,7 +40042,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40051,7 +40051,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40060,7 +40060,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40069,7 +40069,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40078,7 +40078,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40087,7 +40087,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40096,7 +40096,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40105,7 +40105,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40114,7 +40114,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40156,7 +40156,7 @@
 	terrain = "hills"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40165,7 +40165,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40174,7 +40174,7 @@
 	terrain = "desert"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40413,7 +40413,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40466,7 +40466,7 @@
 	terrain = "hills"
 	culture = "haradrim"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40475,7 +40475,7 @@
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40764,7 +40764,7 @@
 	terrain = "plains"
 	culture = "siranian"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40773,7 +40773,7 @@
 	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -40782,7 +40782,7 @@
 	terrain = "plains"
 	culture = "siranian"
 	religion = "eastern_animism"
-	trade_goods = "base_metals"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -52355,7 +52355,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -53537,7 +53537,7 @@
 	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
@@ -54596,7 +54596,7 @@
 	terrain = "plains"
 	culture = "beasts"
 	religion = "eastern_animism"
-	trade_goods = "wild_game"
+	trade_goods = ""
 	civilization_value = 0
 	barbarian_power = 0
 	province_rank = "settlement"
