@@ -285,7 +285,7 @@ normal_winter = LIST {
 	303 304 308 315 316 318 328 357 358 #nan_carnen_area
 	369 378 382 383 772 786 1000 2036 2720 #annendor_area
 	 ### ered_mithrin_region ### not sarch_nia_linquelie_area
-	371 373 374 381 398 399 400 726 727 1002 1003 3819 #gonnland_area (mostly: Nan Môrsereg, Burh Thurasig, Pargurb, Steinholl, Aerinin, Khuram, Versan, Lar-Hûz, Azgaru, Vargurat, Bulor-Ilg, Rhulmbodang) (misses: 380:Erebor)
+	371 373 374 381 398 399 400 726 727 1002 1003 3819 #gonnland_area (mostly: Nan Môrsereg, Burh Thurasig, Pargurb, Steinholl, Aerinin, Khuram, Versan Mîn, Lar-Hûz, Azgaru Mîn, Vargurat, Bulor-Ilg, Rhulmbodang) (misses: 380:Erebor)
 	388 390 823 852 389 391 1001 3594 #agorbad_area
 	319 384 385 386 387 3671 3673 3674 3675 3676 3925 3926 #emyn_engrin_area
 	897 3595 3596 3597 3598 3599 3724 #ered_mithrin_area
@@ -295,7 +295,7 @@ normal_winter = LIST {
 	368 997 998 2661 2662 2666 2669 2716 #emyn_nu_fuin_area
 	756 761 775 993 1103 1108 1109 1110 1111 2710 2713 2714 #taur_guldur_area
 	363 367 379 755 757 994 996 2715 #angaladh_rhunen_area
-	2664 2665 2675 2676 2677 2678 2679 2718 3669 3670 #eryn_arador_area (mostly: Jahem, Bora, Padataruat, Thandu, Nankûth, Taratha, Rantoen, Tonthôn, Haudh-en-Aiganaur, Celebannon) (misses: 999:Elvenking's Halls)
+	2664 2665 2675 2676 2677 2678 2679 2718 3669 3670 #eryn_arador_area (mostly: Jahem, Bora Mîn, Padataruat, Thandu Mîn, Nankûth, Taratha, Rantoen, Tonthôn, Haudh-en-Aiganaur, Celebannon) (misses: 999:Elvenking's Halls)
 	2658 2660 2667 2668 2670 2671 2672 2673 2674 2680 2681 2717 3818 #annuryn_area
 	 ### uvanwaith_region ###
 	774 780 798 822 1063 1270 1271 1350 1351 #berennyn_area
@@ -367,8 +367,8 @@ severe_winter = LIST {
 	256 2628 2629 2630 2631 2632 2633 2634 2635 2636 2637 #aiatar_area
 	 ### angmar_region ###
 	866 868 873 904 913 923 963 980 1034 #carn_dum_area
-	800 859 883 884 896 1086 1087 1580 #gundabad_area (mostly: Den Lóke, Gundalok, Nan Lóke, Ûgûlai, Zirin Malasul, Aes Ruin, Parth Hithram, Basânabad) (misses: 860:Gundabad)
-	862 863 864 865 867 874 902 920 1059 1290 #nan_angmar_area (mostly: Latash, Nan Angmar, Parth Gurthil, Mindil Kepich, Morkai, Angirith, Nan Gurth, Ravda, Maethad, Nan Lithad) (misses: 903:Nordinbad)
+	800 859 883 884 896 1086 1087 1580 #gundabad_area (mostly: Den Lóke, Gundalok Mîn, Nan Lóke, Ûgûlai, Zirin Malasul, Aes Ruin Mîn, Parth Hithram, Basânabad) (misses: 860:Gundabad)
+	862 863 864 865 867 874 902 920 1059 1290 #nan_angmar_area (mostly: Latash, Nan Angmar, Parth Gurthil, Mindil Kepich Mîn, Morkai, Angirith, Nan Gurth, Ravda, Maethad, Nan Lithad) (misses: 903:Nordinbad)
 	875 906 907 908 921 1780 2361 879 878 880 905 3890 #ram_duath_area
 	 ### forodwaith_region ###
 	805 806 807 808 810 811 813 819 900 #talath_oiohelka_area
