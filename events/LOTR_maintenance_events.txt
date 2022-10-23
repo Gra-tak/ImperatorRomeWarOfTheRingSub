@@ -1264,3 +1264,41 @@ lotr_maintenance.10 = {
 		}
 	}
 }
+
+#emptying province that is no longer inhabitable
+lotr_maintenance.11 = {
+	type = country_event
+	title = OK
+	desc = OK
+	hidden = yes
+	trigger = {
+		owns = 5025
+	}
+	immediate = {
+		if = {
+			limit = {
+				owns = 3957
+			}
+			p:3957 = { save_scope_as = target }
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					NOT = { THIS = p:5025 }
+				}
+				save_scope_as = target
+			}
+		}
+		if = {
+			limit = {
+				p:5025 = { is_capital = yes }
+			}
+			set_capital = scope:target
+		}
+		p:5025 = {
+			every_pops_in_province = {
+				move_pop = scope:target
+			}
+		}
+	}
+}
