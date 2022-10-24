@@ -48,7 +48,7 @@
 	barbarian_civic_path_2 = { ##
 		modifier = {
 			happiness_for_wrong_culture_modifier = 0.1
-			global_cohort_recruit_speed = 0.1
+			land_morale_recovery = 0.04
 		}
 		icon = celtic_gallic_path_1
 		requires = {barbarian_civic_path_1}

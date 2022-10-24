@@ -1085,6 +1085,19 @@ lotr_frodos_mission_events.100 = {
 			capital_scope.governorship = {
 				if = {
 					limit = { has_legion_trigger = yes }
+					#add any existing units in the legion to what is raised as a new one. 50 orcs give one unit
+					every_legion = {
+						every_legion_unit = {
+							every_sub_unit = {
+								ROOT = {
+									change_variable = {
+										name = number_of_orcs
+										add = 50
+									}
+								}
+							}
+						}
+					}
 					disband_legion = yes
 				}
 				raise_legion = {
