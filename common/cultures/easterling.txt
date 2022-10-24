@@ -2,9 +2,9 @@
 
 	levy_template = levy_easterling
 	
-	primary = light_cavalry
-	second = light_infantry
-	flank = horse_archers
+	primary = chariots
+	second = heavy_infantry
+	flank = light_cavalry
 
 	primary_navy = galley
 	secondary_navy = galley
