@@ -442,16 +442,22 @@ move_home_effect = {
 				}
 			}
 			weight = {
+				base = 10
+				country_has_space_for_migration_modifer = yes
 				modifier = {
 					factor = 5
 					religion = $RELIGION$
 				}
+				$EXTRA_WEIGHT$ = yes
 			}
 			random_owned_province = {
 				limit = {
 					total_population < population_cap
 					has_siege = no
 					controller = owner
+				}
+				weight = {
+					province_has_space_for_migration_modifer = yes
 				}
 				save_scope_as = target
 			}
@@ -461,7 +467,13 @@ move_home_effect = {
 	else_if = {
 		limit = {
 			any_country = {
-				culture.culture_group = $CULTURE_GROUP$
+				OR = {
+					culture.culture_group = $CULTURE_GROUP$
+					any_integrated_culture = {
+						this.culture = $CULTURE$
+					}
+				}
+				$EXTRA_COND$ = yes
 				any_owned_province = {
 					total_population < population_cap
 					has_siege = no
@@ -471,7 +483,13 @@ move_home_effect = {
 		}
 		random_country = {
 			limit = {
-				culture.culture_group = $CULTURE_GROUP$
+				OR = {
+					culture.culture_group = $CULTURE_GROUP$
+					any_integrated_culture = {
+						this.culture = $CULTURE$
+					}
+				}
+				$EXTRA_COND$ = yes
 				any_owned_province = {
 					total_population < population_cap
 					has_siege = no
@@ -479,16 +497,31 @@ move_home_effect = {
 				}
 			}
 			weight = {
+				base = 10
+				country_has_space_for_migration_modifer = yes
 				modifier = {
 					factor = 5
 					religion = $RELIGION$
 				}
+				modifier = {
+					factor = 5
+					AND = {
+						any_integrated_culture = {
+							this.culture = $CULTURE$
+						}
+						culture.culture_group = $CULTURE_GROUP$
+					}
+				}
+				$EXTRA_WEIGHT$ = yes
 			}
 			random_owned_province = {
 				limit = {
 					total_population < population_cap
 					has_siege = no
 					controller = owner
+				}
+				weight = {
+					province_has_space_for_migration_modifer = yes
 				}
 				save_scope_as = target
 			}

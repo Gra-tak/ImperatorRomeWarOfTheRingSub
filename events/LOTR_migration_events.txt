@@ -320,89 +320,10 @@ lotr_migration_events.2 = {
 			random_in_list = {
 				list = trying_to_move_list
 				remove_from_list = trying_to_move_list
-				if = {
-					limit = {
-						any_country = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture = PREV.culture
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture = PREV.culture
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = PREV.religion
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
-				}
-				else_if = {
-					limit = {
-						any_country = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture.culture_group = PREV.culture.culture_group
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture.culture_group = PREV.culture.culture_group
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = PREV.religion
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
+				move_home_effect = {
+					CULTURE = culture
+					CULTURE_GROUP = culture_group
+					RELIGION = religion
 				}
 			}
 		}
@@ -509,91 +430,10 @@ lotr_migration_events.3 = {
 			random_in_list = {
 				list = trying_to_move_list
 				remove_from_list = trying_to_move_list
-				if = {
-					limit = {
-						any_country = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture = PREV.culture
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture = PREV.culture
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = PREV.religion
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
-				}
-				else_if = {
-					limit = {
-						any_country = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture.culture_group = PREV.culture.culture_group
-							NOT = { primary_culture = nandor }
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture.culture_group = PREV.culture.culture_group
-							NOT = { primary_culture = nandor }
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = PREV.religion
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
+				move_home_effect = {
+					CULTURE = culture
+					CULTURE_GROUP = culture_group
+					RELIGION = religion
 				}
 			}
 		}
@@ -696,89 +536,10 @@ lotr_migration_events.4 = {
 			random_in_list = {
 				list = trying_to_move_list
 				remove_from_list = trying_to_move_list
-				if = {
-					limit = {
-						any_country = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture = PREV.culture
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture = PREV.culture
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = PREV.religion
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
-				}
-				else_if = {
-					limit = {
-						any_country = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture.culture_group = PREV.culture.culture_group
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture.culture_group = PREV.culture.culture_group
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = PREV.religion
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
+				move_home_effect = {
+					CULTURE = culture
+					CULTURE_GROUP = culture_group
+					RELIGION = religion
 				}
 			}
 		}
