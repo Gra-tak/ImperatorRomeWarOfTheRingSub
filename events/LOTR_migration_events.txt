@@ -106,118 +106,10 @@ lotr_migration_events.1 = {
 				list = trying_to_flee_list
 				remove_from_list = trying_to_move_list
 				save_scope_as = pop
-				if = {
-					limit = {
-						any_country = {
-							culture = PREV.culture
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-						}
-					}
-					random_country = {
-						limit = {
-							culture = PREV.culture
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = PREV.religion
-							}
-							modifier = {
-								factor = 0.2
-								religion = melkorism
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-								province_is_safe_modifier = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
-				}
-				else_if = {
-					limit = {
-						any_country = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							OR = {
-								any_integrated_culture = {
-									this.culture = scope:pop.culture
-								}
-								culture.culture_group = PREV.culture.culture_group
-							}
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							OR = {
-								any_integrated_culture = {
-									this.culture = scope:pop.culture
-								}
-								culture.culture_group = PREV.culture.culture_group
-							}
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = PREV.religion
-							}
-							modifier = {
-								factor = 5
-								AND = {
-									any_integrated_culture = {
-										this.culture = scope:pop.culture
-									}
-									culture.culture_group = PREV.culture.culture_group
-								}
-							}
-							modifier = {
-								factor = 0.2
-								religion = melkorism
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-								province_is_safe_modifier = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
+				move_home_effect = {
+					EXTRA_COND = not_nandor_trigger
+					EXTRA_WEIGHT = not_melkor_modifier
+					EXTRA_P_WEIGHT = province_is_safe_modifier
 				}
 			}
 		}
@@ -240,78 +132,9 @@ lotr_migration_events.2 = {
 	}
 
 	immediate = {
-		set_variable = {
-			name = trying_to_move_num
-			value = 0
+		determine_movers_effect = {
+			CULTURE_GROUP = dwarf_group
 		}
-		every_owned_province = {
-			set_variable = {
-				name = all
-				value = 0
-			}
-			set_variable = {
-				name = mover
-				value = 0
-			}
-			every_pops_in_province = {
-				PREV = {
-					change_variable = {
-						name = all
-						add = 1
-					}
-				}
-				if = {
-					limit = { pop_culture_group = dwarf_group }
-					PREV = {
-						change_variable = {
-							name = mover
-							add = 1
-						}
-					}
-				}
-			}
-			if = {
-				limit = { var:all > 0 }
-				set_variable = {
-					name = moverPerc
-					value = var:mover
-				}
-				change_variable = {
-					name = moverPerc
-					divide = var:all
-				}
-				if = {
-					limit = { var:moverPerc < 0.75 } #leave enclaves intact
-					every_pops_in_province = {
-						limit = {
-							pop_culture_group = dwarf_group
-						}
-						add_to_list = trying_to_move_list
-					}
-					ROOT = {
-						change_variable = {
-							name = trying_to_move_num
-							add = prev.var:mover
-						}
-				}
-				}
-			}
-		}
-
-
-		set_variable = {
-			name = actualMover
-			value = { integer_range = { min = -35 max = 55 } }
-		}
-		change_variable = {
-			name = actualMover
-			multiply = var:trying_to_move_num
-		}
-		change_variable = {
-			name = actualMover
-			divide = 100
-		}
-		round_actual_moved_effect = yes
 	}
 	option = {
 		name = "OK"
@@ -320,10 +143,11 @@ lotr_migration_events.2 = {
 			random_in_list = {
 				list = trying_to_move_list
 				remove_from_list = trying_to_move_list
+				save_scope_as = pop
 				move_home_effect = {
-					CULTURE = culture
-					CULTURE_GROUP = culture_group
-					RELIGION = religion
+					EXTRA_COND = not_southern_dwarves #unless exact culture
+					EXTRA_WEIGHT = empty_modifier
+					EXTRA_P_WEIGHT = empty_modifier
 				}
 			}
 		}
@@ -346,82 +170,9 @@ lotr_migration_events.3 = {
 	}
 
 	immediate = {
-		set_variable = {
-			name = trying_to_move_num
-			value = 0
+		determine_movers_effect = {
+			CULTURE_GROUP = teleri_group
 		}
-		every_owned_province = {
-			set_variable = {
-				name = all
-				value = 0
-			}
-			set_variable = {
-				name = mover
-				value = 0
-			}
-			every_pops_in_province = {
-				PREV = {
-					change_variable = {
-						name = all
-						add = 1
-					}
-				}
-				if = {
-					limit = { 
-						pop_culture_group = teleri_group 
-						NOT = { pop_culture = nandor }
-					}
-					PREV = {
-						change_variable = {
-							name = mover
-							add = 1
-						}
-					}
-				}
-			}
-			if = {
-				limit = { var:all > 0 }
-				set_variable = {
-					name = moverPerc
-					value = var:mover
-				}
-				change_variable = {
-					name = moverPerc
-					divide = var:all
-				}
-				if = {
-					limit = { var:moverPerc < 0.75 } #leave enclaves intact
-					every_pops_in_province = {
-						limit = {
-							pop_culture_group = teleri_group
-							NOT = { pop_culture = nandor }
-						}
-						add_to_list = trying_to_move_list
-					}
-					ROOT = {
-						change_variable = {
-							name = trying_to_move_num
-							add = prev.var:mover
-						}
-				}
-				}
-			}
-		}
-
-
-		set_variable = {
-			name = actualMover
-			value = { integer_range = { min = -35 max = 55 } }
-		}
-		change_variable = {
-			name = actualMover
-			multiply = var:trying_to_move_num
-		}
-		change_variable = {
-			name = actualMover
-			divide = 100
-		}
-		round_actual_moved_effect = yes
 	}
 	option = {
 		name = "OK"
@@ -430,10 +181,11 @@ lotr_migration_events.3 = {
 			random_in_list = {
 				list = trying_to_move_list
 				remove_from_list = trying_to_move_list
+				save_scope_as = pop
 				move_home_effect = {
-					CULTURE = culture
-					CULTURE_GROUP = culture_group
-					RELIGION = religion
+					EXTRA_COND = not_nandor_trigger #unless exact culture
+					EXTRA_WEIGHT = empty_modifier
+					EXTRA_P_WEIGHT = empty_modifier
 				}
 			}
 		}
@@ -456,78 +208,9 @@ lotr_migration_events.4 = {
 	}
 
 	immediate = {
-		set_variable = {
-			name = trying_to_move_num
-			value = 0
+		determine_movers_effect = {
+			CULTURE_GROUP = noldor_group
 		}
-		every_owned_province = {
-			set_variable = {
-				name = all
-				value = 0
-			}
-			set_variable = {
-				name = mover
-				value = 0
-			}
-			every_pops_in_province = {
-				PREV = {
-					change_variable = {
-						name = all
-						add = 1
-					}
-				}
-				if = {
-					limit = { pop_culture_group = noldor_group }
-					PREV = {
-						change_variable = {
-							name = mover
-							add = 1
-						}
-					}
-				}
-			}
-			if = {
-				limit = { var:all > 0 }
-				set_variable = {
-					name = moverPerc
-					value = var:mover
-				}
-				change_variable = {
-					name = moverPerc
-					divide = var:all
-				}
-				if = {
-					limit = { var:moverPerc < 0.75 } #leave enclaves intact
-					every_pops_in_province = {
-						limit = {
-							pop_culture_group = noldor_group
-						}
-						add_to_list = trying_to_move_list
-					}
-					ROOT = {
-						change_variable = {
-							name = trying_to_move_num
-							add = prev.var:mover
-						}
-				}
-				}
-			}
-		}
-
-
-		set_variable = {
-			name = actualMover
-			value = { integer_range = { min = -35 max = 55 } }
-		}
-		change_variable = {
-			name = actualMover
-			multiply = var:trying_to_move_num
-		}
-		change_variable = {
-			name = actualMover
-			divide = 100
-		}
-		round_actual_moved_effect = yes
 	}
 	option = {
 		name = "OK"
@@ -536,10 +219,11 @@ lotr_migration_events.4 = {
 			random_in_list = {
 				list = trying_to_move_list
 				remove_from_list = trying_to_move_list
+				save_scope_as = pop
 				move_home_effect = {
-					CULTURE = culture
-					CULTURE_GROUP = culture_group
-					RELIGION = religion
+					EXTRA_COND = always
+					EXTRA_WEIGHT = empty_modifier
+					EXTRA_P_WEIGHT = empty_modifier
 				}
 			}
 		}
@@ -570,89 +254,11 @@ lotr_migration_events.5 = {
 				limit = {
 					pop_culture_group = orcs_group
 				}
-				if = {
-					limit = {
-						any_country = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture = PREV.culture
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture = PREV.culture
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = melkorism
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
-				}
-				else_if = {
-					limit = {
-						any_country = {
-							any_owned_province = { 
-								total_population < population_cap 
-								has_siege = no
-								controller = owner
-							}
-							culture.culture_group = PREV.culture.culture_group
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = { 
-								total_population < population_cap 
-								has_siege = no
-								controller = owner
-							}
-							culture.culture_group = PREV.culture.culture_group
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = melkorism
-							}
-						}
-						random_owned_province = {
-							limit = { 
-								total_population < population_cap 
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
+				save_scope_as = pop
+				move_home_effect = {
+					EXTRA_COND = always
+					EXTRA_WEIGHT = empty_modifier
+					EXTRA_P_WEIGHT = empty_modifier
 				}
 			}
 		}
@@ -777,89 +383,11 @@ lotr_migration_events.6 = {
 			random_in_list = {
 				list = trying_to_move_list
 				remove_from_list = trying_to_move_list
-				if = {
-					limit = {
-						any_country = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture = PREV.culture
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture = PREV.culture
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = PREV.religion
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
-				}
-				else_if = {
-					limit = {
-						any_country = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture.culture_group = PREV.culture.culture_group
-						}
-					}
-					random_country = {
-						limit = {
-							any_owned_province = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							culture.culture_group = PREV.culture.culture_group
-						}
-						weight = {
-							base = 10
-							country_has_space_for_migration_modifer = yes
-							modifier = {
-								factor = 5
-								religion = PREV.religion
-							}
-						}
-						random_owned_province = {
-							limit = {
-								total_population < population_cap
-								has_siege = no
-								controller = owner
-							}
-							weight = {
-								province_has_space_for_migration_modifer = yes
-							}
-							save_scope_as = target
-						}
-					}
-					move_pop = scope:target
+				save_scope_as = pop
+				move_home_effect = {
+					EXTRA_COND = always
+					EXTRA_WEIGHT = empty_modifier
+					EXTRA_P_WEIGHT = empty_modifier
 				}
 			}
 		}

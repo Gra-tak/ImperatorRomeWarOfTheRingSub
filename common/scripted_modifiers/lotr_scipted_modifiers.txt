@@ -33,3 +33,17 @@ province_is_safe_modifier = {
 		}
 	}
 }
+
+empty_modifier = {
+	modifier = {
+		factor = 1
+		always = no
+	}
+}
+
+not_melkor_modifier = {
+	modifier = {
+		factor = 0.2
+		religion = melkorism
+	}
+}

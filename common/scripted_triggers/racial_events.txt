@@ -422,3 +422,15 @@ lotr_can_marry_trigger = {
 		}
 	}
 }
+
+not_nandor_trigger = {
+	NOT = { primary_culture = nandor }
+}
+
+# not_nandor_pop_trigger = {
+	# NOT = { pop_culture = nandor }
+# }
+
+not_southern_dwarves = {
+	NOT = { tag = AON }
+}

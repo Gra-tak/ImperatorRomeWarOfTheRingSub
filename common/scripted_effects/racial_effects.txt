@@ -424,7 +424,7 @@ move_home_effect = {
 	if = {
 		limit = {
 			any_country = {
-				culture = $CULTURE$
+				culture = scope:pop.culture
 				any_owned_province = {
 					total_population < population_cap
 					has_siege = no
@@ -434,7 +434,7 @@ move_home_effect = {
 		}
 		random_country = {
 			limit = {
-				culture = $CULTURE$
+				culture = scope:pop.culture
 				any_owned_province = {
 					total_population < population_cap
 					has_siege = no
@@ -446,7 +446,7 @@ move_home_effect = {
 				country_has_space_for_migration_modifer = yes
 				modifier = {
 					factor = 5
-					religion = $RELIGION$
+					religion = scope:pop.religion
 				}
 				$EXTRA_WEIGHT$ = yes
 			}
@@ -458,6 +458,7 @@ move_home_effect = {
 				}
 				weight = {
 					province_has_space_for_migration_modifer = yes
+					$EXTRA_P_WEIGHT$ = yes
 				}
 				save_scope_as = target
 			}
@@ -468,9 +469,9 @@ move_home_effect = {
 		limit = {
 			any_country = {
 				OR = {
-					culture.culture_group = $CULTURE_GROUP$
+					culture.culture_group = scope:pop.culture.culture_group
 					any_integrated_culture = {
-						this.culture = $CULTURE$
+						this.culture = scope:pop.culture
 					}
 				}
 				$EXTRA_COND$ = yes
@@ -484,9 +485,9 @@ move_home_effect = {
 		random_country = {
 			limit = {
 				OR = {
-					culture.culture_group = $CULTURE_GROUP$
+					culture.culture_group = scope:pop.culture.culture_group
 					any_integrated_culture = {
-						this.culture = $CULTURE$
+						this.culture = scope:pop.culture
 					}
 				}
 				$EXTRA_COND$ = yes
@@ -501,15 +502,15 @@ move_home_effect = {
 				country_has_space_for_migration_modifer = yes
 				modifier = {
 					factor = 5
-					religion = $RELIGION$
+					religion = scope:pop.religion
 				}
 				modifier = {
 					factor = 5
 					AND = {
 						any_integrated_culture = {
-							this.culture = $CULTURE$
+							this.culture = scope:pop.culture
 						}
-						culture.culture_group = $CULTURE_GROUP$
+						culture.culture_group = scope:pop.culture.culture_group
 					}
 				}
 				$EXTRA_WEIGHT$ = yes
@@ -522,6 +523,7 @@ move_home_effect = {
 				}
 				weight = {
 					province_has_space_for_migration_modifer = yes
+					$EXTRA_P_WEIGHT$ = yes
 				}
 				save_scope_as = target
 			}
@@ -530,14 +532,92 @@ move_home_effect = {
 	}
 }
 
+determine_movers_effect = {
+	set_variable = {
+		name = trying_to_move_num
+		value = 0
+	}
+	every_owned_province = {
+		set_variable = {
+			name = all
+			value = 0
+		}
+		set_variable = {
+			name = mover
+			value = 0
+		}
+		every_pops_in_province = {
+			PREV = {
+				change_variable = {
+					name = all
+					add = 1
+				}
+			}
+			if = {
+				limit = { 
+					pop_culture_group = $CULTURE_GROUP$
+					# EXTRA_COND = yes
+				}
+				PREV = {
+					change_variable = {
+						name = mover
+						add = 1
+					}
+				}
+			}
+		}
+		if = {
+			limit = { var:all > 0 }
+			set_variable = {
+				name = moverPerc
+				value = var:mover
+			}
+			change_variable = {
+				name = moverPerc
+				divide = var:all
+			}
+			if = {
+				limit = { var:moverPerc < 0.75 } #leave enclaves intact
+				every_pops_in_province = {
+					limit = {
+						pop_culture_group = $CULTURE_GROUP$
+						# EXTRA_COND = yes
+					}
+					add_to_list = trying_to_move_list
+				}
+				ROOT = {
+					change_variable = {
+						name = trying_to_move_num
+						add = prev.var:mover
+					}
+				}
+			}
+		}
+	}
+	set_variable = {
+		name = actualMover
+		value = { integer_range = { min = -35 max = 55 } }
+	}
+	change_variable = {
+		name = actualMover
+		multiply = var:trying_to_move_num
+	}
+	change_variable = {
+		name = actualMover
+		divide = 100
+	}
+	round_actual_moved_effect = yes
+}
+
 #provice scope
 move_all_orcs_home_effect = {
 	every_pops_in_province = {
 		limit = { pop_culture_group = orcs_group }
+		save_scope_as = pop
 		move_home_effect = {
-			CULTURE = culture
-			CULTURE_GROUP = culture_group
-			RELIGION = religion
+			EXTRA_COND = always
+			EXTRA_WEIGHT = empty_modifier
+			EXTRA_P_WEIGHT = empty_modifier
 		}
 	}
 }
