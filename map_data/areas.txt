@@ -673,7 +673,7 @@ nildorien_area = {
 #Menelothriand
 
 tauremindon_area = {
-	provinces = { 161 2803 2808 2809 2810 2811 2812 2813 }
+	provinces = { 161 2803 2808 2809 2810 2811 2812 2813 5292 5293 5294}
 }
 
 huadis_area = {

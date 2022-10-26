@@ -53602,30 +53602,33 @@
 }
 5292 = { #5292 (uninhabitable)
 	terrain = "hills"
-	culture = "beasts"
+	culture = "rachoth"
 	religion = "eastern_animism"
-	trade_goods = ""
+	trade_goods = "base_metals"
 	civilization_value = 0
 	barbarian_power = 0
-	province_rank = ""
+	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 5293 = { #5293 (uninhabitable)
 	terrain = "plains"
-	culture = "beasts"
+	culture = "rachoth"
 	religion = "eastern_animism"
-	trade_goods = ""
+	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
-	province_rank = ""
+	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 5294 = { #5294 (uninhabitable)
 	terrain = "plains"
-	culture = "beasts"
+	culture = "rachoth"
 	religion = "eastern_animism"
-	trade_goods = ""
+	trade_goods = "wild_game"
 	civilization_value = 0
 	barbarian_power = 0
-	province_rank = ""
+	province_rank = "settlement"
+	tribesmen = { amount = 2 }
 }
 5295 = { #Fenôm (unowned) (dyr_area) (dyr_region)
 	terrain = "plains"
