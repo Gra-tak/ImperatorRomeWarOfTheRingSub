@@ -565,7 +565,7 @@ NCharacter = {
 	IDEAL_CHILD_PER_FAMILY = 4
 	
 	# If court isze is bigger than threshold, reduce the number of children per couple by the define below
-	COURT_SIZE_CHILD_PENALTY_THRESHOLD = 240
+	COURT_SIZE_CHILD_PENALTY_THRESHOLD = 480
 	SUBTRACTION_CHILDREN_COURT_SIZE_PENALTY = 1
 
 	# Make sure we always have a base minimum of characters for each gender. Only creates new characters however if the number of children is below the threshold
@@ -617,7 +617,7 @@ NFamily = {
 	GRATEFUL_JOB_PERCENTAGE = 2 #current jobs > (expected jobs * GRATEFUL_JOBS_PERCENTAGE)
 
 	MIN_SIZE = 4; #below this size the family will look desperately into adopting minor characters
-	MAX_SIZE = 18; #above this size the family won't look into adopting minor characters anymore
+	MAX_SIZE = 40; #above this size the family won't look into adopting minor characters anymore
 
 	# FAMILY COUNT
 	FAMILY_COUNT_MIGRANT_HORDE	= 3;
