@@ -21,7 +21,7 @@ orc_raid_events_pulse = {
 
 lotr_character_events_pulse = {
 	random_events = {
-		120 = 0
+		180 = 0
 		10 = lotr_character_events.1
 		8 = lotr_character_events.6
 		6 = lotr_character_events.7
@@ -35,6 +35,9 @@ lotr_character_events_pulse = {
 		8 = lotr_character_events.32
 		12 = lotr_character_events.33
 		13 = lotr_character_events.34
+		15 = lotr_character_events.36
+		10 = lotr_character_events.37
+		10 = lotr_character_events.38
 	}
 }
 

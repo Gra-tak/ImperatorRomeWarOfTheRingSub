@@ -2103,3 +2103,339 @@ lotr_character_events.35 = {
 		}
 	}
 }
+
+#Neekerbreeker infestation
+
+lotr_character_events.36 = {
+	type = country_event
+	title = "lotr_character_events.36.t"
+	desc = "lotr_character_events.36.desc"
+	picture = event_swamp
+	
+	goto_location = scope:lotr_neekerbreeker_location_scope
+	
+	left_portrait = root.current_ruler
+		
+	trigger = {
+		is_ai = no
+		war = no
+		NOT = {
+			has_variable = lotr_character_events_36_variable
+		}
+		any_owned_province = {
+			OR = {
+				terrain = marsh
+				terrain = farmland
+			}
+		}
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					terrain = marsh
+					terrain = farmland
+				}
+			}
+			save_scope_as = lotr_neekerbreeker_location_scope
+		}
+		set_variable = {
+			name = lotr_character_events_36_variable
+			days = 3950
+		}
+	}
+	
+	option = {
+		name = lotr_character_events.36.a
+		custom_tooltip = "lotr_character_events.36.a.tt"
+		scope:lotr_neekerbreeker_location_scope = {
+			add_province_modifier = {
+				name = lotr_neekerbreeker_infestation_modifier
+				duration = 365
+			}
+		}
+	}
+	option = {
+		name = lotr_character_events.36.b
+		custom_tooltip = "lotr_character_events.36.b.tt"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 2
+		}
+	}
+}
+
+#The Escaped Slave
+
+lotr_character_events.37 = {
+	type = country_event
+	title = "lotr_character_events.37.t"
+	desc = "lotr_character_events.37.desc"
+	picture = event_orcs_orcs
+	
+	goto_location = scope:lotr_slave_escaped_mine_scope
+	
+	left_portrait = current_ruler
+	right_portrait = scope:random_lotr_advisor_scope
+	
+	trigger = {
+		is_ai = no
+		war = no
+		religion = melkorism
+		country_culture_group = orcs_group
+		any_character = {
+			has_any_office = yes
+			is_ruler = no
+		}
+		any_owned_province = {
+			num_of_slaves >= 1
+			OR = {
+				trade_goods = stone
+				trade_goods = marble
+				trade_goods = precious_metals
+				trade_goods = iron
+				trade_goods = base_metals
+			}
+			NOT = {
+				is_capital = yes
+			}
+		}
+		NOT = { has_variable = lotr_character_escaped_human_variable }
+	}
+	
+	immediate = { 
+		set_variable = {
+			name = lotr_character_escaped_human_variable
+			days = 9125 # 25 years 
+		}
+		random_character = {
+			limit = {
+				has_any_office = yes
+				is_ruler = no
+			}
+			weight = {
+				title_importance_modifier = yes
+			}
+			save_scope_as = random_lotr_advisor_scope
+		}
+		random_owned_province = {
+			limit = {
+				num_of_slaves >= 1
+				OR = {
+					trade_goods = stone
+					trade_goods = marble
+					trade_goods = precious_metals
+					trade_goods = iron
+					trade_goods = base_metals
+				}
+				NOT = {
+					is_capital = yes
+				}
+			}
+			save_scope_as = lotr_slave_escaped_mine_scope
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.37.a"
+		custom_tooltip = "lotr_character_events.37.a.tt"
+        current_ruler = {
+			add_popularity = 5
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.37.b"
+		custom_tooltip = "lotr_character_events.37.b.tt"
+	}
+}
+
+#Opening Melkor Temple
+
+lotr_character_events.38 = {
+	type = country_event
+	title = "lotr_character_events.38.t"
+	desc = "lotr_character_events.38.desc"
+	picture = event_barad_dur_eye
+	
+	goto_location = scope:lotr_melkor_temple_province_scope
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_current_melkor_priest_event_scope
+	
+	trigger = {
+		is_ai = no
+		war = no
+		religion = melkorism
+		any_character = {
+			has_priest_office_trigger = yes
+		}
+		any_owned_province = {
+			any_neighbor_province = {
+				dominant_province_religion = iluvatarism
+				exists = owner
+				NOT = {
+					owner = root
+				}
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		random_character = {
+			limit = {
+				has_priest_office_trigger = yes
+			}
+			save_scope_as = lotr_current_melkor_priest_event_scope
+		}
+		random_owned_province = {
+			limit = {
+				any_neighbor_province = {
+					dominant_province_religion = iluvatarism
+					exists = owner
+					NOT = {
+						owner = root
+					}
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					dominant_province_religion = iluvatarism
+					exists = owner
+					NOT = {
+						owner = root
+					}
+				}
+				save_scope_as = lotr_melkor_temple_province_scope
+				owner = {
+					save_scope_as = lotr_melkor_temple_country_scope
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.38.a"
+		custom_tooltip = "lotr_character_events.38.a.tt"
+	}
+	
+	option = {
+		name = "lotr_character_events.38.b"
+		custom_tooltip = "lotr_character_events.38.b.tt"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 12
+		}
+		scope:lotr_current_melkor_priest_event_scope = {
+			add_loyalty = loyalty_priest_autonomy
+		}
+		hidden_effect = {
+			random_list = {
+				30 = {
+					trigger_event = {
+						id = lotr_character_events.39
+						days = 55
+					}
+				}
+				40 = {
+					trigger_event = {
+						id = lotr_character_events.40
+						days = 97
+					}
+				}
+				30 = {
+					trigger_event = {
+						id = lotr_character_events.40
+						days = 87
+					}
+				}
+			}
+		}
+	}
+}
+
+lotr_character_events.39 = {
+	type = country_event
+	title = "lotr_character_events.39.t"
+	desc = "lotr_character_events.39.desc"
+	picture = event_barad_dur_eye
+	
+	goto_location = scope:lotr_melkor_temple_province_scope
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_current_melkor_priest_event_scope
+	
+	trigger = {
+		is_ai = no
+		scope:lotr_current_melkor_priest_event_scope = {
+			is_alive = yes
+			employer = root
+			is_ruler = no
+		}
+	}
+	
+	immediate = { 
+		scope:lotr_melkor_temple_province_scope = {
+			if = {
+				limit = {
+					any_pops_in_province = {
+						pop_religion = iluvatarism
+					}
+				}
+				hidden_effect = {
+					ordered_pops_in_province = {
+						limit = {
+							pop_religion = iluvatarism
+						}
+						order_by = pop_hapiness
+						max = 2
+						set_pop_religion = melkorism
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "lotr_character_events.39.a"
+		custom_tooltip = "lotr_character_events.39.a.tt"
+        current_ruler = {
+			add_popularity = 5
+		}
+	}
+}
+
+lotr_character_events.40 = {
+	type = country_event
+	title = "lotr_character_events.40.t"
+	desc = "lotr_character_events.40.desc"
+	picture = event_barad_dur_eye
+	
+	goto_location = scope:lotr_melkor_temple_province_scope
+	
+	left_portrait = current_ruler
+	right_portrait = scope:lotr_current_melkor_priest_event_scope
+	
+	trigger = {
+		is_ai = no
+		scope:lotr_current_melkor_priest_event_scope = {
+			is_alive = yes
+			employer = root
+			is_ruler = no
+		}
+	}
+	
+	immediate = { 
+	}
+	
+	option = {
+		name = "lotr_character_events.40.a"
+		custom_tooltip = "lotr_character_events.40.a.tt"
+        current_ruler = {
+			add_popularity = -5
+		}
+	}
+}
