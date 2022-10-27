@@ -138,6 +138,7 @@
 		}
 		allow = {
 			NOT = { country_culture_group = orcs_group }
+			NOT = { has_military_bonus = barbarian_infantry_path_5 }
 		}
 		icon = north_african_tribal_path_6
 		requires = {easterling_infantry_path_3}
