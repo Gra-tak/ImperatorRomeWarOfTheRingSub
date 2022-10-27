@@ -1180,10 +1180,7 @@ ip_republic.12 = {
 			}
 		}
 		employer = {
-			add_treasury  = {
-				value = root.employer.has_monthly_income
-				multiply = subtract_monthly_income_medium
-			}
+			add_treasury = capped_loss_3
 		}
 		scope:ip_republic_12_province = {
 			add_province_modifier = {

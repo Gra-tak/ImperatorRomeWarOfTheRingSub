@@ -1302,3 +1302,8 @@ engineer_cohort_halls_combat_bonus = {
 supply_train_halls_combat_bonus = {
     positive = "gfx/interface/icons/modifiers/lotr_units_halls_combat_bonus.dds"
 }
+
+
+subject_pays_ranger_protectorate_cost_modifier = {
+    positive = "gfx/interface/icons/modifiers/subject_pays_modifier.dds"
+}
