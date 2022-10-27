@@ -213,7 +213,6 @@ nazgul = {
 	martial = 3
 	fertility = -1.0
 	health = 10.0
-	monthly_corruption = -1.0
 	character_loyalty = 100
 	unit = {
 		discipline  = 0.3

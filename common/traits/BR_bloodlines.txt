@@ -71,7 +71,7 @@ elf_lord = { #
 	prominence = 5
 	
 	monthly_character_popularity = 0.3
-	monthly_corruption = -1.0
+	monthly_corruption = -0.05
 	character_loyalty = 50
 	
 	unit = {

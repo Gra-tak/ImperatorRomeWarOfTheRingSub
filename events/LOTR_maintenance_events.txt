@@ -1302,3 +1302,31 @@ lotr_maintenance.11 = {
 		}
 	}
 }
+
+
+#corruption deacay for long lived characters
+lotr_maintenance.12 = {
+	type = country_event
+	title = OK
+	desc = OK
+	hidden = yes
+	trigger = {
+		is_ai = yes
+	}
+	immediate = {
+		every_character = {
+			limit = {
+				corruption > 0
+				is_long_lived = yes
+			}
+			set_local_variable = {
+				name = c
+				value = corruption
+			}
+			change_local_variable = {
+				name = c
+				divide = -100
+			}
+			add_corruption = local_var:c
+		}
+	}
