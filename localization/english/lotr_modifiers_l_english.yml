@@ -442,6 +442,7 @@
  light_cavalry_cost:0 "Light Cavalry Cost"
  light_infantry_forest_combat_bonus:0 "Light Infantry Forest Combat Bonus"
  light_infantry_plains_combat_bonus:0 "Light Infantry Plains Combat Bonus"
+ heavy_infantry_plains_combat_bonus:0 "Heavy Infantry Plains Combat Bonus"
  chariots_plains_combat_bonus:0 "Chariot Plains Combat Bonus"
  chariots_cost:0 "Chariot Cost"
  MODIFIER_LAND_OFFENSE_desc:0 "Offense is a modifier to all damage dealt in combat."
