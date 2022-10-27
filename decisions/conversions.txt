@@ -858,6 +858,7 @@
 				government = theocratic_republic
 				government = oligarchic_republic
 			}
+			NOT = { has_variable = lotr_disable_government_convert }
 			trigger_if = {
 				limit = { has_dlc = "Magna Graecia" }
 				NOT = { religion = iluvatarism } #does not allow deify
