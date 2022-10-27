@@ -75,8 +75,13 @@ lotr_storyline_events.1 = {
 		allow_warg_riders = yes
 		allow_orc_infantry  = yes
 		#rest via traditions
-		set_variable = {
-			name = barbarian_traditions_unlocked #keep traditions
+		if = { #ai is too stupid to work with mulitple unlocked traditions
+			limit = {
+				is_ai = no
+			}
+			set_variable = {
+				name = barbarian_traditions_unlocked #keep traditions
+			}
 		}
 	}
 	
