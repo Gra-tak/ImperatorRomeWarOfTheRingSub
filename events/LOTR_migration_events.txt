@@ -673,7 +673,9 @@ lotr_migration_events.8 = {
 						divide = local_var:all
 					}
 					if = {
-						limit = { local_var:moverPerc < 0.9 } #leave enclaves intact
+						limit = { 
+							local_var:moverPerc < 0.9 
+							} #leave enclaves intact
 						every_pops_in_province = {
 							limit = {
 								country_culture = {
@@ -720,10 +722,13 @@ lotr_migration_events.8 = {
 					random_owned_province = {
 		        limit = { 
 		        	total_population < population_cap 
-		        	dominant_province_culture = scope:pop_from_list.culture
 		        }
 						weight = {
 							province_has_space_for_migration_modifer = yes
+							modifier = {
+								factor = 50
+								dominant_province_culture = scope:pop_from_list.culture
+							}
 						}
 						save_scope_as = popTarget
 					}
