@@ -2325,10 +2325,7 @@ lotr_character_events.38 = {
 	option = {
 		name = "lotr_character_events.38.b"
 		custom_tooltip = "lotr_character_events.38.b.tt"
-		add_treasury = {
-			subtract = root.has_monthly_income
-			multiply = 12
-		}
+		add_treasury = capped_loss_3
 		scope:lotr_current_melkor_priest_event_scope = {
 			add_loyalty = loyalty_priest_autonomy
 		}
