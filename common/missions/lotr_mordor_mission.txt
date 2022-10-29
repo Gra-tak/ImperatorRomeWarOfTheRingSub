@@ -710,7 +710,7 @@
 		requires = { lotr_mordor_build_army_mission_3 } 
 
 		allow = {
-			invention = experience_decay_inv_1
+			invention = discipline_inv_5
 		}
 		
 		highlight = {
@@ -730,6 +730,23 @@
 				add_popularity = popularity_medium
 				add_finesse = 1
 				add_prominence = prominence_large
+			}
+			custom_tooltip = lotr_mordor_build_army_mission_4_olog_hai
+			hidden_effect = {
+				prepare_legion_unit_to_add_subunits = yes
+				scope:unitScope = {
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
+					add_subunit = troll_infantry
+				}
+				finish_legion_unit_after_adding_subunits = yes
 			}
 		}
 	}

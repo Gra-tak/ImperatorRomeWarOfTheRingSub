@@ -79,6 +79,7 @@
 	orc_civic_path_4 = { ###
 		modifier = {
 			hostile_attrition = 0.2
+			war_exhaustion = -0.02
 		}
 		icon = orc_civic_path_4
 		requires = {orc_civic_path_3}
@@ -107,6 +108,10 @@
 	orc_infantry_path_2 = { ###
 		modifier = {
 			uruk_infantry_offensive = 0.1
+			orc_infantry_morale = 0.1
+		}
+		allow = {
+			invention = experience_decay_inv_1
 		}
 		icon = orc_infantry_path_2
 		requires = {orc_infantry_path_1}
@@ -120,8 +125,8 @@
 	
 	orc_infantry_path_3 = { ###
 		modifier = {
-			uruk_heavy_infantry_defensive = 0.1
 			orc_infantry_defensive = 0.1
+			uruk_infantry_defensive = 0.1
 		}
 		enable_tactic = hit_and_run_tactics
 		icon = orc_infantry_path_3
@@ -131,7 +136,7 @@
 	orc_infantry_path_4 = { ###
 		modifier = {
 			land_unit_attrition = -0.15
-			uruk_crossbows_offensive = 0.1
+			global_monthly_state_loyalty = 0.04
 		}
 		icon = orc_infantry_path_4
 		requires = {orc_infantry_path_3}
@@ -140,7 +145,10 @@
 	orc_infantry_path_5 = { ###
 		modifier = {
 			enslavement_efficiency = 0.2
-			global_slaves_output = 0.1
+			uruk_crossbows_offensive = 0.1
+		}
+		allow = {
+			invention = army_movement_speed_inv
 		}
 		icon = orc_infantry_path_5
 		requires = {orc_infantry_path_2}
@@ -154,6 +162,11 @@
 
 	orc_infantry_path_6 = { ###
 		modifier = {
+			uruk_heavy_infantry_defensive = 0.1
+			troll_infantry_defensive = 0.1
+		}
+		allow = {
+			invention = global_start_experience_inv_4
 		}
 		icon = orc_infantry_path_6
 		requires = {orc_infantry_path_5}
@@ -168,10 +181,24 @@
 	orc_infantry_path_7 = { ###
 		modifier = {
 			global_slaves_output = 0.1
+			agressive_expansion_impact = -0.2
+		}
+		allow = {
+			invention = discipline_inv_5
+			capital_scope.state = {
+				trade_good_surplus = { target = iron value > 1 }
+				trade_good_surplus = { target = base_metals value > 1 }
+				trade_good_surplus = { target = precious_metals value > 1 }
+				trade_good_surplus = { target = cattle value > 1 }
+			}
 		}
 		icon = orc_infantry_path_7
 		requires = {orc_infantry_path_6}
 		on_activate = {
+			custom_tooltip = "tradition_allow_troll_infantry"
+				hidden_effect = {
+					allow_troll_infantry = yes
+				}
 			custom_tooltip = "create_high_martial_rising_star"
 			hidden_effect = {
 				create_character = {

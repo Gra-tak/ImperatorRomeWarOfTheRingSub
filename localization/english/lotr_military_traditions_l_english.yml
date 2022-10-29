@@ -72,7 +72,7 @@
  orc_infantry_path_6_desc:0 "Many Orcs prefer to do battle with heavy armor and shields."
  orc_infantry_path_6_allow_uruk_heavy_infantry:0 "#Y Uruk Heavy Infantry#! units can be added to Legions."
  orc_infantry_path_7:0 "Gathering All Evil To Him"
- orc_infantry_path_7_desc:0 "The Orcs will continue to breed and fight under the Dark Lord."
+ orc_infantry_path_7_desc:0 "All creatures will continue to breed and fight under the Dark Lord. None will dare to oppose us!"
 # Cavalry Path
  orc_cavalry_path_1:0 "Starving the Wargs Before Battle"
  orc_cavalry_path_1_desc:0 "The vicious giant wolves will be starved before battle, allowing them to feast on the enemy."
@@ -460,3 +460,4 @@
  tradition_allow_warelephant:0 "#Y War Elephants#! units can be added to Legions as a foreign race."
  tradition_allow_light_infantry:0 "#Y Light infantry#! units can be added to Legions as a foreign race."
  tradition_allow_horse_archers:0 "#Y Horse Archer#! units can be added to Legions as a foreign race."
+ tradition_allow_troll_infantry:0 "#Y Olog-hai Troll#! units can be added to Legions as a foreign race."
