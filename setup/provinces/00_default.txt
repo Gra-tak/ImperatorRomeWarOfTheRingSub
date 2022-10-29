@@ -16185,7 +16185,8 @@
 	barbarian_power = 0
 	province_rank = "settlement"
 	fortress_building = 1
-	freemen = { amount = 3 }
+	freemen = { amount = 2 }
+	slaves = { amount = 1 }
 }
 1542 = { #Dun Caladach (HEB) (iren_area) (dunendor_region)
 	terrain = "plains"
@@ -16944,7 +16945,8 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 6 }
+	freemen = { amount = 5 }
+	slaves = { amount = 1 }
 }
 1613 = { #Sackville (SHI) (sarnladen_area) (siragale_region)
 	terrain = "plains"
@@ -17465,7 +17467,8 @@
 	civilization_value = 10
 	barbarian_power = 0
 	province_rank = "settlement"
-	freemen = { amount = 3 }
+	freemen = { amount = 2 }
+	slaves = { amount = 1 }
 }
 1664 = { #Edras (XYX) (tharbad_area) (cardolan_region)
 	terrain = "plains"
@@ -50730,7 +50733,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5025 = { #5025 (uninhabitable)
+5025 = { #5025 (uninhabitable) (faelan_area) (wer_falin_region)
 	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
@@ -53600,7 +53603,7 @@
 	barbarian_power = 0
 	province_rank = ""
 }
-5292 = { #5292 (uninhabitable)
+5292 = { #Nanraud (unowned) (tauremindon_area) (menelothriand_region)
 	terrain = "hills"
 	culture = "rachoth"
 	religion = "eastern_animism"
@@ -53610,7 +53613,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-5293 = { #5293 (uninhabitable)
+5293 = { #Corulad (unowned) (tauremindon_area) (menelothriand_region)
 	terrain = "plains"
 	culture = "rachoth"
 	religion = "eastern_animism"
@@ -53620,7 +53623,7 @@
 	province_rank = "settlement"
 	tribesmen = { amount = 2 }
 }
-5294 = { #5294 (uninhabitable)
+5294 = { #Rhaw-Talath (unowned) (tauremindon_area) (menelothriand_region)
 	terrain = "plains"
 	culture = "rachoth"
 	religion = "eastern_animism"
