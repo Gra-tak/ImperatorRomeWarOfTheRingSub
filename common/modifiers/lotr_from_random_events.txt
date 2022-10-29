@@ -2,9 +2,11 @@
 owns_one_ring_modifier = {
 	monthly_corruption = 0.5 
 	health = 5.0
-	monthly_character_prominence = 0.1
 	monthly_character_popularity = 0.3
-	monthly_wage_for_character = 0.05
+	#offset 100 corruption (not wage increase)
+	monthly_political_influence_modifier = 0.50
+	monthly_legitimacy = 0.10
+	local_monthly_state_loyalty = 0.25
 }
 
 raided_by_corsairs = {

@@ -612,10 +612,10 @@ clear_melkor_opinions = {
 
 apply_one_ring_to_ruler = {
 	current_ruler = {
-		add_martial = 20
-		add_finesse = 14
-		add_charisma = 18
-		add_zeal = 16
+		add_martial = 18
+		add_finesse = 12
+		add_charisma = 16
+		add_zeal = 14
 		add_character_modifier = {
 			name = owns_one_ring_modifier
 			duration = -1
@@ -633,6 +633,7 @@ remove_one_ring_from_previous_owner = {
 		add_finesse = -12
 		add_charisma = -16
 		add_zeal = -14
+		add_corruption = -10
 	}
 }
 
