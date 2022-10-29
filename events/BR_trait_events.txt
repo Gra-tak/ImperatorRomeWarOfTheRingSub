@@ -3,19 +3,16 @@
 #Trait inheritance events
 br_traits.1 = {		
 	type = character_event
+	# type = country_event
 	title = "br_dunedain.1.t"
 	desc = "br_dunedain.1.desc"
 	picture = dunedain_patrol
 	hidden = yes
 
 	trigger = {
-		always = yes
 	}
 
 	immediate = {
-		scope:newborn = {
-			save_scope_as = newborn
-		}
 	}
 		
 	option = {
@@ -40,7 +37,7 @@ br_traits.1 = {
 					}
 				}
 				add_trait = strong_blood_of_numenor
-			}					
+			}
 			else_if = {
 				limit = {
 					mother = { has_trait = blood_of_numenor }
@@ -50,7 +47,7 @@ br_traits.1 = {
 					5 = { add_trait = strong_blood_of_numenor }
 					95 = { add_trait = blood_of_numenor }
 				}
-			}				
+			}
 			else_if = {
 				limit = {
 					mother = { has_trait = strong_blood_of_numenor }
@@ -81,7 +78,7 @@ br_traits.1 = {
 					25 = { add_trait = strong_blood_of_numenor }
 					75 = { add_trait = blood_of_numenor }
 				}
-			}					
+			}
 			else_if = {
 				limit = {
 					father = { has_trait = strong_blood_of_numenor }
@@ -121,6 +118,50 @@ br_traits.1 = {
 					father = { has_trait = elf }
 				}
 				add_trait = elf
+				if = {
+					limit = {
+						NOR = {
+							has_culture_group = noldor_group
+							has_culture_group = teleri_group
+						}
+					}
+					if = {
+						limit = {
+							father = {
+								OR = {
+									has_culture_group = noldor_group
+									has_culture_group = teleri_group
+								}
+							}
+						}
+						set_culture = father.culture
+					}
+					else_if = {
+						limit = {
+							mother = {
+								OR = {
+									has_culture_group = noldor_group
+									has_culture_group = teleri_group
+								}
+							}
+						}
+						set_culture = mother.culture
+					}
+					else_if = {
+						limit = {
+							employer = {
+								OR = {
+									country_culture_group = noldor_group
+									country_culture_group = teleri_group
+								}
+							}
+						}
+						set_culture = employer.culture
+					}
+					else = {
+						set_culture = sindar
+					}
+				}
 			}
 			else_if = { #dwarf traits
 				limit = {
@@ -128,6 +169,40 @@ br_traits.1 = {
 					father = { has_trait = dwarf }
 				}
 				add_trait = dwarf
+				if = {
+					limit = {
+						NOT = {
+							has_culture_group = dwarf_group
+						}
+					}
+					if = {
+						limit = {
+							father = {
+								has_culture_group = dwarf_group
+							}
+						}
+						set_culture = father.culture
+					}
+					else_if = {
+						limit = {
+							mother = {
+								has_culture_group = dwarf_group
+							}
+						}
+						set_culture = mother.culture
+					}
+					else_if = {
+						limit = {
+							employer = {
+								country_culture_group = dwarf_group
+							}
+						}
+						set_culture = employer.culture
+					}
+					else = {
+						set_culture = longbeard
+					}
+				}
 			}
 			else_if = { #orc traits
 				limit = {
@@ -135,6 +210,40 @@ br_traits.1 = {
 					father = { has_trait = orc }
 				}
 				add_trait = orc
+				if = {
+					limit = {
+						NOT = {
+							has_culture_group = orcs_group
+						}
+					}
+					if = {
+						limit = {
+							father = {
+								has_culture_group = orcs_group
+							}
+						}
+						set_culture = father.culture
+					}
+					else_if = {
+						limit = {
+							mother = {
+								has_culture_group = orcs_group
+							}
+						}
+						set_culture = mother.culture
+					}
+					else_if = {
+						limit = {
+							employer = {
+								country_culture_group = orcs_group
+							}
+						}
+						set_culture = employer.culture
+					}
+					else = {
+						set_culture = orcs
+					}
+				}
 			}
 
 			# #half-dunedain
@@ -144,6 +253,56 @@ br_traits.1 = {
 			# 		father = {has_culture = dunedain}
 			# 	}
 			# }
+
+			if = {
+				limit = {
+					has_trait = strong_blood_of_numenor
+					NOR = {
+						has_culture = black_numenorean
+						has_culture = rangers
+					}
+				}
+				if = {
+					limit = {
+						father = {
+							OR = {
+								has_culture = black_numenorean
+								has_culture = rangers
+							}
+						}
+					}
+					set_culture = father.culture
+				}
+				else_if = {
+					limit = {
+						mother = {
+							OR = {
+								has_culture = black_numenorean
+								has_culture = rangers
+							}
+						}
+					}
+					set_culture = mother.culture
+				}
+				else_if = {
+					limit = {
+						has_trait = prince_of_numenor
+					}
+					set_culture = black_numenorean
+				}
+				else_if = {
+					limit = {
+						has_trait = blood_of_isildur
+					}
+					set_culture = rangers
+				}
+				else_if = {
+					limit = {
+						has_culture = corsair
+					}
+					set_culture = black_numenorean
+				}
+			}
 		}
 	}					
 }

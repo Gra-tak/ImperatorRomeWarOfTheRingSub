@@ -200,13 +200,26 @@
 			# 	set_city_status = settlement
 			# 	set_trade_goods = wild_game
 			# }
-			every_country = {
+			# every_country = {
+			# 	limit = {
+			# 		NOT = { THIS = PREV }
+			# 	}
+			# 	add_opinion = {
+			# 		modifier = sauron_loyal_servant
+			# 		target = PREV
+			# 	}
+			# }
+			every_character = {
 				limit = {
-					NOT = { THIS = PREV }
+					has_trait = strong_blood_of_numenor
+					exists = mother
+					exists = father
 				}
-				add_opinion = {
-					modifier = sauron_loyal_servant
-					target = PREV
+				save_scope_as = newborn
+				ROOT = {
+					trigger_event = {
+						id = br_traits.1
+					}
 				}
 			}
 		}
