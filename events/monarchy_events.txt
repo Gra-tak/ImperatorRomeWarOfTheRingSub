@@ -807,7 +807,11 @@ monarchy_events.11 = {
 		any_character = {
 			is_primary_heir = yes
 			is_child_of = root.current_ruler
-			NOT = { is_child_of = root.current_ruler.spouse }
+			NOR = { 
+				is_child_of = root.current_ruler.spouse 
+				has_trait = nazgul
+				has_variable = lotr_new_wife_protection
+			}
 		}
 	}
 	

@@ -120,6 +120,7 @@
 		add_trait="line_of_durin"
 		add_gold=120
 		add_popularity=70
+		set_variable = { name = lotr_new_wife_protection }
 	}
 
 	62={

@@ -40,5 +40,6 @@
 		add_gold=200
 		add_popularity=60
 		father="char:75"
+		set_variable = { name = lotr_new_wife_protection }
 	}
 }

@@ -241,7 +241,7 @@ br_traits.1 = {
 						set_culture = employer.culture
 					}
 					else = {
-						set_culture = orcs
+						set_culture = orcish
 					}
 				}
 			}
