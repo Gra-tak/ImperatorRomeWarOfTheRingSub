@@ -7,7 +7,7 @@ is_mordor_aimod = {
 		sauron_rules = yes
 	}
 	
-	aggressive = 100
+	aggressive = 300
 }
 
 is_isengard_aimod = {
@@ -15,5 +15,5 @@ is_isengard_aimod = {
 		this = c:XVX
 	}
 	
-	aggressive = 100
+	aggressive = 300
 }
