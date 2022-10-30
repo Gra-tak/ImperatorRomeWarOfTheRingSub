@@ -7,3 +7,8 @@ grey_company = {
 	value = 20
 	month = 9999
 }
+
+saruman_loyal_dunlendings = { #offset negative character culture happiness
+  value = 40
+  month = 12
+}

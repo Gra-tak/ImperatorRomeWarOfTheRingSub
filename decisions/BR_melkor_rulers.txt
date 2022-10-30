@@ -7,6 +7,19 @@
 				prisoner = no
 				has_religion = melkorism
 			}
+			any_character = {
+				NOR = { 
+					has_religion = melkorism 
+					has_trait = olympic_competitor
+					has_religion = iluvatarism
+					has_trait = cruel
+					has_trait = corrupt
+					has_trait = harsh
+					has_trait = vengeful
+					has_trait = selfish
+					has_trait = reckless
+				}
+			}
 		}
 		
 		allow = {
@@ -40,13 +53,13 @@
 						has_trait = olympic_competitor
 					}
 					NOR = {
-					has_religion = iluvatarism
-					has_trait = cruel
-					has_trait = corrupt
-					has_trait = harsh
-					has_trait = vengeful
-					has_trait = selfish
-					has_trait = reckless
+						has_religion = iluvatarism
+						has_trait = cruel
+						has_trait = corrupt
+						has_trait = harsh
+						has_trait = vengeful
+						has_trait = selfish
+						has_trait = reckless
 					}
 				}
 					set_character_religion = melkorism
@@ -59,12 +72,12 @@
 						has_trait = olympic_competitor
 					}
 					NOR = {
-					has_trait = cruel
-					has_trait = corrupt
-					has_trait = harsh
-					has_trait = vengeful
-					has_trait = selfish
-					has_trait = reckless
+						has_trait = cruel
+						has_trait = corrupt
+						has_trait = harsh
+						has_trait = vengeful
+						has_trait = selfish
+						has_trait = reckless
 					}
 				}
 				set_character_religion = melkorism

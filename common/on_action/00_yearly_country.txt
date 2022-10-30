@@ -106,6 +106,7 @@ yearly_country_pulse =
 		lotr_maintenance.7
 		lotr_maintenance.11
 		lotr_maintenance.12
+		lotr_maintenance.13
 		lotr_startup.7 #making sure orcs actually use age of the orc
 	}
 }

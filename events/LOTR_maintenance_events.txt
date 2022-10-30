@@ -1330,3 +1330,31 @@ lotr_maintenance.12 = {
 			add_corruption = local_var:c
 		}
 	}
+}
+
+#saruman loyal dunlendings
+lotr_maintenance.13 = {
+	type = country_event
+	title = OK
+	desc = OK
+	# hidden = yes
+	trigger = {
+		tag = XVX
+		has_law = age_of_the_orc
+		any_country_culture = {
+			this.culture = culture:dunlending
+		}
+	}
+	immediate = {
+		every_character = {
+			limit = {
+				has_culture = dunlending
+				has_religion = melkorism
+			}
+			add_loyalty = saruman_loyal_dunlendings
+		}
+	}
+	option = {
+		name = OK
+	}
+}
