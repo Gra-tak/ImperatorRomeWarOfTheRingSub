@@ -1337,7 +1337,7 @@ lotr_maintenance.13 = {
 	type = country_event
 	title = OK
 	desc = OK
-	# hidden = yes
+	hidden = yes
 	trigger = {
 		tag = XVX
 		has_law = age_of_the_orc
@@ -1350,6 +1350,10 @@ lotr_maintenance.13 = {
 			limit = {
 				has_culture = dunlending
 				has_religion = melkorism
+			}
+			if = {
+				limit = { has_loyalty = saruman_loyal_dunlendings }
+				remove_loyalty = saruman_loyal_dunlendings
 			}
 			add_loyalty = saruman_loyal_dunlendings
 		}
