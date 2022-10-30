@@ -499,7 +499,7 @@
 
 ############################# Ring missions #####################################
 
-	lotr_mordor_one_ring_mission_1 = {		# Pureon make this reveal location of ring in event?
+	lotr_mordor_one_ring_mission_1 = {		# Pureon make this reveal location of ring in event? (currently done by highlight in next mission)
 		icon = "task_battle"
 
 		requires = { lotr_mordor_build_army_mission_1 } 
@@ -577,7 +577,13 @@
 		
 		highlight = {
 			scope:province = {
-				this = root.capital_scope
+				OR = {
+					this = root.capital_scope
+					AND = {
+						ROOT = { has_completed_mission_task = lotr_mordor_one_ring_mission_1 }
+						province_id = 1621
+					}
+				}
 			}
 		}
 
@@ -590,6 +596,7 @@
 				name = lotr_mordor_one_ring_mission_2_modifier
 				duration = 3650 # 10 years
 			}
+			lotr_nazgul_ring_boost = yes
 		}
 	}
 	
@@ -692,12 +699,17 @@
 			custom_tooltip = lotr_mordor_build_army_mission_3_olog_hai
 			hidden_effect = {
 				prepare_legion_unit_to_add_subunits = yes
-				scope:unitScope = {
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
+				if = {
+					limit = {
+						exists = scope:unitScope #preventing error messsage
+					}
+					scope:unitScope = {
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+					}
+					finish_legion_unit_after_adding_subunits = yes
 				}
-				finish_legion_unit_after_adding_subunits = yes
 			}
 		}
 	}
@@ -734,19 +746,24 @@
 			custom_tooltip = lotr_mordor_build_army_mission_4_olog_hai
 			hidden_effect = {
 				prepare_legion_unit_to_add_subunits = yes
-				scope:unitScope = {
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
-					add_subunit = troll_infantry
+				if = {
+					limit = {
+						exists = scope:unitScope #preventing error messsage
+					}
+					scope:unitScope = {
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+						add_subunit = troll_infantry
+					}
+					finish_legion_unit_after_adding_subunits = yes
 				}
-				finish_legion_unit_after_adding_subunits = yes
 			}
 		}
 	}

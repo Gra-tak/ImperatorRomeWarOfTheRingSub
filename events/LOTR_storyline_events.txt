@@ -26,6 +26,30 @@ lotr_storyline_events.1 = {
 				}
 			}
 		}
+		c:MOR = {
+			if = {
+				limit = {
+					exists = c:MOR
+					num_of_cities >= 1
+				}
+				add_opinion = {
+					modifier = isengard_mordor_alliance_modifier
+					target = c:XVX
+				}
+			}
+		}
+		au_basic_setup = yes
+		allow_warg_riders = yes
+		allow_orc_infantry  = yes
+		#rest via traditions
+		if = { #ai is too stupid to work with mulitple unlocked traditions
+			limit = {
+				is_ai = no
+			}
+			set_variable = {
+				name = barbarian_traditions_unlocked #keep traditions
+			}
+		}
 		every_country = {
 			limit = {
 				OR = { #the group of countries that hate Melkor realms
@@ -59,30 +83,6 @@ lotr_storyline_events.1 = {
 				}
 			}
 		}
-		c:MOR = {
-			if = {
-				limit = {
-					exists = c:MOR
-					num_of_cities >= 1
-				}
-				add_opinion = {
-					modifier = isengard_mordor_alliance_modifier
-					target = c:XVX
-				}
-			}
-		}
-		au_basic_setup = yes
-		allow_warg_riders = yes
-		allow_orc_infantry  = yes
-		#rest via traditions
-		if = { #ai is too stupid to work with mulitple unlocked traditions
-			limit = {
-				is_ai = no
-			}
-			set_variable = {
-				name = barbarian_traditions_unlocked #keep traditions
-			}
-		}
 	}
 	
 	option = {
@@ -95,13 +95,16 @@ lotr_storyline_events.1 = {
 				set_character_religion = melkorism
 			}
 		}
-		every_owned_province = {
-			limit = {
-				is_in_area = calenhardin_area
-			}
-			every_pops_in_province = {
-				set_pop_culture = urukhai
-				set_pop_religion = melkorism
+		custom_tooltip = lotr_convert_all_pops_in_calenhardrin_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_in_area = calenhardin_area
+				}
+				every_pops_in_province = {
+					set_pop_culture = urukhai
+					set_pop_religion = melkorism
+				}
 			}
 		}
 		set_primary_culture = urukhai

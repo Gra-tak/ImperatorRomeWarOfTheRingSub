@@ -2,13 +2,13 @@
 
 #The Ring is found by country that has occupied the shire
 lotr_one_ring_events.1 = {
-    type = country_event
-    title = "lotr_one_ring_events.1.t"
-    desc = "lotr_one_ring_events.1.desc"
-    picture = event_one_ring_held
+	type = country_event
+	title = "lotr_one_ring_events.1.t"
+	desc = "lotr_one_ring_events.1.desc"
+	picture = event_one_ring_held
 
-    left_portrait = current_ruler
-    right_portrait = char:3
+	left_portrait = current_ruler
+	right_portrait = char:3
 
 	trigger = {
 		is_ai = no
@@ -34,6 +34,17 @@ lotr_one_ring_events.1 = {
 			transfer_treasure_to_country = ROOT
 		}
 		apply_one_ring_to_ruler = yes
+
+		### make sure melkorism countries are forced to decide whether to turn against Sauron or yield the ring to him
+		if = {
+			limit = {
+				religion = melkorism
+			}
+			trigger_event = {
+				id = lotr_one_ring_events.3
+				days = { 30 60 }
+			}
+		}
 	}
 	option = {
 		name = "lotr_one_ring_events.1.b"
@@ -42,8 +53,8 @@ lotr_one_ring_events.1 = {
 			OR = {
 				c:SHI = { has_land = yes }
 				any_owned_province = {
-		      province_dominant_culture_group = halfling_group 
-      		is_in_region = siragale_region
+				  province_dominant_culture_group = halfling_group 
+					is_in_region = siragale_region
 				}
 			}
 		}
@@ -54,12 +65,12 @@ lotr_one_ring_events.1 = {
 
 #Rings power given to ruler of nation with ring treasure
 lotr_one_ring_events.2 = {
-    type = country_event
-    title = "lotr_one_ring_events.1.t"
-    desc = "lotr_one_ring_events.1.desc"
-    picture = event_one_ring_held
-    left_portrait = current_ruler
-    right_portrait = char:3
+	type = country_event
+	title = "lotr_one_ring_events.1.t"
+	desc = "lotr_one_ring_events.1.desc"
+	picture = event_one_ring_held
+	left_portrait = current_ruler
+	right_portrait = char:3
 	trigger = {
 		NOT = { tag = SHI }
 		exists = treasure:lotr_treasure_one_ring
@@ -87,8 +98,8 @@ lotr_one_ring_events.2 = {
 			OR = {
 				c:SHI = { has_land = yes }
 				any_owned_province = {
-		      province_dominant_culture_group = halfling_group 
-      		is_in_region = siragale_region
+			  province_dominant_culture_group = halfling_group 
+			is_in_region = siragale_region
 				}
 			}
 		}
@@ -99,12 +110,12 @@ lotr_one_ring_events.2 = {
 
 #Rings corrupts bearer
 lotr_one_ring_events.6 = {
-    type = country_event
-    title = "lotr_one_ring_events.6.t"
-    desc = "lotr_one_ring_events.6.desc"
-    picture = event_one_ring_held
-    left_portrait = current_ruler
-    right_portrait = char:3
+	type = country_event
+	title = "lotr_one_ring_events.6.t"
+	desc = "lotr_one_ring_events.6.desc"
+	picture = event_one_ring_held
+	left_portrait = current_ruler
+	right_portrait = char:3
 	trigger = {
 		NOT = { religion = melkorism }
 		current_ruler = { 
@@ -126,8 +137,8 @@ lotr_one_ring_events.6 = {
 			OR = {
 				c:SHI = { has_land = yes }
 				any_owned_province = {
-		      province_dominant_culture_group = halfling_group 
-      		is_in_region = siragale_region
+			  province_dominant_culture_group = halfling_group 
+			is_in_region = siragale_region
 				}
 			}
 		}
@@ -142,22 +153,93 @@ lotr_one_ring_events.6 = {
 
 #One Ring Decisions
 lotr_one_ring_events.3 = {
-    type = country_event
-    title = "lotr_one_ring_events.3.t"
-    desc = "lotr_one_ring_events.3.desc"
-    picture = event_one_ring_held
-    left_portrait = current_ruler
-    right_portrait = char:3
+	type = country_event
+	title = "lotr_one_ring_events.3.t"
+	desc = "lotr_one_ring_events.3.desc"
+	picture = event_one_ring_held
+	left_portrait = current_ruler
+	right_portrait = char:3
 	immediate = {
 		set_variable = {
 			name = lotr_one_ring_events3_variable
 			days = 365
 		}
 	}
-	
 	option = { # Exit
 		name = "lotr_one_ring_events.3.a"
 		custom_tooltip = "lotr_one_ring_events.3.a.tt"
+		if = {
+			limit = {
+				has_opinion = {
+					modifier = isengard_mordor_alliance_modifier
+					target = c:MOR
+				}
+			}
+			remove_opinion = {
+				modifier = isengard_mordor_alliance_modifier
+				target = c:MOR
+			}
+			add_opinion = {
+				modifier = mortal_enemies
+				target = c:MOR
+			}
+			c:MOR = {
+				remove_opinion = {
+					modifier = isengard_mordor_alliance_modifier
+					target = ROOT
+				}
+				add_opinion = {
+					modifier = mortal_enemies
+					target = ROOT
+				}
+			}
+		}
+		if = {
+			limit = {
+				c:MOR = {
+					has_opinion = {
+						modifier = sauron_loyal_servant
+						target = ROOT
+					}
+				}
+			}
+			add_opinion = {
+				modifier = mortal_enemies
+				target = c:MOR
+			}
+			c:MOR = {
+				remove_opinion = {
+					modifier = sauron_loyal_servant
+					target = ROOT
+				}
+				add_opinion = {
+					modifier = mortal_enemies
+					target = ROOT
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_opinion = {
+					modifier = sauron_worship_modifier
+					target = c:MOR
+				}
+			}
+			remove_opinion = {
+				modifier = sauron_worship_modifier
+				target = c:MOR
+			}
+			add_opinion = {
+				modifier = mortal_enemies
+				target = c:MOR
+			}
+			c:MOR = {
+				add_opinion = {
+					modifier = mortal_enemies
+					target = ROOT
+				}
+			}
+		}
 		ai_chance = {
 			base = 100
 		}
@@ -182,6 +264,66 @@ lotr_one_ring_events.3 = {
 		}
 		current_ruler = {
 			add_health = -50
+		}
+		if = {
+			limit = {
+				c:MOR = {
+					has_opinion = {
+						modifier = mortal_enemies
+						target = ROOT
+					}
+				}
+			}
+			c:MOR = {
+				remove_opinion = {
+					modifier = mortal_enemies
+					target = ROOT
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_opinion = {
+					modifier = mortal_enemies
+					target = c:MOR
+				}
+			}
+			remove_opinion = {
+				modifier = mortal_enemies
+				target = c:MOR
+			}
+		}
+		if = {
+			limit = {
+				c:MOR = {
+				 NOT = {
+						has_opinion = {
+							modifier = sauron_loyal_servant
+							target = ROOT
+						}
+					} 
+				}
+			}
+			c:MOR = {
+				add_opinion = {
+					modifier = sauron_loyal_servant
+					target = ROOT
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_opinion = {
+						modifier = sauron_worship_modifier
+						target = c:MOR
+					}
+				}
+			}
+			add_opinion = {
+				modifier = sauron_worship_modifier
+				target = c:MOR
+			}
 		}
 	}
 	
@@ -248,15 +390,15 @@ lotr_one_ring_events.3 = {
 		}
 		set_country_religion = melkorism
 	}
-	option = {
+	option = { #return to the halflings
 		name = "lotr_one_ring_events.6.b"
 		trigger = {
 			NOT = { religion = melkorism }
 			OR = {
 				c:SHI = { has_land = yes }
 				any_owned_province = {
-		      province_dominant_culture_group = halfling_group 
-      		is_in_region = siragale_region
+				  province_dominant_culture_group = halfling_group 
+					is_in_region = siragale_region
 				}
 			}
 		}

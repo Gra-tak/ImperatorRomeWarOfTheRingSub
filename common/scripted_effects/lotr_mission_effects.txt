@@ -372,6 +372,7 @@ gandalf_the_white = {
 				add_zeal=25
 				no_traits=yes
 				force_add_trait="maia"
+				force_add_trait="narya"
 				force_add_trait="olympic_competitor"
 				save_scope_as = gandalf
 				dna="GgAH7oo/imm1fAAAAp4CnQJ4AngCfwJ/AnYCdgKYApgCiwKLAlYCVgJ3AncCkwKTApcClwKXApcCiwKLAoECgQKMAosCTgJOAm0CbQKTApMCXgJeAGgCZwJWAlYCfwJ/AowCjAKaApoCdgJ2ApICkgKRApECkAKQAmwCbAKJAokCdQJ1ApUClQKeAp4CdAJ0ArACsAKUApQCcwJzAnYCdgKLAosCjAKMAn0CfQKTApMCjAKMAmECYQKMAowClQKVAo8CjwKLAosChgKGAnkCeQJRAlECbQJtAlkCWQKYApgCkwKTAsICwgQEBAQBZQFlATMBMwFhAWEATwBPAVABUAC2ALYALwAvAIcAhwCpAKkEnAScArYCtgFzAXMABwAHAN0A3QFpAWkAPwA/Aq8CrwCxALEDtwO3ARsBGwD5APkCngKeAQMBAwKVApUAOgA6AHwAfABIAEgAwwDDACYAJgD5APkCiAKIA3ADcAD0APQARwDEAHwAfwQ0BDcWkxZeAIMA8ABnDP4DLRAXFf8R0AAAAAAAAAAAAAAAAAAAAAA="
@@ -1157,6 +1158,7 @@ ring_to_shire_effect = {
 prepare_legion_unit_to_add_subunits = {
 	if = {
 		limit = {
+			any_legion = {}
 			any_legion = { any_legion_unit = {} }
 		}
 		random_legion = {
@@ -1306,5 +1308,34 @@ initialize_wonders_effect = {
 		# 	hidden_effect = {
 		# 	}
 		# }
+	}
+}
+
+lotr_nazgul_ring_boost = {
+	show_as_tooltip = {
+		char:4 = {
+			add_martial = 4
+			add_finesse = 4
+			add_charisma = 4
+			add_zeal = 4
+		}
+		char:5 = {
+			add_martial = 4
+			add_finesse = 4
+			add_charisma = 4
+			add_zeal = 4
+		}
+	}
+	custom_tooltip = "nazgul_gain_stats_tt"
+	hidden_effect = {
+		every_living_character = {
+			limit = {
+				has_trait = nazgul
+			}
+			add_martial = 4
+			add_finesse = 4
+			add_charisma = 4
+			add_zeal = 4
+		}
 	}
 }

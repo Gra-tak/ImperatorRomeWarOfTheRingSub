@@ -16,7 +16,10 @@
 				prisoner = no
 				has_religion = melkorism
 			}
-			sauron_rules = yes
+			OR = {
+				sauron_rules = yes
+				has_global_variable = lotr_nazgul_taken_over_flag
+			}
 		}
 		
 		ai_allow = {

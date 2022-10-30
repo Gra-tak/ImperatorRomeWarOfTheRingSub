@@ -677,7 +677,10 @@ set_racial_terrain_modifiers = {
 						dominant_province_culture = orcish
 						dominant_province_culture = urukhai
 					}
-					sauron_rules = yes
+					OR = {
+						sauron_rules = yes
+						has_global_variable = lotr_nazgul_taken_over_flag
+					}
 				}
 				add_province_modifier = {
 					name = uruk_orc_vulcanic_modifier

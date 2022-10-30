@@ -14,6 +14,7 @@
 		add_zeal=15
 		no_traits=yes
 		add_trait="elf"
+		add_trait="vilya"
 		add_trait="proud"
 		add_trait="scholar"
 		add_trait="wise"

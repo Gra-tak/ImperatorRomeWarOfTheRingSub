@@ -32,5 +32,68 @@
 			factor = 0
 		}
 	}
+	lotr_take_over_nazgul_decision = {
+		potential = {
+			is_ai = no
+			exists = treasure:lotr_treasure_one_ring
+			ROOT = {
+				any_country_treasure = {
+					this = treasure:lotr_treasure_one_ring
+				}
+			}
+			religion = melkorism
+			current_ruler = {
+				OR = { #limited nunmber of people who can even potentially "take over" for sauron
+					has_trait = nazgul
+					has_trait = maia
+					has_trait = narya
+					has_trait = vilya
+					has_trait = nenya
+				}
+			}
+			NOT = {
+				has_global_variable = lotr_nazgul_taken_over_flag
+			}
+		}
+		allow = {
+			owns = 1030
+			c:MMO = { 
+				OR = {
+					has_land = no
+					THIS = ROOT
+				}
+			}
+		}
+		effect = {
+			every_living_character = {
+				limit = { 
+					has_trait = nazgul 
+					NOT = {
+						employer = ROOT
+					}
+				}
+				move_country = ROOT
+				hidden_effect = {
+					remove_character_modifier = foreign_citizen
+					set_as_minor_character = THIS
+					set_home_country = employer
+					if = {
+						limit = {
+							has_variable = came_from
+						}
+						remove_variable = came_from
+					}
+				}
+			}
+			lotr_nazgul_ring_boost = yes
+			set_global_variable = {
+				name = lotr_nazgul_taken_over_flag
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
 }
