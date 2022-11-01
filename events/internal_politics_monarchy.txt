@@ -4296,6 +4296,7 @@ ip_monarchy.36 = {
 				has_trait = shrewd
 				has_trait = self_controlled
 			}
+			is_sterile_trigger = no
 		}
 		exists = current_ruler.spouse
 		current_ruler.spouse = { 

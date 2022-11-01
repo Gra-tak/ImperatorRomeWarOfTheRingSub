@@ -209,19 +209,20 @@
 			# 		target = PREV
 			# 	}
 			# }
-			every_character = {
-				limit = {
-					has_trait = strong_blood_of_numenor
-					exists = mother
-					exists = father
-				}
-				save_scope_as = newborn
-				ROOT = {
-					trigger_event = {
-						id = br_traits.1
-					}
-				}
-			}
+			# every_character = {
+			# 	limit = {
+			# 		has_trait = strong_blood_of_numenor
+			# 		exists = mother
+			# 		exists = father
+			# 	}
+			# 	save_scope_as = newborn
+			# 	ROOT = {
+			# 		trigger_event = {
+			# 			id = br_traits.1
+			# 		}
+			# 	}
+			# }
+			set_country_heritage = orcish_heritage
 		}
 	}
 	

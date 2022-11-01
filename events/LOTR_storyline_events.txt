@@ -41,6 +41,7 @@ lotr_storyline_events.1 = {
 		au_basic_setup = yes
 		allow_warg_riders = yes
 		allow_orc_infantry  = yes
+		set_country_heritage = orcish_heritage
 		#rest via traditions
 		if = { #ai is too stupid to work with mulitple unlocked traditions
 			limit = {
