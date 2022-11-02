@@ -2330,7 +2330,7 @@ lotr_character_events.38 = {
 			add_loyalty = loyalty_priest_autonomy
 		}
 		hidden_effect = {
-			random_list = {
+			random_list = { 
 				30 = {
 					trigger_event = {
 						id = lotr_character_events.39
@@ -2338,12 +2338,18 @@ lotr_character_events.38 = {
 					}
 				}
 				40 = {
+					trigger = {
+						scope:lotr_melkor_temple_country_scope.religion = iluvatarism
+					}
 					trigger_event = {
 						id = lotr_character_events.40
 						days = 97
 					}
 				}
 				30 = {
+					trigger = {
+						NOT = { scope:lotr_melkor_temple_country_scope.religion = melkorism }
+					}
 					trigger_event = {
 						id = lotr_character_events.40
 						days = 87

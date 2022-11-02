@@ -336,3 +336,25 @@ influence.6 = {
 		}
 	}
 }
+
+influence.7 = { ### New End event
+	type = character_event
+	title = "influence.7.t"
+	desc = "influence.7.desc"
+	
+	trigger = {
+
+	}
+	
+	left_portrait = root
+	
+	picture = senator_conversing
+	
+	option = {
+		name = "influence.7.a"
+		set_ambition = scheme_influence
+	}
+	option = {
+		name = "influence.7.b"
+	}
+}

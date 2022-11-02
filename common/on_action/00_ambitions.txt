@@ -2519,6 +2519,9 @@ scheme_influence_finish = {
 			}
 		}
 	}
+	trigger_event = {
+		id = influence.7
+	}
 }
 
 scheme_influence_monthly = {

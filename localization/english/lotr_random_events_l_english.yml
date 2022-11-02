@@ -311,3 +311,7 @@
  lotr_human_sacrifice_decision_desc:0 "Deem these people as potential sacrifice to our gods."
  lotr_stop_human_sacrifice_decision:0 "Stop sacrifice to the gods"
  lotr_stop_human_sacrifice_decision_desc:0 "Stop seeing these people as potential sacrifice to our gods."
+ influence.7.t:0 "Scheme ending"
+ influence.7.desc:0 "We have been scheming for political influence for year now. How should we proceed."
+ influence.7.a:0 "Continue"
+ influence.7.b:0 "Stop"
