@@ -2339,7 +2339,7 @@ lotr_character_events.38 = {
 				}
 				40 = {
 					trigger = {
-						scope:lotr_melkor_temple_country_scope.religion = iluvatarism
+						scope:lotr_melkor_temple_country_scope = { religion = iluvatarism }
 					}
 					trigger_event = {
 						id = lotr_character_events.40
@@ -2348,7 +2348,7 @@ lotr_character_events.38 = {
 				}
 				30 = {
 					trigger = {
-						NOT = { scope:lotr_melkor_temple_country_scope.religion = melkorism }
+						NOT = { scope:lotr_melkor_temple_country_scope = { religion = melkorism } }
 					}
 					trigger_event = {
 						id = lotr_character_events.40

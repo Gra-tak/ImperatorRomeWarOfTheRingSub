@@ -2518,9 +2518,9 @@ scheme_influence_finish = {
 				remove_country_modifier = influence_mod
 			}
 		}
-	}
-	trigger_event = {
-		id = influence.7
+		trigger_event = {
+			id = influence.7
+		}
 	}
 }
 
