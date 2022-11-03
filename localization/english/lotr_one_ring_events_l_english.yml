@@ -4,6 +4,8 @@
  lotr_treasure_one_ring_desc:0 "Forged by Dark Lord Sauron to gain dominion over Middle-earth, The One Ring is the most powerful of all Rings.\n\n#E Ruler stats:#!\nMonthly Corruption: #Y 0.51#!\nMartial: #Y +20#!  Finesse: #Y +14#!\nCharisma: #Y +18#!  Zeal: #Y +16#!\nHealth: #Y Long life#!\nMonthly increases to: #Y Prominence#!, #Y Popularity#!, #Y Wage#!\n+ Events & Decisions related to the Ring"
  owns_one_ring_modifier:0 "One Ring"
  owns_one_ring_modifier_desc:0 "One Ring"
+ owns_one_ring_trait:0 "One Ring"
+ owns_one_ring_trait_desc:0 "Ash nazg durbatulûk, ash nazg gimbatul,\nash nazg thrakatulûk, agh burzum-ishi krimpatul\n\nOne Ring to rule them all, One Ring to find them,\nOne Ring to bring them all and in the darkness bind them"
  # Decisions
  lotr_treasure_one_ring_decision:0 "The One Ring"
  lotr_treasure_one_ring_decision_desc:0 "The One Ring treasure provides the nation's ruler with powerful bonuses, however it also causes several negative side-effects. The bearer develops a very strong attachment to the ring, therefore any decisions that are made related to it will cause a negative effect on the ruler's health and a reduction in stability.\n\n#Y Once enacted, this decision will be unavailable for 1 year.#!"

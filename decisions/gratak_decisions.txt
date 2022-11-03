@@ -222,7 +222,11 @@
 			# 		}
 			# 	}
 			# }
-			set_country_heritage = orcish_heritage
+			# set_country_heritage = orcish_heritage
+			current_ruler = {
+				remove_character_modifier = owns_one_ring_modifier
+				add_trait = owns_one_ring_trait
+			}
 		}
 	}
 	

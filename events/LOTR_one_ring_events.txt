@@ -79,8 +79,9 @@ lotr_one_ring_events.2 = {
 				this = treasure:lotr_treasure_one_ring
 			}
 			current_ruler = {
-				NOT = {
+				NOR = {
 					has_character_modifier = owns_one_ring_modifier
+					has_trait = owns_one_ring_trait
 				}
 			}
 		}
@@ -119,7 +120,10 @@ lotr_one_ring_events.6 = {
 	trigger = {
 		NOT = { religion = melkorism }
 		current_ruler = { 
-			has_character_modifier = owns_one_ring_modifier 
+			OR = {
+				has_character_modifier = owns_one_ring_modifier 
+				has_trait = owns_one_ring_trait
+			}
 			corruption >= 99
 		}
 	}

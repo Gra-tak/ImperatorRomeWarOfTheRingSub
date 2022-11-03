@@ -33,8 +33,9 @@
 		religion = iluvatarism
 		sauron_rules = yes
 		current_ruler = {
-			NOT = {
+			NOR = {
 				has_character_modifier = owns_one_ring_modifier
+				has_trait = owns_one_ring_trait
 			}
 		}
 	}

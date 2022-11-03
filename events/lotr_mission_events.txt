@@ -373,9 +373,3 @@ lotr_mission_events.100 = {
 		name = OK
 	}
 }
-
-	
-	option = {
-		name = OK
-	}
-}

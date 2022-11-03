@@ -617,19 +617,20 @@ apply_one_ring_to_ruler = {
 		add_finesse = 12
 		add_charisma = 16
 		add_zeal = 14
-		add_character_modifier = {
-			name = owns_one_ring_modifier
-			duration = -1
-		}
+		add_trait = owns_one_ring_trait
 	}
 }
 
 remove_one_ring_from_previous_owner = {
 	every_living_character = {
 		limit = {
-			has_character_modifier = owns_one_ring_modifier
+			OR = {
+				has_character_modifier = owns_one_ring_modifier
+				has_trait = owns_one_ring_trait
+			}
 		}
 		remove_character_modifier = owns_one_ring_modifier
+		remove_trait = owns_one_ring_trait
 		add_martial = -18
 		add_finesse = -12
 		add_charisma = -16
