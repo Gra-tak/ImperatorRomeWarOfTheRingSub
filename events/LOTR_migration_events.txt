@@ -61,7 +61,7 @@ lotr_migration_events.1 = {
 					divide = var:all
 				}
 				if = {
-					limit = { var:refugeePerc > 0.2 } #if there's less than 20% non orcs, we assume that orcs won't allow anyone to flee
+					limit = { var:refugeePerc > 0.4 } #if there's less than 40% non orcs, we assume that orcs won't allow anyone to flee
 					every_pops_in_province = {
 						limit = {
 							NOR = { 
