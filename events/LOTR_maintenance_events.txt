@@ -58,6 +58,7 @@ lotr_maintenance.1 = {
 				subtract = 6
 			}
 		}
+		custom_tooltip = "lotr_once_for_every_six_disbanded_subunit"
 		ai_chance = {
 			base = 100
 		}

@@ -137,6 +137,7 @@
  lotr_maintenance.1.t:0 "Displaced orcs."
  lotr_maintenance.1.desc:0 "Our wars have come to an end for the time and we still have displaced orcs in our army. Shall we settle them in our lands once again?"
  lotr_maintenance.1.b:0 "No. We will fight on."
+ lotr_once_for_every_six_disbanded_subunit:0 "Above will be done (to different territories) for every 6 subunits (rounded) that are being disbanded."
  lotr_maintenance.10.t:0 "Taking over subjects"
  lotr_maintenance.10.desc:0 "We are trying to take over a special subject.\nThis event is needed since due to game limitation we cannot control subject defection for Gondor and Rangers. Their subjects are permanentely disloyal to prevent them from joining offensive wars while participating in defensive ones.\n\nRanger subjects can only be taken if the line of Isildur doesn't reign anymore.\n\nGondor's subjects can only be taken if Minas Tirith has fallen"
  lotr_maintenance.10.a:0 "Minas Tirith still stands strong"
