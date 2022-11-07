@@ -13,26 +13,24 @@ lotr_mission_events.1 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			current_ruler = {
-				add_popularity = popularity_medium
-			}
-			add_1_free_province_investments = yes
-			if = {
-				limit = {
-					root = { is_tribal = yes }
-				}
-				add_centralization = 5
-				add_stability = 10
-			}
-			else = {
-				add_stability = 5
-			}
-		}
 	}
 	
 	option = {
 		name = OK
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
+		add_1_free_province_investments = yes
+		if = {
+			limit = {
+				root = { is_tribal = yes }
+			}
+			add_centralization = 5
+			add_stability = 10
+		}
+		else = {
+			add_stability = 5
+		}
 	}
 }
 
@@ -49,22 +47,20 @@ lotr_mission_events.2 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			create_country_treasure = {
-				key = "lotr_generic_capital_mission_4_statue"
-				icon = "treasure_architecture"
-				modifier = {
-					local_population_happiness = 0.05
-				}
-			}
-			current_ruler = {
-				add_popularity = popularity_medium
-			}
-		}
 	}
 	
 	option = {
 		name = OK
+		create_country_treasure = {
+			key = "lotr_generic_capital_mission_4_statue"
+			icon = "treasure_architecture"
+			modifier = {
+				local_population_happiness = 0.05
+			}
+		}
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
 	}
 }
 
@@ -81,28 +77,26 @@ lotr_mission_events.3 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			capital_scope = {
-				if = {
-					limit = {
-						root = { is_tribal = yes }
-					}
-					create_state_pop = tribesmen
-					create_state_pop = tribesmen
-				}
-				else = {
-					create_state_pop = freemen
-					create_state_pop = freemen
-				}
-			}
-			current_ruler = {
-				add_popularity = popularity_medium
-			}
-		}
 	}
 	
 	option = {
 		name = OK
+		capital_scope = {
+			if = {
+				limit = {
+					root = { is_tribal = yes }
+				}
+				create_state_pop = tribesmen
+				create_state_pop = tribesmen
+			}
+			else = {
+				create_state_pop = freemen
+				create_state_pop = freemen
+			}
+		}
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
 	}
 }
 
@@ -119,27 +113,25 @@ lotr_mission_events.4 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			capital_scope = {
-				if = {
-					limit = {
-						root = { is_tribal = yes }
-					}
-					create_state_pop = tribesmen
-					create_state_pop = tribesmen
-				}
-				else = {
-					create_state_pop = citizen
-					create_state_pop = citizen
-				}
-			}
-			current_ruler = { add_corruption = subtract_corruption_small }
-			add_stability = 10
-		}
 	}
 	
 	option = {
 		name = OK
+		capital_scope = {
+			if = {
+				limit = {
+					root = { is_tribal = yes }
+				}
+				create_state_pop = tribesmen
+				create_state_pop = tribesmen
+			}
+			else = {
+				create_state_pop = citizen
+				create_state_pop = citizen
+			}
+		}
+		current_ruler = { add_corruption = subtract_corruption_small }
+		add_stability = 10
 	}
 }
 
@@ -156,33 +148,31 @@ lotr_mission_events.5 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			capital_scope = {
-				if = {
-					limit = {
-						root = { is_tribal = yes }
-					}
-					create_state_pop = tribesmen
-					create_state_pop = tribesmen
-					add_province_modifier = {
-						name = "center_of_art_and_culture_modifier"
-						duration = -1
-					}
-				}
-				else = {
-					create_2_nobles_effect = yes
-					add_province_modifier = {
-						name = "center_of_art_and_culture_modifier"
-						duration = -1
-					}
-				}
-			}
-			current_ruler = { add_corruption = subtract_corruption_small }
-		}
 	}
 	
 	option = {
 		name = OK
+		capital_scope = {
+			if = {
+				limit = {
+					root = { is_tribal = yes }
+				}
+				create_state_pop = tribesmen
+				create_state_pop = tribesmen
+				add_province_modifier = {
+					name = "center_of_art_and_culture_modifier"
+					duration = -1
+				}
+			}
+			else = {
+				create_2_nobles_effect = yes
+				add_province_modifier = {
+					name = "center_of_art_and_culture_modifier"
+					duration = -1
+				}
+			}
+			current_ruler = { add_corruption = subtract_corruption_small }
+		}
 	}
 }
 
@@ -199,19 +189,17 @@ lotr_mission_events.6 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			capital_scope = {
-				add_province_modifier = {
-					name = "fortified_stronghold"
-					duration = -1
-				}
-			}
-			add_1_free_province_investments = yes
-		}
 	}
 	
 	option = {
 		name = OK
+		capital_scope = {
+			add_province_modifier = {
+				name = "fortified_stronghold"
+				duration = -1
+			}
+		}
+		add_1_free_province_investments = yes
 	}
 }
 
@@ -228,18 +216,42 @@ lotr_mission_events.7 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			add_1_free_province_investments = yes
-			add_country_modifier = {
-				name = syr_foreign_levy_cmod
-				duration = 365
-			}	
-			add_military_experience = 15
-		}
 	}
 	
 	option = {
 		name = OK
+		add_1_free_province_investments = yes
+		add_country_modifier = {
+			name = syr_foreign_levy_cmod
+			duration = 365
+		}	
+		add_military_experience = 15
+	}
+}
+
+#lotr_fortify_capital_mission_3 = {		# Fortify2
+lotr_mission_events.17 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.17.t"
+	desc = "lotr_mission_events.17.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	immediate = {
+	}
+	
+	option = {
+		name = OK
+		add_1_free_province_investments = yes
+		add_country_modifier = {
+			name = syr_foreign_levy_cmod
+			duration = 365
+		}	
+		add_military_experience = 15
 	}
 }
 
@@ -256,18 +268,16 @@ lotr_mission_events.8 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			capital_scope = {
-				add_province_modifier = {
-					name = "ant_01_8_pmod"
-					duration = 3650
-				}
-			}
-		}
 	}
 	
 	option = {
 		name = OK
+		capital_scope = {
+			add_province_modifier = {
+				name = "ant_01_8_pmod"
+				duration = 3650
+			}
+		}
 	}
 }
 
@@ -284,15 +294,13 @@ lotr_mission_events.9 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			current_ruler = {
-				add_popularity = popularity_small
-			}
-		}
 	}
 	
 	option = {
 		name = OK
+		current_ruler = {
+			add_popularity = popularity_small
+		}
 	}
 }
 
@@ -309,18 +317,16 @@ lotr_mission_events.10 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			capital_scope.state = {
-				add_state_modifier = {
-					name = "fruits_of_the_land"
-					duration = 3650
-				}
-			}
-		}
 	}
 	
 	option = {
 		name = OK
+		capital_scope.state = {
+			add_state_modifier = {
+				name = "fruits_of_the_land"
+				duration = 3650
+			}
+		}
 	}
 }
 
@@ -337,18 +343,16 @@ lotr_mission_events.11 = {
 	
 	
 	immediate = {
-		show_as_tooltip = {
-			capital_scope = {
-				add_province_modifier = {
-					name = "thriving_mining_sector"
-					duration = 3650 # 10 years
-				}
-			}
-		}
 	}
 	
 	option = {
 		name = OK
+		capital_scope = {
+			add_province_modifier = {
+				name = "thriving_mining_sector"
+				duration = 3650 # 10 years
+			}
+		}
 	}
 }
 
@@ -364,12 +368,8 @@ lotr_mission_events.100 = {
 	picture = council_country
 	
 	
-	immediate = {
-		show_as_tooltip = {
-		}
-	}
-	
 	option = {
 		name = OK
+		
 	}
 }

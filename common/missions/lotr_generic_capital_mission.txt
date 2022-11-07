@@ -80,19 +80,21 @@
 		}
 
 		on_completion = {
-			current_ruler = {
-				add_popularity = popularity_medium
-			}
-			add_1_free_province_investments = yes
-			if = {
-				limit = {
-					root = { is_tribal = yes }
+			show_as_tooltip = { #actual effect is executed in event called
+				current_ruler = {
+					add_popularity = popularity_medium
 				}
-				add_centralization = 5
-				add_stability = 10
-			}
-			else = {
-				add_stability = 5
+				add_1_free_province_investments = yes
+				if = {
+					limit = {
+						root = { is_tribal = yes }
+					}
+					add_centralization = 5
+					add_stability = 10
+				}
+				else = {
+					add_stability = 5
+				}
 			}
 			trigger_event = {
 				id = lotr_mission_events.1
@@ -185,15 +187,17 @@
 		}
 
 		on_completion = {
-			create_country_treasure = {
-				key = "lotr_generic_capital_mission_4_statue"
-				icon = "treasure_architecture"
-				modifier = {
-					local_population_happiness = 0.05
+			show_as_tooltip = { #actual effect is executed in event called
+				create_country_treasure = {
+					key = "lotr_generic_capital_mission_4_statue"
+					icon = "treasure_architecture"
+					modifier = {
+						local_population_happiness = 0.05
+					}
 				}
-			}
-			current_ruler = {
-				add_popularity = popularity_medium
+				current_ruler = {
+					add_popularity = popularity_medium
+				}
 			}
 			trigger_event = {
 				id = lotr_mission_events.2
@@ -259,21 +263,23 @@
 		}
 
 		on_completion = {
-			capital_scope = {
-				if = {
-					limit = {
-						root = { is_tribal = yes }
+			show_as_tooltip = { #actual effect is executed in event called
+				capital_scope = {
+					if = {
+						limit = {
+							root = { is_tribal = yes }
+						}
+						create_state_pop = tribesmen
+						create_state_pop = tribesmen
 					}
-					create_state_pop = tribesmen
-					create_state_pop = tribesmen
+					else = {
+						create_state_pop = freemen
+						create_state_pop = freemen
+					}
 				}
-				else = {
-					create_state_pop = freemen
-					create_state_pop = freemen
+				current_ruler = {
+					add_popularity = popularity_medium
 				}
-			}
-			current_ruler = {
-				add_popularity = popularity_medium
 			}
 			trigger_event = {
 				id = lotr_mission_events.3
@@ -304,21 +310,23 @@
 		}
 
 		on_completion = {
-			capital_scope = {
-				if = {
-					limit = {
-						root = { is_tribal = yes }
+			show_as_tooltip = { #actual effect is executed in event called
+				capital_scope = {
+					if = {
+						limit = {
+							root = { is_tribal = yes }
+						}
+						create_state_pop = tribesmen
+						create_state_pop = tribesmen
 					}
-					create_state_pop = tribesmen
-					create_state_pop = tribesmen
+					else = {
+						create_state_pop = citizen
+						create_state_pop = citizen
+					}
 				}
-				else = {
-					create_state_pop = citizen
-					create_state_pop = citizen
-				}
+				current_ruler = { add_corruption = subtract_corruption_small }
+				add_stability = 10
 			}
-			current_ruler = { add_corruption = subtract_corruption_small }
-			add_stability = 10
 			trigger_event = {
 				id = lotr_mission_events.4
 			}
@@ -350,27 +358,29 @@
 		}
 
 		on_completion = {
-			capital_scope = {
-				if = {
-					limit = {
-						root = { is_tribal = yes }
+			show_as_tooltip = { #actual effect is executed in event called
+				capital_scope = {
+					if = {
+						limit = {
+							root = { is_tribal = yes }
+						}
+						create_state_pop = tribesmen
+						create_state_pop = tribesmen
+						add_province_modifier = {
+							name = "center_of_art_and_culture_modifier"
+							duration = -1
+						}
 					}
-					create_state_pop = tribesmen
-					create_state_pop = tribesmen
-					add_province_modifier = {
-						name = "center_of_art_and_culture_modifier"
-						duration = -1
+					else = {
+						create_2_nobles_effect = yes
+						add_province_modifier = {
+							name = "center_of_art_and_culture_modifier"
+							duration = -1
+						}
 					}
 				}
-				else = {
-					create_2_nobles_effect = yes
-					add_province_modifier = {
-						name = "center_of_art_and_culture_modifier"
-						duration = -1
-					}
-				}
+				current_ruler = { add_corruption = subtract_corruption_small }
 			}
-			current_ruler = { add_corruption = subtract_corruption_small }
 			trigger_event = {
 				id = lotr_mission_events.5
 			}
@@ -408,13 +418,15 @@
 		}
 
 		on_completion = {
-			capital_scope = {
-				add_province_modifier = {
-					name = "fortified_stronghold"
-					duration = -1
+			show_as_tooltip = { #actual effect is executed in event called
+				capital_scope = {
+					add_province_modifier = {
+						name = "fortified_stronghold"
+						duration = -1
+					}
 				}
+				add_1_free_province_investments = yes
 			}
-			add_1_free_province_investments = yes
 			trigger_event = {
 				id = lotr_mission_events.6
 			}
@@ -445,12 +457,17 @@
 		}
 
 		on_completion = {
-			capital_scope = {
-				if = {
-					limit = { free_building_slots < 1 }
-					destroy_building_effect = yes
+			show_as_tooltip = { #actual effect is executed in event called
+				capital_scope = {
+					if = {
+						limit = { free_building_slots < 1 }
+						destroy_building_effect = yes
+					}
+					add_building_level = fortress_building
 				}
-				add_building_level = fortress_building
+			}
+			trigger_event = {
+				id = lotr_mission_events.7
 			}
 		}
 	}
@@ -478,14 +495,16 @@
 		}
 
 		on_completion = {
-			add_1_free_province_investments = yes
-			add_country_modifier = {
-				name = syr_foreign_levy_cmod
-				duration = 365
-			}	
-			add_military_experience = 15
+			show_as_tooltip = { #actual effect is executed in event called
+				add_1_free_province_investments = yes
+				add_country_modifier = {
+					name = syr_foreign_levy_cmod
+					duration = 365
+				}	
+				add_military_experience = 15
+			}
 			trigger_event = {
-				id = lotr_mission_events.7
+				id = lotr_mission_events.17
 			}
 		}
 	}
@@ -519,10 +538,12 @@
 		}
 
 		on_completion = {
-			capital_scope = {
-				add_province_modifier = {
-					name = "ant_01_8_pmod"
-					duration = 3650
+			show_as_tooltip = { #actual effect is executed in event called
+				capital_scope = {
+					add_province_modifier = {
+						name = "ant_01_8_pmod"
+						duration = 3650
+					}
 				}
 			}
 			trigger_event = {
@@ -553,8 +574,10 @@
 		}
 
 		on_completion = {
-			current_ruler = {
-				add_popularity = popularity_small
+			show_as_tooltip = { #actual effect is executed in event called
+				current_ruler = {
+					add_popularity = popularity_small
+				}
 			}
 			trigger_event = {
 				id = lotr_mission_events.9
@@ -583,10 +606,12 @@
 		}
 
 		on_completion = {
-			capital_scope.state = {
-				add_state_modifier = {
-					name = "fruits_of_the_land"
-					duration = 3650
+			show_as_tooltip = { #actual effect is executed in event called
+				capital_scope.state = {
+					add_state_modifier = {
+						name = "fruits_of_the_land"
+						duration = 3650
+					}
 				}
 			}
 			trigger_event = {
@@ -680,10 +705,12 @@
 		}
 
 		on_completion = {
-			capital_scope = {
-				add_province_modifier = {
-					name = "thriving_mining_sector"
-					duration = 3650 # 10 years
+			show_as_tooltip = { #actual effect is executed in event called
+				capital_scope = {
+					add_province_modifier = {
+						name = "thriving_mining_sector"
+						duration = 3650 # 10 years
+					}
 				}
 			}
 			trigger_event = {
