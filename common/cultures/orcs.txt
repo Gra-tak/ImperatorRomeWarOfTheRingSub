@@ -2,8 +2,8 @@
 	
 	levy_template = levy_orcs
 	
-	primary = orc_infantry
-	second = orc_infantry
+	primary = uruk_heavy_infantry #orcs and goblins will fill this with orc infantry anyway as they don't have anything else
+	second = uruk_infantry
 	flank = warg_riders
 
 	primary_navy = galley
