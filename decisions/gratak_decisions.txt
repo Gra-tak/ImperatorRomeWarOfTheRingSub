@@ -222,10 +222,14 @@
 			# 		}
 			# 	}
 			# }
-			# set_country_heritage = orcish_heritage
-			current_ruler = {
-				remove_character_modifier = owns_one_ring_modifier
-				add_trait = owns_one_ring_trait
+			# # set_country_heritage = orcish_heritage
+			# current_ruler = {
+			# 	remove_character_modifier = owns_one_ring_modifier
+			# 	add_trait = owns_one_ring_trait
+			# }
+			every_owned_province = {
+				limit = { is_in_region = dacranamel_region }
+				set_conquered_by = c:MOR
 			}
 		}
 	}

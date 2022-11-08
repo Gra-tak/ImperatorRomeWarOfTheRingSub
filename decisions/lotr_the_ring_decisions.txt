@@ -56,15 +56,25 @@
 			}
 		}
 		allow = {
-			owns = 1030
-			c:MMO = { 
-				OR = {
-					has_land = no
-					THIS = ROOT
+			OR = {
+				AND = {
+					owns = 1030
+					c:MMO = { 
+						OR = {
+							has_land = no
+							THIS = ROOT
+						}
+					}
+				}
+				c:MMO = { 
+					owns = 1030
+					is_subject = yes
+					is_subject_of = ROOT
 				}
 			}
 		}
 		effect = {
+			save_scope_as = actor
 			every_living_character = {
 				limit = { 
 					has_trait = nazgul 
@@ -72,22 +82,46 @@
 						employer = ROOT
 					}
 				}
-				move_country = ROOT
-				hidden_effect = {
-					remove_character_modifier = foreign_citizen
-					set_as_minor_character = THIS
-					set_home_country = employer
-					if = {
-						limit = {
-							has_variable = came_from
+				if = {
+					limit = {
+						is_governor = yes
+					}
+					save_scope_as = naz
+					employer = {
+						save_scope_as = emp
+						random_governorships = {
+							limit = {
+								governor = scope:naz
+							}
+							every_governorship_state = {
+								every_state_province = {
+									add_to_list = provs
+								}
+							}
 						}
-						remove_variable = came_from
+					}
+				}
+				defect_effect = yes
+				set_family = ROOT.current_ruler.family
+				hidden_effect = { #give back the provicnes the nazgul took with him...
+					every_in_list = {
+						list = provs
+						set_conquered_by = scope:emp
+						remove_from_list = provs
 					}
 				}
 			}
 			lotr_nazgul_ring_boost = yes
 			set_global_variable = {
 				name = lotr_nazgul_taken_over_flag
+			}
+			if = {
+				limit = {
+					c:MMO = { has_land = yes }
+				}
+				c:MMO = {
+					every_owned_province = { set_conquered_by = ROOT }
+				}
 			}
 		}
 		
