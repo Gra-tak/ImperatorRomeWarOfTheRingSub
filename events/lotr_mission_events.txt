@@ -356,7 +356,7 @@ lotr_mission_events.11 = {
 	}
 }
 
-
+#lotr_generic_neighbor_expand_mission_1 = {		# Attack or Friend
 lotr_mission_events.100 = { 
 	type = country_event
 	
@@ -370,6 +370,257 @@ lotr_mission_events.100 = {
 	
 	option = {
 		name = OK
-		
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
+	}
+}
+
+#lotr_generic_neighbor_expand_mission_2 = {		# Decide to attack
+lotr_mission_events.101 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.101.t"
+	desc = "lotr_mission_events.101.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+    scope:lotr_generic_neighbor_province_scope = {
+			add_claim = root
+		}
+		scope:lotr_generic_neighbor_province_scope.owner = {
+			add_opinion = {
+				target = root
+				modifier = opinion_hostile_neighbor
+			}
+		}
+		add_manpower = {
+			value = 0
+			add = root.max_manpower
+			divide = 10
+			min = 1
+		}
+	}
+}
+
+#lotr_generic_neighbor_expand_mission_3 = {		# 3 Own province
+lotr_mission_events.102 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.102.t"
+	desc = "lotr_mission_events.102.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		current_ruler = { add_popularity = popularity_medium }
+		add_country_modifier = {
+			name = neighbor_expand_mission_glory_modifier
+			duration = 7300 # 20 years
+		}
+		add_aggressive_expansion = -5.0
+	}
+}
+
+#lotr_generic_neighbor_expand_mission_4 = {		# Improving attack ability
+lotr_mission_events.103 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.103.t"
+	desc = "lotr_mission_events.103.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		add_country_modifier = {
+			name = neighbor_expand_mission_secure_modifier
+			duration = 3650 # 10 years
+		}
+	}
+}
+
+#lotr_generic_neighbor_expand_mission_5 = {		# Final
+lotr_mission_events.104 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.104.t"
+	desc = "lotr_mission_events.104.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		add_country_modifier = {
+			name = neighbor_expand_mission_expansion_modifier
+			duration = 3650 # 10 years
+		}
+		add_aggressive_expansion = -10
+		add_legitimacy = 15
+	}
+}
+
+#lotr_generic_neighbor_friend_mission_1 = {		# Decide to be friends
+lotr_mission_events.105 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.105.t"
+	desc = "lotr_mission_events.105.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		current_ruler = { add_popularity = popularity_medium }
+		scope:lotr_generic_neighbor_province_scope.owner = {
+			add_opinion = {
+				target = root
+				modifier = opinion_friendly_neighbor
+			}
+		}
+	}
+}
+
+#lotr_generic_neighbor_friend_mission_2 = {		# Better friends
+lotr_mission_events.106 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.106.t"
+	desc = "lotr_mission_events.106.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		scope:lotr_generic_border_province_scope = {
+			add_province_modifier = {
+				name = fortified_stronghold
+				duration = -1
+			}
+		}
+		add_aggressive_expansion = -10.0
+	}
+}
+
+#lotr_generic_build_army_mission_1 = {		# Military Training Standards
+lotr_mission_events.107 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.107.t"
+	desc = "lotr_mission_events.107.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		add_country_modifier = {
+			name = generic_build_army_mission_1_modifier
+			duration = 3650 # 10 years
+		}
+		add_military_experience = 10
+	}
+}
+
+#lotr_generic_build_army_mission_2 = {		# Hardened Commanders
+lotr_mission_events.108 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.108.t"
+	desc = "lotr_mission_events.108.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		add_stability = 10
+		create_character = {
+			age = 32
+			no_traits = yes
+			no_stats = yes
+			hidden_effect = {
+				amazing_martial_effect = yes
+				great_charisma_effect = yes
+				good_finesse_effect = yes
+				average_zeal_effect = yes
+				positive_martial_trait_effect = yes
+				positive_martial_trait_effect = yes
+				random_trait_effect = yes
+			}
+		}
+		current_ruler = {
+			add_martial = 1
+		}
+	}
+}
+
+#lotr_generic_build_army_mission_3 = {		# Enhanced Training Grounds
+lotr_mission_events.109 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.109.t"
+	desc = "lotr_mission_events.109.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		add_manpower = {
+			value = 0
+			add = root.max_manpower
+			divide = 10
+			min = 1
+		}
+		current_ruler = {
+			add_popularity = popularity_medium
+			add_finesse = 1
+			add_prominence = prominence_large
+		}
+	}
+}
+
+
+lotr_mission_events.200 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.200.t"
+	desc = "lotr_mission_events.200.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
 	}
 }
