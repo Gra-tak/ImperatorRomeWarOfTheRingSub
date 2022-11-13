@@ -231,7 +231,7 @@
 			scope:lotr_generic_neighbor_province_scope = {
 				OR = { 
 					owner = root
-					owner = { is_subject_of = ROOT }
+					scope:lotr_generic_neighbor_province_scope_owner = { is_subject_of = ROOT }
 				} 
 			}
 		}
