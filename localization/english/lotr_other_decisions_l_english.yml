@@ -121,4 +121,11 @@
  lotr_config_events.1.move_all_foreign_pops_disable.tt:0 "Stop enabling movement to vassals for all different culture group non-integrated cultures (see culture descisions). Cultures that are already enabled to be moved stay and would need to be disabled via culture descisions."
  lotr_force_ranger_subjects_decision:0 "Force protectorates to participate in our wars"
  lotr_force_ranger_subjects_decision_desc:0 "We have sworn to protect the people of what was Arnor in past times from any outside threads. It had been decided almost a millenia ago that this should be done without forcing them to participate in these fights, allowing them to prosper. Both our nobles and the people in these protectorates will be greatly upset if we break this promise, but it would greatly increase our numbers in future wars."
+ lotr_orc_conquest_decision:0 "Orcish conquests"
+ lotr_orc_conquest_decision_desc:0 "We can put our large amount of military experience into a temporary boost do our conquest abilities. Every time this decision is executed, the buff is prolonged by 5 years."
+ lotr_orc_conquest_modifier_initial:0 "The following buff is active for 5 years"
+ lotr_orc_conquest_modifier_prolonged:0 "The duration of the following buff is increased by 5 years. Current duration: [SCOPE.GetRootScope.GetCountry.MakeScope.GetVariable('lotr_orc_conquest_modifier_duration').GetValue|0Y] years"
+ lotr_orc_conquest_modifier:0 "Orcish conquests"
+ # desc_lotr_orc_conquest_modifier:0 "We can put our large amount of military experience into a temporary boost do our conquest abilities. Check the decision for remaining time (Imperator doesn't allow increasing duration for buffs and also doesn't allow writing a variable here...)"
+ desc_lotr_orc_conquest_modifier:0 "We can put our large amount of military experience into a temporary boost do our conquest abilities. Remaining duration: [Player.MakeScope.GetVariable('lotr_orc_conquest_modifier_duration').GetValue|0Y] years"
 

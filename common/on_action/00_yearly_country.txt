@@ -65,6 +65,19 @@ yearly_country_pulse =
 				subtract = 1
 			}
 		}
+		if = {
+			limit = {
+				has_country_modifier = lotr_orc_conquest_modifier
+			}
+			change_variable = {
+				name = lotr_orc_conquest_modifier_duration
+				subtract = 1
+			}
+			if = {
+				limit = { var:lotr_orc_conquest_modifier_duration < 0 }
+				remove_country_modifier = lotr_orc_conquest_modifier
+			}
+		}
 	}
 	
 	random_events = {

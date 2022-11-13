@@ -60,6 +60,9 @@
 				}
 				order_by = total_population
 				save_scope_as = lotr_generic_neighbor_province_scope
+				owner = {
+					save_scope_as = lotr_generic_neighbor_province_scope_owner
+				}
 				region = {
 					save_scope_as = lotr_generic_neighbor_region_scope
 				}
@@ -191,11 +194,11 @@
 		}
 
 		on_completion = {
+			scope:lotr_generic_neighbor_province_scope = {
+				custom_tooltip = add_provincial_claim_effect_tooltip
+			}
 			show_as_tooltip = {
-				scope:lotr_generic_neighbor_province_scope = {
-					add_claim = root
-				}
-				scope:lotr_generic_neighbor_province_scope.owner = {
+				scope:lotr_generic_neighbor_province_scope_owner = {
 					add_opinion = {
 						target = root
 						modifier = opinion_hostile_neighbor
@@ -349,7 +352,7 @@
 
 		allow = {
 			treasury >= 50
-			scope:lotr_generic_neighbor_province_scope.owner = {
+			scope:lotr_generic_neighbor_province_scope_owner = {
 				opinion = {
 					target = root
 					value >= 25
@@ -381,7 +384,7 @@
 		on_completion = {
 			show_as_tooltip = {
 				current_ruler = { add_popularity = popularity_medium }
-				scope:lotr_generic_neighbor_province_scope.owner = {
+				scope:lotr_generic_neighbor_province_scope_owner = {
 					add_opinion = {
 						target = root
 						modifier = opinion_friendly_neighbor
@@ -408,7 +411,7 @@
 
 		allow = {
 			political_influence >= 10
-			scope:lotr_generic_neighbor_province_scope.owner = {
+			scope:lotr_generic_neighbor_province_scope_owner = {
 				opinion = {
 					target = root
 					value >= 125

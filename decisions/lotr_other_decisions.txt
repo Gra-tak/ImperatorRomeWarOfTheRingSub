@@ -417,4 +417,39 @@
 			release_rohan = yes
 		}
 	}
+
+	lotr_orc_conquest_decision = {
+		potential = {
+			has_military_bonus = orc_civic_path_5
+			has_military_bonus = orc_infantry_path_7
+		}
+		allow = {
+			military_experience >= 80
+		}
+		effect = {
+			add_military_experience = -80
+			if = {
+				limit = {
+					NOT = { has_country_modifier = lotr_orc_conquest_modifier }
+				}
+				custom_tooltip = "lotr_orc_conquest_modifier_initial"
+				set_variable = {
+					name = lotr_orc_conquest_modifier_duration
+					value = 5 #5 years plus rest of current year
+				}
+			}
+			else
+			{
+				custom_tooltip = "lotr_orc_conquest_modifier_prolonged"
+				change_variable = {
+					name = lotr_orc_conquest_modifier_duration
+					add = 5
+				}
+			}
+			add_country_modifier = {
+				name = lotr_orc_conquest_modifier
+				duration = -1
+			}
+		}
+	}
 }

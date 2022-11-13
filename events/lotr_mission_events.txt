@@ -171,8 +171,8 @@ lotr_mission_events.5 = {
 					duration = -1
 				}
 			}
-			current_ruler = { add_corruption = subtract_corruption_small }
 		}
+		current_ruler = { add_corruption = subtract_corruption_small }
 	}
 }
 
@@ -393,7 +393,22 @@ lotr_mission_events.101 = {
     scope:lotr_generic_neighbor_province_scope = {
 			add_claim = root
 		}
-		scope:lotr_generic_neighbor_province_scope.owner = {
+		scope:lotr_generic_neighbor_province_scope = {
+			custom_tooltip = add_provincial_claim_effect_tooltip
+			hidden_effect = {
+				area = {
+					every_area_province = {
+						limit = {
+							has_owner = yes
+							owner = scope:lotr_generic_neighbor_province_scope_owner
+						}
+						add_claim = root
+					}
+				}
+			}
+		}
+
+		scope:lotr_generic_neighbor_province_scope_owner = {
 			add_opinion = {
 				target = root
 				modifier = opinion_hostile_neighbor
@@ -490,7 +505,7 @@ lotr_mission_events.105 = {
 	option = {
 		name = OK
 		current_ruler = { add_popularity = popularity_medium }
-		scope:lotr_generic_neighbor_province_scope.owner = {
+		scope:lotr_generic_neighbor_province_scope_owner = {
 			add_opinion = {
 				target = root
 				modifier = opinion_friendly_neighbor

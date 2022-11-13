@@ -30,3 +30,9 @@ lotr_civilized_colonization = {
 lotr_ancient_glory = {
   country_civilization_value = 0.2
 }
+
+lotr_orc_conquest_modifier = {
+  agressive_expansion_impact = -0.1
+  war_score_cost = -0.25
+  fabricate_claim_cost_modifier = -0.5
+}
