@@ -21,6 +21,7 @@
 			OR = {	
 				prisoner = yes
 				AND = {
+					is_mercenary = no
 					scope:actor = { country_culture_group = orcs_group }
 					NOT = { has_culture_group = orcs_group } 
 					lotr_story_character_trigger = no
