@@ -623,8 +623,224 @@ lotr_mission_events.109 = {
 	}
 }
 
-
+#lotr_generic_navy_mission_1
 lotr_mission_events.200 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.200.t"
+	desc = "lotr_mission_events.200.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
+		add_1_free_province_investments = yes
+	}
+}
+
+#lotr_generic_navy_mission_3
+lotr_mission_events.201 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.201.t"
+	desc = "lotr_mission_events.201.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+			add_country_modifier = {
+				name = me_syr_3_1_cmod
+				duration = 7300 # 20 years
+			}
+			add_aggressive_expansion = -5.0
+	}
+}
+
+#lotr_generic_navy_mission_4
+lotr_mission_events.202 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.202.t"
+	desc = "lotr_mission_events.202.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		add_country_modifier = {
+			name = rm_4_naval_parity_cmod
+			duration = 3650 # 10 years
+		}
+	}
+}
+
+#lotr_generic_navy_ships_mission_1
+lotr_mission_events.203 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.203.t"
+	desc = "lotr_mission_events.203.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		add_military_experience = 10
+	}
+}
+
+#lotr_generic_navy_ships_mission_2
+lotr_mission_events.204 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.204.t"
+	desc = "lotr_mission_events.204.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		add_stability = 10
+		create_character = {
+			age = 25
+			culture = root.culture
+			religion = root.religion
+			no_stats = yes
+			hidden_effect = {
+				amazing_martial_effect = yes
+				add_martial = 4
+				good_charisma_effect = yes
+				great_finesse_effect = yes
+				amazing_zeal_effect = yes
+				random_list = {
+					5 = {
+						trigger = {
+							NOT = { has_trait = daring }
+						}
+						add_trait = daring
+					}
+					5 = {
+						trigger = {
+							NOT = { has_trait = oarmaster }
+						}
+						add_trait = oarmaster
+					}
+					5 = {
+						trigger = {
+							NOT = { has_trait = tough }
+						}
+						add_trait = tough
+					}
+					5 = {
+						trigger = {
+							NOT = { has_trait = improviser }
+						}
+						add_trait = improviser
+					}
+				}
+				positive_martial_trait_effect = yes
+			}
+		}
+	}
+}
+
+#lotr_generic_navy_ships_mission_3
+lotr_mission_events.205 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.205.t"
+	desc = "lotr_mission_events.205.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		add_country_modifier = {
+			name = carthage_mission_controlling_the_seas_modifier
+			duration = 7300
+		}
+		current_ruler = {
+			add_popularity = popularity_medium
+			add_finesse = 1
+			add_prominence = prominence_large
+		}
+	}
+}
+
+#lotr_generic_navy_trade_mission_1
+lotr_mission_events.206 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.206.t"
+	desc = "lotr_mission_events.206.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		scope:lotr_navy_mission_scope.state = {
+			add_state_modifier = {
+				name = "regional_center_of_trade"
+				duration = -1
+			}
+		}
+		add_1_free_province_investments = yes
+	}
+}
+
+#lotr_generic_navy_expansion_mission_1
+lotr_mission_events.207 = { 
+	type = country_event
+	
+	title = "lotr_mission_events.207.t"
+	desc = "lotr_mission_events.207.desc"
+	
+	left_portrait = current_ruler
+	
+	picture = council_country
+	
+	
+	option = {
+		name = OK
+		if = {
+			limit = {
+				NOT = { owns_or_subject_owns = scope:lotr_generic_navy_expansion_scope }
+			}
+			scope:lotr_generic_navy_expansion_scope = { add_claim = root }
+		}
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
+	}
+}
+
+
+lotr_mission_events.300 = { 
 	type = country_event
 	
 	title = "lotr_mission_events.200.t"
