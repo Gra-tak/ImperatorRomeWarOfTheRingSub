@@ -274,3 +274,48 @@ Bugfixes:
 - Tributaries can now turn into client states despite truces (permanent truces due to good guys previously blocked this conversion)
 Vanilla Changes:
 - Fertile nations great wonder effect now a bit weaker but nationwide (the old one means one pop every 60 years which is a bad joke)
+
+
+1.06.4 Update (15.11.2022)
+- There should be now more negative growth outside of arctic provinces:
+	- Growth penalties for elves, dwarfs and edain are now non-linear, i.e. they rise for in the lower percentages
+	- Elves and dwarves now start with a higher maximum civ value that decays over the first 100 years
+	- They also now have more expensive colonzation but get a 40% minimum civ in newly colonized provinces
+- Changed Orc tradition tree
+	- Can now get Troll for legions
+	- Added some tech requirements
+	- Added a decision to give yourself a buff to help with conquest after having finished the tree using military experience
+- Added decisions to release famous good countries after their destruction
+- New flavor events
+- Nazghul get a stat increase if Sauron has the Ring
+- Nazghul can be stolen from Sauron if a powerful being (for example Saruman) claims the ring for himself and conquers Minas Morgul. This also gives stat increase
+- Sauron will now hate any melkor followers that keep the ring from him (and love any that give it to him)
+- Can now get rid of bad vassal modifiers for gondor and ranger vassals if you take them over somehow
+- There are now restrictions on when you can steal special vassals from gondor and ranger (previously only needed 100 opinion, as they are always disloyal)
+- Fixed some army setups (which units go into first row, second row and flanks) better fitting the levies of the countries (perfect is impossible as that setup only happens per culture group, while levies are per culture)
+- Added some forests and dessserts
+- Added some actual trade goods instead of vast ranges of nothing but wild games in some regions of the map
+- There should be no more territories that have exactly the same name
+- Orcs no longer displaced to occupied provinces (reduces orc spawn in occupied provinces strongly)
+- Replaced some outdated modifiers
+- Made some provinces habitable that had no reason not to be
+- Added a connection to the hopefully last non-connected province
+- Made sure characters with special racial traits keep their culture (no more corsair princes of numenor)
+- Heirs with unknown or dead mothers should no longer be killed by the kings new wife
+- Saruman (and Sauron+Nazghul) can no longer die from an arrow to the knee
+- Generic missions now have events when a objective with a duration is finished to notify you that is has finished
+- Orcs can now sell non orc character into slavery without having to imprison them
+- Improved One Ring buff: It's now a trait and offsets all the disadvantages of 100% corruption (except for becoming evil)
+- Orthanc no longer hidden by Great Wonder built in Isengard
+- Dunlending characters in Isengard stay loyal even if you start killing conquered Dunlending pops
+- Fixed migration from vassals only going to provinces where that culture is dominant (now only very heavily weighted towards this)
+- Fixed some tradition trees giving bonuses to units not used by that culture
+- Fixed missing terrain bonus icons
+- Slavery from conquest can be re-enabled for barbarians and easterling via tradition tree
+- AI long lived chararcters get a small corruption decay to avoid them collecting lots of it over time (AI is stupid)
+- Setting starting civ to values more fitting the starting limits of countries
+- Some region shifting
+- Some climate changes near the south eastern sea
+- Moving the north pole to make 'camera facing north' work more realistic (disabling it probably still the best for this mod)
+- Improved rivers in the south east (also adding some crossings)
+- Adding more slaves to make sure every region has one (otherwise levies break)
