@@ -30001,7 +30001,7 @@
 	slaves = { amount = 1 }
 }
 2899 = { #Mûrark (XTX) (shor_area) (kargagis_ahar_region)
-	terrain = "hills"
+	terrain = "plains"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "horses"
@@ -33354,7 +33354,7 @@
 	slaves = { amount = 1 }
 }
 3213 = { #Mayat (XRX) (dhath_area) (gathgykarkan_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -35205,7 +35205,7 @@
 	slaves = { amount = 1 }
 }
 3383 = { #Dôrar (XRX) (dhath_area) (gathgykarkan_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "salt"
@@ -52289,7 +52289,7 @@
 	slaves = { amount = 1 }
 }
 5168 = { #Tîfainala (XTX) (ryakna_area) (alduryaknar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "horses"
@@ -52322,7 +52322,7 @@
 	slaves = { amount = 1 }
 }
 5171 = { #Nuburtar (XTX) (ryakna_area) (alduryaknar_region)
-	terrain = "plains"
+	terrain = "mountain"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "woad"
@@ -52406,7 +52406,7 @@
 	slaves = { amount = 1 }
 }
 5179 = { #Narshana (XTX) (shor_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "mountain"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "cattle"
@@ -52538,7 +52538,7 @@
 	slaves = { amount = 1 }
 }
 5191 = { #Hôkiar (XUX) (daldunair_area) (lugnimbar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lutyr"
 	religion = "eastern_animism"
 	trade_goods = "horses"
@@ -52670,7 +52670,7 @@
 	slaves = { amount = 1 }
 }
 5203 = { #Sârad (XTX) (alduryaknar_area) (alduryaknar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "kargarim"
 	religion = "eastern_animism"
 	trade_goods = "cattle"
@@ -52725,7 +52725,7 @@
 	slaves = { amount = 1 }
 }
 5208 = { #Khar Neledh (XTX) (odifariz_ur_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "salt"
@@ -52838,7 +52838,7 @@
 	province_rank = ""
 }
 5219 = { #Kharten Radarg (XTX) (thult_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lutyr"
 	religion = "eastern_animism"
 	trade_goods = "grain"
@@ -52849,7 +52849,7 @@
 	slaves = { amount = 1 }
 }
 5220 = { #Carsinano (XTX) (thult_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lutyr"
 	religion = "eastern_animism"
 	trade_goods = "woad"
@@ -52871,7 +52871,7 @@
 	slaves = { amount = 1 }
 }
 5222 = { #Jaranargurs (XTX) (odifariz_ur_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "mountain"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -52882,7 +52882,7 @@
 	slaves = { amount = 1 }
 }
 5223 = { #Ska (XTX) (odifariz_ur_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "grain"
@@ -52893,7 +52893,7 @@
 	slaves = { amount = 1 }
 }
 5224 = { #Felôrod (XTX) (odifariz_ur_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "woad"
@@ -52915,7 +52915,7 @@
 	slaves = { amount = 1 }
 }
 5226 = { #Kanawa (XTX) (odifariz_ur_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -52970,7 +52970,7 @@
 	slaves = { amount = 1 }
 }
 5231 = { #Sênarâ (XTX) (thult_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lutyr"
 	religion = "eastern_animism"
 	trade_goods = "woad"
@@ -52981,7 +52981,7 @@
 	slaves = { amount = 1 }
 }
 5232 = { #Dôa Shag (XTX) (thult_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lutyr"
 	religion = "eastern_animism"
 	trade_goods = "vegetables"
@@ -52992,7 +52992,7 @@
 	slaves = { amount = 1 }
 }
 5233 = { #Temadîfan (XTX) (thult_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lutyr"
 	religion = "eastern_animism"
 	trade_goods = "grain"
@@ -53407,7 +53407,7 @@
 	slaves = { amount = 1 }
 }
 5271 = { #Canomóne (XUX) (uster_kryl_area) (lugnimbar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lutyr"
 	religion = "eastern_animism"
 	trade_goods = "grain"
@@ -53429,7 +53429,7 @@
 	slaves = { amount = 1 }
 }
 5273 = { #Sara Khargagis Odog (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -53438,7 +53438,7 @@
 	province_rank = ""
 }
 5274 = { #Sara Khargagis Tolodh (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -53447,7 +53447,7 @@
 	province_rank = ""
 }
 5275 = { #Sara Khargagis Neder (uninhabitable)
-	terrain = "plains"
+	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -53465,7 +53465,7 @@
 	province_rank = ""
 }
 5277 = { #Sara Khargagis Minib (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -53492,7 +53492,7 @@
 	province_rank = ""
 }
 5280 = { #Sara Khargagis Canab (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -53501,7 +53501,7 @@
 	province_rank = ""
 }
 5281 = { #Sara Khargagis Lebem (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -53528,7 +53528,7 @@
 	province_rank = ""
 }
 5284 = { #Sara Khargagis Toloph (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -53537,7 +53537,7 @@
 	province_rank = ""
 }
 5285 = { #5285 (uninhabitable)
-	terrain = "plains"
+	terrain = "mountain"
 	culture = "kulahar"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -53670,7 +53670,7 @@
 	province_rank = ""
 }
 5299 = { #Kâfa Khargagis Odog (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -54374,7 +54374,7 @@
 	tribesmen = { amount = 1 }
 }
 5372 = { #O'omóni (unowned) (sheria_area) (lygar_kraw_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "horses"
@@ -54395,7 +54395,7 @@
 	slaves = { amount = 1 }
 }
 5374 = { #Karip (unowned) (ez_duzia_area) (lygar_kraw_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -54405,7 +54405,7 @@
 	tribesmen = { amount = 1 }
 }
 5375 = { #Rúrllel (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -54424,7 +54424,7 @@
 	tribesmen = { amount = 2 }
 }
 5377 = { #Akorinamer (unowned) (ez_duzia_area) (lygar_kraw_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "horses"
@@ -54434,7 +54434,7 @@
 	tribesmen = { amount = 2 }
 }
 5378 = { #5378 (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -54443,7 +54443,7 @@
 	province_rank = ""
 }
 5379 = { #5379 (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -54523,7 +54523,7 @@
 	province_rank = ""
 }
 5387 = { #Sara Khargagis Taphaen (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -54550,7 +54550,7 @@
 	province_rank = ""
 }
 5390 = { #Sara Khargasis Pae (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -54579,7 +54579,7 @@
 	tribesmen = { amount = 1 }
 }
 5393 = { #Momano (unowned) (ez_duzia_area) (lygar_kraw_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lenitani"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -54599,7 +54599,7 @@
 	tribesmen = { amount = 1 }
 }
 5395 = { #5395 (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -54750,7 +54750,7 @@
 	province_rank = ""
 }
 5410 = { #5410 (uninhabitable)
-	terrain = "plains"
+	terrain = "mountain"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -54759,7 +54759,7 @@
 	province_rank = ""
 }
 5411 = { #5411 (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -54777,7 +54777,7 @@
 	province_rank = ""
 }
 5413 = { #Jakodol (XTX) (thult_area) (kargagis_ahar_region)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "lutyr"
 	religion = "eastern_animism"
 	trade_goods = "wild_game"
@@ -55265,7 +55265,7 @@
 	province_rank = ""
 }
 5462 = { #5462 (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
@@ -55301,7 +55301,7 @@
 	province_rank = ""
 }
 5466 = { #5466 (uninhabitable)
-	terrain = "plains"
+	terrain = "hills"
 	culture = "beasts"
 	religion = "eastern_animism"
 	trade_goods = ""
