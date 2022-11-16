@@ -1,0 +1,24 @@
+This is an incomplete list of mods that work together with War of the Rings and whose changes are not overwritten by War of the Rings. Remember to always put War of the Rings last in the load order list (i.e. highest priority) even with these mods.
+
+- Better UI - https://steamcommunity.com/sharedfiles/filedetails/?id=1845165876
+- Educations Great Wonder Improved - https://steamcommunity.com/workshop/filedetails/?id=2500481436
+- Great Wonders Refined - https://steamcommunity.com/sharedfiles/filedetails/?id=2421502831
+- Sad Times - Sad Face - 2705605923
+- Set reminders - 2760846466
+- LOTR Music Replacement - 1851796867
+- More Marriages - 2081883526
+- Grey Neutral Units (ironman) - 2398128300
+- Unofficial Patch - 2414413377
+- Redesigned levies map mode - 2505205110
+- Capital Star - 2518958784
+- Zoom Out Further - 2587208992
+- No Intrusive Ports - 2630598358
+
+Incompatible but features are included:
+- No Woad or Fur on Cities
+- AI Empires Collapse/Remove Ai Cheating Province Loyalty - They are going to collapse on higher difficulties though
+- No stability impact of prisoners abroad
+
+Incompatible (mostly means they are fully overwritten and won't do anything. No including any other Full conversion mods, nor mods specific to real world countries):
+- Sell Provinces
+- Legion Distinctions Overhaul

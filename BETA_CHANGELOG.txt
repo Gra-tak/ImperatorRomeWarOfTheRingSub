@@ -269,7 +269,7 @@ Bugfixes:
 - Making starting civilization outside of "old developed but declining" nations to a realistic level:
   - Unowned to zero in almost all cases
   - Haradrim and Horondorian to a level where it's not above the current maximum
-- Removed events that change character culture (now more elves turning dwarf)
+- Removed events that change character culture (no more elves turning dwarf)
 - Added empty repeatable mission to allow for mission refresh ( Otherwise, tribal reforms are near impossible as you need to complete another mission to be finished which takes forever without any notable tech as a tribe)
 - Tributaries can now turn into client states despite truces (permanent truces due to good guys previously blocked this conversion)
 Vanilla Changes:
@@ -285,7 +285,6 @@ Vanilla Changes:
 	- Can now get Troll for legions
 	- Added some tech requirements
 	- Added a decision to give yourself a buff to help with conquest after having finished the tree using military experience
-- Added decisions to release famous good countries after their destruction
 - New flavor events
 - Nazghul get a stat increase if Sauron has the Ring
 - Nazghul can be stolen from Sauron if a powerful being (for example Saruman) claims the ring for himself and conquers Minas Morgul. This also gives stat increase
@@ -319,3 +318,5 @@ Vanilla Changes:
 - Moving the north pole to make 'camera facing north' work more realistic (disabling it probably still the best for this mod)
 - Improved rivers in the south east (also adding some crossings)
 - Adding more slaves to make sure every region has one (otherwise levies break)
+- Fixed units for AI legions. They will still spawn with some incorrect ones but those are replaced with correct ones after a month passes
+- Fixed vanilla inconsistency with Grand Garrison wonder at Tier 3
