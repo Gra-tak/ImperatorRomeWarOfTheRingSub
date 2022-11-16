@@ -1,6 +1,6 @@
 This is an incomplete list of mods that work together with War of the Rings and whose changes are not overwritten by War of the Rings. Remember to always put War of the Rings last in the load order list (i.e. highest priority) even with these mods.
 
-- Better UI - https://steamcommunity.com/sharedfiles/filedetails/?id=1845165876
+- Better UI - https://steamcommunity.com/sharedfiles/filedetails/?id=1845165876 (if in doubt, lowest priority)
 - Educations Great Wonder Improved - https://steamcommunity.com/workshop/filedetails/?id=2500481436
 - Great Wonders Refined - https://steamcommunity.com/sharedfiles/filedetails/?id=2421502831
 - Sad Times - Sad Face - 2705605923
@@ -13,6 +13,7 @@ This is an incomplete list of mods that work together with War of the Rings and 
 - Capital Star - 2518958784
 - Zoom Out Further - 2587208992
 - No Intrusive Ports - 2630598358
+- Sell Provinces - 2471197989 (make sure this has higher priority than Better UI)
 
 Incompatible but features are included:
 - No Woad or Fur on Cities
@@ -20,5 +21,4 @@ Incompatible but features are included:
 - No stability impact of prisoners abroad
 
 Incompatible (mostly means they are fully overwritten and won't do anything. No including any other Full conversion mods, nor mods specific to real world countries):
-- Sell Provinces
 - Legion Distinctions Overhaul
