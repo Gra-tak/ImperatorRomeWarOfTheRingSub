@@ -1,0 +1,363 @@
+﻿namespace = lotr_rohan_mission_event
+
+#first orc raids
+lotr_rohan_mission_event.1 = {
+	type = country_event
+	title = lotr_rohan_mission_event.1.t
+	desc = lotr_rohan_mission_event.1.desc
+	picture = event_orcs_burning
+
+	left_portrait = ROOT.current_ruler
+	right_portrait = c:XJX.current_ruler
+
+  trigger = {
+  	NOT = {
+  		has_variable = lotr_rohan_mission_first_orc_raids_stopped
+  	}
+  	any_owned_province = {
+			NOR = { 
+				has_province_modifier = lotr_rohan_mission_burning_province
+				has_building = fortress_building
+				THIS = p:1561
+			}
+  	}
+  }
+
+  immediate = {
+  	set_variable = {
+  		name = lotr_rohan_orc_raids_started
+  	}
+  	#not using while for decent tooltips
+  	random_owned_province = {
+  		limit = {
+  			NOR = { 
+  				has_province_modifier = lotr_rohan_mission_burning_province
+					has_building = fortress_building
+					THIS = p:1561
+  			}
+  		}
+  		add_city_fire_effect = yes
+  		add_province_modifier = {
+  			name = lotr_rohan_mission_burning_province
+  			duration = 365
+  		}
+  	}
+  	random_owned_province = {
+  		limit = {
+  			NOR = { 
+  				has_province_modifier = lotr_rohan_mission_burning_province
+					has_building = fortress_building
+					THIS = p:1561
+  			}
+  		}
+  		add_city_fire_effect = yes
+  		add_province_modifier = {
+  			name = lotr_rohan_mission_burning_province
+  			duration = 365
+  		}
+  	}
+  	random_owned_province = {
+  		limit = {
+  			NOR = { 
+  				has_province_modifier = lotr_rohan_mission_burning_province
+					has_building = fortress_building
+					THIS = p:1561
+  			}
+  		}
+  		add_city_fire_effect = yes
+  		add_province_modifier = {
+  			name = lotr_rohan_mission_burning_province
+  			duration = 365
+  		}
+  	}
+  	random_owned_province = {
+  		limit = {
+  			NOR = { 
+  				has_province_modifier = lotr_rohan_mission_burning_province
+					has_building = fortress_building
+					THIS = p:1561
+  			}
+  		}
+  		add_city_fire_effect = yes
+  		add_province_modifier = {
+  			name = lotr_rohan_mission_burning_province
+  			duration = 365
+  		}
+  	}
+  	trigger_event = {
+  		id = lotr_rohan_mission_event.1
+  		days = { 30 60}
+  	}
+  }
+  option = {
+    name = lotr_rohan_mission_event.1.a
+  }
+}
+
+#grima arrives
+lotr_rohan_mission_event.2 = {
+	type = country_event
+	title = lotr_rohan_mission_event.2.t
+	desc = lotr_rohan_mission_event.2.desc
+	picture = event_edoras #TODO
+
+	left_portrait = ROOT.current_ruler
+	right_portrait = c:XVX.current_ruler
+	right_portrait = scope:grima
+
+	immediate = {
+		scope:grima = {
+			give_office = office_foreign_minister
+		}
+	}
+
+	option = {
+		c:ROH = {
+			add_truce = {
+				target = c:XVX
+				duration = 3650
+			}
+		}
+		name = "OK"
+	}
+}
+
+#the king is hit by an unknown illness
+lotr_rohan_mission_event.3 = {
+	type = country_event
+	title = lotr_rohan_mission_event.3.t
+	desc = lotr_rohan_mission_event.3.desc
+	picture = event_edoras #TODO
+
+	left_portrait = ROOT.current_ruler
+
+	immediate = {
+		current_ruler = {
+			add_martial = -6
+			add_charisma = -3
+			add_finesse = -3
+			add_zeal = -3
+			add_variable = {
+				name = lotr_immortal_flag
+			}
+		}
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
+#Order is restored (is it?)
+lotr_rohan_mission_event.4 = {
+	type = country_event
+	title = lotr_rohan_mission_event.4.t
+	desc = lotr_rohan_mission_event.4.desc
+	picture = event_edoras #TODO
+
+	left_portrait = ROOT.current_ruler
+
+	option = {
+		if = {
+			limit = {
+				exists = scope:grima
+			}
+		}
+	 	scope:grima = { 
+	 		add_loyalty = lotr_scheeming_badly
+	 		add_corruption = 100
+	 	}
+		name = "OK"
+	}
+}
+
+#More orc raids (barbarians)
+lotr_rohan_mission_event.5 = {
+	type = country_event
+	title = lotr_rohan_mission_event.5.t
+	desc = lotr_rohan_mission_event.5.desc
+	picture = event_orcs_burning
+
+	left_portrait = ROOT.current_ruler
+
+	immediate = {
+		set_variable = {
+			name = lotr_rohan_mission_more_orc_raids
+		}
+		while = {
+			count = 5
+			random_owned_province = {
+				limit = {
+					NOR = { 
+						has_province_modifier = lotr_rohan_mission_burning_province
+						has_building = fortress_building
+						THIS = p:1561
+					}
+				}
+	  		add_city_fire_effect = yes
+	  		add_province_modifier = {
+	  			name = lotr_rohan_mission_burning_province
+	  			duration = 365
+	  		}
+	  		save_scope_as = target
+	  		set_controller = c:BAR
+				c:BAR = {
+					create_unit = {
+						name = "Orc Raid"
+						location = scope:target
+						sub_unit = orc_infantry
+						hidden_effect = {
+							while = {
+								count = 99
+								add_subunit = orc_infantry
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
+#gandalf is seen
+lotr_rohan_mission_event.6 = {
+	type = country_event
+	title = lotr_rohan_mission_event.6.t
+	desc = lotr_rohan_mission_event.6.desc
+	picture = event_edoras #TODO
+
+	option = {
+		name = "OK"
+	}
+}
+
+#gandalf frees the king
+lotr_rohan_mission_event.7 = {
+	type = country_event
+	title = lotr_rohan_mission_event.7.t
+	desc = lotr_rohan_mission_event.7.desc
+	picture = event_edoras #TODO
+
+	immediate = {
+		if = {
+			limit = {
+				c:XVX = { has_land = yes }
+			}
+			c:XVX = {
+				declare_war_with_wargoal = {
+					war_goal = conquer_wargoal
+					province = ROOT.capital_scope
+				}
+			}
+		}
+		set_variable = {
+			name = lotr_rohan_mission_king_is_freed
+		}
+		if = {
+			limit = {
+				exists = scope:grima
+				scope:grima = {
+					prisoner = no
+					is_alive = yes
+					employer = ROOT
+				}
+			}
+			scope:grima = {
+				remove_all_offices = yes
+				move_country = c:XVX
+			}
+		}
+		current_ruler = {
+			add_martial = 6
+			add_charisma = 3
+			add_finesse = 3
+			add_zeal = 3
+			remove_variable = lotr_immortal_flag
+		}
+	}
+
+	option = {
+		every_owned_province = {
+			limit = { is_in_area = calenhardin_area }
+			set_controller = c:XVX
+		}
+		if = {
+			limit = {
+				owns = 1561
+			}
+			set_capital = p:1561
+			if = {
+				limit = {
+					owns = 1556
+					p:1556 = {
+						has_building = fortress_building
+					}
+				}
+				p:1556 = {
+					remove_building_level = fortress_building
+				}
+				p:1561 = {
+					add_building_level = fortress_building
+				}
+				while = {
+					count = 10
+					p:1556 = {
+						random_pops_in_province = {
+							move_pop = p:1561
+						}
+					}
+				}
+			}
+		}
+		name = "OK"
+	}
+}
+
+lotr_rohan_mission_event.17 = {
+	type = country_event
+	title = lotr_rohan_mission_event.17.t
+	desc = lotr_rohan_mission_event.17.desc
+	picture = event_edoras #TODO
+
+	trigger = {
+		c:XVX = { has_land = no }
+		current_ruler = {
+			has_variable = lotr_immortal_flag
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			name = lotr_rohan_mission_king_is_freed
+		}
+		if = {
+			limit = {
+				exists = scope:grima
+				scope:grima = {
+					prisoner = no
+					is_alive = yes
+					employer = ROOT
+				}
+			}
+			scope:grima = {
+				remove_all_offices = yes
+				move_country = c:XVX
+			}
+		}
+		current_ruler = {
+			add_martial = 6
+			add_charisma = 3
+			add_finesse = 3
+			add_zeal = 3
+			remove_variable = lotr_immortal_flag
+		}
+	}
+
+	option = {
+		name = "OK"
+	}
+}

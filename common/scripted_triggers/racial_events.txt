@@ -29,6 +29,7 @@ is_sterile_trigger = {
 		has_trait = maia
 		has_trait = nazgul
 		has_trait = asexual
+		has_variable = lotr_immortal_flag
 	}
 }
 
@@ -36,6 +37,7 @@ lotr_story_character_trigger = {
 	OR = {
 		has_trait = maia
 		has_trait = nazgul
+		has_variable = lotr_immortal_flag
 	}
 }
 
@@ -117,6 +119,7 @@ is_immortal_trigger = {
 		has_trait = maia
 		has_trait = nazgul
 		is_elf_trigger = yes
+		has_variable = lotr_immortal_flag
 	}
 }
 

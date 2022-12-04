@@ -1,0 +1,473 @@
+﻿lotr_rohan_mission = {
+	header = "lotr_gondor_mission_header"
+	icon = "lotr_gondor_army_mission_icon"
+
+	repeatable = no
+
+	chance = {}
+
+	ai_chance = {
+		factor = 0
+	}
+
+	potential = {
+		NOT = { has_variable = lotr_rohan_mission_activated_variable }
+		has_civil_war = no
+		tag = ROH
+		OR = {
+			is_subject = no
+			is_subject_of = c:GON
+		}
+	}
+
+	on_potential = {
+	}
+
+	abort = {
+		ai_mission_back_out_trigger = yes
+	}
+
+	on_start = {
+		start_mission_ai_effect = yes
+		trigger_event = {
+			id = lotr_rohan_mission_event.1 #first orc raids
+			days = { 5 20 }
+		}
+		set_global_variable = {
+			name = prevent_saruman_coversion_flag # conversion will now be done via this mission TODO
+		}
+	}
+
+	on_abort = {
+		add_stability = -5
+		set_variable = {
+			name = lotr_rohan_mission_activated_variable
+		}
+		if = {
+			limit = {
+				exists = scope:grima
+			}
+			scope:grima = {
+				death = { death_reason = death_escaping }
+			}
+		}
+	}
+
+	on_completion = {
+		complete_mission_effect = yes
+	}
+	
+	
+	# independence from gondor
+	lotr_rohan_mission_1 = {
+		icon = "task_diplomatic"
+
+		highlight = {
+			scope:province = { this = c:GON.capital_scope }
+		}
+
+		potential = {
+		}
+
+		bypass = {
+			OR = {
+				is_subject = no
+				NOT = { is_subject_of = GON }
+			}
+		}
+
+		allow = {
+			political_influence >= 10
+			treasury > capped_gain_6
+		}
+
+		on_completion = {
+			trigger_event = lotr_ruler_decisions.1
+		}
+	}
+
+	#build some stables
+	lotr_rohan_mission_2_a = {
+		icon = "task_conquest"
+
+		requires = { lotr_rohan_mission_1 } 
+
+		highlight = {
+			scope:province = { this = ROOT.capital_scope }
+		}
+
+		potential = {
+		}
+
+		allow = {
+			capital_scope = {
+				has_city_status = yes
+				num_of_military_building >= 1
+			}
+		}
+
+		on_completion = {
+			add_manpower = 2
+		}
+	}
+
+	#ask saruman for help
+	lotr_rohan_mission_2_b = {
+		icon = "task_diplomatic"
+
+		duration = 20
+
+		requires = { lotr_rohan_mission_1 } 
+
+		highlight = {
+			scope:province = { this = c:XVX.capital_scope }
+		}
+
+		bypass = {
+			c:XVX = { has_land = no }
+		}
+
+		potential = {
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = "lotr_rohan_mission_need_reason_to_ask"
+				has_variable = lotr_rohan_orc_raids_started
+			}
+			political_influence >= 10
+			treasury > capped_gain_4
+		}
+
+		on_start = {
+			hidden_effect = {
+				create_character = {
+					add_variable = {
+						name = lotr_immortal_flag
+					}
+					save_scope_as = grima
+				}
+			}
+			add_political_influence = -10
+			add_treasury = capped_loss_4
+			trigger_event = { 
+				id = lotr_storyline_events.1 #saruman converting to melkorism
+				days = { 30 60 }
+			}
+			trigger_event = { 
+				id = lotr_rohan_mission_event.3 #the king is getting weaker
+				days = { 60 90 }
+			}
+		}
+		on_completion = {
+			custom_tooltip = "lotr_rohan_mission_hope_for_help_saruman"
+			trigger_event = {
+				id = lotr_rohan_mission_event.2 #saruman sending grima
+			}
+		}
+	}
+
+	#send out soldiers to combat the orc raids
+	lotr_rohan_mission_3 = {
+		icon = "task_conquest"
+
+		duration = 90
+
+		requires = { 
+			lotr_rohan_mission_2_a
+			lotr_rohan_mission_2_b 
+		} 
+
+		highlight = {
+			scope:province = { this = ROOT.capital_scope }
+		}
+
+		potential = {
+		}
+
+		allow = {
+			manpower > 20
+			treasury > capped_gain_6
+			trigger_if = {
+				limit = {
+					exists = scope:grima
+				}
+				OR = {
+					scope:grima = {
+						has_office = office_foreign_minister
+					}
+					c:XVX = { has_land = no }
+				}
+			}
+		}
+
+		on_start = {
+			add_treasury = capped_loss_6
+			add_manpower = -20
+		}
+
+		on_completion = {
+			custom_tooltip = "lotr_rohan_mission_put_an_end_to_orc_raids_tt"
+			set_variable = {
+				name = lotr_rohan_mission_first_orc_raids_stopped
+			}
+			trigger_event = { 
+				id = lotr_rohan_mission_event.4 #Order is restored (is it?)
+			}
+			trigger_event = { 
+				id = lotr_rohan_mission_event.5 #More orc raids (barbarians)
+				days = { 5 20 }
+			}
+		}
+	}
+
+	#send out an army to combat the orc attacks
+	lotr_rohan_mission_4 = {
+		icon = "task_conquest"
+
+
+		requires = { 
+			lotr_rohan_mission_3
+		} 
+
+		highlight = {
+			scope:province = { this = ROOT.capital_scope }
+		}
+
+		potential = {
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = "lotr_rohan_mission_all_is_well_tt"
+				has_variable = lotr_rohan_mission_more_orc_raids
+			}
+			trigger_if = {
+				limit = { has_variable = lotr_rohan_mission_more_orc_raids }
+				custom_tooltip = {
+					text = "lotr_rohan_mission_orc_army_defeated"
+					NOT = { 
+						any_owned_province = {
+							controller = c:BAR
+						}
+					}
+				}
+			}
+			trigger_if = {
+				limit = {
+					exists = scope:grima
+				}
+				OR = {
+					scope:grima = {
+						has_office = office_foreign_minister
+					}
+					c:XVX = { has_land = no }
+				}
+			}
+		}
+
+		on_completion = {
+			trigger_event = { 
+				id = lotr_rohan_mission_event.6 #Gandalf was seen
+				days = { 5 20 }
+			}
+			trigger_event = { 
+				id = lotr_rohan_mission_event.7 #Gandalf frees the king without our help. Saruman declares war. Gondor cannot aid
+				days = { 365 730 } #todo: check if this length is reasonable
+			}
+		}
+	}
+
+	#help Gandalf to free the king
+	lotr_rohan_mission_5 = {
+		icon = "task_political"
+
+
+		requires = { 
+			lotr_rohan_mission_4
+		} 
+
+		highlight = {
+			scope:province = { this = ROOT.capital_scope }
+		}
+
+		potential = {
+		}
+
+		bypass = {
+			has_variable = lotr_rohan_mission_king_is_freed
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = "lotr_rohan_mission_all_is_well_tt"
+				has_variable = lotr_rohan_mission_gandalf
+			}
+			trigger_if = {
+				limit = { has_variable = lotr_rohan_mission_gandalf }
+				NOT = {
+					scope:grima = {
+						OR = {
+							is_alive = no
+							prisoner = yes
+							NOT = {
+								employer = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		on_completion = {
+			trigger_event = { 
+				id = lotr_rohan_mission_event.7 #Gandalf frees the king with our help. Saruman declares war. Gondor cannot aid
+			}
+		}
+	}
+
+
+	#Defend Helm's Deep
+	lotr_rohan_mission_6 = {
+		icon = "task_conquest"
+
+
+		requires = { 
+			lotr_rohan_mission_5
+		} 
+
+		highlight = {
+			scope:province = { this = p:1561 }
+		}
+
+		potential = {
+		}
+
+		bypass = {
+			c:XVX = { has_land = no }
+			NOT = { has_variable = lotr_rohan_mission_king_is_freed }
+		}
+
+		allow = {
+			owns = 1561
+			OR = {
+				war = no
+				custom_tooltip = {
+					text = "lotr_rohan_mission_hold_helms_deep"
+					has_variable = lotr_rohan_mission_hold_helms_deep_flag
+				}
+			}
+		}
+		on_completion = {
+			if = {
+				limit = {
+					owns = 1561
+					owns = 1556
+				}
+				set_capital = p:1561
+				while = {
+					count = 10
+					p:1561 = {
+						random_pops_in_province = {
+							move_pop = p:1556
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:1561 = {
+							has_building = fortress_building
+						}
+					}
+					p:1561 = {
+						remove_building_level = fortress_building
+					}
+					p:1556 = {
+						add_building_level = fortress_building
+					}
+				}
+			}
+			trigger_event = { 
+				id = lotr_rohan_mission_event.8 #morale of the orcs is broken. ents destroy and extra fortress levels in isengard
+			}
+		}
+	}
+
+	#Conquer Isengard
+	lotr_rohan_mission_7a = {
+		icon = "task_conquest"
+
+		final = yes
+
+		requires = { 
+			lotr_rohan_mission_6
+		} 
+
+		highlight = {
+			scope:province = { this = p:1546 }
+		}
+
+		potential = {
+		}
+
+
+		allow = {
+			owns = 1546
+		}
+		on_completion = {
+			#Stability gain. Temporary growth buff. Permanent reasearch buff to Edoras
+		}
+	}
+
+	#Defeat the Dunlendings
+	lotr_rohan_mission_7b = {
+		icon = "task_conquest"
+
+		final = yes
+
+		requires = { 
+			lotr_rohan_mission_6
+		}
+
+		highlight = {
+			scope:province = {
+				exists = owner
+				owner = {
+					primary_culture = dunlending
+					has_land = yes
+					OR = {
+						is_subject = no
+						overlord = {
+							religion = melkorism
+						}
+					}
+				} 
+			}
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = lotr_rohan_mission_event_all_dunlendings_defeated
+				NOT = {
+					any_country = {
+						primary_culture = dunlending
+						has_land = yes
+						OR = {
+							is_subject = no
+							overlord = {
+								religion = melkorism
+							}
+						}
+					}
+				}
+			}
+		}
+
+		on_completion = {
+			# Blood of Eorl bloodline to ruler and children
+		}
+	}
+	
+############################# end #####################################
+	
+	
+}

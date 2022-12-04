@@ -21,6 +21,9 @@ lotr_ruler_decisions.1 = {
 	option = { #Cancel decision
 		name = "lotr_ruler_decisions.1.a"
 		custom_tooltip = "lotr_ruler_decisions.1.a.tt"
+		trigger = {
+			NOT = { has_global_variable = prevent_saruman_coversion_flag }
+		}
 		ai_chance = {
 			base = 100
 		}
@@ -60,6 +63,9 @@ lotr_ruler_decisions.2 = {
 	option = {
 		name = "lotr_ruler_decisions.2.a"
 		custom_tooltip = "lotr_ruler_decisions.2.a.tt"
+		trigger = {
+			NOT = { has_global_variable = prevent_saruman_coversion_flag }
+		}
 		ai_chance = {
 			base = 100
 		}
@@ -70,12 +76,15 @@ lotr_ruler_decisions.2 = {
 		custom_tooltip = "lotr_ruler_decisions.2.b.tt"
 		overlord = { release_subject = ROOT }
 		add_alliance = scope:gondor_overlord_country
-		add_treasury = {
-			subtract = root.has_monthly_income
-			multiply = 6
+		add_treasury = capped_loss_6
+		c:GON = { add_treasury = capped_gain_6 }
+		add_political_influence = -10		
+		if = {
+			limit = {
+				NOT = { has_global_variable = prevent_saruman_coversion_flag }
+			}
+			remove_country_modifier = influenced_by_saruman
 		}
-		add_political_influence = -10
-		remove_country_modifier = influenced_by_saruman
 	}
 }
 
@@ -92,6 +101,9 @@ lotr_ruler_decisions.3 = {
 	option = {
 		name = "lotr_ruler_decisions.3.a"
 		custom_tooltip = "lotr_ruler_decisions.3.a.tt"
+		trigger = {
+			NOT = { has_global_variable = prevent_saruman_coversion_flag }
+		}
 		ai_chance = {
 			base = 100
 		}

@@ -3,6 +3,11 @@
 	month = 99999
 }
 
+lotr_scheeming_badly = {
+  value = -100
+  month = 99999
+}
+
 grey_company = {
 	value = 20
 	month = 9999

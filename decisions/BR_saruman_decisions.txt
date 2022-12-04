@@ -24,6 +24,14 @@
 		
 		ai_will_do = {
 			base = 5
+			modifier = {
+				trigger = {
+					has_global_variable = prevent_saruman_coversion_flag
+				}
+				factor = {
+					value = 0
+				}
+			}
 		}
 	}
 }
