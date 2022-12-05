@@ -109,6 +109,12 @@ lotr_rohan_mission_event.2 = {
 		scope:grima = {
 			give_office = office_foreign_minister
 		}
+		custom_tooltip = "lotr_rohan_mission_grima_takes_the_sword_tt"
+		hidden_effect = {
+			treasure:lotr_treasure_herugrim_sword = {
+				transfer_treasure_to_country = c:XVX
+			}
+		}
 	}
 
 	option = {
@@ -118,7 +124,7 @@ lotr_rohan_mission_event.2 = {
 				duration = 3650
 			}
 		}
-		name = "OK"
+    name = lotr_rohan_mission_event.2.a
 	}
 }
 
@@ -144,7 +150,7 @@ lotr_rohan_mission_event.3 = {
 	}
 
 	option = {
-		name = "OK"
+    name = lotr_rohan_mission_event.3.a
 	}
 }
 
@@ -167,7 +173,7 @@ lotr_rohan_mission_event.4 = {
 	 		add_loyalty = lotr_scheeming_badly
 	 		add_corruption = 100
 	 	}
-		name = "OK"
+    name = lotr_rohan_mission_event.4.a
 	}
 }
 
@@ -183,6 +189,9 @@ lotr_rohan_mission_event.5 = {
 	immediate = {
 		set_variable = {
 			name = lotr_rohan_mission_more_orc_raids
+		}
+		current_ruler = {
+			add_martial = -6
 		}
 		while = {
 			count = 5
@@ -208,8 +217,12 @@ lotr_rohan_mission_event.5 = {
 						sub_unit = orc_infantry
 						hidden_effect = {
 							while = {
-								count = 99
+								count = 19
 								add_subunit = orc_infantry
+							}
+							while = {
+								count = 30
+								add_subunit = uruk_infantry
 							}
 						}
 					}
@@ -219,7 +232,7 @@ lotr_rohan_mission_event.5 = {
 	}
 
 	option = {
-		name = "OK"
+    name = lotr_rohan_mission_event.5.a
 	}
 }
 
@@ -231,6 +244,9 @@ lotr_rohan_mission_event.6 = {
 	picture = event_edoras #TODO
 
 	option = {
+		set_variable = {
+			name = lotr_rohan_mission_gandalf
+		}
 		name = "OK"
 	}
 }
@@ -246,6 +262,12 @@ lotr_rohan_mission_event.7 = {
 		if = {
 			limit = {
 				c:XVX = { has_land = yes }
+			}
+			if = {
+				limit = { alliance_with = c:GON }
+				c:GON = {
+					break_alliance = c:ROH
+				}
 			}
 			c:XVX = {
 				declare_war_with_wargoal = {
@@ -281,7 +303,7 @@ lotr_rohan_mission_event.7 = {
 			}
 		}
 		current_ruler = {
-			add_martial = 6
+			add_martial = 12
 			add_charisma = 3
 			add_finesse = 3
 			add_zeal = 3
@@ -294,6 +316,9 @@ lotr_rohan_mission_event.7 = {
 		every_owned_province = {
 			limit = { is_in_area = calenhardin_area }
 			set_controller = c:XVX
+		}
+		treasure:lotr_treasure_herugrim_sword = {
+			transfer_treasure_to_country = ROOT
 		}
 		if = {
 			limit = {

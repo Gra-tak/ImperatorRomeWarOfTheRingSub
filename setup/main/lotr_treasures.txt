@@ -286,7 +286,7 @@ treasure_manager = {
 			 #
 			key = "lotr_treasure_herugrim_sword"
 			icon = "lotr_treasure_herugrim_sword"
-			state_modifier = { local_monthly_state_loyalty = 0.1 }
+			state_modifier = { local_cohort_start_experience = 10 }
 		}
 		749 = {
 			 #

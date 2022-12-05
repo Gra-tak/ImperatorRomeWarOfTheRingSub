@@ -282,6 +282,14 @@ lotr_edoras_knowledge = {
 	local_research_points_modifier = 0.2
 }
 
+lotr_rohan_mission_burning_province = {
+	local_population_growth = -0.2
+	local_tax_modifier = -1
+	local_manpower_modifier = -1
+	local_monthly_food_modifier = -0.5
+	local_monthly_civilization = -0.05
+}
+
 #terrain race modifiers
 elven_forests_modifier = {
 	local_population_capacity_modifier = 0.2

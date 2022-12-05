@@ -76,6 +76,16 @@ lotr_ruler_decisions.2 = {
 		custom_tooltip = "lotr_ruler_decisions.2.b.tt"
 		overlord = { release_subject = ROOT }
 		add_alliance = scope:gondor_overlord_country
+		add_opinion = {
+			modifier = lotr_oath_of_eorl
+			target = c:GON
+		}
+		c:GON = {
+			add_opinion = {
+				modifier = lotr_oath_of_eorl
+				target = ROOT
+			}
+		}
 		add_treasury = capped_loss_6
 		c:GON = { add_treasury = capped_gain_6 }
 		add_political_influence = -10		

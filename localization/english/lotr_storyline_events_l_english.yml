@@ -7,6 +7,8 @@
  desc_sauron_worship_modifier:2 "Our population worships Sauron."
  sauron_loyal_servant:0 "Loyal servant of Sauron"
  desc_sauron_loyal_servant:2 "We are a loyal servant of Sauron and have earned his trust"
+ lotr_oath_of_eorl:0 "Oath of Eorl"
+ desc_lotr_oath_of_eorl:0 "Eorl has sworn eternal friendship between the kingdoms of Rohan and Gondor. This oath still holds today"
  lotr_storyline_events.2.t:0 "Horse-lords of Rohan"
  lotr_storyline_events.2.desc:0 "A herald brings troubling news from the Horse-lords of [GetCountry('ROH').GetName]. Orc attacks have been increasing in ferocity, probing for weaknesses in Rohan's borders, and upsetting the stability of the region. Advisors of our ruler [ROOT.GetCountry.GetRulerTitle] [ROOT.GetCountry.GetRuler.GetName] suggest shoring up the defenses of key strategic points in [ROOT.GetCountry.GetName]\n\nFor over a century, the lands of Rohan had remained clear of the threat posed by the Orcs. King Theoden, the seventeenth King of Rohan, has proved himself valiant in battle against the Orc menace. Let us hope the forces of darkness do not take advantage of this distraction..."
  lotr_storyline_events.2.a:0 "Troubling times, indeed."

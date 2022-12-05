@@ -14,6 +14,10 @@ sauron_loyal_servant = {
 	value = 200
 }
 
+lotr_oath_of_eorl = {
+	value = 200
+}
+
 helped_after_corsairs = {
 	value = 25
 	yearly_decay = 1

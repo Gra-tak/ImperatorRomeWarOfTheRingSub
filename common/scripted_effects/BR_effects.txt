@@ -71,6 +71,17 @@ pass_down_lotr_traits_effect = {
 			else_if = {
 				limit = {
 					mother = {
+						has_trait = blood_of_eorl
+					}
+					NOT = {
+						has_trait = blood_of_eorl
+					}
+				}
+				add_trait = blood_of_eorl
+			}
+			else_if = {
+				limit = {
+					mother = {
 						has_trait = blood_of_anarion
 					}
 					NOT = {
@@ -100,6 +111,17 @@ pass_down_lotr_traits_effect = {
 					}
 				}
 				add_trait = house_of_hurin
+			}
+			else_if = {
+				limit = {
+					mother = {
+						has_trait = blood_of_eorl
+					}
+					NOT = {
+						has_trait = blood_of_eorl
+					}
+				}
+				add_trait = blood_of_eorl
 			}
 		}
 }

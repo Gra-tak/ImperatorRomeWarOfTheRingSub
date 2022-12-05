@@ -132,7 +132,7 @@
 
 		allow = {
 			custom_tooltip = {
-				text = "lotr_rohan_mission_need_reason_to_ask"
+				text = "lotr_rohan_mission_need_reason_to_ask_tt"
 				has_variable = lotr_rohan_orc_raids_started
 			}
 			political_influence >= 10
@@ -142,6 +142,7 @@
 		on_start = {
 			hidden_effect = {
 				create_character = {
+					#Gríma son of Gálmód
 					add_variable = {
 						name = lotr_immortal_flag
 					}
@@ -160,7 +161,7 @@
 			}
 		}
 		on_completion = {
-			custom_tooltip = "lotr_rohan_mission_hope_for_help_saruman"
+			custom_tooltip = "lotr_rohan_mission_hope_for_help_saruman_tt"
 			trigger_event = {
 				id = lotr_rohan_mission_event.2 #saruman sending grima
 			}
@@ -244,12 +245,9 @@
 			}
 			trigger_if = {
 				limit = { has_variable = lotr_rohan_mission_more_orc_raids }
-				custom_tooltip = {
-					text = "lotr_rohan_mission_orc_army_defeated"
-					NOT = { 
-						any_owned_province = {
-							controller = c:BAR
-						}
+				NOT = { 
+					any_owned_province = {
+						controller = c:BAR
 					}
 				}
 			}
@@ -352,13 +350,13 @@
 			OR = {
 				war = no
 				custom_tooltip = {
-					text = "lotr_rohan_mission_hold_helms_deep"
+					text = "lotr_rohan_mission_hold_helms_deep_tt"
 					has_variable = lotr_rohan_mission_hold_helms_deep_flag
 				}
 			}
 		}
 		on_completion = {
-			custom_tooltip = "lotr_rohan_mission_orcs_in_rohan_broken"
+			custom_tooltip = "lotr_rohan_mission_orcs_in_rohan_broken_tt"
 			set_variable = lotr_rohan_mission_hold_helms_deep_flag
 			if = {
 				limit = {
@@ -464,7 +462,7 @@
 
 		allow = {
 			custom_tooltip = {
-				text = lotr_rohan_mission_event_all_dunlendings_defeated
+				text = lotr_rohan_mission_event_all_dunlendings_defeated_tt
 				NOT = {
 					any_country = {
 						primary_culture = dunlending
