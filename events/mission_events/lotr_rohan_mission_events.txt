@@ -252,6 +252,15 @@ lotr_rohan_mission_event.7 = {
 					war_goal = conquer_wargoal
 					province = ROOT.capital_scope
 				}
+				loyal_subjects_join_wars_effect = yes
+			}
+			trigger_event = {
+				id = lotr_rohan_mission_event.8 #check fully defended (nothing occupied)
+				days = 365
+			}
+			trigger_event = {
+				id = lotr_rohan_mission_event.9 #check helm's deep defended
+				days = 730
 			}
 		}
 		set_variable = {
@@ -278,6 +287,7 @@ lotr_rohan_mission_event.7 = {
 			add_zeal = 3
 			remove_variable = lotr_immortal_flag
 		}
+		remove_country_modifier = influenced_by_saruman
 	}
 
 	option = {
@@ -303,17 +313,162 @@ lotr_rohan_mission_event.7 = {
 				p:1561 = {
 					add_building_level = fortress_building
 				}
-				while = {
-					count = 10
-					p:1556 = {
-						random_pops_in_province = {
-							move_pop = p:1561
+				if = {
+					limit = {
+						p:1556 = {
+							total_population > 10
+					}
+					while = {
+						count = 10
+						p:1556 = {
+							random_pops_in_province = {
+								move_pop = p:1561
+							}
 						}
 					}
 				}
 			}
 		}
 		name = "OK"
+	}
+}
+
+#Fully defended check
+lotr_rohan_mission_event.8 = {
+	type = country_event
+	title = OK
+	desc = OK
+	hidden = yes
+	picture = event_edoras
+
+	trigger = {
+		NOT = { has_variable = = lotr_rohan_mission_hold_helms_deep_flag }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					any_owned_province = {
+						controller = c:XVX
+					}
+				}
+			}
+			trigger_event = {
+				id = lotr_rohan_mission_event.10 #success
+			}
+		}
+		else = {
+			trigger_event = {
+				id = lotr_rohan_mission_event.8
+				days = 365
+			}
+
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+#helm's deep defended check
+lotr_rohan_mission_event.9 = {
+	type = country_event
+	title = OK
+	desc = OK
+	hidden = yes
+	picture = event_edoras
+
+	trigger = {
+		NOT = { has_variable = = lotr_rohan_mission_hold_helms_deep_flag }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				p:1561 = { controller = ROOT }
+			}
+			trigger_event = {
+				id = lotr_rohan_mission_event.10 #success
+			}
+		}
+		else = {
+			trigger_event = {
+				id = lotr_rohan_mission_event.11 #reconquer it!
+			}
+			trigger_event = {
+				id = lotr_rohan_mission_event.9
+				days = 365
+			}
+
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+lotr_rohan_mission_event.10 = {
+	type = country_event
+	title = lotr_rohan_mission_event.10.t
+	desc = lotr_rohan_mission_event.10.desc
+	picture = event_edoras #TODO helms deep
+
+	immediate = {
+		set_variable = {
+			name = lotr_rohan_mission_hold_helms_deep_flag
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+
+lotr_rohan_mission_event.11 = {
+	type = country_event
+	title = lotr_rohan_mission_event.11.t
+	desc = lotr_rohan_mission_event.11.desc
+	picture = event_edoras #TODO
+	option = {
+		name = OK
+	}
+}
+
+lotr_rohan_mission_event.12 = {
+	type = country_event
+	title = lotr_rohan_mission_event.12.t
+	desc = lotr_rohan_mission_event.12.desc
+	picture = event_edoras #TODO ents
+
+	immediate = {
+		p:1546 = {
+			while = {
+				count = num_of_fortress_building
+				remove_building_level = fortress_building
+			}
+			add_city_fire_effect = yes
+		}
+		c:XVX = {
+			add_country_modifier = {
+				name = fury_of_sauron_0 #todo: possibly a different one?
+				duration = 3650
+			}
+		}
+		every_owned_province = {
+			limit = {
+				controller = c:XVX
+			}
+			set_controller = ROOT
+		}
+		add_country_modifier = {
+			name = orc_war_ae_modifier
+			duration = 3650
+		}
+	}
+	option = {
+		name = OK
 	}
 }
 
@@ -355,6 +510,7 @@ lotr_rohan_mission_event.17 = {
 			add_zeal = 3
 			remove_variable = lotr_immortal_flag
 		}
+		remove_country_modifier = influenced_by_saruman
 	}
 
 	option = {

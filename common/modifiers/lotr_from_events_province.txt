@@ -274,6 +274,13 @@ reconquered_from_orcs = {
 	local_population_growth = 1
 }
 
+lotr_human_sacrifice_modifier = {
+	local_happiness_for_same_religion_modifier = 0.05
+}
+
+lotr_edoras_knowledge = {
+	local_research_points_modifier = 0.2
+}
 
 #terrain race modifiers
 elven_forests_modifier = {
@@ -336,9 +343,3 @@ forodwaith_arctic_modifier = {
 	local_population_growth = 0.2
 	local_monthly_food = 1
 }
-
-lotr_human_sacrifice_modifier = {
-	local_happiness_for_same_religion_modifier = 0.05
-}
-
-

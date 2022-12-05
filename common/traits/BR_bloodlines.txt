@@ -203,6 +203,26 @@ prince_of_numenor = { #Rulers of Umbar
 	}
 }
 
+blood_of_eorl = { #Rohirrim
+	type = status
+	
+	prominence = 20
+	
+	monthly_character_popularity = 0.1
+	martial = 3
+	finesse = 1
+	charisma = 1
+	zeal = 2
+	
+	country = {
+		monthly_legitimacy = 0.1
+		global_defensive = 0.1
+	}
+	unit = {
+		discipline = 0.1
+	}
+}
+
 saruman = { #
 	type = status
 	
