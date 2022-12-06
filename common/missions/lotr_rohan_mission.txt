@@ -143,7 +143,7 @@
 			hidden_effect = {
 				create_character = {
 					#Gríma son of Gálmód
-					add_variable = {
+					set_variable = {
 						name = lotr_immortal_flag
 					}
 					save_scope_as = grima
@@ -368,6 +368,7 @@
 					limit = {
 						p:1561 = {
 							total_population > 10
+						}
 					}
 					while = {
 						count = 10

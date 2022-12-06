@@ -143,7 +143,7 @@ lotr_rohan_mission_event.3 = {
 			add_charisma = -3
 			add_finesse = -3
 			add_zeal = -3
-			add_variable = {
+			set_variable = {
 				name = lotr_immortal_flag
 			}
 		}
@@ -172,6 +172,7 @@ lotr_rohan_mission_event.4 = {
 	 	scope:grima = { 
 	 		add_loyalty = lotr_scheeming_badly
 	 		add_corruption = 100
+	 		add_nickname = NICKNAME_WORMTONGUE
 	 	}
     name = lotr_rohan_mission_event.4.a
 	}
@@ -271,6 +272,7 @@ lotr_rohan_mission_event.7 = {
 			}
 			c:XVX = {
 				declare_war_with_wargoal = {
+					target = ROH
 					war_goal = conquer_wargoal
 					province = ROOT.capital_scope
 				}
@@ -342,6 +344,7 @@ lotr_rohan_mission_event.7 = {
 					limit = {
 						p:1556 = {
 							total_population > 10
+						}
 					}
 					while = {
 						count = 10
@@ -367,7 +370,7 @@ lotr_rohan_mission_event.8 = {
 	picture = event_edoras
 
 	trigger = {
-		NOT = { has_variable = = lotr_rohan_mission_hold_helms_deep_flag }
+		NOT = { has_variable = lotr_rohan_mission_hold_helms_deep_flag }
 	}
 
 	immediate = {
@@ -406,7 +409,7 @@ lotr_rohan_mission_event.9 = {
 	picture = event_edoras
 
 	trigger = {
-		NOT = { has_variable = = lotr_rohan_mission_hold_helms_deep_flag }
+		NOT = { has_variable = lotr_rohan_mission_hold_helms_deep_flag }
 	}
 
 	immediate = {
