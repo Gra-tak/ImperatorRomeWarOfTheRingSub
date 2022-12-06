@@ -142,7 +142,16 @@
 		on_start = {
 			hidden_effect = {
 				create_character = {
-					#Gríma son of Gálmód
+					first_name="Grima"
+					family_name="son_of_Galmod"
+					no_stats=yes
+					add_martial=0
+					add_charisma=15
+					add_finesse=15
+					add_zeal=0
+					no_traits=yes
+					force_add_trait=crafty
+					add_character_experience=100
 					set_variable = {
 						name = lotr_immortal_flag
 					}

@@ -121,5 +121,6 @@ yearly_country_pulse =
 		lotr_maintenance.12
 		lotr_maintenance.13
 		lotr_startup.7 #making sure orcs actually use age of the orc
+		lotr_rohan_mission_event.17 #backup event for removing Sarumans influence on the king of Rohan in case of failed mission
 	}
 }

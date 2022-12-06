@@ -248,7 +248,7 @@ lotr_rohan_mission_event.6 = {
 		set_variable = {
 			name = lotr_rohan_mission_gandalf
 		}
-		name = "OK"
+    name = lotr_rohan_mission_event.6.a
 	}
 }
 
@@ -357,7 +357,7 @@ lotr_rohan_mission_event.7 = {
 				}
 			}
 		}
-		name = "OK"
+    name = lotr_rohan_mission_event.7.a
 	}
 }
 
@@ -450,7 +450,7 @@ lotr_rohan_mission_event.10 = {
 		}
 	}
 	option = {
-		name = OK
+    name = lotr_rohan_mission_event.10.a
 	}
 }
 
@@ -460,7 +460,7 @@ lotr_rohan_mission_event.11 = {
 	desc = lotr_rohan_mission_event.11.desc
 	picture = event_edoras #TODO
 	option = {
-		name = OK
+    name = lotr_rohan_mission_event.11.a
 	}
 }
 
@@ -507,6 +507,7 @@ lotr_rohan_mission_event.17 = {
 	picture = event_edoras #TODO
 
 	trigger = {
+		tag = ROH
 		c:XVX = { has_land = no }
 		current_ruler = {
 			has_variable = lotr_immortal_flag
@@ -532,7 +533,7 @@ lotr_rohan_mission_event.17 = {
 			}
 		}
 		current_ruler = {
-			add_martial = 6
+			add_martial = 12
 			add_charisma = 3
 			add_finesse = 3
 			add_zeal = 3

@@ -124,8 +124,8 @@
 	}
 
 	62={
-		first_name="Glóin"
-		family_name="Son of Gróin"
+		first_name="Gloin"
+		family_name="son_of_Groin"
 		birth_date=2783.1.1
 		culture="longbeard"
 		religion="iluvatarism"
@@ -138,7 +138,7 @@
 	}
 	63={
 		first_name="Gimli"
-		family_name="Son of Glóin"
+		family_name="son_of_Gloin"
 		birth_date=2879.1.1
 		culture="longbeard"
 		religion="iluvatarism"
