@@ -15,7 +15,7 @@
 		}
 		allow = {
 			political_influence >= 30
-			current_date > 2986.1.1
+			current_date > 3000.1.1 #earlier is possible with the rohan mission. This is just a fallback as the Mission might become impossible once Isengard gains full strength
 		}
 		effect = {
 			custom_tooltip = "lotr_rohan_break_gondor_decision_tooltip"	
@@ -30,8 +30,13 @@
 	lotr_restore_rohan_decision = {
 		potential = {
 			c:ROH = {
-				is_subject = yes
-				is_subject_of = ROOT
+				OR = {
+					THIS = ROOT
+					AND = {
+						is_subject = yes
+						is_subject_of = ROOT
+					}
+				}
 				has_country_modifier = influenced_by_saruman
 			}
 		}
@@ -43,6 +48,7 @@
 				}
 				AND = {
 					NOT = { tag = GON }
+					NOT = { tag = ROH }
 					religion = melkorism
 				}
 			}

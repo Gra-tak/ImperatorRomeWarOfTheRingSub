@@ -34,11 +34,12 @@
 			days = { 5 20 }
 		}
 		set_global_variable = {
-			name = prevent_saruman_coversion_flag # conversion will now be done via this mission TODO
+			name = prevent_saruman_coversion_flag # conversion will now be done via this mission
 		}
 	}
 
 	on_abort = {
+		remove_global_variable = prevent_saruman_coversion_flag
 		add_stability = -5
 		set_variable = {
 			name = lotr_rohan_mission_activated_variable
@@ -51,12 +52,19 @@
 				death = { death_reason = death_escaping }
 			}
 		}
-		remove_global_variable = prevent_saruman_coversion_flag
 	}
 
 	on_completion = {
 		remove_global_variable = prevent_saruman_coversion_flag
 		complete_mission_effect = yes
+		if = {
+			limit = {
+				exists = scope:grima
+			}
+			scope:grima = {
+				remove_variable = lotr_immortal_flag
+			}
+		}
 	}
 	
 	
@@ -109,7 +117,10 @@
 		}
 
 		on_completion = {
-			add_manpower = 2 #todo replace with manpower recovery. At this point manpower should be full anyway
+			add_country_modifier = {
+				name = neighbor_expand_mission_glory_modifier
+				duration = 7300
+			}
 		}
 	}
 
@@ -314,12 +325,18 @@
 		}
 
 		bypass = {
-			has_variable = lotr_rohan_mission_king_is_freed
+			OR = {
+				has_variable = lotr_rohan_mission_king_is_freed
+				NOR = {
+					current_ruler = { has_variable = lotr_immortal_flag }
+					c:XVX = { has_land = yes }
+				}
+			}
 		}
 
 		allow = {
 			custom_tooltip = {
-				text = "lotr_rohan_mission_no_levy_raised"
+				text = "lotr_rohan_mission_no_levy_raised_tt"
 				NOT = {
 					any_army = {
 						commander = { 
@@ -354,7 +371,7 @@
 		}
 		on_completion = {
 			trigger_event = { 
-				id = lotr_rohan_mission_event.7 #Saruman declares war. Gondor cannot aid
+				id = lotr_rohan_mission_event.107 #Saruman declares war. Gondor cannot aid
 			}
 		}
 	}
