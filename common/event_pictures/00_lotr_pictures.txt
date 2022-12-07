@@ -276,3 +276,38 @@ event_angmar = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/angmar_startup.dds"
 }
+
+event_lone_rider_mountains = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_lone_rider_mountains.dds"
+}
+
+event_army_orthanc = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_army_orthanc.dds"
+}
+
+event_sick_king = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_sick_king.dds"
+}
+
+event_king_sword = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_king_sword.dds"
+}
+
+event_dead_uruks = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_dead_uruks.dds"
+}
+
+event_helms_deep = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_helms_deep.dds"
+}
+
+event_helms_deep_explosion = {
+	theme = Uncategorized
+	picture = "gfx/interface/event_window/event_helms_deep_explosion.dds"
+}

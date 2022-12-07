@@ -1,6 +1,6 @@
 ﻿lotr_rohan_mission = {
-	header = "lotr_gondor_mission_header"
-	icon = "lotr_gondor_army_mission_icon"
+	header = "lotr_rohan_mission_header"
+	icon = "lotr_rohan_mission_icon"
 
 	repeatable = no
 
@@ -28,6 +28,9 @@
 	}
 
 	on_start = {
+			current_ruler = {
+				add_trait = blood_of_eorl
+			}
 		start_mission_ai_effect = yes
 		trigger_event = {
 			id = lotr_rohan_mission_event.1 #first orc raids
@@ -373,6 +376,7 @@
 			trigger_event = { 
 				id = lotr_rohan_mission_event.107 #Saruman declares war. Gondor cannot aid
 			}
+			remove_global_variable = prevent_saruman_coversion_flag
 		}
 	}
 

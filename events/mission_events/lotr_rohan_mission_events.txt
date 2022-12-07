@@ -99,7 +99,7 @@ lotr_rohan_mission_event.2 = {
 	type = country_event
 	title = lotr_rohan_mission_event.2.t
 	desc = lotr_rohan_mission_event.2.desc
-	picture = event_edoras #TODO
+	picture = event_saruman
 
 	left_portrait = ROOT.current_ruler
 	right_portrait = c:XVX.current_ruler
@@ -133,7 +133,7 @@ lotr_rohan_mission_event.3 = {
 	type = country_event
 	title = lotr_rohan_mission_event.3.t
 	desc = lotr_rohan_mission_event.3.desc
-	picture = event_edoras #TODO
+	picture = event_sick_king
 
 	left_portrait = ROOT.current_ruler
 
@@ -159,7 +159,7 @@ lotr_rohan_mission_event.4 = {
 	type = country_event
 	title = lotr_rohan_mission_event.4.t
 	desc = lotr_rohan_mission_event.4.desc
-	picture = event_edoras #TODO
+	picture = event_dead_uruks
 
 	left_portrait = ROOT.current_ruler
 
@@ -307,7 +307,7 @@ lotr_rohan_mission_event.6 = {
 	type = country_event
 	title = lotr_rohan_mission_event.6.t
 	desc = lotr_rohan_mission_event.6.desc
-	picture = event_edoras #TODO
+	picture = event_lone_rider_mountains
 
 	option = {
 		set_variable = {
@@ -322,7 +322,7 @@ lotr_rohan_mission_event.7 = {
 	type = country_event
 	title = lotr_rohan_mission_event.7.t
 	desc = lotr_rohan_mission_event.7.desc
-	picture = event_edoras #TODO
+	picture = event_king_sword
 
 	trigger = {
 		NOT = {
@@ -417,48 +417,6 @@ lotr_rohan_mission_event.7 = {
 	}
 }
 
-#saruman attacks
-lotr_rohan_mission_event.107 = {
-	type = country_event
-	title = lotr_rohan_mission_event.107.t
-	desc = lotr_rohan_mission_event.107.desc
-	picture = event_edoras #TODO#
-
-	trigger = {
-		c:XVX = { has_land = yes }
-	}
-
-	immediate = {
-		c:XVX = {
-			declare_war_with_wargoal = {
-				target = ROH
-				war_goal = conquer_wargoal
-				province = ROOT.capital_scope
-			}
-			loyal_subjects_join_wars_effect = yes
-			every_current_war = {
-				remove_from_war = GON
-			}
-		}
-		trigger_event = {
-			id = lotr_rohan_mission_event.8 #check fully defended (nothing occupied)
-			days = 365
-		}
-		trigger_event = {
-			id = lotr_rohan_mission_event.9 #check helm's deep defended
-			days = 730
-		}
-		every_owned_province = {
-			limit = { is_in_area = calenhardin_area }
-			set_controller = c:XVX
-		}
-	}
-
-	option = {
-    name = lotr_rohan_mission_event.107.a
-	}
-}
-
 #Fully defended check
 lotr_rohan_mission_event.8 = {
 	type = country_event
@@ -540,7 +498,7 @@ lotr_rohan_mission_event.10 = {
 	type = country_event
 	title = lotr_rohan_mission_event.10.t
 	desc = lotr_rohan_mission_event.10.desc
-	picture = event_edoras #TODO helms deep
+	picture = event_helms_deep
 
 	immediate = {
 		set_variable = {
@@ -556,7 +514,7 @@ lotr_rohan_mission_event.11 = {
 	type = country_event
 	title = lotr_rohan_mission_event.11.t
 	desc = lotr_rohan_mission_event.11.desc
-	picture = event_edoras #TODO
+	picture = event_helms_deep_explosion
 	option = {
     name = lotr_rohan_mission_event.11.a
 	}
@@ -566,7 +524,7 @@ lotr_rohan_mission_event.12 = {
 	type = country_event
 	title = lotr_rohan_mission_event.12.t
 	desc = lotr_rohan_mission_event.12.desc
-	picture = event_edoras #TODO ents
+	picture = event_orcs_fleeing
 
 	immediate = {
 		p:1546 = {
@@ -602,7 +560,7 @@ lotr_rohan_mission_event.17 = {
 	type = country_event
 	title = lotr_rohan_mission_event.17.t
 	desc = lotr_rohan_mission_event.17.desc
-	picture = event_edoras #TODO
+	picture = event_king_sword #TODO
 
 	trigger = {
 		tag = ROH
@@ -610,6 +568,7 @@ lotr_rohan_mission_event.17 = {
 		current_ruler = {
 			has_variable = lotr_immortal_flag
 		}
+		has_variable = lotr_rohan_mission_activated_variable
 	}
 
 	immediate = {
@@ -642,5 +601,47 @@ lotr_rohan_mission_event.17 = {
 
 	option = {
 		name = "OK"
+	}
+}
+
+#saruman attacks
+lotr_rohan_mission_event.107 = {
+	type = country_event
+	title = lotr_rohan_mission_event.107.t
+	desc = lotr_rohan_mission_event.107.desc
+	picture = event_army_orthanc
+
+	trigger = {
+		c:XVX = { has_land = yes }
+	}
+
+	immediate = {
+		c:XVX = {
+			declare_war_with_wargoal = {
+				target = ROH
+				war_goal = conquer_wargoal
+				province = ROOT.capital_scope
+			}
+			loyal_subjects_join_wars_effect = yes
+			every_current_war = {
+				remove_from_war = GON
+			}
+		}
+		trigger_event = {
+			id = lotr_rohan_mission_event.8 #check fully defended (nothing occupied)
+			days = 365
+		}
+		trigger_event = {
+			id = lotr_rohan_mission_event.9 #check helm's deep defended
+			days = 730
+		}
+		every_owned_province = {
+			limit = { is_in_area = calenhardin_area }
+			set_controller = c:XVX
+		}
+	}
+
+	option = {
+    name = lotr_rohan_mission_event.107.a
 	}
 }
