@@ -14,7 +14,7 @@ is_isengard_aimod = {
 	trigger = {
 		this = c:XVX
 		NOT = {
-			has_variable = prevent_saruman_coversion_flag
+			has_global_variable = prevent_saruman_coversion_flag
 		}
 	}
 	
