@@ -86,7 +86,7 @@ lotr_rohan_mission_event.1 = {
   	}
   	trigger_event = {
   		id = lotr_rohan_mission_event.1
-  		days = { 30 60}
+  		days = { 50 70}
   	}
   }
   option = {
@@ -169,10 +169,12 @@ lotr_rohan_mission_event.4 = {
 				exists = scope:grima
 			}
 		}
-	 	scope:grima = { 
-	 		add_loyalty = lotr_scheeming_badly
-	 		add_corruption = 100
-	 		add_nickname = NICKNAME_WORMTONGUE
+	 	scope:grima = {
+	 		hidden_effect = {
+		 		add_loyalty = lotr_scheeming_badly
+		 		add_corruption = 100
+		 		add_nickname = NICKNAME_WORMTONGUE
+	 		}
 	 	}
     name = lotr_rohan_mission_event.4.a
 	}
@@ -194,37 +196,81 @@ lotr_rohan_mission_event.5 = {
 		current_ruler = {
 			add_martial = -6
 		}
-		while = {
-			count = 5
-			random_owned_province = {
-				limit = {
-					NOR = { 
-						has_province_modifier = lotr_rohan_mission_burning_province
-						has_building = fortress_building
-						THIS = p:1561
+		hidden_effect = {
+			p:127 = {
+				while = {
+					count = 20
+					define_pop = {
+						type = slaves
+						culture = orcish
+						religion = melkorism
 					}
 				}
-	  		add_city_fire_effect = yes
-	  		add_province_modifier = {
-	  			name = lotr_rohan_mission_burning_province
-	  			duration = 365
-	  		}
-	  		save_scope_as = target
-	  		set_controller = c:BAR
-				c:BAR = {
-					create_unit = {
+				create_country = {
+					name = {
 						name = "Orc Raid"
-						location = scope:target
-						sub_unit = orc_infantry
-						hidden_effect = {
-							while = {
-								count = 19
-								add_subunit = orc_infantry
-							}
-							while = {
-								count = 30
-								add_subunit = uruk_infantry
-							}
+						adjective = "Orcish"
+					}
+					change_country_tag = OCR
+					change_country_flag = XJX
+					change_country_color = pitch_black
+					set_primary_culture = orcish
+					set_country_religion = melkorism
+					change_government = tribal_chiefdom
+					add_treasury = 5000
+	        save_scope_as = orc_raid_scope
+				}
+			}
+		}
+		scope:orc_raid_scope = {
+			declare_war_with_wargoal = {
+				war_goal = raiding_wargoal
+				target = ROH
+			}
+		}
+		scope:orc_raid_scope = {
+			every_current_war = {
+				remove_from_war = GON
+			}
+		}
+		set_variable = {
+			name = lotr_rohan_mission_orc_raid_scope_var
+			value = scope:orc_raid_scope
+		}
+		random_owned_province = {
+			limit = {
+				NOR = { 
+					has_province_modifier = lotr_rohan_mission_burning_province
+					has_building = fortress_building
+					THIS = p:1561
+					any_neighbor_province = {
+						OR = {
+							has_building = fortress_building
+							THIS = p:1561
+						}
+					}
+				}
+			}
+			add_city_fire_effect = yes
+			add_province_modifier = {
+				name = lotr_rohan_mission_burning_province
+				duration = 365
+			}
+			save_scope_as = target
+			set_controller = scope:orc_raid_scope
+			scope:orc_raid_scope = {
+				create_unit = {
+					name = "Orc Raid"
+					location = scope:target
+					sub_unit = orc_infantry
+					hidden_effect = {
+						while = {
+							count = 19
+							add_subunit = orc_infantry
+						}
+						while = {
+							count = 30
+							add_subunit = uruk_infantry
 						}
 					}
 				}
@@ -264,12 +310,12 @@ lotr_rohan_mission_event.7 = {
 			limit = {
 				c:XVX = { has_land = yes }
 			}
-			if = {
-				limit = { alliance_with = c:GON }
-				c:GON = {
-					break_alliance = c:ROH
-				}
-			}
+			# if = {
+			# 	limit = { alliance_with = c:GON }
+			# 	c:GON = {
+			# 		break_alliance = c:ROH
+			# 	}
+			# }
 			c:XVX = {
 				declare_war_with_wargoal = {
 					target = ROH
@@ -277,6 +323,9 @@ lotr_rohan_mission_event.7 = {
 					province = ROOT.capital_scope
 				}
 				loyal_subjects_join_wars_effect = yes
+				every_current_war = {
+					remove_from_war = GON
+				}
 			}
 			trigger_event = {
 				id = lotr_rohan_mission_event.8 #check fully defended (nothing occupied)
@@ -358,6 +407,118 @@ lotr_rohan_mission_event.7 = {
 			}
 		}
     name = lotr_rohan_mission_event.7.a
+	}
+}
+
+#gandalf frees the king
+lotr_rohan_mission_event.107 = {
+	type = country_event
+	title = lotr_rohan_mission_event.107.t
+	desc = lotr_rohan_mission_event.107.desc
+	picture = event_edoras #TODO
+
+	immediate = {
+		if = {
+			limit = {
+				c:XVX = { has_land = yes }
+			}
+			# if = {
+			# 	limit = { alliance_with = c:GON }
+			# 	c:GON = {
+			# 		break_alliance = c:ROH
+			# 	}
+			# }
+			c:XVX = {
+				declare_war_with_wargoal = {
+					target = ROH
+					war_goal = conquer_wargoal
+					province = ROOT.capital_scope
+				}
+				loyal_subjects_join_wars_effect = yes
+				every_current_war = {
+					remove_from_war = GON
+				}
+			}
+			trigger_event = {
+				id = lotr_rohan_mission_event.8 #check fully defended (nothing occupied)
+				days = 365
+			}
+			trigger_event = {
+				id = lotr_rohan_mission_event.9 #check helm's deep defended
+				days = 730
+			}
+		}
+		set_variable = {
+			name = lotr_rohan_mission_king_is_freed
+		}
+		if = {
+			limit = {
+				exists = scope:grima
+				scope:grima = {
+					prisoner = no
+					is_alive = yes
+					employer = ROOT
+				}
+			}
+			scope:grima = {
+				remove_all_offices = yes
+				move_country = c:XVX
+			}
+		}
+		current_ruler = {
+			add_martial = 12
+			add_charisma = 3
+			add_finesse = 3
+			add_zeal = 3
+			remove_variable = lotr_immortal_flag
+		}
+		remove_country_modifier = influenced_by_saruman
+	}
+
+	option = {
+		every_owned_province = {
+			limit = { is_in_area = calenhardin_area }
+			set_controller = c:XVX
+		}
+		treasure:lotr_treasure_herugrim_sword = {
+			transfer_treasure_to_country = ROOT
+		}
+		if = {
+			limit = {
+				owns = 1561
+			}
+			set_capital = p:1561
+			if = {
+				limit = {
+					owns = 1556
+					p:1556 = {
+						has_building = fortress_building
+					}
+				}
+				p:1556 = {
+					remove_building_level = fortress_building
+				}
+				p:1561 = {
+					add_building_level = fortress_building
+				}
+				if = {
+					limit = {
+						p:1556 = {
+							total_population > 10
+						}
+					}
+					while = {
+						count = 10
+						p:1556 = {
+							random_pops_in_province = {
+								move_pop = p:1561
+							}
+						}
+					}
+				}
+			}
+		}
+    name = lotr_rohan_mission_event.107.a
 	}
 }
 

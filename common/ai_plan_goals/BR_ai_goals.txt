@@ -13,6 +13,9 @@ is_mordor_aimod = {
 is_isengard_aimod = {
 	trigger = {
 		this = c:XVX
+		NOT = {
+			has_variable = prevent_saruman_coversion_flag
+		}
 	}
 	
 	aggressive = 300

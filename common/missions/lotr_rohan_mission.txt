@@ -51,9 +51,11 @@
 				death = { death_reason = death_escaping }
 			}
 		}
+		remove_global_variable = prevent_saruman_coversion_flag
 	}
 
 	on_completion = {
+		remove_global_variable = prevent_saruman_coversion_flag
 		complete_mission_effect = yes
 	}
 	
@@ -152,6 +154,7 @@
 					no_traits=yes
 					force_add_trait=crafty
 					add_character_experience=100
+					add_gold=200
 					set_variable = {
 						name = lotr_immortal_flag
 					}
@@ -160,9 +163,11 @@
 			}
 			add_political_influence = -10
 			add_treasury = capped_loss_4
-			trigger_event = { 
-				id = lotr_storyline_events.1 #saruman converting to melkorism
-				days = { 30 60 }
+			c:XVX = {
+				trigger_event = { 
+					id = lotr_storyline_events.1 #saruman converting to melkorism
+					days = { 30 60 }
+				}
 			}
 			trigger_event = { 
 				id = lotr_rohan_mission_event.3 #the king is getting weaker
@@ -181,7 +186,7 @@
 	lotr_rohan_mission_3 = {
 		icon = "task_conquest"
 
-		duration = 90
+		duration = 70
 
 		requires = { 
 			lotr_rohan_mission_2_a
@@ -254,11 +259,17 @@
 			}
 			trigger_if = {
 				limit = { has_variable = lotr_rohan_mission_more_orc_raids }
-				NOT = { 
-					any_owned_province = {
-						controller = c:BAR
+				var:lotr_rohan_mission_orc_raid_scope_var = {
+					OR = {
+						exists = no
+						has_land = no
 					}
 				}
+				# NOT = { 
+				# 	any_owned_province = {
+				# 		controller = c:BAR
+				# 	}
+				# }
 			}
 			trigger_if = {
 				limit = {
@@ -288,6 +299,7 @@
 	#help Gandalf to free the king
 	lotr_rohan_mission_5 = {
 		icon = "task_political"
+		duration = 30
 
 
 		requires = { 
@@ -307,16 +319,25 @@
 
 		allow = {
 			custom_tooltip = {
-				text = "lotr_rohan_mission_all_is_well_tt"
-				has_variable = lotr_rohan_mission_gandalf
+				text = "lotr_rohan_mission_no_levy_raised"
+				NOT = {
+					any_army = {
+						commander = { 
+							is_mercenary = no
+							save_temporary_scope_as = commander
+							NOT = { ROOT = { any_legion = { any_legion_commander = { THIS = scope:commander } } } }
+						}
+					}
+				}
 			}
 			trigger_if = {
 				limit = { has_variable = lotr_rohan_mission_gandalf }
-				NOT = {
-					scope:grima = {
-						OR = {
-							is_alive = no
-							prisoner = yes
+				scope:grima = {
+					OR = {
+						is_alive = no
+						prisoner = yes
+						custom_tooltip = {
+							text = "lotr_rohan_mission_grima_has_fled_tt"
 							NOT = {
 								employer = ROOT
 							}
@@ -325,9 +346,15 @@
 				}
 			}
 		}
+		on_start = {
+			trigger_event = { 
+				id = lotr_rohan_mission_event.7 #Gandalf frees the king with our help.
+			}
+
+		}
 		on_completion = {
 			trigger_event = { 
-				id = lotr_rohan_mission_event.7 #Gandalf frees the king with our help. Saruman declares war. Gondor cannot aid
+				id = lotr_rohan_mission_event.7 #Saruman declares war. Gondor cannot aid
 			}
 		}
 	}

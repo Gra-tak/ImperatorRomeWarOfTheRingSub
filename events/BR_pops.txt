@@ -703,10 +703,8 @@ br_pops.8 = { #Assign units
 				country_culture_group = mirkwoodmen_group
 				country_culture_group = eotheod_group
 				country_culture_group = breelander_group
-				country_culture_group = banadunaim_group
 				country_culture_group = barangil_group
 				country_culture_group = easterling_group
-				country_culture_group = edain_mixed_group
 				country_culture_group = forodwaith_group
 				country_culture_group = haldadian_group
 				country_culture_group = haradrim_group
@@ -745,7 +743,11 @@ br_pops.8 = { #Assign units
 		}
 		else_if = {
 			limit =  {
-				country_culture_group = edain_group
+				OR = {
+					country_culture_group = edain_group
+					country_culture_group = edain_mixed_group
+					country_culture_group = banadunaim_group
+				}
 				NOT = { primary_culture = rangers }
 				NOT = { primary_culture = dolamroth }
 			}
