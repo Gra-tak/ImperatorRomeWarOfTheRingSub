@@ -342,8 +342,8 @@ provinces = {
 		treasure_slots = { treasures = { 711 } }
 	}
 	1300 = {
-		 # Statue of Eärnil II - Minas Anor
-		treasure_slots = { treasures = { 714 } }
+		 # Statue of Eärnil II and Elendil's casket- Minas Tirith
+		treasure_slots = { treasures = { 714 712 } }
 	}
 	1556 = {
 		 # Statue of Helm Hammerhand - Herugrim sword - Rohan

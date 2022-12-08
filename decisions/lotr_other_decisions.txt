@@ -15,7 +15,11 @@
 		}
 		allow = {
 			political_influence >= 30
-			current_date > 3000.1.1 #earlier is possible with the rohan mission. This is just a fallback as the Mission might become impossible once Isengard gains full strength
+			custom_tooltip = "lotr_roham_mission_hint_tt"
+			OR = {
+				c:XVX = { has_land = no }
+				current_date > 3000.1.1 #earlier is possible with the rohan mission. This is just a fallback as the Mission might become impossible once Isengard gains full strength
+			}
 		}
 		effect = {
 			custom_tooltip = "lotr_rohan_break_gondor_decision_tooltip"	

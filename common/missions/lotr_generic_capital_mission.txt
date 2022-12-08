@@ -13,6 +13,13 @@
 	potential = {
 		NOT = { has_variable = lotr_generic_mission_activated_variable }
 		has_civil_war = no
+		OR = {
+			NOT = {
+				tag = ROH
+			}
+			is_subject = no
+			c:XVX = { has_land = no }
+		}
 	}
 
 	on_potential = {

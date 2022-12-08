@@ -18,6 +18,7 @@
 			is_subject = no
 			is_subject_of = c:GON
 		}
+		c:XVX = { has_land = yes }
 	}
 
 	on_potential = {
@@ -28,9 +29,6 @@
 	}
 
 	on_start = {
-			current_ruler = {
-				add_trait = blood_of_eorl
-			}
 		start_mission_ai_effect = yes
 		trigger_event = {
 			id = lotr_rohan_mission_event.1 #first orc raids
@@ -272,10 +270,13 @@
 				has_variable = lotr_rohan_mission_more_orc_raids
 			}
 			trigger_if = {
-				limit = { has_variable = lotr_rohan_mission_more_orc_raids }
+				limit = { 
+					has_variable = lotr_rohan_mission_more_orc_raids
+					exists = var:lotr_rohan_mission_orc_raid_scope_var
+				}
 				var:lotr_rohan_mission_orc_raid_scope_var = {
 					OR = {
-						exists = no
+						# exists = no
 						has_land = no
 					}
 				}
@@ -328,6 +329,7 @@
 		}
 
 		bypass = {
+			NOT = { has_variable = lotr_rohan_mission_5_active_flag }
 			OR = {
 				has_variable = lotr_rohan_mission_king_is_freed
 				NOR = {
@@ -350,6 +352,10 @@
 					}
 				}
 			}
+			custom_tooltip = {
+				text = "lotr_rohan_mission_all_is_well_tt"
+				has_variable = lotr_rohan_mission_gandalf
+			}
 			trigger_if = {
 				limit = { has_variable = lotr_rohan_mission_gandalf }
 				scope:grima = {
@@ -367,6 +373,10 @@
 			}
 		}
 		on_start = {
+			set_variable = {
+				name = lotr_rohan_mission_5_active_flag
+				days = 100
+			}
 			trigger_event = { 
 				id = lotr_rohan_mission_event.7 #Gandalf frees the king with our help.
 			}
@@ -420,7 +430,7 @@
 					owns = 1561
 					owns = 1556
 				}
-				set_capital = p:1561				
+				set_capital = p:1556				
 				if = {
 					limit = {
 						p:1561 = {

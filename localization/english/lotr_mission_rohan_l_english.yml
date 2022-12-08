@@ -19,7 +19,7 @@
  lotr_rohan_mission_event.6.desc:0 "Reports are reaching the court that bands of Rohirrim have routed armies of orcs in our lands. Some are claiming they have also seen strange foreigners in our lands."
  lotr_rohan_mission_event.6.a:0 "Strange bearings."
  lotr_rohan_mission_event.7.t:0 "The king is finally freed"
- lotr_rohan_mission_event.7.desc:0 "Gandalf the Grey has arrived in the Meduseld and has managed to free our King from the clutches of Saruman.\n\nHe has informed us of Saruman's treachery and his plans to destroy our people. \n\nAs the capital of Edoras would be open to an attack from Saruman, we have to flee to Helm's Deep and set up a defence there. If we hold out there for long enough, our people may find the strength to strike back at Saruman.\n\nHint: Your levies are now restored to full strength. It may take the game a few days to update this, so make sure to not instantly raise them before that happens."
+ lotr_rohan_mission_event.7.desc:0 "Gandalf the Grey has arrived in the Meduseld and has managed to free our King from the clutches of Saruman.\n\nHe has informed us of Saruman's treachery and his plans to destroy our people. \n\nAs the capital of Edoras would be open to an attack from Saruman, we have to flee to Helm's Deep and set up a defence there. If we hold out there for long enough, our people may find the strength to strike back at Saruman.\n\nHint: Your levies are now restored to full strength. It may take the game a new month to update this, so make sure to not instantly raise them before that happens."
  lotr_rohan_mission_event.7.a:0 ""Perhaps your hands would remember their old strength better if they grasped your sword"
  lotr_rohan_mission_event.107.t:0 "Saruman attacks"
  lotr_rohan_mission_event.107.desc:0 "Saruman is now declaring open war on us. Our allies of Gondor cannot be reached and are busy with the thread from Mordor, so it will be up to us to defend ourselves.\n\nIf we hold Helm's Deep for long enough, our people may find the strength to strike back at Saruman."
@@ -83,5 +83,6 @@
  lotr_scheeming_badly:0 "Scheming against his own people"
  lotr_rohan_mission_no_levy_raised_tt:0 "No levies are allowed to be currently raised"
  lotr_rohan_mission_grima_has_fled_tt:0 "Has fled the country"
+ lotr_roham_mission_hint_tt:0 "Check your missions first. Rohan has a custom mission which includes becoming independent from Gondor and delivers far more content than this simple decision."
 
 

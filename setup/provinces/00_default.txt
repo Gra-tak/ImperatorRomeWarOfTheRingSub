@@ -16391,7 +16391,7 @@
 	slaves = { amount = 2 }
 }
 1561 = { #Helm's Deep (ROH) (garth_annui_area) (calenardhon_region)
-	terrain = "hills"
+	terrain = "mountain"
 	culture = "rohirrim"
 	religion = "iluvatarism"
 	trade_goods = "marble"

@@ -11,8 +11,9 @@ lotr_rohan_mission_event.1 = {
 	right_portrait = c:XJX.current_ruler
 
   trigger = {
-  	NOT = {
+  	NOR = {
   		has_variable = lotr_rohan_mission_first_orc_raids_stopped
+  		has_variable = lotr_rohan_mission_activated_variable
   	}
   	any_owned_province = {
 			NOR = { 
@@ -138,6 +139,10 @@ lotr_rohan_mission_event.3 = {
 	left_portrait = ROOT.current_ruler
 
 	immediate = {
+	}
+
+	option = {
+    name = lotr_rohan_mission_event.3.a
 		current_ruler = {
 			add_martial = -6
 			add_charisma = -3
@@ -147,10 +152,6 @@ lotr_rohan_mission_event.3 = {
 				name = lotr_immortal_flag
 			}
 		}
-	}
-
-	option = {
-    name = lotr_rohan_mission_event.3.a
 	}
 }
 
@@ -193,16 +194,10 @@ lotr_rohan_mission_event.5 = {
 		set_variable = {
 			name = lotr_rohan_mission_more_orc_raids
 		}
-		current_ruler = {
-			if = {
-				limit = { has_variable = lotr_immortal_flag }
-				add_martial = -6
-			}
-		}
 		hidden_effect = {
 			p:127 = {
 				while = {
-					count = 20
+					count = 5
 					define_pop = {
 						type = slaves
 						culture = orcish
@@ -299,6 +294,12 @@ lotr_rohan_mission_event.5 = {
 
 	option = {
     name = lotr_rohan_mission_event.5.a
+		current_ruler = {
+			if = {
+				limit = { has_variable = lotr_immortal_flag }
+				add_martial = -6
+			}
+		}
 	}
 }
 
@@ -352,6 +353,11 @@ lotr_rohan_mission_event.7 = {
 				move_country = c:XVX
 			}
 		}
+		remove_country_modifier = influenced_by_saruman
+	}
+
+	option = {
+    name = lotr_rohan_mission_event.7.a
 		if = {
 			limit = {
 				current_ruler = {
@@ -366,10 +372,6 @@ lotr_rohan_mission_event.7 = {
 				remove_variable = lotr_immortal_flag
 			}
 		}
-		remove_country_modifier = influenced_by_saruman
-	}
-
-	option = {
 		treasure:lotr_treasure_herugrim_sword = {
 			transfer_treasure_to_country = ROOT
 		}
@@ -413,7 +415,6 @@ lotr_rohan_mission_event.7 = {
 				}
 			}
 		}
-    name = lotr_rohan_mission_event.7.a
 	}
 }
 
@@ -445,7 +446,7 @@ lotr_rohan_mission_event.8 = {
 		else = {
 			trigger_event = {
 				id = lotr_rohan_mission_event.8
-				days = 365
+				days = 200
 			}
 
 		}
@@ -527,6 +528,9 @@ lotr_rohan_mission_event.12 = {
 	picture = event_orcs_fleeing
 
 	immediate = {
+	}
+	option = {
+		name = OK
 		p:1546 = {
 			while = {
 				count = num_of_fortress_building
@@ -550,9 +554,6 @@ lotr_rohan_mission_event.12 = {
 			name = orc_war_ae_modifier
 			duration = 3650
 		}
-	}
-	option = {
-		name = OK
 	}
 }
 
@@ -589,6 +590,11 @@ lotr_rohan_mission_event.17 = {
 				move_country = c:XVX
 			}
 		}
+		remove_country_modifier = influenced_by_saruman
+	}
+
+	option = {
+		name = "OK"
 		current_ruler = {
 			add_martial = 12
 			add_charisma = 3
@@ -596,11 +602,6 @@ lotr_rohan_mission_event.17 = {
 			add_zeal = 3
 			remove_variable = lotr_immortal_flag
 		}
-		remove_country_modifier = influenced_by_saruman
-	}
-
-	option = {
-		name = "OK"
 	}
 }
 
@@ -617,14 +618,54 @@ lotr_rohan_mission_event.107 = {
 
 	immediate = {
 		c:XVX = {
-			declare_war_with_wargoal = {
-				target = ROH
-				war_goal = conquer_wargoal
-				province = ROOT.capital_scope
+			every_current_war = {
+				force_white_peace = THIS
+			}
+			if = {
+				limit = {
+					ROOT = {
+						owns = 1541
+					}
+				}
+				#would prefer wargoal helm's deep, but the AI will offer peace way too early if they are unable to conquer it...
+				declare_war_with_wargoal = {
+					target = ROH
+					war_goal = conquer_wargoal
+					province = 1541
+				}
+			}
+			else = {
+				declare_war_with_wargoal = {
+					target = ROH
+					war_goal = conquer_wargoal
+					province = ROOT.capital_scope
+				}
 			}
 			loyal_subjects_join_wars_effect = yes
 			every_current_war = {
 				remove_from_war = GON
+			}
+			#some bolstering to tiny isengard if player was quick
+			if = {
+				limit = {
+					country_population < 100
+				}
+				add_treasury = 5000
+				create_unit = {
+					name = "Orc Raid"
+					location = p:1546
+					sub_unit = warg_riders
+					hidden_effect = {
+						while = {
+							count = 19
+							add_subunit = warg_riders
+						}
+						while = {
+							count = 30
+							add_subunit = uruk_heavy_infantry
+						}
+					}
+				}
 			}
 		}
 		trigger_event = {
@@ -633,7 +674,7 @@ lotr_rohan_mission_event.107 = {
 		}
 		trigger_event = {
 			id = lotr_rohan_mission_event.9 #check helm's deep defended
-			days = 730
+			days = 1000
 		}
 		every_owned_province = {
 			limit = { is_in_area = calenhardin_area }
