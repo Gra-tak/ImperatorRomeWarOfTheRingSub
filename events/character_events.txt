@@ -2861,7 +2861,9 @@ character_events.53 = {
 	type = character_event
 	hidden = yes
 	
-	trigger = { has_variable = betrothed_flag }
+	trigger = { 
+		has_variable = betrothed_flag
+	}
 
 	immediate = {
 		if = {

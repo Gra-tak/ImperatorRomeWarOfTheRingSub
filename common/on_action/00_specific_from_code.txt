@@ -985,6 +985,9 @@ on_becoming_adult = {
 			}
 		}
 	}
+	events = {
+		character_events.53
+	}
 }
 
 on_winning_war = {

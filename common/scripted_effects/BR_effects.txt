@@ -70,7 +70,7 @@ pass_down_lotr_traits_effect = {
 			}
 			else_if = {
 				limit = {
-					mother = {
+					father = {
 						has_trait = blood_of_eorl
 					}
 					NOT = {

@@ -178,6 +178,7 @@
 		allow = {
 			war = no
 			any_subject = {
+				religion = melkorism
 				ROOT = { NOT = { has_truce_with = PREV } }
 			}
 		}

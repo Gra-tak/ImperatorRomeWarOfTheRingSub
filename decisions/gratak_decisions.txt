@@ -231,8 +231,12 @@
 			# 	limit = { is_in_region = dacranamel_region }
 			# 	set_conquered_by = c:MOR
 			# }
-			every_current_war = {
-				remove_from_war = ROOT
+			# every_current_war = {
+			# 	remove_from_war = ROOT
+			# }
+			every_character = {
+				save_scope_as = newborn
+				pass_down_lotr_traits_effect = yes
 			}
 		}
 	}
