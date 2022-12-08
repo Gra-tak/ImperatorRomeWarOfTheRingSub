@@ -306,7 +306,10 @@
 			}
 			trigger_event = { 
 				id = lotr_rohan_mission_event.7 #Gandalf frees the king without our help. Saruman declares war. Gondor cannot aid
-				days = { 365 730 } #todo: check if this length is reasonable
+				days = { 730 1460 }
+			}
+			every_current_war = {
+				remove_from_war = ROOT
 			}
 		}
 	}
@@ -373,14 +376,14 @@
 			}
 		}
 		on_start = {
-			set_variable = {
-				name = lotr_rohan_mission_5_active_flag
-				days = 100
+			if = {
+				NOT = {
+					has_variable = lotr_rohan_mission_king_is_freed
+				}
+				trigger_event = { 
+					id = lotr_rohan_mission_event.7 #Gandalf frees the king with our help.
+				}
 			}
-			trigger_event = { 
-				id = lotr_rohan_mission_event.7 #Gandalf frees the king with our help.
-			}
-
 		}
 		on_completion = {
 			trigger_event = { 

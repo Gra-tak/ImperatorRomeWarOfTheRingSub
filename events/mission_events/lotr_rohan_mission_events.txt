@@ -337,6 +337,10 @@ lotr_rohan_mission_event.7 = {
 
 	immediate = {
 		set_variable = {
+			name = lotr_rohan_mission_5_active_flag
+			days = 100
+		}
+		set_variable = {
 			name = lotr_rohan_mission_king_is_freed
 		}
 		if = {
@@ -618,8 +622,10 @@ lotr_rohan_mission_event.107 = {
 
 	immediate = {
 		c:XVX = {
-			every_current_war = {
-				force_white_peace = THIS
+			hidden_effect = {
+				every_current_war = {
+					force_white_peace = THIS
+				}
 			}
 			if = {
 				limit = {
@@ -662,6 +668,27 @@ lotr_rohan_mission_event.107 = {
 						}
 						while = {
 							count = 30
+							add_subunit = uruk_heavy_infantry
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					country_population < 300
+				}
+				add_treasury = 2500
+				create_unit = {
+					name = "Orc Raid"
+					location = p:1546
+					sub_unit = warg_riders
+					hidden_effect = {
+						while = {
+							count = 19
+							add_subunit = warg_riders
+						}
+						while = {
+							count = 15
 							add_subunit = uruk_heavy_infantry
 						}
 					}
