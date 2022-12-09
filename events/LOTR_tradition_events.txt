@@ -101,7 +101,7 @@ lotr_tradition_events.1 = {
 			}
 			if = {
 				limit = {
-					var:specPops>400
+					var:specPops>250
 				}
 				trigger_event = { id = lotr_tradition_events.3 } 
 			}
