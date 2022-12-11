@@ -59,17 +59,6 @@ pass_down_lotr_traits_effect = {
 			}
 			else_if = {
 				limit = {
-					mother = {
-						has_trait = blood_of_isildur
-					}
-					NOT = {
-						has_trait = blood_of_isildur
-					}
-				}
-				add_trait = blood_of_isildur
-			}
-			else_if = {
-				limit = {
 					father = {
 						has_trait = blood_of_eorl
 					}
@@ -78,6 +67,17 @@ pass_down_lotr_traits_effect = {
 					}
 				}
 				add_trait = blood_of_eorl
+			}
+			else_if = {
+				limit = {
+					mother = {
+						has_trait = blood_of_isildur
+					}
+					NOT = {
+						has_trait = blood_of_isildur
+					}
+				}
+				add_trait = blood_of_isildur
 			}
 			else_if = {
 				limit = {

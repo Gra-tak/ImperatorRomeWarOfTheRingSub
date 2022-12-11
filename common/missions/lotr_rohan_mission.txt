@@ -377,8 +377,10 @@
 		}
 		on_start = {
 			if = {
-				NOT = {
-					has_variable = lotr_rohan_mission_king_is_freed
+				limit = {
+					NOT = {
+						has_variable = lotr_rohan_mission_king_is_freed
+					}
 				}
 				trigger_event = { 
 					id = lotr_rohan_mission_event.7 #Gandalf frees the king with our help.

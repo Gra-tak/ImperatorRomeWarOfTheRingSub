@@ -12,8 +12,7 @@ gratak_grow_up_event.1 = {
 	picture = greek_court
 	
 	trigger = {
-		scope:gratak_grow_up_character =
-		{
+		scope:gratak_grow_up_character = {
 			has_variable = gratak_grow_up_flag
 		}
 	}

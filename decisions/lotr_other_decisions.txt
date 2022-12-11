@@ -75,6 +75,7 @@
 				c:UMB = {
 					has_land = no
 				}
+				owns = 1
 				AND = {
 					NOT = { tag = GON }
 					religion = melkorism
