@@ -97,6 +97,7 @@ lotr_other_country_events.3 = {
 			}
 		}
 		c:MOR = {
+			has_land = yes
 			is_ai = yes
 			religion = melkorism
 			war = no
@@ -191,68 +192,76 @@ lotr_other_country_events.3 = {
 		c:XVX = {
 			if = {
 				limit = {
-					c:ROH = { has_land = yes }
+					has_land = yes
 				}
-				declare_war_with_wargoal = {
-					war_goal = conquer_wargoal
-					province = c:ROH.capital_scope
-					target = c:ROH
+				if = {
+					limit = {
+						c:ROH = { has_land = yes }
+					}
+					declare_war_with_wargoal = {
+						war_goal = conquer_wargoal
+						province = c:ROH.capital_scope
+						target = c:ROH
+					}
 				}
+				else = {
+					declare_war_with_wargoal = {
+						war_goal = conquer_wargoal
+						province = c:GON.capital_scope
+						target = c:GON
+					}
+				}
+				loyal_subjects_join_wars_effect = yes
 			}
-			else = {
-				declare_war_with_wargoal = {
-					war_goal = conquer_wargoal
-					province = c:GON.capital_scope
-					target = c:GON
-				}
-			}
-			loyal_subjects_join_wars_effect = yes
 		}
 		c:UMB = {
 			if = {
-				limit = {
+				limit = { has_land = yes }
+				if = {
+					limit = {
+						region:harondor_region = {
+							any_region_province = {
+								exists = owner
+								owner = c:GON
+							}
+						}
+					}
 					region:harondor_region = {
-						any_region_province = {
-							exists = owner
-							owner = c:GON
+						random_region_province = {
+							limit = {
+								exists = owner
+								owner = c:GON
+							}
+							save_scope_as = target
 						}
 					}
 				}
-				region:harondor_region = {
-					random_region_province = {
-						limit = {
-							exists = owner
-							owner = c:GON
+				else_if = {
+					limit = {
+						region:ithilien_region = {
+							any_region_province = {
+								exists = owner
+								owner = c:GON
+							}
 						}
-						save_scope_as = target
 					}
-				}
-			}
-			else_if = {
-				limit = {
 					region:ithilien_region = {
-						any_region_province = {
-							exists = owner
-							owner = c:GON
+						random_region_province = {
+							limit = {
+								exists = owner
+								owner = c:GON
+							}
+							save_scope_as = target
 						}
 					}
 				}
-				region:ithilien_region = {
-					random_region_province = {
-						limit = {
-							exists = owner
-							owner = c:GON
-						}
-						save_scope_as = target
-					}
+				declare_war_with_wargoal = {
+					war_goal = conquer_wargoal
+					province = scope:target
+					target = c:GON
 				}
+				loyal_subjects_join_wars_effect = yes
 			}
-			declare_war_with_wargoal = {
-				war_goal = conquer_wargoal
-				province = scope:target
-				target = c:GON
-			}
-			loyal_subjects_join_wars_effect = yes
 		}
 	}
 	option = {
